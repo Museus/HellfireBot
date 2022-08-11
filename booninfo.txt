@@ -1,0 +1,235 @@
+core lightning strike
+    Your **Attack** emits chain-lightning when you damage a foe.
+    Lightning Damage: {}
+    10 12.5 15 20
+    4 3 2 1
+core thunder flourish
+    Your **Special** causes a lightning bolt to strike nearby foes.
+    Lightning Damage: {}
+    30 38 45 60
+    12 8 6 4 3
+core electric shot
+    Your **Cast** is a burst of chain-lightning that bounces between foes.
+    Cast Damage: {}
+    60 70 81 90
+    24 17 12 8 6
+core thunder flare
+    Your **Cast** causes a lightning bolt to strike nearby foes.
+    Cast Damage: {}
+    60 72 84 96
+    20 14 10 7 5
+core thunder dash
+    Your **Dash** causes a lightning bolt to strike nearby foes.
+    Lightning Damage: {}
+    10 15 20 25
+    8 6 4 3 2 1
+tier1 zeus's aid
+    Your **Call** makes lightning rapidly strike nearby foes for **1.5 Sec**.
+    Lightning Damage: {}
+    50 55 60 65
+    20 14 10 7 5
+tier2 billowing strength
+    after using **Call**, you deal more damage for **15 Sec**.
+    Bonus Damage: {+%}
+    20 22 24 26
+    8 6 4 3 2
+tier1 lightning reflexes
+    After you **Dash** just before getting hit, a bolt strikes a nearby foes.
+    Lightning Damage: {}
+    20 30 40 50
+    10 7 6
+tier1 heaven's vengeance
+    After you take damage, your foe is struck by lightning.
+    Revenge Damage: {}
+    80 1.3-1.5 1.8-2.0 2.3-2.5
+    64 45 31 22 15 11 8
+tier2 clouded judgement
+    Your **God Gauge** charges faster when you deal or take damage.
+    Faster Gauge Gain: {+%}
+    10 12 14 16
+    4 3 2 1
+tier2 high voltage
+    Your lightning bolt effects deal damage in a larger area.
+    Bolt Area of Effect: {+%}
+    60 72 84 96
+    24 17 12 8 6
+tier2 double strike
+    Your lightning bolt effects have a chance to strike twice.
+    Strike Chance: {+%}
+    25 30 35 40
+    10 7 5 3
+tier2 storm lightning
+    Your chain-lightning effects bounce more times before expiring.
+    Lightning Bounces: {+}
+    2 4 6 8
+    2
+status static discharge
+    Your lightning effects also make foes **Jolted**.
+    Jolt Damage: {}
+    60 1.3-1.5 1.8-2.0 2.3-2.5
+    36 25 18 12 9 6
+legendary splitting bolt
+    Whenever you strike foes with lightning **Boons**, fire an electric bolt.
+    Lightning Damage: {}
+    40
+    0
+core tempest strike
+    Your **Attack** deals more damage and knocks foes away.
+    Attack Damage: {+%}
+    30 1.3-1.5 1.8-2.0 2.3-2.5
+    12 8 6 4 3
+core tempest flourish
+    Your **Special** deals more damage and knocks foes away.
+    Special Damage: {+%}
+    70 1.3-1.5 1.8-2.0 2.3-2.5
+    28 20 14 10 7
+core flood shot
+    Your **Cast** damages foes in an area and knocks them away.
+    Cast Damage: {}
+    60 72 84 96
+    36 25 18 12 9 6
+core flood flare
+    Your **Cast** damages foes around you and knocks them away.
+    Blast Damage: {}
+    60 72 84 96
+    36 25 18 12 9 6
+core tidal dash
+    Your **Dash** damages foes in an area and knocks them away.
+    Dash Damage: {}
+    35 42 49 56
+    21 15 10 7 5 4
+tier1 poseidon's aid
+    Your **Call** makes you surge into foes while **Impervious** for **1.2 Sec**.
+    Impact Damage: {}
+    250 300 350 400
+    100 70 49 34 25
+tier2 boiling point
+    Your **God Gauge** charges up faster when you take damage.
+    Faster Gauge Gain When Hit: {+%}
+    40 50 60 70
+    16 11 8 5 4
+tier1 hydraulic might
+    Your **Attack** and **Special** are stronger the first **10 Sec** in **Encounters**.
+    Initial Damage Bonus: {+%}
+    50 62.5 75 87.5
+    10 7 5
+tier1 sunken treasure
+    Gain a random assortment of <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, <:Obol:1007187039801856060>, and <:Heart:1007187038681960529>.
+    Loot Multiplier: {x}
+    1 1.5 2.2
+    0
+tier1 ocean's bounty
+    Any <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, and <:Obol:1007187039801856060> chamber rewards are worth more.
+    Reward Value: {+%}
+    50 55 60 65
+    0
+tier2 typhoon's fury
+    You deal more damage when slamming foes into barriers.
+    Slam Damage: {+%}
+    200 250 300 350
+    80 56 39 27 20
+tier2 wave pounding
+    Your **Boons** with knock-away effects deal bonus damage to **Bosses**.
+    Knock-Away Damage vs. Bosses: {+%}
+    20 30 40 50
+    8 6 4 3 2
+tier2 rip current
+    Your **Call** pulls in foes and the effect lasts longer.
+    Bonus Duration: {s}
+    1 1.25 1.5 1.75
+    0.2 0.1
+tier2 breaking wave
+    Slamming foes into barriers creates a watery blast in the area.
+    Blast Damage: {}
+    100 150 200 250
+    40 28 20 14 10
+status razor shoals
+    Your **Boons** with knock-away effects also **Rupture** foes.
+    Rupture Damage: {} *(every 0.2 Sec)*
+    10 15 20 25
+    6 4 3 2
+legendary second wave
+    Your **Boons** with knock-away effects shove foes multiple times.
+    Bonus Knock-Away Effects: {+}
+    1
+    0
+legendary huge catch
+    You have a greater chance to find a **Fishing Point** in each **Chamber**.
+    Fish Spawn Chance: {+%}
+    20
+    0
+core divine strike
+    Your **Attack** is stronger, and can **Deflect**.
+    Attack Damage: {+%}
+    40 1.3-1.5 1.8-2.0 2.3-2.5
+    16 11 9 5 4
+core divine flourish
+    Your **Special** is stronger, and can **Deflect**.
+    Special Damage: {+%}
+    60 1.3-1.5 1.8-2.0 2.3-2.5
+    24 17 12 8 6
+core phalanx shot
+    Your **Cast** damages foes in a small area, and can **Deflect**.
+    Cast Damage: {}
+    85 102 119 136
+    51 36 25 17 12 9
+core phalanx flare
+    Your **Cast** damages foes around you, and can **Deflect**.
+    Blast Damage: {}
+    80 90 100 110
+    48 34 24 16 12 8
+core divine dash
+    Your **Dash** deals damage and can **Deflect**.
+    Dash Damage: {}
+    10 12 14 16
+    6 4 3 2
+tier1 athena's aid
+    Your **Call** briefly makes you **Impervious** and **Deflect** all attacks.
+    Effect Duration: {s}
+    1.5 1.65 1.8 1.95
+    0.6 0.42 0.3
+t1 holy shield
+    After you take damage, damage foes around you and briefly **Deflect**.
+    Revenge Damage: {}
+    30 1.3-1.5 1.8-2.0 2.3-2.5
+    24 17 12 8 6 4 3
+t1 bronze skin
+    Resist damage from foes' attacks.
+    Reduced Damage From Foes: {+%}
+    5 7.5 10 12.5
+    1.9 1.9 1.8 1.8 1.7
+?t2 deathless stand
+    **Death/Stubborn Defiance** makes you **Impervious** longer. Replenish **1** use.
+    Effect duration: {s}
+    2 2.5 3 3.5
+    0
+t2 last stand
+    **Death/Stubborn Defiance** restores more <:Heart:1007187038681960529> than usual. Replenish **1** use.
+    Bonus Restoration: {+%}
+    10 12 14 16
+    0
+t2 proud bearing
+    You begin each **Encounter** with your **God Gauge** partly full.
+    Starting Gauge: {%}
+    20 25 30 40
+    10 7 5 3 2
+t1 sure footing
+    Resist damage from **Traps**.
+    Reduced Damage From Traps: {+%}
+    60 75 90 95
+    0
+status blinding flash
+    Your abilities that can **Deflect** also make foes **Exposed**.
+    Bonus Backstab Damage: {+%}
+    50 62.5 75 87.5
+    20 14 10 7 5
+?t2 brilliant riposte
+    When you **Deflect** attacks, it deals more damage.
+    Deflect Damage: {+%}
+    80 1.3-1.5 2.0-2.5
+    32 22 16 11 8
+legendary divine protection
+    You have a barrier than negates an instance of damage.
+    Barrier Refresh Time: {s}
+    20
+    0

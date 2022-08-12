@@ -53,36 +53,36 @@ async def pomscaling(ctx, *args) -> None:
     if args[len(args) - 1].isdigit():
         level = int(args[len(args) - 1])
         args = args[0: len(args) - 1]
-    name, rarity, _ = misc.parse_boon(args)
+    name, _, _ = misc.parse_boon(args)
     info = boons_info[name.lower()]
-    _, rarity, _ = misc.adjust_boon_type(info, name, rarity, 1)
-    value = info['rarities'][misc.rarities[rarity] - 1]
-    if '-' in value:
-        value = value.split('-')
-        value = (float(info['rarities'][0]) * float(value[0]) + float(info['rarities'][0]) * float(value[1])) / 2
-    else:
-        value = float(value)
+    values = info['rarities'].copy()
+    print(values)
+    for rarity, value in enumerate(values):
+        if '-' in value:
+            value = value.split('-')
+            values[rarity] = (float(info['rarities'][0]) * float(value[0]) + float(info['rarities'][0]) * float(value[1])) / 2
+        else:
+            values[rarity] = float(value)
     pom = 0
-    damages = []
+    rarity_damages = []
+    for i in range(len(values)):
+        rarity_damages.append([])
     for i in range(level):
-        damages.append(value)
         pom = min(pom, len(info['levels']) - 1)
-        value += int(info['levels'][pom])
+        for rarity, value in enumerate(values):
+            rarity_damages[rarity].append(value)
+            values[rarity] += int(info['levels'][pom])
         pom += 1
     plt.clf()
-    plt.plot(list(range(1, level + 1)), damages)
+    for rarity, damages in enumerate(rarity_damages):
+        plt.plot(list(range(1, level + 1)), damages, color=misc.rarity_colors[rarity])
     plt.xlabel('Level')
     plt.ylabel(info['stat'].split(':')[0])
     plt.ylim(ymin=0)
     plt.savefig('output.png')
 
-    if info['type'] in ['legendary', 'duo']:
-        rarity = info["type"]
-    elif len(info['rarities']) == 3 and rarity == 'heroic':
-        rarity = 'epic'
-
     embed = discord.Embed()
-    embed.set_author(name=f'Pom scaling for {rarity} {" ".join([word[0].upper() + word[1:] for word in name.split()])}')
+    embed.set_author(name=f'Pom scaling for {" ".join([word[0].upper() + word[1:] for word in name.split()])}')
 
     file = discord.File('output.png', filename='image.png')
     embed.set_image(url='attachment://image.png')
@@ -96,5 +96,5 @@ async def reply(ctx, message, mention=False):
 
 # keep_alive()
 # TOKEN = os.environ['TOKEN']
-TOKEN = ''
+TOKEN = 'MTAwNzE0MTc2Njk3OTM4NzQzMg.G1lopr.wXospGnfMFyzT8mt_3ezYLak2LHMHZw7-acxd4'
 client.run(TOKEN)

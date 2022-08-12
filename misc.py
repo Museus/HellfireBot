@@ -1,6 +1,7 @@
 import re
 
 rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4}
+rarity_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511', '#D1FF18', '#8FFF18']
 
 
 def parse_boon(input: [str]) -> (str, str, int):

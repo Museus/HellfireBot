@@ -1,7 +1,7 @@
 import re
 
 rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4}
-rarity_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511', '#D1FF18', '#8FFF18']
+rarity_colors = [0x7D7D7D, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18, 0x8FFF18]
 
 
 def parse_boon(input: [str]) -> (str, str, int):
@@ -35,12 +35,15 @@ def adjust_boon_type(info: {}, name: str, rarity: str, level: int) -> (str, str,
 
 
 def parse_stat(stat_line: str, value: [float]) -> str:
-    replace = re.findall(r'{.*}', stat_line)[0]
+    try:
+        replace = re.findall(r'{.*}', stat_line)[0]
+    except IndexError:
+        return stat_line
     rounded = 's' not in replace and 'x' not in replace
     if len(value) == 2:
-        value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}' if rounded else f'{value[0]} - {value[1]}'
+        value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}' if rounded else f'{round(value[0], 2)} - {round(value[1], 2)}'
     else:
-        value = int(value[0] + 0.5) if rounded else value[0]
+        value = int(value[0] + 0.5) if rounded else round(value[0], 2)
     if '+' in replace:
         value = f'+{value}'
     if '%' in replace:

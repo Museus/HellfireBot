@@ -12,28 +12,26 @@ import misc
 client = commands.Bot(command_prefix=['h!'], case_insensitive=True)
 
 boons_info = {}
-f = open('C:/Users/amber/Documents/testbot/actual bot/HellfireBot/booninfo.txt', 'r', encoding='utf8')
+f = open('./booninfo.txt', 'r', encoding='utf8')
 while boon := f.readline().strip():
     type, boon = boon.split(' ', 1)
     boons_info[boon] = {'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
-                        'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' ')}
+                        'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
+                        'icon': f.readline()}
 
 
 @client.event
 async def on_ready():
-    # await client.change_presence(activity=discord.Game(name='Race Event: 🌽🎉'))
+    await client.change_presence(activity=discord.Game(name='Race Event: 🌽🎉'))
     print(f'{client.user} is online')
 
 
 @client.command(aliases=['b'])
 async def boon(ctx, *args) -> None:
     name, rarity, level = misc.parse_boon(args)
-    if name == "exclusive access":
-        embed=discord.Embed(title=f'**Exclusive Access**', description=f'Any **Boons** you find are more potent.\n▸Minimum Boon Rarity: **Epic**', color=0xD1FF18)
-        embed.set_thumbnail(url="https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/32/Exclusive_Access.png")
-        await ctx.reply(embed=embed, mention_author=True)
-        return
     info = boons_info[name.lower()]
+    if rarity == 'heroic' and len(info['rarities']) == 3:
+        rarity = 'epic'
     value = info['rarities'][misc.rarities[rarity] - 1]
     if '-' in value:
         value = value.split('-')
@@ -41,35 +39,39 @@ async def boon(ctx, *args) -> None:
     else:
         value = [float(value)]
     pom = 0
-    lvl = level
+    if info['levels'][0] != '0':
+        level_display = f'Lv. {level}'
+    else:
+        level_display = 'Unpommable'
+        if len(info['levels']) == 2:
+            level_display += ', Unpurgeable'
     while level > 1:
         pom = min(pom, len(info['levels']) - 1)
-        value[0] += int(info['levels'][pom])
+        value[0] += float(info['levels'][pom])
         if len(value) == 2:
-            value[1] += int(info['levels'][pom])
+            value[1] += float(info['levels'][pom])
         level -= 1
         pom += 1
-    embed=discord.Embed(title=f'**{string.capwords(name)}** (Lv. {lvl})', description=f'{info["desc"]}\n▸{misc.parse_stat(info["stat"], value)}')
+    embed = discord.Embed(
+        title=f'**{string.capwords(name)}** ({level_display})',
+        description=f'{info["desc"]}\n▸{misc.parse_stat(info["stat"], value)}')
     if info['type'] in ['legendary', 'duo']:
-        embed.title = f"**{string.capwords(name)}**"
-    if rarity == "common":
-        embed.color = 0xFFFFFF
-    elif rarity == "rare":
-        embed.color = 0x0083F3
-    elif rarity == "epic":
-        embed.color = 0x9500F6
-    elif rarity == "heroic":
-        embed.color = 0xFF1C10
+        embed.title = f'**{string.capwords(name)}**'
     if info['type'] in ['legendary']:
         embed.color = 0xFFD511
-    if info['type'] in ['duo']:
+    elif info['type'] in ['duo']:
         embed.color = 0xD1FF18
-    embed.set_thumbnail(url=info['rarities'][4])
-    await ctx.reply(embed=embed, mention_author=True)
+    else:
+        embed.color = misc.rarity_colors[misc.rarities[rarity] - 1]
+    embed.set_thumbnail(url=info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
 
 
 @client.command(aliases=['ps'])
 async def pomscaling(ctx, *args) -> None:
+    def color_int_str(color_int: int) -> str:
+        color = hex(color_int)
+        return f'#{color.split("x")[1]:0>6}'
     level = 10
     if args[len(args) - 1].isdigit():
         level = int(args[len(args) - 1])
@@ -91,14 +93,15 @@ async def pomscaling(ctx, *args) -> None:
         pom = min(pom, len(info['levels']) - 1)
         for rarity, value in enumerate(values):
             rarity_damages[rarity].append(value)
-            values[rarity] += int(info['levels'][pom])
+            values[rarity] += float(info['levels'][pom])
         pom += 1
     plt.clf()
     for rarity, damages in enumerate(rarity_damages):
-        plt.plot(list(range(1, level + 1)), damages, color=misc.rarity_colors[rarity])
+        plt.plot(list(range(1, level + 1)), damages, color=color_int_str(misc.rarity_colors[rarity]))
     plt.xlabel('Level')
     plt.ylabel(info['stat'].split(':')[0])
     plt.ylim(ymin=0)
+    plt.grid(linestyle='--')
     plt.savefig('output.png')
 
     embed = discord.Embed()

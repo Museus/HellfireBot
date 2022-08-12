@@ -77,7 +77,6 @@ async def pomscaling(ctx, *args) -> None:
     name, _, _ = misc.parse_boon(args)
     info = boons_info[name.lower()]
     values = info['rarities'].copy()
-    print(values)
     for rarity, value in enumerate(values):
         if '-' in value:
             value = value.split('-')
@@ -116,6 +115,4 @@ async def reply(ctx, message, mention=False):
 
 
 # keep_alive()
-# TOKEN = os.environ['TOKEN']
-
 client.run(TOKEN)

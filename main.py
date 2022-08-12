@@ -2,7 +2,9 @@ import discord
 import os
 from discord.ext import commands
 import matplotlib.pyplot as plt
+import string
 
+from private.config import TOKEN
 import misc
 
 # from webserver import keep_alive
@@ -10,7 +12,7 @@ import misc
 client = commands.Bot(command_prefix=['h!'], case_insensitive=True)
 
 boons_info = {}
-f = open('booninfo.txt', 'r', encoding='utf8')
+f = open('C:/Users/amber/Documents/testbot/actual bot/HellfireBot/booninfo.txt', 'r', encoding='utf8')
 while boon := f.readline().strip():
     type, boon = boon.split(' ', 1)
     boons_info[boon] = {'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
@@ -26,9 +28,12 @@ async def on_ready():
 @client.command(aliases=['b'])
 async def boon(ctx, *args) -> None:
     name, rarity, level = misc.parse_boon(args)
+    if name == "exclusive access":
+        embed=discord.Embed(title=f'**Exclusive Access**', description=f'Any **Boons** you find are more potent.\n▸Minimum Boon Rarity: **Epic**', color=0xD1FF18)
+        embed.set_thumbnail(url="https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/32/Exclusive_Access.png")
+        await ctx.reply(embed=embed, mention_author=True)
+        return
     info = boons_info[name.lower()]
-    output, rarity, level = misc.adjust_boon_type(info, name, rarity, level)
-    output += f'{info["desc"]}\n'
     value = info['rarities'][misc.rarities[rarity] - 1]
     if '-' in value:
         value = value.split('-')
@@ -36,6 +41,7 @@ async def boon(ctx, *args) -> None:
     else:
         value = [float(value)]
     pom = 0
+    lvl = level
     while level > 1:
         pom = min(pom, len(info['levels']) - 1)
         value[0] += int(info['levels'][pom])
@@ -43,8 +49,23 @@ async def boon(ctx, *args) -> None:
             value[1] += int(info['levels'][pom])
         level -= 1
         pom += 1
-    output += f'{misc.parse_stat(info["stat"], value)}'
-    await reply(ctx, output)
+    embed=discord.Embed(title=f'**{string.capwords(name)}** (Lv. {lvl})', description=f'{info["desc"]}\n▸{misc.parse_stat(info["stat"], value)}')
+    if info['type'] in ['legendary', 'duo']:
+        embed.title = f"**{string.capwords(name)}**"
+    if rarity == "common":
+        embed.color = 0xFFFFFF
+    elif rarity == "rare":
+        embed.color = 0x0083F3
+    elif rarity == "epic":
+        embed.color = 0x9500F6
+    elif rarity == "heroic":
+        embed.color = 0xFF1C10
+    if info['type'] in ['legendary']:
+        embed.color = 0xFFD511
+    if info['type'] in ['duo']:
+        embed.color = 0xD1FF18
+    embed.set_thumbnail(url=info['rarities'][4])
+    await ctx.reply(embed=embed, mention_author=True)
 
 
 @client.command(aliases=['ps'])
@@ -96,5 +117,5 @@ async def reply(ctx, message, mention=False):
 
 # keep_alive()
 # TOKEN = os.environ['TOKEN']
-TOKEN = 'MTAwNzE0MTc2Njk3OTM4NzQzMg.G1lopr.wXospGnfMFyzT8mt_3ezYLak2LHMHZw7-acxd4'
+
 client.run(TOKEN)

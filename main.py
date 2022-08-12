@@ -3,6 +3,7 @@ import os
 from discord.ext import commands
 import matplotlib.pyplot as plt
 
+from private.config import TOKEN
 import misc
 
 # from webserver import keep_alive
@@ -56,7 +57,6 @@ async def pomscaling(ctx, *args) -> None:
     name, _, _ = misc.parse_boon(args)
     info = boons_info[name.lower()]
     values = info['rarities'].copy()
-    print(values)
     for rarity, value in enumerate(values):
         if '-' in value:
             value = value.split('-')
@@ -95,6 +95,4 @@ async def reply(ctx, message, mention=False):
 
 
 # keep_alive()
-# TOKEN = os.environ['TOKEN']
-TOKEN = 'MTAwNzE0MTc2Njk3OTM4NzQzMg.G1lopr.wXospGnfMFyzT8mt_3ezYLak2LHMHZw7-acxd4'
 client.run(TOKEN)

@@ -1,0 +1,90 @@
+attack heartbreak strike
+    Your **Attack** deals more damage and inflicts **Weak**.
+    Attack Damage: {+%}
+    50 1.3-1.5 1.8-2.0 2.3-2.5
+    20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e3/Heartbreak_Strike.png/revision/latest?cb=20181213173756
+special heartbreak flourish
+    Your **Special** deals more damage and inflicts **Weak**.
+    Special Damage: {+%}
+    80 1.3-1.5 1.8-2.0 2.3-2.5
+    32 22 16 11 8
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e9/Heartbreak_Flourish.png/revision/latest?cb=20190215171021
+cast crush shot
+    Your **Cast** is a wide, short-range blast that inflicts **Weak**.
+    Cast Damage: {}
+    90 100 110 120
+    54 38 26 19 13 9
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/aa/Crush_Shot.png/revision/latest?cb=20200127124952
+flare passion flare
+    Your **Cast** damages foes around you and inflicts **Weak**.
+    Blast Damage: {}
+    80 96 112 128
+    48 34 24 16 12 8
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/aa/Crush_Shot.png/revision/latest?cb=20200127124952
+dash passion dash
+    Your **Dash** deals damage where you end up, inflicting **Weak**.
+    Dash Damage: {}
+    20 24 28 32
+    16 11 8 5 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e0/Passion_Dash.png/revision/latest?cb=20181214015816
+call aphrodite's aid
+    Your **Call** fires a seeking projectile that inflicts **Charm**.
+    Charm Duration: {s}
+    5 5.5 6 6.5
+    1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f0/Aphrodite%27s_Aid.png/revision/latest?cb=20190316095357
+t1 dying lament
+    When foes are slain, they damage nearby foes and inflict **Weak**.
+    Death Blast Damage: {}
+    40 1.3-1.5 1.8-2.0 2.3-2.5
+    24 17 12 8 6 4
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Dying_Lament.png/revision/latest?cb=20181214183225
+revenge wave of despair
+    After you take damage, damage foes around you and inflict **Weak**.
+    Revenge Damage: {}
+    50 1.3-1.5 1.8-2.0 2.3-2.5
+    40 28 20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/11/Wave_of_Despair.png/revision/latest?cb=20181214183018
+t1 life affirmation
+    Any <:MaxHealth:1007420838699597885> chamber rewards are worth more.
+    Bonus Life Gain: {+%}
+    30 36 42 48
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fa/Life_Affirmation.png/revision/latest?cb=20190808113533
+t1 different league
+    Resist some damage from nearby foes' attacks.
+    Reduced Damage From Foes: {+%}
+    10 12.5 15 17.5
+    4 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4b/Different_League.png/revision/latest?cb=20181214183136
+t2 empty inside
+    Your **Weak** effects have a longer duration.
+    Weak Duration: {+s}
+    5 7.5 10 12.5
+    2 1.4 1 0.7 0.5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c9/Empty_Inside.png/revision/latest?cb=20200706074535
+t2 broken resolve
+    Your **Weak** effects are more potent.
+    Weak Damage Reduction: {+%}
+    10 12.5 15 17.5
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1b/Broken_Resolve.png/revision/latest?cb=20200706074609
+t2 blown kiss
+    Your **Cast** shoots farther and is stronger against undamaged foes.
+    First-Hit Bonus Damage: {+%}
+    50 75 100 120
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dc/Blown_Kiss.png/revision/latest?cb=20200706074736
+t2 sweet surrender
+    **Weak**-afflicted foes are also more susceptible to damage.
+    Damage vs. Weak: {+%}
+    10 15 20 25
+    4 3 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a6/Sweet_Surrender.png/revision/latest?cb=20181214183154
+legendary unhealthy fixation
+    Your **Weak** effects also have a **+15%** chance to **Charm** foes.
+    Charm Duration: {s}
+    4
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/16/Unhealthy_Fixation.png/revision/latest?cb=20181214183049

@@ -1,0 +1,90 @@
+attack lightning strike
+    Your **Attack** emits chain-lightning when you damage a foe.
+    Lightning Damage: {}
+    10 12.5 15 20
+    4 3 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f6/Lightning_Strike.png
+special thunder flourish
+    Your **Special** causes a lightning bolt to strike nearby foes.
+    Lightning Damage: {}
+    30 38 45 60
+    12 8 6 4 3
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/ad/Thunder_Flourish.png
+cast electric shot
+    Your **Cast** is a burst of chain-lightning that bounces between foes.
+    Cast Damage: {}
+    60 70 81 90
+    24 17 12 8 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/01/Electric_Shot.png
+flare thunder flare
+    Your **Cast** causes a lightning bolt to strike nearby foes.
+    Cast Damage: {}
+    60 72 84 96
+    20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/01/Electric_Shot.png
+dash thunder dash
+    Your **Dash** causes a lightning bolt to strike nearby foes.
+    Lightning Damage: {}
+    10 15 20 25
+    8 6 4 3 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Thunder_Dash.png
+call zeus's aid
+    Your **Call** makes lightning rapidly strike nearby foes for **1.5 Sec**.
+    Lightning Damage: {}
+    50 55 60 65
+    20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ec/Zeus%27_Aid.png/revision/latest?cb=20190319212936
+t2 billowing strength
+    after using **Call**, you deal more damage for **15 Sec**.
+    Bonus Damage: {+%}
+    20 22 24 26
+    8 6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3d/Billowing_Strength.png/revision/latest?cb=20190808134841
+t1 lightning reflexes
+    After you **Dash** just before getting hit, a bolt strikes a nearby foes.
+    Lightning Damage: {}
+    20 30 40 50
+    10 7 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/25/Lightning_Reflexes.png/revision/latest?cb=20200706083311
+revenge heaven's vengeance
+    After you take damage, your foe is struck by lightning.
+    Revenge Damage: {}
+    80 1.3-1.5 1.8-2.0 2.3-2.5
+    64 45 31 22 15 11 8
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c5/Heaven%27s_Vengeance.png/revision/latest?cb=20181214185710
+t2 clouded judgment
+    Your **God Gauge** charges faster when you deal or take damage.
+    Faster Gauge Gain: {+%}
+    10 12 14 16
+    4 3 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/47/Clouded_Judgment.png
+t2 high voltage
+    Your lightning bolt effects deal damage in a larger area.
+    Bolt Area of Effect: {+%}
+    60 72 84 96
+    24 17 12 8 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d9/High_Voltage.png/revision/latest?cb=20190319212829
+t2 double strike
+    Your lightning bolt effects have a chance to strike twice.
+    Strike Chance: {+%}
+    25 30 35 40
+    10 7 5 3
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/65/Double_Strike.png/revision/latest?cb=20190319212853
+t2 storm lightning
+    Your chain-lightning effects bounce more times before expiring.
+    Lightning Bounces: {+}
+    2 4 6 8
+    2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6b/Storm_Lightning.png/revision/latest?cb=20190112135435
+status static discharge
+    Your lightning effects also make foes **Jolted**.
+    Jolt Damage: {}
+    60 1.3-1.5 1.8-2.0 2.3-2.5
+    36 25 18 12 9 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Static_Discharge.png/revision/latest?cb=20190510205819
+legendary splitting bolt
+    Whenever you strike foes with lightning **Boons**, fire an electric bolt.
+    Lightning Damage: {}
+    40
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/58/Splitting_Bolt.png

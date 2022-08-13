@@ -1,0 +1,84 @@
+attack deadly strike
+    Your **Attack** is stronger, with **+15%** chance to deal **Critical** damage.
+    Attack Damage: {+%}
+    20 1.3-1.5 1.8-2.0 2.3-2.5
+    8 6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2a/Deadly_Strike.png/revision/latest?cb=20181213182421
+special deadly flourish
+    Your **Special** is stronger, with **+20%** chance to deal **Critical** damage.
+    Special Damage: {+%}
+    40 1.3-1.5 1.8-2.0 2.3-2.5
+    16 11 8 5 4
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f6/Deadly_Flourish.png/revision/latest?cb=20190215171034
+cast true shot
+    Your **Cast** seeks foes, with **+10%** chance to deal **Critical** damage.
+    Cast Damage: {}
+    70 80 90 100
+    42 29 21 14 10 7
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/35/True_Shot.png/revision/latest?cb=20181214015821
+flare hunter's flare
+    Your **Cast** damages foes around you, with a **+10%** chance to deal **Critical** damage.
+    Blast Damage: {}
+    55 63 71 79
+    33 23 16 11 8 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/35/True_Shot.png/revision/latest?cb=20181214015821
+dash hunter dash
+    Your **Dash-Strike** deals more damage.
+    Dash-Strike Damage: {+%}
+    50 60 70 80
+    10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Hunter_Dash.png/revision/latest?cb=20181213182600
+call artemis's aid
+    Your **Call** fires a seeking arrow with **+15%** **Critical** chance.
+    Arrow Damage: {}
+    100 110 120 130
+    40 28 20 14 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2b/Artemis%27_Aid.png/revision/latest?cb=20190317140750
+t1 pressure points
+    Any damage you deal has a chance to be **Critical**.
+    Critical Chance: {+%}
+    2 3 4 5
+    1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b0/Pressure_Points.png/revision/latest?cb=20181213185844
+t2 exit wounds
+    Your foes take damage when your <:Cast:1007420837600694463> stuck in them is dislodged.
+    Dislodge Damage: {}
+    100 120 140 160
+    40 28 20 14 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d1/Exit_Wounds.png/revision/latest?cb=20200706075205
+t2 clean kill
+    Your **Critical** effects deal even more damage.
+    Critical Damage: {+%}
+    15 22.5 30 37.5
+    10 7 5 3
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/94/Clean_Kill.png/revision/latest?cb=20181213185801
+t2 support fire
+    After you **Cast** or hit with an **Attack** or **Special**, fire a seeking arrow.
+    Arrow Damage: {}
+    10 12 14 16
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e2/Support_Fire.png/revision/latest?cb=20181214175357
+t2 hide breaker
+    Your **Critical** effects deal even more damage to **Armor**.
+    Critical Damage vs. Armor: {+%}
+    100 1.3-1.5 2.0-2.5 2.5-2.7
+    40 28 20 14 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0a/Hide_Breaker.png/revision/latest?cb=20181217173704
+t2 hunter instinct
+    Your **God Gauge** charges up faster when you deal **Critical** damage.
+    Added Gauge Gain on Critical: {%}
+    0.25 0.3 0.35 0.4
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Hunter_Instinct.png/revision/latest?cb=20190317140729
+status hunter's mark
+    After you deal **Critical** damage to a foe, a foe near it is **Marked**.
+    Marked Critical Chance: {+%}
+    30 1.3-1.5 1.8-2.0 2.3-2.5
+    12 8 6 4 3
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bd/Hunter%27s_Mark.png/revision/latest?cb=20190510190503
+legendary fully loaded
+    Gain extra <:Cast:1007420837600694463> for your **Cast**.
+    Max Bloodstones: {+} <:Cast:1007420837600694463>
+    2
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8b/Fully_Loaded.png/revision/latest?cb=20181217035531

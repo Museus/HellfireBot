@@ -1,0 +1,90 @@
+attack curse of agony
+    Your **Attack** inflicts **Doom**.
+    Doom Damage: {}
+    50 75 100 125
+    30 21 15 10 7 5 4 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/83/Curse_of_Agony.png/revision/latest?cb=20181213182630
+special curse of pain
+    Your **Special** inflicts **Doom**.
+    Doom Damage: {}
+    60 80 100 120
+    40 28 19 14 10 7 6
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a4/Curse_of_Pain.png/revision/latest?cb=20220812021638
+cast slicing shot
+    Your **Cast** sends a **Blade Rift** hurtling ahead.
+    Rift Damage per Hit: {}
+    20 22 24 26
+    4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Slicing_Shot.png/revision/latest?cb=20181213182739
+flare slicing flare
+    Your **Cast** sends a large **Blade Rift** hurtling ahead for a brief time.
+    Rift Damage per Hit: {}
+    30 36 42 48
+    6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Slicing_Shot.png/revision/latest?cb=20181213182739
+dash blade dash
+    Your **Dash** creates a **Blade Rift** where you started.
+    Rift Damage per Hit:
+    10 12 14 16
+    6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/58/Blade_Dash.png/revision/latest?cb=20190612170533
+call ares' aid
+    Your **Call** turns you into an **Impervious** **Blade Rift** for **1.2 Sec**.
+    Rift Damage per Hit: {}
+    30 38 45 53
+    6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/63/Ares%27_Aid.png/revision/latest?cb=20190319224142
+revenge curse of vengeance
+    After you take damage, inflict **Doom** on foes around you.
+    Doom Damage: {}
+    100 120 140 160
+    80 56 39 27 19 13 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/04/Curse_of_Vengeance.png/revision/latest?cb=20181213182858
+t1 urge to kill
+    Your **Attack**, **Special**, and **Cast** deal more damage.
+    Bonus Damage: {+%}
+    10 13 16 19
+    4 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/25/Urge_to_Kill.png/revision/latest?cb=20181213182824
+t1 blood frenzy
+    After using **Death/Stubborn Defiance**, deal more damage that **Encounter**.
+    Encounter Bonus Damage: {+%}
+    15 22.5 30 37.5
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/66/Blood_Frenzy.png/revision/latest?cb=20200706073900
+t1 battle rage
+    After slaying a foe, your next **Attack** or **Special** deals more damage.
+    Damage Bonus: {+%}
+    100 150 200 250
+    30 21 15 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a1/Battle_Rage.png/revision/latest?cb=20190612170858
+t2 black metal
+    Your **Blade Rift** effects deal damage in a wider area.
+    Rift Area of Effect: {+%}
+    20 22 24 26
+    8 6 4 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0a/Black_Metal.png/revision/latest?cb=20181217061716
+t2 engulfing vortex
+    Your **Blade Rift** effects last longer and pull foes in.
+    Rift Duration: {+s}
+    0.2 0.3 0.4 0.5
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a3/Engulfing_Vortex.png/revision/latest?cb=20181218213436
+t2 dire misfortune
+    Your **Doom** effects deal more damage when applied multiple times.
+    Bonus Damage per Stack: {}
+    10 12 14 16
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3b/Dire_Misfortune.png/revision/latest?cb=20190319224100
+t2 impending doom
+    Your **Doom** effects deal more damage, but take **+0.5 Sec** to activate.
+    Bonus Doom Damage: {+%}
+    60 65 70 75
+    20 15 10 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/63/Impending_Doom.png/revision/latest?cb=20190808115201
+legendary vicious cycle
+    Your **Blade Rift** effects deal more damage for each consecutive hit.
+    Damage Increase per Hit: {+}
+    2
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Vicious_Cycle.png/revision/latest?cb=20190319224126

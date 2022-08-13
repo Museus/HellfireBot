@@ -1,0 +1,90 @@
+attack drunken strike
+    Your **Attack** inflicts **Hangover**.
+    Hangover Damage: {} *(every 0.5 Sec.)*
+    4 5 6 7
+    2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/80/Drunken_Strike.png/revision/latest?cb=20190213003056
+special drunken flourish
+    Your **Special** inflicts **Hangover**.
+    Hangover Damage: {} *(every 0.5 Sec.)*
+    5 6 7 8
+    2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/46/Drunken_Flourish.png/revision/latest?cb=20190215170412
+cast trippy shot
+    Your **Cast** lobs a large explosive that bursts into **Festive Fog**.
+    Cast Damage: {}
+    100 120 140 160
+    60 42 29 21 14 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a4/Trippy_Shot.png/revision/latest?cb=20190213003250
+flare trippy flare
+    Your **Cast** damages foes around you, leaving behind **Festive Fog**.
+    Blast Damage: {}
+    100 120 140 160
+    120 84 58 42 28 20
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a4/Trippy_Shot.png/revision/latest?cb=20190213003250
+dash drunken dash
+    Your **Dash** causes **Hangover** several times near where you started.
+    Hangover Damage: {} *(every 0.5 Sec.)*
+    2 3 4 5
+    1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e2/Drunken_Dash.png/revision/latest?cb=20190213003236
+call dionysus' aid
+    Your **Call** inflicts **Hangover** on foes all around you for **1.5 Sec**.
+    Hangover Damage: {} *(every 0.5 Sec.)*
+    15 16.5 18 19.5
+    6 4
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Dionysus%27_Aid.png/revision/latest?cb=20190319180618
+t1 premium vintage
+    Gain <:MaxHealth:1007420838699597885> when you pick up <:Nectar:1007449574023123047>. Receive **1** <:Nectar:1007449574023123047> now.
+    Nectar Life Gain: {+} <:MaxHealth:1007420838699597885>
+    20 25 30
+    0 0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3c/Premium_Vintage.png/revision/latest?cb=20190319180541
+t1 after party
+    If your <:Heart:1007187038681960529> is low after **Encounters**, restore to the threshold.
+    Life Threshold: {%} <:Heart:1007187038681960529>
+    30 40 50 60
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f3/After_Party.png/revision/latest?cb=20190214030859
+t1 strong drink
+    Using a **Fountain** restores *all* <:Heart:1007187038681960529> and gives you bonus damage.
+    Bonus Damage per Fountain: {+%}
+    3 4 5 6
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b3/Strong_Drink.png/revision/latest?cb=20200706080750
+t1 positive outlook
+    You take less damage while at **40%** <:Heart:1007187038681960529> or below.
+    Damage Resistance: {+%}
+    10 15 20 25
+    5 3 2 2 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bd/Positive_Outlook.png/revision/latest?cb=20190215170553
+?t2 high tolerance
+    You take less damage while standing in **Festive Fog**.
+    Damage Resistance: {+%}
+    15 22.5 37.5 40.5
+    4 3 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/91/High_Tolerance.png/revision/latest?cb=20190214030934
+?t2 bad influence
+    Deal more damage while **3** or more foes are **Hangover**-afflicted.
+    Bonus Damage: {+%}
+    50 75 100 125
+    20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8a/Bad_Influence.png/revision/latest?cb=20190214031332
+?t2 numbing sensation
+    Your **Hangover** effects also make foes move slower.
+    Move Speed Reduction: {+%}
+    15 1.3-1.5 2.0-2.2 2.5
+    5 3 3 2
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/41/Numbing_Sensation.png/revision/latest?cb=20190213003317
+t2 peer pressure
+    **Hangover**-afflicted foes inflict it on other foes near them every **4 Sec**.
+    Hangover Damage: {} *(every 0.5 Sec.)*
+    4 1.3-1.5 1.8-2.0 2.3-2.5
+    2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4a/Peer_Pressure.png/revision/latest?cb=20190319180353
+legendary black out
+    **Hangover**-afflicted foes take bonus damage in **Festive Fog**.
+    Fog Combo Damage: {+%}
+    60
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/ff/Black_Out.png/revision/latest?cb=20190215170625

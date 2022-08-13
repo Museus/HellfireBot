@@ -1,0 +1,48 @@
+zagreus sword
+    sword, blade, stygian, stygian blade, zag sword, zagsword, zsword
+nemesis
+    nemesis sword, nem sword
+poseidon
+    poseidon sword, pos sword
+arthur
+    arthur sword, excaliber, holy excaliber
+zagreus spear
+    spear, varatha, eternal spear, zag spear, zagspear, zspear
+achilles
+    achilles spear
+hades
+    hades spear, gigaros
+guan yu
+    guan yu spear, guanyu, guanyu spear, gy, gy spear
+zagreus shield
+    shield, shield of chaos, zag shield, zagshield, zshield
+chaos
+    chaos shield
+zeus
+    zeus shield
+beowulf
+    beowulf shield, beowolf shield, beowolf, beo, bugwulf
+zagreus bow
+    bow, coronact, heartseeking bow, heart-seeking bow, heart seeking bow, zag bow, zagbow, zbow
+chiron
+    chiron bow
+hera
+    hera bow
+rama
+    rama bow, sharanga, celestial sharanga
+zagreus fists
+    fist, fists, malphon, twin fists of malphon, zagreus fist, zag fist, zag fists, zagfist, zagfists, zfist, zfists
+talos
+    talos fist, talos fists
+demeter
+    demeter fist, demeter fists, dem fist, dem fists
+gilgamesh
+    gilgamesh fist, gilgamesh fists, gilga, gilga fist, gilga fists, gilgy, gilgy fist, gilgy fists
+zagreus rail
+    rail, gun, adamant rail, exagryph, zag rail, zagrail, zrail
+eris
+    eris rail, eris gun
+hestia
+    hestia rail, hestia gun, hesti, hesty, bestia, besty
+lucifer
+    lucifer rail, lucifer gun, luci, lucy, rof

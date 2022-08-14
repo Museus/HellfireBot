@@ -47,7 +47,7 @@ revenge wave of despair
     40 28 20 14 10 7 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/11/Wave_of_Despair.png/revision/latest?cb=20181214183018
 t1 life affirmation
-    Any <:MaxHealth:1007420838699597885> chamber rewards are worth more.
+    Any <:MaxHealth:1008235891308908545> chamber rewards are worth more.
     Bonus Life Gain: {+%}
     30 36 42 48
     0

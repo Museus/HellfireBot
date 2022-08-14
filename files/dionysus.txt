@@ -35,25 +35,25 @@ call dionysus' aid
     6 4
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Dionysus%27_Aid.png/revision/latest?cb=20190319180618
 t1 premium vintage
-    Gain <:MaxHealth:1007420838699597885> when you pick up <:Nectar:1007449574023123047>. Receive **1** <:Nectar:1007449574023123047> now.
-    Nectar Life Gain: {+} <:MaxHealth:1007420838699597885>
+    Gain <:MaxHealth:1008235891308908545> when you pick up <:Nectar:1007449574023123047>. Receive **1** <:Nectar:1007449574023123047> now.
+    Nectar Life Gain: {+} <:MaxHealth:1008235891308908545>
     20 25 30
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3c/Premium_Vintage.png/revision/latest?cb=20190319180541
 t1 after party
-    If your <:Heart:1007187038681960529> is low after **Encounters**, restore to the threshold.
-    Life Threshold: {%} <:Heart:1007187038681960529>
+    If your <:Heart:1008236023039410216> is low after **Encounters**, restore to the threshold.
+    Life Threshold: {%} <:Heart:1008236023039410216>
     30 40 50 60
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f3/After_Party.png/revision/latest?cb=20190214030859
 t1 strong drink
-    Using a **Fountain** restores *all* <:Heart:1007187038681960529> and gives you bonus damage.
+    Using a **Fountain** restores *all* <:Heart:1008236023039410216> and gives you bonus damage.
     Bonus Damage per Fountain: {+%}
     3 4 5 6
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b3/Strong_Drink.png/revision/latest?cb=20200706080750
 t1 positive outlook
-    You take less damage while at **40%** <:Heart:1007187038681960529> or below.
+    You take less damage while at **40%** <:Heart:1008236023039410216> or below.
     Damage Resistance: {+%}
     10 15 20 25
     5 3 2 2 2 1

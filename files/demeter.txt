@@ -53,7 +53,7 @@ t1 rare crop
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/10/Rare_Crop.png/revision/latest?cb=20200126153233
 t1 nourished soul
-    Any <:Healing:1007536016472682557> effects are more potent. Restore **40%** <:Heart:1007187038681960529> now.
+    Any <:Healing:1007536016472682557> effects are more potent. Restore **40%** <:Heart:1008236023039410216> now.
     Bonus Restoration: {+%} *(affects instant health from boon)*
     30 32.25 34.5
     0 0
@@ -83,7 +83,7 @@ t2 killing freeze
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/41/Killing_Freeze.png/revision/latest?cb=20200127124845
 legendary winter harvest
-    **Chill**-afflicted foes shatter at **10%** <:Heart:1007187038681960529>, inflicting **Chill** nearby.
+    **Chill**-afflicted foes shatter at **10%** <:Heart:1008236023039410216>, inflicting **Chill** nearby.
     Shatter Area Damage: {}
     50
     0

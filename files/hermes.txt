@@ -65,7 +65,7 @@ t2 quick favor
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Quick_Favor.png/revision/latest?cb=20200706081216
 t1 quick recovery
-    After taking damage, quickly **Dash** to recover some <:Heart:1007187038681960529> you just lost.
+    After taking damage, quickly **Dash** to recover some <:Heart:1008236023039410216> you just lost.
     Life Recovered: {%} *of damage taken*
     30 40 50 60
     0

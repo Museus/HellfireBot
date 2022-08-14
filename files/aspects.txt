@@ -17,7 +17,7 @@ poseidon
     Even before he ruled the seas, the blade's first bearer liked making a splash.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ce/Poseidon_Aspect.png/revision/latest?cb=20191013211640
 arthur
-    You have **Holy Excalibur, and **+50** <:MaxHealth:1007420838699597885> to your Life Total.
+    You have **Holy Excalibur, and **+50** <:MaxHealth:1008235891308908545> to your Life Total.
     Aura Damage Reduction: {+%}
     20 25 30 35 40
     Peace and destruction await a kingdom governed by the rule of might.
@@ -41,7 +41,7 @@ hades
     The god of the dead discarded the eternal spear for a larger counterpart.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/19/Hades_Aspect.png/revision/latest?cb=20191013212242
 guan yu
-    You have the **Frost Fair Blade**, but your <:MaxHealth:1007420838699597885> and <:Healing:1007536016472682557> are reduced.
+    You have the **Frost Fair Blade**, but your <:MaxHealth:1008235891308908545> and <:Healing:1007536016472682557> are reduced.
     Max Life & Healing: {-%}
     70 65 60 55 50
     A mighty general shall battle with unmatched ferocity to unite his people.

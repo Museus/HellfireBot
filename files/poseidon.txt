@@ -47,7 +47,7 @@ t1 hydraulic might
     10 7 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Hydraulic_Might.png/revision/latest?cb=20200706082725
 t1 sunken treasure
-    Gain a random assortment of <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, <:Obol:1007187039801856060>, and <:Heart:1007187038681960529>.
+    Gain a random assortment of <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, <:Obol:1007187039801856060>, and <:Heart:1008236023039410216>.
     Loot Multiplier: {x}
     1 1.5 2.2
     0

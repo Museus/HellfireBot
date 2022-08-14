@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import string
 
 import files
+import pactgen
 import parsing
 import misc
 from private.config import TOKEN
@@ -169,6 +170,13 @@ async def god(ctx, *args):
         embed.add_field(name=type, value=desc, inline=False)
     embed.set_thumbnail(url=misc.god_icons[name])
     await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command('p')
+async def pact(ctx, *args):
+    total_heat = pactgen.pact_gen(args)
+    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    os.remove('./temp.png')
 
 
 async def reply(ctx, message, mention=False):

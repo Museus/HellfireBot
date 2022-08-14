@@ -107,7 +107,7 @@ duo lightning rod
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/62/Lightning_Rod.png
 duo stubborn roots
-    If you have no **Death/Stubborn Defiance**, your <:Heart:1007187038681960529> slowly recovers.
+    If you have no **Death/Stubborn Defiance**, your <:Heart:1008236023039410216> slowly recovers.
     Life Regeneration During Battle: {} <:Healing:1007536016472682557> *(every 0.8 Sec.)*
     1
     0

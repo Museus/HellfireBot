@@ -4,8 +4,10 @@ from discord.ext import commands
 import matplotlib.pyplot as plt
 import string
 
-from private.config import TOKEN
+import files
+import parsing
 import misc
+from private.config import TOKEN
 
 # from webserver import keep_alive
 
@@ -20,14 +22,14 @@ async def on_ready():
 
 @client.command(aliases=['b'])
 async def boon(ctx, *args) -> None:
-    name, rarity, level = misc.parse_boon(args)
+    name, rarity, level = parsing.parse_boon(args)
     if not name:
-        print('bruh')
+        await reply(ctx, 'Invalid input!', True)
         return
-    info = misc.boons_info[name]
+    info = files.boons_info[name]
     if rarity == 'heroic' and len(info['rarities']) == 3:
         rarity = 'epic'
-    value = info['rarities'][misc.rarities[rarity] - 1]
+    value = info['rarities'][parsing.rarities[rarity] - 1]
     if '-' in value:
         value = value.split('-')
         value = [float(info['rarities'][0]) * float(v) for v in value]
@@ -47,15 +49,17 @@ async def boon(ctx, *args) -> None:
             value[1] += float(info['levels'][pom])
         level -= 1
         pom += 1
+    if info['type'] in ['legendary']:
+        color = 0xFFD511
+    elif info['type'] in ['duo']:
+        color = 0xD1FF18
+    else:
+        color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     embed = discord.Embed(
         title=f'**{string.capwords(name)}** ({level_display})',
-        description=f'{info["desc"]}\n▸{misc.parse_stat(info["stat"], value)}')
-    if info['type'] in ['legendary']:
-        embed.color = 0xFFD511
-    elif info['type'] in ['duo']:
-        embed.color = 0xD1FF18
-    else:
-        embed.color = misc.rarity_embed_colors[misc.rarities[rarity] - 1]
+        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
+        color=color
+    )
     embed.set_thumbnail(url=info['icon'])
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -66,8 +70,11 @@ async def pomscaling(ctx, *args) -> None:
     if args[len(args) - 1].isdigit():
         level = int(args[len(args) - 1])
         args = args[0: len(args) - 1]
-    name, _, _ = misc.parse_boon(args)
-    info = misc.boons_info[name]
+    name, _, _ = parsing.parse_boon(args)
+    if not name:
+        await reply(ctx, 'Invalid input!', True)
+        return
+    info = files.boons_info[name]
     values = info['rarities'].copy()
     for rarity, value in enumerate(values):
         if '-' in value:
@@ -115,19 +122,52 @@ async def pomscaling(ctx, *args) -> None:
 
 @client.command(aliases=['a'])
 async def aspect(ctx, *args):
-    name, level = misc.parse_aspect(args)
+    name, level = parsing.parse_aspect(args)
     if not name:
-        print('bruh')
+        await reply(ctx, 'Invalid input!', True)
         return
-    info = misc.aspects_info[name]
+    info = files.aspects_info[name]
     value = [int(info['levels'][level - 1])]
     embed = discord.Embed(
         title=f'**Aspect of {string.capwords(name)}** (Lv. {level})',
-        description=f'{info["desc"]}\n▸{misc.parse_stat(info["stat"], value)}',
+        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
         color=misc.rarity_embed_colors[level - 1]
     )
     embed.set_footer(text=info['flavor'])
     embed.set_thumbnail(url=info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['g'])
+async def god(ctx, *args):
+    name = parsing.parse_god(args)
+    if not name:
+        await reply(ctx, 'Invalid input!', True)
+        return
+    god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Legendary': []}
+    for boon_name in files.boons_info:
+        if files.boons_info[boon_name]['god'] == name:
+            type = files.boons_info[boon_name]['type']
+            if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
+                god_boons['Core'].append(boon_name)
+            elif type == 't1':
+                god_boons['Tier 1'].append(boon_name)
+            elif type == 't2':
+                god_boons['Tier 2'].append(boon_name)
+            elif type == 'status':
+                god_boons['Status'] = [boon_name]
+            elif type == 'revenge':
+                god_boons['Revenge'] = [boon_name]
+            elif type == 'legendary':
+                god_boons['Legendary'].append(boon_name)
+    embed = discord.Embed(
+        title=f'List of **{string.capwords(name)}** boons', color=misc.god_colors[name]
+    )
+
+    for type in god_boons:
+        desc = '\n'.join([string.capwords(b) for b in god_boons[type]])
+        embed.add_field(name=type, value=desc, inline=False)
+    embed.set_thumbnail(url=misc.god_icons[name])
     await ctx.reply(embed=embed, mention_author=False)
 
 

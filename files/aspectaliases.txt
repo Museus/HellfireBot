@@ -3,7 +3,7 @@ zagreus sword
 nemesis
     nemesis sword, nem sword
 poseidon
-    poseidon sword, pos sword
+    poseidon sword, pos sword, pos
 arthur
     arthur sword, excaliber, holy excaliber
 zagreus spear
@@ -33,16 +33,16 @@ rama
 zagreus fists
     fist, fists, malphon, twin fists of malphon, zagreus fist, zag fist, zag fists, zagfist, zagfists, zfist, zfists
 talos
-    talos fist, talos fists
+    talos fist, talos fists, bestlos, worstlos
 demeter
     demeter fist, demeter fists, dem fist, dem fists
 gilgamesh
     gilgamesh fist, gilgamesh fists, gilga, gilga fist, gilga fists, gilgy, gilgy fist, gilgy fists
 zagreus rail
-    rail, gun, adamant rail, exagryph, zag rail, zagrail, zrail
+    rail, gun, adamant rail, exagryph, zag rail, zagrail, zrail, worstia
 eris
     eris rail, eris gun
 hestia
     hestia rail, hestia gun, hesti, hesty, bestia, besty
 lucifer
-    lucifer rail, lucifer gun, luci, lucy, rof
+    lucifer rail, lucifer gun, luci, lucy, rof, super soaker, supersoaker

@@ -5,7 +5,7 @@ lightning reflexes
 heaven's vengeance
     
 clouded judgment
-    
+    clouded judgement
 high voltage
     
 double strike
@@ -113,7 +113,7 @@ impending doom
 vicious cycle
     
 premium vintage
-    
+    pv
 after party
     
 strong drink

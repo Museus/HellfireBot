@@ -58,19 +58,19 @@ t1 positive outlook
     10 15 20 25
     5 3 2 2 2 1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bd/Positive_Outlook.png/revision/latest?cb=20190215170553
-?t2 high tolerance
+t2 high tolerance
     You take less damage while standing in **Festive Fog**.
     Damage Resistance: {+%}
     15 22.5 37.5 40.5
     4 3 1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/91/High_Tolerance.png/revision/latest?cb=20190214030934
-?t2 bad influence
+t2 bad influence
     Deal more damage while **3** or more foes are **Hangover**-afflicted.
     Bonus Damage: {+%}
     50 75 100 125
     20 14 10 7 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8a/Bad_Influence.png/revision/latest?cb=20190214031332
-?t2 numbing sensation
+t2 numbing sensation
     Your **Hangover** effects also make foes move slower.
     Move Speed Reduction: {+%}
     15 1.3-1.5 2.0-2.2 2.5

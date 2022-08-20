@@ -2,6 +2,22 @@ import re
 from PIL import Image
 
 
+def reverse_pact_gen(input: [str]) -> [str]:
+    max_pact = {'hl': 5, 'lc': 4, 'cf': 2, 'js': 3, 'em': 4, 'cp': 2, 'bp': 2, 'mm': 1,
+                'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3, 'pl': 1}
+    for pact in input:
+        if len(pact) > 2:
+            base_pact = pact[0: 2]
+            try:
+                pact_rank = int(pact[2:])
+                if base_pact in max_pact and pact_rank < max_pact[base_pact]:
+                    max_pact[base_pact] = pact_rank
+            except ValueError:
+                continue
+    max_pact = [f'{base}{rank}' for base, rank in max_pact.items()]
+    return pact_gen(max_pact)
+
+
 def pact_gen(input: [str]) -> int:
     input = [s.lower() for s in input]
     hell_mode = False

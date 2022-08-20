@@ -172,9 +172,16 @@ async def god(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command('p')
+@client.command(aliases=['p'])
 async def pact(ctx, *args):
     total_heat = pactgen.pact_gen(args)
+    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    os.remove('./temp.png')
+
+
+@client.command(aliases=['p\'', '\'p', 'p!', '!p', 'pact\'', '\'pact', 'pact!', '!pact', 'rp'])
+async def rpact(ctx, *args):
+    total_heat = pactgen.reverse_pact_gen(args)
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 

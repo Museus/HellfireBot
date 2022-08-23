@@ -9,7 +9,7 @@ god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp
              'athena': 'https://cdn.discordapp.com/emojis/1007940470627893338.webp?size=96&quality=lossless',
              'aphrodite': 'https://cdn.discordapp.com/emojis/1007940684231217173.webp?size=96&quality=lossless',
              'artemis': 'https://cdn.discordapp.com/emojis/1007940543403262033.webp?size=96&quality=lossless',
-              'ares': 'https://cdn.discordapp.com/emojis/1007940354873507880.webp?size=96&quality=lossless',
+             'ares': 'https://cdn.discordapp.com/emojis/1007940354873507880.webp?size=96&quality=lossless',
              'dionysus': 'https://cdn.discordapp.com/emojis/1007940646373425182.webp?size=96&quality=lossless',
              'demeter': 'https://cdn.discordapp.com/emojis/1007940575674241055.webp?size=96&quality=lossless',
              'hermes': 'https://cdn.discordapp.com/emojis/1007940503179898990.webp?size=96&quality=lossless'}

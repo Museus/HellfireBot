@@ -8,6 +8,7 @@ import files
 import pactgen
 import parsing
 import misc
+import randompact
 from private.config import TOKEN
 
 # from webserver import keep_alive
@@ -179,11 +180,48 @@ async def pact(ctx, *args):
     os.remove('./temp.png')
 
 
-@client.command(aliases=['p\'', '\'p', 'p!', '!p', 'pact\'', '\'pact', 'pact!', '!pact', 'rp'])
-async def rpact(ctx, *args):
-    total_heat = pactgen.reverse_pact_gen(args)
+@client.command(aliases=['p\'', '\'p', 'p!', '!p', 'pact\'', '\'pact', 'pact!', '!pact', 'np', 'npact', 'negpact'])
+async def negatepact(ctx, *args):
+    total_heat = pactgen.negate_pact_gen(args)
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
+
+
+@client.command(aliases=['rand', 'random', 'randpact', 'rpact', 'rp'])
+async def randompact(ctx, total_heat, hell=None):
+    total_heat = int(total_heat)
+    if total_heat < (5 if hell else 0) or total_heat > (64 if hell else 63):
+        await reply(ctx, 'Invalid input!', True)
+        return
+    while True:
+        random_pact = {'hl': 1, 'lc': 1, 'js': 1, 'cp': 1, 'pl': 1} if hell else {}
+        if hell:
+            available_pact = pactgen.hell_pact.copy()
+            total_heat -= 5
+        else:
+            available_pact = pactgen.max_pact.copy()
+            available_pact.pop('pl')
+        if randompact.add_pact(total_heat, available_pact, random_pact):
+            break
+    total_heat = pactgen.pact_gen([f'{p}{r}' for p, r in random_pact.items()])
+    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    os.remove('./temp.png')
+
+
+@client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])
+async def modded(ctx):
+    await reply(ctx, 'if you want to download the speedrunning modpack it is available at '
+                     'https://www.speedrun.com/hades/resources\n '
+                     'all of its features can be toggled on or off and it includes:\n'
+                     '- guaranteed 2 sack\n'
+                     '- guaranteed first hammer\n'
+                     '- first boon offers all 4 core boons\n'
+                     '- removes tiny vermin, asterius, and barge of death minibosses\n'
+                     '- shows fountain rooms\n'
+                     'there are also a few qol features such as a quick reset feature and the ability to toggle hell '
+                     'mode, as well as a colorblind mode.\n\n '
+                     'instructions for downloading the modpack are in the '
+                     'file "instructions.txt" in the modpack folder')
 
 
 async def reply(ctx, message, mention=False):

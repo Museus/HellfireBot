@@ -1,10 +1,14 @@
 import re
 from PIL import Image
 
+max_pact = {'hl': 5, 'lc': 4, 'cf': 2, 'js': 3, 'em': 4, 'cp': 2, 'bp': 2, 'mm': 1,
+            'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3, 'pl': 1}
+hell_pact = {'hl': 4, 'lc': 3, 'cf': 2, 'js': 2, 'em': 4, 'cp': 1, 'bp': 2, 'mm': 1,
+             'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3}
 
-def reverse_pact_gen(input: [str]) -> [str]:
-    max_pact = {'hl': 5, 'lc': 4, 'cf': 2, 'js': 3, 'em': 4, 'cp': 2, 'bp': 2, 'mm': 1,
-                'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3, 'pl': 1}
+
+def negate_pact_gen(input: [str]) -> [str]:
+    global max_pact
     for pact in input:
         if len(pact) > 2:
             base_pact = pact[0: 2]
@@ -14,8 +18,8 @@ def reverse_pact_gen(input: [str]) -> [str]:
                     max_pact[base_pact] = pact_rank
             except ValueError:
                 continue
-    max_pact = [f'{base}{rank}' for base, rank in max_pact.items()]
-    return pact_gen(max_pact)
+    pact = [f'{base}{rank}' for base, rank in max_pact.items()]
+    return pact_gen(pact)
 
 
 def pact_gen(input: [str]) -> int:

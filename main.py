@@ -187,8 +187,8 @@ async def negatepact(ctx, *args):
     os.remove('./temp.png')
 
 
-@client.command(aliases=['rand', 'random', 'randpact', 'rpact', 'rp'])
-async def randompact(ctx, total_heat, hell=None):
+@client.command(aliases=['rand', 'random', 'randompact', 'rpact', 'rp'])
+async def randpact(ctx, total_heat, hell=None):
     total_heat = int(total_heat)
     if total_heat < (5 if hell else 0) or total_heat > (64 if hell else 63):
         await reply(ctx, 'Invalid input!', True)

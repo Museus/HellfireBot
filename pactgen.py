@@ -5,9 +5,17 @@ max_pact = {'hl': 5, 'lc': 4, 'cf': 2, 'js': 3, 'em': 4, 'cp': 2, 'bp': 2, 'mm':
             'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3, 'pl': 1}
 hell_pact = {'hl': 4, 'lc': 3, 'cf': 2, 'js': 2, 'em': 4, 'cp': 1, 'bp': 2, 'mm': 1,
              'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3}
+opt_pacts = {
+    'speedrun': ['fo2', 'em2'],
+    'eris 50': ['n', 'em3', 'cp1', 'ri1', 'ap1'],
+    'lucifer 50': ['n', 'em3', 'cp1', 'ri1', 'ap1'],
+    'zshield 50': ['n', 'em3', 'cp0', 'hs0', 'ri2', 'dc0', 'ap2', 'pl0'],
+    'first 32': ['hl1', 'lc4', 'em3', 'bp2', 'mm', 'uc', 'fo2', 'td3'],
+    'hardest 32': ['lc4', 'js2', 'em4', 'cp2', 'ri4', 'td3']
+}
 
 
-def negate_pact_gen(input: [str]) -> [str]:
+def negate_pact_gen(input: [str]) -> int:
     global max_pact
     for pact in input:
         if len(pact) > 2:
@@ -24,6 +32,10 @@ def negate_pact_gen(input: [str]) -> [str]:
 
 def pact_gen(input: [str]) -> int:
     input = [s.lower() for s in input]
+    if ' '.join(input) in opt_pacts:
+        input = opt_pacts[' '.join(input)]
+        if input[0] == 'n':
+            return negate_pact_gen(input[1:])
     hell_mode = False
     total_heat = 0
     base = Image.open('./files/pacts/base.png')

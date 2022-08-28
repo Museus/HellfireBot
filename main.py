@@ -8,6 +8,7 @@ import files
 import pactgen
 import parsing
 import misc
+import randommirror
 import randompact
 from private.config import TOKEN
 
@@ -205,6 +206,13 @@ async def randpact(ctx, total_heat, hell=None):
             break
     total_heat = pactgen.pact_gen([f'{p}{r}' for p, r in random_pact.items()])
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    os.remove('./temp.png')
+
+
+@client.command()
+async def mirror(ctx, *args):
+    randommirror.random_mirror(' '.join(args))
+    await ctx.reply(file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 
 

@@ -16,6 +16,8 @@ demeter
     demeters, demeter's, dems, dem's, dem, frost, icy, cold, chill, snow, ❄
 hermes
     hermes', hermes's, herm, herme, swift
+bouldy
+    boulder, rock, 🪨
 attack
     strike, dstrike, ⚔
 special

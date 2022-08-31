@@ -1,18 +1,16 @@
-import discord
 import os
-from discord.ext import commands
+import random
+
+import discord
 import matplotlib.pyplot as plt
-import string
+from discord.ext import commands
 
 import files
+import misc
 import pactgen
 import parsing
-import misc
 import randommirror
 import randompact
-from private.config import TOKEN
-
-# from webserver import keep_alive
 
 client = commands.Bot(command_prefix=['h!'], case_insensitive=True)
 
@@ -59,7 +57,7 @@ async def boon(ctx, *args) -> None:
     else:
         color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     embed = discord.Embed(
-        title=f'**{string.capwords(name)}** ({level_display})',
+        title=f'**{misc.capwords(name)}** ({level_display})',
         description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
         color=color
     )
@@ -132,7 +130,7 @@ async def aspect(ctx, *args):
     info = files.aspects_info[name]
     value = [int(info['levels'][level - 1])]
     embed = discord.Embed(
-        title=f'**Aspect of {string.capwords(name)}** (Lv. {level})',
+        title=f'**Aspect of {misc.capwords(name)}** (Lv. {level})',
         description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
         color=misc.rarity_embed_colors[level - 1]
     )
@@ -147,30 +145,45 @@ async def god(ctx, *args):
     if not name:
         await reply(ctx, 'Invalid input!', True)
         return
-    god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Legendary': []}
-    for boon_name in files.boons_info:
-        if files.boons_info[boon_name]['god'] == name:
-            type = files.boons_info[boon_name]['type']
-            if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
-                god_boons['Core'].append(boon_name)
-            elif type == 't1':
-                god_boons['Tier 1'].append(boon_name)
-            elif type == 't2':
-                god_boons['Tier 2'].append(boon_name)
-            elif type == 'status':
-                god_boons['Status'] = [boon_name]
-            elif type == 'revenge':
-                god_boons['Revenge'] = [boon_name]
-            elif type == 'legendary':
-                god_boons['Legendary'].append(boon_name)
+    if name == 'bouldy':
+        god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
+    else:
+        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Legendary': []}
+        for boon_name in files.boons_info:
+            if files.boons_info[boon_name]['god'] == name:
+                type = files.boons_info[boon_name]['type']
+                if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
+                    god_boons['Core'].append(boon_name)
+                elif type == 't1':
+                    god_boons['Tier 1'].append(boon_name)
+                elif type == 't2':
+                    god_boons['Tier 2'].append(boon_name)
+                elif type == 'status':
+                    god_boons['Status'] = [boon_name]
+                elif type == 'revenge':
+                    god_boons['Revenge'] = [boon_name]
+                elif type == 'legendary':
+                    god_boons['Legendary'].append(boon_name)
     embed = discord.Embed(
-        title=f'List of **{string.capwords(name)}** boons', color=misc.god_colors[name]
+        title=f'List of **{misc.capwords(name)}** boons', color=misc.god_colors[name]
     )
 
     for type in god_boons:
-        desc = '\n'.join([string.capwords(b) for b in god_boons[type]])
+        desc = '\n'.join([misc.capwords(b) for b in god_boons[type]])
         embed.add_field(name=type, value=desc, inline=False)
     embed.set_thumbnail(url=misc.god_icons[name])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['boulder', 'rock', '🪨'])
+async def bouldy(ctx):
+    info = random.choice(files.bouldy_info)
+    embed = discord.Embed(
+        title=f'**Heart of Stone**',
+        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], "")}',
+        color=misc.god_colors['bouldy']
+    )
+    embed.set_thumbnail(url=info['icon'])
     await ctx.reply(embed=embed, mention_author=False)
 
 
@@ -236,5 +249,7 @@ async def reply(ctx, message, mention=False):
     await ctx.reply(message, mention_author=mention)
 
 
+# from webserver import keep_alive
 # keep_alive()
+from private.config import TOKEN
 client.run(TOKEN)

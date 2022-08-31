@@ -37,11 +37,11 @@ def parse_aspect(input: [str]) -> (str, int):
 def parse_god(input: [str]) -> str:
     input = [s.lower() for s in input]
     god_name = ' '.join(input)
-    if god_name in files.god_cores:
+    if god_name in files.god_cores or god_name == 'bouldy':
         return god_name
-    if god_name in files.core_aliases and files.core_aliases[god_name] in files.god_cores:
+    if god_name in files.core_aliases and files.core_aliases[god_name] in [*files.god_cores, 'bouldy']:
         return files.core_aliases[god_name]
-    return ' '
+    return ''
 
 
 def parse_stat(stat_line: str, value: [float]) -> str:

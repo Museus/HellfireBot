@@ -40,6 +40,7 @@ t2 boiling point
     40 50 60 70
     16 11 8 5 4
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b5/Boiling_Point.png/revision/latest?cb=20190319200652
+    1(any aid boon)
 t1 hydraulic might
     Your **Attack** and **Special** are stronger the first **10 Sec** in **Encounters**.
     Initial Damage Bonus: {+%}
@@ -64,39 +65,46 @@ t2 typhoon's fury
     200 250 300 350
     80 56 39 27 20
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3b/Typhoon%27s_Fury.png/revision/latest?cb=20181214225920
+    1(tempest strike, tempest flourish, flood shot, tidal dash, poseidon's aid)
 t2 wave pounding
     Your **Boons** with knock-away effects deal bonus damage to **Bosses**.
     Knock-Away Damage vs. Bosses: {+%}
     20 30 40 50
     8 6 4 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e3/Wave_Pounding.png/revision/latest?cb=20200127125711
+    1(tempest strike, tempest flourish, flood shot, tidal dash, poseidon's aid)
 t2 rip current
     Your **Call** pulls in foes and the effect lasts longer.
     Bonus Duration: {s} **Duration**
     1 1.25 1.5 1.75
     0.2 0.1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/14/Rip_Current.png/revision/latest?cb=20200706082807
+    1(poseidon's aid)
 t2 breaking wave
     Slamming foes into barriers creates a watery blast in the area.
     Blast Damage: {}
     100 150 200 250
     40 28 20 14 10
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/84/Breaking_Wave.png/revision/latest?cb=20181214225512
+    1(tempest strike, tempest flourish, flood shot, tidal dash, poseidon's aid)
 status razor shoals
     Your **Boons** with knock-away effects also **Rupture** foes.
     Rupture Damage: {} *(every 0.2 Sec.)*
     10 15 20 25
     6 4 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6a/Razor_Shoals.png/revision/latest?cb=20190319200507
+    1(tempest strike, tempest flourish, flood shot, tidal dash, poseidon's aid)
 legendary second wave
     Your **Boons** with knock-away effects shove foes multiple times.
     Bonus Knock-Away Effects: {+}
     1
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/18/Second_Wave.png/revision/latest?cb=20181214230010
+    1(tempest strike, tempest flourish, flood shot, tidal dash, poseidon's aid); 1(breaking wave, typhoon's fury)
 legendary huge catch
     You have a greater chance to find a **Fishing Point** in each **Chamber**.
     Fish Spawn Chance: {+%}
     20
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/cc/Huge_Catch.png/revision/latest?cb=20200706082622
+    2(ocean's bounty, sunken treasure, conch shell)

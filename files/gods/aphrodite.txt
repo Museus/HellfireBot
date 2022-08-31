@@ -64,27 +64,32 @@ t2 empty inside
     5 7.5 10 12.5
     2 1.4 1 0.7 0.5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c9/Empty_Inside.png/revision/latest?cb=20200706074535
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash)
 t2 broken resolve
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
     10 12.5 15 17.5
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1b/Broken_Resolve.png/revision/latest?cb=20200706074609
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash)
 t2 blown kiss
     Your **Cast** shoots farther and is stronger against undamaged foes.
     First-Hit Bonus Damage: {+%}
     50 75 100 120
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dc/Blown_Kiss.png/revision/latest?cb=20200706074736
+    1(crush shot)
 t2 sweet surrender
     **Weak**-afflicted foes are also more susceptible to damage.
     Damage vs. Weak: {+%}
     10 15 20 25
     4 3 2 1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a6/Sweet_Surrender.png/revision/latest?cb=20181214183154
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash)
 legendary unhealthy fixation
     Your **Weak** effects also have a **+15%** chance to **Charm** foes.
     Charm Duration: {s}
     4
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/16/Unhealthy_Fixation.png/revision/latest?cb=20181214183049
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(empty inside, sweet surrender, broken resolve)

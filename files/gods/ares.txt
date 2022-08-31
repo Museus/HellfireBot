@@ -64,27 +64,32 @@ t2 black metal
     20 22 24 26
     8 6 4 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0a/Black_Metal.png/revision/latest?cb=20181217061716
+    1(slicing shot, slicing flare, blade dash, ares' aid)
 t2 engulfing vortex
     Your **Blade Rift** effects last longer and pull foes in.
     Rift Duration: {+s}
     0.2 0.3 0.4 0.5
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a3/Engulfing_Vortex.png/revision/latest?cb=20181218213436
+    1(slicing shot, slicing flare, blade dash, ares' aid)
 t2 dire misfortune
     Your **Doom** effects deal more damage when applied multiple times.
     Bonus Damage per Stack: {}
     10 12 14 16
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3b/Dire_Misfortune.png/revision/latest?cb=20190319224100
+    1(curse of agony, curse of pain)
 t2 impending doom
     Your **Doom** effects deal more damage, but take **+0.5 Sec** to activate.
     Bonus Doom Damage: {+%}
     60 65 70 75
     20 15 10 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/63/Impending_Doom.png/revision/latest?cb=20190808115201
+    1(curse of agony, curse of pain, curse of vengeance)
 legendary vicious cycle
     Your **Blade Rift** effects deal more damage for each consecutive hit.
     Damage Increase per Hit: {+}
     2
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Vicious_Cycle.png/revision/latest?cb=20190319224126
+    1(black metal, engulfing vortex)

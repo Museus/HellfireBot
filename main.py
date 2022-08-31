@@ -65,7 +65,7 @@ async def boon(ctx, *args) -> None:
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['ps'])
+@client.command(aliases=['ps', 'pom', 'poms'])
 async def pomscaling(ctx, *args) -> None:
     level = 10
     if args[len(args) - 1].isdigit():
@@ -121,6 +121,29 @@ async def pomscaling(ctx, *args) -> None:
     os.remove('output.png')
 
 
+@client.command(aliases=['pre', 'pres', 'prereq', 'prereqs', 'prerequisite'])
+async def prerequisites(ctx, *args):
+    name, _, _ = parsing.parse_boon(args)
+    if not name:
+        await reply(ctx, 'Invalid input!', True)
+        return
+    boon_info = files.boons_info[name]
+    embed = discord.Embed(
+        title=f'**{misc.capwords(name)}**',
+        color=misc.god_colors[boon_info['god']]
+    )
+    try:
+        prereq_info = files.prereq_info[name]
+        output = parsing.parse_prereqs(prereq_info)
+        for category in output:
+            desc = '\n'.join([misc.capwords(b) for b in category[1:]])
+            embed.add_field(name=category[0], value=desc, inline=False)
+    except KeyError:
+        embed.description = '(None in particular)'
+    embed.set_thumbnail(url=boon_info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
 @client.command(aliases=['a'])
 async def aspect(ctx, *args):
     name, level = parsing.parse_aspect(args)
@@ -148,29 +171,23 @@ async def god(ctx, *args):
     if name == 'bouldy':
         god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
     else:
-        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Legendary': []}
+        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Status': [], 'Revenge': [], 'Legendary': []}
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
                 type = files.boons_info[boon_name]['type']
                 if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
                     god_boons['Core'].append(boon_name)
-                elif type == 't1':
-                    god_boons['Tier 1'].append(boon_name)
-                elif type == 't2':
-                    god_boons['Tier 2'].append(boon_name)
-                elif type == 'status':
-                    god_boons['Status'] = [boon_name]
-                elif type == 'revenge':
-                    god_boons['Revenge'] = [boon_name]
-                elif type == 'legendary':
-                    god_boons['Legendary'].append(boon_name)
+                elif type[0] == 't':
+                    god_boons[f'Tier {type[1]}'].append(boon_name)
+                else:
+                    god_boons[type.capitalize()].append(boon_name)
     embed = discord.Embed(
         title=f'List of **{misc.capwords(name)}** boons', color=misc.god_colors[name]
     )
-
     for type in god_boons:
-        desc = '\n'.join([misc.capwords(b) for b in god_boons[type]])
-        embed.add_field(name=type, value=desc, inline=False)
+        if god_boons[type]:
+            desc = '\n'.join([misc.capwords(b) for b in god_boons[type]])
+            embed.add_field(name=type, value=desc, inline=False)
     embed.set_thumbnail(url=misc.god_icons[name])
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -222,7 +239,7 @@ async def randpact(ctx, total_heat, hell=None):
     os.remove('./temp.png')
 
 
-@client.command()
+@client.command(aliases=['m'])
 async def mirror(ctx, *args):
     randommirror.random_mirror(' '.join(args))
     await ctx.reply(file=discord.File('./temp.png'), mention_author=False)
@@ -251,5 +268,6 @@ async def reply(ctx, message, mention=False):
 
 # from webserver import keep_alive
 # keep_alive()
+# TOKEN = os.environ['TOKEN']
 from private.config import TOKEN
 client.run(TOKEN)

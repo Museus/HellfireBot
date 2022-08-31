@@ -1,6 +1,7 @@
 boons_info = {}
 bouldy_info = []
 aspects_info = {}
+prereq_info = {}
 core_aliases = {}
 misc_aliases = {}
 aspect_aliases = {}
@@ -11,11 +12,21 @@ for god in god_cores.keys():
     f = open(f'./files/gods/{god}.txt', 'r', encoding='utf8')
     while boon := f.readline().strip():
         type, boon = boon.split(' ', 1)
+        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'revenge', 't1']
+        if type[0] == 'x':
+            type = type[1:]
         if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary']:
             god_cores[god][type] = boon
         boons_info[boon] = {'god': god, 'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
                             'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
                             'icon': f.readline().strip()}
+        if has_prereq:
+            prereqs = f.readline().strip().split('; ')
+            prereq_list = []
+            for prereq in prereqs:
+                prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
+            prereq_info[boon] = prereq_list
+
 f = open(f'./files/gods/bouldy.txt', 'r', encoding='utf8')
 while f.readline():
     bouldy_info.append({'desc': f.readline().strip(), 'stat': f.readline().strip(), 'icon': f.readline().strip()})

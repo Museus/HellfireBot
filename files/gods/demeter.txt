@@ -70,21 +70,25 @@ t2 glacial glare
     2.0 2.4 2.8 3.2
     1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/83/Glacial_Glare.png/revision/latest?cb=20200706080355
+    1(crystal beam)
 t2 arctic blast
     Applying **10** stacks of **Chill** causes a blast, clearing the effect.
     Blast Area Damage: {}
     80 90 100 110
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Arctic_Blast.png/revision/latest?cb=20200126153350
+    1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)
 t2 killing freeze
     When *all* foes are **Chill**-afflicted, they are **+10, 15, 20, 25%** slower and decay.
     Decay Damage: {} *(every 0.5 Sec.)*
     20 30 40 50
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/41/Killing_Freeze.png/revision/latest?cb=20200127124845
+    1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)
 legendary winter harvest
     **Chill**-afflicted foes shatter at **10%** <:Heart:1008236023039410216>, inflicting **Chill** nearby.
     Shatter Area Damage: {}
     50
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/50/Winter_Harvest.png/revision/latest?cb=20200126153646
+    2(ravenous will, arctic blast, killing freeze)

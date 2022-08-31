@@ -67,3 +67,21 @@ def parse_stat(stat_line: str, value: [float]) -> str:
         value = f'{value}x'
     stat = re.sub(r'{.*}', f'**{value}**', stat_line)
     return stat
+
+
+def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
+    parsed_prereqs = []
+    for category in prereqs:
+        parsed_category = []
+        if category[0] == 'x':
+            parsed_category.append('Incompatible with')
+        elif category[0] == 'm':
+            parsed_category.append('Mirror perk')
+        elif category[0] == 'r' or len(category[1]) == 1:
+            parsed_category.append('Requires')
+        else:
+            parsed_category.append(f'Requires {category[0]} of')
+        for boon in category[1]:
+            parsed_category.append(boon)
+        parsed_prereqs.append(parsed_category)
+    return parsed_prereqs

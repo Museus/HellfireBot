@@ -52,18 +52,21 @@ t2 deathless stand
     2 2.5 3
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f1/Deathless_Stand.png/revision/latest?cb=20190319172902
+    1(divine strike, divine flourish, phalanx shot, divine dash); r(defiance slot)
 t2 last stand
     **Death/Stubborn Defiance** restores more <:Heart:1008236023039410216> than usual. Replenish **1** use.
     Bonus Restoration: {+%}
     10 12 14
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/41/Last_Stand.png/revision/latest?cb=20190319172950
+    1(divine strike, divine flourish, phalanx shot, divine dash); r(defiance slot)
 t2 proud bearing
     You begin each **Encounter** with your **God Gauge** partly full.
     Starting Gauge: {%}
     20 25 30 40
     10 7 5 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2e/Proud_Bearing.png/revision/latest?cb=20190319172927
+    1(any aid boon)
 t1 sure footing
     Resist damage from **Traps**.
     Reduced Damage From Traps: {+%}
@@ -76,15 +79,18 @@ status blinding flash
     50 62.5 75 87.5
     20 14 10 7 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/89/Blinding_Flash.png/revision/latest?cb=20190510192734
+    1(divine strike, divine flourish, phalanx shot, divine dash)
 t2 brilliant riposte
     When you **Deflect** attacks, it deals more damage.
     Deflect Damage: {+%}
     80 1.3-1.5 2.0-2.5 2.5-2.7
     32 22 16 11 8
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e3/Brilliant_Riposte.png/revision/latest?cb=20181229223018
+    1(divine strike, divine flourish, divine dash, holy shield)
 legendary divine protection
     You have a barrier than negates an instance of damage.
     Barrier Refresh Time: {s}
     20
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4f/Divine_Protection.png/revision/latest?cb=20190112135522
+    1(brilliant riposte)

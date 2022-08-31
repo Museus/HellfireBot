@@ -4,165 +4,193 @@ duo curse of longing
     50
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Curse_of_Longing.png/revision/latest?cb=20190316095424
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(curse of agony, curse of pain)
 duo heart rend
     Your **Critical** effects deal even more damage to **Weak** foes.
     Bonus Critical Damage: {+%}
     150
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/9f/Heart_Rend.png/revision/latest?cb=20190808113757
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(deadly strike, deadly flourish, true shot, hunter's flare)
 duo parting shot
     Your **Cast** gains any bonuses you have for striking foes from behind.
     Bonus Backstab Damage: {+%}
     35
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/10/Parting_Shot.png/revision/latest?cb=20190808113813
+    1(heartbreak strike, heartbreak flourish, crush shot, passion dash, aphrodite's aid); 1(divine strike, divine flourish, phalanx shot, divine dash, athena's aid); x(aspect of beowulf, trippy flare)
 duo cold embrace
     Your **Cast** crystal fires its beam directly at you for **+4 Sec**.
     Bonus Cast Damage: {+%}
     30
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/21/Cold_Embrace.png/revision/latest?cb=20200706074812
+    1(heartbreak strike, heartbreak flourish, passion dash, aphrodite's aid); 1(crystal beam); x(aspect of beowulf, crystal clarity)
 duo low tolerance
     Your **Hangover** effects can stack more times against **Weak** foes.
     Max Stacks vs. Weak: {+}
     3
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/45/Low_Tolerance.png/revision/latest?cb=20190319180637
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(drunken strike, drunken flourish, drunken dash, dionysus' aid)
 duo sweet nectar
     Any **Poms of Power** you find are more potent.
     Bonus Lv. from Poms: {+}
     1
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/56/Sweet_Nectar.png/revision/latest?cb=20190808113827
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash, aphrodite's aid); 1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid)
 duo smoldering air
     Your **God Gauge** charges up automatically, but is capped at **25%**.
     Auto Gauge Gain: {%} *(every 0.2 Sec.)*
     1
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ca/Smoldering_Air.png/revision/latest?cb=20200706074854
+    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash, aphrodite's aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid); 1(any non-Hades aid boon)
 duo hunting blades
     Your **Cast** creates a faster **Blade Rift** that seeks the nearest foe.
     Seek Duration: {s}
     3.3
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fd/Hunting_Blades.png/revision/latest?cb=20190317140925
+    1(slicing shot); 1(deadly strike, deadly flourish, hunter dash, artemis' aid); x(aspect of beowulf, freezing vortex)
 duo merciful end
     Your abilities that can **Deflect** immediately activate **Doom** effects.
     Doom Combo Damage: {}
     40
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ca/Merciful_End.png/revision/latest?cb=20190612170303
+    1(curse of agony, curse of pain); 1(divine strike, divine flourish)
 duo freezing vortex
     Your **Cast** inflicts **Chill**, but is smaller and moves slower.
     Blade Rift Size: {-%}
     15
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a1/Freezing_Vortex.png/revision/latest?cb=20200706072856
+    1(slicing shot, slicing flare); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(hunting blades)
 duo curse of nausea
     Your **Hangover** effects deal damage faster.
     Hangover Damage Rate: **0.5 Sec.** ⇒ {s}
     0.35
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/55/Curse_of_Nausea.png/revision/latest?cb=20200706072722
+    1(drunken strike, drunken flourish, drunken dash, dionysus' aid); 1(curse of agony, curse of pain, curse of vengeance)
 duo curse of drowning
     Your **Flood Shot** becomes a pulse that damages foes around you.
     Pulses per Cast: {}
     3
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/57/Curse_of_Drowning.png/revision/latest?cb=20200627130723
+    1(curse of agony, curse of pain, blade dash, ares' aid); 1(flood shot, flood flare); x(aspect of hera, blizzard shot, ice wine, mirage shot)
 duo vengeful mood
     Your **Revenge** effects sometimes occur without taking damage.
     Auto-Revenge Rate: {s}
     3
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0a/Vengeful_Mood.png/revision/latest?cb=20190808115342
+    1(curse of agony, curse of pain, slicing shot, slicing flare, blade dash, ares' aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid); 1(any revenge boon)
 duo deadly reversal
     After you **Deflect**, briefly gain +20% chance to deal **Critical** damage.
     Effect Duration: {s}
     2
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/47/Deadly_Reversal.png/revision/latest?cb=20190317141706
+    1(deadly strike, deadly flourish, true shot, hunter's flare, artemis' aid); 1(divine strike, divine flourish)
 duo crystal clarity
     Your **Cast** is stronger and tracks foes more effectively.
     Beam Damage: {+%}
     10
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/25/Crystal_Clarity.png/revision/latest?cb=20200126153418
+    1(crystal beam); 1(deadly strike, deadly flourish, hunter dash, artemis' aid); x(aspect of beowulf, cold embrace)
 duo splitting headache
     **Hangover**-afflicted foes are more likely to take **Critical** damage.
     Bonus Critical Chance per <:Hangover:1007536037419040808>: **+1.5%**
     0
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/da/Splitting_Headache.png/revision/latest?cb=20200706075512
+    1(deadly strike, deadly flourish, true shot, artemis' aid); 1(deadly strike, deadly flourish, drunken dash, dionysus' aid)
 duo mirage shot
     Your **Cast** fires a second projectile, which deals reduced base damage.
     Secondary Shot Damage: {%}
     30
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/ab/Mirage_Shot.png/revision/latest?cb=20200706075539
+    1(deadly strike, deadly flourish, true shot, hunter's flare, artemis' aid); 1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid); x(curse of drowning)
 duo lightning rod
     Your collectible <:Cast:1007420837600694463> strike nearby foes with lightning every **1 Sec**.
     Lightning Damage: {}
     70
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/62/Lightning_Rod.png
+    m(infernal soul); 1(deadly strike, deadly flourish, true shot, hunter's flare, hunter dash, artemis' aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid)
 duo stubborn roots
     If you have no **Death/Stubborn Defiance**, your <:Heart:1008236023039410216> slowly recovers.
     Life Regeneration During Battle: {} <:Healing:1007536016472682557> *(every 0.8 Sec.)*
     1
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/aa/Stubborn_Roots.png/revision/latest?cb=20200706075853
+    1(divine strike, divine flourish, phalanx shot, phalanx flare, divine dash, athena's aid); 1(frost strike, frost flourish, crystal beam, icy flare, mistral dash, demeter's aid); r(defiance slot)
 duo calculated risk
     Your foes' ranged-attack projectiles are slower.
     Foe Projectile Speed Reduction: {+%}
     50
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0c/Calculated_Risk.png/revision/latest?cb=20200706075949
+    1(divine strike, divine flourish, divine dash, athena's aid); 1(drunken strike, drunken flourish, drunken dash, dionysus' aid)
 duo unshakable mettle
     You cannot be stunned, and resist some damage from **Bosses**.
     Boss Damage Reduction: {+%}
     10
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/cf/Unshakable_Mettle.png/revision/latest?cb=20200706080013
+    1(divine strike, divine flourish, phalanx shot, phalanx flare, athena's aid); 1(tempest strike, tempest flourish, flood shot, flood flare, poseidon's aid)
 duo lightning phalanx
     Your Phalanx Shot **Cast** bounces between nearby foes.
     Max Bounces: {}
     3
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/70/Lightning_Phalanx.png/revision/latest?cb=20190808122128
+    1(phalanx shot); 1(lightning strike, thunder flourish, thunder dash, zeus' aid); x(aspect of beowulf)
 duo ice wine
     Your **Cast** blasts an area with freezing **Festive Fog** that inflicts **Chill**.
     Blast Damage: {+%}
     30
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8e/Ice_Wine.png/revision/latest?cb=20200126153555
+    1(frost strike, frost flourish, mistral dash, demeter's aid); 1(trippy shot, trippy flare); x(curse of drowning, blizzard shot)
 duo blizzard shot
     Your **Cast** moves slowly, piercing foes and firing shards around it.
     Shard Damage: {}
     20
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Blizzard_Shot.png/revision/latest?cb=20200126153436
+    1(frost strike, frost flourish, mistral dash, demeter's aid); 1(flood shot); x(aspect of beowulf, curse of drowning, ice wine)
 duo cold fusion
     Your **Jolted** effects do not expire when foes attack.
     Jolted Duration: {s}
     10
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2e/Cold_Fusion.png/revision/latest?cb=20200126153616
+    1(frost strike, frost flourish, mistral dash, demeter's aid); 1(static discharge)
 duo exclusive access
     Any **Boons** you find are more potent.
     Minimum Boon Rarity: **Epic**
     0
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/32/Exclusive_Access.png
+    1(drunken strike, drunken flourish, trippy shot, trippy flare, drunken dash, dionysus' aid); 1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid)
 duo scintillating feast
     Your **Festive Fog** effects also deal lightning damage periodically.
     Lightning Damage: {}
     60
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e2/Scintillating_Feast.png/revision/latest?cb=20190317133440
+    1(trippy shot, trippy flare); 1(lightning strike, thunder flourish, thunder dash, zeus' aid)
 duo sea storm
     When you knock foes away, they are struck by lightning.
     Lightning Damage: {}
     40
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c7/Sea_Storm.png/revision/latest?cb=20190319204741
+    1(tempest strike, tempest flourish, flood shot, flood flare, poseidon's aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid)

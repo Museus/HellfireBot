@@ -66,14 +66,14 @@ t2 high voltage
     60 72 84 96
     24 17 12 8 6
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d9/High_Voltage.png/revision/latest?cb=20190319212829
-    1(thunder flourish, thunder dash, zeus' aid)
+    1(thunder flourish, thunder flare, thunder dash, zeus' aid)
 t2 double strike
     Your lightning bolt effects have a chance to strike twice.
     Strike Chance: {+%}
     25 30 35 40
     10 7 5 3
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/65/Double_Strike.png/revision/latest?cb=20190319212853
-    1(thunder flourish, thunder dash, zeus' aid)
+    1(thunder flourish, thunder flare, thunder dash, zeus' aid)
 t2 storm lightning
     Your chain-lightning effects bounce more times before expiring.
     Lightning Bounces: {+}
@@ -87,7 +87,7 @@ status static discharge
     60 1.3-1.5 1.8-2.0 2.3-2.5
     36 25 18 12 9 6
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Static_Discharge.png/revision/latest?cb=20190510205819
-    1(lightning strike, thunder flourish, electric shot, thunder dash, zeus' aid, heaven's vengeance, lightning reflexes)
+    1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid, heaven's vengeance, lightning reflexes)
 legendary splitting bolt
     Whenever you strike foes with lightning **Boons**, fire an electric bolt.
     Lightning Damage: {}

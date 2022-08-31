@@ -21,7 +21,7 @@ chaos
 zeus
     zeus shield
 beowulf
-    beowulf shield, beowolf shield, beowolf, beo, bugwulf
+    beowulf shield, beowolf shield, beowolf, beo, bugwulf, beu, beuwulf, beuwolf
 zagreus bow
     bow, coronact, heartseeking bow, heart-seeking bow, heart seeking bow, zag bow, zagbow, zbow
 chiron
@@ -33,7 +33,7 @@ rama
 zagreus fists
     fist, fists, malphon, twin fists of malphon, zagreus fist, zag fist, zag fists, zagfist, zagfists, zfist, zfists
 talos
-    talos fist, talos fists, bestlos, worstlos
+    talos fist, talos fists, bestlos, worstlos, worbsetl5
 demeter
     demeter fist, demeter fists, dem fist, dem fists
 gilgamesh

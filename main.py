@@ -136,6 +136,9 @@ async def prerequisites(ctx, *args):
         prereq_info = files.prereq_info[name]
         output = parsing.parse_prereqs(prereq_info)
         for category in output:
+            if len(category) == 1:
+                embed.description = f'**{misc.capwords(category[0])}**'
+                continue
             desc = '\n'.join([misc.capwords(b) for b in category[1:]])
             embed.add_field(name=category[0], value=desc, inline=False)
     except KeyError:

@@ -34,6 +34,7 @@ call ares' aid
     30 38 45 53
     6 4 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/63/Ares%27_Aid.png/revision/latest?cb=20190319224142
+    Max Gauge Bonus: **5 Sec. Duration**
 revenge curse of vengeance
     After you take damage, inflict **Doom** on foes around you.
     Doom Damage: {}

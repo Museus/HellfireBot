@@ -34,6 +34,7 @@ call poseidon's aid
     250 300 350 400
     100 70 49 34 25
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ea/Poseidon%27s_Aid.png/revision/latest?cb=20190319204753
+    Max Gauge Bonus: **7.2 Sec. Duration**
 t2 boiling point
     Your **God Gauge** charges up faster when you take damage.
     Faster Gauge Gain When Hit: {+%}

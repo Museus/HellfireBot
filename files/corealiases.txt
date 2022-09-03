@@ -29,4 +29,4 @@ flare
 dash
     jump, snap, 💨
 call
-    aid, wrath
+    aid, wrath, gauge

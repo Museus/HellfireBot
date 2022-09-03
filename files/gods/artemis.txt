@@ -35,6 +35,7 @@ call artemis's aid
     100 110 120 130
     40 28 20 14 10
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2b/Artemis%27_Aid.png/revision/latest?cb=20190317140750
+    Max Gauge Bonus - Arrows Fired: **10**
 t1 pressure points
     Any damage you deal has a chance to be **Critical**.
     Critical Chance: {+%}

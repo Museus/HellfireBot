@@ -34,6 +34,7 @@ call demeter's aid
     10 11 12 13
     4 3 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/35/Demeter%27s_Aid.png/revision/latest?cb=20200126122738
+    Max Gauge Bonus: **10 Sec. Duration**
 t1 snow burst
     Whenever you **Cast**, damage foes around you and inflict **Chill**.
     Area Damage: {}

@@ -13,6 +13,7 @@ import randommirror
 import randompact
 
 client = commands.Bot(command_prefix=['h!'], case_insensitive=True)
+bouldy = None
 
 
 @client.event
@@ -30,12 +31,13 @@ async def boon(ctx, *args) -> None:
     info = files.boons_info[name]
     if rarity == 'heroic' and len(info['rarities']) == 3:
         rarity = 'epic'
-    value = info['rarities'][parsing.rarities[rarity] - 1]
-    if '-' in value:
-        value = value.split('-')
-        value = [float(info['rarities'][0]) * float(v) for v in value]
-    else:
-        value = [float(value)]
+    if len(info['rarities']) == 1:
+        rarity = 'common'
+    value = [float(x) for x in info['rarities'][parsing.rarities[rarity] - 1].split('-')]
+    if rarity != 'common':
+        if len(value) == 2 or info['god'] == 'chaos':
+            base_value = info['rarities'][0].split('-')
+            value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
     pom = 0
     if info['levels'][0] != '0':
         level_display = f'Lv. {level}'
@@ -50,15 +52,22 @@ async def boon(ctx, *args) -> None:
             value[1] += float(info['levels'][pom])
         level -= 1
         pom += 1
-    if info['type'] in ['legendary']:
+    if info['type'] == 'legendary':
         color = 0xFFD511
-    elif info['type'] in ['duo']:
+    elif info['type'] == 'duo':
         color = 0xD1FF18
+    elif info['god'] == 'hades':
+        color = 0x9500F6
+    elif info['god'] == 'bouldy':
+        color = 0x3D4E46
     else:
         color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
+    max_call_desc = f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
+    desc = f'{parsing.parse_stat(info["desc"], value)}' if info['god'] == 'chaos' \
+        else f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}{max_call_desc}'
     embed = discord.Embed(
         title=f'**{misc.capwords(name)}** ({level_display})',
-        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
+        description=desc,
         color=color
     )
     embed.set_thumbnail(url=info['icon'])

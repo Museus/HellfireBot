@@ -35,6 +35,7 @@ call dionysus' aid
     15 16.5 18 19.5
     6 4
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Dionysus%27_Aid.png/revision/latest?cb=20190319180618
+    Max Gauge Bonus: **9 Sec. Duration**
 t1 premium vintage
     Gain <:MaxHealth:1008235891308908545> when you pick up <:Nectar:1007449574023123047>. Receive **1** <:Nectar:1007449574023123047> now.
     Nectar Life Gain: {+} <:MaxHealth:1008235891308908545>
@@ -62,7 +63,7 @@ t1 positive outlook
 t2 high tolerance
     You take less damage while standing in **Festive Fog**.
     Damage Resistance: {+%}
-    15 22.5 37.5 40.5
+    10-15 1.3-1.5 2.0-2.5 2.5-2.7
     4 3 1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/91/High_Tolerance.png/revision/latest?cb=20190214030934
     1(trippy shot, trippy flare)

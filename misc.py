@@ -3,8 +3,8 @@ import files
 rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18, 0x8FFF18]
 god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
-              'artemis': 0xD2FC61, 'ares': 0xfb2a2d, 'dionysus': 0xD111DE, 'demeter': 0xecfbfc,
-              'hermes': 0xfbf7a7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18}
+              'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
+              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF}
 god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp?size=96&quality=lossless',
              'poseidon': 'https://cdn.discordapp.com/emojis/1007940611850125393.webp?size=96&quality=lossless',
              'athena': 'https://cdn.discordapp.com/emojis/1007940470627893338.webp?size=96&quality=lossless',
@@ -14,7 +14,8 @@ god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp
              'dionysus': 'https://cdn.discordapp.com/emojis/1007940646373425182.webp?size=96&quality=lossless',
              'demeter': 'https://cdn.discordapp.com/emojis/1007940575674241055.webp?size=96&quality=lossless',
              'hermes': 'https://cdn.discordapp.com/emojis/1007940503179898990.webp?size=96&quality=lossless',
-             'bouldy': 'https://cdn.discordapp.com/emojis/1014438782755422220.webp?size=96&quality=lossless'}
+             'bouldy': 'https://cdn.discordapp.com/emojis/1014438782755422220.webp?size=96&quality=lossless',
+             'chaos': 'https://cdn.discordapp.com/emojis/1015394974088573038.webp?size=96&quality=lossless'}
 
 
 def fuzzy_boon(input: [str]) -> str:
@@ -53,4 +54,4 @@ def adjust_boon_type(info: {}, boon_name: str, rarity: str, level: int) -> (str,
 
 
 def capwords(s: str) -> str:
-    return ' '.join((x[0].upper() + x[1:] if x.lower() != 'of' else x.lower()) for x in s.split(' '))
+    return ' '.join((x[0].upper() + x[1:] if x.lower() not in ['of', 'the'] else x.lower()) for x in s.split(' '))

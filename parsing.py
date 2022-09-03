@@ -79,7 +79,7 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
             parsed_category.append(f'{category[1][0]} Active')
             parsed_prereqs.append(parsed_category)
             continue
-        elif category[0] == 'r' or len(category[1]) == 1:
+        elif len(category[1]) == 1:
             parsed_category.append('The Following:')
         else:
             parsed_category.append(f'{"One" if category[0] == "1" else "Two"} of the Following:')

@@ -34,6 +34,7 @@ call zeus's aid
     50 55 60 65
     20 14 10 7 5
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ec/Zeus%27_Aid.png/revision/latest?cb=20190319212936
+    Max Gauge Bonus: **9 Sec. Duration**
 t2 billowing strength
     after using **Call**, you deal more damage for **15 Sec**.
     Bonus Damage: {+%}

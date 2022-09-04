@@ -3,7 +3,7 @@ import re
 import files
 import misc
 
-rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4}
+rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4, 'legendary': 5}
 
 
 def parse_boon(input: [str]) -> (str, str, int):

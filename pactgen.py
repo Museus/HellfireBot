@@ -1,3 +1,4 @@
+import copy
 import re
 from PIL import Image
 
@@ -17,16 +18,18 @@ opt_pacts = {
 
 def negate_pact_gen(input: [str]) -> int:
     global max_pact
+    input = [s.lower() for s in input]
+    max_pact_c = copy.deepcopy(max_pact)
     for pact in input:
         if len(pact) > 2:
             base_pact = pact[0: 2]
             try:
                 pact_rank = int(pact[2:])
-                if base_pact in max_pact and pact_rank < max_pact[base_pact]:
-                    max_pact[base_pact] = pact_rank
+                if base_pact in max_pact_c and pact_rank < max_pact_c[base_pact]:
+                    max_pact_c[base_pact] = pact_rank
             except ValueError:
                 continue
-    pact = [f'{base}{rank}' for base, rank in max_pact.items()]
+    pact = [f'{base}{rank}' for base, rank in max_pact_c.items()]
     return pact_gen(pact)
 
 

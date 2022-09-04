@@ -1,7 +1,10 @@
+import random
+
 import files
+import parsing
 
 rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
-rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18, 0x8FFF18]
+rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
 god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
               'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF}
@@ -51,6 +54,26 @@ def adjust_boon_type(info: {}, boon_name: str, rarity: str, level: int) -> (str,
         else:
             output = f'**{rarity.upper()}** {boon_name.upper()} LV.{level}\n'
     return output, rarity, level
+
+
+def boon_value(info: {str: str}, rarity: str) -> [float]:
+    value = [float(x) for x in info['rarities'][parsing.rarities[rarity] - 1].split('-')]
+    if rarity != 'common':
+        if len(value) == 2 or info['god'] == 'chaos':
+            base_value = info['rarities'][0].split('-')
+            value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
+    return value
+
+
+def random_rarity(hermes: str = None) -> str:
+    if random.random() < (0.01 if hermes else 0.12):
+        return 'legendary'
+    elif random.random() < (0.03 if hermes else 0.05):
+        return 'epic'
+    elif random.random() < (0.06 if hermes else 0.1):
+        return 'rare'
+    else:
+        return 'common'
 
 
 def capwords(s: str) -> str:

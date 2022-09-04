@@ -12,7 +12,7 @@ for god in god_cores.keys():
     f = open(f'./files/gods/{god}.txt', 'r', encoding='utf8')
     while boon := f.readline().strip():
         type, boon = boon.split(' ', 1)
-        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'revenge', 't1', 'misc']
+        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'revenge', 't1', 'misc', 'blessing', 'curse']
         if type[0] == 'x':
             type = type[1:]
         if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary']:

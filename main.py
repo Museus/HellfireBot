@@ -1,3 +1,4 @@
+import copy
 import os
 import random
 
@@ -33,11 +34,7 @@ async def boon(ctx, *args) -> None:
         rarity = 'epic'
     if len(info['rarities']) == 1:
         rarity = 'common'
-    value = [float(x) for x in info['rarities'][parsing.rarities[rarity] - 1].split('-')]
-    if rarity != 'common':
-        if len(value) == 2 or info['god'] == 'chaos':
-            base_value = info['rarities'][0].split('-')
-            value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
+    value = misc.boon_value(info, rarity)
     pom = 0
     if info['levels'][0] != '0':
         level_display = f'Lv. {level}'
@@ -62,9 +59,11 @@ async def boon(ctx, *args) -> None:
         color = 0x3D4E46
     else:
         color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
-    max_call_desc = f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
-    desc = f'{parsing.parse_stat(info["desc"], value)}' if info['god'] == 'chaos' \
-        else f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}{max_call_desc}'
+    if info['type'] == 'blessing' or info['type'] == 'legendary' and info['god'] == 'chaos':
+        desc = parsing.parse_stat(info["desc"], value)
+    else:
+        desc = f'{parsing.parse_stat(info["desc"], value)}\n▸{parsing.parse_stat(info["stat"], value)}'
+    desc += f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
     embed = discord.Embed(
         title=f'**{misc.capwords(name)}** ({level_display})',
         description=desc,
@@ -183,7 +182,8 @@ async def god(ctx, *args):
     if name == 'bouldy':
         god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
     else:
-        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Status': [], 'Revenge': [], 'Legendary': []}
+        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [],
+                     'Status': [], 'Revenge': [], 'Blessing': [], 'Curse': [], 'Legendary': []}
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
                 type = files.boons_info[boon_name]['type']
@@ -216,6 +216,53 @@ async def bouldy(ctx):
     await ctx.reply(embed=embed, mention_author=False)
 
 
+@client.command()
+async def chaos(ctx):
+    blessings = []
+    curses = []
+    for boon_name in files.boons_info:
+        info = files.boons_info[boon_name]
+        if info['type'] == 'curse':
+            curses.append(boon_name)
+        elif info['type'] == 'blessing':
+            blessings.append(boon_name)
+    rarity = misc.random_rarity()
+    if rarity == 'legendary':
+        bless = 'defiance'
+        rarity = 'common'
+    else:
+        bless = random.choice(blessings)
+    curse = random.choice(curses)
+    bless_info = files.boons_info[bless]
+    bless_value = misc.boon_value(bless_info, rarity)
+    if len(bless_value) == 2:
+        bless_value = [random.randint(*bless_value)]
+    curse_info = files.boons_info[curse]
+    curse_value = misc.boon_value(curse_info, 'common')
+    if len(curse_value) == 2:
+        curse_value = [random.randint(*curse_value)]
+    if curse == 'enshrouded':
+        duration = f'**{random.choice((4, 5))} Chambers**'
+    elif curse == 'roiling':
+        duration = f'**{random.choice((3, 4))}** standard **Encounters**'
+    else:
+        duration = f'**{random.choice((3, 4))} Encounters**'
+    bless_desc = parsing.parse_stat(bless_info["desc"][0].lower() + bless_info["desc"][1:], bless_value)
+    curse_desc = parsing.parse_stat(curse_info["desc"][0].lower() + curse_info["desc"][1:], curse_value)
+    desc = f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}'
+    if bless_info['type'] == 'legendary':
+        color = 0xFFD511
+    else:
+        color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
+    embed = discord.Embed(
+        title=f'**{misc.capwords(curse + " " + bless)}**',
+        description=desc,
+        color=color
+    )
+    embed.set_thumbnail(url=bless_info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
 @client.command(aliases=['p'])
 async def pact(ctx, *args):
     total_heat = pactgen.pact_gen(args)
@@ -239,10 +286,10 @@ async def randpact(ctx, total_heat, hell=None):
     while True:
         random_pact = {'hl': 1, 'lc': 1, 'js': 1, 'cp': 1, 'pl': 1} if hell else {}
         if hell:
-            available_pact = pactgen.hell_pact.copy()
+            available_pact = copy.deepcopy(pactgen.hell_pact)
             total_heat -= 5
         else:
-            available_pact = pactgen.max_pact.copy()
+            available_pact = copy.deepcopy(pactgen.max_pact)
             available_pact.pop('pl')
         if randompact.add_pact(total_heat, available_pact, random_pact):
             break

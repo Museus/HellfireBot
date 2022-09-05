@@ -65,15 +65,35 @@ def boon_value(info: {str: str}, rarity: str) -> [float]:
     return value
 
 
-def random_rarity(hermes: str = None) -> str:
-    if random.random() < (0.01 if hermes else 0.12):
-        return 'legendary'
-    elif random.random() < (0.03 if hermes else 0.05):
-        return 'epic'
-    elif random.random() < (0.06 if hermes else 0.1):
-        return 'rare'
-    else:
-        return 'common'
+def rarity_rolls(*args) -> [float]:
+    def buff_rolls(buffs: [float]) -> None:
+        for i in range(len(buffs)):
+            rolls[i] += buffs[i]
+
+    rolls = [0.12, 0.05, 0.1]
+    if 'miniboss' in args:
+        rolls = [0.1, 0.25, 1]
+    elif 'hermes' in args:
+        rolls = [0.01, 0.03, 0.06]
+    elif 'chaos' in args:
+        rolls = [0.01, 0.05, 0.1]
+        if 'egg' in args:
+            buff_rolls([0.1, 0.15, 0.4])
+    if 'keepsake' in args:
+        buff_rolls([0.1, 0.1, 0.2])
+    if 'favor' in args:
+        buff_rolls([0.1, 0.1, 0.2])
+    if 'yarn' in args or 'nectar' in args:
+        buff_rolls([0.1, 0.25, 1])
+    if 'exclusive' in args:
+        buff_rolls([0, 1, 0])
+    if 'olympian' in args:
+        buff_rolls([0, 0, 0.4])
+    if 'pride' in args:
+        buff_rolls([0, 0.2, 0])
+    elif 'legacy' in args:
+        buff_rolls([0.1, 0, 0])
+    return rolls
 
 
 def capwords(s: str) -> str:

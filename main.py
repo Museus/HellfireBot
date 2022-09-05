@@ -13,7 +13,7 @@ import parsing
 import randommirror
 import randompact
 
-client = commands.Bot(command_prefix=['h!'], case_insensitive=True)
+client = commands.Bot(command_prefix=['h!', 'H!'], case_insensitive=True)
 bouldy = None
 
 
@@ -24,7 +24,7 @@ async def on_ready():
 
 
 @client.command(aliases=['b'])
-async def boon(ctx, *args) -> None:
+async def boon(ctx, *args):
     name, rarity, level = parsing.parse_boon(args)
     if not name:
         await reply(ctx, 'Invalid input!', True)
@@ -74,7 +74,7 @@ async def boon(ctx, *args) -> None:
 
 
 @client.command(aliases=['ps', 'pom', 'poms'])
-async def pomscaling(ctx, *args) -> None:
+async def pomscaling(ctx, *args):
     level = 10
     if args[len(args) - 1].isdigit():
         level = int(args[len(args) - 1])
@@ -216,8 +216,8 @@ async def bouldy(ctx):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command()
-async def chaos(ctx):
+@client.command(aliases=['c'])
+async def chaos(ctx, *args):
     blessings = []
     curses = []
     for boon_name in files.boons_info:
@@ -226,41 +226,26 @@ async def chaos(ctx):
             curses.append(boon_name)
         elif info['type'] == 'blessing':
             blessings.append(boon_name)
-    rarity = misc.random_rarity()
-    if rarity == 'legendary':
-        bless = 'defiance'
-        rarity = 'common'
-    else:
-        bless = random.choice(blessings)
-    curse = random.choice(curses)
-    bless_info = files.boons_info[bless]
-    bless_value = misc.boon_value(bless_info, rarity)
-    if len(bless_value) == 2:
-        bless_value = [random.randint(*bless_value)]
-    curse_info = files.boons_info[curse]
-    curse_value = misc.boon_value(curse_info, 'common')
-    if len(curse_value) == 2:
-        curse_value = [random.randint(*curse_value)]
-    if curse == 'enshrouded':
-        duration = f'**{random.choice((4, 5))} Chambers**'
-    elif curse == 'roiling':
-        duration = f'**{random.choice((3, 4))}** standard **Encounters**'
-    else:
-        duration = f'**{random.choice((3, 4))} Encounters**'
-    bless_desc = parsing.parse_stat(bless_info["desc"][0].lower() + bless_info["desc"][1:], bless_value)
-    curse_desc = parsing.parse_stat(curse_info["desc"][0].lower() + curse_info["desc"][1:], curse_value)
-    desc = f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}'
-    if bless_info['type'] == 'legendary':
-        color = 0xFFD511
-    else:
-        color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
-    embed = discord.Embed(
-        title=f'**{misc.capwords(curse + " " + bless)}**',
-        description=desc,
-        color=color
-    )
-    embed.set_thumbnail(url=bless_info['icon'])
+    args = args + ('chaos',)
+    embed = parsing.parse_random_chaos(blessings, curses, *args)
     await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command()
+async def rarity(ctx, *args):
+    rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(*args)]
+    title = 'Rarity success rates with the following:\n- '
+    title += '\n- '.join([misc.capwords(s) for s in args])
+    output = f'+---------------+------+\n' \
+             f'| Legendary/Duo | {rolls[0]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Epic          | {rolls[1]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Rare          | {rolls[2]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Common        | 100% |\n' \
+             f'+---------------+------+'
+    await reply(ctx, f'{title}```\n{output}```')
 
 
 @client.command(aliases=['p'])

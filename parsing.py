@@ -1,4 +1,7 @@
+import random
 import re
+
+import discord
 
 import files
 import misc
@@ -87,3 +90,42 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
             parsed_category.append(boon)
         parsed_prereqs.append(parsed_category)
     return parsed_prereqs
+
+
+def parse_random_chaos(blessings: [str], curses: [str], *args) -> (str, str, int):
+    rarity_rolls = misc.rarity_rolls(*args)
+    if random.random() < rarity_rolls[0]:
+        bless = 'defiance'
+        rarity = 'common'
+    else:
+        bless = random.choice(blessings)
+        if random.random() < rarity_rolls[1]:
+            rarity = 'epic'
+        elif random.random() < rarity_rolls[2]:
+            rarity = 'rare'
+        else:
+            rarity = 'common'
+    curse = random.choice(curses)
+    bless_info = files.boons_info[bless]
+    bless_value = misc.boon_value(bless_info, rarity)
+    if len(bless_value) == 2:
+        bless_value = [random.randint(*[int(v) for v in bless_value])]
+    curse_info = files.boons_info[curse]
+    curse_value = misc.boon_value(curse_info, 'common')
+    if len(curse_value) == 2:
+        curse_value = [random.randint(*curse_value)]
+    if curse == 'enshrouded':
+        duration = f'**{random.choice((4, 5))} Chambers**'
+    elif curse == 'roiling':
+        duration = f'**{random.choice((3, 4))}** standard **Encounters**'
+    else:
+        duration = f'**{random.choice((3, 4))} Encounters**'
+    bless_desc = parse_stat(bless_info["desc"][0].lower() + bless_info["desc"][1:], bless_value)
+    curse_desc = parse_stat(curse_info["desc"][0].lower() + curse_info["desc"][1:], curse_value)
+    embed = discord.Embed(
+        title=f'**{misc.capwords(curse + " " + bless)}**',
+        description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
+        color=(0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[rarities[rarity] - 1])
+    )
+    embed.set_thumbnail(url=bless_info['icon'])
+    return embed

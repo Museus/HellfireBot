@@ -37,6 +37,18 @@ def parse_aspect(input: [str]) -> (str, int):
     return '', level
 
 
+def parse_hammer(input: [str]) -> (str, bool):
+    input = [s.lower() for s in input]
+    hammer_name = ' '.join(input)
+    if hammer_name in files.hammer_aliases:
+        hammer_name = files.hammer_aliases[hammer_name]
+    if hammer_name in misc.weapon_icons:
+        return hammer_name, True
+    if hammer_name in files.hammers_info:
+        return hammer_name, False
+    return '', False
+
+
 def parse_god(input: [str]) -> str:
     input = [s.lower() for s in input]
     god_name = ' '.join(input)

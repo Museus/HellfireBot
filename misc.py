@@ -1,5 +1,3 @@
-import random
-
 import files
 import parsing
 
@@ -19,6 +17,12 @@ god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp
              'hermes': 'https://cdn.discordapp.com/emojis/1007940503179898990.webp?size=96&quality=lossless',
              'bouldy': 'https://cdn.discordapp.com/emojis/1014438782755422220.webp?size=96&quality=lossless',
              'chaos': 'https://cdn.discordapp.com/emojis/1015394974088573038.webp?size=96&quality=lossless'}
+weapon_icons = {'sword': 'https://cdn.discordapp.com/emojis/1016977627485057034.webp?size=96&quality=lossless',
+                'spear': 'https://cdn.discordapp.com/emojis/1016977626201587763.webp?size=96&quality=lossless',
+                'shield': 'https://cdn.discordapp.com/emojis/1016977625081712660.webp?size=96&quality=lossless',
+                'bow': 'https://cdn.discordapp.com/emojis/1016977619956277279.webp?size=96&quality=lossless',
+                'fists': 'https://cdn.discordapp.com/emojis/1016977621705314315.webp?size=96&quality=lossless',
+                'rail': 'https://cdn.discordapp.com/emojis/1016977623349469204.webp?size=96&quality=lossless'}
 
 
 def fuzzy_boon(input: [str]) -> str:
@@ -97,4 +101,8 @@ def rarity_rolls(*args) -> [float]:
 
 
 def capwords(s: str) -> str:
-    return ' '.join((x[0].upper() + x[1:] if x.lower() not in ['of', 'the'] else x.lower()) for x in s.split(' '))
+    output = ' '.join((x[0].upper() + x[1:] if x.lower() not in ['of', 'the'] else x.lower()) for x in s.split(' '))
+    if '-' in output:
+        dash = output.index('-')
+        output = output[:dash] + '-' + output[dash + 1].upper() + output[dash + 2:]
+    return output

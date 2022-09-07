@@ -173,6 +173,40 @@ async def aspect(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
+@client.command(aliases=['h'])
+async def hammer(ctx, *args):
+    name, is_weapon = parsing.parse_hammer(args)
+    if not name:
+        await reply(ctx, 'Invalid input!', True)
+        return
+    if is_weapon:
+        desc = ''
+        for hammer_name in files.hammers_info:
+            if files.hammers_info[hammer_name]['weapon'] == name:
+                desc += f'{misc.capwords(hammer_name)}\n'
+        embed = discord.Embed(
+            title=f'List of **{misc.capwords(name)}** hammers',
+            description=desc.strip()
+        )
+        embed.set_thumbnail(url=misc.weapon_icons[name])
+    else:
+        info = files.hammers_info[name]
+        embed = discord.Embed(
+            title=f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})',
+            description=info["desc"]
+        )
+        if name in files.prereq_info:
+            output = parsing.parse_prereqs(files.prereq_info[name])
+            for category in output:
+                if len(category) == 1:
+                    embed.description = f'**{misc.capwords(category[0])}**'
+                    continue
+                desc = '\n'.join([misc.capwords(b) for b in category[1:]])
+                embed.add_field(name=category[0], value=desc, inline=False)
+        embed.set_thumbnail(url=info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
 @client.command(aliases=['g'])
 async def god(ctx, *args):
     name = parsing.parse_god(args)
@@ -208,7 +242,7 @@ async def god(ctx, *args):
 async def bouldy(ctx):
     info = random.choice(files.bouldy_info)
     embed = discord.Embed(
-        title=f'**Heart of Stone**',
+        title='**Heart of Stone**',
         description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], "")}',
         color=misc.god_colors['bouldy']
     )
@@ -231,8 +265,8 @@ async def chaos(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command()
-async def rarity(ctx, *args):
+@client.command(aliases=['rarity'])
+async def rarityrolls(ctx, *args):
     rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(*args)]
     title = 'Rarity success rates with the following:\n- '
     title += '\n- '.join([misc.capwords(s) for s in args])

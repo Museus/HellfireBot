@@ -1,0 +1,43 @@
+breaching slash
+    Your **Attack** deals **+300%** damage to **Armor**.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/ba/Armor_Slayer.png/revision/latest?cb=20181214233054
+xcruel thrust
+    Your **Thrust** deals **+200%** damage and has a **+40%** **Critical** chance.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a2/Cruel_Thrust.png/revision/latest?cb=20181214015845
+    x(world splitter, flurry slash, aspect of arthur)
+cursed slash
+    Your **Standing Attack** restores **2** <:Heart:1008236023039410216> per hit, but you have **=60%** <:MaxHealth:1008235891308908545>.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Cursed_Slash.png/revision/latest?cb=20200128222232
+dash nova
+    Your **Special** makes you lunge ahead, then become **Sturdy** for **1 Sec**.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f0/Sword_Snap_Nova.png/revision/latest?cb=20200723141652
+double edge
+    Your **Dash-Strike** hits twice and deals **+20%** damage.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Double_Edge.png/revision/latest?cb=20181214040753
+double nova
+    Your **Special** hits twice but no longer knocks foes away.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fa/Sudden_Sunder.png/revision/latest?cb=20181221233402
+xflurry slash
+    Hold **Attack** to strike rapidly, dealing **25** base damage per hit.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/79/Flurry_Blade.png/revision/latest?cb=20181217042616
+    x(world splitter, cruel thrust, aspect of arthur)
+hoarding slash
+    Your **Attack** deals bonus damage equal to **5%** of your current <:Obol:1007187039801856060>.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2f/Sword_Hoarding_Slash.png/revision/latest?cb=20200723141551
+piercing wave
+    Your **Attack** fires a wave that pierces foes, dealing **30** damage.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Piercing_Wave.png/revision/latest?cb=20200105153025
+shadow slash
+    Your **Standing Attack** deals **+200%** damage when striking foes from behind.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/45/Shadow_Slash.png/revision/latest?cb=20200128222253
+super nova
+    Your **Special** hits a **20%** wider area and deals **+20%** damage.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1a/Super_Nova.png/revision/latest?cb=20181214040524
+xworld splitter
+    Your **Standing Attack** is replaced with a big chop that deals **90** base damage.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/28/World_Splitter.png/revision/latest?cb=20181214015852
+    x(flurry slash, cruel thrust, aspect of arthur)
+xgreater consecration
+    Your **Holy Excalibur** aura is **+45%** larger; makes foes **+10%** slower.
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/26/Sword_Greater_Consecration.png/revision/latest?cb=20200723141753
+    1(aspect of arthur)

@@ -1,0 +1,134 @@
+sword
+    blade, stygian blade, stygius
+cruel thrust
+    cruel
+cursed slash
+    cursed
+double edge
+    dedge
+hoarding slash
+    hoarding
+shadow slash
+    shadow
+super nova
+    supernova
+world splitter
+    splitter
+greater consecration
+    consecration
+spear
+    eternal spear, varatha
+extending jab
+    extending
+vicious skewer
+    vicious
+exploding launcher
+    exploding, elauncher, launcher
+massive spin
+    massive, massivespin
+quick spin
+    quick, quickspin
+charged skewer
+    cskewer
+serrated point
+    serrated
+flaring spin
+    flaring
+winged serpent
+    winged
+shield
+    shield of chaos, aegis
+dread flight
+    dread
+sudden rush
+    sudden
+pulverizing blow
+    pulverizing, pulv bow, pulvblow
+dashing wallop
+    wallop, dwallop
+explosive return
+    ereturn, er
+minotaur rush
+    minotaur
+charged shot
+    cshot
+charged flight
+    cflight
+empowering flight
+    empowering, eflight
+dashing flight
+    dflight
+ferocious guard
+    ferocious, fguard
+unyielding defense
+    unyielding
+bow
+    heart seeking bow, heart-seeking bow, heartseeking bow, coronacht
+twin shot
+    twin
+sniper shot
+    sniper
+explosive shot
+    eshot
+piercing volley
+    pvolley
+perfect shot
+    perfect
+relentless volley
+    relentless, rvolley
+triple shot
+    triple
+chain shot
+    chain
+point-blank shot
+    point-blank
+concentrated volley
+    cvolley
+repulse shot
+    repulse
+fists
+    fist, twin fist, twin fists, malphon, twin fists of malphon, gauntlet, gauntlets
+rolling knuckle
+    rolling
+long knuckle
+    long
+draining cutter
+    draining, dcutter
+flying cutter
+    flying, fcutter
+rush kick
+    rush, kick, rushkick
+quake cutter
+    quake, qcutter
+kinetic launcher
+    kinetic
+heavy knuckle
+    heavy
+colossus knuckle
+    colossus
+rending claws
+    rending
+rail
+    gun, adamant rail, exagryph
+ricochet fire
+    ricochet, rico
+spread fire
+    spread, sf
+delta chamber
+    delta
+rocket bomb
+    rocket, rockets
+targeting system
+    targeting
+hazard bomb
+    hazard
+cluster bomb
+    cluster, btd6 reference
+seeking fire
+    seeking
+flash fire
+    flash, flashfire, ffire
+eternal chamber
+    eternal
+greater inferno
+    inferno

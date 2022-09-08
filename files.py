@@ -6,10 +6,7 @@ charon_info = {}
 aspects_info = {}
 hammers_info = {}
 prereq_info = {}
-core_aliases = {}
-misc_aliases = {}
-aspect_aliases = {}
-hammer_aliases = {}
+aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
              'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 
@@ -88,42 +85,15 @@ for weapon in misc.weapon_icons:
             prereq_info[hammer] = prereq_list
     f.close()
 
-f = open('files/aliases/corealiases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in core_aliases:
-                print(f'duplicate alias: {alias}')
-            core_aliases[alias] = name
-f.close()
 
-f = open('files/aliases/boonaliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in misc_aliases:
-                print(f'duplicate alias: {alias}')
-            misc_aliases[alias] = name
-f.close()
+for category in aliases:
+    f = open(f'files/aliases/{category}aliases.txt', 'r', encoding='utf8')
+    while name := f.readline().strip():
+        alias_list = f.readline().strip().split(', ')
+        if alias_list[0]:
+            for alias in alias_list:
+                if alias in aliases[category]:
+                    print(f'duplicate alias: {alias}')
+                aliases[category][alias] = name
+    f.close()
 
-f = open('files/aliases/aspectaliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in aspect_aliases:
-                print(f'duplicate alias: {alias}')
-            aspect_aliases[alias] = name
-f.close()
-
-f = open('files/aliases/hammeraliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in hammer_aliases:
-                print(f'duplicate alias: {alias}')
-            hammer_aliases[alias] = name
-f.close()

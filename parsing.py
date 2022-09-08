@@ -31,16 +31,16 @@ def parse_aspect(input: [str]) -> (str, int):
     aspect_name = ' '.join(input)
     if aspect_name in files.aspects_info:
         return aspect_name, level
-    if aspect_name in files.aspect_aliases:
-        return files.aspect_aliases[aspect_name], level
+    if aspect_name in files.aliases['aspect']:
+        return files.aliases['aspect'][aspect_name], level
     return '', level
 
 
 def parse_hammer(input: [str]) -> (str, bool, bool):
     input = [s.lower() for s in input]
     hammer_name = ' '.join(input)
-    if hammer_name in files.hammer_aliases:
-        hammer_name = files.hammer_aliases[hammer_name]
+    if hammer_name in files.aliases['hammer']:
+        hammer_name = files.aliases['hammer'][hammer_name]
     if hammer_name in misc.weapon_icons:
         return hammer_name, True, False
     if hammer_name in files.hammers_info:
@@ -55,8 +55,8 @@ def parse_god(input: [str]) -> str:
     god_name = ' '.join(input)
     if god_name in files.god_cores or god_name == 'bouldy':
         return god_name
-    if god_name in files.core_aliases and files.core_aliases[god_name] in [*files.god_cores, 'bouldy']:
-        return files.core_aliases[god_name]
+    if god_name in files.aliases['core'] and files.aliases['core'][god_name] in [*files.god_cores, 'bouldy']:
+        return files.aliases['core'][god_name]
     return ''
 
 
@@ -146,3 +146,18 @@ def parse_random_chaos(blessings: [str], curses: [str], *args) -> discord.embeds
     )
     embed.set_thumbnail(url=bless_info['icon'])
     return embed
+
+
+def parse_rarity_table(input: [str], rolls: [int]) -> (str, str):
+    title = 'Rarity success rates with the following:\n- '
+    title += '\n- '.join([misc.capwords(s) for s in input])
+    output = f'+---------------+------+\n' \
+             f'| Legendary/Duo | {rolls[0]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Epic          | {rolls[1]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Rare          | {rolls[2]:>3}% |\n' \
+             f'+---------------+------+\n' \
+             f'| Common        | 100% |\n' \
+             f'+---------------+------+'
+    return f'{title}```\n{output}```'

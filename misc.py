@@ -5,36 +5,25 @@ rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
 god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
               'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
-              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF}
-god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp?size=96&quality=lossless',
-             'poseidon': 'https://cdn.discordapp.com/emojis/1007940611850125393.webp?size=96&quality=lossless',
-             'athena': 'https://cdn.discordapp.com/emojis/1007940470627893338.webp?size=96&quality=lossless',
-             'aphrodite': 'https://cdn.discordapp.com/emojis/1007940684231217173.webp?size=96&quality=lossless',
-             'artemis': 'https://cdn.discordapp.com/emojis/1007940543403262033.webp?size=96&quality=lossless',
-             'ares': 'https://cdn.discordapp.com/emojis/1007940354873507880.webp?size=96&quality=lossless',
-             'dionysus': 'https://cdn.discordapp.com/emojis/1007940646373425182.webp?size=96&quality=lossless',
-             'demeter': 'https://cdn.discordapp.com/emojis/1007940575674241055.webp?size=96&quality=lossless',
-             'hermes': 'https://cdn.discordapp.com/emojis/1007940503179898990.webp?size=96&quality=lossless',
-             'bouldy': 'https://cdn.discordapp.com/emojis/1014438782755422220.webp?size=96&quality=lossless',
-             'chaos': 'https://cdn.discordapp.com/emojis/1015394974088573038.webp?size=96&quality=lossless',
-             'charon': 'https://cdn.discordapp.com/emojis/1017340791011676170.webp?size=96&quality=lossless'}
-weapon_icons = {'sword': 'https://cdn.discordapp.com/emojis/1016977627485057034.webp?size=96&quality=lossless',
-                'spear': 'https://cdn.discordapp.com/emojis/1016977626201587763.webp?size=96&quality=lossless',
-                'shield': 'https://cdn.discordapp.com/emojis/1016977625081712660.webp?size=96&quality=lossless',
-                'bow': 'https://cdn.discordapp.com/emojis/1016977619956277279.webp?size=96&quality=lossless',
-                'fists': 'https://cdn.discordapp.com/emojis/1016977621705314315.webp?size=96&quality=lossless',
-                'rail': 'https://cdn.discordapp.com/emojis/1016977623349469204.webp?size=96&quality=lossless'}
+              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6,
+              'chaos': 0x8783CF, 'charon': 0x5500B9}
+god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', 'athena': '1007940470627893338',
+             'aphrodite': '1007940684231217173', 'artemis': '1007940543403262033', 'ares': '1007940354873507880',
+             'dionysus': '1007940646373425182', 'demeter': '1007940575674241055', 'hermes': '1007940503179898990',
+             'bouldy': '1014438782755422220', 'chaos': '1015394974088573038', 'charon': '1017340791011676170'}
+weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
+                'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
 
 
 def fuzzy_boon(input: [str]) -> str:
     boon_name = ' '.join(input)
     if boon_name in files.boons_info:
         return boon_name
-    if boon_name in files.misc_aliases and files.misc_aliases[boon_name] in files.boons_info:
-        return files.misc_aliases[boon_name]
+    if boon_name in files.aliases['misc'] and files.aliases['misc'][boon_name] in files.boons_info:
+        return files.aliases['misc'][boon_name]
     for index, word in enumerate(input):
-        if word in files.core_aliases:
-            input[index] = files.core_aliases[word]
+        if word in files.aliases['core']:
+            input[index] = files.aliases['core'][word]
     if len(input) >= 2:
         if input[0] in files.god_cores.keys() and input[1] in files.god_cores[input[0]].keys():
             return files.god_cores[input[0]][input[1]]
@@ -68,6 +57,20 @@ def boon_value(info: {str: str}, rarity: str) -> [float]:
             base_value = info['rarities'][0].split('-')
             value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
     return value
+
+
+def boon_color(info: {str: str}, rarity: str) -> int:
+    if info['type'] == 'legendary':
+        return 0xFFD511
+    if info['type'] == 'duo':
+        return 0xD1FF18
+    if info['god'] == 'hades':
+        return 0x9500F6
+    if info['god'] == 'bouldy':
+        return 0x3D4E46
+    if info['god'] == 'charon':
+        return 0x5500B9
+    return rarity_embed_colors[parsing.rarities[rarity] - 1]
 
 
 def rarity_rolls(*args) -> [float]:
@@ -107,3 +110,18 @@ def capwords(s: str) -> str:
         dash = output.index('-')
         output = output[:dash] + '-' + output[dash + 1].upper() + output[dash + 2:]
     return output
+
+
+def modpasta() -> str:
+    return 'if you want to download the speedrunning modpack it is available at ' \
+            'https://www.speedrun.com/hades/resources\n' \
+            'all of its features can be toggled on or off and it includes:\n' \
+            '- guaranteed 2 sack\n' \
+            '- guaranteed first hammer\n' \
+            '- first boon offers all 4 core boons\n' \
+            '- removes tiny vermin, asterius, and barge of death minibosses\n' \
+            '- shows fountain rooms\n' \
+            'there are also a few qol features such as a quick reset feature and the ability to toggle hell ' \
+            'mode, as well as a colorblind mode.\n\n' \
+            'instructions for downloading the modpack are in the ' \
+            'file "instructions.txt" in the modpack folder'

@@ -48,28 +48,14 @@ async def boon(ctx, *args):
             value[1] += float(info['levels'][pom])
         level -= 1
         pom += 1
-    if info['type'] == 'legendary':
-        color = 0xFFD511
-    elif info['type'] == 'duo':
-        color = 0xD1FF18
-    elif info['god'] == 'hades':
-        color = 0x9500F6
-    elif info['god'] == 'bouldy':
-        color = 0x3D4E46
-    elif info['god'] == 'charon':
-        color = 0x5500B9
-    else:
-        color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
-    if info['type'] == 'blessing' or info['type'] == 'legendary' and info['god'] == 'chaos':
-        desc = parsing.parse_stat(info["desc"], value)
-    else:
-        desc = f'{parsing.parse_stat(info["desc"], value)}\n▸{parsing.parse_stat(info["stat"], value)}'
+    desc = parsing.parse_stat(info["desc"], value)
+    desc += f'\n▸{parsing.parse_stat(info["stat"], value)}' if info['god'] != 'chaos' or info['type'] == 'curse' else ''
     desc += f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
     desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=f'**{misc.capwords(name)}** ({level_display})',
         description=desc,
-        color=color
+        color=misc.boon_color(info, rarity)
     )
     embed.set_thumbnail(url=info['icon'])
     await ctx.reply(embed=embed, mention_author=False)
@@ -181,6 +167,7 @@ async def hammer(ctx, *args):
     if not name:
         await reply(ctx, 'idk man as', True)
         return
+    embed = discord.Embed()
     if is_weapon:
         desc = ''
         weapon_name = files.aspects_info[name]['weapon'] if is_aspect else name
@@ -196,20 +183,13 @@ async def hammer(ctx, *args):
                     if not compatible:
                         continue
                 desc += f'{misc.capwords(hammer_name)}\n'
-        embed = discord.Embed(
-            title=f'List of **{misc.capwords(name)}** hammers',
-            description=desc.strip()
-        )
-        if is_aspect:
-            embed.set_thumbnail(url=files.aspects_info[name]['icon'])
-        else:
-            embed.set_thumbnail(url=misc.weapon_icons[name])
+        embed.title = f'List of **{misc.capwords(name)}** hammers'
+        embed.description = desc.strip()
+        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect else f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
     else:
         info = files.hammers_info[name]
-        embed = discord.Embed(
-            title=f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})',
-            description=info['desc']
-        )
+        embed.title = f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})'
+        embed.description = info['desc']
         if name in files.prereq_info:
             output = parsing.parse_prereqs(files.prereq_info[name])
             for category in output:
@@ -250,7 +230,7 @@ async def god(ctx, *args):
         if god_boons[type]:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[type]])
             embed.add_field(name=type, value=desc, inline=False)
-    embed.set_thumbnail(url=misc.god_icons[name])
+    embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons[name]}.webp')
     await ctx.reply(embed=embed, mention_author=False)
 
 
@@ -311,18 +291,7 @@ async def charon(ctx, *args):
 @client.command(aliases=['rarity'])
 async def rarityrolls(ctx, *args):
     rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(*args)]
-    title = 'Rarity success rates with the following:\n- '
-    title += '\n- '.join([misc.capwords(s) for s in args])
-    output = f'+---------------+------+\n' \
-             f'| Legendary/Duo | {rolls[0]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Epic          | {rolls[1]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Rare          | {rolls[2]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Common        | 100% |\n' \
-             f'+---------------+------+'
-    await reply(ctx, f'{title}```\n{output}```')
+    await reply(ctx, parsing.parse_rarity_table(args, rolls))
 
 
 @client.command(aliases=['p'])
@@ -369,18 +338,7 @@ async def mirror(ctx, *args):
 
 @client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])
 async def modded(ctx):
-    await reply(ctx, 'if you want to download the speedrunning modpack it is available at '
-                     'https://www.speedrun.com/hades/resources\n '
-                     'all of its features can be toggled on or off and it includes:\n'
-                     '- guaranteed 2 sack\n'
-                     '- guaranteed first hammer\n'
-                     '- first boon offers all 4 core boons\n'
-                     '- removes tiny vermin, asterius, and barge of death minibosses\n'
-                     '- shows fountain rooms\n'
-                     'there are also a few qol features such as a quick reset feature and the ability to toggle hell '
-                     'mode, as well as a colorblind mode.\n\n '
-                     'instructions for downloading the modpack are in the '
-                     'file "instructions.txt" in the modpack folder')
+    await reply(ctx, misc.modpasta())
 
 
 async def reply(ctx, message, mention=False):

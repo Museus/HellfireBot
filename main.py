@@ -185,7 +185,8 @@ async def hammer(ctx, *args):
                 desc += f'{misc.capwords(hammer_name)}\n'
         embed.title = f'List of **{misc.capwords(name)}** hammers'
         embed.description = desc.strip()
-        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect else f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
+        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect
+                            else f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
     else:
         info = files.hammers_info[name]
         embed.title = f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})'

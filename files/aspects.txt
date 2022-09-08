@@ -1,142 +1,142 @@
-zagreus sword
+sword zagreus sword
     The form in which the blade of the underworld first revealed itself.
     Bonus Attack Speed & Move Speed: {+%}
     3 6 9 12 15
     A blade such as this one seeks not to remain idle for more than an aeon or two.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/5e/Zagreus_Aspect_Sword.png/revision/latest?cb=20191013211619
-nemesis
+sword nemesis
     For **3** Sec. after your **Special**, your **Attack** may deal **Critical** damage.
     Bonus Critical Chance: {+%}
     15 19 22 26 30
     One of Nyx's daughters once brandished the blade against the arrogant.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/93/Nemesis_Aspect.png/revision/latest?cb=20191013211630
-poseidon
+sword poseidon
     Your **Special** dislodges <:Cast:1007420837600694463> from foes.
     Cast Damage: {+%}
     10 20 30 40 50
     Even before he ruled the seas, the blade's first bearer liked making a splash.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ce/Poseidon_Aspect.png/revision/latest?cb=20191013211640
-arthur
+sword arthur
     You have **Holy Excalibur, and **+50** <:MaxHealth:1008235891308908545> to your Life Total.
     Aura Damage Reduction: {+%}
     20 25 30 35 40
     Peace and destruction await a kingdom governed by the rule of might.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8a/Arthur_Aspect.png/revision/latest?cb=20200313005516
-zagreus spear
+spear zagreus spear
     The form in which the eternal spear first revealed itself.
     Special Damage, Range, & Speed: {+%}
     10 14 18 22 25
     Its shape reflects its bearer's true self, hiding its own all the while.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/75/Zagreus_Aspect_Spear.png/revision/latest?cb=20191013212228
-achilles
+spear achilles
     After your **Special**, you can retrieve your Spear with **Raging Rush**.
     Post-Rush Bonus Damage: {+%}
     50 75 100 125 150
     The greatest of the Greeks was peerless in battle, up close and from afar.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b9/Achilles_Aspect.png/revision/latest?cb=20191013212233
-hades
+spear hades
     Your **Spin Attack** becomes Punishing Sweep.
     Punishing Bonus Damage: {+%}
     30 60 90 120 150
     The god of the dead discarded the eternal spear for a larger counterpart.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/19/Hades_Aspect.png/revision/latest?cb=20191013212242
-guan yu
+spear guan yu
     You have the **Frost Fair Blade**, but your <:MaxHealth:1008235891308908545> and <:Healing:1007536016472682557> are reduced.
     Max Life & Healing: {-%}
     70 65 60 55 50
     A mighty general shall battle with unmatched ferocity to unite his people.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/50/Guan_Yu_Aspect.png/revision/latest?cb=20200128210052
-zagreus shield
+shield zagreus shield
     The form in which the shield of chaos first revealed itself.
     Attack & Dash-Strike Damage: {+}
     3 6 9 12 15
     Sometimes the bone-etched visage shudders as though it means to speak.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/56/Zagreus_Aspect_Shield.png/revision/latest?cb=20191013211832
-chaos
+shield chaos
     After your **Bull Rush**, your next **Special** throws multiple Shields.
     Bonus Shields Thrown: {}
     1 2 3 4 5
     All sprang from the primordial depths; only one artifact bore witness.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0e/Chaos_Aspect.png/revision/latest?cb=20191013211843
-zeus
+shield zeus
     Your **Special** becomes **Blitz Disc**.
     Blitz Disc Base Damage per Hit: {}
     8 13 19 24 30
     Once he became king of the Olympians, he truly had nothing left to fear.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/10/Zeus_Aspect.png/revision/latest?cb=20191013211849
-beowulf
+shield beowulf
     You have **Naegling's Board**, but take **+10%** damage.
     Dragon Rush Bonus Damage & Area: {+%}
     20 40 60 80 100
     Would that the stalwart warrior-king's sword offered similar protection.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c6/Shield_aspect_beuwulf.png/revision/latest?cb=20200624130152
-zagreus bow
+bow zagreus bow
     The form in which the heart-seeking bow first revealed itself.
     Critical Attack Chance: {+%}
     3 6 9 12 15
     It senses stalwart hearts, mostly to stop them but occasionally to be used.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/51/Zagreus_Aspect_Bow.png/revision/latest?cb=20191013212053
-chiron
+bow chiron
     Your **Special** automatically seeks the foe last struck by your **Attack**.
     Max Shots per Special: **9** ⇒ {}
     4 5 6 7 8
     When first it was fashioned, the centaur lord himself affirmed its might.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ee/Chiron_Aspect.png/revision/latest?cb=20191013212100
-hera
+bow hera
     Your **Cast** loads <:Cast:1007420837600694463> into your next **Attack**, firing on impact.
     Bloodstone Drop Time: {s}
     10 8 6.67 6.15 5
     None dared approach the queen of the gods, a reputation she cultivated.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f7/Hera_Aspect.png/revision/latest?cb=20191013212111
-rama
+bow rama
     You have **Celestial Sharanga**, which can cause **Shared Suffering**.
     Shared Suffering Damage: {%} *of Attack*
     30 38 45 53 60
     The preserver's marksmanship is one of his many unequaled qualities.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/60/Rama_aspect.png/revision/latest?cb=20200624130119
-zagreus fists
+fists zagreus fists
     The form in which the twin fists first revealed themselves.
     Dodge Chance: {+%}
     5 8 10 13 15
     The twin fists are bound to their bearer, but most fiercely to each other.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/be/Zagreus_Aspect_Fists.png/revision/latest?cb=20200313013824
-talos
+fists talos
     Your **Special** becomes **Magnetic Cutter**; its pull deals **20** damage.
     Magnetized Attack & Cast Bonus: {+%}
     10 20 30 40 50
     Power filled the bronze giant as they conformed to its massive frame.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/2a/Talos_Aspect.png/revision/latest?cb=20200313014316
-demeter
+fists demeter
     After landing **12** strikes, your next **Special** hits more times.
     Bonus Special Hits: {}
     1 2 3 4 5
     They were a natural fit; her power to bring life, their power to take it.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f2/Demeter_Aspect.png/revision/latest?cb=20200313014432
-gilgamesh
+fists gilgamesh
     You have the **Claws of Enkidu**, whose **Dash-Upper** can **Maim** foes.
     Maim Damage: {}
     100 175 250 325 400
     The god-king inherited the beast-man's savage strength and stout heart.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ee/Gilgamesh_Aspect.png/revision/latest?cb=20200927232709
-zagreus rail
+rail zagreus rail
     The form in which the adamant rail first revealed itself.
     Bonus Ammo Capacity: {+}
     4 6 8 10 12
     The image of the noble gryphon belies its true intent but not its power.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/05/Zagreus_Rail_Image.png/revision/latest?cb=20191013212341
-eris
+rail eris
     For **4** Sec. after absorbing your **Special**'s blast, deal more damage.
     Bonus Damage: {+%}
     15 30 45 60 75
     Strife herself once stole away with it, such was its destructive allure.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ca/Eris_Aspect.png/revision/latest?cb=20191013212354
-hestia
+rail hestia
     After you manually **Reload**, your next shot is empowered.
     Empowered Shot Base Damage: {}
     50 75 100 125 150
-    Before she was goddess of the hearth, she specialized in another type of fire.
+    Before she was goddess of the hearth, she specialized in another ring of fire.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/5a/Hestia_Aspect_Image.png/revision/latest?cb=20191013212407
-lucifer
+rail lucifer
     You have **Igneus Eden**, which launches volatile **Hellfire**.
     Hellfire Blast Damage: {}
     50 63 75 88 100

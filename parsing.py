@@ -1,6 +1,5 @@
 import random
 import re
-
 import discord
 
 import files
@@ -32,21 +31,23 @@ def parse_aspect(input: [str]) -> (str, int):
     aspect_name = ' '.join(input)
     if aspect_name in files.aspects_info:
         return aspect_name, level
-    if aspect_name in files.aspect_aliases and files.aspect_aliases[aspect_name] in files.aspects_info:
+    if aspect_name in files.aspect_aliases:
         return files.aspect_aliases[aspect_name], level
     return '', level
 
 
-def parse_hammer(input: [str]) -> (str, bool):
+def parse_hammer(input: [str]) -> (str, bool, bool):
     input = [s.lower() for s in input]
     hammer_name = ' '.join(input)
     if hammer_name in files.hammer_aliases:
         hammer_name = files.hammer_aliases[hammer_name]
     if hammer_name in misc.weapon_icons:
-        return hammer_name, True
+        return hammer_name, True, False
     if hammer_name in files.hammers_info:
-        return hammer_name, False
-    return '', False
+        return hammer_name, False, False
+    if parse_aspect(input)[0]:
+        return parse_aspect(input)[0], True, True
+    return '', False, False
 
 
 def parse_god(input: [str]) -> str:
@@ -80,6 +81,10 @@ def parse_stat(stat_line: str, value: [float]) -> str:
         value = f'{value} Sec.'
     if 'x' in replace:
         value = f'{value}x'
+    if 'e' in replace:
+        value = f'{value} Encounters'
+    if 'c' in replace:
+        value = f'{value} Chambers'
     stat = re.sub(r'{.*}', f'**{value}**', stat_line)
     return stat
 
@@ -104,7 +109,7 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
     return parsed_prereqs
 
 
-def parse_random_chaos(blessings: [str], curses: [str], *args) -> (str, str, int):
+def parse_random_chaos(blessings: [str], curses: [str], *args) -> discord.embeds.Embed:
     rarity_rolls = misc.rarity_rolls(*args)
     if random.random() < rarity_rolls[0]:
         bless = 'defiance'
@@ -137,7 +142,7 @@ def parse_random_chaos(blessings: [str], curses: [str], *args) -> (str, str, int
     embed = discord.Embed(
         title=f'**{misc.capwords(curse + " " + bless)}**',
         description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
-        color=(0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[rarities[rarity] - 1])
+        color=0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[rarities[rarity] - 1]
     )
     embed.set_thumbnail(url=bless_info['icon'])
     return embed

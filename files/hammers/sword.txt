@@ -6,7 +6,7 @@ xcruel thrust
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a2/Cruel_Thrust.png/revision/latest?cb=20181214015845
     x(world splitter, flurry slash, aspect of arthur)
 cursed slash
-    Your **Standing Attack** restores **2** <:Heart:1008236023039410216> per hit, but you have **=60%** <:MaxHealth:1008235891308908545>.
+    Your **Standing Attack** restores **2** <:Heart:1008236023039410216> per hit, but you have **-60%** <:MaxHealth:1008235891308908545>.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Cursed_Slash.png/revision/latest?cb=20200128222232
 dash nova
     Your **Special** makes you lunge ahead, then become **Sturdy** for **1 Sec**.

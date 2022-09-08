@@ -2,6 +2,7 @@ import misc
 
 boons_info = {}
 bouldy_info = []
+charon_info = {}
 aspects_info = {}
 hammers_info = {}
 prereq_info = {}
@@ -9,14 +10,16 @@ core_aliases = {}
 misc_aliases = {}
 aspect_aliases = {}
 hammer_aliases = {}
-god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {},
-             'ares': {}, 'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'duos': None}
+god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
+             'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 
 for god in god_cores:
     f = open(f'./files/gods/{god}.txt', 'r', encoding='utf8')
     while boon := f.readline().strip():
         type, boon = boon.split(' ', 1)
-        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'revenge', 't1', 'misc', 'blessing', 'curse']
+        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call',
+                                  'revenge', 't1', 'blessing', 'curse', 'combat', 'health',
+                                  'defiance', 'spawning', 'resource', 'miscellaneous']
         if type[0] == 'x':
             type = type[1:]
         if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary']:
@@ -30,8 +33,10 @@ for god in god_cores:
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereq_info[boon] = prereq_list
-        if type == 'call':
+        if type == 'call' and god != 'charon':
             boons_info[boon]['maxcall'] = f.readline().strip()
+        if god == 'charon':
+            boons_info[boon]['cost'] = f.readline().strip()
     f.close()
 
 f = open(f'./files/gods/misc.txt', 'r', encoding='utf8')
@@ -61,49 +66,10 @@ f.close()
 
 f = open(f'./files/aspects.txt', 'r', encoding='utf8')
 while aspect := f.readline().strip():
-    aspects_info[aspect] = {'desc': f.readline().strip(), 'stat': f.readline().strip(),
+    weapon, aspect = aspect.split(' ', 1)
+    aspects_info[aspect] = {'weapon': weapon, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
                             'levels': f.readline().strip().split(' '), 'flavor': f.readline().strip(),
                             'icon': f.readline().strip()}
-f.close()
-
-f = open('./files/corealiases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in core_aliases:
-                print(f'duplicate alias: {alias}')
-            core_aliases[alias] = name
-f.close()
-
-f = open('./files/boonaliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in misc_aliases:
-                print(f'duplicate alias: {alias}')
-            misc_aliases[alias] = name
-f.close()
-
-f = open('./files/aspectaliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in aspect_aliases:
-                print(f'duplicate alias: {alias}')
-            aspect_aliases[alias] = name
-f.close()
-
-f = open('./files/hammeraliases.txt', 'r', encoding='utf8')
-while name := f.readline().strip():
-    aliases = f.readline().strip().split(', ')
-    if aliases[0]:
-        for alias in aliases:
-            if alias in hammer_aliases:
-                print(f'duplicate alias: {alias}')
-            hammer_aliases[alias] = name
 f.close()
 
 for weapon in misc.weapon_icons:
@@ -121,3 +87,43 @@ for weapon in misc.weapon_icons:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereq_info[hammer] = prereq_list
     f.close()
+
+f = open('files/aliases/corealiases.txt', 'r', encoding='utf8')
+while name := f.readline().strip():
+    aliases = f.readline().strip().split(', ')
+    if aliases[0]:
+        for alias in aliases:
+            if alias in core_aliases:
+                print(f'duplicate alias: {alias}')
+            core_aliases[alias] = name
+f.close()
+
+f = open('files/aliases/boonaliases.txt', 'r', encoding='utf8')
+while name := f.readline().strip():
+    aliases = f.readline().strip().split(', ')
+    if aliases[0]:
+        for alias in aliases:
+            if alias in misc_aliases:
+                print(f'duplicate alias: {alias}')
+            misc_aliases[alias] = name
+f.close()
+
+f = open('files/aliases/aspectaliases.txt', 'r', encoding='utf8')
+while name := f.readline().strip():
+    aliases = f.readline().strip().split(', ')
+    if aliases[0]:
+        for alias in aliases:
+            if alias in aspect_aliases:
+                print(f'duplicate alias: {alias}')
+            aspect_aliases[alias] = name
+f.close()
+
+f = open('files/aliases/hammeraliases.txt', 'r', encoding='utf8')
+while name := f.readline().strip():
+    aliases = f.readline().strip().split(', ')
+    if aliases[0]:
+        for alias in aliases:
+            if alias in hammer_aliases:
+                print(f'duplicate alias: {alias}')
+            hammer_aliases[alias] = name
+f.close()

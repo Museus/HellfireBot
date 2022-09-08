@@ -1,7 +1,6 @@
 import copy
 import os
 import random
-
 import discord
 import matplotlib.pyplot as plt
 from discord.ext import commands
@@ -27,7 +26,7 @@ async def on_ready():
 async def boon(ctx, *args):
     name, rarity, level = parsing.parse_boon(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     info = files.boons_info[name]
     if rarity == 'heroic' and len(info['rarities']) == 3:
@@ -57,6 +56,8 @@ async def boon(ctx, *args):
         color = 0x9500F6
     elif info['god'] == 'bouldy':
         color = 0x3D4E46
+    elif info['god'] == 'charon':
+        color = 0x5500B9
     else:
         color = misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     if info['type'] == 'blessing' or info['type'] == 'legendary' and info['god'] == 'chaos':
@@ -64,6 +65,7 @@ async def boon(ctx, *args):
     else:
         desc = f'{parsing.parse_stat(info["desc"], value)}\n▸{parsing.parse_stat(info["stat"], value)}'
     desc += f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
+    desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=f'**{misc.capwords(name)}** ({level_display})',
         description=desc,
@@ -81,7 +83,7 @@ async def pomscaling(ctx, *args):
         args = args[0: len(args) - 1]
     name, _, _ = parsing.parse_boon(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     info = files.boons_info[name]
     values = info['rarities'].copy()
@@ -133,7 +135,7 @@ async def pomscaling(ctx, *args):
 async def prerequisites(ctx, *args):
     name, _, _ = parsing.parse_boon(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     boon_info = files.boons_info[name]
     embed = discord.Embed(
@@ -159,7 +161,7 @@ async def prerequisites(ctx, *args):
 async def aspect(ctx, *args):
     name, level = parsing.parse_aspect(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     info = files.aspects_info[name]
     value = [int(info['levels'][level - 1])]
@@ -173,27 +175,40 @@ async def aspect(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['h'])
+@client.command(aliases=['h', 'hammers'])
 async def hammer(ctx, *args):
-    name, is_weapon = parsing.parse_hammer(args)
+    name, is_weapon, is_aspect = parsing.parse_hammer(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     if is_weapon:
         desc = ''
+        weapon_name = files.aspects_info[name]['weapon'] if is_aspect else name
         for hammer_name in files.hammers_info:
-            if files.hammers_info[hammer_name]['weapon'] == name:
+            if files.hammers_info[hammer_name]['weapon'] == weapon_name:
+                if is_aspect and hammer_name in files.prereq_info:
+                    compatible = True
+                    for prereq in files.prereq_info[hammer_name]:
+                        if (prereq[0] == 'x' and f'aspect of {name}' in prereq[1]) or \
+                                (prereq[0] == '1' and f'aspect of {name}' not in prereq[1]):
+                            compatible = False
+                            break
+                    if not compatible:
+                        continue
                 desc += f'{misc.capwords(hammer_name)}\n'
         embed = discord.Embed(
             title=f'List of **{misc.capwords(name)}** hammers',
             description=desc.strip()
         )
-        embed.set_thumbnail(url=misc.weapon_icons[name])
+        if is_aspect:
+            embed.set_thumbnail(url=files.aspects_info[name]['icon'])
+        else:
+            embed.set_thumbnail(url=misc.weapon_icons[name])
     else:
         info = files.hammers_info[name]
         embed = discord.Embed(
             title=f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})',
-            description=info["desc"]
+            description=info['desc']
         )
         if name in files.prereq_info:
             output = parsing.parse_prereqs(files.prereq_info[name])
@@ -211,13 +226,14 @@ async def hammer(ctx, *args):
 async def god(ctx, *args):
     name = parsing.parse_god(args)
     if not name:
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     if name == 'bouldy':
         god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
     else:
-        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [],
-                     'Status': [], 'Revenge': [], 'Blessing': [], 'Curse': [], 'Legendary': []}
+        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Status': [], 'Revenge': [],
+                     'Blessing': [], 'Curse': [], 'Legendary': [], 'Combat': [], 'Health': [],
+                     'Defiance': [], 'Spawning': [], 'Resource': [], 'Miscellaneous': []}
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
                 type = files.boons_info[boon_name]['type']
@@ -261,7 +277,34 @@ async def chaos(ctx, *args):
         elif info['type'] == 'blessing':
             blessings.append(boon_name)
     args = args + ('chaos',)
-    embed = parsing.parse_random_chaos(blessings, curses, *args)
+    await ctx.reply(embed=parsing.parse_random_chaos(blessings, curses, *args), mention_author=False)
+
+
+@client.command(aliases=['char', 'well'])
+async def charon(ctx, *args):
+    input = [s.lower() for s in args]
+    hourglass = 'hourglass' in input
+    types = []
+    items = []
+    for i in [s.lower() for s in args]:
+        if i in ['combat', 'health', 'defiance', 'spawning', 'resource', 'miscellaneous']:
+            types.append(i)
+    for item_name in files.boons_info:
+        if files.boons_info[item_name]['god'] == 'charon':
+            if types and files.boons_info[item_name]['type'] not in types:
+                continue
+            items.append(item_name)
+    item = random.choice(items)
+    item_info = files.boons_info[item]
+    desc = f'{item_info["desc"]}\n▸' \
+           f'{parsing.parse_stat(item_info["stat"], [float(item_info["rarities"][0]) + (8 if hourglass else 0)])}'
+    desc += f'\n▸Cost: **{item_info["cost"]}**'
+    embed = discord.Embed(
+        title=f'**{misc.capwords(item)}**',
+        description=desc,
+        color=0x5500B9
+    )
+    embed.set_thumbnail(url=item_info['icon'])
     await ctx.reply(embed=embed, mention_author=False)
 
 
@@ -300,7 +343,7 @@ async def negatepact(ctx, *args):
 async def randpact(ctx, total_heat, hell=None):
     total_heat = int(total_heat)
     if total_heat < (5 if hell else 0) or total_heat > (64 if hell else 63):
-        await reply(ctx, 'Invalid input!', True)
+        await reply(ctx, 'idk man as', True)
         return
     while True:
         random_pact = {'hl': 1, 'lc': 1, 'js': 1, 'cp': 1, 'pl': 1} if hell else {}

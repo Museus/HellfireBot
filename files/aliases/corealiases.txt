@@ -16,6 +16,8 @@ demeter
     demeters, demeter's, dems, dem's, dem, frost, icy, cold, chill, snow, ❄
 hermes
     hermes', hermes's, herm, herme, swift
+charon
+    char, well, well of charon, charon well
 bouldy
     boulder, rock, 🪨
 attack
@@ -30,3 +32,9 @@ dash
     jump, snap, 💨
 call
     aid, wrath, gauge
+revenge
+    rev, vengeance, revengeance
+status
+    ps
+legendary
+    leg, yellow

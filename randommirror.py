@@ -6,17 +6,17 @@ opt_mirrors = {
     'speedrun': '100000011101',
     'high heat': '101000001101'
 }
+green = Image.open('./files/mirrors/green.png')
 
 
 def random_mirror(input):
-    red = Image.open('./files/mirrors/red.png')
-    green = Image.open('./files/mirrors/green.png')
+    base = Image.open('./files/mirrors/red.png')
     if input in opt_mirrors:
         for i, flip in enumerate(opt_mirrors[input]):
             if flip == '1':
-                red.paste(green.crop((0, pixel_offsets[i], 397, pixel_offsets[i + 1])), (0, pixel_offsets[i]))
+                base.paste(green.crop((0, pixel_offsets[i], 397, pixel_offsets[i + 1])), (0, pixel_offsets[i]))
     else:
         for i in range(1, len(pixel_offsets)):
             if random() < 0.5:
-                red.paste(green.crop((0, pixel_offsets[i - 1], 397, pixel_offsets[i])), (0, pixel_offsets[i - 1]))
-    red.save('temp.png')
+                base.paste(green.crop((0, pixel_offsets[i - 1], 397, pixel_offsets[i])), (0, pixel_offsets[i - 1]))
+    base.save('temp.png')

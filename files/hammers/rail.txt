@@ -7,7 +7,7 @@ xricochet fire
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/49/Ricochet_Fire.png/revision/latest/scale-to-width-down/100?cb=20201111171254
     x(explosive fire, spread fire, seeking fire, aspect of lucifer)
 xspread fire
-    Your **Attack** becomes a short spread that deals **40** base damage; lose **-6** ammo capacity and fire **33%** slower.
+    Your **Attack** becomes a **-55%** shorter spread that deals **40** base damage; lose **-6** ammo capacity and fire **33%** slower.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/25/Spread_Fire.png/revision/latest/scale-to-width-down/99?cb=20190223164919
     x(flurry fire, delta chamber, ricochet fire, seeking fire, concentrated fire, aspect of lucifer)
 xexplosive fire
@@ -15,7 +15,7 @@ xexplosive fire
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b5/Explosive_Fire.png/revision/latest/scale-to-width-down/100?cb=20190512205351
     x(ricochet fire, piercing fire, aspect of lucifer)
 xdelta chamber
-    Your **Attack** is a **3**-round burst; you never have to **Reload** and all **Dashes** are fully invincible.
+    Your **Attack** is a **3**-round burst; you never have to **Reload** and **Dash-Strikes** are fully invincible.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b5/Explosive_Fire.png/revision/latest/scale-to-width-down/100?cb=20190512205351
     x(spread fire, flurry fire, concentrated fire, aspect of lucifer)
 xpiercing fire
@@ -31,7 +31,7 @@ xrocket bomb
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/33/Rocket_Bomb.png/revision/latest/scale-to-width-down/100?cb=20201007145855
     x(hazard bomb, aspect of lucifer)
 targeting system
-    Foes targeted by your **Special** move slower and take **+30%** damage.
+    Foes targeted by your **Special** move **30%** slower and take **+30%** damage.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f5/Targeting_System.png/revision/latest/scale-to-width-down/100?cb=20201111173559
 xhazard bomb
     Your **Special** deals **+300%** base damage in a **45%** wider area; deals **1%** damage to Zagreus.
@@ -58,7 +58,7 @@ xtriple beam
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/11/Triple_Beam.png/revision/latest/scale-to-width-down/100?cb=20201007151524
     1(aspect of lucifer)
 xeternal chamber
-    Your **Igneus Eden** **Attack** has **∞** ammo, but its damage no longer ramps.
+    Your **Igneus Eden** **Attack** has **∞** <:LuciferAmmo:1017268637716983868>, but its damage no longer ramps.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c4/Eternal_Chamber.png/revision/latest/scale-to-width-down/100?cb=20201007151602
     1(aspect of lucifer); x(concentrated beam)
 xgreater inferno

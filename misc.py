@@ -16,7 +16,8 @@ god_icons = {'zeus': 'https://cdn.discordapp.com/emojis/1007940434129064019.webp
              'demeter': 'https://cdn.discordapp.com/emojis/1007940575674241055.webp?size=96&quality=lossless',
              'hermes': 'https://cdn.discordapp.com/emojis/1007940503179898990.webp?size=96&quality=lossless',
              'bouldy': 'https://cdn.discordapp.com/emojis/1014438782755422220.webp?size=96&quality=lossless',
-             'chaos': 'https://cdn.discordapp.com/emojis/1015394974088573038.webp?size=96&quality=lossless'}
+             'chaos': 'https://cdn.discordapp.com/emojis/1015394974088573038.webp?size=96&quality=lossless',
+             'charon': 'https://cdn.discordapp.com/emojis/1017340791011676170.webp?size=96&quality=lossless'}
 weapon_icons = {'sword': 'https://cdn.discordapp.com/emojis/1016977627485057034.webp?size=96&quality=lossless',
                 'spear': 'https://cdn.discordapp.com/emojis/1016977626201587763.webp?size=96&quality=lossless',
                 'shield': 'https://cdn.discordapp.com/emojis/1016977625081712660.webp?size=96&quality=lossless',

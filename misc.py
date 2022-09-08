@@ -105,11 +105,11 @@ def rarity_rolls(*args) -> [float]:
 
 
 def capwords(s: str) -> str:
-    output = ' '.join((x[0].upper() + x[1:] if x.lower() not in ['of', 'the'] else x.lower()) for x in s.split(' '))
-    if '-' in output:
-        dash = output.index('-')
-        output = output[:dash] + '-' + output[dash + 1].upper() + output[dash + 2:]
-    return output
+    if s == 'hydralite':
+        return 'HydraLite'
+    if s == 'point-blank shot':
+        return 'Point-Blank Shot'
+    return ' '.join((x[0].upper() + x[1:] if x.lower() != 'of' else x.lower()) for x in s.split(' '))
 
 
 def modpasta() -> str:

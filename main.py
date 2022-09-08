@@ -212,25 +212,27 @@ async def god(ctx, *args):
     if name == 'bouldy':
         god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
     else:
-        god_boons = {'Core': [], 'Tier 1': [], 'Tier 2': [], 'Status': [], 'Revenge': [],
-                     'Blessing': [], 'Curse': [], 'Legendary': [], 'Combat': [], 'Health': [],
-                     'Defiance': [], 'Spawning': [], 'Resource': [], 'Miscellaneous': []}
+        god_boons = {'Core': []}
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
-                type = files.boons_info[boon_name]['type']
-                if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
+                category = files.boons_info[boon_name]['type']
+                if category in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
                     god_boons['Core'].append(boon_name)
-                elif type[0] == 't':
-                    god_boons[f'Tier {type[1]}'].append(boon_name)
                 else:
-                    god_boons[type.capitalize()].append(boon_name)
+                    if len(category) == 2 and category[0] == 't':
+                        category = 'Tier ' + category[1]
+                    else:
+                        category = category.capitalize()
+                    if category not in god_boons:
+                        god_boons[category] = []
+                    god_boons[category].append(boon_name)
     embed = discord.Embed(
         title=f'List of **{misc.capwords(name)}** boons', color=misc.god_colors[name]
     )
-    for type in god_boons:
-        if god_boons[type]:
-            desc = '\n'.join([misc.capwords(b) for b in god_boons[type]])
-            embed.add_field(name=type, value=desc, inline=False)
+    for category in god_boons:
+        if god_boons[category]:
+            desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
+            embed.add_field(name=category, value=desc, inline=False)
     embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons[name]}.webp')
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -264,7 +266,8 @@ async def chaos(ctx, *args):
 @client.command(aliases=['char', 'well'])
 async def charon(ctx, *args):
     input = [s.lower() for s in args]
-    hourglass = 'hourglass' in input
+    hourglass = 8 if 'hourglass' in input else 0
+    loyalty = 0.8 if 'loyalty' in input else 1
     types = []
     items = []
     for i in [s.lower() for s in args]:
@@ -278,8 +281,11 @@ async def charon(ctx, *args):
     item = random.choice(items)
     item_info = files.boons_info[item]
     desc = f'{item_info["desc"]}\n▸' \
-           f'{parsing.parse_stat(item_info["stat"], [float(item_info["rarities"][0]) + (8 if hourglass else 0)])}'
-    desc += f'\n▸Cost: **{item_info["cost"]}**'
+           f'{parsing.parse_stat(item_info["stat"], [float(item_info["rarities"][0]) + hourglass])}'
+    cost = item_info['cost'].split(' ')
+    cost[-2] = '-'.join([str(int(int(g) * loyalty)) for g in cost[-2].replace('%', '').split('-')]) \
+               + ('%' if '=' in cost else '')
+    desc += f'\n▸Cost: **{" ".join(cost)}**'
     embed = discord.Embed(
         title=f'**{misc.capwords(item)}**',
         description=desc,

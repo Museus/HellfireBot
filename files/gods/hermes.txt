@@ -1,3 +1,15 @@
+attack swift strike
+    Your **Attack** is faster.
+    Attack Speed: {+%}
+    10 20 30 40
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/95/Swift_Strike.png/revision/latest?cb=20190611230950
+special swift flourish
+    Your **Special** is faster.
+    Special Speed: {+%}
+    10 20 30 40
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d5/Swift_Flourish.png/revision/latest?cb=20190611231009
 xcast quick reload
     Foes drop <:Cast:1007420837600694463> stuck in them faster.
     Drop Time: {s}
@@ -5,56 +17,6 @@ xcast quick reload
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Quick_Reload.png/revision/latest?cb=20200706081013
     m(infernal soul); x(aspect of beowulf, crystal beam, slicing shot, trippy shot, curse of drowning)
-xcast auto reload
-    You regenerate <:Cast:1007420837600694463> faster.
-    Regeneration Time: {s}
-    2.75 2.5 2.25 2.0
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Quick_Reload.png/revision/latest?cb=20200706081013
-    m(stygian soul)
-t1 greatest reflex
-    You can **Dash** more times in a row.
-    Bonus Dash Charges: {+}
-    1 2 3 4
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f8/Greatest_Reflex.png/revision/latest?cb=20190611231312
-t1 side hustle
-    Each time you enter a **Chamber**, gain a bit of wealth.
-    Bonus Wealth per Chamber: {+} <:Obol:1007187039801856060>
-    10 13 16 19
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ce/Side_Hustle.png/revision/latest?cb=20200625232116
-t1 greater evasion
-    Whenever you are hit, you have a chance to **Dodge** automatically.
-    Dodge Chance: {+%}
-    10 15 20 25
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3d/Greater_Evasion.png/revision/latest?cb=20190611231232
-special swift flourish
-    Your **Special** is faster.
-    Special Speed: {+%}
-    10 20 30 40
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d5/Swift_Flourish.png/revision/latest?cb=20190611231009
-t2 second wind
-    After using **Call**, gain **Dodge** chance and move speed for **10 Sec**.
-    Bonus Dodge Chance & Move Speed: {+%}
-    30 33 36 39
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/62/Second_Wind.png/revision/latest?cb=20190808130330
-    1(any aid boon)
-attack swift strike
-    Your **Attack** is faster.
-    Attack Speed: {+%}
-    10 20 30 40
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/95/Swift_Strike.png/revision/latest?cb=20190611230950
-t1 greater haste
-    You move faster.
-    Move Speed: {%}
-    20 30 40 50
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/5d/Greater_Haste.png/revision/latest?cb=20190611231136
 xcast flurry cast
     Hold **Cast** to fire in rapid succession.
     Cast Speed: {+%}
@@ -62,25 +24,63 @@ xcast flurry cast
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/43/Flurry_Cast.png/revision/latest?cb=20190611231026
     m(infernal soul); x(aspect of beowulf, aspect of hera)
-t2 quick favor
+xcast auto reload
+    You regenerate <:Cast:1007420837600694463> faster.
+    Regeneration Time: {s}
+    2.75 2.5 2.25 2.0
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Quick_Reload.png/revision/latest?cb=20200706081013
+    m(stygian soul)
+dash greatest reflex
+    You can **Dash** more times in a row.
+    Bonus Dash Charges: {+}
+    1 2 3 4
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f8/Greatest_Reflex.png/revision/latest?cb=20190611231312
+dash hyper sprint
+    After you **Dash**, briefly become **Sturdy** and move **+100%** faster.
+    Sprint Duration: {s}
+    0.5 0.6 0.7 0.8
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/be/Hyper_Sprint.png/revision/latest?cb=20190611231105
+xcall second wind
+    After using **Call**, gain **Dodge** chance and move speed for **10 Sec**.
+    Bonus Dodge Chance & Move Speed: {+%}
+    30 33 36 39
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/62/Second_Wind.png/revision/latest?cb=20190808130330
+    1(any aid boon)
+xcall quick favor
     Your **God Gauge** charges up automatically.
     Auto Gauge Gain: **+1%** *(every {s})*
     2 1.5 1 0.5
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Quick_Favor.png/revision/latest?cb=20200706081216
     1(any aid boon)
+t1 greater haste
+    You move faster.
+    Move Speed: {%}
+    20 30 40 50
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/5d/Greater_Haste.png/revision/latest?cb=20190611231136
+t1 greater evasion
+    Whenever you are hit, you have a chance to **Dodge** automatically.
+    Dodge Chance: {+%}
+    10 15 20 25
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3d/Greater_Evasion.png/revision/latest?cb=20190611231232
 t1 quick recovery
     After taking damage, quickly **Dash** to recover some <:Heart:1008236023039410216> you just lost.
     Life Recovered: {%} *of damage taken*
     30 40 50 60
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/7b/Quick_Recovery.png/revision/latest?cb=20190611231202
-t1 hyper sprint
-    After you **Dash**, briefly become **Sturdy** and move **+100%** faster.
-    Sprint Duration: {s}
-    0.5 0.6 0.7 0.8
+t1 side hustle
+    Each time you enter a **Chamber**, gain a bit of wealth.
+    Bonus Wealth per Chamber: {+} <:Obol:1007187039801856060>
+    10 13 16 19
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/be/Hyper_Sprint.png/revision/latest?cb=20190611231105
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ce/Side_Hustle.png/revision/latest?cb=20200625232116
 t2 rush delivery
     You deal bonus damage based on any bonus move speed.
     Bonus Damage From Bonus Speed: {%}
@@ -100,5 +100,5 @@ legendary bad news
     Bonus Damage: {+%}
     50
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Quick_Reload.png/revision/latest?cb=20200706081013
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/43/Flurry_Cast.png/revision/latest?cb=20190611231026
     m(stygian soul); 1(auto reload, lambent plume)

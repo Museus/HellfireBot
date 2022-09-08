@@ -41,44 +41,24 @@ t1 snow burst
     40 50 60 70
     16 11 8 5 4
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/24/Snow_Burst.png/revision/latest?cb=20200126153327
-revenge frozen touch
-    After you take damage, damage and *completely* **Chill** your foe.
-    Revenge Damage: {}
-    10 15 20 25
-    8 6 4 3 2 1
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Frozen_Touch.png/revision/latest?cb=20200706080414
-t1 rare crop
-    Your **Boons** become **Common**, then gain **Rarity** every **3 Encounters**.
-    Random Boons Affected: {}
-    1 2 3
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/10/Rare_Crop.png/revision/latest?cb=20200126153233
-t1 nourished soul
-    Any <:Healing:1007536016472682557> effects are more potent. Restore **40%** <:Heart:1008236023039410216> now.
-    Bonus Restoration: {+%} *(affects instant health from boon)*
-    30 32.25 34.5
-    0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c0/Nourished_Soul.png/revision/latest?cb=20200127124806
 t1 ravenous will
     When you have no <:Cast:1007420837600694463>, take **10%** less damage and deal more.
     Damage Bonus: {+%}
     10 20 30 40
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0d/Ravenous_Will.png/revision/latest?cb=20200126153257
-t2 glacial glare
-    Your **Cast** fires longer and inflicts **Chill**.
-    Bonus Duration: {s}
-    2.0 2.4 2.8 3.2
-    1
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/83/Glacial_Glare.png/revision/latest?cb=20200706080355
-    1(crystal beam)
-t2 arctic blast
-    Applying **10** stacks of **Chill** causes a blast, clearing the effect.
-    Blast Area Damage: {}
-    80 90 100 110
+t1 nourished soul
+    Any <:Healing:1007536016472682557> effects are more potent. Restore **40%** <:Heart:1008236023039410216> now.
+    Bonus Restoration: {+%} *(affects instant health from boon)*
+    30 32.25 34.5
+    0 0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c0/Nourished_Soul.png/revision/latest?cb=20200127124806
+t1 rare crop
+    Your **Boons** become **Common**, then gain **Rarity** every **3 Encounters**.
+    Random Boons Affected: {}
+    1 2 3
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Arctic_Blast.png/revision/latest?cb=20200126153350
-    1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/10/Rare_Crop.png/revision/latest?cb=20200126153233
 t2 killing freeze
     When *all* foes are **Chill**-afflicted, they are **+10, 15, 20, 25%** slower and decay.
     Decay Damage: {} *(every 0.5 Sec.)*
@@ -86,6 +66,26 @@ t2 killing freeze
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/41/Killing_Freeze.png/revision/latest?cb=20200127124845
     1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)
+t2 arctic blast
+    Applying **10** stacks of **Chill** causes a blast, clearing the effect.
+    Blast Area Damage: {}
+    80 90 100 110
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Arctic_Blast.png/revision/latest?cb=20200126153350
+    1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)
+t2 glacial glare
+    Your **Cast** fires longer and inflicts **Chill**.
+    Bonus Duration: {s}
+    2.0 2.4 2.8 3.2
+    1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/83/Glacial_Glare.png/revision/latest?cb=20200706080355
+    1(crystal beam)
+revenge frozen touch
+    After you take damage, damage and *completely* **Chill** your foe.
+    Revenge Damage: {}
+    10 15 20 25
+    8 6 4 3 2 1
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1f/Frozen_Touch.png/revision/latest?cb=20200706080414
 legendary winter harvest
     **Chill**-afflicted foes shatter at **10%** <:Heart:1008236023039410216>, inflicting **Chill** nearby.
     Shatter Area Damage: {}

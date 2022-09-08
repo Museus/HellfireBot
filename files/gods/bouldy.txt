@@ -4,11 +4,7 @@ heart of stone
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
 heart of stone
     You believe in Bouldy, and Bouldy believes in you.
-    Damage Reduction: **+2-5%**
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
-heart of stone
-    You believe in Bouldy, and Bouldy believes in you.
-    Move Speed: **+2-10%**
+    Special Damage Bonus: **+2-9%**
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
 heart of stone
     You believe in Bouldy, and Bouldy believes in you.
@@ -16,7 +12,11 @@ heart of stone
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
 heart of stone
     You believe in Bouldy, and Bouldy believes in you.
-    Special Damage Bonus: **+2-9%**
+    Move Speed: **+2-10%**
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
+heart of stone
+    You believe in Bouldy, and Bouldy believes in you.
+    Damage Reduction: **+2-5%**
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
 heart of stone
     You believe in Bouldy, and Bouldy believes in you.

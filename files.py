@@ -30,7 +30,7 @@ for god in god_cores:
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereq_info[boon] = prereq_list
-        if type == 'call' and god != 'charon':
+        if type == 'call' and god not in ['hermes', 'charon']:
             boons_info[boon]['maxcall'] = f.readline().strip()
         if god == 'charon':
             boons_info[boon]['cost'] = f.readline().strip()
@@ -96,4 +96,3 @@ for category in aliases:
                     print(f'duplicate alias: {alias}')
                 aliases[category][alias] = name
     f.close()
-

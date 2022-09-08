@@ -35,30 +35,24 @@ call aphrodite's aid
     1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f0/Aphrodite%27s_Aid.png/revision/latest?cb=20190316095357
     Max Gauge Bonus: **2500 Damage**
-t1 dying lament
-    When foes are slain, they damage nearby foes and inflict **Weak**.
-    Death Blast Damage: {}
-    40 1.3-1.5 1.8-2.0 2.3-2.5
-    24 17 12 8 6 4
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Dying_Lament.png/revision/latest?cb=20181214183225
-revenge wave of despair
-    After you take damage, damage foes around you and inflict **Weak**.
-    Revenge Damage: {}
-    50 1.3-1.5 1.8-2.0 2.3-2.5
-    40 28 20 14 10 7 5
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/11/Wave_of_Despair.png/revision/latest?cb=20181214183018
-t1 life affirmation
-    Any <:MaxHealth:1008235891308908545> chamber rewards are worth more.
-    Bonus Life Gain: {+%}
-    30 36 42 48
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fa/Life_Affirmation.png/revision/latest?cb=20190808113533
 t1 different league
     Resist some damage from nearby foes' attacks.
     Reduced Damage From Foes: {+%}
     10 12.5 15 17.5
     4 2
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4b/Different_League.png/revision/latest?cb=20181214183136
+t1 dying lament
+    When foes are slain, they damage nearby foes and inflict **Weak**.
+    Death Blast Damage: {}
+    40 1.3-1.5 1.8-2.0 2.3-2.5
+    24 17 12 8 6 4
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Dying_Lament.png/revision/latest?cb=20181214183225
+t1 life affirmation
+    Any <:MaxHealth:1008235891308908545> chamber rewards are worth more.
+    Bonus Life Gain: {+%}
+    30 36 42 48
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fa/Life_Affirmation.png/revision/latest?cb=20190808113533
 t2 empty inside
     Your **Weak** effects have a longer duration.
     Weak Duration: {+s}
@@ -73,13 +67,6 @@ t2 broken resolve
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1b/Broken_Resolve.png/revision/latest?cb=20200706074609
     1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash)
-t2 blown kiss
-    Your **Cast** shoots farther and is stronger against undamaged foes.
-    First-Hit Bonus Damage: {+%}
-    50 75 100 120
-    0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dc/Blown_Kiss.png/revision/latest?cb=20200706074736
-    1(crush shot)
 t2 sweet surrender
     **Weak**-afflicted foes are also more susceptible to damage.
     Damage vs. Weak: {+%}
@@ -87,6 +74,19 @@ t2 sweet surrender
     4 3 2 1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a6/Sweet_Surrender.png/revision/latest?cb=20181214183154
     1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash)
+t2 blown kiss
+    Your **Cast** shoots farther and is stronger against undamaged foes.
+    First-Hit Bonus Damage: {+%}
+    50 75 100 120
+    0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dc/Blown_Kiss.png/revision/latest?cb=20200706074736
+    1(crush shot)
+revenge wave of despair
+    After you take damage, damage foes around you and inflict **Weak**.
+    Revenge Damage: {}
+    50 1.3-1.5 1.8-2.0 2.3-2.5
+    40 28 20 14 10 7 5
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/11/Wave_of_Despair.png/revision/latest?cb=20181214183018
 legendary unhealthy fixation
     Your **Weak** effects also have a **+15%** chance to **Charm** foes.
     Charm Duration: {s}

@@ -2,105 +2,105 @@ attack cyclops jerky
     Your **Attack** deals **+30%** damage.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/05/Cyclops_Jerky.png/revision/latest?cb=20181214232428
     40 <:Obol:1007187039801856060>
 special chimaera jerky
     Your **Special** deals **+40%** damage.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d5/Chimaera_Jerky.png/revision/latest?cb=20200712171742
     35 <:Obol:1007187039801856060>
 cast braid of atlas
     Your **Cast** deals **+50%** damage.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/18/Braid_of_Atlas.png/revision/latest?cb=20181214054453
     20 <:Obol:1007187039801856060>
 cast prometheus stone
     Gain **+1** <:Cast:1007420837600694463> for your **Cast**.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/66/Prometheus_Stone.png/revision/latest?cb=20181214193142
     50 <:Obol:1007187039801856060>
 call aether net
     You start **Encounters** with your **God Gauge** **15%** full.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/02/Aether_Net.png/revision/latest?cb=20200712171651
     15 <:Obol:1007187039801856060>
 combat nemesis crest
     You deal **+50%** damage striking foes from behind.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/c1/Nemesis_Crest.png/revision/latest?cb=20200712181350
     60 <:Obol:1007187039801856060>
 combat eris bangle
     You deal **+50%** damage striking undamaged foes.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/af/Eris_Bangle.png/revision/latest?cb=20200712173324
     30 <:Obol:1007187039801856060>
 combat nail of talos
     You deal **+50%** damage to **Armor**.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/20/Nail_of_Talos.png/revision/latest?cb=20200712173059
     65 <:Obol:1007187039801856060>
 combat ignited ichor
     Gain **20%** move speed.
     Duration: {e}
     8
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8f/Ignited_Ichor.png/revision/latest?cb=20181215012832
     10 <:Obol:1007187039801856060>
 combat stygian shard
     **Traps** deal **+500%** damage to your foes.
     Duration: {e}
     6
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6c/Stygian_Shard.png/revision/latest?cb=20200712173305
     35 <:Obol:1007187039801856060>
 health life essence
     Restore up to **22 - 38%** <:Heart:1008236023039410216>.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/82/Life_Essence.png/revision/latest?cb=20181215012809
     <:Obol:1007187039801856060> = 65-80% <:Heart:1008236023039410216>
 health hydralite
     You recover **10%** <:Heart:1008236023039410216> when you enter a chamber.
     Duration: {c}
     3
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e5/HydraLite.png/revision/latest?cb=20181214193013
     45 <:Obol:1007187039801856060>
 health eye of lamia
     Slain foes have a **15%** chance to drop healing items.
     Duration: {e}
     3
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e1/Eye_of_Lamia.png/revision/latest?cb=20181214054508
     25 <:Obol:1007187039801856060>
 health centaur soul
     Gain **+25** <:MaxHealth:1008235891308908545> *(without restoring <:Heart:1008236023039410216>)*
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/ba/Centaur_Soul.png/revision/latest?cb=20200712171714
     100 <:Obol:1007187039801856060>
 xdefiance kiss of styx
     Replenish **1** use of **Death Defiance**.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
     m(death defiance)
     200 <:Obol:1007187039801856060>
@@ -108,7 +108,7 @@ xdefiance touch of styx
     **Stubborn Defiance** restores **+10%** more <:Heart:1008236023039410216> than usual.
     Duration: {e}
     15
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
     m(stubborn defiance)
     55 <:Obol:1007187039801856060>
@@ -116,14 +116,14 @@ spawning light of ixion
     Ensure a **Chaos Gate** will spawn ahead *(where possible)*.
     Duration: **Until Spawn**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/ae/Light_of_Ixion.png/revision/latest?cb=20181215012911
     40 <:Obol:1007187039801856060>
 xspawning trove tracker
     Ensure an **Internal Trove** will spawn ahead *(where possible)*.
     Duration: **Until Spawn**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dd/Trove_Tracker.png/revision/latest?cb=20181214193123
     1(plunder renovation)
     50 <:Obol:1007187039801856060>
@@ -131,7 +131,7 @@ xspawning skeletal lure
     Ensure a **Fishing Point** will spawn ahead *(where possible)*.
     Duration: **Until Spawn**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a5/Skeletal_Lure.png/revision/latest?cb=20200712171849
     1(rod of fishing)
     60 <:Obol:1007187039801856060>
@@ -139,48 +139,48 @@ resource price of midas
     Gain (**1.1 - 1.8x** <:Heart:1008236023039410216>) <:Obol:1007187039801856060> *(for a blood price)*.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e2/Price_of_Midas.png/revision/latest?cb=20200712173133
     10-50 <:Heart:1008236023039410216>
 resource tinge of erebus
     Gain **12 - 26** <:Darkness:1007187036341551184>.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/96/Tinge_of_Erebus.png/revision/latest?cb=20181215012854
     <:Obol:1007187039801856060> = 75% <:Darkness:1007187036341551184>
 resource gaea's treasure
     Gain **11 - 14** <:Gemstone:1007187037595639818>.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/77/Gaea%27s_Treasure.png/revision/latest?cb=20200712173039
     <:Obol:1007187039801856060> = 350% <:Gemstone:1007187037595639818>
 miscellaneous yarn of ariadne
     The next **Boon** you find has upgraded **Rarity**.
     Duration: **Until next Boon**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/57/Yarn_of_Ariadne.png/revision/latest?cb=20181215003129
     70 <:Obol:1007187039801856060>
 miscellaneous flame wheels release
-    Prevent **Flame Wheel** foes from appearing in Encounters.
+    Prevent **Flame Wheel** foes from appearing in **Encounters**.
     Duration: {e}
     10
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/24/Flame_Wheels_Release.png/revision/latest?cb=20200712173115
     75 <:Obol:1007187039801856060>
 miscellaneous night spindle
     Gain **+1** use of your **Chthonic Companion**'s **Summon**.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/54/Night_Spindle.png/revision/latest?cb=20200712173153
     40 <:Obol:1007187039801856060>
 miscellaneous fateful twist
     Gain a random item offered from the **Well of Charon**.
     Duration: **Instant**
     0
-    0
+    0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/90/Fateful_Twist.png/revision/latest?cb=20200712171830
     45 <:Obol:1007187039801856060>

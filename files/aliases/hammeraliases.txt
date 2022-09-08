@@ -81,7 +81,7 @@ triple shot
 chain shot
     chain
 point-blank shot
-    point-blank
+    point-blank, point blank, pointblank, point blank shot, pointblank shot
 concentrated volley
     cvolley
 repulse shot

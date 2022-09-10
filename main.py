@@ -35,12 +35,15 @@ async def boon(ctx, *args):
         rarity = 'common'
     value = misc.boon_value(info, rarity)
     pom = 0
+    unpommable = False
+    unpurgeable = False
+    title = f'**{misc.capwords(name)}**'
     if info['levels'][0] != '0':
-        level_display = f'Lv. {level}'
+        title += f' (Lv. {level})'
     else:
-        level_display = 'Unpommable'
+        unpommable = True
         if len(info['levels']) == 2:
-            level_display += ', Unpurgeable'
+            unpurgeable = True
     while level > 1:
         pom = min(pom, len(info['levels']) - 1)
         value[0] += float(info['levels'][pom])
@@ -53,10 +56,12 @@ async def boon(ctx, *args):
     desc += f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
     desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
-        title=f'**{misc.capwords(name)}** ({level_display})',
+        title=title,
         description=desc,
         color=misc.boon_color(info, rarity)
     )
+    if unpommable:
+        embed.set_footer(text='Unpommable' + ', Unpurgeable' if unpurgeable else '')
     embed.set_thumbnail(url=info['icon'])
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -149,6 +154,7 @@ async def aspect(ctx, *args):
     if not name:
         await reply(ctx, 'idk man as', True)
         return
+    level = min(max(level, 1), 5)
     info = files.aspects_info[name]
     value = [int(info['levels'][level - 1])]
     embed = discord.Embed(
@@ -216,7 +222,7 @@ async def god(ctx, *args):
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
                 category = files.boons_info[boon_name]['type']
-                if category in ['attack', 'special', 'cast', 'flare', 'dash', 'call']:
+                if category in ('attack', 'special', 'cast', 'flare', 'dash', 'call'):
                     god_boons['Core'].append(boon_name)
                 else:
                     if len(category) == 2 and category[0] == 't':
@@ -232,7 +238,7 @@ async def god(ctx, *args):
     for category in god_boons:
         if god_boons[category]:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
-            embed.add_field(name=category, value=desc, inline=False)
+            embed.add_field(name=category, value=desc)
     embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons[name]}.webp')
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -271,7 +277,7 @@ async def charon(ctx, *args):
     types = []
     items = []
     for i in [s.lower() for s in args]:
-        if i in ['combat', 'health', 'defiance', 'spawning', 'resource', 'miscellaneous']:
+        if i in ('combat', 'health', 'defiance', 'spawning', 'resource', 'miscellaneous'):
             types.append(i)
     for item_name in files.boons_info:
         if files.boons_info[item_name]['god'] == 'charon':
@@ -292,6 +298,49 @@ async def charon(ctx, *args):
         color=0x5500B9
     )
     embed.set_thumbnail(url=item_info['icon'])
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['k', 'keepsakes'])
+async def keepsake(ctx, *args):
+    if args:
+        name, rank = parsing.parse_keepsake(args)
+        if not name:
+            await reply(ctx, 'idk man as', True)
+            return
+        rank = min(max(rank, 1), rank)
+        info = files.keepsakes_info[name]
+        try:
+            value = [int(info['ranks'][rank - 1])]
+        except IndexError:
+            value = []
+        embed = discord.Embed(
+            title=f'**{misc.capwords(name)}**',
+            description=f'{parsing.parse_stat(info["desc"], value)}',
+            color=misc.rarity_embed_colors[rank - 1]
+        )
+        if info['type'] == 'companion':
+            footer = f'From {misc.capwords(info["bond"][0])}, {info["flavor"]}'
+        else:
+            footer = f'From {misc.capwords(info["bond"][0])}; ' \
+                     f'you share {info["bond"][1]} {misc.capwords(info["bond"][2])} Bond' \
+                     f'\n\n{info["flavor"]}'
+        embed.set_footer(text=footer)
+        embed.set_thumbnail(url=info['icon'])
+    else:
+        keepsakes = {}
+        for keepsake_name in files.keepsakes_info:
+            category = files.keepsakes_info[keepsake_name]['type'].capitalize()
+            if category not in keepsakes:
+                keepsakes[category] = []
+            keepsakes[category].append(keepsake_name)
+        embed = discord.Embed(
+            title='List of **Keepsakes**', color=misc.god_colors['keepsake']
+        )
+        for category in keepsakes:
+            desc = '\n'.join([misc.capwords(b) for b in keepsakes[category]])
+            embed.add_field(name=category, value=desc)
+        embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons["keepsake"]}.webp')
     await ctx.reply(embed=embed, mention_author=False)
 
 

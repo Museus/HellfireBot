@@ -12,12 +12,12 @@ def parse_boon(input: [str]) -> (str, str, int):
     input = [s.lower() for s in input]
     rarity = 'common'
     level = 1
-    if input[len(input) - 1].isdigit():
-        level = int(input[len(input) - 1])
-        input = input[0: len(input) - 1]
-    if input[len(input) - 1] in rarities.keys():
-        rarity = input[len(input) - 1]
-        input = input[0: len(input) - 1]
+    if input[-1].isdigit():
+        level = int(input[-1])
+        input = input[0:-1]
+    if input[-1] in rarities.keys():
+        rarity = input[-1]
+        input = input[0:-1]
     boon_name = misc.fuzzy_boon(input)
     return boon_name, rarity, level
 
@@ -25,9 +25,9 @@ def parse_boon(input: [str]) -> (str, str, int):
 def parse_aspect(input: [str]) -> (str, int):
     input = [s.lower() for s in input]
     level = 5
-    if input[len(input) - 1].isdigit():
-        level = int(input[len(input) - 1])
-        input = input[0: len(input) - 1]
+    if input[-1].isdigit():
+        level = int(input[-1])
+        input = input[0:-1]
     aspect_name = ' '.join(input)
     if aspect_name in files.aspects_info:
         return aspect_name, level
@@ -55,9 +55,23 @@ def parse_god(input: [str]) -> str:
     god_name = ' '.join(input)
     if god_name in files.god_cores or god_name == 'bouldy':
         return god_name
-    if god_name in files.aliases['core'] and files.aliases['core'][god_name] in [*files.god_cores, 'bouldy']:
+    if god_name in files.aliases['core'] and files.aliases['core'][god_name] in (*files.god_cores, 'bouldy'):
         return files.aliases['core'][god_name]
     return ''
+
+
+def parse_keepsake(input: []) -> (str, int):
+    input = [s.lower() for s in input]
+    rank = 3
+    if input[-1].isdigit():
+        rank = int(input[-1])
+        input = input[0:-1]
+    keepsake_name = ' '.join(input)
+    if keepsake_name in files.keepsakes_info:
+        return keepsake_name, rank
+    if keepsake_name in files.aliases['keepsake']:
+        return files.aliases['keepsake'][keepsake_name], rank
+    return '', rank
 
 
 def parse_stat(stat_line: str, value: [float]) -> str:

@@ -49,7 +49,7 @@ xt1 boiling point
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b5/Boiling_Point.png/revision/latest?cb=20190319200652
     1(any aid boon)
 t1 sunken treasure
-    Gain a random assortment of <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, <:Obol:1007187039801856060>, and <:Heart:1008236023039410216>.
+    Gain a random assortment of <:Gemstone:1007187037595639818>, <:Darkness:1007187036341551184>, <:Obol:1007187039801856060>, and <:Healing:1007536016472682557>.
     Loot Multiplier: {x}
     1 1.5 2.2
     0

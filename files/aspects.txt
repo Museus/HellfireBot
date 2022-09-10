@@ -5,7 +5,7 @@ sword zagreus sword
     A blade such as this one seeks not to remain idle for more than an aeon or two.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/5e/Zagreus_Aspect_Sword.png/revision/latest?cb=20191013211619
 sword nemesis
-    For **3** Sec. after your **Special**, your **Attack** may deal **Critical** damage.
+    For **3 Sec.** after your **Special**, your **Attack** may deal **Critical** damage.
     Bonus Critical Chance: {+%}
     15 19 22 26 30
     One of Nyx's daughters once brandished the blade against the arrogant.
@@ -125,7 +125,7 @@ rail zagreus rail
     The image of the noble gryphon belies its true intent but not its power.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/05/Zagreus_Rail_Image.png/revision/latest?cb=20191013212341
 rail eris
-    For **4** Sec. after absorbing your **Special**'s blast, deal more damage.
+    For **4 Sec.** after absorbing your **Special**'s blast, deal more damage.
     Bonus Damage: {+%}
     15 30 45 60 75
     Strife herself once stole away with it, such was its destructive allure.

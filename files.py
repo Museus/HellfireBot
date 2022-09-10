@@ -5,8 +5,9 @@ bouldy_info = []
 charon_info = {}
 aspects_info = {}
 hammers_info = {}
+keepsakes_info = {}
 prereq_info = {}
-aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}}
+aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
              'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 
@@ -14,12 +15,12 @@ for god in god_cores:
     f = open(f'./files/gods/{god}.txt', 'r', encoding='utf8')
     while boon := f.readline().strip():
         type, boon = boon.split(' ', 1)
-        has_prereq = type not in ['attack', 'special', 'cast', 'flare', 'dash', 'call',
-                                  'revenge', 't1', 'blessing', 'curse', 'combat', 'health',
-                                  'defiance', 'spawning', 'resource', 'miscellaneous']
+        has_prereq = type not in ('attack', 'special', 'cast', 'flare', 'dash', 'call',
+                                  'revenge', 't1', 'blessing', 'curse', 'combat', 'survival',
+                                  'defiance', 'spawning', 'resource', 'miscellaneous')
         if type[0] == 'x':
             type = type[1:]
-        if type in ['attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary']:
+        if type in ('attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary'):
             god_cores[god][type] = boon
         boons_info[boon] = {'god': god, 'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
                             'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
@@ -30,13 +31,13 @@ for god in god_cores:
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereq_info[boon] = prereq_list
-        if type == 'call' and god not in ['hermes', 'charon']:
+        if type == 'call' and god not in ('hermes', 'charon'):
             boons_info[boon]['maxcall'] = f.readline().strip()
         if god == 'charon':
             boons_info[boon]['cost'] = f.readline().strip()
     f.close()
 
-f = open(f'./files/gods/misc.txt', 'r', encoding='utf8')
+f = open('./files/gods/misc.txt', 'r', encoding='utf8')
 while boon := f.readline().strip():
     god, type, boon = boon.split(' ', 2)
     has_prereq = False
@@ -61,7 +62,7 @@ while f.readline():
     bouldy_info.append({'desc': f.readline().strip(), 'stat': f.readline().strip(), 'icon': f.readline().strip()})
 f.close()
 
-f = open(f'./files/aspects.txt', 'r', encoding='utf8')
+f = open('./files/aspects.txt', 'r', encoding='utf8')
 while aspect := f.readline().strip():
     weapon, aspect = aspect.split(' ', 1)
     aspects_info[aspect] = {'weapon': weapon, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
@@ -85,6 +86,16 @@ for weapon in misc.weapon_icons:
             prereq_info[hammer] = prereq_list
     f.close()
 
+f = open('./files/keepsakes.txt', 'r', encoding='utf8')
+while keepsake := f.readline().strip():
+    type, keepsake = keepsake.split(' ', 1)
+    keepsakes_info[keepsake] = {'type': type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
+                                'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
+                                'icon': f.readline().strip()}
+    if type != 'companion':
+        for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
+            aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = keepsake
+f.close()
 
 for category in aliases:
     f = open(f'files/aliases/{category}aliases.txt', 'r', encoding='utf8')

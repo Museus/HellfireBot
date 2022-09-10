@@ -68,28 +68,28 @@ combat stygian shard
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6c/Stygian_Shard.png/revision/latest?cb=20200712173305
     35 <:Obol:1007187039801856060>
-health life essence
+survival life essence
     Restore up to **22 - 38%** <:Heart:1008236023039410216>.
     Duration: **Instant**
     0
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/82/Life_Essence.png/revision/latest?cb=20181215012809
     <:Obol:1007187039801856060> = 65-80% <:Heart:1008236023039410216>
-health hydralite
+survival hydralite
     You recover **10%** <:Heart:1008236023039410216> when you enter a chamber.
     Duration: {c}
     3
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e5/HydraLite.png/revision/latest?cb=20181214193013
     45 <:Obol:1007187039801856060>
-health eye of lamia
+survival eye of lamia
     Slain foes have a **15%** chance to drop healing items.
     Duration: {e}
     3
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e1/Eye_of_Lamia.png/revision/latest?cb=20181214054508
     25 <:Obol:1007187039801856060>
-health centaur soul
+survival centaur soul
     Gain **+25** <:MaxHealth:1008235891308908545> *(without restoring <:Heart:1008236023039410216>)*
     Duration: **Instant**
     0

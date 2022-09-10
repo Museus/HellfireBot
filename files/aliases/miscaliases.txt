@@ -129,7 +129,7 @@ numbing sensation
 peer pressure
     
 black out
-    
+    blackout
 snow burst
     burst
 frozen touch
@@ -137,7 +137,7 @@ frozen touch
 rare crop
     crop
 nourished soul
-    food
+    nourish, nourished, food
 ravenous will
     rav, ravwill, rav will
 glacial glare

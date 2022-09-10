@@ -6,11 +6,12 @@ rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF1
 god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
               'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6,
-              'chaos': 0x8783CF, 'charon': 0x5500B9}
+              'chaos': 0x8783CF, 'charon': 0x5500B9, 'keepsake': 0xAD6535}
 god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', 'athena': '1007940470627893338',
              'aphrodite': '1007940684231217173', 'artemis': '1007940543403262033', 'ares': '1007940354873507880',
              'dionysus': '1007940646373425182', 'demeter': '1007940575674241055', 'hermes': '1007940503179898990',
-             'bouldy': '1014438782755422220', 'chaos': '1015394974088573038', 'charon': '1017340791011676170'}
+             'bouldy': '1014438782755422220', 'chaos': '1015394974088573038', 'charon': '1017340791011676170',
+             'keepsake': '1018053070921412618'}
 weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
                 'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
 
@@ -35,7 +36,7 @@ def fuzzy_boon(input: [str]) -> str:
 
 
 def adjust_boon_type(info: {}, boon_name: str, rarity: str, level: int) -> (str, str, int):
-    if info['type'] in ['legendary', 'duo']:
+    if info['type'] in ('legendary', 'duo'):
         output = f'**{info["type"].upper()}** {boon_name.upper()}\n'
         rarity = 'common'
         level = 1
@@ -109,7 +110,7 @@ def capwords(s: str) -> str:
         return 'HydraLite'
     if s == 'point-blank shot':
         return 'Point-Blank Shot'
-    return ' '.join((x[0].upper() + x[1:] if x.lower() != 'of' else x.lower()) for x in s.split(' '))
+    return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
 
 
 def modpasta() -> str:

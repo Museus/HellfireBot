@@ -17,7 +17,7 @@ for god in god_cores:
         type, boon = boon.split(' ', 1)
         has_prereq = type not in ('attack', 'special', 'cast', 'flare', 'dash', 'call',
                                   'revenge', 't1', 'blessing', 'curse', 'combat', 'survival',
-                                  'defiance', 'spawning', 'resource', 'miscellaneous')
+                                  'spawning', 'resource', 'miscellaneous')
         if type[0] == 'x':
             type = type[1:]
         if type in ('attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary'):
@@ -94,6 +94,9 @@ while keepsake := f.readline().strip():
                                 'icon': f.readline().strip()}
     if type != 'companion':
         for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
+            aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = keepsake
+    else:
+        for suffix in (' companion', 's companion', '\' companion', '\'s companion', ' pet', 's pet', '\' pet', '\'s pet'):
             aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = keepsake
 f.close()
 

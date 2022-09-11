@@ -1,7 +1,7 @@
 billowing strength
     billowing
 lightning reflexes
-    reflex, lightning reflex
+    reflex, lightning reflex, reflexes
 heaven's vengeance
     
 clouded judgment
@@ -17,7 +17,7 @@ static discharge
 splitting bolt
     splitting
 tidal dash
-    splash dash
+    splash dash, splashdash
 boiling point
     boiling
 hydraulic might
@@ -37,15 +37,15 @@ breaking wave
 razor shoals
     shoal, shoals, razor shoal, rupture, ruptured
 second wave
-    
+    second
 huge catch
     catch
 divine dash
-    dd, ddash, titan toppler
+    dd, ddash, titan toppler, idk man, idk man as
 holy shield
     
 bronze skin
-    
+    bronze
 deathless stand
     
 last stand
@@ -112,16 +112,18 @@ impending doom
     impending
 vicious cycle
     vicious
+drunken dash
+    nasty, nasty dash, trash dash
 premium vintage
     pv
 after party
     afterparty
 strong drink
-    
+    drink
 positive outlook
     outlook
 high tolerance
-    
+    tolerance
 bad influence
     
 numbing sensation
@@ -131,7 +133,7 @@ peer pressure
 black out
     blackout
 snow burst
-    burst
+    burst, sburst, snurst, snow burst
 frozen touch
     
 rare crop

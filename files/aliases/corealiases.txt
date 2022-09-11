@@ -37,4 +37,4 @@ revenge
 status
     ps
 legendary
-    leg, yellow
+    leg, legend, yellow

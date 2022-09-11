@@ -4,6 +4,8 @@ cruel thrust
     cruel
 cursed slash
     cursed
+dash nova
+    dash, snap, snapnova, snap nova
 double edge
     dedge
 hoarding slash
@@ -67,7 +69,7 @@ bow
 twin shot
     twin
 sniper shot
-    sniper
+    sniper, snot
 explosive shot
     eshot
 piercing volley
@@ -83,7 +85,7 @@ chain shot
 point-blank shot
     point-blank, point blank, pointblank, point blank shot, pointblank shot
 concentrated volley
-    cvolley
+    cvolley, c volley
 repulse shot
     repulse
 fists
@@ -94,8 +96,12 @@ long knuckle
     long
 draining cutter
     draining, dcutter
+concentrated knuckle
+    cknuckle, c knuckle
+explosive upper
+    eupper, e upper
 flying cutter
-    flying, fcutter
+    flying, fcutter, f cutter
 rush kick
     rush, kick, rushkick
 quake cutter

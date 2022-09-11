@@ -37,7 +37,7 @@ talos
 demeter
     demeter fist, demeter fists, dem fist, dem fists
 gilgamesh
-    gilgamesh fist, gilgamesh fists, gilga, gilga fist, gilga fists, gilgy, gilgy fist, gilgy fists
+    gilgamesh fist, gilgamesh fists, gilga, gilga fist, gilga fists, gilgy, gilgy fist, gilgy fists, paw, paw fist, paws, paws fist, paws fists
 zagreus rail
     rail, gun, adamant rail, exagryph, zag rail, zagrail, zrail, worstia
 eris

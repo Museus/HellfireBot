@@ -148,7 +148,7 @@ async def prerequisites(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['a'])
+@client.command(aliases=['a', 'weapon', 'w'])
 async def aspect(ctx, *args):
     name, level = parsing.parse_aspect(args)
     if not name:
@@ -308,8 +308,8 @@ async def keepsake(ctx, *args):
         if not name:
             await reply(ctx, 'idk man as', True)
             return
-        rank = min(max(rank, 1), rank)
         info = files.keepsakes_info[name]
+        rank = min(max(rank, 1), 5 if info['type'] == 'companion' else 3)
         try:
             value = [int(info['ranks'][rank - 1])]
         except IndexError:
@@ -395,6 +395,17 @@ async def mirror(ctx, *args):
 @client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])
 async def modded(ctx):
     await reply(ctx, misc.modpasta())
+
+
+@client.command(aliases=['suggest', 'suggestion', 's', 'request', 'r'])
+async def alias(ctx, *args):
+    input = ' '.join([s.lower() for s in args])
+    verofire = input.split('->')
+    if len(verofire) != 2:
+        await reply(ctx, 'idk man as', True)
+        return
+    channel = client.get_channel(1018409476908392518)
+    await channel.send(f'From {ctx.author.mention}:\n```{input}```')
 
 
 async def reply(ctx, message, mention=False):

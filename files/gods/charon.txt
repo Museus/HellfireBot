@@ -68,6 +68,22 @@ combat stygian shard
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6c/Stygian_Shard.png/revision/latest?cb=20200712173305
     35 <:Obol:1007187039801856060>
+xsurvival kiss of styx
+    Replenish **1** use of **Death Defiance**.
+    Duration: **Instant**
+    0
+    0 0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
+    m(death defiance)
+    200 <:Obol:1007187039801856060>
+xsurvival touch of styx
+    **Stubborn Defiance** restores **+10%** more <:Heart:1008236023039410216> than usual.
+    Duration: {e}
+    15
+    0 0
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
+    m(stubborn defiance)
+    55 <:Obol:1007187039801856060>
 survival life essence
     Restore up to **22 - 38%** <:Heart:1008236023039410216>.
     Duration: **Instant**
@@ -96,22 +112,6 @@ survival centaur soul
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/ba/Centaur_Soul.png/revision/latest?cb=20200712171714
     100 <:Obol:1007187039801856060>
-xdefiance kiss of styx
-    Replenish **1** use of **Death Defiance**.
-    Duration: **Instant**
-    0
-    0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
-    m(death defiance)
-    200 <:Obol:1007187039801856060>
-xdefiance touch of styx
-    **Stubborn Defiance** restores **+10%** more <:Heart:1008236023039410216> than usual.
-    Duration: {e}
-    15
-    0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Kiss_of_Styx.png/revision/latest?cb=20181215012931
-    m(stubborn defiance)
-    55 <:Obol:1007187039801856060>
 spawning light of ixion
     Ensure a **Chaos Gate** will spawn ahead *(where possible)*.
     Duration: **Until Spawn**

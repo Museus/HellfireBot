@@ -1,5 +1,6 @@
 import random
 import re
+
 import discord
 
 import files
@@ -151,8 +152,8 @@ def parse_random_chaos(blessings: [str], curses: [str], *args) -> discord.embeds
         duration = f'**{random.choice((3, 4))}** standard **Encounters**'
     else:
         duration = f'**{random.choice((3, 4))} Encounters**'
-    bless_desc = parse_stat(bless_info["desc"][0].lower() + bless_info["desc"][1:], bless_value)
-    curse_desc = parse_stat(curse_info["desc"][0].lower() + curse_info["desc"][1:], curse_value)
+    bless_desc = parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)
+    curse_desc = parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)
     embed = discord.Embed(
         title=f'**{misc.capwords(curse + " " + bless)}**',
         description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
@@ -160,6 +161,22 @@ def parse_random_chaos(blessings: [str], curses: [str], *args) -> discord.embeds
     )
     embed.set_thumbnail(url=bless_info['icon'])
     return embed
+
+
+def parse_modifiers(input: [str]) -> [str]:
+    input_str = ' '.join(input)
+    output = []
+    while True:
+        h = []
+        for modifier in files.aliases['modifier']:
+            if modifier in input_str:
+                h.append(modifier)
+        if not h:
+            break
+        next_modifier = max(h, key=lambda x: x.count(' '))
+        output.append(files.aliases['modifier'][next_modifier])
+        input_str = input_str.replace(next_modifier, '', 1)
+    return output
 
 
 def parse_rarity_table(input: [str], rolls: [int]) -> (str, str):

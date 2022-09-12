@@ -74,33 +74,37 @@ def boon_color(info: {str: str}, rarity: str) -> int:
     return rarity_embed_colors[parsing.rarities[rarity] - 1]
 
 
-def rarity_rolls(*args) -> [float]:
+def rarity_rolls(input: [str]) -> [float]:
     def buff_rolls(buffs: [float]) -> None:
         for i in range(len(buffs)):
             rolls[i] += buffs[i]
 
     rolls = [0.12, 0.05, 0.1]
-    if 'miniboss' in args:
-        rolls = [0.1, 0.25, 1]
-    elif 'hermes' in args:
-        rolls = [0.01, 0.03, 0.06]
-    elif 'chaos' in args:
+    chaos = False
+    hermes = False
+    if 'cosmic egg' or 'chaos' in input:
         rolls = [0.01, 0.05, 0.1]
-        if 'egg' in args:
+        chaos = True
+        if 'cosmic egg' in input:
             buff_rolls([0.1, 0.15, 0.4])
-    if 'keepsake' in args:
+    elif 'miniboss' in input:
+        rolls = [0.1, 0.25, 1]
+    elif 'hermes' in input:
+        rolls = [0.01, 0.03, 0.06]
+        hermes = True
+    if 'god keepsake' in input and not chaos and not hermes:
         buff_rolls([0.1, 0.1, 0.2])
-    if 'favor' in args:
+    if 'olympian favor' in input:
         buff_rolls([0.1, 0.1, 0.2])
-    if 'yarn' in args or 'nectar' in args:
+    if 'yarn of ariadne' in input or 'refreshing nectar' in input:
         buff_rolls([0.1, 0.25, 1])
-    if 'exclusive' in args:
+    if 'exclusive access' in input:
         buff_rolls([0, 1, 0])
-    if 'olympian' in args:
+    if 'olympian favor' in input:
         buff_rolls([0, 0, 0.4])
-    if 'pride' in args:
+    if 'god\'s pride' in input:
         buff_rolls([0, 0.2, 0])
-    elif 'legacy' in args:
+    elif 'god\'s legacy' in input:
         buff_rolls([0.1, 0, 0])
     return rolls
 

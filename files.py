@@ -7,7 +7,7 @@ aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
 prereq_info = {}
-aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}}
+aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
              'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 

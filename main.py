@@ -271,9 +271,9 @@ async def chaos(ctx, *args):
 
 @client.command(aliases=['char', 'well'])
 async def charon(ctx, *args):
-    input = [s.lower() for s in args]
-    hourglass = 8 if 'hourglass' in input else 0
-    loyalty = 0.8 if 'loyalty' in input else 1
+    modifiers = parsing.parse_modifiers(args)
+    hourglass = 8 if 'bone hourglass' in modifiers else 0
+    loyalty = 0.8 if 'loyalty card' in modifiers else 1
     types = []
     items = []
     for i in [s.lower() for s in args]:
@@ -346,8 +346,9 @@ async def keepsake(ctx, *args):
 
 @client.command(aliases=['rarity'])
 async def rarityrolls(ctx, *args):
-    rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(*args)]
-    await reply(ctx, parsing.parse_rarity_table(args, rolls))
+    modifiers = parsing.parse_modifiers(args)
+    rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
+    await reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
 
 
 @client.command(aliases=['p'])

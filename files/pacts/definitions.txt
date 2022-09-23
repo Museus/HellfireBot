@@ -1,0 +1,134 @@
+attack
+    Press or hold left-click to use your main weapon.
+special
+    Press right-click for your weapon's unique attack.
+cast
+    Press wheel-down for a powerful ranged attack. Retrieve <:Cast:1007420837600694463> to keep using it.
+dash
+    Press space-bar to rush forward a short distance. Use to evade attacks or get into position.
+call
+    Press q-key for an Olympian's aid *(if you have such a Boon)*. Uses **1** stock of your **God Gauge**, or all **4** stocks for a much stronger effect.
+god gauge
+    Required to use your q-key **Call**. Fills as you deal or take damage in each Encounter.
+jolted
+    *Status Curse*: Victim's next attack self-inflicts lightning damage that harms nearby foes.
+boons
+    Blessing from the Olympians, bestowing godlike power until death.
+bloodstone
+    Ammunition for your wheel-down Cast. Retrieve from slain foes.
+revenge
+    Automatically retaliate with some god-given effect after taking damage.
+festive fog
+    For **5 Sec.**, wafting fumes briefly stun foes in the area every **0.25 Sec**.
+impervious
+    Invulnerable to damage.
+encounter
+    The dangerous kind; Underworld chambers where you must slay your foes to proceed.
+gemstones
+    For House Contractor renovations, or for trade.
+darkness
+    Used to permanently grow stronger.
+charon's obol
+    For purchasing items during escape attempts. All of it is lost on death.
+bosses
+    Lords of the Underworld identifiable by long health bars with their names on them.
+rupture
+    *Status Curse*: For **3 Sec**., victim takes damage while moving.
+fishing point
+    Places where you may attempt to use the **Rod of Fishing** to retrieve a river denizen.
+chamber
+    Any given area you enter in the Underworld; it is a vast network of these.
+poms of power
+    Underworld fruit that can enhance the effects of most Boons.
+deflect
+    Turn foes' attacks back against them.
+death defiance
+    Restore **50%** <:Heart:1008236023039410216> instead of dying when your Life Total is depleted, **1** time per rank.
+stubborn defiance
+    Restore at least **30%** <:Heart:1008236023039410216> when your Life Total is depleted, **1** time *per chamber*.
+traps
+    Inanimate Underworld objects that harm whatever gets in their way.
+exposed
+    *Status Curse*: For **5 Sec.**, victim takes more damage when struck from behind.
+critical
+    A devastating blow that deals **+200%** damage or greater.
+doom
+    *Status Curse*: After **1.1 Sec.**, victim takes a burst of damage.
+weak
+    *Status Curse*: For at least **4 Sec.**, victim deals at least **30%** less damage.
+charm
+    *Status Curse*: For a short time, victim fights for you with greater strength and speed.
+max life
+    An increase to your Life Total *(healing you for the amount)*.
+hangover
+    *Status Curse*: For **4 Sec.**, victim keeps taking damage. Effect can stack up to **5** times.
+dash-strike
+    Press space-bar to Dash then immediately press left-click to attack.
+armor
+    Elite foes cannot be stunned or knocked away until you break through their armor.
+marked
+    *Status Curse*: For **6 Sec.**, victim has a higher chance of taking Critical damage.
+blade rift
+    Slashing metal vortex rapidly deals damage in an area.
+chill
+    *Status Curse*: For **8 Sec.**, victim is slowed by **4%**. Effect can stack up to **10** times.
+lasting consequences
+    Due to a **Pact Condition**, any <:Healing:1007536016472682557> effects are reduced, **25%** per rank.
+fountain
+    Drinking waters from these Underworld fixtures restores some <:Heart:1008236023039410216> to the living.
+dodge
+    Deftly avoid an instance of damage you would have taken.
+sturdy
+    You take **30%** less damage; your actions cannot be interrupted by taking damage.
+common
+    Blessings from the gods are extraordinary by nature, but this is the garden variety.
+rarity
+    Boons sometimes have superior effects, noted as **Rare**, **Epic**, and more.
+life
+    Life Total. Strike your foes repeatedly to make it and them go away.
+holy excalibur
+    *Alternate Move Set*: Heavy Attack, Special creates a defensive aura that slows foes.
+raging rush
+    Press right-click to dash to your Spear, damaging foes. Next **4** Attacks or Casts are stronger.
+spin attack
+    Hold left-click then release for a powerful spinning strike.
+punishing sweep
+    A huge Spin Attack that makes foes take more Attack and Special damage for **10 Sec**.
+frost fair blade
+    *Alternate Move Set*: Heavy Attack, explosive Special, **Life**-stealing Spin Attack.
+healing
+    Effects that restore some of your Life Total if you suffered any damage.
+bull rush
+    Hold left-click then release for a powerful tackle attack.
+blitz disc
+    Your Special deals rapid damage, returning on command. Your Attack is not disabled.
+naegling's board
+    *Alternate Move Set*: Heavy Attack & Special; Cast empowers Bull Rush *(instead of firing)*.
+dragon rush
+    Your Cast-empowered Bull Rush; each loaded <:Cast:1007420837600694463> fires at the end of the move.
+celestial sharanga
+    *Alternate Move Set*: Wide, heavy Attack; bouncing triple-shot Special afflicts foes.
+shared suffering
+    Foes hit by your Special take damage when you Attack *any* foe for the next **7 Sec**.
+magnetic cutter
+    Your Special pulls foes in. Then for **6 Sec.**, they take more Attack and Cast damage.
+claws of enkidu
+    *Alternate Move Set*: Heavy Attack, **+2** rapid Dash charges, Dash-Upper inflicts **Maim**.
+dash-upper
+    Press space-bar to Dash then immediately press right-click to uppercut.
+maim
+    Foes take **25%** more damage but deal **+50%** more for **4 Sec.**, then take a burst of damage.
+reload
+    Press r-key to replenish the Rail's ammunition supply after a brief delay.
+igneus eden
+    *Alternate Move Set*: Beam Attack deals ramping damage, Special launches Hellfire.
+hellfire
+    Destructible bombs radiate damage and stagger nearby foes; explode in a large blast.
+chaos gates
+    A sacrifice of <:Heart:1008236023039410216> is necessary to access the unfathomable depths of Chaos.
+invisible
+    Vanish and move faster for **2 Sec.**; strike to appear and deal bonus damage for **1.5 Sec**.
+summon
+    Press 1-key in the heat of battle for a quick assist from a close friend *(once per Encounter)*.
+power rush
+    Hold left-click then release when you see a brief flash for a stronger tackle.

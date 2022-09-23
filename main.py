@@ -22,6 +22,11 @@ async def on_ready():
     print(f'{client.user} is online')
 
 
+@client.command(aliases=['i'])
+async def invite(ctx):
+    await reply(ctx, 'https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=1007141766979387432')
+
+
 @client.command(aliases=['b'])
 async def boon(ctx, *args):
     name, rarity, level = parsing.parse_boon(args)
@@ -353,7 +358,7 @@ async def rarityrolls(ctx, *args):
 
 @client.command(aliases=['p'])
 async def pact(ctx, *args):
-    total_heat = pactgen.pact_gen(args)
+    total_heat = pactgen.pact_gen(str(ctx.message.author.id), args)
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 
@@ -365,7 +370,7 @@ async def negatepact(ctx, *args):
     os.remove('./temp.png')
 
 
-@client.command(aliases=['rand', 'random', 'randompact', 'rpact', 'rp'])
+@client.command(aliases=['rand', 'random', 'randompact', 'rpact'])
 async def randpact(ctx, total_heat, hell=None):
     total_heat = int(total_heat)
     if total_heat < (5 if hell else 0) or total_heat > (64 if hell else 63):
@@ -381,21 +386,84 @@ async def randpact(ctx, total_heat, hell=None):
             available_pact.pop('pl')
         if randompact.add_pact(total_heat, available_pact, random_pact):
             break
-    total_heat = pactgen.pact_gen([f'{p}{r}' for p, r in random_pact.items()])
+    total_heat = pactgen.pact_gen('', [f'{p}{r}' for p, r in random_pact.items()])
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 
 
 @client.command(aliases=['m'])
 async def mirror(ctx, *args):
-    randommirror.random_mirror(' '.join(args))
+    randommirror.random_mirror(str(ctx.message.author.id), ' '.join(args))
     await ctx.reply(file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 
 
+@client.command(aliases=['personal', 'gp'])
+async def getpersonal(ctx):
+    id = str(ctx.message.author.id)
+    embed = discord.Embed(
+        title=f'Personal pact and mirror presets'
+    )
+    embed.set_footer(text=f'Requested by {ctx.message.author.name}', icon_url=ctx.message.author.avatar_url)
+    if id in files.personal:
+        if files.personal[id]['pacts']:
+            pacts = ''
+            for pact_name in files.personal[id]['pacts']:
+                pacts += f'{pact_name}: {" ".join(files.personal[id]["pacts"][pact_name])}\n'
+            embed.add_field(name='Pacts', value=pacts, inline=False)
+        if files.personal[id]['mirrors']:
+            mirrors = ''
+            for mirror_name in files.personal[id]['mirrors']:
+                mirrors += f'{mirror_name}: {files.personal[id]["mirrors"][mirror_name]}\n'
+            embed.add_field(name='Mirrors', value=mirrors, inline=False)
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['addp', 'ap'])
+async def addpact(ctx, name, *args):
+    id = str(ctx.message.author.id)
+    if id not in files.personal:
+        files.personal[id] = {'mirrors': {}, 'pacts': {}}
+    files.personal[id]['pacts'][name] = list(args)
+    files.write_personal()
+    await reply(ctx, 'special only rama is unaruably')
+
+
+@client.command(aliases=['addm', 'am'])
+async def addmirror(ctx, name, mirror_binary):
+    id = str(ctx.message.author.id)
+    if id not in files.personal:
+        files.personal[id] = {'mirrors': {}, 'pacts': {}}
+    files.personal[id]['mirrors'][name] = mirror_binary
+    files.write_personal()
+    await reply(ctx, 'special only rama is unaruably')
+
+
+@client.command(aliases=['deletep', 'dp', 'removepact', 'removep', 'rp'])
+async def deletepact(ctx, name):
+    id = str(ctx.message.author.id)
+    if id not in files.personal or name not in files.personal[id]['pacts']:
+        await reply(ctx, 'No pact with matching name', True)
+        return
+    files.personal[id]['pacts'].pop(name)
+    files.write_personal()
+    await reply(ctx, 'special only rama is unaruably')
+
+
+@client.command(aliases=['deletem', 'dm', 'removemirror', 'removem', 'rm'])
+async def deletemirror(ctx, name):
+    id = str(ctx.message.author.id)
+    if id not in files.personal or name not in files.personal[id]['mirrors']:
+        await reply(ctx, 'No mirror with matching name', True)
+        return
+    files.personal[id]['mirrors'].pop(name)
+    files.write_personal()
+    await reply(ctx, 'special only rama is unaruably')
+
+
 @client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])
 async def modded(ctx):
-    await reply(ctx, misc.modpasta())
+    await reply(ctx, misc.mod_pasta)
 
 
 @client.command(aliases=['suggest', 'suggestion', 's', 'request', 'r'])

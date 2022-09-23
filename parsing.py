@@ -15,10 +15,10 @@ def parse_boon(input: [str]) -> (str, str, int):
     level = 1
     if input[-1].isdigit():
         level = int(input[-1])
-        input = input[0:-1]
-    if input[-1] in rarities.keys():
+        input = input[:-1]
+    if input[-1] in ('common', 'rare', 'epic', 'heroic'):
         rarity = input[-1]
-        input = input[0:-1]
+        input = input[:-1]
     boon_name = misc.fuzzy_boon(input)
     return boon_name, rarity, level
 
@@ -28,7 +28,7 @@ def parse_aspect(input: [str]) -> (str, int):
     level = 5
     if input[-1].isdigit():
         level = int(input[-1])
-        input = input[0:-1]
+        input = input[:-1]
     aspect_name = ' '.join(input)
     if aspect_name in files.aspects_info:
         return aspect_name, level
@@ -66,7 +66,7 @@ def parse_keepsake(input: []) -> (str, int):
     rank = 3
     if input[-1].isdigit():
         rank = int(input[-1])
-        input = input[0:-1]
+        input = input[:-1]
     keepsake_name = ' '.join(input)
     if keepsake_name in files.keepsakes_info:
         return keepsake_name, rank

@@ -181,7 +181,7 @@ bad news
 curse of longing
     col
 heart rend
-    hr, rend
+    hr, rend, heartrend
 parting shot
     parting
 cold embrace
@@ -193,7 +193,7 @@ sweet nectar
 smoldering air
     smair, smolder, smoldering
 hunting blades
-    hunting
+    hunting, hb
 merciful end
     me
 freezing vortex

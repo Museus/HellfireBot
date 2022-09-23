@@ -14,6 +14,18 @@ god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', '
              'keepsake': '1018053070921412618'}
 weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
                 'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
+mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
+            'https://www.speedrun.com/hades/resources\n' \
+            'all of its features can be toggled on or off and it includes:\n' \
+            '- guaranteed 2 sack\n' \
+            '- guaranteed first hammer\n' \
+            '- first boon offers all 4 core boons\n' \
+            '- removes tiny vermin, asterius, and barge of death minibosses\n' \
+            '- shows fountain rooms\n' \
+            'there are also a few qol features such as a quick reset feature and the ability to toggle hell ' \
+            'mode, as well as a colorblind mode.\n\n' \
+            'instructions for downloading the modpack are in the ' \
+            'file "instructions.txt" in the modpack folder'
 
 
 def fuzzy_boon(input: [str]) -> str:
@@ -25,7 +37,7 @@ def fuzzy_boon(input: [str]) -> str:
     for index, word in enumerate(input):
         if word in files.aliases['core']:
             input[index] = files.aliases['core'][word]
-    if len(input) >= 2:
+    if len(input) == 2:
         if input[0] in files.god_cores.keys() and input[1] in files.god_cores[input[0]].keys():
             return files.god_cores[input[0]][input[1]]
         if input[1] in files.god_cores.keys() and input[0] in files.god_cores[input[1]].keys():
@@ -115,18 +127,3 @@ def capwords(s: str) -> str:
     if s == 'point-blank shot':
         return 'Point-Blank Shot'
     return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
-
-
-def modpasta() -> str:
-    return 'if you want to download the speedrunning modpack it is available at ' \
-            'https://www.speedrun.com/hades/resources\n' \
-            'all of its features can be toggled on or off and it includes:\n' \
-            '- guaranteed 2 sack\n' \
-            '- guaranteed first hammer\n' \
-            '- first boon offers all 4 core boons\n' \
-            '- removes tiny vermin, asterius, and barge of death minibosses\n' \
-            '- shows fountain rooms\n' \
-            'there are also a few qol features such as a quick reset feature and the ability to toggle hell ' \
-            'mode, as well as a colorblind mode.\n\n' \
-            'instructions for downloading the modpack are in the ' \
-            'file "instructions.txt" in the modpack folder'

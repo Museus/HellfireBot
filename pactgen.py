@@ -2,18 +2,12 @@ import copy
 import re
 from PIL import Image
 
+import files
+
 max_pact = {'hl': 5, 'lc': 4, 'cf': 2, 'js': 3, 'em': 4, 'cp': 2, 'bp': 2, 'mm': 1,
             'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3, 'pl': 1}
 hell_pact = {'hl': 4, 'lc': 3, 'cf': 2, 'js': 2, 'em': 4, 'cp': 1, 'bp': 2, 'mm': 1,
              'uc': 1, 'fo': 2, 'hs': 1, 'ri': 4, 'dc': 2, 'ap': 2, 'td': 3}
-opt_pacts = {
-    'speedrun': ['fo2', 'em2'],
-    'eris 50': ['n', 'em3', 'cp1', 'ri1', 'ap1'],
-    'lucifer 50': ['n', 'em3', 'cp1', 'ri1', 'ap1'],
-    'zshield 50': ['n', 'em3', 'cp0', 'hs0', 'ri2', 'dc0', 'ap2', 'pl0'],
-    'first 32': ['hl1', 'lc4', 'em3', 'bp2', 'mm', 'uc', 'fo2', 'td3'],
-    'hardest 32': ['lc4', 'js2', 'em4', 'cp2', 'ri4', 'td3']
-}
 
 
 def negate_pact_gen(input: [str]) -> int:
@@ -30,13 +24,13 @@ def negate_pact_gen(input: [str]) -> int:
             except ValueError:
                 continue
     pact = [f'{base}{rank}' for base, rank in max_pact_c.items()]
-    return pact_gen(pact)
+    return pact_gen('', pact)
 
 
-def pact_gen(input: [str]) -> int:
+def pact_gen(id: str, input: [str]) -> int:
     input = [s.lower() for s in input]
-    if ' '.join(input) in opt_pacts:
-        input = opt_pacts[' '.join(input)]
+    if id in files.personal and ' '.join(input) in files.personal[id]['pacts']:
+        input = files.personal[id]['pacts'][' '.join(input)]
         if input[0] == 'n':
             return negate_pact_gen(input[1:])
     hell_mode = False

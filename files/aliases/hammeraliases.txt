@@ -80,12 +80,14 @@ relentless volley
     relentless, rvolley
 triple shot
     triple
+charged volley
+    chvolley, ch volley, charge volley, chargevolley, chargedvolley, cholley
 chain shot
     chain
 point-blank shot
     point-blank, point blank, pointblank, point blank shot, pointblank shot
 concentrated volley
-    cvolley, c volley
+    cvolley, c volley, conc volley, concvolley, colley, cv
 repulse shot
     repulse
 fists

@@ -1,0 +1,50 @@
+invite None
+    Returns a link that lets you invite the bot to a server you manage.
+boon boon_name [rarity=common] [level=1]
+    Returns information on <boon_name>. <rarity> must be exactly common/rare/epic/heroic, and defaults to common. <level> defaults to 1.
+pomscaling boon_name [level=10]
+    Returns a graph of the performance of <boon_name> from level 1 to <level> across all applicable rarities.
+prerequisites item_name
+    Returns both prerequisites and incompatibilities, if applicable. <item_name> can be boons, hammers, and Charon well items.
+aspect aspect_name [level=5]
+    Returns information on the given <aspect_name>, at the specified level. <level> defaults to 5.
+hammer item_name
+    If <item_name> is a hammer, returns information on it. If <item_name> is a weapon (sword/spear/shield/bow/fists/rail), returns a list of all hammers for it. If <item_name> is a weapon aspect, returns a list of all compatible hammers.
+god god_name
+    Returns a list of non-duo boons for that <god_name>, categorized by type. Includes Chaos, Charon, and <:bouldy:1014438782755422220>.
+define None
+    Returns a list of definitions for terms used in the replied-to message. Works for text inside HellfireBot's embed outputs.
+bouldy None
+    Returns a random <:bouldy:1014438782755422220> blessing.
+chaos [modifiers]...
+    Returns a random Chaos blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
+charon [modifiers]...
+    Returns a random Charon well item. Include bone hourglass and/or loyalty card as <modifiers> to change the output.
+keepsake keepsake_name [rank=3 or 5]
+    Returns information on the given keepsake or companion, at the specified rank. <rank> defaults to max.
+rarityrolls [modifiers]...
+    Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
+pact [pacts=None]...
+    Returns an image representation of the Pact of Punishment with specified (space-separated) <pacts> turned on. Uses pact preset if applicable (see h!addpact).
+negatepact [pacts=None]...
+    Replicates the behavior of h!pact, except any pact not listed is maxed out. Does not support pact presets.
+randpact heat [hell_mode=False]
+    Returns an image representation of the Pact of Punishment at the specified <heat> (this is done by randomly selecting pacts until reaching <heat>, backtracking if needed). Any input after <heat> forces <hell_mode>, which by default is not included.
+mirror [mirror_binary]
+    Returns an image representation of the Mirror of Night, where each perk is equally likely to be red or green. If provided, <mirror_binary> is a 12-digit string of 0s (red perk) and 1s (green perk).
+getpersonal [user=self]
+    Returns a list of your personal pact and mirror presets. If provided, <user> returns that user's presets instead (mention and Discord ID both work).
+addpact name pacts...
+    Adds a personal pact preset with <name> mapping to <pacts>. Use h!getpersonal to view.
+addmirror name mirror_binary
+    Adds a personal mirror preset with <name> mapping to <mirror_binary>. Use h!getpersonal to view.
+deletepact name
+    Removes the personal pact preset given by <name>.
+deletemirror name
+    Removes the personal mirror preset given by <name>.
+modded None
+    Returns information on the official speedrun modpack.
+suggest alias -> item_name
+    Sends a suggested <alias> to <item_name> mapping to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
+credits None
+    Returns a list of people who have significantly contributed to the bot's development.

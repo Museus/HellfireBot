@@ -235,6 +235,6 @@ scintillating feast
 sea storm
     ss, sstorm, seastorm
 bouldy
-    heart of stone
+    heart of stone, <:bouldy:1014438782755422220>
 hades' aid
     hades aid, hades call, hades' call, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid, sigil, sigil of the dead

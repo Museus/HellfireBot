@@ -8,11 +8,13 @@ charon_info = {}
 aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
-prereq_info = {}
+prereqs_info = {}
+definitions_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
              'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 personal = {}
+commands_info = {}
 
 for god in god_cores:
     with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
@@ -33,7 +35,7 @@ for god in god_cores:
                 prereq_list = []
                 for prereq in prereqs:
                     prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-                prereq_info[boon] = prereq_list
+                prereqs_info[boon] = prereq_list
             if type == 'call' and god not in ('hermes', 'charon'):
                 boons_info[boon]['maxcall'] = f.readline().strip()
             if god == 'charon':
@@ -54,7 +56,7 @@ with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
             prereq_list = []
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-            prereq_info[boon] = prereq_list
+            prereqs_info[boon] = prereq_list
         if type == 'call':
             boons_info[boon]['maxcall'] = f.readline().strip()
 
@@ -82,7 +84,7 @@ for weapon in misc.weapon_icons:
                 prereq_list = []
                 for prereq in prereqs:
                     prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-                prereq_info[hammer] = prereq_list
+                prereqs_info[hammer] = prereq_list
 
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
@@ -107,6 +109,21 @@ for category in aliases:
                     if alias in aliases[category]:
                         print(f'duplicate alias: {alias}')
                     aliases[category][alias] = name
+
+with open('./files/definitions.txt', 'r', encoding='utf8') as f:
+    aliases['definition'] = {}
+    while definition := f.readline().strip():
+        if ', ' in definition:
+            definition, alias_list = definition.split(', ', 1)
+            alias_list = alias_list.split(', ')
+            for alias in alias_list:
+                aliases['definition'][alias] = definition
+        definitions_info[definition] = f.readline().strip()
+
+with open('./files/help.txt', 'r', encoding='utf8') as f:
+    while command := f.readline().strip():
+        command, parameters = command.split(' ', 1)
+        commands_info[command] = (', '.join(parameters.split(' ')), f.readline().strip())
 
 
 def read_personal() -> None:

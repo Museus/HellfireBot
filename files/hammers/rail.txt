@@ -7,7 +7,7 @@ xricochet fire
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/49/Ricochet_Fire.png/revision/latest/scale-to-width-down/100?cb=20201111171254
     x(explosive fire, spread fire, seeking fire, aspect of lucifer)
 xspread fire
-    Your **Attack** becomes a **-55%** shorter spread that deals **40** base damage; lose **-6** ammo capacity and fire **33%** slower.
+    Your **Attack** becomes a **-55%** shorter spread that deals **40** base damage and fires **33%** slower; you have **-6** amo capacity.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/25/Spread_Fire.png/revision/latest/scale-to-width-down/99?cb=20190223164919
     x(flurry fire, delta chamber, ricochet fire, seeking fire, concentrated fire, aspect of lucifer)
 xexplosive fire

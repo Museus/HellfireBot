@@ -10,8 +10,8 @@ god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphro
 god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', 'athena': '1007940470627893338',
              'aphrodite': '1007940684231217173', 'artemis': '1007940543403262033', 'ares': '1007940354873507880',
              'dionysus': '1007940646373425182', 'demeter': '1007940575674241055', 'hermes': '1007940503179898990',
-             'bouldy': '1014438782755422220', 'chaos': '1015394974088573038', 'charon': '1017340791011676170',
-             'keepsake': '1018053070921412618'}
+             'bouldy': '1014438782755422220', 'duos': '1007940434129064019', 'chaos': '1015394974088573038',
+             'charon': '1017340791011676170', 'keepsake': '1018053070921412618'}
 weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
                 'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
@@ -126,4 +126,8 @@ def capwords(s: str) -> str:
         return 'HydraLite'
     if s == 'point-blank shot':
         return 'Point-Blank Shot'
+    if s == 'dash-strike':
+        return 'Dash-Strike'
+    if s == 'dash-upper':
+        return 'Dash-Upper'
     return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))

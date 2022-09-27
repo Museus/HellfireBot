@@ -10,6 +10,8 @@ rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4, 'legendary': 5}
 
 
 def parse_boon(input: [str]) -> (str, str, int):
+    if not input:
+        return '', '', -1
     input = [s.lower() for s in input]
     rarity = 'common'
     level = 1
@@ -38,6 +40,8 @@ def parse_aspect(input: [str]) -> (str, int):
 
 
 def parse_hammer(input: [str]) -> (str, bool, bool):
+    if not input:
+        return '', False, False
     input = [s.lower() for s in input]
     hammer_name = ' '.join(input)
     if hammer_name in files.aliases['hammer']:

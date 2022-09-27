@@ -42,6 +42,13 @@ t1 pressure points
     2 3 4 5
     1
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b0/Pressure_Points.png/revision/latest?cb=20181213185844
+xt1 exit wounds
+    Your foes take damage when your <:Cast:1007420837600694463> stuck in them is dislodged.
+    Dislodge Damage: {}
+    100 120 140 160
+    40 28 20 14 10
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d1/Exit_Wounds.png/revision/latest?cb=20200706075205
+    1(crush shot, true shot, phalanx shot, flood shot, electric shot); x(aspect of beowulf, curse of drowning)
 t2 clean kill
     Your **Critical** effects deal even more damage.
     Critical Damage: {+%}
@@ -70,13 +77,6 @@ t2 support fire
     0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e2/Support_Fire.png/revision/latest?cb=20181214175357
     1(deadly strike, deadly flourish, true shot, hunter's flare, hunter dash, artemis' aid, pressure points)
-t2 exit wounds
-    Your foes take damage when your <:Cast:1007420837600694463> stuck in them is dislodged.
-    Dislodge Damage: {}
-    100 120 140 160
-    40 28 20 14 10
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d1/Exit_Wounds.png/revision/latest?cb=20200706075205
-    1(crush shot, true shot, phalanx shot, flood shot, electric shot); x(aspect of beowulf)
 status hunter's mark
     After you deal **Critical** damage to a foe, a foe near it is **Marked**.
     Marked Critical Chance: {+%}

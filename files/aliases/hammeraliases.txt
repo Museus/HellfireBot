@@ -51,7 +51,7 @@ dashing wallop
 explosive return
     ereturn, er
 minotaur rush
-    minotaur
+    minotaur, asterius, asterius rush
 charged shot
     cshot
 charged flight

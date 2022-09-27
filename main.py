@@ -1,6 +1,8 @@
 import copy
+import difflib
 import os
 import random
+
 import discord
 import matplotlib.pyplot as plt
 from discord.ext import commands
@@ -13,13 +15,57 @@ import randommirror
 import randompact
 
 client = commands.Bot(command_prefix=['h!', 'H!'], case_insensitive=True)
-bouldy = None
+client.remove_command('help')
+
+
+@client.event
+async def on_command_error(ctx, err):
+    if isinstance(err, commands.CommandNotFound):
+        err = str(err)
+        err = err[err.find(chr(34)) + 1: err.rfind(chr(34))].lower()
+        names = set()
+        for command in client.commands:
+            names.add(command.name)
+            for alias in command.aliases:
+                names.add(alias)
+        matches = difflib.get_close_matches(err, names, n=2)
+        if not matches:
+            await reply(ctx, f'h!{err} does not exist, use h!help to see a list of valid commands', True)
+            return
+        matches_str = ' or '.join([f'h!{match}' for match in matches])
+        await reply(ctx, f'Did you mean {matches_str}?', True)
+        return
+    raise err
 
 
 @client.event
 async def on_ready():
     await client.change_presence(activity=discord.Game(name='Race Event: 🌽🎉'))
     print(f'{client.user} is online')
+
+
+@client.command(pass_context=True)
+async def help(ctx, command_name=None):
+    embed = discord.Embed()
+    if not command_name:
+        embed.set_author(name='Help')
+        embed.add_field(name='Commands', value=', '.join(list(files.commands_info.keys())), inline=False)
+        embed.add_field(name='Usage', value='h!help <command_name>', inline=False)
+        embed.add_field(name='Syntax', value='[parameter]\n-> parameter is optional\n'
+                                             '[parameter=value]\n-> if not provided, parameter defaults to value\n'
+                                             'parameter...\n-> arbitrary number of parameters accepted')
+    elif command_name in files.commands_info:
+        embed.set_author(name=f'Help for \'{command_name}\' command')
+        embed.add_field(name='Parameters', value=files.commands_info[command_name][0], inline=False)
+        embed.add_field(name='Function', value=files.commands_info[command_name][1], inline=False)
+        aliases = commands.Bot.get_command(client, command_name).aliases
+        if aliases:
+            embed.add_field(name='Aliases', value=', '.join(aliases), inline=False)
+    else:
+        embed.set_author(name='Help')
+        embed.add_field(name=command_name, value='Not a valid command, use h!help for a list of commands', inline=False)
+    embed.set_thumbnail(url=client.user.avatar_url)
+    await ctx.reply(embed=embed)
 
 
 @client.command(aliases=['i'])
@@ -114,16 +160,11 @@ async def pomscaling(ctx, *args):
             plt.fill_between(list(range(1, level + 1)), lower, upper, color=misc.rarity_graph_colors[rarity], alpha=0.5)
     plt.xlabel('Level')
     plt.ylabel(info['stat'].split(':')[0])
+    plt.title(f'Pom scaling for {misc.capwords(name)}')
     plt.ylim(ymin=0)
     plt.grid(linestyle='--')
     plt.savefig('output.png')
-
-    embed = discord.Embed()
-    embed.set_author(name=f'Pom scaling for {" ".join([word[0].upper() + word[1:] for word in name.split()])}')
-
-    file = discord.File('output.png', filename='image.png')
-    embed.set_image(url='attachment://image.png')
-    await ctx.reply(file=file, embed=embed, mention_author=False)
+    await ctx.reply(file=discord.File('output.png'), mention_author=False)
     os.remove('output.png')
 
 
@@ -139,7 +180,7 @@ async def prerequisites(ctx, *args):
         color=misc.god_colors[boon_info['god']]
     )
     try:
-        prereq_info = files.prereq_info[name]
+        prereq_info = files.prereqs_info[name]
         output = parsing.parse_prereqs(prereq_info)
         for category in output:
             if len(category) == 1:
@@ -184,9 +225,9 @@ async def hammer(ctx, *args):
         weapon_name = files.aspects_info[name]['weapon'] if is_aspect else name
         for hammer_name in files.hammers_info:
             if files.hammers_info[hammer_name]['weapon'] == weapon_name:
-                if is_aspect and hammer_name in files.prereq_info:
+                if is_aspect and hammer_name in files.prereqs_info:
                     compatible = True
-                    for prereq in files.prereq_info[hammer_name]:
+                    for prereq in files.prereqs_info[hammer_name]:
                         if (prereq[0] == 'x' and f'aspect of {name}' in prereq[1]) or \
                                 (prereq[0] == '1' and f'aspect of {name}' not in prereq[1]):
                             compatible = False
@@ -196,14 +237,14 @@ async def hammer(ctx, *args):
                 desc += f'{misc.capwords(hammer_name)}\n'
         embed.title = f'List of **{misc.capwords(name)}** hammers'
         embed.description = desc.strip()
-        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect
-                            else f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
+        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect else
+                                f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
     else:
         info = files.hammers_info[name]
         embed.title = f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})'
         embed.description = info['desc']
-        if name in files.prereq_info:
-            output = parsing.parse_prereqs(files.prereq_info[name])
+        if name in files.prereqs_info:
+            output = parsing.parse_prereqs(files.prereqs_info[name])
             for category in output:
                 if len(category) == 1:
                     embed.description = f'**{misc.capwords(category[0])}**'
@@ -238,8 +279,8 @@ async def god(ctx, *args):
                         god_boons[category] = []
                     god_boons[category].append(boon_name)
     embed = discord.Embed(
-        title=f'List of **{misc.capwords(name)}** boons', color=misc.god_colors[name]
-    )
+        title=f'List of **{misc.capwords(name)}** boons',
+        color=misc.god_colors[name])
     for category in god_boons:
         if god_boons[category]:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
@@ -248,7 +289,37 @@ async def god(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['boulder', 'rock', '🪨'])
+@client.command(aliases=['d', 'def', 'defs', 'defines', 'definition', 'definitions'])
+async def define(ctx):
+    if not ctx.message.reference:
+        await reply(ctx, 'idk man as', True)
+        return
+    text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+    try:
+        text = text.embeds[0].description
+    except IndexError:
+        text = text.content
+    if not isinstance(text, str):
+        await reply(ctx, 'idk man as', True)
+        return
+    used = set()
+    for definition in files.definitions_info:
+        if misc.capwords(definition) in text and definition not in used:
+            used.add(definition)
+            text = text.replace(misc.capwords(definition), '')
+    for definition in files.aliases['definition']:
+        if misc.capwords(definition) in text and files.aliases['definition'][definition] not in used:
+            used.add(files.aliases['definition'][definition])
+            text = text.replace(misc.capwords(definition), '')
+    embed = discord.Embed(
+        title=f'List of **Definitions**'
+    )
+    for definition in used:
+        embed.add_field(name=misc.capwords(definition), value=files.definitions_info[definition], inline=False)
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['boulder', 'rock', '🪨', '<:bouldy:1014438782755422220>'])
 async def bouldy(ctx):
     info = random.choice(files.bouldy_info)
     embed = discord.Embed(
@@ -260,7 +331,7 @@ async def bouldy(ctx):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['c'])
+@client.command(aliases=['c', 'ch'])
 async def chaos(ctx, *args):
     blessings = []
     curses = []
@@ -339,9 +410,7 @@ async def keepsake(ctx, *args):
             if category not in keepsakes:
                 keepsakes[category] = []
             keepsakes[category].append(keepsake_name)
-        embed = discord.Embed(
-            title='List of **Keepsakes**', color=misc.god_colors['keepsake']
-        )
+        embed = discord.Embed(title='List of **Keepsakes**', color=misc.god_colors['keepsake'])
         for category in keepsakes:
             desc = '\n'.join([misc.capwords(b) for b in keepsakes[category]])
             embed.add_field(name=category, value=desc)
@@ -370,7 +439,7 @@ async def negatepact(ctx, *args):
     os.remove('./temp.png')
 
 
-@client.command(aliases=['rand', 'random', 'randompact', 'rpact'])
+@client.command(aliases=['r', 'rand', 'random', 'randompact', 'rpact'])
 async def randpact(ctx, total_heat, hell=None):
     total_heat = int(total_heat)
     if total_heat < (5 if hell else 0) or total_heat > (64 if hell else 63):
@@ -399,10 +468,10 @@ async def mirror(ctx, *args):
 
 
 @client.command(aliases=['personal', 'gp'])
-async def getpersonal(ctx):
-    id = str(ctx.message.author.id)
+async def getpersonal(ctx, user: discord.Member = None):
+    id = str(user.id) if user else str(ctx.message.author.id)
     embed = discord.Embed(
-        title=f'Personal pact and mirror presets'
+        title='Personal pact and mirror presets'
     )
     embed.set_footer(text=f'Requested by {ctx.message.author.name}', icon_url=ctx.message.author.avatar_url)
     if id in files.personal:
@@ -430,7 +499,11 @@ async def addpact(ctx, name, *args):
 
 
 @client.command(aliases=['addm', 'am'])
-async def addmirror(ctx, name, mirror_binary):
+async def addmirror(ctx, name, *args):
+    mirror_binary = ''.join(args)
+    if len(mirror_binary) != 12 or not all(c in '01' for c in mirror_binary):
+        await reply(ctx, 'idk man as', True)
+        return
     id = str(ctx.message.author.id)
     if id not in files.personal:
         files.personal[id] = {'mirrors': {}, 'pacts': {}}
@@ -440,7 +513,8 @@ async def addmirror(ctx, name, mirror_binary):
 
 
 @client.command(aliases=['deletep', 'dp', 'removepact', 'removep', 'rp'])
-async def deletepact(ctx, name):
+async def deletepact(ctx, *args):
+    name = ' '.join(args)
     id = str(ctx.message.author.id)
     if id not in files.personal or name not in files.personal[id]['pacts']:
         await reply(ctx, 'No pact with matching name', True)
@@ -451,7 +525,8 @@ async def deletepact(ctx, name):
 
 
 @client.command(aliases=['deletem', 'dm', 'removemirror', 'removem', 'rm'])
-async def deletemirror(ctx, name):
+async def deletemirror(ctx, *args):
+    name = ' '.join(args)
     id = str(ctx.message.author.id)
     if id not in files.personal or name not in files.personal[id]['mirrors']:
         await reply(ctx, 'No mirror with matching name', True)
@@ -466,8 +541,8 @@ async def modded(ctx):
     await reply(ctx, misc.mod_pasta)
 
 
-@client.command(aliases=['suggest', 'suggestion', 's', 'request', 'r'])
-async def alias(ctx, *args):
+@client.command(aliases=['suggestion', 's', 'request'])
+async def suggest(ctx, *args):
     input = ' '.join([s.lower() for s in args])
     verofire = input.split('->')
     if len(verofire) != 2:
@@ -475,6 +550,25 @@ async def alias(ctx, *args):
         return
     channel = client.get_channel(1018409476908392518)
     await channel.send(f'From {ctx.author.mention}:\n```{input}```')
+
+
+@client.command(aliases=['cred', 'creds', 'credit'])
+async def credits(ctx):
+    credits_channel = client.get_channel(1008232170751533106)
+    if not credits_channel:
+        credits_channel = await client.fetch_channel(1008232170751533106)
+    messages = await credits_channel.history(limit=200).flatten()
+    messages = [message.content.split('\n', 1) for message in messages]
+    messages.reverse()
+    embed = discord.Embed(
+        title='Special thanks to'
+    )
+    for message in messages:
+        user = client.get_user(message[0][2: -1])
+        if not user:
+            user = await client.fetch_user(message[0][2: -1])
+        embed.add_field(name=user.name, value=message[1], inline=False)
+    await ctx.reply(embed=embed, mention_author=False)
 
 
 async def reply(ctx, message, mention=False):
@@ -485,4 +579,5 @@ async def reply(ctx, message, mention=False):
 # keep_alive()
 # TOKEN = os.environ['TOKEN']
 from private.config import TOKEN
+
 client.run(TOKEN)

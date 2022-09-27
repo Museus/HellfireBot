@@ -23,7 +23,7 @@ blessing grasp
     0 0
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8c/Chaos_Blessing_Grasp.png/revision/latest?cb=20190121001855
 xblessing lunge
-    Your **Dash Attack** deals {+%} damage.
+    Your **Dash-Strike** deals {+%} damage.
 
     30-60 1.5 2
     0 0

@@ -13,7 +13,7 @@ draining cutter
     Whenever your **Special** slays foes, restore **2%** <:Heart:1008236023039410216>.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/12/Draining_Cutter.png/revision/latest?cb=20201007154733
 concentrated knuckle
-    Your **Attack** deals **+5** base damage for each uninterrupted hit to a foe.
+    Your **Attack** deals **+5** base damage for each consecutive hit to a foe.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b9/Concentrated_Knuckle.png/revision/latest?cb=20201007154626
 xexplosive upper
     Your **Dash-Upper** deals **+100%** damage in an area.
@@ -36,7 +36,7 @@ xkinetic launcher
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bb/Kinetic_Launcher.png/revision/latest?cb=20201007152621
     x(rush kick, flying cutter, explosive upper, quake cutter, aspect of talos, aspect of gilgamesh)
 xheavy knuckle
-    Your **Attack** becomes a slower **3**-hit sequence; each deals **40** base damage.
+    Your **Attack** becomes a **3**-hit sequence; each deals **40** base damage.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8a/Heavy_Knuckle.png/revision/latest?cb=20201007152532
     x(rolling knuckle, aspect of gilgamesh)
 colossus knuckle

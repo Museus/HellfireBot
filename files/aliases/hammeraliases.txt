@@ -1,27 +1,27 @@
 sword
     blade, stygian blade, stygius
 breaching slash
-    breaching
+    breaching, slash
 cruel thrust
-    cruel
+    cruel, thrust
 cursed slash
-    cursed
+    cursed, slash
 dash nova
-    dash, snap, snapnova, snap nova
+    dash, snap, snapnova, snap nova, nova
 double edge
-    dedge, double
+    dedge, double, edge
 double nova
-    dnova, double
+    dnova, double, nova
 flurry slash
-    fslash, flurry
+    fslash, flurry, slash
 hoarding slash
-    hoarding
+    hoarding, slash
 piercing wave
     piercing
 shadow slash
-    shadow
+    shadow, slash
 super nova
-    supernova
+    supernova, nova
 world splitter
     splitter
 greater consecration
@@ -29,37 +29,37 @@ greater consecration
 spear
     eternal spear, varatha
 extending jab
-    extending
+    extending, jab
 chain skewer
-    chain
+    chain, skewer
 breaching skewer
-    breaching
+    breaching, skewer
 vicious skewer
-    vicious
+    vicious, skewer
 exploding launcher
     exploding, elauncher, launcher
 massive spin
-    massive, massivespin
+    massive, massivespin, spin
 quick spin
-    quick, quickspin
+    quick, quickspin, spin
 flurry jab
-    fjab, flurry
+    fjab, flurry, jab
 charged skewer
-    cskewer, chewer
+    cskewer, chewer, skewer
 serrated point
     serrated
 flaring spin
-    flaring
+    flaring, spin
 triple jab
-    tjab, triple
+    tjab, triple, jab
 winged serpent
     winged
 shield
     shield of chaos, aegis
 dread flight
-    dread
+    dread, flight
 sudden rush
-    sudden
+    sudden, rush
 pulverizing blow
     pulverizing, pulv bow, pulvblow, pulv
 dashing wallop
@@ -67,17 +67,17 @@ dashing wallop
 explosive return
     ereturn, er, explosive
 minotaur rush
-    minotaur, asterius, asterius rush
+    minotaur, asterius, asterius rush, rush
 breaching rush
-    breaching
+    breaching, rush
 charged shot
     cshot, charged, charge shot
 charged flight
-    cflight
+    cflight, flight
 empowering flight
-    empowering, eflight
+    empowering, eflight, flight
 dashing flight
-    dflight
+    dflight, flight
 ferocious guard
     ferocious, fguard
 unyielding defense
@@ -85,88 +85,88 @@ unyielding defense
 bow
     heart seeking bow, heart-seeking bow, heartseeking bow, coronacht
 twin shot
-    twin
+    twin, twot, shot
 sniper shot
-    sniper, snot
+    sniper, snot, shot
 explosive shot
-    eshot, explosive
+    eshot, explosive, shot
 flurry shot
-    fshot, flurry
+    fshot, flurry, flot, shot
 piercing volley
-    pvolley, piercing
+    pvolley, piercing, polley, volley
 perfect shot
-    perfect, pshot
+    perfect, pshot, shot
 relentless volley
-    relentless, rvolley
+    relentless, rvolley, rolley, volley
 triple shot
-    triple, tshot
+    triple, tshot, trot, shot
 charged volley
-    chvolley, ch volley, charge volley, chargevolley, chargedvolley, cholley, charged
+    chvolley, ch volley, charge volley, chargevolley, chargedvolley, cholley, charged, volley
 chain shot
-    chain
+    chain, chot, shot
 point-blank shot
     point-blank, point blank, pointblank, point blank shot, pointblank shot
 concentrated volley
-    cvolley, c volley, conc volley, concvolley, colley, cv, concentrated, conc
+    cvolley, c volley, conc volley, concvolley, colley, cv, concentrated, conc, volley
 repulse shot
-    repulse
+    repulse, rot, shot
 fists
     fist, twin fist, twin fists, malphon, twin fists of malphon, gauntlet, gauntlets
 breaching cross
     breaching
 rolling knuckle
-    rolling
+    rolling, ruckle, knuckle
 long knuckle
-    long
+    long, luckle, knuckle
 draining cutter
-    draining, dcutter
+    draining, dcutter, cutter
 concentrated knuckle
-    cknuckle, c knuckle, concentrated, conc
+    cknuckle, c knuckle, concentrated, conc, knuckle
 explosive upper
     eupper, e upper, explosive
 flying cutter
-    flying, fcutter, f cutter
+    flying, fcutter, f cutter, flutter, futter, cutter
 rush kick
-    rush, kick, rushkick
+    rush, kick, rick, rushkick
 quake cutter
-    quake, qcutter
+    quake, qcutter, qutter, cutter
 kinetic launcher
-    kinetic
+    kinetic, launcher
 heavy knuckle
-    heavy
+    heavy, huckle, knuckle
 colossus knuckle
-    colossus
+    colossus, cuckle, knuckle
 rending claws
-    rending
+    rending, raws, rending claw, claws, claw
 rail
     gun, adamant rail, exagryph
 flurry fire
-    ffire, flurry
+    ffire, flurry, fire
 ricochet fire
-    ricochet, rico
+    ricochet, rico, fire
 spread fire
-    spread, sf
+    spread, sf, fire
 explosive fire
-    efire, explosive
+    efire, explosive, fire
 delta chamber
     delta, dc
 piercing fire
-    piercing
+    piercing, fire
 triple bomb
-    tbomb, triple
+    tbomb, triple, bomb
 rocket bomb
-    rocket, rockets
+    rocket, rockets, romb, bomb
 targeting system
     targeting
 hazard bomb
-    hazard
+    hazard, bomb
 cluster bomb
-    cluster, btd6 reference
+    cluster, btd6 reference, bomb
 seeking fire
-    seeking
+    seeking, fire
 concentrated beam
     concentrated, conc
-flash fire
+flash fire, fire
     flash, flashfire, ffire
 triple beam
     tbeam, triple

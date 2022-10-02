@@ -116,6 +116,8 @@ chaos gates, chaos gate
     A sacrifice of <:Heart:1008236023039410216> is necessary to access the unfathomable depths of Chaos.
 invisible
     Vanish and move faster for **2 Sec.**; strike to appear and deal bonus damage for **1.5 Sec**.
+unseen
+    Vanish and move faster *(even if you strike)*, and deal bonus damage for **5 Sec**.
 summon
     A quick assist from a close friend *(once per Encounter)*.
 power rush

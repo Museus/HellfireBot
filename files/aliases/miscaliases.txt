@@ -3,7 +3,7 @@ billowing strength
 lightning reflexes
     reflex, lightning reflex, reflexes
 heaven's vengeance
-    
+    vengeance
 clouded judgment
     clouded judgement
 high voltage
@@ -47,9 +47,9 @@ holy shield
 bronze skin
     bronze
 deathless stand
-    
+    death defiance, dd, deathless
 last stand
-    
+    death defiance, dd, last
 proud bearing
     bearing
 sure footing
@@ -197,7 +197,7 @@ hunting blades
 merciful end
     me
 freezing vortex
-
+    freezing
 curse of nausea
     nausea
 curse of drowning
@@ -237,4 +237,56 @@ sea storm
 bouldy
     heart of stone, <:bouldy:1014438782755422220>
 hades' aid
-    hades aid, hades call, hades' call, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid, sigil, sigil of the dead
+    hades, dad, hades aid, hades call, hades' call, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid, sigil, sigil of the dead
+cyclops jerky
+    cyclop jerky, cyclop, cyclops, attack jerky, jerky strike, attack damage
+chimaera jerky
+    chimaera, special jerky, flourish jerky, jerky flourish, special damage
+braid of atlas
+    braid, atlas braid, cast damage
+prometheus stone
+    stone, prometheus, extra cast
+aether net
+    aether, aethernet, ethernet
+nemesis crest
+    nemesis, backstab damage
+eris bangle
+    bangle, undamaged damage
+nail of talos
+    nail, talos nail, armor damage, armour damage
+ignited ichor
+    ichor
+stygian shard
+    shard
+kiss of styx
+    kos
+touch of styx
+    tos
+life essence
+    life essense, essence
+hydralite
+    hydra lite
+eye of lamia
+    lamia eye, lamia
+centaur soul
+    centaur
+light of ixion
+    ixion, chaos, chaos gate
+trove tracker
+    trove
+skeletal lure
+    lure, fish, fishing, fishing rod, rod of fishing
+price of midas
+    midas
+tinge of erebus
+    erebus
+gaea's treasure
+    gaea, gaeas treasure, gaea treasure
+yarn of ariadne
+    yarn, ariadne, ariadne yarn, yarn ariadne
+flame wheels release
+    flame wheel, flamewheel, flame wheels, flamewheels, flame wheel release, flamewheels release, flamewheel release
+night spindle
+    spindle
+fateful twist
+    fateful

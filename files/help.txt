@@ -46,5 +46,5 @@ modded None
     Returns information on the official speedrun modpack.
 suggest alias -> item_name
     Sends a suggested <alias> to <item_name> mapping to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
-credits None
+creds None
     Returns a list of people who have significantly contributed to the bot's development.

@@ -1,5 +1,7 @@
 sword
     blade, stygian blade, stygius
+breaching slash
+    breaching
 cruel thrust
     cruel
 cursed slash
@@ -7,9 +9,15 @@ cursed slash
 dash nova
     dash, snap, snapnova, snap nova
 double edge
-    dedge
+    dedge, double
+double nova
+    dnova, double
+flurry slash
+    fslash, flurry
 hoarding slash
     hoarding
+piercing wave
+    piercing
 shadow slash
     shadow
 super nova
@@ -22,6 +30,10 @@ spear
     eternal spear, varatha
 extending jab
     extending
+chain skewer
+    chain
+breaching skewer
+    breaching
 vicious skewer
     vicious
 exploding launcher
@@ -30,12 +42,16 @@ massive spin
     massive, massivespin
 quick spin
     quick, quickspin
+flurry jab
+    fjab, flurry
 charged skewer
-    cskewer
+    cskewer, chewer
 serrated point
     serrated
 flaring spin
     flaring
+triple jab
+    tjab, triple
 winged serpent
     winged
 shield
@@ -45,15 +61,17 @@ dread flight
 sudden rush
     sudden
 pulverizing blow
-    pulverizing, pulv bow, pulvblow
+    pulverizing, pulv bow, pulvblow, pulv
 dashing wallop
-    wallop, dwallop
+    wallop, dwallop, dashing
 explosive return
-    ereturn, er
+    ereturn, er, explosive
 minotaur rush
     minotaur, asterius, asterius rush
+breaching rush
+    breaching
 charged shot
-    cshot
+    cshot, charged, charge shot
 charged flight
     cflight
 empowering flight
@@ -71,27 +89,31 @@ twin shot
 sniper shot
     sniper, snot
 explosive shot
-    eshot
+    eshot, explosive
+flurry shot
+    fshot, flurry
 piercing volley
-    pvolley
+    pvolley, piercing
 perfect shot
-    perfect
+    perfect, pshot
 relentless volley
     relentless, rvolley
 triple shot
-    triple
+    triple, tshot
 charged volley
-    chvolley, ch volley, charge volley, chargevolley, chargedvolley, cholley
+    chvolley, ch volley, charge volley, chargevolley, chargedvolley, cholley, charged
 chain shot
     chain
 point-blank shot
     point-blank, point blank, pointblank, point blank shot, pointblank shot
 concentrated volley
-    cvolley, c volley, conc volley, concvolley, colley, cv
+    cvolley, c volley, conc volley, concvolley, colley, cv, concentrated, conc
 repulse shot
     repulse
 fists
     fist, twin fist, twin fists, malphon, twin fists of malphon, gauntlet, gauntlets
+breaching cross
+    breaching
 rolling knuckle
     rolling
 long knuckle
@@ -99,9 +121,9 @@ long knuckle
 draining cutter
     draining, dcutter
 concentrated knuckle
-    cknuckle, c knuckle
+    cknuckle, c knuckle, concentrated, conc
 explosive upper
-    eupper, e upper
+    eupper, e upper, explosive
 flying cutter
     flying, fcutter, f cutter
 rush kick
@@ -118,12 +140,20 @@ rending claws
     rending
 rail
     gun, adamant rail, exagryph
+flurry fire
+    ffire, flurry
 ricochet fire
     ricochet, rico
 spread fire
     spread, sf
+explosive fire
+    efire, explosive
 delta chamber
-    delta
+    delta, dc
+piercing fire
+    piercing
+triple bomb
+    tbomb, triple
 rocket bomb
     rocket, rockets
 targeting system
@@ -134,9 +164,13 @@ cluster bomb
     cluster, btd6 reference
 seeking fire
     seeking
+concentrated beam
+    concentrated, conc
 flash fire
     flash, flashfire, ffire
+triple beam
+    tbeam, triple
 eternal chamber
     eternal
 greater inferno
-    inferno
+    inferno, inferno ring

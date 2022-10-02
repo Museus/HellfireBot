@@ -43,20 +43,20 @@ shattered shackle
 evergreen acorn
     eury, eury keepsake, eurys keepsake, eury's keepsake, acorn
 broken spearpoint
-    spearpoint, spear point
+    spearpoint, spear point, bs
 pom blossom
     mom pom, mom blossom, blossom
 sigil of the dead
     hades aid, hades call, hades' call, hades' aid, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid
 battie
-    bat, batty, meg companion, megs companion, meg's companion, meg pet, megs pet, meg's pet
+    companion battie, bat, batty, meg companion, megs companion, meg's companion, meg pet, megs pet, meg's pet
 mort
-    than companion, thans companion, than's companion, than pet, thans pet, than's pet
+    companion mort, than companion, thans companion, than's companion, than pet, thans pet, than's pet
 shady
-    bouldy, <:bouldy:1014438782755422220>, sisyphus companion, sisyphuss companion, sisyphus' companion, sisyphus's companion, sisyphus pet, sisyphuss pet, sisyphus' pet, sisyphus's pet, bouldy companion, bouldys companion, bouldy's companion, bouldy pet, bouldys pet, bouldy's pet
+    companion shady, bouldy, <:bouldy:1014438782755422220>, sisyphus companion, sisyphuss companion, sisyphus' companion, sisyphus's companion, sisyphus pet, sisyphuss pet, sisyphus' pet, sisyphus's pet, bouldy companion, bouldys companion, bouldy's companion, bouldy pet, bouldys pet, bouldy's pet
 rib
-
+    companion rib
 fidi
-
+    companion fidi
 antos
-    ant, achilles companion, achilless companion, achilles' companion, achilles's companion, achilles pet, achilless pet, achilles' pet, achilles's pet, pat companion, pats companion, pat's companion, pat pet, pats pet, pat's pet, patty companion, pattys companion, patty's companion, patty pet, pattys pet, patty's pet, patroclus companion, patrocluss companion, patroclus' companion, patroclus's companion, patroclus pet, patrocluss pet, patroclus' pet, patroclus's pet
+    companion antos, ant, achilles companion, achilless companion, achilles' companion, achilles's companion, achilles pet, achilless pet, achilles' pet, achilles's pet, pat companion, pats companion, pat's companion, pat pet, pats pet, pat's pet, patty companion, pattys companion, patty's companion, patty pet, pattys pet, patty's pet, patroclus companion, patrocluss companion, patroclus' companion, patroclus's companion, patroclus pet, patrocluss pet, patroclus' pet, patroclus's pet

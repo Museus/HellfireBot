@@ -26,7 +26,9 @@ for god in god_cores:
             if type[0] == 'x':
                 type = type[1:]
             if type in ('attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary'):
-                god_cores[god][type] = boon
+                if type not in god_cores[god]:
+                    god_cores[god][type] = []
+                god_cores[god][type].append(boon)
             boons_info[boon] = {'god': god, 'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
                                 'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
                                 'icon': f.readline().strip()}
@@ -89,16 +91,17 @@ for weapon in misc.weapon_icons:
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
         type, keepsake = keepsake.split(' ', 1)
-        keepsakes_info[keepsake] = {'type': type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
+        keepsakes_info[keepsake] = {'type': type, 'desc': f.readline().strip(),
+                                    'ranks': f.readline().strip().split(' '),
                                     'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
                                     'icon': f.readline().strip()}
         if type != 'companion':
             for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
-                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = keepsake
+                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
         else:
             for suffix in (' companion', 's companion', '\' companion',
                            '\'s companion', ' pet', 's pet', '\' pet', '\'s pet'):
-                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = keepsake
+                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
 
 for category in aliases:
     with open(f'./files/aliases/{category}aliases.txt', 'r', encoding='utf8') as f:
@@ -106,9 +109,9 @@ for category in aliases:
             alias_list = f.readline().strip().split(', ')
             if alias_list[0]:
                 for alias in alias_list:
-                    if alias in aliases[category]:
-                        print(f'duplicate alias: {alias}')
-                    aliases[category][alias] = name
+                    if alias not in aliases[category]:
+                        aliases[category][alias] = []
+                    aliases[category][alias].append(name)
 
 with open('./files/definitions.txt', 'r', encoding='utf8') as f:
     aliases['definition'] = {}
@@ -123,7 +126,7 @@ with open('./files/definitions.txt', 'r', encoding='utf8') as f:
 with open('./files/help.txt', 'r', encoding='utf8') as f:
     while command := f.readline().strip():
         command, parameters = command.split(' ', 1)
-        commands_info[command] = (', '.join(parameters.split(' ')), f.readline().strip())
+        commands_info[command] = [', '.join(parameters.split(' ')), f.readline().strip()]
 
 
 def read_personal() -> None:

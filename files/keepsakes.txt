@@ -41,7 +41,7 @@ god overflowing cup
     Two free spirits, though far apart, still can brighten each other's days.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3f/Overflowing_Cup.png/revision/latest?cb=20190215165516
 god frostbitten horn
-    The next **Boon** you find will be from **Demeter**. HiHer blessings have {+%} chance to be **Rare** or better.
+    The next **Boon** you find will be from **Demeter**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20
     demeter a nurturing
     Aeons, generations, distances; family can withstand them all.
@@ -125,7 +125,7 @@ survival evergreen acorn
     Singing for the joy of it, she lives for the moment, even in death.
     https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e5/Evergreen_Acorn.png/revision/latest?cb=20200106001142
 survival broken spearpoint
-    After taking damage, become impervious to damage for {s}. Refreshes after **7 Sec.**
+    After taking damage, become impervious to damage for {s} Refreshes after **7 Sec.**
     1 1.25 1.5
     patroclus an enlightened
     He passed bitterly from mortal life, but with you, rose above it all.

@@ -1,7 +1,4 @@
-import random
 import re
-
-import discord
 
 import files
 import misc
@@ -33,7 +30,7 @@ def parse_aspect(input: [str]) -> (str, int):
         input = input[:-1]
     aspect_name = ' '.join(input)
     if aspect_name in files.aspects_info:
-        return aspect_name, level
+        return [aspect_name], level
     if aspect_name in files.aliases['aspect']:
         return files.aliases['aspect'][aspect_name], level
     return '', level
@@ -41,15 +38,18 @@ def parse_aspect(input: [str]) -> (str, int):
 
 def parse_hammer(input: [str]) -> (str, bool, bool):
     if not input:
-        return '', False, False
+        return '', False
     input = [s.lower() for s in input]
     hammer_name = ' '.join(input)
     if hammer_name in files.aliases['hammer']:
         hammer_name = files.aliases['hammer'][hammer_name]
+        if len(hammer_name) > 1:
+            return hammer_name, False, False
+        hammer_name = hammer_name[0]
     if hammer_name in misc.weapon_icons:
-        return hammer_name, True, False
+        return [hammer_name], True, False
     if hammer_name in files.hammers_info:
-        return hammer_name, False, False
+        return [hammer_name], False, False
     if parse_aspect(input)[0]:
         return parse_aspect(input)[0], True, True
     return '', False, False
@@ -60,22 +60,25 @@ def parse_god(input: [str]) -> str:
     god_name = ' '.join(input)
     if god_name in files.god_cores or god_name == 'bouldy':
         return god_name
-    if god_name in files.aliases['core'] and files.aliases['core'][god_name] in (*files.god_cores, 'bouldy'):
-        return files.aliases['core'][god_name]
+    if god_name in files.aliases['core'] and files.aliases['core'][god_name][0] in (*files.god_cores, 'bouldy'):
+        return files.aliases['core'][god_name][0]
     return ''
 
 
-def parse_keepsake(input: []) -> (str, int):
+def parse_keepsake(input: []) -> (str, int, bool):
     input = [s.lower() for s in input]
     rank = 3
     if input[-1].isdigit():
         rank = int(input[-1])
         input = input[:-1]
     keepsake_name = ' '.join(input)
-    if keepsake_name in files.keepsakes_info:
-        return keepsake_name, rank
     if keepsake_name in files.aliases['keepsake']:
-        return files.aliases['keepsake'][keepsake_name], rank
+        keepsake_name = files.aliases['keepsake'][keepsake_name]
+        if len(keepsake_name) > 1:
+            return keepsake_name, -1
+        keepsake_name = keepsake_name[0]
+    if keepsake_name in files.keepsakes_info:
+        return [keepsake_name], rank
     return '', rank
 
 
@@ -128,47 +131,8 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
     return parsed_prereqs
 
 
-def parse_random_chaos(blessings: [str], curses: [str], *args) -> discord.embeds.Embed:
-    rarity_rolls = misc.rarity_rolls(*args)
-    if random.random() < rarity_rolls[0]:
-        bless = 'defiance'
-        rarity = 'common'
-    else:
-        bless = random.choice(blessings)
-        if random.random() < rarity_rolls[1]:
-            rarity = 'epic'
-        elif random.random() < rarity_rolls[2]:
-            rarity = 'rare'
-        else:
-            rarity = 'common'
-    curse = random.choice(curses)
-    bless_info = files.boons_info[bless]
-    bless_value = misc.boon_value(bless_info, rarity)
-    if len(bless_value) == 2:
-        bless_value = [random.randint(*[int(v) for v in bless_value])]
-    curse_info = files.boons_info[curse]
-    curse_value = misc.boon_value(curse_info, 'common')
-    if len(curse_value) == 2:
-        curse_value = [random.randint(*curse_value)]
-    if curse == 'enshrouded':
-        duration = f'**{random.choice((4, 5))} Chambers**'
-    elif curse == 'roiling':
-        duration = f'**{random.choice((3, 4))}** standard **Encounters**'
-    else:
-        duration = f'**{random.choice((3, 4))} Encounters**'
-    bless_desc = parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)
-    curse_desc = parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)
-    embed = discord.Embed(
-        title=f'**{misc.capwords(curse + " " + bless)}**',
-        description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
-        color=0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[rarities[rarity] - 1]
-    )
-    embed.set_thumbnail(url=bless_info['icon'])
-    return embed
-
-
 def parse_modifiers(input: [str]) -> [str]:
-    input_str = ' '.join(input)
+    input_str = ' '.join(input).lower()
     output = []
     while True:
         h = []
@@ -178,8 +142,10 @@ def parse_modifiers(input: [str]) -> [str]:
         if not h:
             break
         next_modifier = max(h, key=lambda x: x.count(' '))
-        output.append(files.aliases['modifier'][next_modifier])
         input_str = input_str.replace(next_modifier, '', 1)
+        alias = files.aliases['modifier'][next_modifier][0]
+        if alias == 'chaos favor' or alias not in output:
+            output.append(alias)
     return output
 
 

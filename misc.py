@@ -14,6 +14,7 @@ god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', '
              'charon': '1017340791011676170', 'keepsake': '1018053070921412618'}
 weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
                 'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
+disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
             'all of its features can be toggled on or off and it includes:\n' \
@@ -28,39 +29,23 @@ mod_pasta = 'if you want to download the speedrunning modpack it is available at
             'file "instructions.txt" in the modpack folder'
 
 
-def fuzzy_boon(input: [str]) -> str:
+def fuzzy_boon(input: [str]) -> [str]:
     boon_name = ' '.join(input)
     if boon_name in files.boons_info:
-        return boon_name
-    if boon_name in files.aliases['misc'] and files.aliases['misc'][boon_name] in files.boons_info:
+        return [boon_name]
+    if boon_name in files.aliases['misc']:
         return files.aliases['misc'][boon_name]
     for index, word in enumerate(input):
         if word in files.aliases['core']:
-            input[index] = files.aliases['core'][word]
+            input[index] = files.aliases['core'][word][0]
     if len(input) == 2:
-        if input[0] in files.god_cores.keys() and input[1] in files.god_cores[input[0]].keys():
+        if input[0] in files.god_cores and input[1] in files.god_cores[input[0]]:
             return files.god_cores[input[0]][input[1]]
-        if input[1] in files.god_cores.keys() and input[0] in files.god_cores[input[1]].keys():
+        if input[1] in files.god_cores and input[0] in files.god_cores[input[1]]:
             return files.god_cores[input[1]][input[0]]
     if ' '.join(input) in files.boons_info:
-        return ' '.join(input)
+        return [' '.join(input)]
     return ''
-
-
-def adjust_boon_type(info: {}, boon_name: str, rarity: str, level: int) -> (str, str, int):
-    if info['type'] in ('legendary', 'duo'):
-        output = f'**{info["type"].upper()}** {boon_name.upper()}\n'
-        rarity = 'common'
-        level = 1
-    else:
-        if len(info['rarities']) == 3 and rarity == 'heroic':
-            rarity = 'epic'
-        if info['levels'][0] == '0':
-            output = f'**{rarity.upper()}** {boon_name.upper()}\n'
-            level = 1
-        else:
-            output = f'**{rarity.upper()}** {boon_name.upper()} LV.{level}\n'
-    return output, rarity, level
 
 
 def boon_value(info: {str: str}, rarity: str) -> [float]:
@@ -88,13 +73,13 @@ def boon_color(info: {str: str}, rarity: str) -> int:
 
 def rarity_rolls(input: [str]) -> [float]:
     def buff_rolls(buffs: [float]) -> None:
-        for i in range(len(buffs)):
-            rolls[i] += buffs[i]
+        for j in range(len(buffs)):
+            rolls[j] += buffs[j]
 
     rolls = [0.12, 0.05, 0.1]
     chaos = False
     hermes = False
-    if 'cosmic egg' or 'chaos' in input:
+    if 'cosmic egg' in input or 'chaos' in input:
         rolls = [0.01, 0.05, 0.1]
         chaos = True
         if 'cosmic egg' in input:
@@ -106,8 +91,9 @@ def rarity_rolls(input: [str]) -> [float]:
         hermes = True
     if 'god keepsake' in input and not chaos and not hermes:
         buff_rolls([0.1, 0.1, 0.2])
-    if 'olympian favor' in input:
-        buff_rolls([0.1, 0.1, 0.2])
+    if 'chaos favor' in input:
+        for i in range(input.count('chaos favor')):
+            buff_rolls([0.1, 0.1, 0.2])
     if 'yarn of ariadne' in input or 'refreshing nectar' in input:
         buff_rolls([0.1, 0.25, 1])
     if 'exclusive access' in input:

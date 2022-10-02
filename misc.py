@@ -75,7 +75,6 @@ def rarity_rolls(input: [str]) -> [float]:
     def buff_rolls(buffs: [float]) -> None:
         for j in range(len(buffs)):
             rolls[j] += buffs[j]
-
     rolls = [0.12, 0.05, 0.1]
     chaos = False
     hermes = False

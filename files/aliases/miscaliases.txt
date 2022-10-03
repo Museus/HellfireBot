@@ -215,7 +215,7 @@ mirage shot
 lightning rod
     rod, r o d
 stubborn roots
-    stubborn
+    stubborn, roots, stubborn root
 calculated risk
     calculated
 unshakable mettle

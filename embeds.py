@@ -409,7 +409,7 @@ def getpersonal_embed(ctx, user):
     embed = discord.Embed(
         title='Personal pact and mirror presets'
     )
-    embed.set_footer(text=f'Requested by {ctx.message.author.name}', icon_url=ctx.message.author.avatar_url)
+    embed.set_footer(text=f'Requested by {ctx.message.author.name}', icon_url=ctx.message.author.avatar.url)
     if id in files.personal:
         if files.personal[id]['pacts']:
             pacts = ''
@@ -446,7 +446,7 @@ def help_embed(client, command_name, aliases_to_command):
         else:
             embed.set_author(name='Help')
             embed.add_field(name=command_name, value='Not a valid command, use h!help for a list of commands')
-    embed.set_thumbnail(url=client.user.avatar_url)
+    embed.set_thumbnail(url=client.user.avatar.url)
     return embed
 
 

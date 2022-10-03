@@ -13,6 +13,10 @@ def random_mirror(id: str, input: str) -> None:
         for i, flip in enumerate(files.personal[id]['mirrors'][input]):
             if flip == '1':
                 base.paste(green.crop((0, pixel_offsets[i], 397, pixel_offsets[i + 1])), (0, pixel_offsets[i]))
+    elif len(input) == 12 and all(c in '01' for c in input):
+        for i, flip in enumerate(input):
+            if flip == '1':
+                base.paste(green.crop((0, pixel_offsets[i], 397, pixel_offsets[i + 1])), (0, pixel_offsets[i]))
     else:
         for i in range(1, len(pixel_offsets)):
             if random() < 0.5:

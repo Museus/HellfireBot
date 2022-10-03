@@ -15,7 +15,9 @@ import parsing
 import randommirror
 import randompact
 
-client = commands.Bot(command_prefix=['h!', 'H!'], case_insensitive=True)
+intents = discord.Intents.default()
+intents.message_content = True
+client = commands.Bot(command_prefix=['h!', 'H!'], case_insensitive=True, intents=intents)
 client.remove_command('help')
 aliases_to_command = {}
 

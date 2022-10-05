@@ -31,8 +31,8 @@ def pact_gen(id: str, input: [str]) -> int:
     input = [s.lower() for s in input]
     if id in files.personal and ' '.join(input) in files.personal[id]['pacts']:
         input = files.personal[id]['pacts'][' '.join(input)]
-        if input[0] == 'n':
-            return negate_pact_gen(input[1:])
+    if input and input[0] == 'n':
+        return negate_pact_gen(input[1:])
     hell_mode = False
     total_heat = 0
     base = Image.open('./files/pacts/base.png')

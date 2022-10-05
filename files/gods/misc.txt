@@ -3,7 +3,7 @@ hades xcall hades' aid
     Stealth Damage Bonus: {+%}
     100
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a8/Hades%27_Aid.png/revision/latest?cb=20201021012105
+    a/a8/Hades%27_Aid.png/revision/latest?cb=20201021012105
     m(sigil of the dead)
     Max Gauge Bonus: Turn **Unseen** Instead
 bouldy xt1 heart of stone
@@ -11,5 +11,5 @@ bouldy xt1 heart of stone
     Ambiguity Bonus: {+%}
     2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
+    b/b4/Heart_of_Stone.png/revision/latest?cb=20191212214149
     m(<:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>'s aid); x(aspect of <:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>)

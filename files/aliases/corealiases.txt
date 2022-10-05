@@ -21,9 +21,9 @@ charon
 bouldy
     boulder, rock, 🪨
 attack
-    strike, dstrike, ⚔
+    atk, strike, dstrike, ⚔
 special
-    flourish
+    spcl, flourish
 cast
     shot, grasp, 💎
 flare

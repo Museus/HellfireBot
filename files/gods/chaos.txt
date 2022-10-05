@@ -3,154 +3,154 @@ blessing strike
 
     30-40 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/9c/Chaos_Blessing_Strike.png/revision/latest?cb=20190121001952
+    9/9c/Chaos_Blessing_Strike.png/revision/latest?cb=20190121001952
 blessing flourish
     Your **Special** deals {+%} damage.
 
     30-60 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4e/Chaos_Blessing_Flourish.png/revision/latest?cb=20190121001842
+    4/4e/Chaos_Blessing_Flourish.png/revision/latest?cb=20190121001842
 blessing shot
     Your **Cast** deals {+%} damage.
 
     30-40 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/76/Chaos_Blessing_Shot.png/revision/latest?cb=20190121001931
+    7/76/Chaos_Blessing_Shot.png/revision/latest?cb=20190121001931
 blessing grasp
-    Gain {+} <:Cast:1007420837600694463>.
+    Gain {+} <:Cast:1027103688449347635>.
 
     1 1 1
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8c/Chaos_Blessing_Grasp.png/revision/latest?cb=20190121001855
+    8/8c/Chaos_Blessing_Grasp.png/revision/latest?cb=20190121001855
 xblessing lunge
     Your **Dash-Strike** deals {+%} damage.
 
     30-60 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/13/Chaos_Blessing_Lunge.png/revision/latest?cb=20190121001907
+    1/13/Chaos_Blessing_Lunge.png/revision/latest?cb=20190121001907
     x(aspect of lucifer)
 xblessing ambush
     You deal {+%} damage striking foes from behind.
 
     40-60 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a9/Chaos_Blessing_Ambush.png/revision/latest?cb=20201030182032
+    a/a9/Chaos_Blessing_Ambush.png/revision/latest?cb=20201030182032
     m(shadow presence)
 xblessing assault
     You deal {+%} damage striking undamaged foes.
 
     30-40 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8e/Chaos_Blessing_Assault.png/revision/latest?cb=20201030182112
+    8/8e/Chaos_Blessing_Assault.png/revision/latest?cb=20201030182112
     m(fiery presence)
 blessing soul
     Gain {+} <:MaxHealth:1008235891308908545>.
 
     30-40 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4f/Chaos_Blessing_Soul.png/revision/latest?cb=20190121001942
+    4/4f/Chaos_Blessing_Soul.png/revision/latest?cb=20190121001942
 blessing favor
     Boons have {+%} chance to be **Rare** or better.
 
     11-20 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/32/Chaos_Blessing_Favor.png/revision/latest?cb=20190121001830
+    3/32/Chaos_Blessing_Favor.png/revision/latest?cb=20190121001830
 blessing affluence
-    Any <:Obol:1007187039801856060> you find is worth {+%}.
+    Any <:Obol:1027113221691281449> you find is worth {+%}.
 
     30-50 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/38/Chaos_Blessing_Affluence.png/revision/latest?cb=20190121001749
+    3/38/Chaos_Blessing_Affluence.png/revision/latest?cb=20190121001749
 blessing eclipse
-    Any <:Darkness:1007187036341551184> and <:Gemstone:1007187037595639818> you find are worth {+%}.
+    Any <:Darkness:1007187036341551184> and <:Gemstone:1027109936276197386> you find are worth {+%}.
 
     75-100 1.5 2
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0e/Chaos_Blessing_Eclipse.png/revision/latest?cb=20190121001812
+    0/0e/Chaos_Blessing_Eclipse.png/revision/latest?cb=20190121001812
 curse maimed
     Each time you **Attack**, get hit for {} <:Heart:1008236023039410216>.
     Lasts for **3 - 4 Encounters**
 	3-5
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fe/Chaos_Curse_Maimed.png/revision/latest?cb=20190117180510
+	f/fe/Chaos_Curse_Maimed.png/revision/latest?cb=20190117180510
 curse flayed
     Each time you **Special**, get hit for {} <:Heart:1008236023039410216>.
     Lasts for **3 - 4 Encounters**
 	3-5
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0b/Chaos_Curse_Flayed.png/revision/latest?cb=20190117180213
+	0/0b/Chaos_Curse_Flayed.png/revision/latest?cb=20190117180213
 curse addled
     Each time you Cast, get hit for {} <:Heart:1008236023039410216>.
     Lasts for **3 - 4 Encounters**
     3-5
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fd/Chaos_Curse_Addled.png/revision/latest?cb=20190117180440
+    f/fd/Chaos_Curse_Addled.png/revision/latest?cb=20190117180440
 xcurse slippery
-    You cannot collect <:Cast:1007420837600694463> for {} seconds.
+    You cannot collect <:Cast:1027103688449347635> for {} seconds.
     Lasts for **3 - 4 Encounters**
 	10-15
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/38/Chaos_Curse_Slippery.png/revision/latest?cb=20190117180019
+	3/38/Chaos_Curse_Slippery.png/revision/latest?cb=20190117180019
 	m(infernal soul)
 curse halting
     Your **Dash** has {-%} reduced range.
     Lasts for **3 - 4 Encounters**
     20-50
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b6/Chaos_Curse_Halting.png/revision/latest?cb=20201030182327
+    b/b6/Chaos_Curse_Halting.png/revision/latest?cb=20201030182327
 curse slothful
     You have {-%} move speed.
     Lasts for **3 - 4 Encounters**
     40-60
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/74/Chaos_Curse_Slothful.png/revision/latest?cb=20190117180600
+	7/74/Chaos_Curse_Slothful.png/revision/latest?cb=20190117180600
 xcurse atrophic
     Your Life Total is reduced by {} <:Heart:1008236023039410216>.
     Lasts for **3 - 4 Encounters**
 	25-49
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/06/Chaos_Curse_Atrophic.png/revision/latest?cb=20190117180717
+	0/06/Chaos_Curse_Atrophic.png/revision/latest?cb=20190117180717
 	1(50 or more <:Heart:1008236023039410216>)
 curse excruciating
     You take {+%} damage.
     Lasts for **3 - 4 Encounters**
 	20-50
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ca/Chaos_Curse_Excruciating.png/revision/latest?cb=20190117180135
+	c/ca/Chaos_Curse_Excruciating.png/revision/latest?cb=20190117180135
 curse roiling
     You face {+%} more foes.
     Lasts for **3 - 4** standard **Encounters**
 	30-80
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b0/Chaos_Curse_Roiling.png/revision/latest?cb=20190117180627
+	b/b0/Chaos_Curse_Roiling.png/revision/latest?cb=20190117180627
 curse caustic
     Slain foes toss an Inferno-Bomb at you.
     Lasts for **3 - 4 Encounters**
 	0
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fd/Chaos_Curse_Caustic.png/revision/latest?cb=20190117180744
+	f/fd/Chaos_Curse_Caustic.png/revision/latest?cb=20190117180744
 curse abyssal
     You take {+%} damage from traps.
     Lasts for **3 - 4 Encounters**
     300-500
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/99/Chaos_Curse_Abyssal.png/revision/latest?cb=20190117180109
+    9/99/Chaos_Curse_Abyssal.png/revision/latest?cb=20190117180109
 curse pauper's
-    You cannot earn <:Obol:1007187039801856060>.
+    You cannot earn <:Obol:1027113221691281449>.
     Lasts for **3 - 4 Encounters**
     0
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bf/Chaos_Curse_Pauper.png/revision/latest?cb=20190117180805
+    b/bf/Chaos_Curse_Pauper.png/revision/latest?cb=20190117180805
 curse enshrouded
     Chamber reward previews are hidden.
 	Lasts for **4 - 5 Chambers**
 	0
 	0 0
-	https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f4/Chaos_Curse_Enshrouded.png/revision/latest?cb=20190117180535
+	f/f4/Chaos_Curse_Enshrouded.png/revision/latest?cb=20190117180535
 legendary defiance
     Gain {+} use of **Death Defiance** *(this escape attempt)*.
 
     1
     0 0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/29/Chaos_Blessing_Defiance.png/revision/latest?cb=20190121001802
+    2/29/Chaos_Blessing_Defiance.png/revision/latest?cb=20190121001802
     1(any other chaos boon)

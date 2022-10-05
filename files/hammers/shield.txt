@@ -1,43 +1,43 @@
 xdread flight
     Your **Special** can strike up to **4** additional foes before returning.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/0c/Dread_Flight.png/revision/latest?cb=20181230000217
+    0/0c/Dread_Flight.png/revision/latest?cb=20181230000217
     x(aspect of zeus)
 sudden rush
     Your **Bull Rush** charges much faster.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1a/Sudden_Rush.png/revision/latest?cb=20181230000242
+    1/1a/Sudden_Rush.png/revision/latest?cb=20181230000242
 pulverizing blow
     Your **Standing Attack** hits twice, but does not knock foes away.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/30/Pulverizing_Blow.png/revision/latest?cb=20181230000227
+    3/30/Pulverizing_Blow.png/revision/latest?cb=20181230000227
 dashing wallop
     Your **Dash-Strike** deals **+50%** damage in a larger area.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3d/Dashing_Wallop.png/revision/latest?cb=20181230212836
+    3/3d/Dashing_Wallop.png/revision/latest?cb=20181230212836
 explosive return
     Your **Special** deals **50** damage to nearby foes when you catch it.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d0/Explosive_Return.png/revision/latest?cb=20181230000642
+    d/d0/Explosive_Return.png/revision/latest?cb=20181230000642
 minotaur rush
     Your **Bull Rush** gains a **Power Rush** that does **+500%** damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/01/Minotaur_Rush.png/revision/latest?cb=20181230000234
+    0/01/Minotaur_Rush.png/revision/latest?cb=20181230000234
 breaching rush
     Your **Bull Rush** deals **+400%** damage to **Armor**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1c/Armor_Shredder.png/revision/latest?cb=20181230011111
+    1/1c/Armor_Shredder.png/revision/latest?cb=20181230011111
 charged shot
     Your **Bull Rush** instead fires a piercing shot that deals **80** base damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/7e/Charged_Shot.png/revision/latest?cb=20200105153719
+    7/7e/Charged_Shot.png/revision/latest?cb=20200105153719
 xcharged flight
     Hold **Special** to charge your throw for up to **+200%** base damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d1/Charged_Flight.png/revision/latest?cb=20201007161353
+    d/d1/Charged_Flight.png/revision/latest?cb=20201007161353
     x(dashing flight, aspect of chaos, aspect of zeus)
 empowering flight
     After your **Special** hits, your next **2 Attacks** deal **+80%** damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/85/Empowering_Flight.png/revision/latest?cb=20201007161444
+    8/85/Empowering_Flight.png/revision/latest?cb=20201007161444
 xdashing flight
     While you **Dash**, your **Special** is faster and deals **+200%** damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/c/ca/Dashing_Flight.png/revision/latest?cb=20201007161529
+    c/ca/Dashing_Flight.png/revision/latest?cb=20201007161529
     x(charged flight, aspect of zeus)
 ferocious guard
     After blocking a foe, gain **+20%** damage and move speed for **10 Sec**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3a/Ferocious_Guard.png/revision/latest?cb=20201007161630
+    3/3a/Ferocious_Guard.png/revision/latest?cb=20201007161630
 xunyielding defense
     After using your **Naegling's Board** **Cast**, you are **Sturdy** for **3 Sec**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/9e/Unyielding_Defense.png/revision/latest?cb=20201007161555
+    9/9e/Unyielding_Defense.png/revision/latest?cb=20201007161555
     1(aspect of beowulf)

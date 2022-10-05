@@ -1,48 +1,48 @@
 breaching cross
     Your **Dash-Strike** pierces foes and deals **+900%** damage to **Armor**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b1/Breaching_Cross.png/revision/latest?cb=20201007154858
+    b/b1/Breaching_Cross.png/revision/latest?cb=20201007154858
 xrolling knuckle
     Your **Dash-Strike** deals **+60%** damage; added to **Attack** sequence.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/50/Rolling_Knuckle.png/revision/latest?cb=20201007154932
+    5/50/Rolling_Knuckle.png/revision/latest?cb=20201007154932
     x(heavy knuckle, aspect of gilgamesh)
 xlong knuckle
     Your **Attack** has more range and deals **+10%** damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/45/Long_Knuckle.png/revision/latest?cb=20201007154825
+    4/45/Long_Knuckle.png/revision/latest?cb=20201007154825
     x(aspect of gilgamesh)
 draining cutter
     Whenever your **Special** slays foes, restore **2%** <:Heart:1008236023039410216>.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/12/Draining_Cutter.png/revision/latest?cb=20201007154733
+    1/12/Draining_Cutter.png/revision/latest?cb=20201007154733
 concentrated knuckle
     Your **Attack** deals **+5** base damage for each consecutive hit to a foe.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b9/Concentrated_Knuckle.png/revision/latest?cb=20201007154626
+    b/b9/Concentrated_Knuckle.png/revision/latest?cb=20201007154626
 xexplosive upper
     Your **Dash-Upper** deals **+100%** damage in an area.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/38/Explosive_Upper.png/revision/latest?cb=20201007154515
+    3/38/Explosive_Upper.png/revision/latest?cb=20201007154515
     x(kinetic launcher)
 xflying cutter
     Hold **Special** for longer range and up to **+100%** base damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4c/Flying_Cutter.png/revision/latest?cb=20201007154045
+    4/4c/Flying_Cutter.png/revision/latest?cb=20201007154045
     x(rush kick, kinetic launcher, aspect of talos)
 xrush kick
     Your **Special** becomes a flying, homing kick that deals **40** base damage twice.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/dc/Rush_Kick.png/revision/latest?cb=20201007153521
+    d/dc/Rush_Kick.png/revision/latest?cb=20201007153521
     x(flying cutter, kinetic launcher, aspect of talos)
 xquake cutter
     After using your **Special**, deal **90** damage in an area where you land.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8f/Quake_Cutter.png/revision/latest?cb=20201007153447
+    8/8f/Quake_Cutter.png/revision/latest?cb=20201007153447
     x(kinetic launcher, aspect of demeter)
 xkinetic launcher
     Your **Special** becomes a charged shot that deals **50** base damage; can **Power Shot**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/bb/Kinetic_Launcher.png/revision/latest?cb=20201007152621
+    b/bb/Kinetic_Launcher.png/revision/latest?cb=20201007152621
     x(rush kick, flying cutter, explosive upper, quake cutter, aspect of talos, aspect of gilgamesh)
 xheavy knuckle
     Your **Attack** becomes a **3**-hit sequence; each deals **40** base damage.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8a/Heavy_Knuckle.png/revision/latest?cb=20201007152532
+    8/8a/Heavy_Knuckle.png/revision/latest?cb=20201007152532
     x(rolling knuckle, aspect of gilgamesh)
 colossus knuckle
     While using your **Attack** or **Special**, you are **Sturdy**.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f5/Colossus_Knuckle.png/revision/latest?cb=20201007152438
+    f/f5/Colossus_Knuckle.png/revision/latest?cb=20201007152438
 xrending claws
     **Maim**-afflicted foes take **+25%** damage and move **30%** slower.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e4/Rending_Claws.png/revision/latest?cb=20200927231205
+    e/e4/Rending_Claws.png/revision/latest?cb=20200927231205
     1(aspect of gilgamesh)

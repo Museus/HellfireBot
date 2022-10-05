@@ -3,184 +3,184 @@ god thunder signet
     10 15 20
     zeus a thunderous
     Many beg favors of the King of Olympus. Few earn them with his compliments.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/19/Thunder_Signet.png/revision/latest?cb=20181214231524
+    1/19/Thunder_Signet.png/revision/latest?cb=20181214231524
 god conch shell
     The next **Boon** you find will be from **Poseidon**. His blessings have {+%} chance to be **Rare** or better.
     10 15 20
     poseidon an unshakable
     He would turn the very tides and sunder the earth for you.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Conch_Shell.png/revision/latest?cb=20181214230636
+    e/ed/Conch_Shell.png/revision/latest?cb=20181214230636
 god owl pendant
     The next **Boon** you find will be from **Athena**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20
     athena a knowing
     She anticipated almost every detail, save for the kinship she would feel.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f9/Owl_Pendant.png/revision/latest?cb=20181214232304
+    f/f9/Owl_Pendant.png/revision/latest?cb=20181214232304
 god eternal rose
     The next **Boon** you find will be from **Aphrodite**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20
     aphrodite a beautiful
     Her true affection is reserved for those who find love and beauty on their own.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/55/Eternal_Rose.png/revision/latest?cb=20181214231918
+    5/55/Eternal_Rose.png/revision/latest?cb=20181214231918
 god blood-filled vial
     The next **Boon** you find will be from **Ares**. His blessings have {+%} chance to be **Rare** or better.
     10 15 20
     ares a blood-bound
     Some of the strongest kinships form during the darkest of circumstances.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d2/Blood-Filled_Vial.png/revision/latest?cb=20181214231345
+    d/d2/Blood-Filled_Vial.png/revision/latest?cb=20181214231345
 god adamant arrowhead
     The next **Boon** you find will be from **Artemis**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20
     artemis an impenetrable
     Her solitary nature and her sharpened instincts mean she seldom dares to share her trust.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/70/Adamant_Arrowhead.png/revision/latest?cb=20181213005219
+    7/70/Adamant_Arrowhead.png/revision/latest?cb=20181213005219
 god overflowing cup
     The next **Boon** you find will be from **Dionysus**. His blessings have {+%} chance to be **Rare** or better.
     10 15 20
     dionysus a jubilant
     Two free spirits, though far apart, still can brighten each other's days.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3f/Overflowing_Cup.png/revision/latest?cb=20190215165516
+    3/3f/Overflowing_Cup.png/revision/latest?cb=20190215165516
 god frostbitten horn
     The next **Boon** you find will be from **Demeter**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20
     demeter a nurturing
     Aeons, generations, distances; family can withstand them all.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/42/Frostbitten_Horn.png/revision/latest?cb=20200313011952
+    4/42/Frostbitten_Horn.png/revision/latest?cb=20200313011952
 god cosmic egg
     Enter **Chaos Gates** without losing <:Heart:1008236023039410216>. Blessings from **Chaos** have {+%} chance to be **Rare** or better.
     20 30 40
     primordial chaos an infinite
     Even the Origin of All Things seeks to know whimsy and surprise.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/19/Cosmic_Egg.png/revision/latest?cb=20190122001310
+    1/19/Cosmic_Egg.png/revision/latest?cb=20190122001310
 combat black shawl
     Deal {+%} damage striking undamaged foes; also striking foes from behind.
     10 15 20
     nyx an eternal
     Through sense of duty, she raised you. From the dark of her heart, she loves you.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/7/7d/Black_Shawl.png/revision/latest?cb=20181214231305
+    7/7d/Black_Shawl.png/revision/latest?cb=20181214231305
 combat pierced butterfly
     Gain {+%} damage each time you clear an **Encounter** without taking damage.
     1 1.5 2
     thanatos an undying
     With whom should Death belong, if not with Blood, with Life?
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/58/Pierced_Butterfly.png/revision/latest?cb=20190510030913
+    5/58/Pierced_Butterfly.png/revision/latest?cb=20190510030913
 combat skull earring
     Deal {+%} damage while at **35%** <:Heart:1008236023039410216> or less.
     20 30 40
     megaera an intense
     Your deaths at one another's hands... all your pleasure, all your pain, united.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/8b/Skull_Earring.png/revision/latest?cb=20181215040952
+    8/8b/Skull_Earring.png/revision/latest?cb=20181215040952
 combat distant memory
     Deal {+%} damage to distant foes.
     10 20 30
     orpheus a sonorous
     Inspiration comes from unlikely places. Friendship comes in unlikely forms.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/8/88/Distant_Memory.png/revision/latest?cb=20181214231613
+    8/88/Distant_Memory.png/revision/latest?cb=20181214231613
 combat lambent plume
     Gain {+%} **Dodge** chance and move speed each time you quickly clear an **Encounter**.
     1 1.1 1.2
     hermes a quicksilver
     His carefree nature and his haste never betray his true capacity.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/12/Lambent_Plume.png/revision/latest?cb=20190611232130
+    1/12/Lambent_Plume.png/revision/latest?cb=20190611232130
 combat shattered shackle
     Your **Attack**, **Special**, and **Cast** each deal {+%} damage while not empowered by a **Boon**.
     50 75 100
     sisyphus a rock-solid
     If he can hoist a boulder on his own, he knows he can be of some support.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/47/Shattered_Shackle.png/revision/latest?cb=20181214232336
+    4/47/Shattered_Shackle.png/revision/latest?cb=20181214232336
 combat sigil of the dead
     Your **Call** becomes **Hades' Aid**, which briefly makes you **Invisible**; your **God Gauge** starts {%} full.
     10 20 30
     hades an intractable
     The feared and distant Underworld King knows that his hardest work is still ahead of him.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fa/Sigil_of_the_Dead.png/revision/latest?cb=20200925220738
+    f/fa/Sigil_of_the_Dead.png/revision/latest?cb=20200925220738
 survival old spiked collar
     Add {+} <:MaxHealth:1008235891308908545> to your Life Total.
     25 38 50
     cerberus a ferocious
     The hound of hell has entrusted all his loyalty in his master, and his master's son.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ed/Old_Spiked_Collar.png/revision/latest?cb=20181214232216
+    e/ed/Old_Spiked_Collar.png/revision/latest?cb=20181214232216
 survival myrmidon bracer
     Take {-%} damage from the front, but take **+10%** from the back.
     20 25 30
     achilles an unyielding
     Fated for glory, he shall forever be remembered, and remember you.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Myrmidon_Bracer.png/revision/latest?cb=20181214232107
+    9/92/Myrmidon_Bracer.png/revision/latest?cb=20181214232107
 survival harpy feather duster
     Broken urns have a {%} chance to contain <:Healing:1007536016472682557> items.
     3 5 6
     dusa an immaculate
     She lifts you up without effort. You give her courage to fly.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b5/Harpy_Feather_Duster.png/revision/latest?cb=20181214231809
+    b/b5/Harpy_Feather_Duster.png/revision/latest?cb=20181214231809
 survival lucky tooth
     Automatically restore up to {} <:Heart:1008236023039410216> when your Life Total is depleted *(once per escape attempt)*.
     50 75 100
     skelly an unbreakable
     A true and loyal friend shall always stand up for you. Even stand up to you.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b1/Lucky_Tooth.png/revision/latest?cb=20181214231951
+    b/b1/Lucky_Tooth.png/revision/latest?cb=20181214231951
 survival evergreen acorn
     In the final encounter in each Underworld region, take **0** damage the first {} times foes hit you.
     3 4 5
     eurydice an inspiring
     Singing for the joy of it, she lives for the moment, even in death.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e5/Evergreen_Acorn.png/revision/latest?cb=20200106001142
+    e/e5/Evergreen_Acorn.png/revision/latest?cb=20200106001142
 survival broken spearpoint
     After taking damage, become impervious to damage for {s} Refreshes after **7 Sec.**
     1 1.25 1.5
     patroclus an enlightened
     He passed bitterly from mortal life, but with you, rose above it all.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/f1/Broken_Spearpoint.png/revision/latest?cb=20190508060736
+    f/f1/Broken_Spearpoint.png/revision/latest?cb=20190508060736
 resource bone hourglass
     Items from the **Well of Charon** have durations increased by {+} **Encounters**.
     4 6 8
     charon an unspoken
     Only a scant few souls ever earn the favor of the feared boatman.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/f/fe/Bone_Hourglass.png/revision/latest?cb=20200707134204
+    f/fe/Bone_Hourglass.png/revision/latest?cb=20200707134204
 resource cthonic coin purse
-    Receive {} <:Obol:1007187039801856060> to spend as you please *(once per escape attempt)*.
+    Receive {} <:Obol:1027113221691281449> to spend as you please *(once per escape attempt)*.
     100 125 150
     hypnos a dreamlike
     His wakeful cheer is genuine, whenever you are there. He dreams, until such time.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d0/Chthonic_Coin_Purse.png/revision/latest?cb=20181214231435
+    d/d0/Chthonic_Coin_Purse.png/revision/latest?cb=20181214231435
 resource pom blossom
     After every {} **Encounters**, gain **+1 Lv.** <:PomQuestion:1017913455275147264> *(a random Boon grows stronger)*.
     6 5 4
     persephone a growing
     The dead live on in the Underworld, and her nurturing instinct there also thrives.
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/d/d1/Pom_Blossom.png/revision/latest?cb=20200925012154
+    d/d1/Pom_Blossom.png/revision/latest?cb=20200925012154
 companion battie
     Your **Summon** deals **2500** damage in an area near your closest foe, then continually down the line.
     0
     megaera 0 0
     lover and rival
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/33/Battie.png/revision/latest?cb=20191221051314
+    3/33/Battie.png/revision/latest?cb=20191221051314
 companion mort
     Your **Summon** deals **3500** damage in an area in front of you, after a brief delay.
     0
     thanatos 0 0
     um
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/5/55/Mort.png/revision/latest?cb=20191221052814
+    5/55/Mort.png/revision/latest?cb=20191221052814
 companion shady
-    Your **Summon** deals **1000** damage in an area, and drops a smattering of <:Healing:1007536016472682557>, <:Darkness:1007187036341551184>, and <:Obol:1007187039801856060>.
+    Your **Summon** deals **1000** damage in an area, and drops a smattering of <:Healing:1007536016472682557>, <:Darkness:1007187036341551184>, and <:Obol:1027113221691281449>.
     0
     sisyphus & bouldy 0 0
     staunch supporters
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/18/Shady.png/revision/latest?cb=20191221053445
+    1/18/Shady.png/revision/latest?cb=20191221053445
 companion rib
     Your **Summon** creates a distraction with **250** <:Heart:1008236023039410216>, provoking your foes to attack it until it dies.
     0
     skelly 0 0
     willing to die for you
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/b/b9/Rib.png/revision/latest?cb=20191221053218
+    b/b9/Rib.png/revision/latest?cb=20191221053218
 companion fidi
     Your **Summon** joins you for **30 Sec.**, repeatedly firing shots that petrify foes and deal **70** damage.
     0
     dusa 0 0
     friend for all eternity
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/0/05/Fidi.png/revision/latest?cb=20200706211718
+    0/05/Fidi.png/revision/latest?cb=20200706211718
 companion antos
     Your **Summon** deals **1500** damage to **2** foes one after another.
     0
     achilles & patroclus 0 0
     their devotion, absolute
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/66/Antos.png/revision/latest?cb=20200706211643
+    6/66/Antos.png/revision/latest?cb=20200706211643

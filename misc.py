@@ -7,13 +7,25 @@ god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphro
               'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6,
               'chaos': 0x8783CF, 'charon': 0x5500B9, 'keepsake': 0x465B75}
-god_icons = {'zeus': '1007940434129064019', 'poseidon': '1007940611850125393', 'athena': '1007940470627893338',
-             'aphrodite': '1007940684231217173', 'artemis': '1007940543403262033', 'ares': '1007940354873507880',
-             'dionysus': '1007940646373425182', 'demeter': '1007940575674241055', 'hermes': '1007940503179898990',
-             'bouldy': '1014438782755422220', 'duos': '1007940434129064019', 'chaos': '1015394974088573038',
-             'charon': '1017340791011676170', 'keepsake': '1018053070921412618'}
-weapon_icons = {'sword': '1016977627485057034', 'spear': '1016977626201587763', 'shield': '1016977625081712660',
-                'bow': '1016977619956277279', 'fists': '1016977621705314315', 'rail': '1016977623349469204'}
+god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=20201129190802',
+             'poseidon': '6/6d/Poseidon-bond-forged.png/revision/latest?cb=20201129190617',
+             'athena': '1/15/Athena-bond-forged.png/revision/latest?cb=20201129185736',
+             'aphrodite': '8/85/Aphrodite-bond-icon.png/revision/latest?cb=20201129185343',
+             'artemis': '8/89/Artemis-bond-forged.png/revision/latest?cb=20201129185707',
+             'ares': '7/7e/Ares-bond-icon.png/revision/latest?cb=20201129185523',
+             'dionysus': '8/81/Dionysus-bond-forged.png/revision/latest?cb=20201129190028',
+             'demeter': '0/04/Demeter-bond-forged.png/revision/latest?cb=20201129190001',
+             'hermes': 'f/fd/Hermes-bond-forged.png/revision/latest?cb=20201129190309',
+             'bouldy': '1014438782755422220',
+             'duos': '1027126357597093969',
+             'chaos': '7/7a/Chaos-bond-forged.png/revision/latest?cb=20201129185835',
+             'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904'}
+weapon_icons = {'sword': 'f/f7/Stygian_Blade.png/revision/latest?cb=20181213044607',
+                'spear': 'c/c1/Eternal_Spear.png/revision/latest?cb=20181214234725',
+                'shield': '0/02/Shield_of_Chaos.png/revision/latest?cb=20181213193429',
+                'bow': '5/5c/Heart-Seeker_Bow.png/revision/latest?cb=20181213193638',
+                'fists': '0/08/Twin_Fists.png/revision/latest?cb=20200430070608',
+                'rail': '3/36/Adamant_Rail.png/revision/latest?cb=20210120004027'}
 disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
@@ -116,3 +128,9 @@ def capwords(s: str) -> str:
     if s == 'dash-upper':
         return 'Dash-Upper'
     return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
+
+
+def to_link(s: str) -> str:
+    if s.isdigit():
+        return f'https://cdn.discordapp.com/emojis/{s}.webp'
+    return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'

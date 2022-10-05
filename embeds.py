@@ -52,7 +52,7 @@ def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
         description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
         color=0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     )
-    embed.set_thumbnail(url=bless_info['icon'])
+    embed.set_thumbnail(url=misc.to_link(bless_info['icon']))
     return embed
 
 
@@ -83,7 +83,7 @@ def random_charon_embed(input: [str]):
         description=desc,
         color=0x5500B9
     )
-    embed.set_thumbnail(url=item_info['icon'])
+    embed.set_thumbnail(url=misc.to_link(item_info['icon']))
     return embed
 
 
@@ -99,6 +99,7 @@ def boon_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
+        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
         return embed, name
     else:
         name = name[0]
@@ -136,7 +137,7 @@ def boon_embed(input: [str]):
     )
     if unpommable:
         embed.set_footer(text='Unpommable' + ', Unpurgeable' if unpurgeable else '')
-    embed.set_thumbnail(url=info['icon'])
+    embed.set_thumbnail(url=misc.to_link(info['icon']))
     return embed, ''
 
 
@@ -156,6 +157,7 @@ def pomscaling_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
+        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
         return embed, name
     else:
         name = name[0]
@@ -211,6 +213,7 @@ def prereq_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
+        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
         return embed, name
     else:
         name = name[0]
@@ -230,15 +233,26 @@ def prereq_embed(input: [str]):
             embed.add_field(name=category[0], value=desc, inline=False)
     except KeyError:
         embed.description = '(None in particular)'
-    embed.set_thumbnail(url=boon_info['icon'])
+    embed.set_thumbnail(url=misc.to_link(boon_info['icon']))
     return embed, ''
 
 
-def aspect_embed(input: [str]):
+def aspect_embed(input: [str]) -> (discord.Embed, str):
     name, level = parsing.parse_aspect(input)
     if not name:
-        return None
-    name = name[0]
+        return None, ''
+    if len(name) > 1:
+        desc = ''
+        for index, alias in enumerate(name):
+            desc += f'{misc.disambig_select[index]} {misc.capwords(alias)}\n'
+        embed = discord.Embed(
+            title='Alias conflict',
+            description=desc
+        )
+        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
+        return embed, name
+    else:
+        name = name[0]
     level = min(max(level, 1), 5)
     info = files.aspects_info[name]
     value = [int(info['levels'][level - 1])]
@@ -248,11 +262,11 @@ def aspect_embed(input: [str]):
         color=misc.rarity_embed_colors[level - 1]
     )
     embed.set_footer(text=info['flavor'])
-    embed.set_thumbnail(url=info['icon'])
-    return embed
+    embed.set_thumbnail(url=misc.to_link(info['icon']))
+    return embed, ''
 
 
-def hammer_embed(input: [str]):
+def hammer_embed(input: [str]) -> (discord.Embed, str):
     name, is_weapon, is_aspect = parsing.parse_hammer(input)
     if not name:
         return None, ''
@@ -264,6 +278,7 @@ def hammer_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
+        embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
         return embed, name
     else:
         name = name[0]
@@ -285,8 +300,8 @@ def hammer_embed(input: [str]):
                 desc += f'{misc.capwords(hammer_name)}\n'
         embed.title = f'List of **{misc.capwords(name)}** hammers'
         embed.description = desc.strip()
-        embed.set_thumbnail(url=files.aspects_info[name]['icon'] if is_aspect else
-        f'https://cdn.discordapp.com/emojis/{misc.weapon_icons[name]}.webp')
+        embed.set_thumbnail(
+            url=misc.to_link(files.aspects_info[name]['icon']) if is_aspect else misc.to_link(misc.weapon_icons[name]))
     else:
         info = files.hammers_info[name]
         embed.title = f'**{misc.capwords(name)}** ({misc.capwords(info["weapon"])})'
@@ -299,11 +314,11 @@ def hammer_embed(input: [str]):
                     continue
                 desc = '\n'.join([misc.capwords(b) for b in category[1:]])
                 embed.add_field(name=category[0], value=desc, inline=False)
-        embed.set_thumbnail(url=info['icon'])
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
     return embed, ''
 
 
-def god_embed(input: [str]):
+def god_embed(input: [str]) -> discord.Embed:
     name = parsing.parse_god(input)
     if not name:
         return None
@@ -332,7 +347,29 @@ def god_embed(input: [str]):
         if god_boons[category]:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
             embed.add_field(name=category, value=desc)
-    embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons[name]}.webp')
+    embed.set_thumbnail(url=misc.to_link(misc.god_icons[name]))
+    return embed
+
+
+def bpperk_embed(input: [str]) -> discord.Embed:
+    if input:
+        name = ' '.join(input).lower()
+        if name not in files.bpperks_info:
+            return None
+        info = files.bpperks_info[name]
+        embed = discord.Embed(
+            title=misc.capwords(name),
+            description=info['desc']
+        )
+        if 'req' in info:
+            embed.add_field(name='Availability:', value=info['req'])
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
+    else:
+        embed = discord.Embed(
+            title='List of **Benefits Package** Perks',
+            description='\n'.join([misc.capwords(b) for b in files.bpperks_info])
+        )
+        embed.set_thumbnail(url=misc.to_link('1027088229737963530'))
     return embed
 
 
@@ -347,7 +384,7 @@ def define_embed(text: str):
             used.add(files.aliases['definition'][definition])
             text = text.replace(misc.capwords(definition), '')
     embed = discord.Embed(
-        title=f'List of **Definitions**'
+        title='List of **Definitions**'
     )
     for definition in used:
         embed.add_field(name=misc.capwords(definition), value=files.definitions_info[definition], inline=False)
@@ -367,6 +404,7 @@ def keepsake_embed(input: [str]):
                 title='Alias conflict',
                 description=desc
             )
+            embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
             return embed, name
         else:
             name = name[0]
@@ -388,7 +426,7 @@ def keepsake_embed(input: [str]):
                      f'you share {info["bond"][1]} {misc.capwords(info["bond"][2])} Bond' \
                      f'\n\n{info["flavor"]}'
         embed.set_footer(text=footer)
-        embed.set_thumbnail(url=info['icon'])
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
     else:
         keepsakes = {}
         for keepsake_name in files.keepsakes_info:
@@ -396,11 +434,13 @@ def keepsake_embed(input: [str]):
             if category not in keepsakes:
                 keepsakes[category] = []
             keepsakes[category].append(keepsake_name)
-        embed = discord.Embed(title='List of **Keepsakes**', color=misc.god_colors['keepsake'])
+        embed = discord.Embed(
+            title='List of **Keepsakes**',
+            color=misc.god_colors['keepsake'])
         for category in keepsakes:
             desc = '\n'.join([misc.capwords(b) for b in keepsakes[category]])
             embed.add_field(name=category, value=desc)
-        embed.set_thumbnail(url=f'https://cdn.discordapp.com/emojis/{misc.god_icons["keepsake"]}.webp')
+        embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
     return embed, ''
 
 
@@ -432,21 +472,25 @@ def help_embed(client, command_name, aliases_to_command):
         embed.add_field(name='Usage', value='h!help <command_name>', inline=False)
         embed.add_field(name='Syntax', value='[parameter]\n-> parameter is optional\n'
                                              '[parameter=value]\n-> if not provided, parameter defaults to value\n'
-                                             'parameter...\n-> arbitrary number of parameters accepted')
+                                             'parameter...\n-> arbitrary number of parameters accepted\n'
+                                             'x!\n-> optional parameter')
+        embed.set_thumbnail(url=client.user.avatar.url)
     else:
         if command_name in aliases_to_command:
             command_name = aliases_to_command[command_name]
         if command_name in files.commands_info:
+            info = files.commands_info[command_name]
             embed.set_author(name=f'Help for \'{command_name}\' command')
-            embed.add_field(name='Parameters', value=files.commands_info[command_name][0], inline=False)
-            embed.add_field(name='Function', value=files.commands_info[command_name][1], inline=False)
+            embed.add_field(name='Parameters', value=info['params'], inline=False)
+            embed.add_field(name='Function', value=info['desc'], inline=False)
+            embed.set_thumbnail(url=misc.to_link(info['icon']))
             aliases = commands.Bot.get_command(client, command_name).aliases
             if aliases:
                 embed.add_field(name='Aliases', value=', '.join(aliases), inline=False)
         else:
             embed.set_author(name='Help')
             embed.add_field(name=command_name, value='Not a valid command, use h!help for a list of commands')
-    embed.set_thumbnail(url=client.user.avatar.url)
+            embed.set_thumbnail(url=client.user.avatar.url)
     return embed
 
 

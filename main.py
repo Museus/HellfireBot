@@ -39,6 +39,9 @@ async def on_command_error(ctx, err):
         matches_str = ' or '.join([f'h!{match}' for match in matches])
         await reply(ctx, f'Did you mean {matches_str}?', True)
         return
+    if isinstance(err, commands.MissingRequiredArgument):
+        await reply(ctx, 'Missing required input. Run h!help <command_name> for more information.')
+        return
     raise err
 
 
@@ -74,7 +77,7 @@ async def boon(ctx, *args):
     await ctx.reply(embed=embed, mention_author=False)
 
 
-@client.command(aliases=['ps', 'pom', 'poms'])
+@client.command(aliases=['ps', 'pom', 'poms', 'pscale', 'pscaling'])
 async def pomscaling(ctx, *args):
     embed, choices = embeds.pomscaling_embed(args)
     if not embed:
@@ -101,9 +104,12 @@ async def prerequisites(ctx, *args):
 
 @client.command(aliases=['a', 'weapon', 'w'])
 async def aspect(ctx, *args):
-    embed = embeds.aspect_embed(args)
+    embed, choices = embeds.aspect_embed(args)
     if not embed:
         await reply(ctx, 'idk man as', True)
+        return
+    if choices:
+        await react_edit(ctx, embed, choices, embeds.aspect_embed)
         return
     await ctx.reply(embed=embed, mention_author=False)
 
@@ -123,6 +129,15 @@ async def hammer(ctx, *args):
 @client.command(aliases=['g'])
 async def god(ctx, *args):
     embed = embeds.god_embed(args)
+    if not embed:
+        await reply(ctx, 'idk man as', True)
+        return
+    await ctx.reply(embed=embed, mention_author=False)
+
+
+@client.command(aliases=['bp'])
+async def benefitspackage(ctx, *args):
+    embed = embeds.bpperk_embed(args)
     if not embed:
         await reply(ctx, 'idk man as', True)
         return
@@ -192,13 +207,6 @@ async def rarityrolls(ctx, *args):
 @client.command(aliases=['p'])
 async def pact(ctx, *args):
     total_heat = pactgen.pact_gen(str(ctx.message.author.id), args)
-    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
-    os.remove('./temp.png')
-
-
-@client.command(aliases=['p\'', '\'p', 'p!', '!p', 'pact\'', '\'pact', 'pact!', '!pact', 'np', 'npact', 'negpact'])
-async def negatepact(ctx, *args):
-    total_heat = pactgen.negate_pact_gen(args)
     await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
     os.remove('./temp.png')
 

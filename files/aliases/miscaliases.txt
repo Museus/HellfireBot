@@ -71,7 +71,7 @@ different league
 empty inside
     empty
 broken resolve
-    
+    broken, resolve
 blown kiss
     blown, kiss
 sweet surrender
@@ -81,11 +81,11 @@ unhealthy fixation
 pressure points
     pp, ppoints
 exit wounds
-    
+    exit wound
 clean kill
-    
+    ckill
 support fire
-    
+    support, sf, sfire
 hide breaker
     hidebreaker
 hunter instinct
@@ -93,7 +93,7 @@ hunter instinct
 hunter's mark
     hunters mark, mark, marked
 fully loaded
-    loaded
+    fully, loaded
 curse of vengeance
     vengeance
 urge to kill
@@ -129,13 +129,13 @@ bad influence
 numbing sensation
     numbing
 peer pressure
-    
+    pp, ppressure
 black out
     blackout
 snow burst
     burst, sburst, snurst, snow burst
 frozen touch
-    
+    frozen
 rare crop
     crop
 nourished soul
@@ -145,7 +145,7 @@ ravenous will
 glacial glare
     glacier, glacial
 arctic blast
-    
+    arctic, blast
 killing freeze
     killing
 winter harvest
@@ -161,15 +161,15 @@ side hustle
 greater evasion
     evasion
 second wind
-    
+    second
 greater haste
     haste
 flurry cast
-    
+    flurry
 quick favor
-    
+    qf
 quick recovery
-    
+    qr
 hyper sprint
     hs
 rush delivery
@@ -195,7 +195,7 @@ smoldering air
 hunting blades
     hunting, hb
 merciful end
-    me
+    me, mend
 freezing vortex
     freezing
 curse of nausea
@@ -209,7 +209,7 @@ deadly reversal
 crystal clarity
     clarity
 splitting headache
-    headache
+    splitting, headache
 mirage shot
     mirage
 lightning rod
@@ -219,7 +219,7 @@ stubborn roots
 calculated risk
     calculated
 unshakable mettle
-    unshakable
+    unshakable, mettle
 lightning phalanx
     lp
 ice wine

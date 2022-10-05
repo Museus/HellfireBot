@@ -9,6 +9,7 @@ aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
 prereqs_info = {}
+bpperks_info = {}
 definitions_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
@@ -123,10 +124,21 @@ with open('./files/definitions.txt', 'r', encoding='utf8') as f:
                 aliases['definition'][alias] = definition
         definitions_info[definition] = f.readline().strip()
 
+with open('./files/benefits_package.txt', 'r', encoding='utf8') as f:
+    while perk := f.readline().strip():
+        has_prereq = False
+        if perk[0] == 'x':
+            has_prereq = True
+            perk = perk[1:]
+        bpperks_info[perk] = {'desc': f.readline().strip(), 'icon': f.readline().strip()}
+        if has_prereq:
+            bpperks_info[perk]['req'] = f.readline().strip()
+
 with open('./files/help.txt', 'r', encoding='utf8') as f:
     while command := f.readline().strip():
         command, parameters = command.split(' ', 1)
-        commands_info[command] = [', '.join(parameters.split(' ')), f.readline().strip()]
+        commands_info[command] = {'params': ', '.join(parameters.split(' ')), 'desc': f.readline().strip(),
+                                  'icon': f.readline().strip()}
 
 
 def read_personal() -> None:

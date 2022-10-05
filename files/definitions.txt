@@ -2,7 +2,7 @@ jolted
     *Status Curse*: Victim's next attack self-inflicts lightning damage that harms nearby foes.
 boons, boon
     Blessing from the Olympians, bestowing godlike power until death.
-<:Cast:1007420837600694463> bloodstone, <:Cast:1007420837600694463>, bloodstone, bloodstones
+<:Cast:1027103688449347635> bloodstone, <:Cast:1027103688449347635>, bloodstone, bloodstones
     Ammunition for your Cast. Retrieve from slain foes with Infernal Soul active; Regenerates over time with Stygian Soul active.
 revenge
     Automatically retaliate with some god-given effect after taking damage.
@@ -12,11 +12,11 @@ impervious
     Invulnerable to damage.
 encounter, encounters
     The dangerous kind; Underworld chambers where you must slay your foes to proceed.
-<:Gemstone:1007187037595639818> gemstones, <:Gemstone:1007187037595639818>, gemstone, gemstones
+<:Gemstone:1027109936276197386> gemstones, <:Gemstone:1027109936276197386>, gemstone, gemstones
     For House Contractor renovations, or for trade.
 <:Darkness:1007187036341551184> darkness, <:Darkness:1007187036341551184>, darkness
     Used to permanently grow stronger.
-<:Obol:1007187039801856060> charon's obol, <:Obol:1007187039801856060>, charon's obol, obol, obols, gold
+<:Obol:1027113221691281449> charon's obol, <:Obol:1027113221691281449>, charon's obol, obol, obols, gold
     For purchasing items during escape attempts. All of it is lost on death.
 bosses, boss
     Lords of the Underworld identifiable by long health bars with their names on them.
@@ -93,7 +93,7 @@ blitz disc
 naegling's board
     *Alternate Move Set*: Heavy Attack & Special; Cast empowers Bull Rush *(instead of firing)*.
 dragon rush
-    Your Cast-empowered Bull Rush; each loaded <:Cast:1007420837600694463> fires at the end of the move.
+    Your Cast-empowered Bull Rush; each loaded <:Cast:1027103688449347635> fires at the end of the move.
 celestial sharanga
     *Alternate Move Set*: Wide, heavy Attack; bouncing triple-shot Special afflicts foes.
 shared suffering
@@ -135,7 +135,7 @@ attack, attacks
 special, specials
     Your weapon's unique attack.
 cast, casts
-    A powerful ranged attack. Retrieve <:Cast:1007420837600694463> to keep using it.
+    A powerful ranged attack. Retrieve <:Cast:1027103688449347635> to keep using it.
 dash, dashes
     Rush forward a short distance. Use to evade attacks or get into position.
 call, calls

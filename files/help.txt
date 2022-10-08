@@ -28,10 +28,10 @@ define None
 bouldy None
     Returns a random <:bouldy:1014438782755422220> blessing.
 
-chaos [modifiers]...
+randchaos [modifiers]...
     Returns a random Chaos blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1027101814904070175
-charon [modifiers]...
+randcharon [modifiers]...
     Returns a random Charon well item. Include bone hourglass and/or loyalty card as <modifiers> to change the output.
 
 keepsake keepsake_name? [rank=3 or 5]
@@ -63,6 +63,12 @@ deletepact name
 
 deletemirror name
     Removes the personal mirror preset given by <name>.
+
+addchannel channel_id
+    Allows the bot to be used in the channel specified by <channel_id>. Only usable by server administrators.
+
+deletechannel channel_id
+    Revokes the bot's permission to operate in channel specified by <channel_id>. Only usable by server administrators.
 
 modded None
     Returns information on the official speedrun modpack.

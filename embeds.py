@@ -142,6 +142,8 @@ def boon_embed(input: [str]):
 
 
 def pomscaling_embed(input: [str]):
+    if not input:
+        return None, ''
     level = 10
     if input[-1].isdigit():
         level = int(input[-1])

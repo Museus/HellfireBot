@@ -6,6 +6,7 @@ import random
 
 import discord
 from discord.ext import commands
+from discord.ext.commands import has_permissions
 
 import embeds
 import files
@@ -57,7 +58,7 @@ async def on_ready():
 @client.command(pass_context=True)
 async def help(ctx, command_name=None):
     embed = embeds.help_embed(client, command_name, aliases_to_command)
-    await ctx.reply(embed=embed)
+    await reply(ctx, embed=embed, mention=True)
 
 
 @client.command(aliases=['i'])
@@ -69,24 +70,24 @@ async def invite(ctx):
 async def boon(ctx, *args):
     embed, choices = embeds.boon_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.boon_embed)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['ps', 'pom', 'poms', 'pscale', 'pscaling'])
 async def pomscaling(ctx, *args):
     embed, choices = embeds.pomscaling_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.pomscaling_embed)
         return
-    await ctx.reply(file=discord.File('./output.png'), mention_author=False)
+    await reply(ctx, file=discord.File('./output.png'))
     os.remove('./output.png')
 
 
@@ -94,60 +95,60 @@ async def pomscaling(ctx, *args):
 async def prerequisites(ctx, *args):
     embed, choices = embeds.prereq_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.prereq_embed)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['a', 'weapon', 'w'])
 async def aspect(ctx, *args):
     embed, choices = embeds.aspect_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.aspect_embed)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['h', 'hammers'])
 async def hammer(ctx, *args):
     embed, choices = embeds.hammer_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.hammer_embed)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['g'])
 async def god(ctx, *args):
     embed = embeds.god_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['bp'])
 async def benefitspackage(ctx, *args):
     embed = embeds.bpperk_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['d', 'def', 'defs', 'defines', 'definition', 'definitions'])
 async def define(ctx):
     if not ctx.message.reference:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
     try:
@@ -155,10 +156,10 @@ async def define(ctx):
     except IndexError:
         text = text.content
     if not isinstance(text, str):
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     embed = embeds.define_embed(text)
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['boulder', 'rock', '🪨', '<:bouldy:1014438782755422220>'])
@@ -170,31 +171,31 @@ async def bouldy(ctx):
         color=misc.god_colors['bouldy']
     )
     embed.set_thumbnail(url=info['icon'])
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
-@client.command(aliases=['c', 'ch'])
-async def chaos(ctx, *args):
+@client.command(aliases=['randomchaos', 'rchaos', 'c', 'ch', 'chaos'])
+async def randchaos(ctx, *args):
     embed = embeds.random_chaos_embed(args)
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
-@client.command(aliases=['char', 'well'])
-async def charon(ctx, *args):
+@client.command(aliases=['randomcharon', 'rcharon', 'char', 'well', 'randomwell', 'randwell', 'rwell'])
+async def randcharon(ctx, *args):
     embed = embeds.random_charon_embed(args)
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['k', 'keepsakes', 'companion', 'companions'])
 async def keepsake(ctx, *args):
     embed, choices = embeds.keepsake_embed(args)
     if not embed:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.keepsake_embed)
         return
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['rarity'])
@@ -207,7 +208,7 @@ async def rarityrolls(ctx, *args):
 @client.command(aliases=['p'])
 async def pact(ctx, *args):
     total_heat = pactgen.pact_gen(str(ctx.message.author.id), args)
-    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    await reply(ctx, f'Total heat: **{total_heat}**', file=discord.File('./temp.png'))
     os.remove('./temp.png')
 
 
@@ -228,21 +229,21 @@ async def randpact(ctx, total_heat, hell=None):
         if randompact.add_pact(total_heat, available_pact, random_pact):
             break
     total_heat = pactgen.pact_gen('', [f'{p}{r}' for p, r in random_pact.items()])
-    await ctx.reply(f'Total heat: **{total_heat}**', file=discord.File('./temp.png'), mention_author=False)
+    await reply(ctx, f'Total heat: **{total_heat}**', file=discord.File('./temp.png'))
     os.remove('./temp.png')
 
 
 @client.command(aliases=['m'])
 async def mirror(ctx, *args):
     randommirror.random_mirror(str(ctx.message.author.id), ' '.join(args))
-    await ctx.reply(file=discord.File('./temp.png'), mention_author=False)
+    await reply(ctx, file=discord.File('./temp.png'))
     os.remove('./temp.png')
 
 
 @client.command(aliases=['personal', 'gp'])
 async def getpersonal(ctx, user: discord.Member = None):
     embed = embeds.getpersonal_embed(ctx, user)
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed)
 
 
 @client.command(aliases=['addp', 'ap'])
@@ -259,7 +260,7 @@ async def addpact(ctx, name, *args):
 async def addmirror(ctx, name, *args):
     mirror_binary = ''.join(args)
     if len(mirror_binary) != 12 or not all(c in '01' for c in mirror_binary):
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     id = str(ctx.message.author.id)
     if id not in files.personal:
@@ -274,7 +275,7 @@ async def deletepact(ctx, *args):
     name = ' '.join(args)
     id = str(ctx.message.author.id)
     if id not in files.personal or name not in files.personal[id]['pacts']:
-        await reply(ctx, 'No pact with matching name', True)
+        await reply(ctx, 'No pact with matching name', mention=True)
         return
     files.personal[id]['pacts'].pop(name)
     files.write_personal()
@@ -286,10 +287,36 @@ async def deletemirror(ctx, *args):
     name = ' '.join(args)
     id = str(ctx.message.author.id)
     if id not in files.personal or name not in files.personal[id]['mirrors']:
-        await reply(ctx, 'No mirror with matching name', True)
+        await reply(ctx, 'No mirror with matching name', mention=True)
         return
     files.personal[id]['mirrors'].pop(name)
     files.write_personal()
+    await reply(ctx, 'special only rama is unaruably')
+
+
+@client.command(aliases=['addc', 'ac'])
+@has_permissions(administrator=True)
+async def addchannel(ctx, channel_id):
+    guild_id = str(ctx.message.guild.id)
+    if guild_id not in files.channels:
+        files.channels[guild_id] = []
+    if channel_id not in files.channels[guild_id]:
+        files.channels[guild_id].append(channel_id)
+        files.write_channel()
+    await reply(ctx, 'special only rama is unaruably')
+
+
+@client.command(aliases=['deletec', 'dc', 'removechannel', 'removec', 'rc'])
+@has_permissions(administrator=True)
+async def deletechannel(ctx, channel_id):
+    guild_id = str(ctx.message.guild.id)
+    if guild_id not in files.channels or channel_id not in files.channels[guild_id]:
+        await reply(ctx, 'idk man as', mention=True)
+        return
+    files.channels[guild_id].remove(channel_id)
+    if not files.channels[guild_id]:
+        files.channels.pop(guild_id)
+    files.write_channel()
     await reply(ctx, 'special only rama is unaruably')
 
 
@@ -312,17 +339,20 @@ async def suggest(ctx, *args):
 @client.command(aliases=['cred', 'credit', 'credits'])
 async def creds(ctx):
     embed = await embeds.creds_embed(client)
-    await ctx.reply(embed=embed, mention_author=False)
+    await reply(ctx, embed=embed)
 
 
-async def reply(ctx, message, mention=False):
-    await ctx.reply(message, mention_author=mention)
+async def reply(ctx, message='', embed=None, file=None, mention=False):
+    guild_id = str(ctx.message.guild.id)
+    if guild_id in files.channels and str(ctx.message.channel.id) not in files.channels[guild_id]:
+        return
+    return await ctx.reply(message, embed=embed, file=file, mention_author=mention)
 
 
 async def react_edit(ctx, embed, choices, embed_function):
     def check(reaction, user):
         return user == ctx.message.author and str(reaction.emoji) in misc.disambig_select
-    msg = await ctx.reply(embed=embed)
+    msg = await reply(ctx, embed=embed)
     for i in range(0, len(choices)):
         await msg.add_reaction(misc.disambig_select[i])
     try:
@@ -337,7 +367,7 @@ async def react_edit(ctx, embed, choices, embed_function):
         pass
     if embed == 'output.png':
         await msg.delete()
-        await ctx.reply(file=discord.File('./output.png'), mention_author=False)
+        await reply(ctx, file=discord.File('./output.png'))
         os.remove('output.png')
     else:
         await msg.edit(embed=embed)

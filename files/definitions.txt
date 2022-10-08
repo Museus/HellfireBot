@@ -74,6 +74,8 @@ rarity, rare
     Boons sometimes have superior effects, noted as **Rare**, **Epic**, and more.
 <:Heart:1008236023039410216> life, <:Heart:1008236023039410216>, life total
     Life Total. Strike your foes repeatedly to make it and them go away.
+thrust
+    Using the Blade, every third attack is a thrust that knocks foes away.
 holy excalibur
     *Alternate Move Set*: Heavy Attack, Special creates a defensive aura that slows foes.
 raging rush

@@ -15,6 +15,7 @@ aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, '
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
              'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 personal = {}
+channels = {}
 commands_info = {}
 
 for god in god_cores:
@@ -143,14 +144,27 @@ with open('./files/help.txt', 'r', encoding='utf8') as f:
 
 def read_personal() -> None:
     global personal
-    with open(f'./private/personal.txt', 'r', encoding='utf8') as fp:
+    with open('./private/personal.txt', 'r', encoding='utf8') as fp:
         personal = json.loads(fp.read())
 
 
 def write_personal() -> None:
     global personal
-    with open(f'./private/personal.txt', 'w', encoding='utf8') as fp:
+    with open('./private/personal.txt', 'w', encoding='utf8') as fp:
         fp.write(json.dumps(personal))
 
 
+def read_channel() -> None:
+    global channels
+    with open('./private/server_channels.txt', 'r', encoding='utf8') as fp:
+        channels = json.loads(fp.read())
+
+
+def write_channel() -> None:
+    global channels
+    with open('./private/server_channels.txt', 'w', encoding='utf8') as fp:
+        fp.write(json.dumps(channels))
+
+
 read_personal()
+read_channel()

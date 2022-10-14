@@ -1,7 +1,9 @@
 miniboss
-    miniboss, miniboss chamber
+    miniboss, miniboss chamber, mini boss, mini boss chamber, midboss, midboss chamber, mid boss, mid boss chamber
 hermes
     hermes, hermes boon
+tartarus miniboss
+    tartarus miniboss, tart miniboss, tartarus midboss, tart midboss, tartarus, tart
 chaos
     chaos, chaos gate, chaos boon, chaos portal
 cosmic egg
@@ -13,7 +15,7 @@ chaos favor
 yarn of ariadne
     yarn of ariadne, yarn, ariadne, ariadne yarn, yarn ariadne
 refreshing nectar
-    refreshing nectar, nectar, eurydice, eury, eurydice nectar, eury nectar
+    refreshing nectar, refreshing, nectar, eurydice, eury, eurydice nectar, eury nectar
 exclusive access
     exclusive access, exclusive, ea
 olympian favor

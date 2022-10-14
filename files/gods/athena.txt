@@ -22,6 +22,7 @@ flare phalanx flare
     80 90 100 110
     48 34 24 16 12 8
     a/a4/Phalanx_Shot.png/revision/latest?cb=20181213183145
+    1(aspect of beowulf)
 dash divine dash
     Your **Dash** deals damage and can **Deflect**.
     Dash Damage: {}
@@ -55,14 +56,14 @@ xt1 proud bearing
     2/2e/Proud_Bearing.png/revision/latest?cb=20190319172927
     1(any aid boon)
 t2 last stand
-    **Death/Stubborn Defiance** restores more <:Heart:1008236023039410216> than usual. Replenish **1** use.
+    **Death Defiance/Stubborn Defiance** restores more <:Heart:1008236023039410216> than usual. Replenish **1** use.
     Bonus Restoration: {+%}
     10 12 14
     0 0
     4/41/Last_Stand.png/revision/latest?cb=20190319172950
     1(divine strike, divine flourish, phalanx shot, divine dash); 1(defiance slot)
 t2 deathless stand
-    **Death/Stubborn Defiance** makes you **Impervious** longer. Replenish **1** use.
+    **Death Defiance/Stubborn Defiance** makes you **Impervious** longer. Replenish **1** use.
     Effect duration: {s}
     2 2.5 3
     0 0

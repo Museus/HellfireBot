@@ -17,7 +17,7 @@ speeder
     Moves and attacks **+20%** faster
     1027067177318223942
 linker
-    Links to other foes (prioritizes armored foes) via a continuous, **2 damage** beam
+    Links to other foes (prioritizes **Armored** foes) via a continuous, **2 damage** beam
     1027081515177357412
 xcloner
     Summons 1-Life copies of itself
@@ -30,7 +30,7 @@ xburner
 xseeker
     Ranged attacks track you
     1027067429895012362
-    Non-melee foes only
+    Witches only
 xpopper
     Bursts into three fake Exalted Shades that self-destruct
     1027063110294581298

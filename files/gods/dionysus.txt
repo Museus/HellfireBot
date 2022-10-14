@@ -23,6 +23,7 @@ flare trippy flare
     100 120 140 160
     120 84 58 42 28 20
     a/a4/Trippy_Shot.png/revision/latest?cb=20190213003250
+    1(aspect of beowulf, aspect of hera)
 dash drunken dash
     Your **Dash** causes **Hangover** several times near where you started.
     Hangover Damage: {} *(every 0.5 Sec.)*

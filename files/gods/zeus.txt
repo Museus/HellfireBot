@@ -22,6 +22,7 @@ flare thunder flare
     60 72 84 96
     20 14 10 7 5
     0/01/Electric_Shot.png
+    1(aspect of beowulf)
 dash thunder dash
     Your **Dash** causes a lightning bolt to strike nearby foes.
     Lightning Damage: {}

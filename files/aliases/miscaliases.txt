@@ -115,7 +115,7 @@ vicious cycle
 drunken dash
     nasty, nasty dash, trash dash
 premium vintage
-    pv
+    pv, vintage
 after party
     afterparty
 strong drink
@@ -151,11 +151,11 @@ killing freeze
 winter harvest
     harvest
 quick reload
-    qr, qreload
+    qr, qreload, reload
 auto reload
-    
+    reload, areload
 greatest reflex
-    gr, greflex
+    gr, greflex, reflex
 side hustle
     hustle
 greater evasion
@@ -289,4 +289,26 @@ flame wheels release
 night spindle
     spindle
 fateful twist
-    fateful
+    fateful, twist
+shifter
+    shift, shifters, teleport, teleporter, teleporters
+bruiser
+    bruiser, bruisers
+slugger
+    slug, sluggers
+puller
+    pull, aura, field, pullers
+savior
+    damage control, dc, blue shield, blue shields, shield, shields, saviors
+speeder
+    speed, speeders
+linker
+    laser, link, linkers
+cloner
+    clone, cloners
+burner
+    burners, burn, lava, magma, lava pool, lava pools, magma pool, magma pools
+seeker
+    seek, seekers
+popper
+    pop, poppers, soul, souls, warrior, warriors, ely, elysium

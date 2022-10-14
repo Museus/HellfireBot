@@ -5,8 +5,8 @@ rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
 god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
               'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
-              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6,
-              'chaos': 0x8783CF, 'charon': 0x5500B9, 'keepsake': 0x465B75}
+              'apollo': 0xFF914F, 'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18,
+              'hades': 0x9500F6, 'chaos': 0x8783CF, 'charon': 0x5500B9, 'keepsake': 0x465B75}
 god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=20201129190802',
              'poseidon': '6/6d/Poseidon-bond-forged.png/revision/latest?cb=20201129190617',
              'athena': '1/15/Athena-bond-forged.png/revision/latest?cb=20201129185736',
@@ -15,6 +15,7 @@ god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=2020112919080
              'ares': '7/7e/Ares-bond-icon.png/revision/latest?cb=20201129185523',
              'dionysus': '8/81/Dionysus-bond-forged.png/revision/latest?cb=20201129190028',
              'demeter': '0/04/Demeter-bond-forged.png/revision/latest?cb=20201129190001',
+             'apollo': 'https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/ApolloBadge_max.png?raw=true',
              'hermes': 'f/fd/Hermes-bond-forged.png/revision/latest?cb=20201129190309',
              'bouldy': '1014438782755422220',
              'duos': '1027126357597093969',
@@ -95,8 +96,12 @@ def rarity_rolls(input: [str]) -> [float]:
         chaos = True
         if 'cosmic egg' in input:
             buff_rolls([0.1, 0.15, 0.4])
-    elif 'miniboss' in input:
+    elif 'tartarus miniboss' in input:
         rolls = [0.1, 0.25, 1]
+    elif 'miniboss' in input:
+        rolls = [0.1, 0.25, 0.95]
+        if 'hermes' in input:
+            hermes = True
     elif 'hermes' in input:
         rolls = [0.01, 0.03, 0.06]
         hermes = True
@@ -133,4 +138,6 @@ def capwords(s: str) -> str:
 def to_link(s: str) -> str:
     if s.isdigit():
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
-    return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
+    if s[1] == '/':
+        return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
+    return s

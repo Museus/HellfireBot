@@ -22,6 +22,7 @@ flare icy flare
     70 80 90 100
     14 10 7
     4/46/Crystal_Beam.png/revision/latest?cb=20200126153104
+    1(aspect of beowulf)
 dash mistral dash
     Your **Dash** shoots a gust ahead that inflicts **Chill**.
     Gust Damage: {}
@@ -48,7 +49,7 @@ t1 ravenous will
     0
     0/0d/Ravenous_Will.png/revision/latest?cb=20200126153257
 t1 nourished soul
-    Any <:Healing:1007536016472682557> effects are more potent. Restore **40%** <:Heart:1008236023039410216> now.
+    Any <:Healing:1028193572840816722> effects are more potent. Restore **40%** <:Heart:1008236023039410216> now.
     Bonus Restoration: {+%} *(affects instant health from boon)*
     30 32.25 34.5
     0 0

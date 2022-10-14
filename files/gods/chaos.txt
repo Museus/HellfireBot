@@ -62,7 +62,7 @@ blessing affluence
     0 0
     3/38/Chaos_Blessing_Affluence.png/revision/latest?cb=20190121001749
 blessing eclipse
-    Any <:Darkness:1007187036341551184> and <:Gemstone:1027109936276197386> you find are worth {+%}.
+    Any <:Darkness:1028189207405015051> and <:Gemstone:1027109936276197386> you find are worth {+%}.
 
     75-100 1.5 2
     0 0

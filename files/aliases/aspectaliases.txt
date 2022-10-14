@@ -27,7 +27,7 @@ zagreus bow
 chiron
     chiron bow
 hera
-    hera bow
+    hera bow, worse beo, worse beowulf
 rama
     rama bow, sharanga, celestial sharanga
 zagreus fists

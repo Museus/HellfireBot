@@ -99,7 +99,7 @@ def boon_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
+        embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
         return embed, name
     else:
         name = name[0]
@@ -112,7 +112,7 @@ def boon_embed(input: [str]):
     pom = 0
     unpommable = False
     unpurgeable = False
-    title = f'**{misc.capwords(name)}**'
+    title = f'{"<:Modded:1030375705378312212> " if "modded" in info else ""}**{misc.capwords(name)}**'
     if info['levels'][0] != '0':
         title += f' (Lv. {level})'
     else:
@@ -135,8 +135,10 @@ def boon_embed(input: [str]):
         description=desc,
         color=misc.boon_color(info, rarity)
     )
-    if unpommable:
-        embed.set_footer(text='Unpommable' + ', Unpurgeable' if unpurgeable else '')
+    footer_text = ('Unpommable\n' if unpommable else '') +\
+                  ('Unpurgeable' if unpurgeable else '') + \
+                  ('Modded content\n' if 'modded' in info else '')
+    embed.set_footer(text=footer_text, icon_url=misc.to_link('1030375705378312212') if 'modded' in info else '')
     embed.set_thumbnail(url=misc.to_link(info['icon']))
     return embed, ''
 
@@ -220,8 +222,9 @@ def prereq_embed(input: [str]):
     else:
         name = name[0]
     boon_info = files.boons_info[name]
+    title = f'{"<:Modded:1030375705378312212> " if "modded" in boon_info else ""}**{misc.capwords(name)}**'
     embed = discord.Embed(
-        title=f'**{misc.capwords(name)}**',
+        title=title,
         color=misc.god_colors[boon_info['god']]
     )
     try:
@@ -236,6 +239,8 @@ def prereq_embed(input: [str]):
     except KeyError:
         embed.description = '(None in particular)'
     embed.set_thumbnail(url=misc.to_link(boon_info['icon']))
+    if 'modded' in boon_info:
+        embed.set_footer(text='Modded content', icon_url=misc.to_link('1030375705378312212'))
     return embed, ''
 
 
@@ -331,6 +336,8 @@ def god_embed(input: [str]) -> discord.Embed:
         for boon_name in files.boons_info:
             if files.boons_info[boon_name]['god'] == name:
                 category = files.boons_info[boon_name]['type']
+                if 'modded' in files.boons_info[boon_name]:
+                    boon_name = '<:Modded:1030375705378312212> ' + boon_name
                 if category in ('attack', 'special', 'cast', 'flare', 'dash', 'call'):
                     god_boons['Core'].append(boon_name)
                 else:
@@ -350,12 +357,26 @@ def god_embed(input: [str]) -> discord.Embed:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
             embed.add_field(name=category, value=desc)
     embed.set_thumbnail(url=misc.to_link(misc.god_icons[name]))
+    if name in ('apollo', 'hestia'):
+        embed.set_footer(text='Modded content', icon_url=misc.to_link('1030375705378312212'))
+    return embed
+
+
+def legendaries_embed() -> discord.Embed:
+    embed = discord.Embed(
+        title='List of **Legendaries**',
+        description='\n'.join([misc.capwords(legendary) for legendary in files.legendary_info]),
+        color=misc.rarity_embed_colors[4]
+    )
+    embed.set_thumbnail(url=misc.to_link('1027126357597093969'))
     return embed
 
 
 def bpperk_embed(input: [str]) -> discord.Embed:
     if input:
         name = ' '.join(input).lower()
+        if name in files.aliases['misc']:
+            name = files.aliases['misc'][name][0]
         if name not in files.bpperks_info:
             return None
         info = files.bpperks_info[name]
@@ -416,6 +437,8 @@ def keepsake_embed(input: [str]):
             value = [float(info['ranks'][rank - 1])]
         except IndexError:
             value = []
+        if 'modded' in info:
+            name = '<:Modded:1030375705378312212> ' + name
         embed = discord.Embed(
             title=f'**{misc.capwords(name)}**',
             description=f'{parsing.parse_stat(info["desc"], value)}',
@@ -427,7 +450,11 @@ def keepsake_embed(input: [str]):
             footer = f'From {misc.capwords(info["bond"][0])}; ' \
                      f'you share {info["bond"][1]} {misc.capwords(info["bond"][2])} Bond' \
                      f'\n\n{info["flavor"]}'
-        embed.set_footer(text=footer)
+        url = ''
+        if 'modded' in info:
+            footer += '\n\nModded content'
+            url = misc.to_link('1030375705378312212')
+        embed.set_footer(text=footer, icon_url=url)
         embed.set_thumbnail(url=misc.to_link(info['icon']))
     else:
         keepsakes = {}
@@ -435,6 +462,8 @@ def keepsake_embed(input: [str]):
             category = files.keepsakes_info[keepsake_name]['type'].capitalize()
             if category not in keepsakes:
                 keepsakes[category] = []
+            if 'modded' in files.keepsakes_info[keepsake_name]:
+                keepsake_name = '<:Modded:1030375705378312212> ' + keepsake_name
             keepsakes[category].append(keepsake_name)
         embed = discord.Embed(
             title='List of **Keepsakes**',
@@ -492,7 +521,7 @@ def help_embed(client, command_name, aliases_to_command):
         else:
             embed.set_author(name='Help')
             embed.add_field(name=command_name, value='Not a valid command, use h!help for a list of commands')
-            embed.set_thumbnail(url=client.user.avatar.url)
+            embed.set_thumbnail(url=misc.to_link('1028192060974567495'))
     return embed
 
 
@@ -500,7 +529,7 @@ async def creds_embed(client):
     credits_channel = client.get_channel(1008232170751533106)
     if not credits_channel:
         credits_channel = await client.fetch_channel(1008232170751533106)
-    messages = await credits_channel.history(limit=200).flatten()
+    messages = [message async for message in credits_channel.history()]
     messages = [message.content.split('\n', 1) for message in messages]
     messages.reverse()
     embed = discord.Embed(

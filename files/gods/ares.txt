@@ -22,6 +22,7 @@ flare slicing flare
     30 36 42 48
     6 4 3 2
     7/75/Slicing_Shot.png/revision/latest?cb=20181213182739
+    1(aspect of beowulf)
 dash blade dash
     Your **Dash** creates a **Blade Rift** where you started.
     Rift Damage per Hit:

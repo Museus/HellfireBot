@@ -47,7 +47,7 @@ broken spearpoint
 pom blossom
     mom pom, mom blossom, blossom
 sigil of the dead
-    hades aid, hades call, hades' call, hades' aid, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid
+    sigil, hades aid, hades call, hades' call, hades' aid, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid
 battie
     companion battie, bat, batty, meg companion, megs companion, meg's companion, meg pet, megs pet, meg's pet
 mort

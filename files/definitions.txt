@@ -14,7 +14,7 @@ encounter, encounters
     The dangerous kind; Underworld chambers where you must slay your foes to proceed.
 <:Gemstone:1027109936276197386> gemstones, <:Gemstone:1027109936276197386>, gemstone, gemstones
     For House Contractor renovations, or for trade.
-<:Darkness:1007187036341551184> darkness, <:Darkness:1007187036341551184>, darkness
+<:Darkness:1028189207405015051> darkness, <:Darkness:1028189207405015051>, darkness
     Used to permanently grow stronger.
 <:Obol:1027113221691281449> charon's obol, <:Obol:1027113221691281449>, charon's obol, obol, obols, gold
     For purchasing items during escape attempts. All of it is lost on death.
@@ -52,7 +52,7 @@ hangover
     *Status Curse*: For **4 Sec.**, victim keeps taking damage. Effect can stack up to **5** times.
 dash-strike
     Press Dash then immediately press Attack to attack.
-armor
+armor, armored
     Elite foes cannot be stunned or knocked away until you break through their armor.
 marked
     *Status Curse*: For **6 Sec.**, victim has a higher chance of taking Critical damage.
@@ -61,7 +61,7 @@ blade rift
 chill
     *Status Curse*: For **8 Sec.**, victim is slowed by **4%**. Effect can stack up to **10** times.
 lasting consequences
-    Due to a **Pact Condition**, any <:Healing:1007536016472682557> effects are reduced, **25%** per rank.
+    Due to a **Pact Condition**, any <:Healing:1028193572840816722> effects are reduced, **25%** per rank.
 fountain
     Drinking waters from these Underworld fixtures restores some <:Heart:1008236023039410216> to the living.
 dodge
@@ -86,7 +86,7 @@ punishing sweep
     A huge Spin Attack that makes foes take more Attack and Special damage for **10 Sec**.
 frost fair blade
     *Alternate Move Set*: Heavy Attack, explosive Special, **Life**-stealing Spin Attack.
-<:Healing:1007536016472682557> healing, <:Healing:1007536016472682557>, healing
+<:Healing:1028193572840816722> healing, <:Healing:1028193572840816722>, healing
     Effects that restore some of your Life Total if you suffered any damage.
 bull rush
     Hold Attack then release for a powerful tackle attack.
@@ -144,3 +144,9 @@ call, calls
     An Olympian's aid *(if you have such a Boon)*. Uses **1** stock of your **God Gauge**, or all **4** stocks for a much stronger effect.
 god gauge, gauge
     Required to use your **Call**. Fills as you deal or take damage in each Encounter.
+modblind
+    *Status Curse*: For at least **5 Sec.**, victims have a **40%** chance to miss their next attack.
+modflash bomb
+    After detonating, inflict **Blind** on foes in an area for **3 Sec**.
+modprotect
+    Damage from faraway enemies is less effective.

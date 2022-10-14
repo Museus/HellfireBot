@@ -22,6 +22,7 @@ flare passion flare
     80 96 112 128
     48 34 24 16 12 8
     a/aa/Crush_Shot.png/revision/latest?cb=20200127124952
+    1(aspect of beowulf)
 dash passion dash
     Your **Dash** deals damage where you end up, inflicting **Weak**.
     Dash Damage: {}

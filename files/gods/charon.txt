@@ -118,7 +118,7 @@ spawning light of ixion
     0
     0 0
     a/ae/Light_of_Ixion.png/revision/latest?cb=20181215012911
-    40 <:Obol:1027113221691281449>
+    55 <:Obol:1027113221691281449>
 xspawning trove tracker
     Ensure an **Internal Trove** will spawn ahead *(where possible)*.
     Duration: **Until Spawn**
@@ -143,12 +143,12 @@ resource price of midas
     e/e2/Price_of_Midas.png/revision/latest?cb=20200712173133
     10-50 <:Heart:1008236023039410216>
 resource tinge of erebus
-    Gain **12 - 26** <:Darkness:1007187036341551184>.
+    Gain **12 - 26** <:Darkness:1028189207405015051>.
     Duration: **Instant**
     0
     0 0
     9/96/Tinge_of_Erebus.png/revision/latest?cb=20181215012854
-    <:Obol:1027113221691281449> = 75% <:Darkness:1007187036341551184>
+    <:Obol:1027113221691281449> = 75% <:Darkness:1028189207405015051>
 resource gaea's treasure
     Gain **11 - 14** <:Gemstone:1027109936276197386>.
     Duration: **Instant**

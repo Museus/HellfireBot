@@ -4,6 +4,7 @@ import misc
 
 boons_info = {}
 bouldy_info = []
+legendary_info = []
 charon_info = {}
 aspects_info = {}
 hammers_info = {}
@@ -13,7 +14,7 @@ bpperks_info = {}
 definitions_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
-             'dionysus': {}, 'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
+             'dionysus': {}, 'demeter': {}, 'apollo': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
 personal = {}
 channels = {}
 commands_info = {}
@@ -22,12 +23,18 @@ for god in god_cores:
     with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
-            has_prereq = type not in ('attack', 'special', 'cast', 'flare', 'dash', 'call',
+            modded = False
+            if type[: 3] == 'mod':
+                modded = True
+                type = type[3:]
+            has_prereq = type not in ('attack', 'special', 'cast', 'dash', 'call',
                                       'revenge', 't1', 'blessing', 'curse', 'combat', 'survival',
                                       'spawning', 'resource', 'miscellaneous')
             if type[0] == 'x':
                 type = type[1:]
             if type in ('attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary'):
+                if type == 'legendary':
+                    legendary_info.append(boon)
                 if type not in god_cores[god]:
                     god_cores[god][type] = []
                 god_cores[god][type].append(boon)
@@ -44,6 +51,8 @@ for god in god_cores:
                 boons_info[boon]['maxcall'] = f.readline().strip()
             if god == 'charon':
                 boons_info[boon]['cost'] = f.readline().strip()
+            if modded:
+                boons_info[boon]['modded'] = True
 
 with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
     while boon := f.readline().strip():
@@ -93,10 +102,16 @@ for weapon in misc.weapon_icons:
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
         type, keepsake = keepsake.split(' ', 1)
+        modded = False
+        if type[: 3] == 'mod':
+            modded = True
+            type = type[3:]
         keepsakes_info[keepsake] = {'type': type, 'desc': f.readline().strip(),
                                     'ranks': f.readline().strip().split(' '),
                                     'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
                                     'icon': f.readline().strip()}
+        if modded:
+            keepsakes_info[keepsake]['modded'] = True
         if type != 'companion':
             for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
                 aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
@@ -118,12 +133,19 @@ for category in aliases:
 with open('./files/definitions.txt', 'r', encoding='utf8') as f:
     aliases['definition'] = {}
     while definition := f.readline().strip():
+        modded = False
+        if definition[: 3] == 'mod':
+            modded = True
+            definition = definition[3:]
         if ', ' in definition:
             definition, alias_list = definition.split(', ', 1)
             alias_list = alias_list.split(', ')
             for alias in alias_list:
                 aliases['definition'][alias] = definition
-        definitions_info[definition] = f.readline().strip()
+        if not modded:
+            definitions_info[definition] = f.readline().strip()
+        else:
+            definitions_info[definition] = (f.readline().strip(), 'modded')
 
 with open('./files/benefits_package.txt', 'r', encoding='utf8') as f:
     while perk := f.readline().strip():

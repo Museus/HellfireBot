@@ -41,7 +41,7 @@ spear hades
     The god of the dead discarded the eternal spear for a larger counterpart.
     1/19/Hades_Aspect.png/revision/latest?cb=20191013212242
 spear guan yu
-    You have the **Frost Fair Blade**, but your <:MaxHealth:1008235891308908545> and <:Healing:1007536016472682557> are reduced.
+    You have the **Frost Fair Blade**, but your <:MaxHealth:1008235891308908545> and <:Healing:1028193572840816722> are reduced.
     Max Life & Healing: {-%}
     70 65 60 55 50
     A mighty general shall battle with unmatched ferocity to unite his people.

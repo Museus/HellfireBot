@@ -1,12 +1,12 @@
 invite None
     Returns a link that lets you invite the bot to a server you manage.
-
+    1028199136526336000
 boon boon_name [rarity=common] [level=1]
     Returns information on <boon_name>. <rarity> must be exactly common/rare/epic/heroic, and defaults to common. <level> defaults to 1.
 
 pomscaling boon_name [level=10]
     Returns a graph of the performance of <boon_name> from level 1 to <level> across all applicable rarities.
-
+    b/b6/Pom_of_Power.png/revision/latest?cb=20181212011514
 prerequisites item_name
     Returns both prerequisites and incompatibilities, if applicable. <item_name> can be boons, hammers, and Charon well items.
 
@@ -19,6 +19,9 @@ hammer item_name
 god god_name
     Returns a list of non-duo boons for that <god_name>, categorized by type. Includes Chaos, Charon, and <:bouldy:1014438782755422220>.
     1027107426354339840
+legendaries None
+    Returns a list of all legendaries.
+    1027126357597093969
 benefitspackage perk_name?
     Returns information on Benefits Package <perk_name>. If <perk_name> is excluded, returns all Benefits Package perks.
     1027088229737963530
@@ -33,36 +36,36 @@ randchaos [modifiers]...
     1027101814904070175
 randcharon [modifiers]...
     Returns a random Charon well item. Include bone hourglass and/or loyalty card as <modifiers> to change the output.
-
+    6/66/Well_of_Charon.png/revision/latest?cb=20181214194434
 keepsake keepsake_name? [rank=3 or 5]
     Returns information on the given keepsake or companion, at the specified rank. <rank> defaults to max. If <keepsake_name> is excluded, returns all keepsakes.
-
+    1028196559042650173
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
-
+    1028190585280012348
 pact "n"? [pacts=None]...
     Returns an image representation of the Pact of Punishment with specified (space-separated) <pacts> turned on. Include "n" as the first word to ensure that all pacts not listed are maxed out. Uses pact preset if applicable (see h!addpact).
-    1027104646713577492?size=96&quality=lossless
+    c/c4/Heat.png/revision/latest?cb=20190117142930
 randpact heat hell_mode?=False
     Returns an image representation of the Pact of Punishment at the specified <heat> (this is done by randomly selecting pacts until reaching <heat>, backtracking if needed). Any input after <heat> forces <hell_mode>, which by default is not included.
 
 mirror [mirror_binary]
     Returns an image representation of the Mirror of Night, where each perk is equally likely to be red or green. If provided, <mirror_binary> is a 12-digit string of 0s (red perk) and 1s (green perk).
-
+    1028185355976978442
 getpersonal [user=self]
     Returns a list of your personal pact and mirror presets. If provided, <user> returns that user's presets instead (mention and Discord ID both work).
-
+    1028197474562744330
 addpact name pacts...
     Adds a personal pact preset with <name> mapping to <pacts>. Use h!getpersonal to view.
-
+    1027104646713577492
 addmirror name mirror_binary
     Adds a personal mirror preset with <name> mapping to <mirror_binary>. Use h!getpersonal to view.
 
 deletepact name
-    Removes the personal pact preset given by <name>.
-
+    Removes the personal pact preset given by <name>. Use h!getpersonal to view.
+    1028198397527724084
 deletemirror name
-    Removes the personal mirror preset given by <name>.
+    Removes the personal mirror preset given by <name>. Use h!getpersonal to view.
 
 addchannel channel_id
     Allows the bot to be used in the channel specified by <channel_id>. Only usable by server administrators.
@@ -72,7 +75,7 @@ deletechannel channel_id
 
 modded None
     Returns information on the official speedrun modpack.
-    1027111327753322508?size=96&quality=lossless
+    1027111327753322508
 suggest alias -> item_name
     Sends a suggested <alias> to <item_name> mapping to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
 

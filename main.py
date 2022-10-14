@@ -1,12 +1,14 @@
 import asyncio
 import copy
 import difflib
+import math
 import os
 import random
 
 import discord
 from discord.ext import commands
 from discord.ext.commands import has_permissions
+from matplotlib import pyplot as plt
 
 import embeds
 import files
@@ -35,13 +37,13 @@ async def on_command_error(ctx, err):
                 names.add(alias)
         matches = difflib.get_close_matches(err, names, n=2)
         if not matches:
-            await reply(ctx, f'h!{err} does not exist, use h!help to see a list of valid commands', True)
+            await reply(ctx, f'h!{err} does not exist, use h!help to see a list of valid commands', mention=True)
             return
         matches_str = ' or '.join([f'h!{match}' for match in matches])
-        await reply(ctx, f'Did you mean {matches_str}?', True)
+        await reply(ctx, f'Did you mean {matches_str}?', mention=True)
         return
     if isinstance(err, commands.MissingRequiredArgument):
-        await reply(ctx, 'Missing required input. Run h!help <command_name> for more information.')
+        await reply(ctx, 'Missing required input. Run h!help <command_name> for more information.', mention=True)
         return
     raise err
 
@@ -136,6 +138,11 @@ async def god(ctx, *args):
     await reply(ctx, embed=embed)
 
 
+@client.command(aliases=['legendary', 'leg', 'legend', 'yellow'])
+async def legendaries(ctx):
+    await reply(ctx, embed=embeds.legendaries_embed())
+
+
 @client.command(aliases=['bp'])
 async def benefitspackage(ctx, *args):
     embed = embeds.bpperk_embed(args)
@@ -170,7 +177,7 @@ async def bouldy(ctx):
         description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], "")}',
         color=misc.god_colors['bouldy']
     )
-    embed.set_thumbnail(url=info['icon'])
+    embed.set_thumbnail(url=misc.to_link(info['icon']))
     await reply(ctx, embed=embed)
 
 
@@ -180,7 +187,7 @@ async def randchaos(ctx, *args):
     await reply(ctx, embed=embed)
 
 
-@client.command(aliases=['randomcharon', 'rcharon', 'char', 'well', 'randomwell', 'randwell', 'rwell'])
+@client.command(aliases=['randomcharon', 'rcharon', 'charon', 'char', 'well', 'randomwell', 'randwell', 'rwell'])
 async def randcharon(ctx, *args):
     embed = embeds.random_charon_embed(args)
     await reply(ctx, embed=embed)
@@ -198,7 +205,7 @@ async def keepsake(ctx, *args):
     await reply(ctx, embed=embed)
 
 
-@client.command(aliases=['rarity'])
+@client.command(aliases=['rarity', 'roll', 'rolls'])
 async def rarityrolls(ctx, *args):
     modifiers = parsing.parse_modifiers(args)
     rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
@@ -330,7 +337,7 @@ async def suggest(ctx, *args):
     input = ' '.join([s.lower() for s in args])
     verofire = input.split('->')
     if len(verofire) != 2:
-        await reply(ctx, 'idk man as', True)
+        await reply(ctx, 'idk man as', mention=True)
         return
     channel = client.get_channel(1018409476908392518)
     await channel.send(f'From {ctx.author.mention}:\n```{input}```')
@@ -342,10 +349,49 @@ async def creds(ctx):
     await reply(ctx, embed=embed)
 
 
+@client.command(aliases=['aphro', 'edttoaamo'])
+async def aphrodite(ctx, num=None):
+    def edttoaamo(n):
+        if n > 1:
+            return f'Enough. Drop the topic of "{edttoaamo(n - 1)}" and move on.'
+        return 'Enough. Drop the topic of Aphrodite and move on.'
+    if not num:
+        if random.random() < 0:
+            embed = discord.Embed(
+                title='Drop',
+                description='the',
+                color=misc.god_colors['aphrodite']
+            )
+            embed.set_author(name='Enough.')
+            embed.add_field(name='topic of', value='Aphrodite')
+            embed.set_footer(text='and move on.')
+            await reply(ctx, embed=embed)
+        else:
+            plt.clf()
+            x_axis = [x / 2 for x in range(0, 21)]
+            y_axis_1 = [10 - math.exp(x - 7.7) for x in x_axis]
+            y_axis_2 = [10 - y for y in y_axis_1]
+            plt.plot(x_axis, y_axis_1, label='Topic of Aphrodite', color='#FB91FC')
+            plt.plot(x_axis, y_axis_2, label='Moving on', color='#000000')
+            plt.title('Enough.')
+            plt.xlabel('Time')
+            plt.ylabel('Relevance')
+            plt.xticks([])
+            plt.yticks([])
+            plt.legend()
+            plt.savefig('output.png')
+            await reply(ctx, file=discord.File('./output.png'))
+    else:
+        await reply(ctx, edttoaamo(int(num)))
+
+
 async def reply(ctx, message='', embed=None, file=None, mention=False):
-    guild_id = str(ctx.message.guild.id)
-    if guild_id in files.channels and str(ctx.message.channel.id) not in files.channels[guild_id]:
-        return
+    try:
+        guild_id = str(ctx.message.guild.id)
+        if guild_id in files.channels and str(ctx.message.channel.id) not in files.channels[guild_id]:
+            return
+    except AttributeError:
+        pass
     return await ctx.reply(message, embed=embed, file=file, mention_author=mention)
 
 

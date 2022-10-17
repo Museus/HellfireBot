@@ -45,14 +45,15 @@ def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
         duration = f'**{random.choice((3, 4))}** standard **Encounters**'
     else:
         duration = f'**{random.choice((3, 4))} Encounters**'
-    bless_desc = parsing.parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)
-    curse_desc = parsing.parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)
+    bless_desc = parsing.parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)[2:]
+    curse_desc = parsing.parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)[2:]
     embed = discord.Embed(
         title=f'**{misc.capwords(curse + " " + bless)}**',
         description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
         color=0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     )
     embed.set_thumbnail(url=misc.to_link(bless_info['icon']))
+    embed.set_footer(text='Unpommable\nUnpurgeable')
     return embed
 
 
@@ -63,7 +64,7 @@ def random_charon_embed(input: [str]):
     types = []
     items = []
     for i in [s.lower() for s in input]:
-        if i in ('combat', 'health', 'defiance', 'spawning', 'resource', 'miscellaneous'):
+        if i in ('combat', 'survival', 'spawning', 'resource', 'miscellaneous'):
             types.append(i)
     for item_name in files.boons_info:
         if files.boons_info[item_name]['god'] == 'charon':
@@ -72,8 +73,7 @@ def random_charon_embed(input: [str]):
             items.append(item_name)
     item = random.choice(items)
     item_info = files.boons_info[item]
-    desc = f'{item_info["desc"]}\n▸' \
-           f'{parsing.parse_stat(item_info["stat"], [float(item_info["rarities"][0]) + hourglass])}'
+    desc = f'{item_info["desc"]}{parsing.parse_stat(item_info["stat"], [float(item_info["rarities"][0]) + hourglass])}'
     cost = item_info['cost'].split(' ')
     cost[-2] = '-'.join([str(int(int(g) * loyalty)) for g in cost[-2].replace('%', '').split('-')]) \
                + ('%' if '=' in cost else '')
@@ -84,6 +84,7 @@ def random_charon_embed(input: [str]):
         color=0x5500B9
     )
     embed.set_thumbnail(url=misc.to_link(item_info['icon']))
+    embed.set_footer(text='Unpommable\nUnpurgeable')
     return embed
 
 
@@ -151,7 +152,7 @@ def boon_embed(input: [str]):
     return embed, ''
 
 
-def pomscaling_embed(input: [str]):
+def pomscaling_embed(input: [str]) -> (discord.Embed or None, str):
     if not input:
         return None, ''
     level = 10
@@ -169,7 +170,7 @@ def pomscaling_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
+        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -225,7 +226,7 @@ def prereq_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
+        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -264,7 +265,7 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
+        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -391,7 +392,7 @@ def legendaries_embed() -> discord.Embed:
     return embed
 
 
-def bpperk_embed(input: [str]) -> discord.Embed:
+def bpperk_embed(input: [str]) -> discord.Embed or None:
     if input:
         name = ' '.join(input).lower()
         if name in files.aliases['misc']:

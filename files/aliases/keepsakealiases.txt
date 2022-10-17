@@ -45,7 +45,7 @@ evergreen acorn
 broken spearpoint
     spearpoint, spear point, bs
 pom blossom
-    mom pom, mom blossom, blossom
+    mom pom, mom blossom, blossom, mom
 sigil of the dead
     sigil, hades aid, hades call, hades' call, hades' aid, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid
 battie

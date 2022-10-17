@@ -34,8 +34,10 @@ call aphrodite's aid
     Charm Duration: {s}
     5 5.5 6 6.5
     1
+    Max Gauge Bonus: {} **Damage**
+    2500
+    0
     f/f0/Aphrodite%27s_Aid.png/revision/latest?cb=20190316095357
-    Max Gauge Bonus: **2500 Damage**
 t1 different league
     Resist some damage from nearby foes' attacks.
     Reduced Damage From Foes: {+%}

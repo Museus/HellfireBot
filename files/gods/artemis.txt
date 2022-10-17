@@ -35,8 +35,10 @@ call artemis's aid
     Arrow Damage: {}
     100 110 120 130
     40 28 20 14 10
+    Max Gauge Bonus - Arrows Fired: {}
+    10
+    0
     2/2b/Artemis%27_Aid.png/revision/latest?cb=20190317140750
-    Max Gauge Bonus - Arrows Fired: **10**
 t1 pressure points
     Any damage you deal has a chance to be **Critical**.
     Critical Chance: {+%}

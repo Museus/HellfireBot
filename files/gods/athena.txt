@@ -34,8 +34,10 @@ call athena's aid
     Effect Duration: {s}
     1.5 1.65 1.8 1.95
     0.6 0.42 0.3
-    9/91/Athena%27s_Aid.png/revision/latest?cb=20190319173050
     Max Gauge Bonus: **6x Duration**
+    0
+    0
+    9/91/Athena%27s_Aid.png/revision/latest?cb=20190319173050
 t1 bronze skin
     Resist damage from foes' attacks.
     Reduced Damage From Foes: {+%}

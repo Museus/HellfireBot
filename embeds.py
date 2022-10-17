@@ -99,7 +99,7 @@ def boon_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
+        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -119,16 +119,24 @@ def boon_embed(input: [str]):
         unpommable = True
         if len(info['levels']) == 2:
             unpurgeable = True
-    while level > 1:
+    for i in range(level):
         pom = min(pom, len(info['levels']) - 1)
         value[0] += float(info['levels'][pom])
         if len(value) == 2:
             value[1] += float(info['levels'][pom])
-        level -= 1
         pom += 1
-    desc = parsing.parse_stat(info["desc"], value)
-    desc += f'\n▸{parsing.parse_stat(info["stat"], value)}' if info['god'] != 'chaos' or info['type'] == 'curse' else ''
-    desc += f'\n▸{info["maxcall"]}' if info['type'] == 'call' else ''
+    desc = parsing.parse_stat(info["desc"], value)[2:]
+    desc += parsing.parse_stat(info["stat"], value)
+    if 'stat2' in info:
+        value2 = misc.boon_value(info, rarity, True)
+        pom = 0
+        for i in range(level):
+            pom = min(pom, len(info['levels2']) - 1)
+            value2[0] += float(info['levels2'][pom])
+            if len(value2) == 2:
+                value2[1] += float(info['levels2'][pom])
+            pom += 1
+        desc += parsing.parse_stat(info["stat2"], value2)
     desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=title,
@@ -161,7 +169,7 @@ def pomscaling_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
+        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -217,7 +225,7 @@ def prereq_embed(input: [str]):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
+        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -256,7 +264,7 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.capwords('1027094209607516160'))
+        embed.set_thumbnail(url=misc.capwords('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -285,7 +293,7 @@ def hammer_embed(input: [str]) -> (discord.Embed, str):
             title='Alias conflict',
             description=desc
         )
-        embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
+        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
         return embed, name
     else:
         name = name[0]
@@ -328,7 +336,17 @@ def hammer_embed(input: [str]) -> (discord.Embed, str):
 def god_embed(input: [str]) -> discord.Embed:
     name = parsing.parse_god(input)
     if not name:
-        return None
+        embed = discord.Embed(
+            title=f'List of **Gods**'
+        )
+        desc = ''
+        for god in misc.god_icons:
+            if god in ('apollo', 'hestia'):
+                god = '<:Modded:1030375705378312212> ' + god
+            desc += '\n' + misc.capwords(god)
+        embed.description = desc.strip()
+        embed.set_thumbnail(url=misc.to_link('1027107426354339840'))
+        return embed
     if name == 'bouldy':
         god_boons = {'Bouldy': ['Heart of Stone' for _ in files.bouldy_info]}
     else:
@@ -369,6 +387,7 @@ def legendaries_embed() -> discord.Embed:
         color=misc.rarity_embed_colors[4]
     )
     embed.set_thumbnail(url=misc.to_link('1027126357597093969'))
+    embed.set_footer(text='Modded content', icon_url=misc.to_link('1030375705378312212'))
     return embed
 
 
@@ -409,8 +428,15 @@ def define_embed(text: str):
     embed = discord.Embed(
         title='List of **Definitions**'
     )
+    modded = False
     for definition in used:
-        embed.add_field(name=misc.capwords(definition), value=files.definitions_info[definition], inline=False)
+        name = misc.capwords(definition)
+        if len(files.definitions_info[definition]) == 2:
+            name = '<:Modded:1030375705378312212> ' + name
+            modded = True
+        embed.add_field(name=name, value=files.definitions_info[definition][0], inline=False)
+    if modded:
+        embed.set_footer(text='Modded content', icon_url=misc.to_link('1030375705378312212'))
     return embed
 
 
@@ -427,7 +453,7 @@ def keepsake_embed(input: [str]):
                 title='Alias conflict',
                 description=desc
             )
-            embed.set_thumbnail(url=misc.to_link('1027094209607516160'))
+            embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
             return embed, name
         else:
             name = name[0]
@@ -504,7 +530,7 @@ def help_embed(client, command_name, aliases_to_command):
         embed.add_field(name='Syntax', value='[parameter]\n-> parameter is optional\n'
                                              '[parameter=value]\n-> if not provided, parameter defaults to value\n'
                                              'parameter...\n-> arbitrary number of parameters accepted\n'
-                                             'x!\n-> optional parameter')
+                                             'x?\n-> optional parameter')
         embed.set_thumbnail(url=client.user.avatar.url)
     else:
         if command_name in aliases_to_command:
@@ -540,4 +566,5 @@ async def creds_embed(client):
         if not user:
             user = await client.fetch_user(message[0][2: -1])
         embed.add_field(name=user.name, value=message[1], inline=False)
+    embed.set_thumbnail(url=misc.to_link('1027107104345034802'))
     return embed

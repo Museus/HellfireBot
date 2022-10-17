@@ -15,7 +15,9 @@ dionysus
 demeter
     demeters, demeter's, dems, dem's, dem, frost, icy, cold, chill, snow, ❄
 apollo
-    apollos, apollo's, blinding, brilliant, radiant, melodic, light, 🌞, ☀
+    apollos, apollo's, blinding, brilliant, radiant, melodic, light, sun, 🌞, ☀
+hestia
+    hestias, hestia's, hesty, hestys, hesty's, hestis, hesti's, hesti, embracing, ember, flaring, molten, melting, 🔥
 hermes
     hermes', hermes's, herm, herme, swift
 charon
@@ -29,7 +31,7 @@ special
 cast
     shot, grasp, 💎
 flare
-    beo, beowulf, beowolf
+    beo, beowulf, beowolf, hera
 dash
     jump, snap, 💨
 call
@@ -37,7 +39,7 @@ call
 revenge
     rev, vengeance, revengeance
 status
-    ps
+    ps, statuses
 legendary
     leg, legend, legendaries, yellow
 duos

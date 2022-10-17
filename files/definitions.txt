@@ -18,10 +18,12 @@ encounter, encounters
     Used to permanently grow stronger.
 <:Obol:1027113221691281449> charon's obol, <:Obol:1027113221691281449>, charon's obol, obol, obols, gold
     For purchasing items during escape attempts. All of it is lost on death.
+<:Reroll:1028190585280012348> fated dice, <:Reroll:1028190585280012348>
+    Randomly alter the reward for the next **Chamber** with Fated Authority active; Randomly alter **Boon** and **Well of Charon** choices with Fated Persuasion active.
 bosses, boss
     Lords of the Underworld identifiable by long health bars with their names on them.
 rupture
-    *Status Curse*: For **3 Sec**., victim takes damage while moving.
+    *Status Curse*: For **3 Sec.**, victim takes damage while moving.
 fishing point
     Places where you may attempt to use the **Rod of Fishing** to retrieve a river denizen.
 chamber, chambers
@@ -99,7 +101,7 @@ dragon rush
 celestial sharanga
     *Alternate Move Set*: Wide, heavy Attack; bouncing triple-shot Special afflicts foes.
 shared suffering
-    Foes hit by your Special take damage when you Attack *any* foe for the next **7 Sec**.
+    Foes hit by your Special take damage when you Attack *any* marked foe for the next **7 Sec**.
 magnetic cutter
     Your Special pulls foes in. Then for **6 Sec.**, they take more Attack and Cast damage.
 claws of enkidu
@@ -107,7 +109,7 @@ claws of enkidu
 dash-upper
     Press Dash then immediately press Special to uppercut.
 maim
-    Foes take **25%** more damage but deal **+50%** more for **4 Sec.**, then take a burst of damage.
+    Foes take **+25%** more damage but deal **+50%** more for **4 Sec.**, then take 400 damage.
 reload
     Replenish the Rail's ammunition supply after a brief delay during which you cannot fire.
 igneus eden
@@ -116,6 +118,8 @@ hellfire
     Destructible bombs radiate damage and stagger nearby foes; explode in a large blast.
 chaos gates, chaos gate
     A sacrifice of <:Heart:1008236023039410216> is necessary to access the unfathomable depths of Chaos.
+<:PomQuestion:1029254859062517760> pom power, <:PomQuestion:1029254859062517760>
+    Raises the potency of one of your Boons *(chosen at random)*.
 invisible
     Vanish and move faster for **2 Sec.**; strike to appear and deal bonus damage for **1.5 Sec**.
 unseen
@@ -130,7 +134,7 @@ blast wave
     An emanating wave of force that knocks away foes and destroys most projectiles.
 <:LuciferAmmo:1017268637716983868> cells, <:LuciferAmmo:1017268637716983868>
     Ammunition for your Attack.
-rounds
+<:RailAmmo:1027058242154676269> rounds, <:RailAmmo:1027058242154676269>
     Ammunition for your Attack.
 attack, attacks
     Your main weapon.
@@ -149,4 +153,12 @@ modblind
 modflash bomb
     After detonating, inflict **Blind** on foes in an area for **3 Sec**.
 modprotect
-    Damage from faraway enemies is less effective.
+    Damage from faraway foes is less effective.
+modlava pool, lava pools
+    A puddle of lava rapidly damages foes in an area.
+centaur heart
+    Upon pickup, gain **+25** <:MaxHealth:1008235891308908545>.
+centaur soul
+    Upon pickup, gain **+25** <:MaxHealth:1008235891308908545> *(without restoring <:Heart:1008236023039410216>)*.
+minibosses, miniboss
+    Stronger than most foes, usually associated with <:Miniboss:1031444109115793468>.

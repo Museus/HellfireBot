@@ -25,7 +25,7 @@ flare slicing flare
     1(aspect of beowulf)
 dash blade dash
     Your **Dash** creates a **Blade Rift** where you started.
-    Rift Damage per Hit:
+    Rift Damage per Hit: {}
     10 12 14 16
     6 4 3 2
     5/58/Blade_Dash.png/revision/latest?cb=20190612170533
@@ -34,8 +34,10 @@ call ares' aid
     Rift Damage per Hit: {}
     30 38 45 53
     6 4 3 2
-    6/63/Ares%27_Aid.png/revision/latest?cb=20190319224142
     Max Gauge Bonus: **5 Sec. Duration**
+    0
+    0
+    6/63/Ares%27_Aid.png/revision/latest?cb=20190319224142
 t1 urge to kill
     Your **Attack**, **Special**, and **Cast** deal more damage.
     Bonus Damage: {+%}

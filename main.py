@@ -381,6 +381,7 @@ async def aphrodite(ctx, num=None):
             plt.legend()
             plt.savefig('output.png')
             await reply(ctx, file=discord.File('./output.png'))
+            os.remove('./output.png')
     else:
         await reply(ctx, edttoaamo(int(num)))
 

@@ -34,8 +34,10 @@ call demeter's aid
     Vortex Damage: {} *(every 0.25 Sec.)*
     10 11 12 13
     4 3 2
-    3/35/Demeter%27s_Aid.png/revision/latest?cb=20200126122738
     Max Gauge Bonus: **10 Sec. Duration**
+    0
+    0
+    3/35/Demeter%27s_Aid.png/revision/latest?cb=20200126122738
 t1 snow burst
     Whenever you **Cast**, damage foes around you and inflict **Chill**.
     Area Damage: {}
@@ -61,9 +63,12 @@ t1 rare crop
     0
     1/10/Rare_Crop.png/revision/latest?cb=20200126153233
 t2 killing freeze
-    When *all* foes are **Chill**-afflicted, they are **+10, 15, 20, 25%** slower and decay.
+    When *all* foes are **Chill**-afflicted, they are slower and decay.
     Decay Damage: {} *(every 0.5 Sec.)*
     20 30 40 50
+    0
+    Speed Reduction: {+%}
+    10 15 20 25
     0
     4/41/Killing_Freeze.png/revision/latest?cb=20200127124845
     1(frost strike, frost flourish, mistral dash, demeter's aid, snow burst)

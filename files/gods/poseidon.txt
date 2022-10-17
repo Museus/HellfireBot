@@ -34,8 +34,10 @@ call poseidon's aid
     Impact Damage: {}
     250 300 350 400
     100 70 49 34 25
-    e/ea/Poseidon%27s_Aid.png/revision/latest?cb=20190319204753
     Max Gauge Bonus: **7.2 Sec. Duration**
+    0
+    0
+    e/ea/Poseidon%27s_Aid.png/revision/latest?cb=20190319204753
 t1 hydraulic might
     Your **Attack** and **Special** are stronger the first **10 Sec** in **Encounters**.
     Initial Damage Bonus: {+%}

@@ -86,7 +86,7 @@ def parse_stat(stat_line: str, value: [float]) -> str:
     try:
         replace = re.findall(r'{.*}', stat_line)[0]
     except IndexError:
-        return stat_line
+        return f'\n▸{stat_line}' if stat_line else ''
     rounded = 's' not in replace and 'x' not in replace
     if len(value) == 2:
         value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}' if rounded \
@@ -108,7 +108,7 @@ def parse_stat(stat_line: str, value: [float]) -> str:
     if 'c' in replace:
         value = f'{value} Chambers'
     stat = re.sub(r'{.*}', f'**{value}**', stat_line)
-    return stat
+    return f'\n▸{stat}'
 
 
 def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:

@@ -13,8 +13,8 @@ prereqs_info = {}
 bpperks_info = {}
 definitions_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
-god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {},
-             'dionysus': {}, 'demeter': {}, 'apollo': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'duos': None}
+god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {}, 'dionysus': {},
+             'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'apollo': {}, 'hestia': {}, 'duos': None}
 personal = {}
 channels = {}
 commands_info = {}
@@ -34,21 +34,37 @@ for god in god_cores:
                 type = type[1:]
             if type in ('attack', 'special', 'cast', 'flare', 'dash', 'call', 'status', 'revenge', 'legendary'):
                 if type == 'legendary':
-                    legendary_info.append(boon)
+                    legendary_info.append('<:Modded:1030375705378312212> ' + boon if modded else boon)
                 if type not in god_cores[god]:
                     god_cores[god][type] = []
                 god_cores[god][type].append(boon)
-            boons_info[boon] = {'god': god, 'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
-                                'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
-                                'icon': f.readline().strip()}
+            description = f.readline().strip()
+            stat = f.readline().strip()
+            rarities = f.readline().strip().split(' ')
+            levels = f.readline().strip().split(' ')
+            next_line = f.readline().strip()
+            stat2 = None
+            rarities2 = None
+            levels2 = None
+            if ': ' in next_line:
+                stat2 = next_line
+                rarities2 = f.readline().strip().split(' ')
+                levels2 = f.readline().strip().split(' ')
+                icon = f.readline().strip()
+            else:
+                icon = next_line
+            boons_info[boon] = {'god': god, 'type': type, 'desc': description, 'stat': stat,
+                                'rarities': rarities, 'levels': levels, 'icon': icon}
+            if stat2:
+                boons_info[boon]['stat2'] = stat2
+                boons_info[boon]['rarities2'] = rarities2
+                boons_info[boon]['levels2'] = levels2
             if has_prereq:
                 prereqs = f.readline().strip().split('; ')
                 prereq_list = []
                 for prereq in prereqs:
                     prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
                 prereqs_info[boon] = prereq_list
-            if type == 'call' and god not in ('hermes', 'charon'):
-                boons_info[boon]['maxcall'] = f.readline().strip()
             if god == 'charon':
                 boons_info[boon]['cost'] = f.readline().strip()
             if modded:
@@ -61,17 +77,39 @@ with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
         if type[0] == 'x':
             has_prereq = True
             type = type[1:]
-        boons_info[boon] = {'god': god, 'type': type, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
-                            'rarities': f.readline().strip().split(' '), 'levels': f.readline().strip().split(' '),
-                            'icon': f.readline().strip()}
+        description = f.readline().strip()
+        stat = f.readline().strip()
+        rarities = f.readline().strip().split(' ')
+        levels = f.readline().strip().split(' ')
+        next_line = f.readline().strip()
+        stat2 = None
+        rarities2 = None
+        levels2 = None
+        if ': ' in next_line:
+            stat2 = next_line
+            rarities2 = f.readline().strip().split(' ')
+            levels2 = f.readline().strip().split(' ')
+            icon = f.readline().strip()
+        else:
+            icon = next_line
+        boons_info[boon] = {'god': god, 'type': type, 'desc': description, 'stat': stat,
+                            'rarities': rarities, 'levels': levels, 'icon': icon}
+        if stat2:
+            boons_info[boon]['stat2'] = stat2
+            boons_info[boon]['rarities2'] = rarities2
+            boons_info[boon]['levels2'] = levels2
         if has_prereq:
             prereqs = f.readline().strip().split('; ')
             prereq_list = []
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereqs_info[boon] = prereq_list
-        if type == 'call':
-            boons_info[boon]['maxcall'] = f.readline().strip()
+        if has_prereq:
+            prereqs = f.readline().strip().split('; ')
+            prereq_list = []
+            for prereq in prereqs:
+                prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
+            prereqs_info[boon] = prereq_list
 
 with open(f'./files/gods/bouldy.txt', 'r', encoding='utf8') as f:
     while f.readline():
@@ -143,7 +181,7 @@ with open('./files/definitions.txt', 'r', encoding='utf8') as f:
             for alias in alias_list:
                 aliases['definition'][alias] = definition
         if not modded:
-            definitions_info[definition] = f.readline().strip()
+            definitions_info[definition] = (f.readline().strip(),)
         else:
             definitions_info[definition] = (f.readline().strip(), 'modded')
 

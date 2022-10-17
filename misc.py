@@ -3,10 +3,10 @@ import parsing
 
 rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
-god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC,
-              'artemis': 0xD2FC61, 'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC,
-              'apollo': 0xFF914F, 'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18,
-              'hades': 0x9500F6, 'chaos': 0x8783CF, 'charon': 0x5500B9, 'keepsake': 0x465B75}
+god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC, 'artemis': 0xD2FC61,
+              'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC, 'apollo': 0xFF914F, 'hestia': 0x7B1635,
+              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF,
+              'charon': 0x5500B9, 'keepsake': 0x465B75}
 god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=20201129190802',
              'poseidon': '6/6d/Poseidon-bond-forged.png/revision/latest?cb=20201129190617',
              'athena': '1/15/Athena-bond-forged.png/revision/latest?cb=20201129185736',
@@ -15,12 +15,12 @@ god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=2020112919080
              'ares': '7/7e/Ares-bond-icon.png/revision/latest?cb=20201129185523',
              'dionysus': '8/81/Dionysus-bond-forged.png/revision/latest?cb=20201129190028',
              'demeter': '0/04/Demeter-bond-forged.png/revision/latest?cb=20201129190001',
-             'apollo': 'https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/ApolloBadge_max.png?raw=true',
              'hermes': 'f/fd/Hermes-bond-forged.png/revision/latest?cb=20201129190309',
-             'bouldy': '1014438782755422220',
-             'duos': '1027126357597093969',
+             'bouldy': '1014438782755422220', 'duos': '1027126357597093969',
              'chaos': '7/7a/Chaos-bond-forged.png/revision/latest?cb=20201129185835',
-             'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904'}
+             'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
+             'apollo': 'Apollo/Apollo/ApolloBadge_max.png?raw=true',
+             'hestia': 'Hestia/Hestia/HestiaBadge_max.PNG?raw=true'}
 weapon_icons = {'sword': 'f/f7/Stygian_Blade.png/revision/latest?cb=20181213044607',
                 'spear': 'c/c1/Eternal_Spear.png/revision/latest?cb=20181214234725',
                 'shield': '0/02/Shield_of_Chaos.png/revision/latest?cb=20181213193429',
@@ -61,11 +61,12 @@ def fuzzy_boon(input: [str]) -> [str]:
     return ''
 
 
-def boon_value(info: {str: str}, rarity: str) -> [float]:
-    value = [float(x) for x in info['rarities'][parsing.rarities[rarity] - 1].split('-')]
+def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
+
+    value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
     if rarity != 'common':
         if len(value) == 2 or info['god'] == 'chaos':
-            base_value = info['rarities'][0].split('-')
+            base_value = info['rarities2' if second else 'rarities'][0].split('-')
             value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
     return value
 
@@ -98,18 +99,17 @@ def rarity_rolls(input: [str]) -> [float]:
             buff_rolls([0.1, 0.15, 0.4])
     elif 'tartarus miniboss' in input:
         rolls = [0.1, 0.25, 1]
+        hermes = 'hermes' in input
     elif 'miniboss' in input:
-        rolls = [0.1, 0.25, 0.95]
-        if 'hermes' in input:
-            hermes = True
+        rolls = [0.1, 0.25, 0.9]
+        hermes = 'hermes' in input
     elif 'hermes' in input:
         rolls = [0.01, 0.03, 0.06]
         hermes = True
     if 'god keepsake' in input and not chaos and not hermes:
         buff_rolls([0.1, 0.1, 0.2])
     if 'chaos favor' in input:
-        for i in range(input.count('chaos favor')):
-            buff_rolls([0.1, 0.1, 0.2])
+        buff_rolls([r * input.count('chaos favor') for r in [0.1, 0.1, 0.2]])
     if 'yarn of ariadne' in input or 'refreshing nectar' in input:
         buff_rolls([0.1, 0.25, 1])
     if 'exclusive access' in input:
@@ -140,4 +140,4 @@ def to_link(s: str) -> str:
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
     if s[1] == '/':
         return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
-    return s
+    return f'https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/{s}'

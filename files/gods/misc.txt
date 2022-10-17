@@ -3,9 +3,11 @@ hades xcall hades' aid
     Stealth Damage Bonus: {+%}
     100
     0 0
+    Max Gauge Bonus: Turn **Unseen** Instead
+    0
+    0
     a/a8/Hades%27_Aid.png/revision/latest?cb=20201021012105
     m(sigil of the dead)
-    Max Gauge Bonus: Turn **Unseen** Instead
 bouldy xt1 heart of stone
     You do not know if you believe in Bouldy...
     Ambiguity Bonus: {+%}

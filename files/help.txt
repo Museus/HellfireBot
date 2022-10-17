@@ -16,8 +16,8 @@ aspect aspect_name [level=5]
 hammer item_name
     If <item_name> is a hammer, returns information on it. If <item_name> is a weapon (sword/spear/shield/bow/fists/rail), returns a list of all hammers for it. If <item_name> is a weapon aspect, returns a list of all compatible hammers.
     3/3e/Daedalus_Hammer.png/revision/latest?cb=20181212011510
-god god_name
-    Returns a list of non-duo boons for that <god_name>, categorized by type. Includes Chaos, Charon, and <:bouldy:1014438782755422220>.
+god god_name?
+    Returns a list of non-duo boons for that <god_name>, categorized by type. Includes Chaos, Charon, and <:bouldy:1014438782755422220>. If no <god_name> given, returns a list of all gods that are valid inputs to the command.
     1027107426354339840
 legendaries None
     Returns a list of all legendaries.

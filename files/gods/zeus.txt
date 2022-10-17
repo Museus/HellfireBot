@@ -34,8 +34,10 @@ call zeus's aid
     Lightning Damage: {}
     50 55 60 65
     20 14 10 7 5
-    e/ec/Zeus%27_Aid.png/revision/latest?cb=20190319212936
     Max Gauge Bonus: **9 Sec. Duration**
+    0
+    0
+    e/ec/Zeus%27_Aid.png/revision/latest?cb=20190319212936
 t1 lightning reflexes
     After you **Dash** just before getting hit, a bolt strikes a nearby foes.
     Lightning Damage: {}

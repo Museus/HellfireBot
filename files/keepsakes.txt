@@ -57,7 +57,7 @@ modgod shining lyre
     10 15 20
     apollo a harmonious
     He sees you as a prophet of good fortune.
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Keepsake_Lyre.png?raw=true
+    Apollo/Apollo/Keepsake_Lyre.png?raw=true
 modgod bottomless cauldron
     The next **Boon** you find will be from **Hestia**. Her blessings have {+%} chance to be **Rare** or better.
     10 15 20

@@ -199,61 +199,85 @@ modduo chilling melody
     Blind Duration: {s}
     10
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloDemeter_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloDemeter_01.PNG?raw=true
     1(blinding strike, blinding flourish, blinding bomb, brilliant flare, radiant dash); 1(frost strike, frost flourish, mistral dash)
 modduo archery lessons
-    After using **Deflect**, gain **Protect** for **3 Sec**.
+    After you **Deflect**, gain **Protect** for **3 Sec**.
     Bonus Defense: {%}
     60
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloAthena_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloAthena_01.PNG?raw=true
     1(blinding strike, blinding flourish, radiant dash); 1(divine strike, divine flourish, phalanx shot, divine dash)
 modduo famed duet
     Your **Call** fires multiple beams instead of one.
     Beams Fired: {}
     12
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloArtemis_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloArtemis_01.PNG?raw=true
     1(apollo's aid); 1(deadly strike, deadly flourish, true shot, hunter dash)
 modduo hyacinth
-    Foes inflicted with **Blind** and **Weak** shatter early. Does not apply to **Bosses**.
-    Shatter Breakpoint: {%} <:Heart:1008236023039410216>
-    30
+    Foes inflicted with **Blind** and **Weak** shatter at **30%** <:Heart:1008236023039410216>. Does not apply to **Bosses**.
+
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloAphrodite_01.PNG?raw=true
+    0
+    Apollo/Apollo/Duos/ApolloAphrodite_01.PNG?raw=true
     1(blinding strike, blinding flourish, blinding bomb, brilliant flare, radiant dash); 1(heartbreak strike, heartbreak flourish, crush shot, passion dash)
 modduo master bolt
-    Enemies inflicted by **Blind** are also struck by lightning every **1 Sec**.
+    **Blind**-afflicted foes are also struck by lightning every **1 Sec**.
     Lightning Damage: {}
     40
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloZeus_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloZeus_01.PNG?raw=true
     1(blinding strike, blinding flourish, blinding bomb, radiant dash); 1(lightning strike, thunder flourish, electric shot, thunder dash, lightning reflexes)
 modduo blinding fog
     Your **Flash Bomb** summons a **Festive Fog** upon yourself.
     Damage: {}
     45
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
     1(blinding bomb); 1(drunken strike, drunken flourish, drunken dash)
 modduo festive bomb
     Your **Festive Fog** summons a **Flash Bomb** upon yourself.
     Damage: {}
     45
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
     1(trippy shot); 1(blinding strike, blinding flourish, radiant dash)
 modduo sea chantey
-    You deal and take **+5%** more damage from **Bosses**.
+    You deal and take more damage against **Bosses**.
     Bonus Damage vs. Bosses: {+%}
     20
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloPoseidon_01.PNG?raw=true
+    Increased Damage from Bosses: {+%}
+    5
+    0
+    Apollo/Apollo/Duos/ApolloPoseidon_01.PNG?raw=true
     1(tempest strike, tempest flourish, flood shot, tidal dash); 1(wishing well, melodic concert, future sight, golden fleece, panacea's elixir)
 modduo war song
     Your **Flash Bomb** inflicts **Doom**.
     Doom Damage: {}
     100
     0
-    https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/Apollo/Apollo/Duos/ApolloAres_01.PNG?raw=true
+    Apollo/Apollo/Duos/ApolloAres_01.PNG?raw=true
     1(blinding bomb, brilliant flare, festive bomb); 1(curse of agony, curse of pain, curse of vengeance)
+modduo striking sparks
+    Your **Critical** effects create an explosion.
+    Explosion Damage: {}
+    50
+    0
+    Hestia/Hestia/Duos/HestiaArtemis_01.PNG?raw=true
+    1(deadly strike, deadly flourish, true shot, hunter dash); 1(embracing strike, embracing flourish)
+modduo unrequited love
+    After you defeat **Bosses**, gain a **Centaur Heart**. After you defeat **Minibosses**, gain a **Centaur Soul**.
+
+    0
+    0
+    Hestia/Hestia/Duos/HestiaAphrodite_01.png?raw=true
+    1(embracing strike, embracing flourish, ember shot, flaring rush); 1(heartbreak strike, heartbreak flourish, crush shot, passion dash, life affirmation)
+modduo danger zone
+    **Traps** deal extra damage to foes.
+    Bonus Trap Damage: {+%}
+    400
+    0
+    Hestia/Hestia/Duos/HestiaAthena_01.PNG?raw=true
+    1(embracing strike, embracing flourish); 1(divine strike, divine flourish, phalanx shot, phalanx flare, divine dash)

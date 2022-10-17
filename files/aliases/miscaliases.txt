@@ -15,7 +15,7 @@ storm lightning
 static discharge
     jolt, jolted
 splitting bolt
-    splitting
+    splitting, bolt
 tidal dash
     splash dash, splashdash
 boiling point
@@ -43,7 +43,7 @@ huge catch
 divine dash
     dd, ddash, titan toppler, idk man, idk man as
 holy shield
-    
+    holy, shield
 bronze skin
     bronze
 deathless stand
@@ -53,13 +53,13 @@ last stand
 proud bearing
     bearing
 sure footing
-    
+    footing
 blinding flash
     expose, exposed
 brilliant riposte
     riposte
 divine protection
-    
+    divine, protection
 dying lament
     lament
 wave of despair
@@ -67,13 +67,13 @@ wave of despair
 life affirmation
     affirm, affirmation
 different league
-    
+    different, league
 empty inside
     empty
 broken resolve
     broken, resolve
 blown kiss
-    blown, kiss
+    blown, kiss, blownkiss
 sweet surrender
     surrender
 unhealthy fixation
@@ -97,13 +97,13 @@ fully loaded
 curse of vengeance
     vengeance
 urge to kill
-    urge
+    urge, killing urge
 blood frenzy
     frenzy
 battle rage
-    rage
+    rage, battlerage
 black metal
-    
+    black, metal
 engulfing vortex
     engulfing
 dire misfortune
@@ -119,15 +119,15 @@ premium vintage
 after party
     afterparty
 strong drink
-    drink
+    drink, fountain, fountains
 positive outlook
     outlook
 high tolerance
     tolerance
 bad influence
-    
+    influence
 numbing sensation
-    numbing
+    numbing, numb sensation
 peer pressure
     pp, ppressure
 black out
@@ -150,6 +150,40 @@ killing freeze
     killing
 winter harvest
     harvest
+wishing well
+    wishing, well, wish well, fountain, fountains
+melodic concert
+    melodic, melody, concert, melody concert, fountain, fountains, protect
+future sight
+    future, sight, fated persuasion, persuasion
+golden fleece
+    golden, fleece, gold, gold fleece, fated authority, authority
+divine law
+    divine, law
+panacea's elixir
+    panacea, elixir, panacea's, panaceas, panaceas elixir, panacea elixir
+icarus wings
+    icarus, wings, icarus wing
+purest light
+    purest, light, pure, pure light
+molten core
+    molten, core, melting core
+melting heart
+    melting
+open arms
+    open arm, arms, open
+eternal flame
+    eternal, flame, endless flame
+home turf
+    turf
+homecoming
+    death defiance, dd, home coming
+temperance
+    stubborn defiance, sd
+molten sting
+    molten, sting, melting sting
+modlegendary royal hearth
+    royal, hearth, heart, royal heart
 quick reload
     qr, qreload, reload
 auto reload
@@ -159,25 +193,25 @@ greatest reflex
 side hustle
     hustle
 greater evasion
-    evasion
+    greater, evasion
 second wind
     second
 greater haste
-    haste
+    greater, haste
 flurry cast
-    flurry
+    flurry, flast
 quick favor
     qf
 quick recovery
-    qr
+    qr, recovery
 hyper sprint
-    hs
+    hs, sprint
 rush delivery
-    rd
+    rd, delivery
 greater recall
-    recall
+    greater, recall
 bad news
-
+    news
 curse of longing
     col
 heart rend
@@ -221,7 +255,7 @@ calculated risk
 unshakable mettle
     unshakable, mettle
 lightning phalanx
-    lp
+    lp, lphalanx
 ice wine
     wine
 blizzard shot
@@ -234,6 +268,30 @@ scintillating feast
     scintillating
 sea storm
     ss, sstorm, seastorm
+chilling melody
+    chilling, melody
+archery lessons
+    archer, lessons, lesson, archery lesson, archer lessons, archer lesson
+famed duet
+    famed, fame, famous, duet, duo, famed duo, fame duet, fame duo, famous duet, famous duo
+hyacinth
+
+master bolt
+    master, bolt, masterbolt
+blinding fog
+    blinding
+festive bomb
+    festive
+sea chantey
+    seachantey, chantey, shanty, sea shanty, seashanty
+war song
+    song, warsong
+striking sparks
+    striking, sparks, spark, striking spark
+unrequited love
+    unrequited
+danger zone
+    danger, zone, dangerzone
 bouldy
     heart of stone, <:bouldy:1014438782755422220>
 hades' aid

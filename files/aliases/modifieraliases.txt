@@ -3,7 +3,7 @@ miniboss
 hermes
     hermes, hermes boon
 tartarus miniboss
-    tartarus miniboss, tart miniboss, tartarus midboss, tart midboss, tartarus, tart
+    tartarus miniboss, tart miniboss, tartarus midboss, tart midboss, tartarus, tart, styx miniboss, styx midboss, styx
 chaos
     chaos, chaos gate, chaos boon, chaos portal
 cosmic egg

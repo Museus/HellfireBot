@@ -63,7 +63,7 @@ modgod bottomless cauldron
     10 15 20
     hestia a compassionate
     Together, you are the founding members of the Warmth and Compassion Brigade.
-
+    Hestia/Hestia/Keepsake_Cauldron.png?raw=true
 combat black shawl
     Deal {+%} damage striking undamaged foes; also striking foes from behind.
     10 15 20

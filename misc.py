@@ -62,8 +62,10 @@ def fuzzy_boon(input: [str]) -> [str]:
 
 
 def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
-
-    value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
+    try:
+        value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
+    except IndexError:
+        return None
     if rarity != 'common':
         if len(value) == 2 or info['god'] == 'chaos':
             base_value = info['rarities2' if second else 'rarities'][0].split('-')

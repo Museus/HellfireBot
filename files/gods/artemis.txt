@@ -77,7 +77,7 @@ t2 support fire
     After you **Cast** or hit with an **Attack** or **Special**, fire a seeking arrow.
     Arrow Damage: {}
     10 12 14 16
-    0
+    2 1
     e/e2/Support_Fire.png/revision/latest?cb=20181214175357
     1(deadly strike, deadly flourish, true shot, hunter's flare, hunter dash, artemis' aid, pressure points)
 status hunter's mark

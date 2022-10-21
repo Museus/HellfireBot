@@ -82,17 +82,23 @@ def parse_keepsake(input: []) -> (str, int, bool):
     return '', rank
 
 
-def parse_stat(stat_line: str, value: [float]) -> str:
+def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
     try:
         replace = re.findall(r'{.*}', stat_line)[0]
     except IndexError:
         return f'\n▸{stat_line}' if stat_line else ''
-    rounded = 's' not in replace and 'x' not in replace
+    rounded = rounded and 's' not in replace and 'x' not in replace
     if len(value) == 2:
-        value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}' if rounded \
-            else f'{round(value[0], 2)} - {round(value[1], 2)}'
+        if rounded:
+            value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}'
+        else:
+            value = f'{round(value[0], 2)} - {round(value[1], 2)}'
+    elif rounded:
+        value = int(value[0] + 0.5)
     else:
-        value = int(value[0] + 0.5) if rounded else round(value[0], 2)
+        value = round(value[0], 2)
+        if int(value) == value:
+            value = int(value)
     if '+' in replace:
         value = f'+{value}'
     if '-' in replace:

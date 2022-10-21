@@ -120,7 +120,7 @@ def boon_embed(input: [str]):
         unpommable = True
         if len(info['levels']) == 2:
             unpurgeable = True
-    for i in range(level):
+    for i in range(level - 1):
         pom = min(pom, len(info['levels']) - 1)
         value[0] += float(info['levels'][pom])
         if len(value) == 2:
@@ -131,7 +131,7 @@ def boon_embed(input: [str]):
     if 'stat2' in info:
         value2 = misc.boon_value(info, rarity, True)
         pom = 0
-        for i in range(level):
+        for i in range(level - 1):
             pom = min(pom, len(info['levels2']) - 1)
             value2[0] += float(info['levels2'][pom])
             if len(value2) == 2:
@@ -175,13 +175,8 @@ def pomscaling_embed(input: [str]) -> (discord.Embed or None, str):
     else:
         name = name[0]
     info = files.boons_info[name]
-    values = info['rarities'].copy()
-    for rarity, value in enumerate(values):
-        if '-' in value:
-            value = value.split('-')
-            values[rarity] = [float(info['rarities'][0]) * float(v) for v in value]
-        else:
-            values[rarity] = [float(value)]
+    values = list(filter(lambda x: x,
+                         [misc.boon_value(info, rarity) for rarity in ('common', 'rare', 'epic', 'heroic')]))
     pom = 0
     rarity_damages = []
     for i in range(len(values)):
@@ -468,7 +463,7 @@ def keepsake_embed(input: [str]):
             name = '<:Modded:1030375705378312212> ' + name
         embed = discord.Embed(
             title=f'**{misc.capwords(name)}**',
-            description=f'{parsing.parse_stat(info["desc"], value)}',
+            description=f'{parsing.parse_stat(info["desc"], value, False)[2:]}',
             color=misc.rarity_embed_colors[rank - 1]
         )
         if info['type'] == 'companion':
@@ -477,12 +472,12 @@ def keepsake_embed(input: [str]):
             footer = f'From {misc.capwords(info["bond"][0])}; ' \
                      f'you share {info["bond"][1]} {misc.capwords(info["bond"][2])} Bond' \
                      f'\n\n{info["flavor"]}'
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
         url = ''
         if 'modded' in info:
             footer += '\n\nModded content'
             url = misc.to_link('1030375705378312212')
         embed.set_footer(text=footer, icon_url=url)
-        embed.set_thumbnail(url=misc.to_link(info['icon']))
     else:
         keepsakes = {}
         for keepsake_name in files.keepsakes_info:

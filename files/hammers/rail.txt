@@ -34,7 +34,7 @@ targeting system
     Foes targeted by your **Special** move **30%** slower and take **+30%** damage.
     f/f5/Targeting_System.png/revision/latest?cb=20201111173559
 xhazard bomb
-    Your **Special** deals **+300%** base damage in a **45%** wider area; deals **1%** damage to Zagreus.
+    Your **Special** deals **+300%** base damage in a **45%** wider area; deals **1%** damage to *you*.
     0/05/Hazard_Bomb.png/revision/latest?cb=20201007150632
     x(rocket bomb, cluster bomb, triple bomb, aspect of lucifer)
 xcluster bomb

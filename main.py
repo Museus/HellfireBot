@@ -250,7 +250,7 @@ async def mirror(ctx, *args):
 @client.command(aliases=['personal', 'gp'])
 async def getpersonal(ctx, user: discord.Member = None):
     embed = embeds.getpersonal_embed(ctx, user)
-    await reply(ctx, embed)
+    await reply(ctx, embed=embed)
 
 
 @client.command(aliases=['addp', 'ap'])

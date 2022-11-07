@@ -12,10 +12,15 @@ def parse_boon(input: [str]) -> (str, str, int):
     input = [s.lower() for s in input]
     rarity = 'common'
     level = 1
+    if input[-1].startswith('level') or input[-1].startswith('lvl') or \
+            input[-1].startswith('lv') or input[-1].startswith('lv.'):
+        input[-1] = ''.join(c for c in input[-1] if c.isdigit())
     if input[-1].isdigit():
         level = int(input[-1])
         input = input[:-1]
-    if input[-1] in ('common', 'rare', 'epic', 'heroic'):
+        if input and input[-1] in ('level', 'lvl', 'lv', 'lv.'):
+            input = input[:-1]
+    if input and input[-1] in ('common', 'rare', 'epic', 'heroic'):
         rarity = input[-1]
         input = input[:-1]
     boon_name = misc.fuzzy_boon(input)

@@ -2,6 +2,7 @@ import random
 import discord
 from discord.ext import commands
 from matplotlib import pyplot as plt
+from matplotlib.ticker import MaxNLocator
 
 import files
 import misc
@@ -159,6 +160,8 @@ def pomscaling_embed(input: [str]) -> (discord.Embed or None, str):
     if input[-1].isdigit():
         level = int(input[-1])
         input = input[: -1]
+    if level > 10000:
+        return None, ''
     name, _, _ = parsing.parse_boon(input)
     if not name:
         return None, ''
@@ -204,6 +207,7 @@ def pomscaling_embed(input: [str]) -> (discord.Embed or None, str):
     plt.ylabel(info['stat'].split(':')[0])
     plt.title(f'Pom scaling for {misc.capwords(name)}')
     plt.ylim(ymin=0)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.grid(linestyle='--')
     plt.savefig('output.png')
     return 'output.png', ''
@@ -266,10 +270,10 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
         name = name[0]
     level = min(max(level, 1), 5)
     info = files.aspects_info[name]
-    value = [int(info['levels'][level - 1])]
+    value = [float(info['levels'][level - 1])]
     embed = discord.Embed(
         title=f'**Aspect of {misc.capwords(name)}** (Lv. {level})',
-        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], value)}',
+        description=info["desc"] + parsing.parse_stat(info["stat"], value, False),
         color=misc.rarity_embed_colors[level - 1]
     )
     embed.set_footer(text=info['flavor'])

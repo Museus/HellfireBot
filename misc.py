@@ -138,6 +138,8 @@ def capwords(s: str) -> str:
 
 
 def to_link(s: str) -> str:
+    if not s:
+        return ''
     if s.isdigit():
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
     if s[1] == '/':

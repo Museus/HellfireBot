@@ -23,9 +23,9 @@ boiling point
 hydraulic might
     hydraulic
 sunken treasure
-    sunken
+    sunken, treasure
 ocean's bounty
-    bounty
+    ocean's, bounty, oceans, oceans bounty, ocean, ocean bounty
 typhoon's fury
     typhoon, typhoons, typhoon's, typhoon fury, typhoons fury
 wave pounding

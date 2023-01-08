@@ -452,7 +452,7 @@ async def toxic(ctx, img_link=None):
     if misc.channel_status(ctx) > 0:
         await ctx.author.send(misc.unfun_dm)
         return
-    img_link = misc.fuzzy_img(ctx, client, img_link)
+    img_link = await misc.fuzzy_img(ctx, client, img_link)
     misc.toxic(img_link)
     channel = client.get_channel(1059334747832201266)
     msg = await channel.send(file=discord.File('./output.png'))

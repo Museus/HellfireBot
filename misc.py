@@ -189,7 +189,7 @@ async def fuzzy_img(ctx, client, img_link):
                 user = await client.fetch_user(user_id)
             img_link = user.avatar.url
         except HTTPException:
-            img_link = ctx.author.avatar.url
+            pass
     return img_link
 
 

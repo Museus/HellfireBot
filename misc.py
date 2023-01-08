@@ -255,7 +255,8 @@ async def toxic_react(ctx, client, embed, img_link):
                 x += -amount if neg else amount
             elif index == 2:
                 amount = 20 if small else 100
-                s += max(-amount if neg else amount, 0)
+                s += -amount if neg else amount
+                s = max(s, 0)
             elif index == 3:
                 amount = 5 if small else 25
                 r += -amount if neg else amount

@@ -54,6 +54,7 @@ optout_dm = 'This channel has not opted into HellfireBot\'s commands (needs "h!o
             'However, all commands are usable via direct message.'
 unfun_dm = 'This channel has not opted into HellfireBot\'s fun commands (needs "h!fun" in the channel topic). ' \
            'However, all commands are usable via direct message.'
+output_count = 0
 
 
 def fuzzy_boon(input: [str]) -> [str]:
@@ -194,10 +195,12 @@ async def fuzzy_img(ctx, client, img_link):
 
 
 def toxic(img_url, x=250, y=250, s=200, r=0):
+    global output_count
     req = requests.get(img_url)
-    with open('./output.png', 'wb') as out_img:
+    output_count += 1
+    with open(f'./output{output_count}.png', 'wb') as out_img:
         out_img.write(req.content)
-    img = Image.open('./output.png')
+    img = Image.open(f'./output{output_count}.png')
     xic = Image.open('./files/xic.png')
     if img.size[0] > img.size[1]:
         ratio = 500 / img.size[1]
@@ -208,7 +211,8 @@ def toxic(img_url, x=250, y=250, s=200, r=0):
     xic = xic.resize((s, s), Image.LANCZOS)
     xic = xic.rotate(r, expand=True)
     img.paste(xic, (int(x - xic.size[0] / 2), int(y - xic.size[1] / 2)), xic.convert('RGBA'))
-    img.save('./output.png')
+    img.save(f'./output{output_count}.png')
+    return f'./output{output_count}.png'
 
 
 async def toxic_react(ctx, client, embed, img_link):
@@ -238,9 +242,9 @@ async def toxic_react(ctx, client, embed, img_link):
                 await msg.delete()
             except discord.errors.Forbidden:
                 pass
-            toxic(img_link, x, y, s, r)
-            await reply(ctx, file=discord.File('./output.png'))
-            os.remove('./output.png')
+            output_name = toxic(img_link, x, y, s, r)
+            await reply(ctx, file=discord.File(output_name))
+            os.remove(output_name)
             return
         else:
             try:
@@ -264,10 +268,10 @@ async def toxic_react(ctx, client, embed, img_link):
                 neg = not neg
             elif index == 5:
                 small = not small
-        toxic(img_link, x, y, s, r)
+        output_name = toxic(img_link, x, y, s, r)
         channel = client.get_channel(1059334747832201266)
-        file_msg = await channel.send(file=discord.File('./output.png'))
-        os.remove('./output.png')
+        file_msg = await channel.send(file=discord.File(output_name))
+        os.remove(output_name)
         embed = discord.Embed()
         embed.set_image(url=file_msg.attachments[0].url)
         embed.add_field(name='Negate mode', value='On' if neg else 'Off', inline=False)

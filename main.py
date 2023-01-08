@@ -453,10 +453,10 @@ async def toxic(ctx, img_link=None):
         await ctx.author.send(misc.unfun_dm)
         return
     img_link = await misc.fuzzy_img(ctx, client, img_link)
-    misc.toxic(img_link)
+    output_name = misc.toxic(img_link)
     channel = client.get_channel(1059334747832201266)
-    msg = await channel.send(file=discord.File('./output.png'))
-    os.remove('./output.png')
+    msg = await channel.send(file=discord.File(output_name))
+    os.remove(output_name)
     embed = discord.Embed()
     embed.set_image(url=msg.attachments[0].url)
     embed.add_field(name='Negate mode', value='Off', inline=False)

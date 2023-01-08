@@ -147,9 +147,9 @@ glacial glare
 arctic blast
     arctic, blast
 killing freeze
-    killing
+    killing, freeze
 winter harvest
-    harvest
+    winter, harvest, winter's, winter's harvest, winters, winters harvest
 wishing well
     wishing, well, wish well, fountain, fountains
 melodic concert
@@ -253,7 +253,7 @@ stubborn roots
 calculated risk
     calculated
 unshakable mettle
-    unshakable, mettle
+    unshakable, mettle, unshakeable, unshakeable mettle
 lightning phalanx
     lp, lphalanx
 ice wine

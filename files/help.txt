@@ -56,22 +56,16 @@ getpersonal [user=self]
     Returns a list of your personal pact and mirror presets. If provided, <user> returns that user's presets instead (mention and Discord ID both work).
     1028197474562744330
 addpact name pacts...
-    Adds a personal pact preset with <name> mapping to <pacts>. Use h!getpersonal to view.
+    Adds a personal pact preset with <name> mapping to <pacts>. Direct message only. Use h!getpersonal to view.
     1027104646713577492
 addmirror name mirror_binary
-    Adds a personal mirror preset with <name> mapping to <mirror_binary>. Use h!getpersonal to view.
+    Adds a personal mirror preset with <name> mapping to <mirror_binary>. Direct message only. Use h!getpersonal to view.
 
 deletepact name
-    Removes the personal pact preset given by <name>. Use h!getpersonal to view.
+    Removes the personal pact preset given by <name>. Direct message only. Use h!getpersonal to view.
     1028198397527724084
 deletemirror name
-    Removes the personal mirror preset given by <name>. Use h!getpersonal to view.
-
-addchannel channel_id
-    Allows the bot to be used in the channel specified by <channel_id>. Only usable by server administrators.
-
-deletechannel channel_id
-    Revokes the bot's permission to operate in channel specified by <channel_id>. Only usable by server administrators.
+    Removes the personal mirror preset given by <name>. Direct message only. Use h!getpersonal to view.
 
 modded None
     Returns information on the official speedrun modpack.

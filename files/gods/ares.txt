@@ -15,12 +15,18 @@ cast slicing shot
     Rift Damage per Hit: {}
     20 22 24 26
     4 3 2
+    Rift Duration: {s}
+    4 4 4 4
+    0
     7/75/Slicing_Shot.png/revision/latest?cb=20181213182739
 flare slicing flare
     Your **Cast** sends a large **Blade Rift** hurtling ahead for a brief time.
     Rift Damage per Hit: {}
     30 36 42 48
     6 4 3 2
+    Rift Duration: {s}
+    0.8 0.8 0.8 0.8
+    0
     7/75/Slicing_Shot.png/revision/latest?cb=20181213182739
     1(aspect of beowulf)
 dash blade dash
@@ -28,6 +34,9 @@ dash blade dash
     Rift Damage per Hit: {}
     10 12 14 16
     6 4 3 2
+    Rift Duration: {s}
+    1 1 1 1
+    0
     5/58/Blade_Dash.png/revision/latest?cb=20190612170533
 call ares' aid
     Your **Call** turns you into an **Impervious** **Blade Rift** for **1.2 Sec**.

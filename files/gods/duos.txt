@@ -66,6 +66,9 @@ duo freezing vortex
     Blade Rift Size: {-%}
     15
     0
+    Blade Rift Speed: {-%}
+    45
+    0
     a/a1/Freezing_Vortex.png/revision/latest?cb=20200706072856
     1(slicing shot, slicing flare); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(hunting blades)
 duo curse of nausea
@@ -100,6 +103,9 @@ duo crystal clarity
     Your **Cast** is stronger and tracks foes more effectively.
     Beam Damage: {+%}
     10
+    0
+    Beam Tracking Effectiveness: {x}
+    6.7
     0
     2/25/Crystal_Clarity.png/revision/latest?cb=20200126153418
     1(crystal beam); 1(deadly strike, deadly flourish, hunter dash, artemis' aid); x(aspect of beowulf, cold embrace)
@@ -160,9 +166,12 @@ duo ice wine
     8/8e/Ice_Wine.png/revision/latest?cb=20200126153555
     1(trippy shot, trippy flare); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(blizzard shot)
 duo blizzard shot
-    Your **Cast** moves slowly, piercing foes and firing shards around it.
+    Your **Cast** moves slower, piercing foes and firing shards around it.
     Shard Damage: {}
     20
+    0
+    Cast Speed: {-%}
+    70
     0
     7/75/Blizzard_Shot.png/revision/latest?cb=20200126153436
     1(flood shot); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(aspect of beowulf, curse of drowning, ice wine)

@@ -12,11 +12,11 @@ keepsakes_info = {}
 prereqs_info = {}
 bpperks_info = {}
 definitions_info = {}
+enemies_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
 god_cores = {'zeus': {}, 'poseidon': {}, 'athena': {}, 'aphrodite': {}, 'artemis': {}, 'ares': {}, 'dionysus': {},
              'demeter': {}, 'hermes': {}, 'chaos': {}, 'charon': {}, 'apollo': {}, 'hestia': {}, 'duos': None}
 personal = {}
-channels = {}
 commands_info = {}
 
 for god in god_cores:
@@ -201,6 +201,17 @@ with open('./files/help.txt', 'r', encoding='utf8') as f:
         commands_info[command] = {'params': ', '.join(parameters.split(' ')), 'desc': f.readline().strip(),
                                   'icon': f.readline().strip()}
 
+with open('./files/enemies.txt', 'r', encoding='utf8') as f:
+    while enemy := f.readline().strip():
+        healths, attacks = f.readline().strip().rsplit(' ', 1)
+        healths = healths.split(' ')
+        attacks_info = []
+        for i in range(int(attacks)):
+            attacks_info.append((f.readline().strip(), f.readline().strip()))
+        enemies_info[enemy] = {'health': healths[0], 'armor': healths[1], 'attacks': attacks_info,
+                               'elite': f.readline().strip(), 'location': f.readline().strip(),
+                               'icon': f.readline().strip()}
+
 
 def read_personal() -> None:
     global personal
@@ -214,17 +225,4 @@ def write_personal() -> None:
         fp.write(json.dumps(personal))
 
 
-def read_channel() -> None:
-    global channels
-    with open('./private/server_channels.txt', 'r', encoding='utf8') as fp:
-        channels = json.loads(fp.read())
-
-
-def write_channel() -> None:
-    global channels
-    with open('./private/server_channels.txt', 'w', encoding='utf8') as fp:
-        fp.write(json.dumps(channels))
-
-
 read_personal()
-read_channel()

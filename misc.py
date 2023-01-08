@@ -1,3 +1,12 @@
+import asyncio
+import os
+import re
+
+import discord
+import requests
+from PIL import Image
+from discord import HTTPException
+
 import files
 import parsing
 
@@ -28,6 +37,7 @@ weapon_icons = {'sword': 'f/f7/Stygian_Blade.png/revision/latest?cb=201812130446
                 'fists': '0/08/Twin_Fists.png/revision/latest?cb=20200430070608',
                 'rail': '3/36/Adamant_Rail.png/revision/latest?cb=20210120004027'}
 disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
+toxic_select = ('⬆️', '➡️', '↔️', '🔄', '🔴', '🔹', '✅')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
             'all of its features can be toggled on or off and it includes:\n' \
@@ -40,6 +50,10 @@ mod_pasta = 'if you want to download the speedrunning modpack it is available at
             'mode, as well as a colorblind mode.\n\n' \
             'instructions for downloading the modpack are in the ' \
             'file "instructions.txt" in the modpack folder'
+optout_dm = 'This channel has not opted into HellfireBot\'s commands (needs "h!optin" in the channel topic). ' \
+            'However, all commands are usable via direct message.'
+unfun_dm = 'This channel has not opted into HellfireBot\'s fun commands (needs "h!fun" in the channel topic). ' \
+           'However, all commands are usable via direct message.'
 
 
 def fuzzy_boon(input: [str]) -> [str]:
@@ -145,3 +159,128 @@ def to_link(s: str) -> str:
     if s[1] == '/':
         return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
     return f'https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/{s}'
+
+
+async def fuzzy_img(ctx, client, img_link):
+    if not img_link:
+        try:
+            img_link = ctx.message.attachments[0].url
+        except IndexError:
+            try:
+                replied = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+                try:
+                    img_link = replied.attachments[0].url
+                except IndexError:
+                    try:
+                        img_link = replied.embeds[0].thumbnail.url
+                        if not img_link:
+                            img_link = replied.author.avatar.url
+                    except IndexError:
+                        img_link = replied.author.avatar.url
+            except AttributeError:
+                img_link = ctx.author.avatar.url
+    elif img_link[:2] == '<:':
+        img_link = client.get_emoji(int(img_link.split(":")[-1][:-1])).url
+    else:
+        try:
+            user_id = int(re.sub('[^0-9]', '', img_link))
+            user = client.get_user(user_id)
+            if not user:
+                user = await client.fetch_user(user_id)
+            img_link = user.avatar.url
+        except HTTPException:
+            img_link = ctx.author.avatar.url
+    return img_link
+
+
+def toxic(img_url, x=250, y=250, s=200, r=0):
+    req = requests.get(img_url)
+    with open('./output.png', 'wb') as out_img:
+        out_img.write(req.content)
+    img = Image.open('./output.png')
+    xic = Image.open('./files/xic.png')
+    if img.size[0] > img.size[1]:
+        ratio = 500 / img.size[1]
+        img = img.resize((int(img.size[0] * ratio), 500), Image.LANCZOS)
+    else:
+        ratio = 500 / img.size[0]
+        img = img.resize((500, int(img.size[1] * ratio)), Image.LANCZOS)
+    xic = xic.resize((s, s), Image.LANCZOS)
+    xic = xic.rotate(r, expand=True)
+    img.paste(xic, (int(x - xic.size[0] / 2), int(y - xic.size[1] / 2)), xic.convert('RGBA'))
+    img.save('./output.png')
+
+
+async def toxic_react(ctx, client, embed, img_link):
+    def check(reaction, user):
+        return user == ctx.message.author and str(reaction.emoji) in toxic_select
+    msg = await reply(ctx, embed=embed)
+    for emoji in toxic_select:
+        await msg.add_reaction(emoji)
+    x = 250
+    y = 250
+    s = 200
+    r = 0
+    neg = False
+    small = False
+    while True:
+        try:
+            react, _ = await client.wait_for('reaction_add', timeout=300.0, check=check)
+        except asyncio.TimeoutError:
+            try:
+                await msg.clear_reactions()
+            except discord.errors.Forbidden:
+                pass
+            return
+        index = toxic_select.index(str(react.emoji))
+        if index == 6:
+            try:
+                await msg.delete()
+            except discord.errors.Forbidden:
+                pass
+            toxic(img_link, x, y, s, r)
+            await reply(ctx, file=discord.File('./output.png'))
+            os.remove('./output.png')
+            return
+        else:
+            try:
+                await msg.remove_reaction(str(react.emoji), ctx.message.author)
+            except discord.errors.Forbidden:
+                pass
+            if index == 0:
+                amount = 10 if small else 50
+                y -= -amount if neg else amount
+            elif index == 1:
+                amount = 10 if small else 50
+                x += -amount if neg else amount
+            elif index == 2:
+                amount = 20 if small else 100
+                s += max(-amount if neg else amount, 0)
+            elif index == 3:
+                amount = 5 if small else 25
+                r += -amount if neg else amount
+            elif index == 4:
+                neg = not neg
+            elif index == 5:
+                small = not small
+        toxic(img_link, x, y, s, r)
+        channel = client.get_channel(1059334747832201266)
+        file_msg = await channel.send(file=discord.File('./output.png'))
+        os.remove('./output.png')
+        embed = discord.Embed()
+        embed.set_image(url=file_msg.attachments[0].url)
+        embed.add_field(name='Negate mode', value='On' if neg else 'Off', inline=False)
+        embed.add_field(name='Small mode', value='On' if small else 'Off', inline=False)
+        await msg.edit(embed=embed)
+
+
+def channel_status(ctx):
+    if isinstance(ctx.channel, discord.DMChannel) or 'h!fun' in ctx.channel.topic:
+        return 0
+    if 'h!optin' in ctx.channel.topic:
+        return 1
+    return 2
+
+
+async def reply(ctx, message='', embed=None, file=None, mention=False):
+    return await ctx.reply(message, embed=embed, file=file, mention_author=mention)

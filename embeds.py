@@ -153,7 +153,7 @@ def boon_embed(input: [str]):
     return embed, ''
 
 
-def pomscaling_embed(input: [str]) -> (discord.Embed or None, str):
+def pomscaling_embed(input: [str]) -> (discord.Embed, str):
     if not input:
         return None, ''
     level = 10
@@ -467,7 +467,7 @@ def keepsake_embed(input: [str]):
             name = '<:Modded:1030375705378312212> ' + name
         embed = discord.Embed(
             title=f'**{misc.capwords(name)}**',
-            description=f'{parsing.parse_stat(info["desc"], value, False)[2:]}',
+            description=parsing.parse_stat(info['desc'], value, False)[2:],
             color=misc.rarity_embed_colors[rank - 1]
         )
         if info['type'] == 'companion':
@@ -499,6 +499,31 @@ def keepsake_embed(input: [str]):
             embed.add_field(name=category, value=desc)
         embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
     return embed, ''
+
+
+def enemy_embed(input: [str]) -> discord.Embed or None:
+    name = parsing.parse_enemy(input)
+    if not name:
+        return None
+    info = files.enemies_info[name]
+    desc = ''
+    desc += f'Health: **{info["health"]}**'
+    desc += f'\nArmor: **{info["armor"]}**'
+    desc += '\n\nAttacks:'
+    for attack in info['attacks']:
+        desc += f'\n**{attack[0]}**'
+        if attack[1]:
+            desc += f'\n  ▸ Damage: **{attack[1]}**'
+    desc += '\n'
+    if info['elite']:
+        desc += f'\nElite modification: **{info["elite"]}**'
+    desc += f'\nLocation: **{misc.capwords(info["location"])}**'
+    embed = discord.Embed(
+        title=misc.capwords(name),
+        description=desc
+    )
+    embed.set_thumbnail(url=misc.to_link(info['icon']))
+    return embed
 
 
 def getpersonal_embed(ctx, user):

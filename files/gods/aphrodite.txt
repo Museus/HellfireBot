@@ -82,6 +82,9 @@ t2 blown kiss
     First-Hit Bonus Damage: {+%}
     50 75 100 120
     0
+    Cast Range: {+%}
+    100 100 100 100
+    0
     d/dc/Blown_Kiss.png/revision/latest?cb=20200706074736
     1(crush shot)
 revenge wave of despair

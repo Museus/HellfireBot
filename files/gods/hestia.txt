@@ -96,7 +96,7 @@ modrevenge molten sting
 modlegendary royal hearth
     Your **Lava Pools** attract foes.
 
-
+    0
     0
     Hestia/Hestia/HestiaAttract_large.PNG?raw=true
     1(embracing strike, embracing flourish); 1(ember shot, molten sting, molten core)

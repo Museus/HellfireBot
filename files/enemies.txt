@@ -1,0 +1,233 @@
+wretched thug
+    160 480 1
+    Mid-range melee
+    10
+    Attacks faster
+    tartarus
+    b/bb/Wretched_Thug.png/revision/latest?cb=20200724071735
+wretched witch
+    80 120 1
+    Long-range orb
+    5
+    Three orbs per attack
+    tartarus
+    1/1f/Wretched_Witch.png/revision/latest?cb=20200724065010
+wretched lout
+    210 310 1
+    Long-range charge
+    8
+    Charge delay and speed are faster
+    tartarus
+    9/99/Wretched_Lout.png/revision/latest?cb=20181217172143
+wretched pest
+    40 60 1
+    Long-range trap
+    5
+    Moves and attacks faster
+    tartarus
+    c/ca/Wretched_Pest.png/revision/latest?cb=20210409141140
+wretched sneak
+    300 700 2
+    Long-range projectile volley (3)
+    4
+    Short-range melee
+    8
+
+    tartarus miniboss
+    a/a2/Wretched_Sneak.png/revision/latest?cb=20200724071225
+numbskull
+    30 50 1
+    Mid-range charge
+    3
+    Moves and attacks faster
+    tartarus, asphodel
+    4/4e/Numbskull.png/revision/latest?cb=20181217172228
+skullomat
+    120 500 1
+    Spawns numbskulls
+
+    Spawns elite Numbskulls faster, 500 base health
+    tartarus, asphodel
+    1/19/Skullomat.png/revision/latest?cb=20181217172210
+wringer
+    140 230 1
+    Short-range melee (1s stun)
+    5
+    Attacks faster
+    tartarus
+    6/68/Wringer.png/revision/latest?cb=20200724071417
+brimstone
+    60 90 1
+    Long-range tracking beam (17 ticks)
+    1
+    Laser moves faster
+    tartarus, asphodel
+    2/25/Brimstone.png/revision/latest?cb=20181217172039
+doomstone
+    850 1325 3
+    Long-range beams (8, 17 ticks)
+    2
+    Spawns 20 health, 20 armor Fragment when damaged
+
+    Links with Fragments
+    1
+
+    tartarus miniboss
+    6/67/Doomstone.png/revision/latest?cb=20200705023601
+voidstone
+    350 350 1
+    Shields nearby foes
+
+
+    asphodel miniboss, elysium
+    c/cc/Voidstone.png/revision/latest?cb=20181217172424
+bloodless
+    310 250 1
+    Short-range charge
+    11
+    Charge speed is faster
+    asphodel
+    e/e4/Bloodless.png/revision/latest?cb=20181217172009
+bone-raker
+    400 325 1
+    Short-range melee
+    7
+
+    asphodel
+
+inferno-bomber
+    500 700 3
+    Long-range explosive
+    14
+    Short-range explosive barrage (3)
+    14
+    Short-range explosive on death
+    14
+
+    tartarus miniboss, asphodel
+    f/fe/Inferno-Bomber.png/revision/latest?cb=20210409141455
+slam-dancer
+    500 600 3
+    Short-range explosive
+    14
+    Short-range explosive on death
+    14
+    Jumps towards player
+
+    Moves faster
+    tartarus miniboss, asphodel
+    a/a5/Slam-Dancer.png/revision/latest?cb=20190506070341
+burn-flinger
+    350 400 3
+    Long-range fast explosive
+    10
+    Long-range homing explosive
+    10
+    Short-range explosive on death
+    10
+
+    tartarus miniboss, asphodel
+    c/cb/Burn-Flinger.png/revision/latest?cb=20190506070138
+wave-maker
+    430 450 1
+    Long-range unblockable waves (2)
+    7
+
+    asphodel
+    d/d7/Wave-Maker.png/revision/latest?cb=20190506070123
+dracon
+    120 180 2
+    Long-range homing projectile
+    7
+    Burrows underground between attacks
+
+    Three projectiles per attack
+    asphodel
+    2/21/Dracon.png/revision/latest?cb=20200724064323
+spreader
+    150 225 1
+    Long-range orb spread (3)
+    5
+    Three orbs per attack
+    asphodel, asphodel miniboss
+    2/20/Spreader.png/revision/latest?cb=20200724064836
+gorgon
+    150 280 1
+    Long-range homing projectile (1s stun)
+    1
+    Three projectiles per attack
+    asphodel
+    0/03/Gorgon.png/revision/latest?cb=20190506070017
+skull-crusher
+    420 1200 2
+    Short-range tracking ambush
+    12
+    Hovers in air between attacks
+
+    500 base health
+    asphodel
+    8/89/Skull-Crusher.png/revision/latest?cb=20190506070203
+megagorgon
+    1200 2000 2
+    Long-range homing projectile volley (5, 1s stun)
+    1
+    Long-range homing projectile spread (5, 1s stun)
+    1
+
+    asphodel miniboss
+    8/8c/Megagorgon.png/revision/latest?cb=20190506070056
+bone hydra
+    5940 0 25
+    Short-range lunge (above 66% health)
+    5
+    Short-range lunge (below 66% health)
+    16
+    Long-range slow homing projectile volley (5, yellow variant, above 66% health)
+    7
+    Long-range fast homing projectile barrage (100, yellow variant, below 66% health)
+    7
+    Short-range ground slam (above 33% health)
+    16
+    Short range ground slam barrage (3, below 33% health)
+    16
+    Mid-range ground slam rubble (up to 10, blue variant)
+    9
+    Short-range ground slam (blue variant, above 66% health)
+    16
+    Short-range ground slam barrage (3, blue variant, 33% to 66% health)
+    16
+    Short-range ground slam barrage (1 to 6, blue variant, below 33% health)
+    16
+    Mid-range magma pool volley (3 to 5, orange variant, above 66% health)
+    5
+    Mid-range magma pool barrage (8 to 11, orange variant, below 66% health)
+    5
+    Elite Bone-Raker egg (50 health, 35 armor, hatches in 5s)
+    7
+    Spawns Bone-Raker egg (green variant, above 66% health)
+
+    Spawns Bone-Raker egg barrage (2, green variant, 33% to 66% health)
+
+    Spawns Bone-Raker egg barrage (3, green variant, below 33% health)
+
+    One-attack Skull-Crusher
+    12
+    Spawns Skull-Crusher (green variant, above 66% health)
+
+    Spawns Skull-Crusher barrage (2, green variant, 33% to 66% health)
+
+    Spawns Skull-Crusher barrage (3, green variant, below 33% health)
+
+    Long-range slow wave volley (purple variant, above 66% health)
+    11
+    Long-range slow wave barrage (purple variant, below 66% health)
+    11
+    Support Head (410 health, 410 armor, all five variants)
+
+    Spawns Support Heads (3, at 66% health)
+
+    Spawns Support Heads (6, at 33% health)
+
+
+    asphodel boss
+    9/98/Bone_Hydra.png/revision/latest?cb=20210409142544

@@ -70,7 +70,7 @@ def parse_god(input: [str]) -> str:
     return ''
 
 
-def parse_keepsake(input: []) -> (str, int, bool):
+def parse_keepsake(input: [str]) -> (str, int, bool):
     input = [s.lower() for s in input]
     rank = 3
     if input[-1].isdigit():
@@ -85,6 +85,14 @@ def parse_keepsake(input: []) -> (str, int, bool):
     if keepsake_name in files.keepsakes_info:
         return [keepsake_name], rank
     return '', rank
+
+
+def parse_enemy(input: [str]) -> str:
+    input = [s.lower() for s in input]
+    enemy_name = ' '.join(input)
+    if enemy_name in files.enemies_info:
+        return enemy_name
+    return ''
 
 
 def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
@@ -119,7 +127,7 @@ def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
     if 'c' in replace:
         value = f'{value} Chambers'
     stat = re.sub(r'{.*}', f'**{value}**', stat_line)
-    return f'\n▸{stat}'
+    return f'\n▸ {stat}'
 
 
 def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:

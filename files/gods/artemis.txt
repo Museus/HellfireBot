@@ -30,7 +30,7 @@ xdash hunter dash
     10 7 5
     9/92/Hunter_Dash.png/revision/latest?cb=20181213182600
     x(aspect of lucifer)
-call artemis's aid
+call artemis' aid
     Your **Call** fires a seeking arrow with **+15%** **Critical** chance.
     Arrow Damage: {}
     100 110 120 130
@@ -72,7 +72,7 @@ t2 hunter instinct
     0.25 0.3 0.35 0.4
     0
     7/76/Hunter_Instinct.png/revision/latest?cb=20190317140729
-    1(deadly strike, deadly flourish, true shot, pressure points); 1(any aid boon)
+    1(deadly strike, deadly flourish, true shot, pressure points); 1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 t2 support fire
     After you **Cast** or hit with an **Attack** or **Special**, fire a seeking arrow.
     Arrow Damage: {}

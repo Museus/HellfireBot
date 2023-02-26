@@ -119,6 +119,18 @@ async def prerequisites(ctx, *args):
     await misc.reply(ctx, embed=embed)
 
 
+@client.command(aliases=['rpre'])
+async def eligible(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    embed = embeds.eligible_embed(args)
+    if not embed:
+        await misc.reply(ctx, 'idk man as', mention=True)
+        return
+    await misc.reply(ctx, embed=embed)
+
+
 @client.command(aliases=['a', 'weapon', 'w'])
 async def aspect(ctx, *args):
     if misc.channel_status(ctx) > 1:
@@ -462,6 +474,63 @@ async def toxic(ctx, img_link=None):
     embed.add_field(name='Negate mode', value='Off', inline=False)
     embed.add_field(name='Small mode', value='Off', inline=False)
     await misc.toxic_react(ctx, client, embed, img_link)
+
+
+@client.command(aliases=['fc'])
+async def firecredits(ctx, diff, *users: discord.Member):
+    server_name = ctx.guild.name
+    if (server_name == 'BTD6 Index' or server_name == 'hadestest') and ctx.message.author.id == 279126808455151628:
+        reply_fc = False
+        replied = None
+        if not users:
+            replied = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+            user = ctx.guild.get_member(replied.author.id)
+            if not user:
+                user = await ctx.guild.fetch_member(replied.author.id)
+            users = [user]
+            reply_fc = True
+        fc_roles = [str(2 ** x) for x in range(0, 10)]
+        diff = int(diff)
+        output = {}
+        max_display = -1
+        for user in users:
+            old_fc = 0
+            for role in user.roles:
+                if role.name in fc_roles:
+                    old_fc += int(role.name)
+            new_fc = min(max(old_fc + diff, 1), 1023)
+            new_roles = []
+            temp = new_fc
+            for i in range(9, -1, -1):
+                if 2 ** i <= temp:
+                    temp -= 2 ** i
+                    new_roles.append(i)
+            to_remove = []
+            for role in user.roles:
+                if role.name in fc_roles:
+                    old_index = fc_roles.index(role.name)
+                    if old_index not in new_roles:
+                        to_remove.append(role)
+                    else:
+                        new_roles.remove(old_index)
+            await user.remove_roles(*to_remove)
+            to_add = []
+            for index in new_roles:
+                new_role = discord.utils.get(ctx.message.guild.roles, name=str(2 ** index))
+                to_add.append(new_role)
+            await user.add_roles(*to_add)
+            output[user.display_name] = '{:<2} → {:<2}'.format(old_fc, new_fc)
+            if len(user.display_name) > max_display:
+                max_display = len(user.display_name)
+        output_str = '```'
+        output_str += '\n'.join(map(lambda x: '{name:>{width}}\'s firecredit score: {res}'
+                                    .format(name=x, width=max_display, res=output[x]), output))
+        output_str += '```'
+        if not reply_fc:
+            await misc.reply(ctx, output_str)
+        else:
+            await ctx.message.delete()
+            await ctx.send(output_str, reference=replied, mention_author=False)
 
 
 async def react_edit(ctx, embed, choices, embed_function):

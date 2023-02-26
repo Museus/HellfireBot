@@ -50,14 +50,14 @@ xt1 billowing strength
     20 22 24 26
     8 6 4 3 2
     3/3d/Billowing_Strength.png/revision/latest?cb=20190808134841
-    1(any aid boon)
+    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 xt1 clouded judgment
     Your **God Gauge** charges faster when you deal or take damage.
     Faster Gauge Gain: {+%}
     10 12 14 16
     4 3 2 1
     4/47/Clouded_Judgment.png
-    1(any aid boon)
+    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 t2 storm lightning
     Your chain-lightning effects bounce more times before expiring.
     Lightning Bounces: {+}

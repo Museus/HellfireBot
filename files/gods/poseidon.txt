@@ -50,7 +50,7 @@ xt1 boiling point
     40 50 60 70
     16 11 8 5 4
     b/b5/Boiling_Point.png/revision/latest?cb=20190319200652
-    1(any aid boon)
+    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 t1 sunken treasure
     Gain a random assortment of <:Gemstone:1027109936276197386>, <:Darkness:1028189207405015051>, <:Obol:1027113221691281449>, and <:Healing:1028193572840816722>.
     Loot Multiplier: {x}

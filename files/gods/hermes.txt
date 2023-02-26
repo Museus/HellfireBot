@@ -49,14 +49,14 @@ xt1 second wind
     30 33 36 39
     0
     6/62/Second_Wind.png/revision/latest?cb=20190808130330
-    1(any aid boon)
+    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 xt1 quick favor
     Your **God Gauge** charges up automatically.
     Auto Gauge Gain: **+1%** *(every {s})*
     2 1.5 1 0.5
     0
     7/76/Quick_Favor.png/revision/latest?cb=20200706081216
-    1(any aid boon)
+    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
 t1 greater haste
     You move faster.
     Move Speed: {%}

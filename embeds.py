@@ -252,6 +252,52 @@ def prereq_embed(input: [str]):
     return embed, ''
 
 
+def eligible_embed(input: [str]):
+    def eligible_boon(prereqs, current_boons):
+        for prereq in prereqs:
+            if prereq[0] == 'x':
+                if any(boon in current_boons for boon in prereq[1]):
+                    return False
+            elif prereq[0].isdigit():
+                count = 0
+                for boon in prereq[1]:
+                    if boon in current_boons:
+                        count += 1
+                if count < int(prereq[0]):
+                    return False
+        return True
+    boons = [b.strip() for b in ' '.join(input).lower().split(',')]
+    god, boons = parsing.parse_god([boons[0]]), boons[1:]
+    if not god:
+        return None
+    current_boons = []
+    for b in boons:
+        parsed_b = misc.fuzzy_boon(b.split())
+        if parsed_b:
+            current_boons.append(parsed_b[0])
+        else:
+            parsed_a = parsing.parse_aspect(b.split())
+            if parsed_a:
+                current_boons.append(f'aspect of {parsed_a[0][0]}')
+    eligible_boons = []
+    for possible_boon in files.boons_info:
+        if files.boons_info[possible_boon]['god'] in (god, 'duos') and possible_boon not in current_boons:
+            print(possible_boon)
+            if possible_boon not in files.prereqs_info:
+                eligible_boons.append(possible_boon)
+            elif eligible_boon(files.prereqs_info[possible_boon], current_boons):
+                eligible_boons.append(possible_boon)
+    embed = discord.Embed(
+        title=f'Eligible Boons from **{misc.capwords(god)}**',
+        description='\n'.join([misc.capwords(b) for b in eligible_boons]),
+        color=misc.god_colors[god]
+    )
+    embed.set_thumbnail(url=misc.to_link(misc.god_icons[god]))
+    if god in ('apollo', 'hestia'):
+        embed.set_footer(text='Modded content', icon_url=misc.to_link('1030375705378312212'))
+    return embed
+
+
 def aspect_embed(input: [str]) -> (discord.Embed, str):
     name, level = parsing.parse_aspect(input)
     if not name:

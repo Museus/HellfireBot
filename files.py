@@ -104,12 +104,6 @@ with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
             for prereq in prereqs:
                 prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
             prereqs_info[boon] = prereq_list
-        if has_prereq:
-            prereqs = f.readline().strip().split('; ')
-            prereq_list = []
-            for prereq in prereqs:
-                prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-            prereqs_info[boon] = prereq_list
 
 with open(f'./files/gods/bouldy.txt', 'r', encoding='utf8') as f:
     while f.readline():

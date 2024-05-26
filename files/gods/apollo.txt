@@ -1,93 +1,89 @@
-modattack blinding strike
-    Your **Attack** deals more damage and inflicts **Blind**.
+attack nova strike air
+    Your **Attacks** deal more damage in a larger area.
     Attack Damage: {+%}
-    40 1.3-1.5 1.8-2.0 2.3-2.5
-    16 11 9 5 4
-    Apollo/Apollo/BlindingStrike_large.png?raw=true
-modspecial blinding flourish
-    Your **Special** deals more damage and inflicts **Blind**.
+    40 50 60 70
+    10 5
+    3/30/Nova_Strike.png
+special nova flourish air
+    Your **Specials** deal more damage in a larger area.
     Special Damage: {+%}
-    60 1.3-1.5 1.8-2.0 2.3-2.5
-    24 17 12 8 6
-    Apollo/Apollo/BlindingFlourish_large.png?raw=true
-modcast blinding bomb
-    Your **Cast** launches a **Flash Bomb**.
-    Cast Damage: {}
-    90 100 110 120
-    54 38 26 19 13 9
-    Apollo/Apollo/BlindingBomb_large.png?raw=true
-modflare brilliant flare
-    Your **Cast** damages foes around you, leaving behind a **Flash Bomb**.
-    Blast Damage: {}
-    90 100 110 120
-    54 38 26 19 13 9
-    Apollo/Apollo/BlindingBomb_large.png?raw=true
-    1(aspect of beowulf, aspect of hera)
-moddash radiant dash
-    Your **Dash** creates a circle of light that damages foes and inflicts **Blind**.
-    Dash Damage: {}
-    15 23 30 38
-    12 8 6 4 3 2
-    Apollo/Apollo/RadiantDash_large.png?raw=true
-modcall apollo's aid
-    Your **Call** fires a beam while **Impervious** for **3 Sec**.
-    Impact Damage: {}
-    15 17 18 20
-    6 4 3 2
-    Max Gauge Bonus: **9 Sec. Duration**
-    0
-    0
-    Apollo/Apollo/ApolloAid_large.png?raw=true
-modt1 wishing well
-    Using a **Fountain** gives you {+} <:Obol:1027113221691281449>.
-
-    100 125 150 200
-    0
-    Apollo/Apollo/ApolloCoin_large.png?raw=true
-modt1 melodic concert
-    Using a **Fountain** gives you permanent **Protect**.
-    Bonus Defense per Fountain: {+%}
-    3 4 5 7
-    0
-    Apollo/Apollo/ApolloHeal_large.png?raw=true
-modxt1 golden fleece
-    Gain **1** <:Reroll:1028190585280012348>. From now on, gain **1** <:Reroll:1028190585280012348> for every {} <:Obol:1027113221691281449> *(Randomly alter the reward for the next chamber)*.
-
-    300 250 200 150
-    0
-    Apollo/Apollo/ApolloFleece_large.png?raw=true
-    m(fated authority)
-modxt1 future sight
-    Gain **1** <:Reroll:1028190585280012348>. From now on, gain **1** <:Reroll:1028190585280012348> for every {} **Boons** *(Randomly alter **Boon** and **Well of Charon** choices)*.
-
-    4 3 2 1
-    0
-    Apollo/Apollo/ApolloEye_large.png?raw=true
-    m(fated persuasion)
-modt2 divine law
-    **Blind**-afflicted foes are also more susceptible to damage.
-    Damage vs. Blind: {+%}
+    60 80 100 120
+    19.8 10.2
+    a/a3/Nova_Flourish.png
+cast solar ring fire
+    After your **Ω Cast** expires, rapidly deal damage in the area for **2 Sec.**
+    Omega Cast Damage: {} *(every 0.13 Sec.)*
     10 15 20 25
-    4 3 2 1
-    Apollo/Apollo/ApolloDamage_large.png?raw=true
-    1(blinding strike, blinding flourish, radiant dash, blinding bomb, brilliant flare, icarus wings)
-modt2 panacea's elixir
-    **Blind**-afflicted foes have a chance to drop <:Healing:1028193572840816722> when slain.
-    Drop Chance: {+%}
-    4 6 8 10
-    0
-    Apollo/Apollo/ApolloElixir_large.png?raw=true
-    1(blinding strike, blinding flourish, radiant dash, blinding bomb, brilliant flare, icarus wings)
-modrevenge icarus wings
-    After you take damage, damage foes around you and inflict **Blind**.
+    5 4 3 2 2 2 1
+    0/0e/Solar_Ring.png
+sprint blinding sprint fire
+    Your **Sprint** is faster and inflicts **Daze** on nearby foes.
+    Sprint Speed: {+%}
+    15 20 25 30
+    3.75
+    6/63/Blinding_Sprint.png
+gain lucid gain air
+    While standing in your **Casts**, gradually restore **<:Magick:1241635310387990568>**.
+    Magick Restoration: {+} *(every 1 Sec.)*
+    12 18 24 30
+    6 3 1
+    3/3c/Lucid_Gain.png
+t1 light smite fire
+    After you take damage, your foe takes damage and you inflict **Daze** on *all* foes.
     Revenge Damage: {}
-    50 63 75 88
-    40 28 20 14 10 7 5
-    Apollo/Apollo/ApolloRetaliate_large.png?raw=true
-modlegendary purest light
-    Your **Blind** effects have a greater miss chance.
-    Miss Chance: {%}
-    65
+    50 75 100 125
+    25 12 6 5
+    0/08/Light_Smite.png
+t1 perfect image air
+    In each **Encounter**, you deal more damage until you take damage.
+    No-Hit Bonus Damage: {+%}
+    10 15 20 25
+    5 2 1
+    b/b6/Perfect_Image.png
+t1 super nova air
+    Your **Casts** expand in size until they expire.
+    Max Cast Size: {+%}
+    40 50 60 70
+    10 7 6 4
+    1/1a/Super_Nova.png
+t1 extra dose fire
+    Your **Attack** has a chance to hit **2** times.
+    Double Strike Chance: {+%}
+    5 7 10 12
+    3 2 1
+    f/fb/Extra_Dose.png
+t2 dazzling display fire
+    Your **Attacks** may inflict **Daze**.
+    Daze CHance: {+%}
+    10 15 20 25
+    5 3 2 1
+    f/f0/Dazzling_Display.png
+    1(nova strike)
+t2 back burner fire
+    Foes with **Daze** take more damage if struck from behind.
+    Backstab Damage: {+%}
+    50 75 100 125
+    25 20 16 12 11 8 6 6 5
+    d/d0/Back_Burner.png
+    1(blinding sprint, dazzling display, light smite)
+t2 critical miss air
+    Foes take damage whenever **Daze** causes them to miss.
+    Miss Damage: {}
+    100 150 200 250
+    50 40 32 25 21 16 13 11 10
+    a/af/Critical_Miss.png
+    1(blinding sprint, dazzling display, light smite)
+infusion self healing
+    While you have at least **3** **<:FireEssence:1242225886938533888>**, whenever you take damage, restore some **<:Life:1241660063513448499>**.
+    Damage Recovered: {%} *(over 5 Sec.)*
+    30
     0
-    Apollo/Apollo/ApolloLegendary_large.png?raw=true
-    1(blinding strike, blinding flourish, radiant dash, blinding bomb, brilliant flare); 1(golden fleece, future sight, divine law, icarus wings)
+    c/c5/Self_Healing.png
+    1(fire essence)
+legendary exceptional talent air
+    Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1241635310387990568>**.
+    Omega Move Cost: {+} <:Magick:1241635310387990568>
+    20
+    0
+    1/15/Exceptional_Talent.png
+    1(nova strike, nova flourish); 1(solar ring, lucid gain); 1(extra dose, super nova)

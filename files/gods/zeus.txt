@@ -1,101 +1,89 @@
-attack lightning strike
-    Your **Attack** emits chain-lightning when you damage a foe.
-    Lightning Damage: {}
-    10 12.5 15 20
-    4 3 2 1
-    f/f6/Lightning_Strike.png
-special thunder flourish
-    Your **Special** causes a lightning bolt to strike nearby foes.
-    Lightning Damage: {}
-    30 38 45 60
-    12 8 6 4 3
-    a/ad/Thunder_Flourish.png
-cast electric shot
-    Your **Cast** is a burst of chain-lightning that bounces between foes.
-    Cast Damage: {}
-    60 70 81 90
-    24 17 12 8 6
-    0/01/Electric_Shot.png
-flare thunder flare
-    Your **Cast** causes a lightning bolt to strike nearby foes.
-    Cast Damage: {}
-    60 72 84 96
-    20 14 10 7 5
-    0/01/Electric_Shot.png
-    1(aspect of beowulf)
-dash thunder dash
-    Your **Dash** causes a lightning bolt to strike nearby foes.
+attack heaven strike air
+    Your **Attacks** inflict **Blitz**.
+    Blitz Damage: {}
+    80 120 160 200
+    40 30 20 10
+    8/83/Heaven_Strike.png
+special heaven flourish air
+    Your **Specials** inflict **Blitz**.
+    Blitz Damage: {}
+    100 140 180 220
+    40 30 20 10
+    6/6b/Heaven_Flourish.png
+cast storm ring air
+    Your **Ω Cast** also causes lightning bolts to repeatedly strike **1** foe at a time.
+    Bolt Damage: {} *(every 0.5 Sec.)*
+    30 40 50 60
+    10 5
+    1/1e/Storm_Ring.png
+sprint thunder sprint air
+    Your **Sprint** causes nearby foes to be struck by lightning bolts, which use 3 <:Magick:1241635310387990568> each.
+    Bolt Damage: {} *(every 0.15 Sec.)*
+    20 25 30 35
+    5 3 2
+    3/33/Thunder_Sprint.png
+gain ionic gain air
+    Gradually restore <:Magick:1241635310387990568>, but your total amount is reduced by **70%**.
+    Magick Restoration: {+} *(every 1 Sec.)*
+    4 6 8 10
+    0
+    5/52/Ionic_Gain.png
+t1 divine vengeance air
+    After you take damage, your foe is struck by lightning, and again **50%** of the time.
+    Bolt Damage: 100 *(up to {} times)*
+    2 3 4 5
+    1
+    b/ba/Divine_Vengeance.png
+t1 lightning lance air
+    Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.
+    Bolt Damage: {}
+    50 70 90 110
+    20 10 5
+    c/c6/Lightning_Lance.png
+t1 static shock air
+    After you enter a **Location**, Prime 50 <:Magick:1241635310387990568> to make your strikes emit chain-lightning.
     Lightning Damage: {}
     10 15 20 25
-    8 6 4 3 2 1
-    b/b4/Thunder_Dash.png
-call zeus's aid
-    Your **Call** makes lightning rapidly strike nearby foes for **1.5 Sec**.
+    5 3 1
+    7/70/Static_Shock.png
+t1 spirit surge air
+    While you have no more than 10 <:Magick:1241635310387990568>, ***all*** foes are occasionally struck by lightning.
+    Bolt Damage: {} *(every 5 Sec.)*
+    60 75 90 105
+    15 8 6
+    2/29/Spirit_Surge.png
+t2 double strike air
+    Your lightning bolt effects may strike **1** more time.
+    Bonus Strike Chance: {+%}
+    5 10 15 20
+    5 3 2 1
+    6/65/Double_Strike.png
+    1(heaven strike, heaven flourish, storm ring, thunder sprint, spirit surge, divine vengeance, lightning lance)
+t2 toasting fork air
+    Your **Blitz** effects deal damage even if they expire without being activated.
+    Blitz Expiration Damage: {%}
+    75 100 125 150
+    19 9 8
+    c/c7/Toasting_Fork.png
+    1(heaven strike, heaven flourish)
+t2 electric overload air
+    Whenever your **Blitz** effects activate, a bolt of chain-lightning fires from the foe.
     Lightning Damage: {}
-    50 55 60 65
-    20 14 10 7 5
-    Max Gauge Bonus: **9 Sec. Duration**
+    10 15 20 25
+    10
+    a/a5/Electric_Overload.png
+    1(heaven strike, heaven flourish)
+infusion air quality
+    While you have at least **5** **<:AirEssence:1242224825079169165>**, you can never deal less damage than the limit.
+    Min Damage per Hit: {}
+    30 40 50 60
     0
+    6/67/Air_Quality.png
+    2(air essence)
+legendary shocking loss air
+    Most foes may be instantly destroyed as soon as they enter the **Encounter**.
+    Instant Destruction Chance: {%}
+    7
     0
-    e/ec/Zeus%27_Aid.png/revision/latest?cb=20190319212936
-t1 lightning reflexes
-    After you **Dash** just before getting hit, a bolt strikes a nearby foes.
-    Lightning Damage: {}
-    20 30 40 50
-    10 7 6
-    2/25/Lightning_Reflexes.png/revision/latest?cb=20200706083311
-xt1 billowing strength
-    after using **Call**, you deal more damage for **15 Sec**.
-    Bonus Damage: {+%}
-    20 22 24 26
-    8 6 4 3 2
-    3/3d/Billowing_Strength.png/revision/latest?cb=20190808134841
-    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
-xt1 clouded judgment
-    Your **God Gauge** charges faster when you deal or take damage.
-    Faster Gauge Gain: {+%}
-    10 12 14 16
-    4 3 2 1
-    4/47/Clouded_Judgment.png
-    1(zeus's aid, poseidon's aid, athena's aid, aphrodite's aid, artemis' aid, ares' aid, dionysus' aid, demeter's aid, hades' aid, apollo's aid, hestia's aid)
-t2 storm lightning
-    Your chain-lightning effects bounce more times before expiring.
-    Lightning Bounces: {+}
-    2 4 6 8
-    2
-    6/6b/Storm_Lightning.png/revision/latest?cb=20190112135435
-    1(lightning strike, electric shot)
-t2 high voltage
-    Your lightning bolt effects deal damage in a larger area.
-    Bolt Area of Effect: {+%}
-    60 72 84 96
-    24 17 12 8 6
-    d/d9/High_Voltage.png/revision/latest?cb=20190319212829
-    1(thunder flourish, thunder flare, thunder dash, zeus' aid)
-t2 double strike
-    Your lightning bolt effects have a chance to strike twice.
-    Strike Chance: {+%}
-    25 30 35 40
-    10 7 5 3
-    6/65/Double_Strike.png/revision/latest?cb=20190319212853
-    1(thunder flourish, thunder flare, thunder dash, zeus' aid)
-status static discharge
-    Your lightning effects also make foes **Jolted**.
-    Jolt Damage: {}
-    60 1.3-1.5 1.8-2.0 2.3-2.5
-    36 25 18 12 9 6
-    7/76/Static_Discharge.png/revision/latest?cb=20190510205819
-    1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid, heaven's vengeance, lightning reflexes)
-revenge heaven's vengeance
-    After you take damage, your foe is struck by lightning.
-    Revenge Damage: {}
-    80 1.3-1.5 1.8-2.0 2.3-2.5
-    64 45 31 22 15 11 8
-    c/c5/Heaven%27s_Vengeance.png/revision/latest?cb=20181214185710
-legendary splitting bolt
-    Whenever you strike foes with lightning **Boons**, fire an electric bolt.
-    Lightning Damage: {}
-    40
-    0
-    5/58/Splitting_Bolt.png
-    1(storm lightning, high voltage, double strike)
+    1/12/Shocking_Loss.png
+    1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(double strike, toasting fork); 1(static shock, electric overload)

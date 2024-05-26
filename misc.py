@@ -16,26 +16,35 @@ god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphro
               'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC, 'apollo': 0xFF914F, 'hestia': 0x7B1635,
               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF,
               'charon': 0x5500B9, 'keepsake': 0x465B75}
-god_icons = {'zeus': 'f/f4/Zeus-bond-forged.png/revision/latest?cb=20201129190802',
-             'poseidon': '6/6d/Poseidon-bond-forged.png/revision/latest?cb=20201129190617',
-             'athena': '1/15/Athena-bond-forged.png/revision/latest?cb=20201129185736',
-             'aphrodite': '8/85/Aphrodite-bond-icon.png/revision/latest?cb=20201129185343',
-             'artemis': '8/89/Artemis-bond-forged.png/revision/latest?cb=20201129185707',
-             'ares': '7/7e/Ares-bond-icon.png/revision/latest?cb=20201129185523',
-             'dionysus': '8/81/Dionysus-bond-forged.png/revision/latest?cb=20201129190028',
-             'demeter': '0/04/Demeter-bond-forged.png/revision/latest?cb=20201129190001',
-             'hermes': 'f/fd/Hermes-bond-forged.png/revision/latest?cb=20201129190309',
-             'bouldy': '1014438782755422220', 'duos': '1027126357597093969',
-             'chaos': '7/7a/Chaos-bond-forged.png/revision/latest?cb=20201129185835',
-             'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
-             'apollo': 'Apollo/Apollo/ApolloBadge_max.png?raw=true',
-             'hestia': 'Hestia/Hestia/HestiaBadge_max.PNG?raw=true'}
+god_icons = {
+    'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
+    'apollo': 'thumb/5/55/Apollo_Boons.png/60px-Apollo_Boons.png',
+    'demeter': 'thumb/2/27/Demeter_Boons.png/60px-Demeter_Boons.png',
+    'hephaestus': 'thumb/1/13/Hephaestus_Boons.png/60px-Hephaestus_Boons.png',
+    'hera': 'thumb/2/25/Hera_Boons.png/60px-Hera_Boons.png',
+    'hestia': 'thumb/2/21/Hestia_Boons.png/60px-Hestia_Boons.png',
+    'poseidon': 'thumb/4/4e/Poseidon_Boons.png/60px-Poseidon_Boons.png',
+    'zeus': 'thumb/3/34/Zeus_Boons.png/60px-Zeus_Boons.png',
+    'duos': '1027126357597093969',
+    'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
+    'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',
+    'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
+    'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
+    'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
+}
 weapon_icons = {'sword': 'f/f7/Stygian_Blade.png/revision/latest?cb=20181213044607',
                 'spear': 'c/c1/Eternal_Spear.png/revision/latest?cb=20181214234725',
                 'shield': '0/02/Shield_of_Chaos.png/revision/latest?cb=20181213193429',
                 'bow': '5/5c/Heart-Seeker_Bow.png/revision/latest?cb=20181213193638',
                 'fists': '0/08/Twin_Fists.png/revision/latest?cb=20200430070608',
                 'rail': '3/36/Adamant_Rail.png/revision/latest?cb=20210120004027'}
+element_icons = {
+    'earth': '1242225885390700604',
+    'water': '1242225888519520377',
+    'air': '1242224825079169165',
+    'fire': '1242225886938533888',
+    'aether': '1243121873408102471'
+}
 disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
 toxic_select = ('⬆️', '➡️', '↔️', '🔄', '🔴', '🔹', '✅')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
@@ -157,9 +166,7 @@ def to_link(s: str) -> str:
         return ''
     if s.isdigit():
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
-    if s[1] == '/':
-        return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
-    return f'https://github.com/AlexKage69/OlympusExtra/blob/AssetsLab/AssetsLab/PackMe/{s}'
+    return f'https://hades2.game-vault.net/w/images/{s}'
 
 
 async def fuzzy_img(ctx, client, img_link):

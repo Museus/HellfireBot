@@ -1,48 +1,10 @@
-zagreus sword
-    sword, z, zag, zagreus, blade, stygian, stygian blade, zag sword, zagsword, zsword
-nemesis
-    nemesis sword, nem sword
-poseidon
-    poseidon sword, pos sword, pos
-arthur
-    arthur sword, excaliber, holy excaliber
-zagreus spear
-    spear, z, zag, zagreus, varatha, eternal spear, zag spear, zagspear, zspear
-achilles
-    achilles spear
-hades
-    hades spear, gigaros
-guan yu
-    guan yu spear, guanyu, guanyu spear, gy, gy spear
-zagreus shield
-    shield, z, zag, zagreus, shield of chaos, zag shield, zagshield, zshield
-chaos
-    chaos shield
-zeus
-    zeus shield
-beowulf
-    beowulf shield, beowolf shield, beowolf, beo, bugwulf, beu, beuwulf, beuwolf
-zagreus bow
-    bow, z, zag, zagreus, coronact, heartseeking bow, heart-seeking bow, heart seeking bow, zag bow, zagbow, zbow
-chiron
-    chiron bow
-hera
-    hera bow, worse beo, worse beowulf
-rama
-    rama bow, sharanga, celestial sharanga
-zagreus fists
-    fist, fists, z, zag, zagreus, malphon, twin fists of malphon, zagreus fist, zag fist, zag fists, zagfist, zagfists, zfist, zfists
-talos
-    talos fist, talos fists, bestlos, worstlos, worbsetl5
-demeter
-    demeter fist, demeter fists, dem fist, dem fists
-gilgamesh
-    gilgamesh fist, gilgamesh fists, gilga, gilga fist, gilga fists, gilgy, gilgy fist, gilgy fists, paw, paw fist, paws, paws fist, paws fists
-zagreus rail
-    rail, z, zag, zagreus, gun, adamant rail, exagryph, zag rail, zagrail, zrail, worstia
-eris
-    eris rail, eris gun
-hestia
-    hestia rail, hestia gun, hesti, hesty, bestia, besty
-lucifer
-    lucifer rail, lucifer gun, luci, lucy, rof, super soaker, supersoaker
+melinoë staff
+    staff, m, mel, melinoe, melinoë, mstaff, melstaff, mel staff, melinoe staff, witch, witchs, witches, witch's, witch staff, witchs staff, witches staff, witch's staff, descura
+melinoë blades
+    blade, blades, m, mel, melinoe, melinoë, mblade, mblades, mel blade, mel blades, melinoe blade, melinoe blades, melinoë blade, sister, sister blade, sister blades, lim, oros, lim oros, lim and oros
+melinoë flames
+    flame, flames, m, mel, melinoe, melinoë, mflame, mflames, mel flame, mel flames, melinoe flame, melinoe flames, melinoë flame, umbral, umbral flame, umbral flames, ygnium
+melinoë axe
+    ax, axe, m, mel, melinoe, melinoë, max, maxe, mel ax, mel axe, melinoe ax, melinoe axe, melinoë ax, moonstone, moonstone ax, moonstone axe, zorephet
+melinoë skull
+    skull, m, mel, melinoe, melinoë, mskull, mel skull, melinoe skull, argent, argent skull, revaal

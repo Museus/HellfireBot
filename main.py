@@ -49,7 +49,7 @@ async def on_command_error(ctx, err):
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name='Race Event: 🌽🎉'))
+    await client.change_presence()
     for command in files.commands_info:
         for alias in commands.Bot.get_command(client, command).aliases:
             aliases_to_command[alias] = command
@@ -210,21 +210,6 @@ async def define(ctx):
         await misc.reply(ctx, 'idk man as', mention=True)
         return
     embed = embeds.define_embed(text)
-    await misc.reply(ctx, embed=embed)
-
-
-@client.command(aliases=['boulder', 'rock', '🪨', '<:bouldy:1014438782755422220>'])
-async def bouldy(ctx):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    info = random.choice(files.bouldy_info)
-    embed = discord.Embed(
-        title='**Heart of Stone**',
-        description=f'{info["desc"]}\n▸{parsing.parse_stat(info["stat"], "")}',
-        color=misc.god_colors['bouldy']
-    )
-    embed.set_thumbnail(url=misc.to_link(info['icon']))
     await misc.reply(ctx, embed=embed)
 
 

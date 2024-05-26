@@ -1,5 +1,5 @@
 zeus
-    zeus', zeus's, lightning, thunder, zap, jolt, jolted, ⚡
+    zeus', zeus's, lightning, thunder, zap, jolt, jolted, heaven, storm, ion, ionic, ⚡
 poseidon
     poseidons, poseidon's, pos, posi, tidal, flood, 🌊
 athena
@@ -8,10 +8,6 @@ aphrodite
     aphrodites, aphrodite's, aphros, aphro's, aphro, aph, afro, heartbreak, crush, passion, trash, ❤
 artemis
     artemis', artemis's, artys, arty's, art, arte, arty, deadly, true, hunter, hunters, hunter's, 🏹
-ares
-    ares', ares's, are, curse, cursed, doom, doomed, slicing, blade, 🗡️
-dionysus
-    dionysus', dionysus's, dios, dio's, dio, drunk, drunken, trippy, hangover, 🍷
 demeter
     demeters, demeter's, dems, dem's, dem, frost, icy, cold, chill, snow, ❄
 apollo
@@ -22,25 +18,17 @@ hermes
     hermes', hermes's, herm, herme, swift
 charon
     char, well, well of charon, charon well
-bouldy
-    boulder, rock, 🪨
 attack
     atk, strike, dstrike, ⚔
 special
     spcl, flourish
 cast
     shot, grasp, 💎
-flare
-    beo, beowulf, beowolf, hera
-dash
-    jump, snap, 💨
-call
-    aid, wrath, gauge
-revenge
-    rev, vengeance, revengeance
-status
-    ps, statuses
+sprint
+    dash, jump, snap, 💨
+gain
+    magic, magick
 legendary
-    leg, legend, legendaries, yellow
+    leg, legend, lego, legendaries, yellow
 duos
     duo, green

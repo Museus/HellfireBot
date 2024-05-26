@@ -63,9 +63,9 @@ def parse_hammer(input: [str]) -> (str, bool, bool):
 def parse_god(input: [str]) -> str:
     input = [s.lower() for s in input]
     god_name = ' '.join(input)
-    if god_name in files.god_cores or god_name == 'bouldy':
+    if god_name in files.god_cores:
         return god_name
-    if god_name in files.aliases['core'] and files.aliases['core'][god_name][0] in (*files.god_cores, 'bouldy'):
+    if god_name in files.aliases['core'] and files.aliases['core'][god_name][0] in files.god_cores:
         return files.aliases['core'][god_name][0]
     return ''
 

@@ -1,144 +1,90 @@
-sword zagreus sword
-    The form in which the blade of the underworld first revealed itself.
-    Bonus Attack Speed & Move Speed: {+%}
-    3 6 9 12 15
-    A blade such as this one seeks not to remain idle for more than an aeon or two.
-    5/5e/Zagreus_Aspect_Sword.png/revision/latest?cb=20191013211619
-sword nemesis
-    For **3 Sec.** after your **Special**, your **Attack** may deal **Critical** damage.
-    Bonus Critical Chance: {+%}
-    15 19 22 26 30
-    One of Nyx's daughters once brandished the blade against the arrogant.
-    9/93/Nemesis_Aspect.png/revision/latest?cb=20191013211630
-sword poseidon
-    Your **Special** dislodges <:Cast:1027103688449347635> from foes.
-    Cast Damage: {+%}
-    10 20 30 40 50
-    Even before he ruled the seas, the blade's first bearer liked making a splash.
-    c/ce/Poseidon_Aspect.png/revision/latest?cb=20191013211640
-sword arthur
-    You have **Holy Excalibur**, and **+50** <:MaxHealth:1008235891308908545> to your Life Total.
-    Aura Damage Reduction: {+%}
-    20 25 30 35 40
-    Peace and destruction await a kingdom governed by the rule of might.
-    8/8a/Arthur_Aspect.png/revision/latest?cb=20200313005516
-spear zagreus spear
-    The form in which the eternal spear first revealed itself.
-    Special Damage, Range, & Speed: {+%}
-    10 14 18 22 25
-    Its shape reflects its bearer's true self, hiding its own all the while.
-    7/75/Zagreus_Aspect_Spear.png/revision/latest?cb=20191013212228
-spear achilles
-    After your **Special**, you can retrieve your Spear with **Raging Rush**.
-    Post-Rush Bonus Damage: {+%}
-    50 75 100 125 150
-    The greatest of the Greeks was peerless in battle, up close and from afar.
-    b/b9/Achilles_Aspect.png/revision/latest?cb=20191013212233
-spear hades
-    Your **Spin Attack** becomes Punishing Sweep.
-    Punishing Bonus Damage: {+%}
-    30 60 90 120 150
-    The god of the dead discarded the eternal spear for a larger counterpart.
-    1/19/Hades_Aspect.png/revision/latest?cb=20191013212242
-spear guan yu
-    You have the **Frost Fair Blade**, but your <:MaxHealth:1008235891308908545> and <:Healing:1028193572840816722> are reduced.
-    Max Life & Healing: {-%}
-    70 65 60 55 50
-    A mighty general shall battle with unmatched ferocity to unite his people.
-    5/50/Guan_Yu_Aspect.png/revision/latest?cb=20200128210052
-shield zagreus shield
-    The form in which the shield of chaos first revealed itself.
-    Attack & Dash-Strike Damage: {+}
-    3 6 9 12 15
-    Sometimes the bone-etched visage shudders as though it means to speak.
-    5/56/Zagreus_Aspect_Shield.png/revision/latest?cb=20191013211832
-shield chaos
-    After your **Bull Rush**, your next **Special** throws multiple Shields.
-    Bonus Shields Thrown: {}
+staff melinoë staff
+    You **Channel** your **Ω Moves** faster.
+    Omega Channel Speed: {+%}
+    0 15 20 25 30
+    A waxing crescent moon; the promise of power, the responsibility to ready oneself.
+    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+staff circe
+    After landing **21** **Attacks** or **Specials**, gain **Serenity**.
+    Serenity Duration: {s}
+    6 7 8 9 10
+    A high priestess of the Unseen once used the staff to bring abount necessary change.
+    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+staff momus
+    While you have no more than **50%** <health>, absorb your **Ω Special** blast to restore **5** <health>.
+    Special & Omega Special Powwer: {+}
+    10 15 20 25 30
+    Not even ever-patient Night herself spared much time for his insolence.
+    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+blades melinoë blades
+    Your **Attacks** and **Specials** deal more damage by striking foes from behind.
+    Backstab Damage: {+%}
+    0 10 20 30 40
+    As there are many gardens to be cultivated, such a task requires precision instruments.
+    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
+blades artemis
+    While you **Channel** your **Ω Attack**, you occasionally **Parry**, then **Riposte** right after.
+    Faster Omega Attack: {+%}
+    20 30 40 50 60
+    A flash of silver; whether the Huntress or the Moon, none can attest.
+    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
+blades pan
+    Your **Specials** seek foes in your **Casts**, and fire more blades after you **Channel**.
+    Omega Bonus Blades: {+}
     1 2 3 4 5
-    All sprang from the primordial depths; only one artifact bore witness.
-    0/0e/Chaos_Aspect.png/revision/latest?cb=20191013211843
-shield zeus
-    Your **Special** becomes **Blitz Disc**.
-    Blitz Disc Base Damage per Hit: {}
-    8 13 19 24 30
-    Once he became king of the Olympians, he truly had nothing left to fear.
-    1/10/Zeus_Aspect.png/revision/latest?cb=20191013211849
-shield beowulf
-    You have **Naegling's Board**, but take **+10%** damage.
-    Dragon Rush Bonus Damage & Area: {+%}
-    20 40 60 80 100
-    Would that the stalwart warrior-king's sword offered similar protection.
-    c/c6/Shield_aspect_beuwulf.png/revision/latest?cb=20200624130152
-bow zagreus bow
-    The form in which the heart-seeking bow first revealed itself.
-    Critical Attack Chance: {+%}
-    3 6 9 12 15
-    It senses stalwart hearts, mostly to stop them but occasionally to be used.
-    5/51/Zagreus_Aspect_Bow.png/revision/latest?cb=20191013212053
-bow chiron
-    Your **Special** automatically seeks the foe last struck by your **Attack**.
-    Max Shots per Special: **9** ⇒ {}
+    The natural-grown horn can pierce as readily as a well-crafted blade.
+    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
+flames melinoë flames
+    Flames from your **Ω Special** burn longer before expiring.
+    Omega Special Duration: {+s}
+    0 1 2 3 4
+    No single light can illuminate the many crossroads ahead; thus there are two.
+    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
+flames moros
+    Your **Attacks** linger for **6 Sec.**, and explode in a blast if struck by your **Specials**.
+    Blast Damage: {+%}
+    0 10 20 30 40
+    Feared and hated Doom lingers like a sword about to fall; even his time shall come.
+    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
+flames eos
+    Your **Attacks** gro bigger and stronger over **4 Sec.**, and return whenever you **Sprint**.
+    Full-Grown Damage: {+%}
+    40 50 60 70 80
+    Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
+    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
+axe melinoë axe
+    You recover faster after using your **Attacks** and **Specials**.
+    Recovery Speed: {+%}
+    0 10 20 30 40
+    Its tin blade can split even the light of the Moon, yet itself can never be separated.
+    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+axe charon
+    Your **Cast** lasts **+3 Sec.**, and erupts like your **Ω Cast** if struck by your **Ω Special**.
+    Cleave-Cast Size and Damage: {+%}
+    10 20 30 40 50
+    To navigate the rivers of the Underworld is to possess extraordinary poise and strength.
+    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+axe thanatos
+    Whenever you hit with **Ω Moves**, gain **+1% Critical** chance until you take damage.
+    Max Critical Chance: {+%}
     4 5 6 7 8
-    When first it was fashioned, the centaur lord himself affirmed its might.
-    e/ee/Chiron_Aspect.png/revision/latest?cb=20191013212100
-bow hera
-    Your **Cast** loads <:Cast:1027103688449347635> into your next **Attack**, firing on impact.
-    Bloodstone Drop Time: {s}
-    10 8 6.67 6.15 5
-    None dared approach the queen of the gods, a reputation she cultivated.
-    f/f7/Hera_Aspect.png/revision/latest?cb=20191013212111
-bow rama
-    You have **Celestial Sharanga**, which can cause **Shared Suffering**.
-    Shared Suffering Damage: {%} *of Attack*
-    30 38 45 53 60
-    The preserver's marksmanship is one of his many unequaled qualities.
-    6/60/Rama_aspect.png/revision/latest?cb=20200624130119
-fists zagreus fists
-    The form in which the twin fists first revealed themselves.
-    Dodge Chance: {+%}
-    5 8 10 13 15
-    The twin fists are bound to their bearer, but most fiercely to each other.
-    b/be/Zagreus_Aspect_Fists.png/revision/latest?cb=20200313013824
-fists talos
-    Your **Special** becomes **Magnetic Cutter**; its pull deals **20** damage.
-    Magnetized Attack & Cast Bonus: {+%}
+    Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
+    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+skull melinoë skull
+    Your **Attacks** have more **Power** for each <ammo> **Shell** fired and not yet retrieved.
+    Power per Spent Shell: {+}
+    0 5 10 15 20
+    The will of Night is never to be chronicled, but witnessed by the dead and the shadow.
+    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png
+skull medea
+    Your **Attack** stays within reach, and explodes in a large area on impact or after **3 Sec.**
+    Attack & Special Damage: {+%}
+    20 30 40 50 60
+    She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
+    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png
+skull persephone
+    Any damage you deal generates <glory> **Glory**, which enhances your **Ω Special**.
+    Omega Damage: {+%}
     10 20 30 40 50
-    Power filled the bronze giant as they conformed to its massive frame.
-    2/2a/Talos_Aspect.png/revision/latest?cb=20200313014316
-fists demeter
-    After landing **12** strikes, your next **Special** hits more times.
-    Bonus Special Hits: {}
-    1 2 3 4 5
-    They were a natural fit; her power to bring life, their power to take it.
-    f/f2/Demeter_Aspect.png/revision/latest?cb=20200313014432
-fists gilgamesh
-    You have the **Claws of Enkidu**, whose **Dash-Upper** can **Maim** foes.
-    Maim Damage: {}
-    100 175 250 325 400
-    The god-king inherited the beast-man's savage strength and stout heart.
-    e/ee/Gilgamesh_Aspect.png/revision/latest?cb=20200927232709
-rail zagreus rail
-    The form in which the adamant rail first revealed itself.
-    Bonus Ammo Capacity: {+}
-    4 6 8 10 12
-    The image of the noble gryphon belies its true intent but not its power.
-    0/05/Zagreus_Rail_Image.png/revision/latest?cb=20191013212341
-rail eris
-    For **4 Sec.** after absorbing your **Special**'s blast, deal more damage.
-    Bonus Damage: {+%}
-    15 30 45 60 75
-    Strife herself once stole away with it, such was its destructive allure.
-    c/ca/Eris_Aspect.png/revision/latest?cb=20191013212354
-rail hestia
-    After you manually **Reload**, your next shot is empowered.
-    Empowered Shot Base Damage: {}
-    50 75 100 125 150
-    Before she was goddess of the hearth, she specialized in another ring of fire.
-    5/5a/Hestia_Aspect_Image.png/revision/latest?cb=20191013212407
-rail lucifer
-    You have **Igneus Eden**, which launches volatile **Hellfire**.
-    Hellfire Blast Damage: {}
-    50 63 75 88 100
-    As he fell from grace, he nonetheless fought back in all his defiant fury.
-    1/17/Lycifer_aspect.png/revision/latest?cb=20200624130049
+    Life and death, forever embodied in a Queen both splendorous and dark at once.
+    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png

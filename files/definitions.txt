@@ -1,164 +1,182 @@
-jolted
-    *Status Curse*: Victim's next attack self-inflicts lightning damage that harms nearby foes.
-boons, boon
-    Blessing from the Olympians, bestowing godlike power until death.
-<:Cast:1027103688449347635> bloodstone, <:Cast:1027103688449347635>, bloodstone, bloodstones
-    Ammunition for your Cast. Retrieve from slain foes with Infernal Soul active; Regenerates over time with Stygian Soul active.
-revenge
-    Automatically retaliate with some god-given effect after taking damage.
-festive fog
-    For **5 Sec.**, wafting fumes briefly stun foes in the area every **0.25 Sec**.
-impervious
-    Invulnerable to damage.
+weapon
+    Press or hold to use your main weapon in a variety of ways.
+attacks
+    Your weapon's main attack. Hold to use <:Magick:1241635310387990568> for a stronger effect.
+attack
+    Your weapon's main attack.
+Ω attack
+    Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued attack.
+specials
+    Your weapon's special move. Hold to use <:Magick:1241635310387990568> for a stronger effect.
+special
+    Your weapon's special move.
+Ω special
+    Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued special move.
+casts
+    A binding spell. Hold to use <:Magick:1241635310387990568> for the damaging **Ω** version.
+cast
+    A binding spell that ensnares foes and can gain other properties.
+Ω cast
+    Hold to use <:Magick:1241635310387990568> for a binding spell that damages foes when it expires.
+dash
+    Rush forward a short distance, avoiding any damage.
+sprint
+    Hold to run at top speed.
+Ω moves
+    Press-and-hold **Attack**, **Special**, or **Cast** to imbue them with <:Magick:1241635310387990568> **Magick**.
+power
+    An increase to the base amount of damage you inflict. Ohter bonuses multiply by this.
+channel
+    Press-and-hold to imbue your move with <:Magick:1241635310387990568> **Magick** to prepare a powerful **Ω** effect.
+<:Magick:1241635310387990568> magick, <:Magick:1241635310387990568>, magick
+    Required for powerful **Ω Moves**.
+prime
+    A passive reduction to your <:Magick:1241635310387990568> limit until the next **Location**.
+hex
+    After using enough <:Magick:1241635310387990568> while foes are near, press to invoke the Moon's might.
+path of stars
+    Grants your choice of **3** interconnected upgrades for your **Hex** this night.
+locations, location
+    Various places comprising the **Regions** of the world beyond the Crossroads.
 encounter, encounters
-    The dangerous kind; Underworld chambers where you must slay your foes to proceed.
-<:Gemstone:1027109936276197386> gemstones, <:Gemstone:1027109936276197386>, gemstone, gemstones
-    For House Contractor renovations, or for trade.
-<:Darkness:1028189207405015051> darkness, <:Darkness:1028189207405015051>, darkness
-    Used to permanently grow stronger.
-<:Obol:1027113221691281449> charon's obol, <:Obol:1027113221691281449>, charon's obol, obol, obols, gold
-    For purchasing items during escape attempts. All of it is lost on death.
-<:Reroll:1028190585280012348> fated dice, <:Reroll:1028190585280012348>
-    Randomly alter the reward for the next **Chamber** with Fated Authority active; Randomly alter **Boon** and **Well of Charon** choices with Fated Persuasion active.
-bosses, boss
-    Lords of the Underworld identifiable by long health bars with their names on them.
-rupture
-    *Status Curse*: For **3 Sec.**, victim takes damage while moving.
-fishing point
-    Places where you may attempt to use the **Rod of Fishing** to retrieve a river denizen.
-chamber, chambers
-    Any given area you enter in the Underworld; it is a vast network of these.
-poms of power
-    Underworld fruit that can enhance the effects of most Boons.
-deflect
-    Turn foes' attacks back against them.
-death defiance
-    Restore **50%** <:Heart:1008236023039410216> instead of dying when your Life Total is depleted, **1** time per rank.
-stubborn defiance
-    Restore at least **30%** <:Heart:1008236023039410216> when your Life Total is depleted, **1** time *per chamber*.
-traps, trap
-    Inanimate Underworld objects that harm whatever gets in their way.
-exposed
-    *Status Curse*: For **5 Sec.**, victim takes more damage when struck from behind.
+    The dangerous kind; you must withstand your foes before you can proceed.
+region
+    A stretch of likely-dangerous **Locations**, often with a **Guardian** waiting at the end.
+guardian
+    Mighty foes identifiable by lengthy life bars with their names on them.
+<:Life:1241660063513448499> life, <:Life:1241660063513448499>
+    How much damage you or your foes can withstand.
+<:Healing:1028193572840816722> healing, <:Healing:1028193572840816722>
+    A means of recovering some **Life** after taking damage.
+<:MaxLife:1241662636995772436> max life, <:MaxLife:1241662636995772436>
+    An increase to your **Life** limit, restoring you by the amount added.
+max magick
+    An increase to your **Magick** limit.
+impervious
+    A state in which you are completely invulnerable to damage.
+<:GoldenCrowns:1243132146273751200> gold crowns, <:GoldenCrowns:1243132146273751200>
+    Trade for valuables. You lose any you have not spent when you return each night.
+<:Ashes:1242227789059457055> ashes, <:Ashes:1242227789059457055>
+    Mostly used for unlocking **Arcana Cards**.
+<:Psyche:1242227790879784983> psyche, <:Psyche:1242227790879784983>
+    Mostly used to raise **Grasp**, to activate more **Arcana Cards**.
+<Hammer:1243131974923718747> daedalus hammer, <Hammer:1243131974923718747>
+    Grants a special enchantment for your weapon for this night.
 critical
     A devastating blow that deals **+200%** damage or greater.
-doom
-    *Status Curse*: After **1.1 Sec.**, victim takes a burst of damage.
-weak
-    *Status Curse*: For at least **4 Sec.**, victim deals at least **30%** less damage.
-charm
-    *Status Curse*: For a short time, victim fights for you with greater strength and speed.
-<:MaxHealth:1008235891308908545> max life, <:MaxHealth:1008235891308908545>, max life
-    A change to your Life Total *(healing you for the amount, if an increase)*.
-hangover
-    *Status Curse*: For **4 Sec.**, victim keeps taking damage. Effect can stack up to **5** times.
-dash-strike
-    Press Dash then immediately press Attack to attack.
-armor, armored
-    Elite foes cannot be stunned or knocked away until you break through their armor.
-marked
-    *Status Curse*: For **6 Sec.**, victim has a higher chance of taking Critical damage.
-blade rift
-    Slashing metal vortex rapidly deals damage in an area.
-chill
-    *Status Curse*: For **8 Sec.**, victim is slowed by **4%**. Effect can stack up to **10** times.
-lasting consequences
-    Due to a **Pact Condition**, any <:Healing:1028193572840816722> effects are reduced, **25%** per rank.
-fountain
-    Drinking waters from these Underworld fixtures restores some <:Heart:1008236023039410216> to the living.
-dodge
-    Deftly avoid an instance of damage you would have taken.
-sturdy
-    You take **30%** less damage; your actions cannot be interrupted by taking damage.
+boons, boon
+    Blessings from the Olympians, bestowing godlike power for this night.
+rarity
+    **Boons** sometimes have superior effects, noted as **Rare**, **Epic**, and more.
 common
     Blessings from the gods are extraordinary by nature, but this is the garden variety.
-rarity, rare
-    Boons sometimes have superior effects, noted as **Rare**, **Epic**, and more.
-<:Heart:1008236023039410216> life, <:Heart:1008236023039410216>, life total
-    Life Total. Strike your foes repeatedly to make it and them go away.
-thrust
-    Using the Blade, every third attack is a thrust that knocks foes away.
-holy excalibur
-    *Alternate Move Set*: Heavy Attack, Special creates a defensive aura that slows foes.
-raging rush
-    Press Special to dash to your Spear, damaging foes. Next **4** Attacks or Casts are stronger.
-spin attack
-    Hold Attack then release for a powerful spinning strike.
-punishing sweep
-    A huge Spin Attack that makes foes take more Attack and Special damage for **10 Sec**.
-frost fair blade
-    *Alternate Move Set*: Heavy Attack, explosive Special, **Life**-stealing Spin Attack.
-<:Healing:1028193572840816722> healing, <:Healing:1028193572840816722>, healing
-    Effects that restore some of your Life Total if you suffered any damage.
-bull rush
-    Hold Attack then release for a powerful tackle attack.
-blitz disc
-    Your Special deals rapid damage, returning on command. Your Attack is not disabled.
-naegling's board
-    *Alternate Move Set*: Heavy Attack & Special; Cast empowers Bull Rush *(instead of firing)*.
-dragon rush
-    Your Cast-empowered Bull Rush; each loaded <:Cast:1027103688449347635> fires at the end of the move.
-celestial sharanga
-    *Alternate Move Set*: Wide, heavy Attack; bouncing triple-shot Special afflicts foes.
-shared suffering
-    Foes hit by your Special take damage when you Attack *any* marked foe for the next **7 Sec**.
-magnetic cutter
-    Your Special pulls foes in. Then for **6 Sec.**, they take more Attack and Cast damage.
-claws of enkidu
-    *Alternate Move Set*: Heavy Attack, **+2** rapid Dash charges, Dash-Upper inflicts **Maim**.
-dash-upper
-    Press Dash then immediately press Special to uppercut.
-maim
-    Foes take **+25%** more damage but deal **+50%** more for **4 Sec.**, then take 400 damage.
-reload
-    Replenish the Rail's ammunition supply after a brief delay during which you cannot fire.
-igneus eden
-    *Alternate Move Set*: Beam Attack deals ramping damage, Special launches Hellfire.
-hellfire
-    Destructible bombs radiate damage and stagger nearby foes; explode in a large blast.
-chaos gates, chaos gate
-    A sacrifice of <:Heart:1008236023039410216> is necessary to access the unfathomable depths of Chaos.
-<:PomQuestion:1029254859062517760> pom power, <:PomQuestion:1029254859062517760>
-    Raises the potency of one of your Boons *(chosen at random)*.
-invisible
-    Vanish and move faster for **2 Sec.**; strike to appear and deal bonus damage for **1.5 Sec**.
-unseen
-    Vanish and move faster *(even if you strike)*, and deal bonus damage for **5 Sec**.
-summon
-    A quick assist from a close friend *(once per Encounter)*.
-power rush
-    Hold Attack then release when you see a brief flash for a stronger tackle.
-power shot
-    Hold Attack then release when you see a brief flash for a stronger shot.
-blast wave
-    An emanating wave of force that knocks away foes and destroys most projectiles.
-<:LuciferAmmo:1017268637716983868> cells, <:LuciferAmmo:1017268637716983868>
-    Ammunition for your Attack.
-<:RailAmmo:1027058242154676269> rounds, <:RailAmmo:1027058242154676269>
-    Ammunition for your Attack.
-attack, attacks
-    Your main weapon.
-special, specials
-    Your weapon's unique attack.
-cast, casts
-    A powerful ranged attack. Retrieve <:Cast:1027103688449347635> to keep using it.
-dash, dashes
-    Rush forward a short distance. Use to evade attacks or get into position.
-call, calls
-    An Olympian's aid *(if you have such a Boon)*. Uses **1** stock of your **God Gauge**, or all **4** stocks for a much stronger effect.
-god gauge, gauge
-    Required to use your **Call**. Fills as you deal or take damage in each Encounter.
-modblind
-    *Status Curse*: For at least **5 Sec.**, victims have a **40%** chance to miss their next attack.
-modflash bomb
-    After detonating, inflict **Blind** on foes in an area for **3 Sec**.
-modprotect
-    Damage from faraway foes is less effective.
-modlava pool, lava pools
-    A puddle of lava rapidly damages foes in an area.
-centaur heart
-    Upon pickup, gain **+25** <:MaxHealth:1008235891308908545>.
-centaur soul
-    Upon pickup, gain **+25** <:MaxHealth:1008235891308908545> *(without restoring <:Heart:1008236023039410216>)*.
-minibosses, miniboss
-    Stronger than most foes, usually associated with <:Miniboss:1031444109115793468>.
+rare
+    Blessings imbued with greater-than-usual power.
+epic
+    Blessings imbued with significantly greater-than-usual power.
+heroic
+    Blessings imbued with ultimate power.
+duo
+    Blessings with the power of two different gods, offered to those favored by both.
+rarify
+    When choosing **Boons**, boost the **Rarity** of one that isn't already too rare.
+fountains
+    Drinking from these fixtures restores some <:Life:1241660063513448499> to the living.
+minor find
+    Rewards that grant resources, such as <:Ashes:1242227789059457055> and <:Psyche:1242227790879784983>. Found in locations marked with <minor find>.
+major find
+    Rewards that grant power, such as **Boons**. Found in locations marked with <major find>.
+<:Armor:1243126987032363048> armor, <:Armor:1243126987032363048>
+    Any damage you sustain reduces your **Armor** before reducing your **Life**.
+dodge
+    Automatically avoid an instance of damage you would have otherwise taken.
+parry
+    Prevent damage from most types of direct attacks. Can be repeated after **15 Sec.**
+riposte
+    You are **Impervious** for **1 Sec.** Your next **9** strikes have **+50%** **Critical** chance.
+glory
+    Makes your **Ω Special** last up to **+5 Sec.**, firing continuously while you have control.
+shells
+    Ammunition for your **Attacks**. Retrieve from the field to re-use.
+death defiance
+    When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1241635310387990568>. Limited uses per night.
+<:Reroll:1028190585280012348> change of fate, <:Reroll:1028190585280012348>
+    Used to alter various outcomes presented to you, depending on your **Arcana**.
+curse
+    A temporary debilitating effect inflicted by the Olympian gods.
+awakening
+    Cards that use **0** <grasp> and auto-activate, but only if their condition is met.
+<:BlueHeart:1241665623453601803> barrier, <:BlueHeart:1241665623453601803>
+    Negates the next instance of damage, even if it would have been an awful lot.
+revenant
+    After **5 Sec.**, this becomes the foe it came from, unless you collect it first.
+red onion
+    Restores **1** <:Life:1241660063513448499>. Tastes as bitter as you feel.
+<:EarthEssence:1242225885390700604> earth, <:EarthEssence:1242225885390700604>
+    **Boons** imbued with the element of Earth.
+<:WaterEssence:1242225888519520377> water, <:WaterEssence:1242225888519520377>
+    **Boons** imbued with the element of Water.
+<:AirEssence:1242224825079169165> air, <:AirEssence:1242224825079169165>
+    **Boons** imbued with the element of Air.
+<:FireEssence:1242225886938533888> fire, <:FireEssence:1242225886938533888>
+    **Boons** imbued with the element of Fire.
+<:AetherEssence:1243121873408102471> aether, <:AetherEssence:1243121873408102471>
+    **Boons** imbued with the element of Aether.
+weak
+    *Curse:* Afflicted foes deal at least **10%** less damage. Lasts **3 Sec.**
+heartthrob
+   An explosive projectile that revolves around you. Expires after **20 Sec.**
+heartthrobs
+   Explosive projectiles that revolve around you. Expire after **20 Sec.**
+lone shades
+    Lingering spirits found in some **Encounters**, wallowing in search of meaning.
+charm
+    *Curse:* Causes the afflicted foe to turn against your other foes.
+daze
+    *Curse:* Afflicted foes have **20%** chance to deal no damage. Lasts **9 Sec.**
+freeze
+    *Curse:* Afflicted foes are stopped for **2 Sec.** Can be re-applied after **10 Sec.**
+cyclone
+    A vortex that makes foes **20%** slower and their ranged shots **60%** slower. Lasts **3 Sec.**
+mystery seeds, <mystery seed>
+    May grow to become one of several different kinds of valuable plants.
+keepsakes
+    Artifacts of power symbolizing the bond between two strong souls.
+scorch
+    *Curse:* Afflicted foes take **40** damage accrued from this every **1 Sec.**
+armor
+    Elite foes cannot be stunned or knocked away until you break their golden barriers.
+vent
+    *Curse:* After **5 Sec.**, afflicted foes take a burst of damage. Timer resets if re-applied.
+aspect
+    Alternate forms of the **Nocturnal Arms**, each with their own distinct style.
+hitch
+    *Curse:* Afflicted foes take **30%** of damage dealt to other afflicted foes. Lasts **8 Sec.**
+sacrifice boons
+    A **Boon** with improved **Rarity**, which requires you to give up another in its stead.
+<lvl up>
+    An increase to the raw power of one of your **Boons**.
+steam
+    A burning cloud that removes **Slip** from foes and rapidly deals damage. Lasts **2 Sec.**
+blitz
+    *Curse:* After taking **120** damage, afflicted foes get struck by lightning. Lasts **3 Sec.**
+spirit bubble
+    Restores **20** **<:Magick:1241635310387990568>** when you touch it. Expires when used, or after **30 Sec.**
+slip
+    *Curse:* Afflicted foes take more damage and are knocked farther away. Lasts **3 Sec.**
+marked
+    *Curse:* Afflicted foes have **+30%** chance to take **Critical** damage. Lasts **6 Sec.**
+gathering tools
+    Used to harvest resources from special deposits. You can carry one at a time.
+morph
+    *Curse:* Afflicted foes turn into harmless critters. Lasts **8 Sec.**
+chronos
+    The Titan of Time usurped the House of Hades and now threatens Olympus.
+dark
+    Vanish for **10 Sec.**; strike to appear and deal bonus damage.
+arcana
+    Conduits of inner strength found in the **Altar of Ashes**.
+animal familiar
+    Loyal beast assistant-guardians under your protection. You may travel with **1** at a time.
+vows
+    Invocations of various adverse nightly effects from the **Oath of the Unseen**.

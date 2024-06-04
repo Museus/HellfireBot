@@ -2,8 +2,8 @@ melinoë staff
     staff, m, mel, melinoe, melinoë, mstaff, melstaff, mel staff, melinoe staff, witch, witchs, witches, witch's, witch staff, witchs staff, witches staff, witch's staff, descura
 melinoë blades
     blade, blades, m, mel, melinoe, melinoë, mblade, mblades, mel blade, mel blades, melinoe blade, melinoe blades, melinoë blade, sister, sister blade, sister blades, lim, oros, lim oros, lim and oros
-melinoë flames
-    flame, flames, m, mel, melinoe, melinoë, mflame, mflames, mel flame, mel flames, melinoe flame, melinoe flames, melinoë flame, umbral, umbral flame, umbral flames, ygnium
+melinoë torch
+    torch, m, mel, melinoe, melinoë, mtorch, mel torch, melinoe torch, umbral, umbral flame, umbral flames, ygnium
 melinoë axe
     ax, axe, m, mel, melinoe, melinoë, max, maxe, mel ax, mel axe, melinoe ax, melinoe axe, melinoë ax, moonstone, moonstone ax, moonstone axe, zorephet
 melinoë skull

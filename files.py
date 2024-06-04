@@ -7,11 +7,14 @@ aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
 prereqs_info = {}
-bpperks_info = {}
 definitions_info = {}
 enemies_info = {}
 aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
-god_cores = {'aphrodite': {}, 'zeus': {}, 'poseidon': {}}
+god_cores = {
+    'aphrodite': {}, 'apollo': {}, 'demeter': {},
+    'hephaestus': {}, 'hera': {}, 'hestia': {},
+    'poseidon': {}, 'zeus': {}
+}
 personal = {}
 commands_info = {}
 
@@ -19,13 +22,13 @@ for god in god_cores:
     with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
-            has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1')
+            has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime')
             if type[0] == 'x':
                 type = type[1:]
             if type != 'infusion':
                 *boon, element = boon.split(' ')
                 boon = ' '.join(boon)
-            if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'status', 'revenge', 'legendary'):
+            if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'infusion', 'legendary'):
                 if type == 'legendary':
                     legendary_info.append(boon)
                 if type not in god_cores[god]:
@@ -154,16 +157,6 @@ with open('./files/definitions.txt', 'r', encoding='utf8') as f:
             for alias in alias_list:
                 aliases['definition'][alias] = definition
         definitions_info[definition] = f.readline().strip()
-
-with open('./files/benefits_package.txt', 'r', encoding='utf8') as f:
-    while perk := f.readline().strip():
-        has_prereq = False
-        if perk[0] == 'x':
-            has_prereq = True
-            perk = perk[1:]
-        bpperks_info[perk] = {'desc': f.readline().strip(), 'icon': f.readline().strip()}
-        if has_prereq:
-            bpperks_info[perk]['req'] = f.readline().strip()
 
 with open('./files/help.txt', 'r', encoding='utf8') as f:
     while command := f.readline().strip():

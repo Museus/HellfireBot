@@ -1,0 +1,87 @@
+attack volcanic strike fire
+    Your **Attacks** occasionally create a blast that deals **200** damage in the area.
+    Blast Recharge Time: {s}
+    12 10 8 6
+    -2 -1
+    b/b2/Volcanic_Strike.png
+special volcanic flourish fire
+    Your **Specials** occasionally create a blast that deals **400** damage in the area.
+    Blast Recharge Time: {s}
+    20 18 16 14
+    -2 -1
+    e/eb/Volcanic_Flourish.png
+cast anvil ring earth
+    Your **Casts** deal damage **3** times in succession, but in a smaller area.
+    Cast Damage: {} *(every 1 Sec.)*
+    50 70 80 90
+    20 15 10 5
+    d/d4/Anvil_Ring.png
+sprint smithy sprint fire
+    After you **Sprint** for **1 Sec.**, use **10** **<:Magick:1241635310387990568>** to create a blast that deals damage to nearby foes.
+    Area Damage: {}
+    200 300 400 500
+    100 50 25 20
+    6/62/Smithy_Sprint.png
+gain fixed gain earth
+    You take **-10%** damage, and restore some **<:Magick:1241635310387990568>** whenever you take damage.
+    Magick Restored from Damage: {}
+    50 75 100 125
+    25 12.5 6.25 5
+    e/e9/Fixed_Gain.png
+t1 molten touch fire
+    Your **Attacks** and **Specials** deal bonus damage to **Armor**.
+    Damage vs. Armor: {+%}
+    20 30 40 50
+    20 10 5
+    4/46/Molten_Touch.png
+t1 heavy metal earth
+    Gain some **<:Armor:1243126987032363048>**. Foes' attacks cannot knock you away.
+    Armor Gained: {+}<:Armor:1243126987032363048>
+    50 75 100 125
+    0
+    2/23/Heavy_Metal.png
+t1 mint condition earth
+    At the start of each **Encounter**, you are briefly **Impervious**.
+    Impervious Duration: {s}
+    8 10 12 14
+    2 1
+    5/5e/Mint_Condition.png
+t1 uncanny fortitude earth
+    Gain bonus **<:MaxLife:1241662636995772436>** based on your **<:Magick:1241635310387990568>** limit.
+    Max Life from Magick: {+%}
+    20 30 40 50
+    0
+    a/a8/Uncanny_Fortitude.png
+revenge tough trade fire
+    If you take damage during your **Attacks** or **Specials**, they are stronger if they hit.
+    Bonus Weapon Damage: {+%}
+    100 125 150 175
+    25 15 10
+    b/b7/Tough_Trade.png
+prime trusty shield earth
+    After you enter a **Location**, **Prime** **30** **<:Magick:1241635310387990568>** to gain **Armor** until the next **Location**.
+    Starting Armor: {+}<:Armor:1243126987032363048>
+    10 15 20 25
+    5 3 2
+    3/32/Trusty_Shield.png
+t2 furnace blast fire
+    Your blast effects from **Hephaestus** also inflict **Vent** on foes.
+    Vent Damage: {}
+    300 400 500 600
+    50 30 20
+    1/10/Furnace_Blast.png
+    <unknown>
+infusion martial art
+    Your **Attack** and **Special** deal more damage for each **<:EarthEssence:1242225885390700604>** you have.
+    Damage per Earth Boon: {+%}
+    5
+    0
+    b/b7/Martial_Art.png
+    1(<:EarthEssence:1242225885390700604>)
+legendary fine tuning earth
+    Your **Aspect** of the **Nocturnal Arms** is even stronger.
+    Bonus Aspect Ranks: {+}
+    1
+    0
+    d/d3/Fine_Tuning.png
+    1(volcanic strike, volcanic flourish); 1(heavy metal, trusty shield, mint condition); 1(tough trade, molten touch, furnace blast)

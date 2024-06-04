@@ -12,7 +12,7 @@ special heaven flourish air
     6/6b/Heaven_Flourish.png
 cast storm ring air
     Your **Ω Cast** also causes lightning bolts to repeatedly strike **1** foe at a time.
-    Bolt Damage: {} *(every 0.5 Sec.)*
+    Bolt Damage: {} *(every 0.25 Sec.)*
     30 40 50 60
     10 5
     1/1e/Storm_Ring.png
@@ -28,30 +28,30 @@ gain ionic gain air
     4 6 8 10
     0
     5/52/Ionic_Gain.png
-t1 divine vengeance air
-    After you take damage, your foe is struck by lightning, and again **50%** of the time.
-    Bolt Damage: 100 *(up to {} times)*
-    2 3 4 5
-    1
-    b/ba/Divine_Vengeance.png
 t1 lightning lance air
     Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.
     Bolt Damage: {}
     50 70 90 110
     20 10 5
     c/c6/Lightning_Lance.png
-t1 static shock air
-    After you enter a **Location**, Prime 50 <:Magick:1241635310387990568> to make your strikes emit chain-lightning.
-    Lightning Damage: {}
-    10 15 20 25
-    5 3 1
-    7/70/Static_Shock.png
 t1 spirit surge air
     While you have no more than 10 <:Magick:1241635310387990568>, ***all*** foes are occasionally struck by lightning.
     Bolt Damage: {} *(every 5 Sec.)*
     60 75 90 105
-    15 8 6
+    15 7.5 6
     2/29/Spirit_Surge.png
+revenge divine vengeance air
+    After you take damage, your foe is struck by lightning, and again **50%** of the time.
+    Bolt Damage: 100 *(up to {} times)*
+    2 3 4 5
+    1
+    b/ba/Divine_Vengeance.png
+prime static shock air
+    After you enter a **Location**, **Prime** **50** **<:Magick:1241635310387990568>** to make your strikes emit chain-lightning.
+    Lightning Damage: {}
+    10 15 20 25
+    5 2.5 1.25 1
+    7/70/Static_Shock.png
 t2 double strike air
     Your lightning bolt effects may strike **1** more time.
     Bonus Strike Chance: {+%}
@@ -63,7 +63,7 @@ t2 toasting fork air
     Your **Blitz** effects deal damage even if they expire without being activated.
     Blitz Expiration Damage: {%}
     75 100 125 150
-    19 9 8
+    18.75 9.375 7.5
     c/c7/Toasting_Fork.png
     1(heaven strike, heaven flourish)
 t2 electric overload air
@@ -79,7 +79,7 @@ infusion air quality
     30 40 50 60
     0
     6/67/Air_Quality.png
-    2(air essence)
+    2(<:AirEssence:1242224825079169165>)
 legendary shocking loss air
     Most foes may be instantly destroyed as soon as they enter the **Encounter**.
     Instant Destruction Chance: {%}

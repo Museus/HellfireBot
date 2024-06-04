@@ -127,8 +127,8 @@ def boon_embed(input: [str]):
         if len(value) == 2:
             value[1] += float(info['levels'][pom])
         pom += 1
-    desc = parsing.parse_stat(info["desc"], value)[2:]
-    desc += parsing.parse_stat(info["stat"], value)
+    desc = parsing.parse_stat(info['desc'], value)[2:]
+    desc += parsing.parse_stat(info['stat'], value)
     if 'stat2' in info:
         value2 = misc.boon_value(info, rarity, True)
         pom = 0
@@ -138,14 +138,14 @@ def boon_embed(input: [str]):
             if len(value2) == 2:
                 value2[1] += float(info['levels2'][pom])
             pom += 1
-        desc += parsing.parse_stat(info["stat2"], value2)
+        desc += parsing.parse_stat(info['stat2'], value2)
     desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=title,
         description=desc,
         color=misc.boon_color(info, rarity)
     )
-    footer_text = ('Unpommable\n' if unpommable else '') + ('Unpurgeable' if unpurgeable else '')
+    footer_text = ('Unpommable\n' if unpommable else '') + ('Unpurgeable' if unpurgeable else '') + '⠀'
     icon_url = misc.to_link(misc.element_icons[info['element']]) if 'element' in info else ''
     embed.set_footer(text=footer_text, icon_url=icon_url)
     embed.set_thumbnail(url=misc.to_link(info['icon']))
@@ -308,11 +308,11 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
         return embed, name
     else:
         name = name[0]
-    level = min(max(level, 1), 5)
+    level = min(max(level, 1), 6)
     info = files.aspects_info[name]
     value = [float(info['levels'][level - 1])]
     embed = discord.Embed(
-        title=f'**Aspect of {misc.capwords(name)}** (Rank {("I", "II", "III", "IV", "V")[level - 1]})',
+        title=f'**Aspect of {misc.capwords(name)}** (Rank {("I", "II", "III", "IV", "V", "VI")[level - 1]})',
         description=info["desc"] + parsing.parse_stat(info["stat"], value, False),
         color=misc.rarity_embed_colors[level - 1]
     )
@@ -448,13 +448,13 @@ def bpperk_embed(input: [str]) -> discord.Embed or None:
 def define_embed(text: str):
     used = set()
     for definition in files.definitions_info:
-        if misc.capwords(definition) in text and definition not in used:
+        if f'**{misc.capwords(definition)}**' in text and definition not in used:
             used.add(definition)
-            text = text.replace(misc.capwords(definition), '')
+            text = text.replace(f'**{misc.capwords(definition)}**', '')
     for definition in files.aliases['definition']:
-        if misc.capwords(definition) in text and files.aliases['definition'][definition] not in used:
+        if f'**{misc.capwords(definition)}**' in text and files.aliases['definition'][definition] not in used:
             used.add(files.aliases['definition'][definition])
-            text = text.replace(misc.capwords(definition), '')
+            text = text.replace(f'**{misc.capwords(definition)}**', '')
     embed = discord.Embed(
         title='List of **Definitions**'
     )

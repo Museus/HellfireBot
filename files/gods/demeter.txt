@@ -1,0 +1,88 @@
+attack ice strike water
+    Your **Attacks** deal more damage and inflict **Freeze**.
+    Attack Damage: {+%}
+    30 45 60 75
+    15 10 5
+    d/d1/Ice_Strike.png
+special ice flourish water
+    Your **Specials** deal more damage and inflict *Freeze**.
+    Special Damage: {+%}
+    40 60 80 100
+    20 10 5
+    f/ff/Ice_Flourish.png
+cast arctic ring water
+    Your **Casts** repeatedly deal damage in the area and inflict **Freeze**.
+    Cast Damage: {} *(every 0.5 Sec.)*
+    10 15 20 25
+    5 3 2
+    c/c3/Arctic_Ring.png
+sprint frigid sprint water
+    Your **Sprint** forms a **Cyclone** around you that lingers after you stop.
+    Cyclone Damage: {} *(every 0.25 Sec.)*
+    4 6 8 10
+    2 1
+    a/af/Frigid_Sprint.png
+gain tranquil gain earth
+    After remaining inactive for **1 Sec.**, rapidly restore **<:Magick:1241635310387990568>** until you act.
+    Magick Restoration: {+} *(every 1 Sec.)*
+    25 35 45 55
+    10 5 3 2 1
+    9/9e/Tranquil_Gain.png
+xt1 rare crop earth
+    Your **Boons** become **Common**, then gain **Rarity** every **3 Encounters**.
+    Random Boons Affected: {}
+    1 2 3 4
+    0
+    1/10/Rare_Crop.png
+    1(any upgradeable boon)
+t1 local climate earth
+    Your **Ω Cast** deals bonus damage and follows you, even as you start to **Channel** it.
+    Cast Damage: {+%}
+    20 30 40 50
+    10 5
+    7/71/Local_Climate.png
+t1 gale force water
+    Your **Casts** also create a **Cyclone** at the binding circle.
+    Cyclone Damage: {} *(every 0.25 Sec.)*
+    4 8 12 16
+    2.4 1.6 0.8
+    7/70/Gale_Force.png
+t1 plentiful forage earth
+    Whenever you gather plants, seeds, or mushrooms, gain **<:MaxLife:1241662636995772436>**. Receive **1** **<:MysterySeed:1245282797107548222>** now.
+    Max Life from Gathering: {+}
+    5 8 10 13
+    3 1 1 0
+    5/53/Plentiful_Forage.png
+t1 weed killer earth
+    Your **Ω Attack** deals more damage, but uses **+10** **<:Magick:1241635310387990568>**.
+    Omega Attack Damage: {+%}
+    50 75 100 125
+    25 20 16 12.8 10.24 8.192 6.5536 5.24288 5
+    e/ef/Weed_Killer.png
+prime winter coat earth
+    After you enter a **Location**, **Prime** a barrier that absorbs **1** instance of damage.
+    Magick Primed: {}
+    20 15 10 5
+    -3 -2 -1 0
+    7/7e/Winter_Coat.png
+t2 cold storage water
+    Your **Freeze** effects last longer.
+    Freeze Duration: {+s}
+    2 3 4 5
+    1 0.5 0.25 0.2
+    5/58/Cold_Storage.png
+    1(ice strike, ice flourish)
+infusion coarse grit
+    While you have at least **6** **<:EarthEssence:1242225885390700604>**, you cannot take more damage per hit than the limit.
+    Max Damage per Hit: {}
+    15
+    0
+    b/b7/Coarse_Grit.png
+    1(<:EarthEssence:1242225885390700604>)
+legendary winter harvest earth
+    **Freeze**-afflicted foes shatter at **10%** **<:Life:1241660063513448499>**, dealing damage in the area.
+    Shatter Area Damage: {}
+    100
+    0
+    5/50/Winter_Harvest.png
+    1(ice strike, ice flourish); 1(plentiful forage, winter coat); 1(weed killer, cold storage)

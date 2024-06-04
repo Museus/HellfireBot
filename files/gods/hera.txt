@@ -1,0 +1,89 @@
+attack sworn strike earth
+    Your **Attacks** deal more damage and inflict **Hitch**.
+    Attack Damage: {+%}
+    50 60 70 80
+    12.5 6.25
+    b/b0/Sworn_Strike.png
+special sworn flourish earth
+    Your **Specials** deal more damage and inflict **Hitch**.
+    Special Damage: {+%}
+    60 70 80 90
+    19.8 10.2
+    4/46/Sworn_Flourish.png
+cast engagement ring earth
+    Your **Casts** last **200%** longer and deal damage to *every* foe that joins the **Encounter**.
+    On-Spawn Damage: {}
+    70 100 130 145
+    30 15 10
+    c/c7/Engagement_Ring.png
+sprint nexus sprint earth
+    Your **Sprint** inflicts **Hitch** on nearby foes, which spreads to other foes near them.
+    Additional Foes Hitched: {+}
+    1 2 3 4
+    1
+    4/4b/Nexus_Sprint.png
+gain born gain earth
+    Whenever you run out of **<:Magick:1241635310387990568>**, **Prime** to restore *all* **<:Magick:1241635310387990568>** up to the reduced limit.
+    Magick Primed: {}
+    10 8 6 4
+    -2 -1 0
+    c/c5/Born_Gain.png
+t1 family trade earth
+    Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
+    Bonus <:Pom:1247012092247281664> Lv.: {+}
+    2 3 4 5
+    0
+    f/f5/Family_Trade.png
+xt1 bridal glow earth
+    Your **Boons** become **Heroic**, then lose **Rarity** every {} Encounters.
+    Random Boons Affected: **2**
+    5 7 8 9
+    0
+    a/a9/Bridal_Glow.png
+    2(any upgradeable boon)
+t1 keen intuition earth
+    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1241635310387990568>**, they deal more damage.
+    Omega Damage: {+%}
+    30 45 60 75
+    15 7.5 3.75 3
+    a/a6/Keen_Intuition.png
+t1 uncommon grace earth
+    While none of your other **Boons** are **Common**, deal more damage.
+    Common-Less Bonus Damage: {+%}
+    10 15 20 25
+    5 2.5 1.25 1
+    b/b8/Uncommon_Grace.png
+revenge nasty comeback earth
+    After you take damage, inflict your foes with **Hitch** and deal damage in greater measure.
+    Damage Reflected: {%}
+    500 750 1000 1250
+    150 125 120 110 105
+    9/9a/Nasty_Comeback.png
+t2 hereditary bane earth
+    Your **Hitch** effects deal more damage and last **+5 Sec.**
+    Hitch Damage: {+%}
+    10 15 20 25
+    10
+    9/9a/Hereditary_Bane.png
+    1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
+t2 dying wish earth
+    Whenever **Hitch**-afflicted foes are slain, damage all other **Hitch**-afflicted foes.
+    Hitch Death Damage: {}
+    40 60 80 100
+    20 16 12.8 10.24 8.192 6.5536 5.24288 4.194304 4
+    a/ab/Dying_Wish.png
+    1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
+infusion proper upbringing
+    While you have at least **3** **<:EarthEssence:1242225885390700604>**, *all* your **Common** **Boons** gain **Rarity**.
+    Improved Rarity: **Rare**
+    0
+    0
+    a/a1/Proper_Upbringing.png
+    1(<:EarthEssence:1242225885390700604>)
+legendary brave face earth
+    Automatically use **<:Magick:1241635310387990568>** to resist up to **50%** of any damage.
+    Magick Cost per Damage Point: {}<:Magick:1241635310387990568>
+    5
+    0
+    4/47/Brave_Face.png
+    1(sworn strike, sworn flourish); 1(born gain, keep intuition); 1(hereditary bane, dying wish)

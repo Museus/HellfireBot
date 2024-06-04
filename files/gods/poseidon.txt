@@ -2,13 +2,13 @@ attack wave strike water
     Your **Attacks** hit foes with a splash that knocks other foes away.
     Splash Damage: {}
     15 20 25 30
-    5 3 2.5
+    5 2.5
     1/18/Wave_Strike.png
 special wave flourish water
     Your **Specials** hit foes with a splash that knocks other foes away.
     Splash Damage: {}
     20 30 40 50
-    10 8 7 5
+    10 8 6.4 5.12 4.096 4
     6/64/Wave_Flourish.png
 cast geyser ring water
     Your **Ω Cast** immediately detonates, dealing damage and knocking foes away.
@@ -32,20 +32,14 @@ t1 double up water
     Whenever you claim a **Minor Find** or similar resource reward, a copy may appear.
     Double Reward Chance: {%}
     20 25 30 35
-    5 3 2
+    5 2.5 2
     2/25/Double_Up.png
 t1 hydraulic might water
     At the start of each **Encounter**, your **Attacks** and **Specials** are stronger for **10 Sec.**
     Initial Damage Bonus: {+%}
     100 133 166 200
-    23 12 10
+    23 11.5 10
     b/b4/Hydraulic_Might.png
-t1 flood control water
-    After you enter a **Location**, **Prime** **30** **<:Magick:1241635310387990568> Magick** to reduce any damage you would take.
-    Damage Reduction per Hit: {-}
-    2 3 4 5
-    0
-    4/45/Flood_Control.png
 t1 sunken treasure water
     Gain **<:GoldenCrowns:1243132146273751200>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
     Gold Received: {+}
@@ -58,31 +52,37 @@ t1 ocean's bounty water
     50 75 100 125
     0
     a/a7/Ocean%27s_Bounty.png
+prime flood control water
+    After you enter a **Location**, **Prime** **30** **<:Magick:1241635310387990568> Magick** to reduce any damage you would take.
+    Damage Reduction per Hit: {-}
+    2 3 4 5
+    0
+    4/45/Flood_Control.png
 t2 slippery slope water
     Your splash effects from **Poseidon** also inflict **Slip** on foes.
     Slip Bonus Damage: {+%}
     5 10 15 20
-    4 2 1 0
+    4 2 1 0.5
     a/a8/Slippery_Slope.png
-    unknown
+    1(wave strike, wave flourish)
 t2 crashing wave water
     Whenever your knock-away effects slam foes into barrier, create a blast in the area.
     Blast Damage: {}
-    50 73 95 123
-    25 13 6 5
-
-    unknown
+    50 65-75 90-100 115-125
+    25 12.5 6.25 5
+    8/8a/Crashing_Wave.png
+    1(wave strike, wave flourish, geyser ring, breaker sprint)
 infusion water fitness
     While you have at least **4** **<:WaterEssence:1242225888519520377>**, gain **<:MaxLife:1241662636995772436>**.
     Max Life: {+}
     100
     0
-
-    unknown
+    f/fc/Water_Fitness.png
+    1(<:WaterEssence:1242225888519520377>)
 legendary king tide water
     Your splash effects from **Poseidon** are larger and deal bonus damage to **Guardians**.
     Splash Damage vs. Guardians: {+%}
     150
     0
-
-    unknown
+    5/52/King_Tide.png
+    1(wave strike, wave flourish); 1(slippery slope); 1(crashing wave)

@@ -2,22 +2,22 @@ weapon
     Press or hold to use your main weapon in a variety of ways.
 attacks
     Your weapon's main attack. Hold to use <:Magick:1241635310387990568> for a stronger effect.
-attack
-    Your weapon's main attack.
 Ω attack
     Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued attack.
+attack
+    Your weapon's main attack.
 specials
     Your weapon's special move. Hold to use <:Magick:1241635310387990568> for a stronger effect.
-special
-    Your weapon's special move.
 Ω special
     Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued special move.
+special
+    Your weapon's special move.
 casts
     A binding spell. Hold to use <:Magick:1241635310387990568> for the damaging **Ω** version.
-cast
-    A binding spell that ensnares foes and can gain other properties.
 Ω cast
     Hold to use <:Magick:1241635310387990568> for a binding spell that damages foes when it expires.
+cast
+    A binding spell that ensnares foes and can gain other properties.
 dash
     Rush forward a short distance, avoiding any damage.
 sprint
@@ -25,11 +25,13 @@ sprint
 Ω moves
     Press-and-hold **Attack**, **Special**, or **Cast** to imbue them with <:Magick:1241635310387990568> **Magick**.
 power
-    An increase to the base amount of damage you inflict. Ohter bonuses multiply by this.
+    An increase to the base amount of damage you inflict. Other bonuses multiply by this.
 channel
     Press-and-hold to imbue your move with <:Magick:1241635310387990568> **Magick** to prepare a powerful **Ω** effect.
 <:Magick:1241635310387990568> magick, <:Magick:1241635310387990568>, magick
     Required for powerful **Ω Moves**.
+serenity
+    Your **Ω Moves** are **15%** faster and you rapidly restore <:Magick:1241635310387990568>.
 prime
     A passive reduction to your <:Magick:1241635310387990568> limit until the next **Location**.
 hex
@@ -42,7 +44,7 @@ encounter, encounters
     The dangerous kind; you must withstand your foes before you can proceed.
 region
     A stretch of likely-dangerous **Locations**, often with a **Guardian** waiting at the end.
-guardian
+guardians, guardian
     Mighty foes identifiable by lengthy life bars with their names on them.
 <:Life:1241660063513448499> life, <:Life:1241660063513448499>
     How much damage you or your foes can withstand.
@@ -50,7 +52,7 @@ guardian
     A means of recovering some **Life** after taking damage.
 <:MaxLife:1241662636995772436> max life, <:MaxLife:1241662636995772436>
     An increase to your **Life** limit, restoring you by the amount added.
-max magick
+<:MaxMagick:1245289397570502719> max magick, <:MaxMagick:1245289397570502719>
     An increase to your **Magick** limit.
 impervious
     A state in which you are completely invulnerable to damage.
@@ -83,9 +85,9 @@ rarify
 fountains
     Drinking from these fixtures restores some <:Life:1241660063513448499> to the living.
 minor find
-    Rewards that grant resources, such as <:Ashes:1242227789059457055> and <:Psyche:1242227790879784983>. Found in locations marked with <minor find>.
+    Rewards that grant resources, such as <:Ashes:1242227789059457055> and <:Psyche:1242227790879784983>. Found in locations marked with <:MinorFind:1245297914256031785>.
 major find
-    Rewards that grant power, such as **Boons**. Found in locations marked with <major find>.
+    Rewards that grant power, such as **Boons**. Found in locations marked with <:MajorFind:1245297912859332658>.
 <:Armor:1243126987032363048> armor, <:Armor:1243126987032363048>
     Any damage you sustain reduces your **Armor** before reducing your **Life**.
 dodge
@@ -94,9 +96,9 @@ parry
     Prevent damage from most types of direct attacks. Can be repeated after **15 Sec.**
 riposte
     You are **Impervious** for **1 Sec.** Your next **9** strikes have **+50%** **Critical** chance.
-glory
+<:Glory:1247336676548804609> glory
     Makes your **Ω Special** last up to **+5 Sec.**, firing continuously while you have control.
-shells
+<:Shell:1245300154353979442> shells, <:Shell:1245300154353979442> shell
     Ammunition for your **Attacks**. Retrieve from the field to re-use.
 death defiance
     When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1241635310387990568>. Limited uses per night.
@@ -105,7 +107,7 @@ death defiance
 curse
     A temporary debilitating effect inflicted by the Olympian gods.
 awakening
-    Cards that use **0** <grasp> and auto-activate, but only if their condition is met.
+    Cards that use **0** <:Grasp:1245298488607244359> and auto-activate, but only if their condition is met.
 <:BlueHeart:1241665623453601803> barrier, <:BlueHeart:1241665623453601803>
     Negates the next instance of damage, even if it would have been an awful lot.
 revenant
@@ -125,9 +127,9 @@ red onion
 weak
     *Curse:* Afflicted foes deal at least **10%** less damage. Lasts **3 Sec.**
 heartthrob
-   An explosive projectile that revolves around you. Expires after **20 Sec.**
+    An explosive projectile that revolves around you. Expires after **20 Sec.**
 heartthrobs
-   Explosive projectiles that revolve around you. Expire after **20 Sec.**
+    Explosive projectiles that revolve around you. Expire after **20 Sec.**
 lone shades
     Lingering spirits found in some **Encounters**, wallowing in search of meaning.
 charm
@@ -138,7 +140,7 @@ freeze
     *Curse:* Afflicted foes are stopped for **2 Sec.** Can be re-applied after **10 Sec.**
 cyclone
     A vortex that makes foes **20%** slower and their ranged shots **60%** slower. Lasts **3 Sec.**
-mystery seeds, <mystery seed>
+<:MysterySeed:1245282797107548222> mystery seeds, mystery seeds, <:MysterySeed:1245282797107548222>
     May grow to become one of several different kinds of valuable plants.
 keepsakes
     Artifacts of power symbolizing the bond between two strong souls.
@@ -161,7 +163,7 @@ steam
 blitz
     *Curse:* After taking **120** damage, afflicted foes get struck by lightning. Lasts **3 Sec.**
 spirit bubble
-    Restores **20** **<:Magick:1241635310387990568>** when you touch it. Expires when used, or after **30 Sec.**
+    Restores **20** <:Magick:1241635310387990568> when you touch it. Expires when used, or after **30 Sec.**
 slip
     *Curse:* Afflicted foes take more damage and are knocked farther away. Lasts **3 Sec.**
 marked
@@ -170,6 +172,10 @@ gathering tools
     Used to harvest resources from special deposits. You can carry one at a time.
 morph
     *Curse:* Afflicted foes turn into harmless critters. Lasts **8 Sec.**
+outfit
+    A special look and bonus that lasts till your <:Armor:1243126987032363048> **Armor** is depleted from taking damage.
+<:StyxKiss:1243444516019507220> kiss of styx, <:StyxKiss:1243444516019507220>
+    Replenish **1** use of death defiance now.
 chronos
     The Titan of Time usurped the House of Hades and now threatens Olympus.
 dark
@@ -180,3 +186,29 @@ animal familiar
     Loyal beast assistant-guardians under your protection. You may travel with **1** at a time.
 vows
     Invocations of various adverse nightly effects from the **Oath of the Unseen**.
+<RandGod:1244441161150500864> mystery boon, <RandGod:1244441161150500864>
+    Receive a **Boon** from one of the Olympians... *but who?*
+attack boon
+    A blessing that strongly influences your **Attacks**.
+special boon
+    A blessing that strongly influences your **Specials**.
+dash boon
+    A blessing that strongly influences your **Dash**.
+well of charon
+    Underworld stockpiles containing several useful items you can purchase using <:GoldenCrowns:1243132146273751200>.
+charon
+    The feared Boatman of the River Styx serves the Underworld in his own way.
+chaos gate
+    A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
+prioritize
+    Select this if you wish to use it more than your other **Gathering Tools** this night.
+outcroppings
+    Places where you may attempt to use the **Crescent Pick** to retrieve something.
+lost shades
+    Lingering spirits you may send to **Crossroads** using the **Tablet of Peace**.
+digging spots
+    Places where you may attempt to use the **Silver Spade** to retrieve something.
+fishing points
+    Places where you may attempt to use the **Rod of Fishing** to retrieve something.
+surrounding aura
+    An environmental condition that may affect you in some way.

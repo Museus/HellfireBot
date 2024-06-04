@@ -26,20 +26,14 @@ gain glamour gain air
     In each **Encounter**, **1** foe is always **Weak**. You gradually restore **<:Magick:1241635310387990568>** near **Weak** foes.
     Magick Restoration: {} *(every 1 Sec.)*
     6 8 10 12
-    2 1 1 0.6
+    1.98 0.99 0.6
     0/0e/Glamour_Gain.png
 t1 healthy rebound water
     Whenever you exit a **Location**, restore **100%** **<:Life:1241660063513448499>** if you have not lost too much.
     Min Life Required: {%}
     80 70 60 50
-    -10 -5 -3 -2
+    -10 -5 -2.5 -1.25 -0.625 -0.3125 -0.2
     a/a1/Healthy_Rebound.png
-t1 secret crush air
-    After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to add **Power** to your **Attack**.
-    Attack Power: {+}
-    5 7 9 11
-    0
-    0/00/Secret_Crush.png
 t1 life affirmation air
     Any **<:MaxLife:1241662636995772436>** rewards you find have a greater effect.
     Bonus Life Gain: {+%}
@@ -50,35 +44,41 @@ t1 shameless attitude air
     While you have at least **80%** **<:Life:1241660063513448499>**, you deal more damage.
     High-Life Bonus Damage: {+%}
     10 15 20 25
-    5 4 3 3 2 2 1
+    5 4 3.2 2.56 2.048 1.6384 1.31072 1.048576 1
     a/a3/Shameless_Attitude.png
 t1 heart breaker water
     Whenever you use **30** **<:Magick:1241635310387990568>**, create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120 180 240 300
-    60 48 38 32 24 19 15 12
+    60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
     e/ef/Heart_Breaker.png
+prime secret crush air
+    After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to add **Power** to your **Attack**.
+    Attack Power: {+}
+    5 7 9 11
+    0
+    0/00/Secret_Crush.png
 t2 broken resolve water
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
     10 12 14 16
     2 1
     1/1b/Broken_Resolve.png
-    unknown
+    <unknown>
 t2 sweet surrender water
     **Weak**-afflicted foes take more damage.
     Damage vs. Weak: {+%}
     10 15 20 25
-    5 3 1
+    5 2.5 1.25 1
     a/a6/Sweet_Surrender.png
-    unknown
+    <unknown>
 infusion wispy wiles
     While you have at least **4** **<:AirEssence:1242224825079169165>**, you may **Dodge** any damage.
     Dodge Chance: {+%}
     15
     0
     a/a4/Wispy_Wiles.png
-    unknown
+    1(<:AirEssence:1242224825079169165>)
 legendary ecstatic obsession air
     During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
     Foes Required: {} *(or more)*

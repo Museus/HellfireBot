@@ -1,0 +1,91 @@
+attack flame strike fire
+    Your **Attacks** inflict **Scorch**.
+    Scorch Damage: {}
+    20 25 30 35
+    5 4 3 2 1
+    e/e5/Flame_Strike.png
+special flame flourish fire
+    Your **Specials** inflict **Scorch**.
+    Scorch Damage: {}
+    15 20 25 30
+    5 4 3 2 1
+    8/83/Flame_Flourish.png
+cast smolder ring fire
+    Your **Casts** repeatedly inflict **Scorch** on foes.
+    Scorch Damage: {} *(every 1 Sec.)*
+    30 45 60 75
+    15 10 5
+    c/c7/Smolder_Ring.png
+sprint soot sprint fire
+    Your **Sprint** destroys most ranged shots near you, and inflicts **Scorch** on foes that fired.
+    Scorch Damage per Projectile: {}
+    2 4 6 8
+    2 1
+    c/c4/Soot_Sprint.png
+gain hearth gain fire
+    Rapidly restore **<:Magick:1241635310387990568>**, but you have **-20%** **<:MaxLife:1241662636995772436>**.
+    Magick Restoration: {+} *(every 1 Sec.)*
+    7 10 13 16
+    0
+    8/85/Hearth_Gain.png
+xt1 burnt offering fire
+    Gain **<:MaxLife:1241662636995772436>** and **<:Magick:1241635310387990568>**, but give up **1** **Boon** selected by **Hestia**.
+    Max Life & Magick: {+}
+    50 60 70 80
+    0
+    7/74/Burnt_Offering.png
+    1(any boon)
+t1 glowing coal fire
+    Hold **Cast** to aim a fiery projectile that explodes on impact. The binding circle forms there.
+    Blast Damage: {}
+    50 70 90 110
+    20 15 10
+    8/85/Glowing_Coal.png
+t1 controlled burn fire
+    Your **Ω Special** also launches a fiery projectile, but uses **+10** **<:Magick:1241635310387990568>**.
+    Blast Damage: {}
+    80 120 160 200
+    40 20 16 8
+    0/05/Controlled_Burn.png
+t2 spontaneous combustion fire
+    Your **Ω Special** inflicts bonus **Scorch** if foes are unafflicted.
+    Scorch Damage: {}
+    60 90 120 150
+    30 15 7.5 6
+    9/9b/Spontaneous_Combustion.png
+    1(flame flourish)
+t2 natural gas fire
+    Whenever **Scorch**-afflicted foes are slain, they damage nearby foes.
+    Blast Damage: {}
+    60 90 120 150
+    15 7.5 6
+    1/11/Natural_Gas.png
+    1(flame strike, flame flourish, smolder ring, spontaneous combustion)
+t2 fire extinguisher fire
+    Foes with at least **300** **Scorch** take a burst of damage that consumes the effect.
+    Damage from Scorch: {%}
+    50 62 75 87
+    12.5 6.25 5
+    0/0a/Fire_Extinguisher.png
+    1(flame strike, flame flourish, smolder ring, spontaneous combustion)
+t2 flammable coating fire
+    Your **Scorch** effects deal bonus damage to **Armor**.
+    Scorch Damage vs. Armor: {+%}
+    100 150 200 250
+    50 25 12.5 10
+    thumb/9/97/Flammable_Coating.png/100px-Flammable_Coating.png
+    1(flame strike, flame flourish, smolder ring, spontaneous combustion)
+infusion slow cooker
+    Your **Attacks** and **Specials** gain **Power** for each **<:FireEssence:1242225886938533888>** you have.
+    Power per Fire Boon: {+}
+    2
+    0
+    d/db/Slow_Cooker.png
+    1(<:FireEssence:1242225886938533888>)
+legendary pyro technique fire
+    Your **Scorch** effects deal damage faster.
+    Scorch Damage Rate: {+%}
+    100
+    0
+    0/0b/Pyro_Technique.png
+    1(flame strike, flame flourish, smolder ring, spontaneous combustion); 1(natural gas, flammable coating); 1(glowing coal, controlled burn)

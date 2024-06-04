@@ -12,10 +12,15 @@ import parsing
 
 rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
-god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC, 'artemis': 0xD2FC61,
-              'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC, 'apollo': 0xFF914F, 'hestia': 0x7B1635,
-              'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF,
-              'charon': 0x5500B9, 'keepsake': 0x465B75}
+# god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC, 'artemis': 0xD2FC61,
+#               'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC, 'apollo': 0xFF914F, 'hestia': 0x7B1635,
+#               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF,
+#               'charon': 0x5500B9, 'keepsake': 0x465B75}
+god_colors = {
+    'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
+    'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
+    'poseidon': 0x59D5FE, 'zeus': 0xFFF254
+}
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
     'apollo': 'thumb/5/55/Apollo_Boons.png/60px-Apollo_Boons.png',
@@ -100,6 +105,8 @@ def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
 def boon_color(info: {str: str}, rarity: str) -> int:
     if info['type'] == 'legendary':
         return 0xFFD511
+    if info['type'] == 'infusion':
+        return 0xF849F8
     if info['type'] == 'duo':
         return 0xD1FF18
     if info['god'] == 'hades':

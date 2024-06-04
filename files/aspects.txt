@@ -1,90 +1,90 @@
 staff melinoë staff
     You **Channel** your **Ω Moves** faster.
     Omega Channel Speed: {+%}
-    0 15 20 25 30
+    0 15 20 25 30 35
     A waxing crescent moon; the promise of power, the responsibility to ready oneself.
-    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+    thumb/7/72/Staff-Melinoe.png/80px-Staff-Melinoe.png
 staff circe
     After landing **21** **Attacks** or **Specials**, gain **Serenity**.
     Serenity Duration: {s}
-    6 7 8 9 10
+    6 7 8 9 10 11
     A high priestess of the Unseen once used the staff to bring abount necessary change.
-    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+    thumb/0/0e/Staff-Circe.png/80px-Staff-Circe.png
 staff momus
     While you have no more than **50%** <health>, absorb your **Ω Special** blast to restore **5** <health>.
     Special & Omega Special Powwer: {+}
-    10 15 20 25 30
+    10 15 20 25 30 35
     Not even ever-patient Night herself spared much time for his insolence.
-    1/13/DescuraWitchStaff.png/revision/latest?cb=20240517105752
+    thumb/6/69/Staff-Momus.png/80px-Staff-Momus.png
 blades melinoë blades
     Your **Attacks** and **Specials** deal more damage by striking foes from behind.
     Backstab Damage: {+%}
-    0 10 20 30 40
+    0 10 20 30 40 50
     As there are many gardens to be cultivated, such a task requires precision instruments.
-    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
+    thumb/2/24/Blades-Melinoe.png/80px-Blades-Melinoe.png
 blades artemis
     While you **Channel** your **Ω Attack**, you occasionally **Parry**, then **Riposte** right after.
     Faster Omega Attack: {+%}
-    20 30 40 50 60
+    20 30 40 50 60 70
     A flash of silver; whether the Huntress or the Moon, none can attest.
-    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
+    thumb/2/2b/Blades-Artemis.png/80px-Blades-Artemis.png
 blades pan
     Your **Specials** seek foes in your **Casts**, and fire more blades after you **Channel**.
     Omega Bonus Blades: {+}
-    1 2 3 4 5
+    1 2 3 4 5 6
     The natural-grown horn can pierce as readily as a well-crafted blade.
-    8/87/LimOrosSisterBlades.png/revision/latest?cb=20240517105850
-flames melinoë flames
+    thumb/4/42/Blades-Pan.png/80px-Blades-Pan.png
+torch melinoë flames
     Flames from your **Ω Special** burn longer before expiring.
     Omega Special Duration: {+s}
-    0 1 2 3 4
+    0 1 1.5 2 2.5 3
     No single light can illuminate the many crossroads ahead; thus there are two.
-    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
-flames moros
+    thumb/e/e0/Torch-Melinoe.png/80px-Torch-Melinoe.png
+torch moros
     Your **Attacks** linger for **6 Sec.**, and explode in a blast if struck by your **Specials**.
     Blast Damage: {+%}
-    0 10 20 30 40
+    0 15 30 45 60 75
     Feared and hated Doom lingers like a sword about to fall; even his time shall come.
-    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
-flames eos
+    thumb/9/9c/Torch-Moros.png/80px-Torch-Moros.png
+torch eos
     Your **Attacks** gro bigger and stronger over **4 Sec.**, and return whenever you **Sprint**.
     Full-Grown Damage: {+%}
-    40 50 60 70 80
+    40 50 60 70 80 90
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
-    2/29/YgniumUmbralFlames.png/revision/latest?cb=20240517105944
+    thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
 axe melinoë axe
     You recover faster after using your **Attacks** and **Specials**.
     Recovery Speed: {+%}
-    0 10 20 30 40
+    0 10 15 20 25 30
     Its tin blade can split even the light of the Moon, yet itself can never be separated.
-    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+    thumb/2/21/Axe-Melinoe.png/80px-Axe-Melinoe.png
 axe charon
     Your **Cast** lasts **+3 Sec.**, and erupts like your **Ω Cast** if struck by your **Ω Special**.
     Cleave-Cast Size and Damage: {+%}
-    10 20 30 40 50
+    10 15 20 25 30 35
     To navigate the rivers of the Underworld is to possess extraordinary poise and strength.
-    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+    thumb/5/5e/Axe-Charon.png/80px-Axe-Charon.png
 axe thanatos
     Whenever you hit with **Ω Moves**, gain **+1% Critical** chance until you take damage.
     Max Critical Chance: {+%}
-    4 5 6 7 8
+    4 8 12 16 20 24
     Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
-    e/e8/ZorephetMoonstoneAxe.png/revision/latest?cb=20240517110014
+    thumb/6/63/Axe-Thanatos.png/80px-Axe-Thanatos.png
 skull melinoë skull
-    Your **Attacks** have more **Power** for each <ammo> **Shell** fired and not yet retrieved.
+    Your **Attacks** have more **Power** for each **<:Shell:1245300154353979442> Shell** fired and not yet retrieved.
     Power per Spent Shell: {+}
-    0 5 10 15 20
+    0 5 10 15 20 25
     The will of Night is never to be chronicled, but witnessed by the dead and the shadow.
-    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png
+    thumb/7/7f/Skull-Melinoe.png/80px-Skull-Melinoe.png
 skull medea
     Your **Attack** stays within reach, and explodes in a large area on impact or after **3 Sec.**
     Attack & Special Damage: {+%}
-    20 30 40 50 60
+    20 30 40 50 60 70
     She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
-    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png
+    thumb/4/4b/Skull-Medea.png/80px-Skull-Medea.png
 skull persephone
-    Any damage you deal generates <glory> **Glory**, which enhances your **Ω Special**.
+    Any damage you deal generates **<:Glory:1247336676548804609> Glory**, which enhances your **Ω Special**.
     Omega Damage: {+%}
-    10 20 30 40 50
+    10 15 20 25 30 40
     Life and death, forever embodied in a Queen both splendorous and dark at once.
-    thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png
+    thumb/3/32/Skull-Persephone.png/80px-Skull-Persephone.png

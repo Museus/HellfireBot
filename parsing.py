@@ -101,17 +101,23 @@ def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
     except IndexError:
         return f'\n▸{stat_line}' if stat_line else ''
     rounded = rounded and 's' not in replace and 'x' not in replace
+    round_by = 0 if rounded else 1
     if len(value) == 2:
-        if rounded:
-            value = f'{int(value[0] + 0.5)} - {int(value[1] + 0.5)}'
-        else:
-            value = f'{round(value[0], 2)} - {round(value[1], 2)}'
-    elif rounded:
-        value = int(value[0] + 0.5)
+        value = f'{round(value[0], round_by)} - {round(value[1], round_by)}'
+        # if rounded:
+        #     value = f'{round(value[0])} - {round(value[1])}'
+        # else:
+        #     value = f'{round(value[0], 2)} - {round(value[1], 2)}'
     else:
-        value = round(value[0], 2)
+        value = round(value[0], round_by)
         if int(value) == value:
             value = int(value)
+    # elif rounded:
+    #     value = round(value[0])
+    # else:
+    #     value = round(value[0], 2)
+    #     if int(value) == value:
+    #         value = int(value)
     if '+' in replace:
         value = f'+{value}'
     if '-' in replace:

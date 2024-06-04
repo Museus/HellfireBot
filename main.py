@@ -161,7 +161,7 @@ async def hammer(ctx, *args):
     await misc.reply(ctx, embed=embed)
 
 
-@client.command(aliases=['g'])
+@client.command(aliases=['g', 'gods'])
 async def god(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)

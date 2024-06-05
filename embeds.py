@@ -124,6 +124,8 @@ def boon_embed(input: [str]):
     for i in range(level - 1):
         pom = min(pom, len(info['levels']) - 1)
         value[0] += float(info['levels'][pom])
+        if name in ('volcanic strike', 'volcanic flourish'):
+            value[0] = max(value[0], 2)
         if len(value) == 2:
             value[1] += float(info['levels'][pom])
         pom += 1
@@ -189,6 +191,8 @@ def pomscaling_embed(input: [str]) -> (discord.Embed, str):
             rarity_damages[rarity].append(value)
             new_value = values[rarity].copy()
             new_value[0] += float(info['levels'][pom])
+            if name in ('volcanic strike', 'volcanic flourish'):
+                new_value[0] = max(new_value[0], 2)
             if len(values[rarity]) == 2:
                 new_value[1] += float(info['levels'][pom])
             values[rarity] = new_value
@@ -313,7 +317,7 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
     value = [float(info['levels'][level - 1])]
     embed = discord.Embed(
         title=f'**Aspect of {misc.capwords(name)}** (Rank {("I", "II", "III", "IV", "V", "VI")[level - 1]})',
-        description=info["desc"] + parsing.parse_stat(info["stat"], value, False),
+        description=info["desc"] + parsing.parse_stat(info["stat"], value, rounded=False),
         color=misc.rarity_embed_colors[level - 1]
     )
     embed.set_footer(text=info['flavor'])
@@ -457,22 +461,23 @@ def keepsake_embed(input: [str]):
         else:
             name = name[0]
         info = files.keepsakes_info[name]
-        rank = min(max(rank, 1), 5 if info['type'] == 'companion' else 3)
+        rank = min(max(rank, 1), 4)
+        if rank == 4 and len(info['ranks']) == 3:
+            rank = 3
+        is_num = True
         try:
             value = [float(info['ranks'][rank - 1])]
         except IndexError:
             value = []
+        except ValueError:
+            value = [info['ranks'][rank - 1]]
+            is_num = False
         embed = discord.Embed(
-            title=f'**{misc.capwords(name)}**',
-            description=parsing.parse_stat(info['desc'], value, False)[2:],
+            title=f'**{misc.capwords(name)} (Rank {"★" * rank})**',
+            description=parsing.parse_stat(info['desc'], value, num_parse=is_num)[2:],
             color=misc.rarity_embed_colors[rank - 1]
         )
-        if info['type'] == 'companion':
-            footer = f'From {misc.capwords(info["bond"][0])}, {info["flavor"]}'
-        else:
-            footer = f'From {misc.capwords(info["bond"][0])}; ' \
-                     f'you share {info["bond"][1]} {misc.capwords(info["bond"][2])} Bond' \
-                     f'\n\n{info["flavor"]}'
+        footer = f'From {misc.capwords(info["giver"])}'
         embed.set_thumbnail(url=misc.to_link(info['icon']))
         embed.set_footer(text=footer)
     else:

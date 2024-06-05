@@ -20,10 +20,14 @@ cast
     A binding spell that ensnares foes and can gain other properties.
 dash
     Rush forward a short distance, avoiding any damage.
+dash-strike
+    Press to Dash then immediately press to attack.
 sprint
     Hold to run at top speed.
 Ω moves, Ω move
     Press-and-hold **Attack**, **Special**, or **Cast** to imbue them with <:Magick:1241635310387990568> **Magick**.
+power shot
+    Hold then release when you see a brief flash for a stronger shot.
 power
     An increase to the base amount of damage you inflict. Other bonuses multiply by this.
 channel
@@ -31,7 +35,7 @@ channel
 <:Magick:1241635310387990568> magick, <:Magick:1241635310387990568>, magick
     Required for powerful **Ω Moves**.
 serenity
-    Your **Ω Moves** are deal bonus damage and you rapidly restore <:Magick:1241635310387990568>. Lasts **5 Sec.**
+    Your **Ω Moves** are deal bonus damage (**+50%** by default) and you rapidly restore <:Magick:1241635310387990568>. Lasts **5 Sec.**
 prime
     A passive reduction to your <:Magick:1241635310387990568> limit until the next **Location**.
 hex
@@ -58,11 +62,13 @@ impervious
     A state in which you are completely invulnerable to damage.
 <:GoldenCrowns:1247723119372927009> gold crowns, <:GoldenCrowns:1247723119372927009>
     Trade for valuables. You lose any you have not spent when you return each night.
+<:GoldReward:1247777661984575548> gold crowns, <:GoldReward:1247777661984575548>
+    A reward  found in locations marked with <:MajorFind:1245297912859332658>, used to trade for valuables this night.
 <:Ashes:1242227789059457055> ashes, <:Ashes:1242227789059457055>
     Mostly used for unlocking **Arcana Cards**.
 <:Psyche:1242227790879784983> psyche, <:Psyche:1242227790879784983>
     Mostly used to raise **Grasp**, to activate more **Arcana Cards**.
-<Hammer:1243131974923718747> daedalus hammer, <Hammer:1243131974923718747>
+<:Hammer:1243131974923718747> daedalus hammer, <:Hammer:1243131974923718747>
     Grants a special enchantment for your weapon for this night.
 critical
     A devastating blow that deals **+200%** damage or greater.
@@ -116,7 +122,7 @@ awakening
     Negates the next instance of damage, even if it would have been an awful lot.
 revenant
     After **5 Sec.**, this becomes the foe it came from, unless you collect it first.
-red onion
+<:RedOnion:1247806062933970995> red onion, <:RedOnion:1247806062933970995>
     Restores **1** <:Life:1241660063513448499>. Tastes as bitter as you feel.
 <:EarthEssence:1242225885390700604> earth, <:EarthEssence:1242225885390700604>
     **Boons** imbued with the element of Earth.
@@ -186,11 +192,13 @@ dark
     Vanish for **10 Sec.**; strike to appear and deal bonus damage.
 arcana
     Conduits of inner strength found in the **Altar of Ashes**.
+arcana card
+    A conduit of inner strength found in the **Altar of Ashes**.
 animal familiar
     Loyal beast assistant-guardians under your protection. You may travel with **1** at a time.
 vows
     Invocations of various adverse nightly effects from the **Oath of the Unseen**.
-<RandGod:1244441161150500864> mystery boon, <RandGod:1244441161150500864>
+<:RandGod:1244441161150500864> mystery boon, <:RandGod:1244441161150500864>
     Receive a **Boon** from one of the Olympians... *but who?*
 attack boon
     A blessing that strongly influences your **Attacks**.
@@ -204,15 +212,3 @@ charon
     The feared Boatman of the River Styx serves the Underworld in his own way.
 chaos gate
     A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
-prioritize
-    Select this if you wish to use it more than your other **Gathering Tools** this night.
-outcroppings
-    Places where you may attempt to use the **Crescent Pick** to retrieve something.
-lost shades
-    Lingering spirits you may send to **Crossroads** using the **Tablet of Peace**.
-digging spots
-    Places where you may attempt to use the **Silver Spade** to retrieve something.
-fishing points
-    Places where you may attempt to use the **Rod of Fishing** to retrieve something.
-surrounding aura
-    An environmental condition that may affect you in some way.

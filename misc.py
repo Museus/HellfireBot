@@ -62,7 +62,6 @@ optout_dm = 'This channel has not opted into HellfireBot\'s commands (needs "h!o
             'However, all commands are usable via direct message.'
 unfun_dm = 'This channel has not opted into HellfireBot\'s fun commands (needs "h!fun" in the channel topic). ' \
            'However, all commands are usable via direct message.'
-output_count = 0
 
 
 def fuzzy_boon(input: [str]) -> [str]:

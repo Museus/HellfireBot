@@ -95,25 +95,31 @@ def parse_enemy(input: [str]) -> str:
     return ''
 
 
-def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
+def parse_stat(stat_line: str, value: [float], num_parse=True, rounded=True) -> str:
     try:
         replace = re.findall(r'{.*}', stat_line)[0]
     except IndexError:
         return f'\n▸{stat_line}' if stat_line else ''
-    rounded = rounded and 's' not in replace and 'x' not in replace
-    round_by = 0 if rounded else 1
-    if len(value) == 2:
-        v1 = round(value[0], round_by)
-        if int(v1) == v1:
-            v1 = int(v1)
-        v2 = round(value[1], round_by)
-        if int(v2) == v2:
-            v2 = int(v2)
-        value = f'{v1} - {v2}'
+    round_by = 0
+    if 'r' in replace:
+        r_idx = replace.index('r')
+        round_by = int(replace[r_idx + 1])
+        replace = replace[:r_idx] + replace[r_idx + 2:]
+    if num_parse:
+        if len(value) == 2:
+            v1 = round(value[0], round_by)
+            if int(v1) == v1:
+                v1 = int(v1)
+            v2 = round(value[1], round_by)
+            if int(v2) == v2:
+                v2 = int(v2)
+            value = f'{v1} - {v2}'
+        else:
+            value = round(value[0], round_by)
+            if int(value) == value:
+                value = int(value)
     else:
-        value = round(value[0], round_by)
-        if int(value) == value:
-            value = int(value)
+        value = value[0]
     if '+' in replace:
         value = f'+{value}'
     if '-' in replace:

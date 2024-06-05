@@ -29,7 +29,7 @@ gain fluid gain water
     2 1
     b/b9/Fluid_Gain.png
 t1 double up water
-    Whenever you claim a **Minor Find** or similar resource reward, a copy may appear.
+    Whenever you claim rewards other than **Boons**, **<Hammer:1243131974923718747>**, or rare resources, a copy may appear.
     Double Reward Chance: {%}
     20 25 30 35
     5 2.5 2
@@ -47,7 +47,7 @@ t1 sunken treasure water
     0
     f/fa/Sunken_Treasure.png
 t1 ocean's bounty water
-    Any **Minor Finds** and **<:GoldenCrowns:1247723119372927009>** are worth more.
+    Any **Minor Finds** and **<:GoldReward:1247777661984575548>** are worth more.
     Reward Bonus: {+%}
     50 75 100 125
     0

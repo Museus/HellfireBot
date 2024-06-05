@@ -1,198 +1,134 @@
-god thunder signet
-    The next **Boon** you find will be from **Zeus**. His blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    zeus a thunderous
-    Many beg favors of the King of Olympus. Few earn them with his compliments.
-    1/19/Thunder_Signet.png/revision/latest?cb=20181214231524
-god conch shell
-    The next **Boon** you find will be from **Poseidon**. His blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    poseidon an unshakable
-    He would turn the very tides and sunder the earth for you.
-    e/ed/Conch_Shell.png/revision/latest?cb=20181214230636
-god owl pendant
-    The next **Boon** you find will be from **Athena**. Her blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    athena a knowing
-    She anticipated almost every detail, save for the kinship she would feel.
-    f/f9/Owl_Pendant.png/revision/latest?cb=20181214232304
-god eternal rose
-    The next **Boon** you find will be from **Aphrodite**. Her blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    aphrodite a beautiful
-    Her true affection is reserved for those who find love and beauty on their own.
-    5/55/Eternal_Rose.png/revision/latest?cb=20181214231918
-god blood-filled vial
-    The next **Boon** you find will be from **Ares**. His blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    ares a blood-bound
-    Some of the strongest kinships form during the darkest of circumstances.
-    d/d2/Blood-Filled_Vial.png/revision/latest?cb=20181214231345
-god adamant arrowhead
-    The next **Boon** you find will be from **Artemis**. Her blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    artemis an impenetrable
-    Her solitary nature and her sharpened instincts mean she seldom dares to share her trust.
-    7/70/Adamant_Arrowhead.png/revision/latest?cb=20181213005219
-god overflowing cup
-    The next **Boon** you find will be from **Dionysus**. His blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    dionysus a jubilant
-    Two free spirits, though far apart, still can brighten each other's days.
-    3/3f/Overflowing_Cup.png/revision/latest?cb=20190215165516
-god frostbitten horn
-    The next **Boon** you find will be from **Demeter**. Her blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    demeter a nurturing
-    Aeons, generations, distances; family can withstand them all.
-    4/42/Frostbitten_Horn.png/revision/latest?cb=20200313011952
-god cosmic egg
-    Enter **Chaos Gates** without losing <:Heart:1008236023039410216>. Blessings from **Chaos** have {+%} chance to be **Rare** or better.
-    20 30 40
-    primordial chaos an infinite
-    Even the Origin of All Things seeks to know whimsy and surprise.
-    1/19/Cosmic_Egg.png/revision/latest?cb=20190122001310
-modgod shining lyre
-    The next **Boon** you find will be from **Apollo**. His blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    apollo a harmonious
-    He sees you as a prophet of good fortune.
-    Apollo/Apollo/Keepsake_Lyre.png?raw=true
-modgod bottomless cauldron
-    The next **Boon** you find will be from **Hestia**. Her blessings have {+%} chance to be **Rare** or better.
-    10 15 20
-    hestia a compassionate
-    Together, you are the founding members of the Warmth and Compassion Brigade.
-    Hestia/Hestia/Keepsake_Cauldron.png?raw=true
-combat black shawl
-    Deal {+%} damage striking undamaged foes; also striking foes from behind.
-    10 15 20
-    nyx an eternal
-    Through sense of duty, she raised you. From the dark of her heart, she loves you.
-    7/7d/Black_Shawl.png/revision/latest?cb=20181214231305
-combat pierced butterfly
-    Gain {+%} damage each time you clear an **Encounter** without taking damage.
-    1 1.5 2
-    thanatos an undying
-    With whom should Death belong, if not with Blood, with Life?
-    5/58/Pierced_Butterfly.png/revision/latest?cb=20190510030913
-combat skull earring
-    Deal {+%} damage while at **35%** <:Heart:1008236023039410216> or less.
-    20 30 40
-    megaera an intense
-    Your deaths at one another's hands... all your pleasure, all your pain, united.
-    8/8b/Skull_Earring.png/revision/latest?cb=20181215040952
-combat distant memory
-    Deal {+%} damage to distant foes.
-    10 20 30
-    orpheus a sonorous
-    Inspiration comes from unlikely places. Friendship comes in unlikely forms.
-    8/88/Distant_Memory.png/revision/latest?cb=20181214231613
-combat lambent plume
-    Gain {+%} **Dodge** chance and move speed each time you quickly clear an **Encounter**.
-    1 1.1 1.2
-    hermes a quicksilver
-    His carefree nature and his haste never betray his true capacity.
-    1/12/Lambent_Plume.png/revision/latest?cb=20190611232130
-combat shattered shackle
-    Your **Attack**, **Special**, and **Cast** each deal {+%} damage while not empowered by a **Boon**.
-    50 75 100
-    sisyphus a rock-solid
-    If he can hoist a boulder on his own, he knows he can be of some support.
-    4/47/Shattered_Shackle.png/revision/latest?cb=20181214232336
-combat sigil of the dead
-    Your **Call** becomes **Hades' Aid**, which briefly makes you **Invisible**; your **God Gauge** starts {%} full.
-    10 20 30
-    hades an intractable
-    The feared and distant Underworld King knows that his hardest work is still ahead of him.
-    f/fa/Sigil_of_the_Dead.png/revision/latest?cb=20200925220738
-survival old spiked collar
-    Add {+} <:MaxHealth:1008235891308908545> to your Life Total.
-    25 38 50
-    cerberus a ferocious
-    The hound of hell has entrusted all his loyalty in his master, and his master's son.
-    e/ed/Old_Spiked_Collar.png/revision/latest?cb=20181214232216
-survival myrmidon bracer
-    Take {-%} damage from the front, but take **+10%** from the back.
-    20 25 30
-    achilles an unyielding
-    Fated for glory, he shall forever be remembered, and remember you.
-    9/92/Myrmidon_Bracer.png/revision/latest?cb=20181214232107
-survival harpy feather duster
-    Broken urns have a {%} chance to contain <:Healing:1028193572840816722> items.
-    3 5 6
-    dusa an immaculate
-    She lifts you up without effort. You give her courage to fly.
-    b/b5/Harpy_Feather_Duster.png/revision/latest?cb=20181214231809
-survival lucky tooth
-    Automatically restore up to {} <:Heart:1008236023039410216> when your Life Total is depleted *(once per escape attempt)*.
-    50 75 100
-    skelly an unbreakable
-    A true and loyal friend shall always stand up for you. Even stand up to you.
-    b/b1/Lucky_Tooth.png/revision/latest?cb=20181214231951
-survival evergreen acorn
-    In the final encounter in each Underworld region, take **0** damage the first {} times foes hit you.
-    3 4 5
-    eurydice an inspiring
-    Singing for the joy of it, she lives for the moment, even in death.
-    e/e5/Evergreen_Acorn.png/revision/latest?cb=20200106001142
-survival broken spearpoint
-    After taking damage, become impervious to damage for {s} Refreshes after **7 Sec.**
-    1 1.25 1.5
-    patroclus an enlightened
-    He passed bitterly from mortal life, but with you, rose above it all.
-    f/f1/Broken_Spearpoint.png/revision/latest?cb=20190508060736
-resource bone hourglass
-    Items from the **Well of Charon** have durations increased by {+} **Encounters**.
-    4 6 8
-    charon an unspoken
-    Only a scant few souls ever earn the favor of the feared boatman.
-    f/fe/Bone_Hourglass.png/revision/latest?cb=20200707134204
-resource cthonic coin purse
-    Receive {} <:Obol:1027113221691281449> to spend as you please *(once per escape attempt)*.
-    100 125 150
-    hypnos a dreamlike
-    His wakeful cheer is genuine, whenever you are there. He dreams, until such time.
-    d/d0/Chthonic_Coin_Purse.png/revision/latest?cb=20181214231435
-resource pom blossom
-    After every {} **Encounters**, gain **+1 Lv.** <:PomQuestion:1029254859062517760> *(a random Boon grows stronger)*.
-    6 5 4
-    persephone a growing
-    The dead live on in the Underworld, and her nurturing instinct there also thrives.
-    d/d1/Pom_Blossom.png/revision/latest?cb=20200925012154
-companion battie
-    Your **Summon** deals **2500** damage in an area near your closest foe, then continually down the line.
-    0
-    megaera 0 0
-    lover and rival
-    3/33/Battie.png/revision/latest?cb=20191221051314
-companion mort
-    Your **Summon** deals **3500** damage in an area in front of you, after a brief delay.
-    0
-    thanatos 0 0
-    um
-    5/55/Mort.png/revision/latest?cb=20191221052814
-companion shady
-    Your **Summon** deals **1000** damage in an area, and drops a smattering of <:Healing:1028193572840816722>, <:Darkness:1028189207405015051>, and <:Obol:1027113221691281449>.
-    0
-    sisyphus & bouldy 0 0
-    staunch supporters
-    1/18/Shady.png/revision/latest?cb=20191221053445
-companion rib
-    Your **Summon** creates a distraction with **250** <:Heart:1008236023039410216>, provoking your foes to attack it until it dies.
-    0
-    skelly 0 0
-    willing to die for you
-    b/b9/Rib.png/revision/latest?cb=20191221053218
-companion fidi
-    Your **Summon** joins you for **30 Sec.**, repeatedly firing shots that petrify foes and deal **70** damage.
-    0
-    dusa 0 0
-    friend for all eternity
-    0/05/Fidi.png/revision/latest?cb=20200706211718
-companion antos
-    Your **Summon** deals **1500** damage to **2** foes one after another.
-    0
-    achilles & patroclus 0 0
-    their devotion, absolute
-    6/66/Antos.png/revision/latest?cb=20200706211643
+god cloud bangle
+    A **Boon** of **Zeus** is likely. You can **Rarify** his {} blessings once this night.
+    Common Rare Epic
+    zeus
+
+god iridescent fan
+    A **Boon** of **Hera** is likely. You can **Rarify** her {} blessings once this night.
+    Common Rare Epic
+    hera
+
+god vivid sea
+    A **Boon** of **Poseidon** is likely. You can **Rarify** his {} blessings once this night.
+    Common Rare Epic
+    poseidon
+
+god barley sheaf
+    A **Boon** of **Demeter** is likely. You can **Rarify** her {} blessings once this night.
+    Common Rare Epic
+    demeter
+
+god purest hope
+    A **Boon** of **Apollo** is likely. You can **Rarify** his {} blessings once this night.
+    Common Rare Epic
+    apollo
+
+god beautiful mirror
+    A **Boon** of **Aphrodite** is likely. You can **Rarify** her {} blessings once this night.
+    Common Rare Epic
+    aphrodite
+
+god adamant shard
+    A **Boon** of **hephaestus** is likely. You can **Rarify** his {} blessings once this night.
+    Common Rare Epic
+    hephaestus
+
+god everlasting ember
+    A **Boon** of **Hestia** is likely. You can **Rarify** her {} blessings once this night.
+    Common Rare Epic
+    hestia
+
+combat silver wheel
+    After you use **<:Magick:1241635310387990568>**, restore it over **3 Sec.**, up to a total of {m} this night.
+    1000 1500 2000 3000
+    hecate
+
+combat evil eye
+    Deal {+%} damage to the last foe that vanquished you.
+    20 25 30 35
+    nemesis
+
+combat discordant bell
+    After each **Encounter**, you deal {+%r1} damage, but also take that much more.
+    0.5 0.75 1 1.25
+    eris
+
+combat metallic droplet
+    You move, strike, and **Channel** **20%** faster for the next {s}
+    200 250 300 350
+    hermes
+
+combat white antler
+    While you have no more than **30** **<:Life:1241660063513448499>**, you have {+%} chance to deal **Critical** damage.
+    20 30 40 50
+    artemis
+
+combat lion fang
+    Deal {+%} bonus damage, but lose **5%** of this after each **Encounter**.
+    30 40 50 60
+    heracles
+
+combat blackened fleece
+    After you take **250** damage, your **Ω Moves** deal {+%} damage.
+    20 30 40 50
+    medea
+
+survival knuckle bones
+    The next **Guardian** loses {-%} **<:Life:1241660063513448499>**. You take **-15%** damage from **Guardians**.
+    5 10 15 20
+    odysseus
+
+survival luckier tooth
+    After you fall to **0** **<:Life:1241660063513448499>**, automatically restore {} **<:Life:1241660063513448499>** once this night.
+    51 76 101 126
+    schelemeus
+
+survival ghost onion
+    Whenever you exit a **Location**, fully restore your **<:Life:1241660063513448499>**, up to a total of {} **<:Healing:1028193572840816722>** this night.
+    50 75 100 125
+    dora
+
+survival engraved pin
+    After you fall to **0** **<:Life:1241660063513448499>**, become **Impervious** for **10 Sec.** If no foes remain, restore {} **<:Life:1241660063513448499>**.
+    30 45 60 75
+    moros
+
+survival silken sash
+    Gain **+20** **<:Armor:1243126987032363048>**. While you have at least **1** **<:Armor:1243126987032363048>**, gain {+} **<:Armor:1243126987032363048>** after each **Location**.
+    2 3 4 5
+    arachne
+
+survival aromatic phial
+    **Fountains** restore **+20%** **<:Life:1241660063513448499>**. The next makes **1** random **Common** **Boon** of yours {}.
+    Rare Epic Heroic
+    narcissus
+
+resource gold purse
+    Gain {+} **<:GoldenCrowns:1247723119372927009>** once this night.
+    100 125 150 175
+    charon
+
+resource moon beam
+    You gain {+} upgrades for your **Hex** from the next **Path of Stars** you find.
+    2 4 6 8
+    selene
+
+resource crystal figurine
+    After the next **Guardian**, activate **1** random {} **Arcana Card**.
+    <:ArcanaCommon:1247798358362554420> <:ArcanaRare:1247798360870490204> <:ArcanaEpic:1247798359398416394>
+    circe
+
+resource concave stone
+    After choosing a **Boon**, {%} of the time randomly take **1** more, once this night.
+    25 50 75 100
+    echo
+
+resource experimental hammer
+    Gain **1** random **<:Hammer:1243131974923718747>** that lasts for {} **Encounters**.
+    10 15 20 25
+    icarus
+
+resource transcendent embryo
+    Gain a random {} **Chaos** blessing once this night. Every **8** **Encounters**, replace it.
+    Common Rare Epic Heroic
+    primordial chaos

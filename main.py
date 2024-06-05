@@ -141,10 +141,10 @@ async def aspect(ctx, *args):
 
 @client.command(aliases=['h', 'hammers'])
 async def hammer(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
     await misc.reply(ctx, 'Not yet implemented', mention=True)
-    # if misc.channel_status(ctx) > 1:
-    #     await ctx.author.send(misc.optout_dm)
-    #     return
     # embed, choices = embeds.hammer_embed(args)
     # if not embed:
     #     await misc.reply(ctx, 'idk man as', mention=True)
@@ -200,8 +200,9 @@ async def randchaos(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    embed = embeds.random_chaos_embed(args)
-    await misc.reply(ctx, embed=embed)
+    await misc.reply(ctx, 'Not yet implemented', mention=True)
+    # embed = embeds.random_chaos_embed(args)
+    # await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['randomcharon', 'rcharon', 'charon', 'char', 'well', 'randomwell', 'randwell', 'rwell'])
@@ -209,8 +210,9 @@ async def randcharon(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    embed = embeds.random_charon_embed(args)
-    await misc.reply(ctx, embed=embed)
+    await misc.reply(ctx, 'Not yet implemented', mention=True)
+    # embed = embeds.random_charon_embed(args)
+    # await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['k', 'keepsakes', 'companion', 'companions'])
@@ -233,11 +235,12 @@ async def enemy(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    embed = embeds.enemy_embed(args)
-    if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
-        return
-    await misc.reply(ctx, embed=embed)
+    await misc.reply(ctx, 'Not yet implemented', mention=True)
+    # embed = embeds.enemy_embed(args)
+    # if not embed:
+    #     await misc.reply(ctx, 'idk man as', mention=True)
+    #     return
+    # await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['rarity', 'roll', 'rolls'])
@@ -245,9 +248,10 @@ async def rarityrolls(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    modifiers = parsing.parse_modifiers(args)
-    rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
-    await misc.reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
+    await misc.reply(ctx, 'Not yet implemented', mention=True)
+    # modifiers = parsing.parse_modifiers(args)
+    # rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
+    # await misc.reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
 
 
 @client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])

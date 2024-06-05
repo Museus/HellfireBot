@@ -14,7 +14,6 @@ god_cores = {
     'poseidon': {}, 'zeus': {}, 'duos': {},
     'artemis': {}, 'hermes': {}
 }
-personal = {}
 commands_info = {}
 
 for god in god_cores:
@@ -135,16 +134,10 @@ with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
         type, keepsake = keepsake.split(' ', 1)
         keepsakes_info[keepsake] = {
             'type': type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
-            'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
-            'icon': f.readline().strip()
+            'giver': f.readline().strip(), 'icon': f.readline().strip()
         }
-        if type != 'companion':
-            for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
-                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
-        else:
-            for suffix in (' companion', 's companion', '\' companion',
-                           '\'s companion', ' pet', 's pet', '\' pet', '\'s pet'):
-                aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
+        for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
+            aliases['keepsake'][keepsakes_info[keepsake]['giver'].lower() + suffix] = [keepsake]
 
 for category in aliases:
     with open(f'./files/aliases/{category}aliases.txt', 'r', encoding='utf8') as f:

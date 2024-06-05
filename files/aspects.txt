@@ -12,8 +12,8 @@ staff circe
     thumb/0/0e/Staff-Circe.png/80px-Staff-Circe.png
 staff momus
     Whenever you use **Ω Moves**, each fires in place up to **3** times until you use it again.
-    Delay Between Omega Bursts: {s}
-    <unknown>
+    Delay Between Omega Bursts: {sr1}
+    3.5 3 2.5 2 1.5 1
     Not even ever-patient Night herself spared much time for his insolence.
     thumb/6/69/Staff-Momus.png/80px-Staff-Momus.png
 blades melinoë blades
@@ -31,12 +31,12 @@ blades artemis
 blades pan
     Your **Specials** seek foes in your **Casts**, and fire more blades if you **Channel** longer.
     Omega Special Max Shots: {+}
-    <unknown>
+    1 2 3 4 5 6
     The natural-grown horn can pierce as readily as a well-crafted blade.
     thumb/4/42/Blades-Pan.png/80px-Blades-Pan.png
 torch melinoë flames
     Flames from your **Ω Special** can burn longer before expiring.
-    Omega Special Duration: {+s}
+    Omega Special Duration: {+sr1}
     0 1 1.5 2 2.5 3
     No single light can illuminate the many crossroads ahead; thus there are two.
     thumb/e/e0/Torch-Melinoe.png/80px-Torch-Melinoe.png
@@ -49,13 +49,13 @@ torch moros
 torch eos
     Your **Ω Attack** fires a **Daybreaker** that deals damage in an area around it every **2 Sec.**
     Daybreaker Blast Damage: {}
-    <unknown>
+    100 125 150 175 200 225
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
     thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
 axe melinoë axe
     Gain bonus **Attack** **Power** and **<:MaxLife:1241662636995772436>** this night.
     Attack Power & Max Life: {+}
-    <unknown>
+    15 20 25 30 35 40
     Its tin blade can split even the light of the Moon, yet itself can never be separated.
     thumb/2/21/Axe-Melinoe.png/80px-Axe-Melinoe.png
 axe charon
@@ -67,7 +67,7 @@ axe charon
 axe thanatos
     Your **Attack** is faster, and each hit grants **Mortality** until you take damage.
     Attack Speed: {+%}
-    <unknown>
+    10 15 20 25 30 35
     Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
     thumb/6/63/Axe-Thanatos.png/80px-Axe-Thanatos.png
 skull melinoë skull
@@ -85,6 +85,6 @@ skull medea
 skull persephone
     Your **Ω Cast** generates **<:Glory:1247336676548804609> Glory** when it hits, which extends your **Ω Special**.
     Omega Move Damage: {+%}
-    <unknown>
+    10 15 20 25 30 35
     Life and death, forever embodied in a Queen both splendorous and dark at once.
     thumb/3/32/Skull-Persephone.png/80px-Skull-Persephone.png

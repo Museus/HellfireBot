@@ -54,7 +54,7 @@ t1 quick buck air
     8/88/Quick_Buck.png
 t1 mean streak air
     Each time you slay a foe, deal more damage for the next **30 Sec.**
-    Bonus Damage per Slain Foe: {+%}
+    Bonus Damage per Slain Foe: {+%r1}
     1 1.5 2 2.5
     0
     7/75/Mean_Strike.png

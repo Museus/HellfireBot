@@ -67,7 +67,7 @@ prime winter coat earth
     7/7e/Winter_Coat.png
 t2 cold storage water
     Your **Freeze** effects last longer.
-    Freeze Duration: {+s}
+    Freeze Duration: {+sr1}
     2 3 4 5
     1 0.5 0.25 0.2
     5/58/Cold_Storage.png

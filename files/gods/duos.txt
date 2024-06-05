@@ -1,292 +1,203 @@
-duo curse of longing
-    Your **Doom** effects continuously strike **Weak** foes.
-    Successive Hit Damage: {%}
-    50
-    0
-    1/1f/Curse_of_Longing.png/revision/latest?cb=20190316095424
-    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(curse of agony, curse of pain)
-duo heart rend
-    Your **Critical** effects deal even more damage to **Weak** foes.
-    Bonus Critical Damage: {+%}
-    150
-    0
-    9/9f/Heart_Rend.png/revision/latest?cb=20190808113757
-    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(deadly strike, deadly flourish, true shot, hunter's flare)
-duo parting shot
-    Your **Cast** gains any bonuses you have for striking foes from behind.
-    Bonus Backstab Damage: {+%}
-    35
-    0
-    1/10/Parting_Shot.png/revision/latest?cb=20190808113813
-    1(heartbreak strike, heartbreak flourish, crush shot, passion dash, aphrodite's aid); 1(divine strike, divine flourish, phalanx shot, divine dash, athena's aid); x(aspect of beowulf, trippy shot)
-duo cold embrace
-    Your **Cast** crystal fires its beam directly at you for **+4 Sec**.
-    Beam Damage: {+%}
-    30
-    0
-    2/21/Cold_Embrace.png/revision/latest?cb=20200706074812
-     1(crystal beam); 1(heartbreak strike, heartbreak flourish, passion dash, aphrodite's aid); x(aspect of beowulf, crystal clarity)
-duo low tolerance
-    Your **Hangover** effects can stack more times against **Weak** foes.
-    Max Stacks vs. Weak: {+}
-    3
-    0
-    4/45/Low_Tolerance.png/revision/latest?cb=20190319180637
-    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash); 1(drunken strike, drunken flourish, drunken dash, dionysus' aid)
-duo sweet nectar
-    Any **Poms of Power** you find are more potent.
-    Bonus Lv. from Poms: {+}
-    1
-    0
-    5/56/Sweet_Nectar.png/revision/latest?cb=20190808113827
-    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash, aphrodite's aid); 1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid)
-duo smoldering air
-    Your **God Gauge** charges up automatically, but is capped at **25%**.
-    Auto Gauge Gain: {%} *(every 0.2 Sec.)*
-    1
-    0
-    c/ca/Smoldering_Air.png/revision/latest?cb=20200706074854
-    1(heartbreak strike, heartbreak flourish, crush shot, passion flare, passion dash, aphrodite's aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid); 1(any non-Hades aid boon)
-duo hunting blades
-    Your **Cast** creates a faster **Blade Rift** that seeks the nearest foe.
-    Seek Duration: {s}
-    3.3
-    0
-    f/fd/Hunting_Blades.png/revision/latest?cb=20190317140925
-    1(slicing shot); 1(deadly strike, deadly flourish, hunter dash, artemis' aid); x(aspect of beowulf, freezing vortex)
-duo merciful end
-    Your abilities that can **Deflect** immediately activate **Doom** effects.
-    Doom Combo Damage: {}
-    40
-    0
-    c/ca/Merciful_End.png/revision/latest?cb=20190612170303
-    1(curse of agony, curse of pain); 1(divine strike, divine flourish)
-duo freezing vortex
-    Your **Cast** inflicts **Chill**, but is smaller and moves slower.
-    Blade Rift Size: {-%}
-    15
-    0
-    Blade Rift Speed: {-%}
-    45
-    0
-    a/a1/Freezing_Vortex.png/revision/latest?cb=20200706072856
-    1(slicing shot, slicing flare); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(hunting blades)
-duo curse of nausea
-    Your **Hangover** effects deal damage faster.
-    Hangover Damage Rate: **0.5 Sec.** ⇒ {s}
-    0.35
-    0
-    5/55/Curse_of_Nausea.png/revision/latest?cb=20200706072722
-    1(drunken strike, drunken flourish, drunken dash, dionysus' aid); 1(curse of agony, curse of pain, curse of vengeance)
-duo curse of drowning
-    Your **Flood Shot** becomes a pulse that damages foes around you.
-    Pulses per Cast: {}
-    3
-    0
-    5/57/Curse_of_Drowning.png/revision/latest?cb=20200627130723
-    1(flood shot, flood flare); 1(curse of agony, curse of pain, blade dash, ares' aid); x(aspect of hera, blizzard shot, mirage shot)
-duo vengeful mood
-    Your **Revenge** effects sometimes occur without taking damage.
-    Auto-Revenge Rate: {s}
-    3
-    0
-    0/0a/Vengeful_Mood.png/revision/latest?cb=20190808115342
-    1(curse of agony, curse of pain, slicing shot, slicing flare, blade dash, ares' aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid); 1(heaven's vengeance, holy shield, wave of despair, curse of vengeance, frozen touch)
-duo deadly reversal
-    After you **Deflect**, briefly gain **+20%** chance to deal **Critical** damage.
-    Effect Duration: {s}
+duo sunny disposition
+    Whenever you create **Heartthrobs**, create more.
+    Bonus Heartthrobs: {+}
     2
     0
-    4/47/Deadly_Reversal.png/revision/latest?cb=20190317141706
-    1(deadly strike, deadly flourish, true shot, hunter's flare, artemis' aid); 1(divine strike, divine flourish)
-duo crystal clarity
-    Your **Cast** is stronger and tracks foes more effectively.
-    Beam Damage: {+%}
+    2/2c/Sunny_Disposition.png
+    <unknown>
+duo hearty appetite
+    You deal more damage the more **<:Life:1241660063513448499>** you have.
+    Bonus Damage per 100 Life: {+%}
     10
     0
-    Beam Tracking Effectiveness: {x}
-    6.7
-    0
-    2/25/Crystal_Clarity.png/revision/latest?cb=20200126153418
-    1(crystal beam); 1(deadly strike, deadly flourish, hunter dash, artemis' aid); x(aspect of beowulf, cold embrace)
-duo splitting headache
-    **Hangover**-afflicted foes are more likely to take **Critical** damage.
-    Bonus Critical Chance per <:Hangover:1007536037419040808>: **+1.5%**
-    0
-    0
-    d/da/Splitting_Headache.png/revision/latest?cb=20200706075512
-    1(drunken strike, drunken flourish, drunken dash, dionysus' aid); 1(deadly strike, deadly flourish, true shot, artemis' aid)
-duo mirage shot
-    Your **Cast** fires a second projectile, which deals reduced base damage.
-    Secondary Shot Damage: {%}
-    30
-    0
-    a/ab/Mirage_Shot.png/revision/latest?cb=20200706075539
-    1(deadly strike, deadly flourish, true shot, hunter's flare, artemis' aid); 1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid); x(curse of drowning)
-duo lightning rod
-    Your collectible <:Cast:1027103688449347635> strike nearby foes with lightning every **1 Sec**.
-    Lightning Damage: {}
-    70
-    0
-    6/62/Lightning_Rod.png
-    m(infernal soul); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid); 1(deadly strike, deadly flourish, true shot, hunter's flare, hunter dash, artemis' aid)
-duo stubborn roots
-    If you have no **Death/Stubborn Defiance**, your <:Heart:1008236023039410216> slowly recovers.
-    Life Regeneration During Battle: {} <:Healing:1028193572840816722> *(every 0.8 Sec.)*
-    1
-    0
-    a/aa/Stubborn_Roots.png/revision/latest?cb=20200706075853
-    m(defiance slot); 1(divine strike, divine flourish, phalanx shot, phalanx flare, divine dash, athena's aid); 1(frost strike, frost flourish, crystal beam, icy flare, mistral dash, demeter's aid)
-duo calculated risk
-    Your foes' ranged-attack projectiles are slower.
-    Foe Projectile Speed Reduction: {+%}
-    50
-    0
-    0/0c/Calculated_Risk.png/revision/latest?cb=20200706075949
-    1(divine strike, divine flourish, divine dash, athena's aid); 1(drunken strike, drunken flourish, drunken dash, dionysus' aid)
-duo unshakable mettle
-    You cannot be stunned, and resist some damage from **Bosses**.
-    Boss Damage Reduction: {+%}
-    10
-    0
-    c/cf/Unshakable_Mettle.png/revision/latest?cb=20200706080013
-    1(divine strike, divine flourish, phalanx shot, phalanx flare, athena's aid); 1(tempest strike, tempest flourish, flood shot, poseidon's aid)
-duo lightning phalanx
-    Your Phalanx Shot **Cast** bounces between nearby foes.
-    Max Bounces: {}
-    3
-    0
-    7/70/Lightning_Phalanx.png/revision/latest?cb=20190808122128
-    1(phalanx shot); 1(lightning strike, thunder flourish, thunder dash, zeus' aid); x(aspect of beowulf)
-duo ice wine
-    Your **Cast** blasts an area with freezing **Festive Fog** that inflicts **Chill**.
-    Blast Damage: {+%}
-    30
-    0
-    8/8e/Ice_Wine.png/revision/latest?cb=20200126153555
-    1(trippy shot, trippy flare); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(blizzard shot)
-duo blizzard shot
-    Your **Cast** moves slower, piercing foes and firing shards around it.
-    Shard Damage: {}
-    20
-    0
-    Cast Speed: {-%}
-    70
-    0
-    7/75/Blizzard_Shot.png/revision/latest?cb=20200126153436
-    1(flood shot); 1(frost strike, frost flourish, mistral dash, demeter's aid); x(aspect of beowulf, curse of drowning, ice wine)
-duo cold fusion
-    Your **Jolted** effects do not expire when foes attack.
-    Jolted Duration: {s}
-    10
-    0
-    2/2e/Cold_Fusion.png/revision/latest?cb=20200126153616
-    1(static discharge); 1(frost strike, frost flourish, mistral dash, demeter's aid);
-duo exclusive access
-    Any **Boons** you find are more potent.
-    Minimum Boon Rarity: **Epic**
-    0
-    0
-    3/32/Exclusive_Access.png
-    1(tempest strike, tempest flourish, flood shot, flood flare, tidal dash, poseidon's aid); 1(drunken strike, drunken flourish, trippy shot, trippy flare, drunken dash, dionysus' aid)
-duo scintillating feast
-    Your **Festive Fog** effects also deal lightning damage every **0.85 Sec**.
-    Lightning Damage: {}
-    60
-    0
-    e/e2/Scintillating_Feast.png/revision/latest?cb=20190317133440
-    1(trippy shot, trippy flare); 1(lightning strike, thunder flourish, thunder dash, zeus' aid)
-duo sea storm
-    When you knock foes away, they are struck by lightning.
-    Lightning Damage: {}
-    40
-    0
-    c/c7/Sea_Storm.png/revision/latest?cb=20190319204741
-    1(tempest strike, tempest flourish, flood shot, flood flare, poseidon's aid); 1(lightning strike, thunder flourish, electric shot, thunder flare, thunder dash, zeus' aid)
-modduo chilling melody
-    Your **Blind** effects do not expire when foes miss.
-    Blind Duration: {s}
-    10
-    0
-    Apollo/Apollo/Duos/ApolloDemeter_01.PNG?raw=true
-    1(blinding strike, blinding flourish, blinding bomb, brilliant flare, radiant dash); 1(frost strike, frost flourish, mistral dash)
-modduo archery lessons
-    After you **Deflect**, briefly gain **Protect** for **3 Sec**.
-    Bonus Defense: {%}
-    60
-    0
-    Apollo/Apollo/Duos/ApolloAthena_01.PNG?raw=true
-    1(blinding strike, blinding flourish, radiant dash); 1(divine strike, divine flourish, phalanx shot, divine dash)
-modduo famed duet
-    Your **Call** fires multiple beams instead of one.
-    Beams Fired: {}
-    12
-    0
-    Apollo/Apollo/Duos/ApolloArtemis_01.PNG?raw=true
-    1(apollo's aid); 1(deadly strike, deadly flourish, true shot, hunter dash)
-modduo hyacinth
-    Foes inflicted with **Blind** and **Weak** shatter at **30%** <:Heart:1008236023039410216>. Does not apply to **Bosses**.
-
-    0
-    0
-    Apollo/Apollo/Duos/ApolloAphrodite_01.PNG?raw=true
-    1(blinding strike, blinding flourish, blinding bomb, brilliant flare, radiant dash); 1(heartbreak strike, heartbreak flourish, crush shot, passion dash)
-modduo master bolt
-    **Blind**-afflicted foes are also struck by lightning every **1 Sec**.
-    Lightning Damage: {}
-    40
-    0
-    Apollo/Apollo/Duos/ApolloZeus_01.PNG?raw=true
-    1(blinding strike, blinding flourish, blinding bomb, radiant dash); 1(lightning strike, thunder flourish, electric shot, thunder dash, lightning reflexes)
-modduo blinding fog
-    Your **Flash Bomb** summons a **Festive Fog** upon yourself.
-    Damage: {}
-    45
-    0
-    Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
-    1(blinding bomb); 1(drunken strike, drunken flourish, drunken dash)
-modduo festive bomb
-    Your **Festive Fog** summons a **Flash Bomb** upon yourself.
-    Damage: {}
-    45
-    0
-    Apollo/Apollo/Duos/ApolloDionysus_01.PNG?raw=true
-    1(trippy shot); 1(blinding strike, blinding flourish, radiant dash)
-modduo sea chantey
-    You deal and take more damage against **Bosses**.
-    Bonus Damage vs. Bosses: {+%}
-    20
-    0
-    Increased Damage from Bosses: {+%}
-    5
-    0
-    Apollo/Apollo/Duos/ApolloPoseidon_01.PNG?raw=true
-    1(tempest strike, tempest flourish, flood shot, tidal dash); 1(wishing well, melodic concert, future sight, golden fleece, panacea's elixir)
-modduo war song
-    Your **Flash Bomb** inflicts **Doom**.
-    Doom Damage: {}
+    c/cc/Hearty_Appetite.png
+    <unknown>
+duo soft caress
+    The first time you would take damage each **Encounter**, get **<:Healing:1028193572840816722>** instead.
+    Damage Turned to Healing: {%}
     100
     0
-    Apollo/Apollo/Duos/ApolloAres_01.PNG?raw=true
-    1(blinding bomb, brilliant flare, festive bomb); 1(curse of agony, curse of pain, curse of vengeance)
-modduo striking sparks
-    Your **Critical** effects create an explosion.
-    Explosion Damage: {}
+    9/9d/Soft_Caress.png
+    <unknown>
+duo soul mate
+    Foes with **Hitch** take more damage and are **Weak**, but only **2** can be afflicted at a time.
+    Damage vs. Hitched Foes: {+%}
+    20
+    0
+    f/fd/Soul_Mate.png
+    <unknown>
+duo burning desire
+    Up to **+12** **Lone Shades** appear in **Locations**. **Sprint** into them to launch a fiery blast.
+    Lone Shade Area Damage: {}
+    160
+    0
+    c/ce/Burning_Desire.png
+    <unknown>
+duo island getaway
+    You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
+    Damage Resistance: {+%}
+    15
+    0
+    2/29/Island_Getaway.png
+    <unknown>
+duo romantic spark
+    If you **Sprint** into **Blitz**-afflicted foes, the effect activates immediately and is stronger.
+    Bonus Blitz Damage: {+%}
+    200
+    0
+    6/66/Romantic_Spark.png
+    <unknown>
+duo torrential downpour
+    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1241635310387990568>**.
+    Damage per Omega Cast: {+%}
+    20
+    0
+    9/9a/Torrential_Downpour.png
+    <unknown>
+duo stellar slam
+    Your blast effects from **Hephaestus** deal damage in a larger area.
+    Blast Size: {+%}
     50
     0
-    Hestia/Hestia/Duos/HestiaArtemis_01.PNG?raw=true
-    1(deadly strike, deadly flourish, true shot, hunter dash); 1(embracing strike, embracing flourish)
-modduo unrequited love
-    After you defeat **Bosses**, gain a **Centaur Heart**. After you defeat **Minibosses**, gain a **Centaur Soul**.
-
+    c/c5/Stellar_Slam.png
+    <unknown>
+duo sun worshiper
+    In each **Encounter**, the first foe you slay returns to fight for you.
+    Servant Damage: {+%}
+    200
+    0
+    2/2c/Sun_Worshiper.png
+    <unknown>
+duo phoenix skin
+    Give up **-100** **<:MaxLife:1241662636995772436>**. If you do not take or deal damage for **3 Sec.**, rapidly restore **<:Life:1241660063513448499>**.
+    Life Restoration: {} *(every 1 Sec.)*
+    3
+    0
+    8/82/Phoenix_Skin.png
+    <unknown>
+duo beach ball
+    Your **Sprint** creates a watery sphere behind you. After you stop, it surges ahead and bursts.
+    Blast Damage: {}
+    140
+    0
+    1/1b/Beach_Ball.png
+    <unknown>
+duo glorious disaster
+    You can **Channel** **+30** **<:Magick:1241635310387990568>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
+    Bolt Damage: {} *(every 0.13 Sec.)*
+    50
+    0
+    d/df/Glorious_Disaster.png
+    <unknown>
+duo room temperature
+    Your blast effects from **Hephaestus** clear **Freeze**, so you **Freeze** foes again right away.
+    Freeze Re-Apply Time: {s}
     0
     0
-    Hestia/Hestia/Duos/HestiaAphrodite_01.png?raw=true
-    1(embracing strike, embracing flourish, ember shot, flaring rush); 1(heartbreak strike, heartbreak flourish, crush shot, passion dash, life affirmation)
-modduo danger zone
-    **Traps** deal extra damage to foes.
-    Bonus Trap Damage: {+%}
-    400
+    6/66/Room_Temperature.png
+    <unknown>
+duo cherished heirloom
+    Most other **Keepsakes** you equip are stronger this night *(if possible)*.
+    Bonus Keepsake Ranks: {+}
+    1
     0
-    Hestia/Hestia/Duos/HestiaAthena_01.PNG?raw=true
-    1(embracing strike, embracing flourish); 1(divine strike, divine flourish, phalanx shot, phalanx flare, divine dash)
+    1/13/Cherished_Heirloom.png
+    <unknown>
+duo freezer burn
+    Whenever you inflict **Freeze**, amplify any **Scorch** effects already on the foe.
+    Scorch Damage: {+%}
+    100
+    0
+    2/23/Freezer_Burn.png
+    <unknown>
+duo natural selection
+    **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1245289397570502719>**, and **<:GoldenCrowns:1247723119372927009>**. **Boons** are more likely to be **Rare** or better.
+    Improved Rarity Chance: {+%}
+    20
+    0
+    7/7a/Natural_Selection.png
+    <unknown>
+duo apocalyptic storm
+    Your **Blitz** effects last longer, and activate against *all* **Blitz**-afflicted foes at once.
+    Blitz Duration: {+s}
+    8
+    0
+    d/dc/Apocalyptic_Storm.png
+    <unknown>
+duo spiteful strength
+    Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
+    Boon-Less Bonus Damage: {+%}
+    200
+    0
+    c/c6/Spiteful_Strength.png
+    <unknown>
+duo chain reaction
+    If you use your blast effects from **Hephaestus** just after they recharge, they fire **2** times.
+    Double Blast Timing: **0.85 Sec.**
+    0
+    0
+    c/c5/Chain_Reaction.png
+    <unknown>
+duo seismic hammer
+    Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
+    Blast Recharge Time: {s}
+    15
+    0
+    d/d9/Seismic_Hammer.png
+    <unknown>
+duo master conductor
+    Your chain-lightning deals more damage per bounce and can bounce to you.
+    Damage per Bounce: {+%}
+    15
+    0
+    f/f9/Master_Conductor.png
+    <unknown>
+duo funeral pyre
+    While you **Channel** your **Ω Moves**, repeatedly inflict **Scorch** on nearby foes.
+    Scorch Damage: {} *(every 1 Sec.)*
+    90
+    0
+    e/ed/Funeral_Pyre.png
+    <unknown>
+duo golden rule
+    You deal more damage the more **<:GoldenCrowns:1247723119372927009>** you have.
+    Bonus Damage per 100 Gold: {+%}
+    5
+    0
+    3/36/Golden_Rule.png
+    <unknown>
+duo queen's ransom
+    Give up *all* your **Boons** of **Zeus**. For each, raise <lvlup> for *all* your **Boons** of **Hera**.
+    Bonus Lv. per Zeus Boon: {+}
+    3
+    0
+    thumb/7/75/Queen%27s_Ransom.png/100px-Queen%27s_Ransom.png
+    <unknown>
+duo king's ransom
+    Give up *all* your **Boons** of **Zeus**. For each, raise <lvlup> for *all* your **Boons** of **Hera**.
+    Bonus Lv. per Zeus Boon: {+}
+    2
+    0
+    f/f6/King%27s_Ransom.png
+    <unknown>
+duo scalding vapor
+    If foes with **Slip** are struck by fire from **Hestia**, they are engulfed in **Steam**.
+    Steam Damage: {+} *(every 0.2 Sec.)*
+    25
+    0
+    d/d7/Scalding_Vapor.png
+    <unknown>
+duo thermal dynamics
+    Your **Blitz** effects also inflict **Scorch** whenever they deal damage.
+    Scorch Damage: {}
+    80
+    0
+    2/22/Thermal_Dynamics.png
+    <unknown>
+duo killer current
+    Your lightning deals more damage to **Slip**-afflicted foes.
+    Bonus Lightning Damage: {+%}
+    30
+    0
+    e/e3/Killer_Current.png
+    <unknown>

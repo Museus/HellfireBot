@@ -1,11 +1,4 @@
-import asyncio
-import os
-import re
-
 import discord
-import requests
-from PIL import Image
-from discord import HTTPException
 
 import files
 import parsing
@@ -19,7 +12,9 @@ rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF1
 god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
-    'poseidon': 0x59D5FE, 'zeus': 0xFFF254
+    'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duos': 0xD1FF18,
+    'artemis': 0xD2FC61, 'hermes': 0xFBF7A7,
+    'keepsake': 0x465B75
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -51,7 +46,6 @@ element_icons = {
     'aether': '1243121873408102471'
 }
 disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
-toxic_select = ('⬆️', '➡️', '↔️', '🔄', '🔴', '🔹', '✅')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
             'all of its features can be toggled on or off and it includes:\n' \
@@ -95,10 +89,6 @@ def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
         value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
     except IndexError:
         return None
-    if rarity != 'common':
-        if len(value) == 2 or info['god'] == 'chaos':
-            base_value = info['rarities2' if second else 'rarities'][0].split('-')
-            value = [float(base_value[0]) * value[0], float(base_value[-1]) * value[-1]]
     return value
 
 
@@ -157,14 +147,6 @@ def rarity_rolls(input: [str]) -> [float]:
 
 
 def capwords(s: str) -> str:
-    if s == 'hydralite':
-        return 'HydraLite'
-    if s == 'point-blank shot':
-        return 'Point-Blank Shot'
-    if s == 'dash-strike':
-        return 'Dash-Strike'
-    if s == 'dash-upper':
-        return 'Dash-Upper'
     return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
 
 
@@ -174,123 +156,6 @@ def to_link(s: str) -> str:
     if s.isdigit():
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
     return f'https://hades2.game-vault.net/w/images/{s}'
-
-
-async def fuzzy_img(ctx, client, img_link):
-    if not img_link:
-        try:
-            img_link = ctx.message.attachments[0].url
-        except IndexError:
-            try:
-                replied = await ctx.channel.fetch_message(ctx.message.reference.message_id)
-                try:
-                    img_link = replied.attachments[0].url
-                except IndexError:
-                    try:
-                        img_link = replied.embeds[0].thumbnail.url
-                        if not img_link:
-                            img_link = replied.author.avatar.url
-                    except IndexError:
-                        img_link = replied.author.avatar.url
-            except AttributeError:
-                img_link = ctx.author.avatar.url
-    elif img_link[:2] == '<:':
-        img_link = client.get_emoji(int(img_link.split(":")[-1][:-1])).url
-    else:
-        try:
-            user_id = int(re.sub('[^0-9]', '', img_link))
-            user = client.get_user(user_id)
-            if not user:
-                user = await client.fetch_user(user_id)
-            img_link = user.avatar.url
-        except HTTPException:
-            pass
-    return img_link
-
-
-def toxic(img_url, x=250, y=250, s=200, r=0):
-    global output_count
-    req = requests.get(img_url)
-    output_count += 1
-    with open(f'./output{output_count}.png', 'wb') as out_img:
-        out_img.write(req.content)
-    img = Image.open(f'./output{output_count}.png')
-    xic = Image.open('./files/xic.png')
-    if img.size[0] > img.size[1]:
-        ratio = 500 / img.size[1]
-        img = img.resize((int(img.size[0] * ratio), 500), Image.LANCZOS)
-    else:
-        ratio = 500 / img.size[0]
-        img = img.resize((500, int(img.size[1] * ratio)), Image.LANCZOS)
-    xic = xic.resize((s, s), Image.LANCZOS)
-    xic = xic.rotate(r, expand=True)
-    img.paste(xic, (int(x - xic.size[0] / 2), int(y - xic.size[1] / 2)), xic.convert('RGBA'))
-    img.save(f'./output{output_count}.png')
-    return f'./output{output_count}.png'
-
-
-async def toxic_react(ctx, client, embed, img_link):
-    def check(reaction, user):
-        return user == ctx.message.author and str(reaction.emoji) in toxic_select
-    msg = await reply(ctx, embed=embed)
-    for emoji in toxic_select:
-        await msg.add_reaction(emoji)
-    x = 250
-    y = 250
-    s = 200
-    r = 0
-    neg = False
-    small = False
-    while True:
-        try:
-            react, _ = await client.wait_for('reaction_add', timeout=300.0, check=check)
-        except asyncio.TimeoutError:
-            try:
-                await msg.clear_reactions()
-            except discord.errors.Forbidden:
-                pass
-            return
-        index = toxic_select.index(str(react.emoji))
-        if index == 6:
-            try:
-                await msg.delete()
-            except discord.errors.Forbidden:
-                pass
-            output_name = toxic(img_link, x, y, s, r)
-            await reply(ctx, file=discord.File(output_name))
-            os.remove(output_name)
-            return
-        else:
-            try:
-                await msg.remove_reaction(str(react.emoji), ctx.message.author)
-            except discord.errors.Forbidden:
-                pass
-            if index == 0:
-                amount = 10 if small else 50
-                y -= -amount if neg else amount
-            elif index == 1:
-                amount = 10 if small else 50
-                x += -amount if neg else amount
-            elif index == 2:
-                amount = 20 if small else 100
-                s += -amount if neg else amount
-                s = max(s, 0)
-            elif index == 3:
-                amount = 5 if small else 25
-                r += -amount if neg else amount
-            elif index == 4:
-                neg = not neg
-            elif index == 5:
-                small = not small
-        output_name = toxic(img_link, x, y, s, r)
-        channel = client.get_channel(1059334747832201266)
-        file_msg = await channel.send(file=discord.File(output_name))
-        os.remove(output_name)
-        embed = discord.Embed()
-        embed.set_image(url=file_msg.attachments[0].url)
-        embed.add_field(name='Negate mode', value='On' if neg else 'Off', inline=False)
-        embed.add_field(name='Small mode', value='On' if small else 'Off', inline=False)
-        await msg.edit(embed=embed)
 
 
 def channel_status(ctx):

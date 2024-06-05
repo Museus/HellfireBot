@@ -22,14 +22,8 @@ god god_name?
 legendaries None
     Returns a list of all legendaries.
     1027126357597093969
-benefitspackage perk_name?
-    Returns information on Benefits Package <perk_name>. If <perk_name> is excluded, returns all Benefits Package perks.
-    1027088229737963530
 define None
     Returns a list of definitions for terms used in the replied-to message. Works for text inside HellfireBot's embed outputs.
-
-bouldy None
-    Returns a random <:bouldy:1014438782755422220> blessing.
 
 randchaos [modifiers]...
     Returns a random Chaos blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
@@ -43,29 +37,6 @@ keepsake keepsake_name? [rank=3 or 5]
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348
-pact "n"? [pacts=None]...
-    Returns an image representation of the Pact of Punishment with specified (space-separated) <pacts> turned on. Include "n" as the first word to ensure that all pacts not listed are maxed out. Uses pact preset if applicable (see h!addpact).
-    c/c4/Heat.png/revision/latest?cb=20190117142930
-randpact heat hell_mode?=False
-    Returns an image representation of the Pact of Punishment at the specified <heat> (this is done by randomly selecting pacts until reaching <heat>, backtracking if needed). Any input after <heat> forces <hell_mode>, which by default is not included.
-
-mirror [mirror_binary]
-    Returns an image representation of the Mirror of Night, where each perk is equally likely to be red or green. If provided, <mirror_binary> is a 12-digit string of 0s (red perk) and 1s (green perk).
-    1028185355976978442
-getpersonal [user=self]
-    Returns a list of your personal pact and mirror presets. If provided, <user> returns that user's presets instead (mention and Discord ID both work).
-    1028197474562744330
-addpact name pacts...
-    Adds a personal pact preset with <name> mapping to <pacts>. Direct message only. Use h!getpersonal to view.
-    1027104646713577492
-addmirror name mirror_binary
-    Adds a personal mirror preset with <name> mapping to <mirror_binary>. Direct message only. Use h!getpersonal to view.
-
-deletepact name
-    Removes the personal pact preset given by <name>. Direct message only. Use h!getpersonal to view.
-    1028198397527724084
-deletemirror name
-    Removes the personal mirror preset given by <name>. Direct message only. Use h!getpersonal to view.
 
 modded None
     Returns information on the official speedrun modpack.

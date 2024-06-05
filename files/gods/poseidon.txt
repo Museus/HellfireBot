@@ -41,13 +41,13 @@ t1 hydraulic might water
     23 11.5 10
     b/b4/Hydraulic_Might.png
 t1 sunken treasure water
-    Gain **<:GoldenCrowns:1243132146273751200>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
+    Gain **<:GoldenCrowns:1247723119372927009>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
     Gold Received: {+}
     90 117 144 171
     0
     f/fa/Sunken_Treasure.png
 t1 ocean's bounty water
-    Any **Minor Finds** and **<:GoldenCrowns:1243132146273751200>** are worth more.
+    Any **Minor Finds** and **<:GoldenCrowns:1247723119372927009>** are worth more.
     Reward Bonus: {+%}
     50 75 100 125
     0

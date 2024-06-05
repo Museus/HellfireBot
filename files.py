@@ -1,5 +1,3 @@
-import json
-
 boons_info = {}
 legendary_info = []
 charon_info = {}
@@ -13,7 +11,8 @@ aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, '
 god_cores = {
     'aphrodite': {}, 'apollo': {}, 'demeter': {},
     'hephaestus': {}, 'hera': {}, 'hestia': {},
-    'poseidon': {}, 'zeus': {}
+    'poseidon': {}, 'zeus': {}, 'duos': {},
+    'artemis': {}, 'hermes': {}
 }
 personal = {}
 commands_info = {}
@@ -25,7 +24,7 @@ for god in god_cores:
             has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime')
             if type[0] == 'x':
                 type = type[1:]
-            if type != 'infusion':
+            if type not in ('infusion', 'duo'):
                 *boon, element = boon.split(' ')
                 boon = ' '.join(boon)
             if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'infusion', 'legendary'):
@@ -49,8 +48,10 @@ for god in god_cores:
                 icon = f.readline().strip()
             else:
                 icon = next_line
-            boons_info[boon] = {'god': god, 'type': type, 'desc': description, 'stat': stat,
-                                'rarities': rarities, 'levels': levels, 'icon': icon}
+            boons_info[boon] = {
+                'god': god, 'type': type, 'desc': description, 'stat': stat,
+                'rarities': rarities, 'levels': levels, 'icon': icon
+            }
             if stat2:
                 boons_info[boon]['stat2'] = stat2
                 boons_info[boon]['rarities2'] = rarities2
@@ -63,7 +64,9 @@ for god in god_cores:
                 prereqs_info[boon] = prereq_list
             if god == 'charon':
                 boons_info[boon]['cost'] = f.readline().strip()
-            if type != 'infusion':
+            if type == 'duo':
+                boons_info[boon]['element'] = 'aether'
+            elif type != 'infusion':
                 boons_info[boon]['element'] = element
 
 with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
@@ -88,8 +91,10 @@ with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
             icon = f.readline().strip()
         else:
             icon = next_line
-        boons_info[boon] = {'god': god, 'type': type, 'desc': description, 'stat': stat,
-                            'rarities': rarities, 'levels': levels, 'icon': icon}
+        boons_info[boon] = {
+            'god': god, 'type': type, 'desc': description, 'stat': stat,
+            'rarities': rarities, 'levels': levels, 'icon': icon
+        }
         if stat2:
             boons_info[boon]['stat2'] = stat2
             boons_info[boon]['rarities2'] = rarities2
@@ -104,9 +109,11 @@ with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
 with open('./files/aspects.txt', 'r', encoding='utf8') as f:
     while aspect := f.readline().strip():
         weapon, aspect = aspect.split(' ', 1)
-        aspects_info[aspect] = {'weapon': weapon, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
-                                'levels': f.readline().strip().split(' '), 'flavor': f.readline().strip(),
-                                'icon': f.readline().strip()}
+        aspects_info[aspect] = {
+            'weapon': weapon, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
+            'levels': f.readline().strip().split(' '), 'flavor': f.readline().strip(),
+            'icon': f.readline().strip()
+        }
 
 # for weapon in misc.weapon_icons:
 #     with open(f'./files/hammers/{weapon}.txt', 'r', encoding='utf8') as f:
@@ -126,10 +133,11 @@ with open('./files/aspects.txt', 'r', encoding='utf8') as f:
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
         type, keepsake = keepsake.split(' ', 1)
-        keepsakes_info[keepsake] = {'type': type, 'desc': f.readline().strip(),
-                                    'ranks': f.readline().strip().split(' '),
-                                    'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
-                                    'icon': f.readline().strip()}
+        keepsakes_info[keepsake] = {
+            'type': type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
+            'bond': f.readline().strip().rsplit(' ', 2), 'flavor': f.readline().strip(),
+            'icon': f.readline().strip()
+        }
         if type != 'companion':
             for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
                 aliases['keepsake'][keepsakes_info[keepsake]['bond'][0].lower() + suffix] = [keepsake]
@@ -161,8 +169,10 @@ with open('./files/definitions.txt', 'r', encoding='utf8') as f:
 with open('./files/help.txt', 'r', encoding='utf8') as f:
     while command := f.readline().strip():
         command, parameters = command.split(' ', 1)
-        commands_info[command] = {'params': ', '.join(parameters.split(' ')), 'desc': f.readline().strip(),
-                                  'icon': f.readline().strip()}
+        commands_info[command] = {
+            'params': ', '.join(parameters.split(' ')), 'desc': f.readline().strip(),
+            'icon': f.readline().strip()
+        }
 
 with open('./files/enemies.txt', 'r', encoding='utf8') as f:
     while enemy := f.readline().strip():
@@ -171,21 +181,8 @@ with open('./files/enemies.txt', 'r', encoding='utf8') as f:
         attacks_info = []
         for i in range(int(attacks)):
             attacks_info.append((f.readline().strip(), f.readline().strip()))
-        enemies_info[enemy] = {'health': healths[0], 'armor': healths[1], 'attacks': attacks_info,
-                               'elite': f.readline().strip(), 'location': f.readline().strip(),
-                               'icon': f.readline().strip()}
-
-
-def read_personal() -> None:
-    global personal
-    with open('./private/personal.txt', 'r', encoding='utf8') as fp:
-        personal = json.loads(fp.read())
-
-
-def write_personal() -> None:
-    global personal
-    with open('./private/personal.txt', 'w', encoding='utf8') as fp:
-        fp.write(json.dumps(personal))
-
-
-read_personal()
+        enemies_info[enemy] = {
+            'health': healths[0], 'armor': healths[1], 'attacks': attacks_info,
+            'elite': f.readline().strip(), 'location': f.readline().strip(),
+            'icon': f.readline().strip()
+        }

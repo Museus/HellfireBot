@@ -103,21 +103,17 @@ def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
     rounded = rounded and 's' not in replace and 'x' not in replace
     round_by = 0 if rounded else 1
     if len(value) == 2:
-        value = f'{round(value[0], round_by)} - {round(value[1], round_by)}'
-        # if rounded:
-        #     value = f'{round(value[0])} - {round(value[1])}'
-        # else:
-        #     value = f'{round(value[0], 2)} - {round(value[1], 2)}'
+        v1 = round(value[0], round_by)
+        if int(v1) == v1:
+            v1 = int(v1)
+        v2 = round(value[1], round_by)
+        if int(v2) == v2:
+            v2 = int(v2)
+        value = f'{v1} - {v2}'
     else:
         value = round(value[0], round_by)
         if int(value) == value:
             value = int(value)
-    # elif rounded:
-    #     value = round(value[0])
-    # else:
-    #     value = round(value[0], 2)
-    #     if int(value) == value:
-    #         value = int(value)
     if '+' in replace:
         value = f'+{value}'
     if '-' in replace:
@@ -132,6 +128,8 @@ def parse_stat(stat_line: str, value: [float], rounded=True) -> str:
         value = f'{value} Encounters'
     if 'c' in replace:
         value = f'{value} Chambers'
+    if 'm' in replace:
+        value = f'{value}<:Magick:1241635310387990568>'
     stat = re.sub(r'{.*}', f'**{value}**', stat_line)
     return f'\n▸ {stat}'
 

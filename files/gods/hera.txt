@@ -82,7 +82,7 @@ infusion proper upbringing
     1(<:EarthEssence:1242225885390700604>)
 legendary brave face earth
     Automatically use **<:Magick:1241635310387990568>** to resist up to **50%** of any damage.
-    Magick Cost per Damage Point: {}<:Magick:1241635310387990568>
+    Magick Cost per Damage Point: {m}
     5
     0
     4/47/Brave_Face.png

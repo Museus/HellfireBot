@@ -421,30 +421,6 @@ def legendaries_embed() -> discord.Embed:
     return embed
 
 
-def bpperk_embed(input: [str]) -> discord.Embed or None:
-    if input:
-        name = ' '.join(input).lower()
-        if name in files.aliases['misc']:
-            name = files.aliases['misc'][name][0]
-        if name not in files.bpperks_info:
-            return None
-        info = files.bpperks_info[name]
-        embed = discord.Embed(
-            title=misc.capwords(name),
-            description=info['desc']
-        )
-        if 'req' in info:
-            embed.add_field(name='Availability:', value=info['req'])
-        embed.set_thumbnail(url=misc.to_link(info['icon']))
-    else:
-        embed = discord.Embed(
-            title='List of **Benefits Package** Perks',
-            description='\n'.join([misc.capwords(b) for b in files.bpperks_info])
-        )
-        embed.set_thumbnail(url=misc.to_link('1027088229737963530'))
-    return embed
-
-
 def define_embed(text: str):
     used = set()
     for definition in files.definitions_info:
@@ -541,26 +517,6 @@ def enemy_embed(input: [str]) -> discord.Embed or None:
     return embed
 
 
-def getpersonal_embed(ctx, user):
-    id = str(user.id) if user else str(ctx.message.author.id)
-    embed = discord.Embed(
-        title='Personal pact and mirror presets'
-    )
-    embed.set_footer(text=f'Requested by {ctx.message.author.name}', icon_url=ctx.message.author.avatar.url)
-    if id in files.personal:
-        if files.personal[id]['pacts']:
-            pacts = ''
-            for pact_name in files.personal[id]['pacts']:
-                pacts += f'{pact_name}: {" ".join(files.personal[id]["pacts"][pact_name])}\n'
-            embed.add_field(name='Pacts', value=pacts, inline=False)
-        if files.personal[id]['mirrors']:
-            mirrors = ''
-            for mirror_name in files.personal[id]['mirrors']:
-                mirrors += f'{mirror_name}: {files.personal[id]["mirrors"][mirror_name]}\n'
-            embed.add_field(name='Mirrors', value=mirrors, inline=False)
-    return embed
-
-
 def help_embed(client, command_name, aliases_to_command):
     embed = discord.Embed()
     if not command_name:
@@ -602,9 +558,12 @@ async def creds_embed(client):
         title='Special thanks to'
     )
     for message in messages:
-        user = client.get_user(message[0][2: -1])
-        if not user:
-            user = await client.fetch_user(message[0][2: -1])
-        embed.add_field(name=user.name, value=message[1], inline=False)
+        if message[0][0] == '<':
+            user = client.get_user(message[0][2: -1])
+            if not user:
+                user = await client.fetch_user(message[0][2: -1])
+            embed.add_field(name=user.name, value=message[1], inline=False)
+        else:
+            embed.add_field(name=message[0], value=message[1], inline=False)
     embed.set_thumbnail(url=misc.to_link('1027107104345034802'))
     return embed

@@ -1,0 +1,74 @@
+attack swift strike earth
+    Your **Attacks** are faster.
+    Attack Speed: {+%}
+    10 15 20 25
+    0
+    9/95/Swift_Strike.png
+special swift flourish earth
+    Your **Specials** are faster.
+    Special Speed: {+%}
+    15 18 21 24
+    0
+    d/d5/Swift_Flourish.png
+cast saved breath earth
+    Your **Ω Cast** uses less **<:Magick:1241635310387990568>**.
+    Omega Cast Cost: {-%}
+    50 60 70 80
+    0
+    0/0b/Saved_Breath.png
+sprint nitro boost fire
+    Your **Sprint** is **15%** faster and gives you a barrier that ignores instances of damage.
+    Hits Blocked per Encounter: {}
+    1 2 3 4
+    0
+    b/b3/Nitro_Boost.png
+gain witty retort earth
+    Your **Hex** requires using less **<:Magick:1241635310387990568>** before it is ready.
+    Reduced Magick Cost: {-%}
+    15 20 25 30
+    0
+    0/01/Witty_Retort.png
+t1 greater evasion air
+    Whenever you are struck, you may **Dodge** any damage.
+    Dodge Chance: {+%}
+    10 15 20 25
+    0
+    3/3d/Greater_Evasion.png
+t1 hard target air
+    Most foes' ranged shots are slower.
+    Foe Projectile Speed: {-%}
+    30 40 50 60
+    0
+    9/92/Hard_Target.png
+t1 midnight oil air
+    While your **Hex** is ready, you move and strike faster.
+    Bonus Move & Weapon Speed: {+%}
+    15 20 25 30
+    0
+
+t1 quick buck air
+    You find **<:GoldenCrowns:1247723119372927009>** in greater quantities. Receive **100** **<:GoldenCrowns:1247723119372927009>** now, plus the bonus!
+    Bonus Gold: {+%}
+    20
+    0
+    8/88/Quick_Buck.png
+t1 mean streak air
+    Each time you slay a foe, deal more damage for the next **30 Sec.**
+    Bonus Damage per Slain Foe: {+%}
+    1 1.5 2 2.5
+    0
+    7/75/Mean_Strike.png
+infusion tall order
+    While you have at least **2** each of **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>** **Elements**, you deal more damage.
+    Infused Damage: {+%}
+    20
+    0
+    0/0c/Tall_Order.png
+    1(<:EarthEssence:1242225885390700604>); 1(<:WaterEssence:1242225888519520377>); 1(<:AirEssence:1242224825079169165>); 1(<:FireEssence:1242225886938533888>)
+legendary close call air
+    Gain **+1** use of **Death Defiance** that makes everything else move **90%** slower.
+    Slow Duration: {s}
+    8
+    0
+    4/4b/Close_Call.png
+    1(swift strike, swift flourish, hard target, saved breath, witty retort, greater evasion, midnight oil, mean streak, nitro boost)

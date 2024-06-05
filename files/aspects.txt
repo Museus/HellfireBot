@@ -5,15 +5,15 @@ staff melinoë staff
     A waxing crescent moon; the promise of power, the responsibility to ready oneself.
     thumb/7/72/Staff-Melinoe.png/80px-Staff-Melinoe.png
 staff circe
-    After landing **21** **Attacks** or **Specials**, gain **Serenity**.
-    Serenity Duration: {s}
-    6 7 8 9 10 11
-    A high priestess of the Unseen once used the staff to bring abount necessary change.
+    After your **Attack** or **Special** hit **12** times, gain **Serenity** with your next **Ω Move**.
+    Serenity Omega Damage: {+%}
+    40 60 80 100 120 140
+    A high priestess of the Unseen once used the staff to bring about necessary change.
     thumb/0/0e/Staff-Circe.png/80px-Staff-Circe.png
 staff momus
-    While you have no more than **50%** <health>, absorb your **Ω Special** blast to restore **5** <health>.
-    Special & Omega Special Powwer: {+}
-    10 15 20 25 30 35
+    Whenever you use **Ω Moves**, each fires in place up to **3** times until you use it again.
+    Delay Between Omega Bursts: {s}
+    <unknown>
     Not even ever-patient Night herself spared much time for his insolence.
     thumb/6/69/Staff-Momus.png/80px-Staff-Momus.png
 blades melinoë blades
@@ -29,13 +29,13 @@ blades artemis
     A flash of silver; whether the Huntress or the Moon, none can attest.
     thumb/2/2b/Blades-Artemis.png/80px-Blades-Artemis.png
 blades pan
-    Your **Specials** seek foes in your **Casts**, and fire more blades after you **Channel**.
-    Omega Bonus Blades: {+}
-    1 2 3 4 5 6
+    Your **Specials** seek foes in your **Casts**, and fire more blades if you **Channel** longer.
+    Omega Special Max Shots: {+}
+    <unknown>
     The natural-grown horn can pierce as readily as a well-crafted blade.
     thumb/4/42/Blades-Pan.png/80px-Blades-Pan.png
 torch melinoë flames
-    Flames from your **Ω Special** burn longer before expiring.
+    Flames from your **Ω Special** can burn longer before expiring.
     Omega Special Duration: {+s}
     0 1 1.5 2 2.5 3
     No single light can illuminate the many crossroads ahead; thus there are two.
@@ -47,15 +47,15 @@ torch moros
     Feared and hated Doom lingers like a sword about to fall; even his time shall come.
     thumb/9/9c/Torch-Moros.png/80px-Torch-Moros.png
 torch eos
-    Your **Attacks** gro bigger and stronger over **4 Sec.**, and return whenever you **Sprint**.
-    Full-Grown Damage: {+%}
-    40 50 60 70 80 90
+    Your **Ω Attack** fires a **Daybreaker** that deals damage in an area around it every **2 Sec.**
+    Daybreaker Blast Damage: {}
+    <unknown>
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
     thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
 axe melinoë axe
-    You recover faster after using your **Attacks** and **Specials**.
-    Recovery Speed: {+%}
-    0 10 15 20 25 30
+    Gain bonus **Attack** **Power** and **<:MaxLife:1241662636995772436>** this night.
+    Attack Power & Max Life: {+}
+    <unknown>
     Its tin blade can split even the light of the Moon, yet itself can never be separated.
     thumb/2/21/Axe-Melinoe.png/80px-Axe-Melinoe.png
 axe charon
@@ -65,9 +65,9 @@ axe charon
     To navigate the rivers of the Underworld is to possess extraordinary poise and strength.
     thumb/5/5e/Axe-Charon.png/80px-Axe-Charon.png
 axe thanatos
-    Whenever you hit with **Ω Moves**, gain **+1% Critical** chance until you take damage.
-    Max Critical Chance: {+%}
-    4 8 12 16 20 24
+    Your **Attack** is faster, and each hit grants **Mortality** until you take damage.
+    Attack Speed: {+%}
+    <unknown>
     Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
     thumb/6/63/Axe-Thanatos.png/80px-Axe-Thanatos.png
 skull melinoë skull
@@ -77,14 +77,14 @@ skull melinoë skull
     The will of Night is never to be chronicled, but witnessed by the dead and the shadow.
     thumb/7/7f/Skull-Melinoe.png/80px-Skull-Melinoe.png
 skull medea
-    Your **Attack** stays within reach, and explodes in a large area on impact or after **3 Sec.**
+    Your **Attack** stays within reach, and explodes after landing your **Specials** or **3 Sec.**
     Attack & Special Damage: {+%}
     20 30 40 50 60 70
     She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
     thumb/4/4b/Skull-Medea.png/80px-Skull-Medea.png
 skull persephone
-    Any damage you deal generates **<:Glory:1247336676548804609> Glory**, which enhances your **Ω Special**.
-    Omega Damage: {+%}
-    10 15 20 25 30 40
+    Your **Ω Cast** generates **<:Glory:1247336676548804609> Glory** when it hits, which extends your **Ω Special**.
+    Omega Move Damage: {+%}
+    <unknown>
     Life and death, forever embodied in a Queen both splendorous and dark at once.
     thumb/3/32/Skull-Persephone.png/80px-Skull-Persephone.png

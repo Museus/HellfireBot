@@ -1,0 +1,41 @@
+t1 support fire air
+    After you hit with your **Attacks** or **Specials**, fire a seeking arrow.
+    Arrow Damage: {}
+    10 15 20 25
+    0
+    e/e2/Support_Fire.png
+t1 pressure points earth
+    Any damage you deal may be **Critical**.
+    Critical Chance: {+%}
+    3 4 5 6
+    0
+    b/b0/Pressure_Points.png
+t1 silver streak air
+    After you **Dash**, your **Ω Moves** deal more damage for **2 Sec.**
+    Bonus Omega Damage: {+%}
+    10 15 20 25
+    0
+    a/a0/Silver_Streak.png
+t1 first blood earth
+    Foes with at least **80%** **<:Life:1241660063513448499>** or **80%** **Armor** may take **Critical** damage.
+    Critical Chance: {+%}
+    10 15 20 25
+    0
+    4/45/First_Blood.png
+t1 lethal snare earth
+    Foes in your **Casts** may take **Critical** damage from your **Attacks**.
+    Critical Chance: {+%}
+    8 10 12 14
+    0
+    7/7b/Lethal_Snare.png
+t1 easy shot air
+    A piercing arrow fires toward any foe damaged by your **Ω Cast**.
+    Arrow Damage: {}
+    20 30 40 50
+    0
+    0/07/Easy_Shot.png
+t1 death warrant earth
+    A random foe occasionally becomes **Marked**. If it takes **Critical** damage, this repeats.
+    Time Between Marks: {s}
+    20 18 16 14
+    6/65/Death_Warrant.png

@@ -49,13 +49,13 @@ torch moros
 torch eos
     Your **Ω Attack** fires a **Daybreaker** that deals damage in an area around it every **2 Sec.**
     Daybreaker Blast Damage: {}
-    100 125 150 175 200 225
+    40 80 120 160 200 240
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
     thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
 axe melinoë axe
     Gain bonus **Attack** **Power** and **<:MaxLife:1241662636995772436>** this night.
     Attack Power & Max Life: {+}
-    15 20 25 30 35 40
+    0 20 25 30 35 40
     Its tin blade can split even the light of the Moon, yet itself can never be separated.
     thumb/2/21/Axe-Melinoe.png/80px-Axe-Melinoe.png
 axe charon
@@ -85,6 +85,6 @@ skull medea
 skull persephone
     Your **Ω Cast** generates **<:Glory:1247336676548804609> Glory** when it hits, which extends your **Ω Special**.
     Omega Move Damage: {+%}
-    10 15 20 25 30 35
+    10 15 20 25 30 40
     Life and death, forever embodied in a Queen both splendorous and dark at once.
     thumb/3/32/Skull-Persephone.png/80px-Skull-Persephone.png

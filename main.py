@@ -144,15 +144,14 @@ async def hammer(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    await misc.reply(ctx, 'Not yet implemented', mention=True)
-    # embed, choices = embeds.hammer_embed(args)
-    # if not embed:
-    #     await misc.reply(ctx, 'idk man as', mention=True)
-    #     return
-    # if choices:
-    #     await react_edit(ctx, embed, choices, embeds.hammer_embed)
-    #     return
-    # await misc.reply(ctx, embed=embed)
+    embed, choices = embeds.hammer_embed(args)
+    if not embed:
+        await misc.reply(ctx, 'idk man as', mention=True)
+        return
+    if choices:
+        await react_edit(ctx, embed, choices, embeds.hammer_embed)
+        return
+    await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['g', 'gods'])

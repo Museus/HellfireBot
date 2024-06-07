@@ -1,0 +1,35 @@
+melting shredder
+    Your **Special** destroys **20%** of any **Armor** *(based on the total)*.
+
+rapid slash
+    Your **Attack** is **30%** faster.
+
+empowering guard
+    After blocking a foe with your **Special**, deal **+50%** damage for **15 Sec.**
+
+sudden cleaver
+    You **Channel** your **Ω Special** **25%** faster.
+
+dashing heave
+    Your **Dash-Strike** hits **2** times in an area around you.
+
+psychic whirlwind
+    During your **Ω Attack**, you are free to use your **Attacks** and **Specials**.
+
+executioner's chop
+    The final move in your **Attack** sequence hits **2** times, but uses **20* **<:Magick:1241635310387990568>**.
+
+advancing whirlwind
+    Your **Ω Attack** fires ahead of you and deals **+80%** damage.
+
+giga cleaver
+    Your **Ω Special** fires **2** times in succession but costs **+15** **<:Magick:1241635310387990568>**.
+
+furious whirlwind
+    You **Channel** your **Ω Attack** faster, and move **50%** faster while it is active.
+
+unyielding slash
+    Your **Attacks** have **+10** **Power** and you take **-20%** damage while using them.
+
+hell splitter
+    Your **Attack** becomes a big chop with **300** **Power**.

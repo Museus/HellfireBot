@@ -1,0 +1,35 @@
+sustained spark
+    While you **Channel** your **Attacks**, you move and fire **20%** faster.
+
+clean candle
+    You **Channel** your **Ω Attack** **50%** faster, and it uses **-1** **<:Magick:1241635310387990568>**.
+
+inverted spark
+    Whenever you **Dash**, shots from your **Attacks** reverse direction and can strike again.
+
+triple helix
+    Your **Ω Special** creates **+1** flame.
+
+rising coil
+    Your **Specials** grow in size and deal up to **+25%** damage the longer they are active.
+
+mega spark
+    Your **Attacks** fire **20%** farther and deal **+30%** damage.
+
+origin coil
+    Your **Specials** are **60%** faster and orbit where you fire them.
+
+crushing comet
+    Your **Special** has **+75** **Power**, but dissipates after striking foes.
+
+melting coil
+    Your **Specials** destroy **20%** of any **Armor** *(based on the total)*.
+
+clean helix
+    You **Channel** your **Ω Special** **20%** faster, and it uses **-10** **<:Magick:1241635310387990568>**.
+
+leaden spark
+    Your **Attacks** knock foes away and have **+10** **Power**.
+
+  split spark
+    Your **Attacks** split in **2** the first time they strike foes.

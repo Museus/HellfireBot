@@ -110,7 +110,7 @@ resource gold purse
 
 resource moon beam
     You gain {+} upgrades for your **Hex** from the next **Path of Stars** you find.
-    2 4 6 8
+    3 4 5 6
     selene
 
 resource crystal figurine

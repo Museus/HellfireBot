@@ -1,0 +1,35 @@
+rapid thrasher
+    Your **Attacks** are **50%** faster.
+
+melting swipe
+    Your **Dash-Strike** hits a larger area and destroys **60%** of any **Armor** *(based on the total)*.
+
+wicked thrasher
+    Your **Attacks** have **+30** **Power**.
+
+cross cataclysm
+    Your **Ω Attack** deals **+50%** damage and also strikes sideways.
+
+vampiric cataclysm
+    After you slay a foe with your **Ω Attack**, restore **5** **<:Life:1241660063513448499>**.
+
+rapid moonshot
+    Your **Specials** are **25%** faster.
+
+shimmering moonshot
+    Your **Specials** bounce toward up to **2** more foes, dealing **+10%** damage for each hit.
+
+extending wallop
+    Your **Attack** has more range and deals **+100%** damage to distant foes.
+
+mirrored thrasher
+    Your **Attacks** hit **2** times, but you take **+30%** damage.
+
+aetheric moonburst
+    Your **Ω Special** gains a **Power Shot** that deals **+50%** damage and restores **20** **<:Magick:1241635310387990568>**.
+
+giga moonburst
+    You can **Channel** **+30** **<:Magick:1241635310387990568>** into your **Ω Special** to deal **+300%** damage in a larger area.
+
+dual moonshot
+    Your **Specials** fire **2** projectiles, but have **-40%** range.

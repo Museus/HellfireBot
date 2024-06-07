@@ -1,3 +1,5 @@
+import misc
+
 boons_info = {}
 legendary_info = []
 charon_info = {}
@@ -114,20 +116,20 @@ with open('./files/aspects.txt', 'r', encoding='utf8') as f:
             'icon': f.readline().strip()
         }
 
-# for weapon in misc.weapon_icons:
-#     with open(f'./files/hammers/{weapon}.txt', 'r', encoding='utf8') as f:
-#         while hammer := f.readline().strip():
-#             has_prereq = False
-#             if hammer[0] == 'x':
-#                 has_prereq = True
-#                 hammer = hammer[1:]
-#             hammers_info[hammer] = {'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()}
-#             if has_prereq:
-#                 prereqs = f.readline().strip().split('; ')
-#                 prereq_list = []
-#                 for prereq in prereqs:
-#                     prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-#                 prereqs_info[hammer] = prereq_list
+for weapon in misc.weapon_icons:
+    with open(f'./files/hammers/{weapon}.txt', 'r', encoding='utf8') as f:
+        while hammer := f.readline().strip():
+            has_prereq = False
+            if hammer[0] == 'x':
+                has_prereq = True
+                hammer = hammer[1:]
+            hammers_info[hammer] = {'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()}
+            if has_prereq:
+                prereqs = f.readline().strip().split('; ')
+                prereq_list = []
+                for prereq in prereqs:
+                    prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
+                prereqs_info[hammer] = prereq_list
 
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():

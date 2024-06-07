@@ -32,12 +32,13 @@ god_icons = {
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
     'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
 }
-weapon_icons = {'sword': 'f/f7/Stygian_Blade.png/revision/latest?cb=20181213044607',
-                'spear': 'c/c1/Eternal_Spear.png/revision/latest?cb=20181214234725',
-                'shield': '0/02/Shield_of_Chaos.png/revision/latest?cb=20181213193429',
-                'bow': '5/5c/Heart-Seeker_Bow.png/revision/latest?cb=20181213193638',
-                'fists': '0/08/Twin_Fists.png/revision/latest?cb=20200430070608',
-                'rail': '3/36/Adamant_Rail.png/revision/latest?cb=20210120004027'}
+weapon_icons = {
+    'staff': 'thumb/0/06/Witch%27s_Staff.png/300px-Witch%27s_Staff.png',
+    'blades': '4/4a/Sister_Blades.png',
+    'torch': 'thumb/b/b0/Umbral_Flames.png/300px-Umbral_Flames.png',
+    'axe': 'thumb/1/1f/Moonstone_Axe.png/300px-Moonstone_Axe.png',
+    'skull': 'thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png'
+                }
 element_icons = {
     'earth': '1242225885390700604',
     'water': '1242225888519520377',

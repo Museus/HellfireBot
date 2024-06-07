@@ -1,0 +1,35 @@
+final slice
+    The last strike in your **Attack** sequence deals **+300%** damage in a larger area.
+
+skulking slice
+    Your **Attacks** deal **+200%** damage striking foes from behind.
+
+explosive ambush
+    Your **Ω Attack** hits a wide area and deals **+400%** damage, but uses **+20** **<:Magick:1241635310387990568>**.
+
+sudden flurry
+    You **Channel** your **Ω Special** **40%** faster.
+
+flick knives
+    Your **Dash-Strike** also fires your **Special** **3** times at once in a fan pattern.
+
+escalating ambush
+    In each **Encounter**, your **Ω Attack** gains **+15** **Power** for each foe you slay with it.
+
+rapid onslaught
+    Your **Attacks** are **35%** faster.
+
+melting dart
+    Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
+
+spiral knives
+    Your **Specials** deal **+20%** damage and your **Ω Special** fires up to **16** shots around you.
+
+dancing knives
+    Your **Specials** deal **+15%** damage and each hit bounces toward up to **2** more foes.
+
+sureshot flurry
+    Your **Ω Special** fires each shot straight ahead and your **Specials** have **+30%** range.
+
+hook knives
+    Your **Specials** pierce through foes and return to you at the end of their path.

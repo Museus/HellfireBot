@@ -1,0 +1,35 @@
+fetching array
+    Your **<:Shell:1245300154353979442> Shells**return to you automatically, but you have **-1** **<:Shell:1245300154353979442>**.
+
+bolstered array
+    Gain **+2** **<:Shell:1245300154353979442> Shells**.
+
+looming ignition
+    Your **Attack** grows up to **50%** bigger and stronger over **2 Sec.**, or until it explodes.
+
+twisting crash
+    After your **Ω Special** projectiles fire, they fire again toward you.
+
+mega driver
+    Your **Specials** travel farther and deal **+50%** damage.
+
+possessed array
+    Your **<:Shell:1245300154353979442> Shells** fire your **Ω Attack** for **0** **<:Magick:1241635310387990568>** whenever retrieved.
+
+destructive array
+    Every **2.5 Sec.**, your **<:Shell:1245300154353979442> Shells** deal damage around them based on **50%** of your **Attack**.
+
+melting tackle
+    Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
+
+sudden driver
+    Your **Specials** are **35%** faster.
+
+full salvo
+    Your **Attacks** fire your **<:Shell:1245300154353979442> Shells** all at once in a spread pattern.
+
+rocket bombard
+    Your **Ω Attack** fires straight ahead and has **20** **Power**.
+
+colossus driver
+    Your **Specials** have **+30** **Power** and you take **-30%** damage while using them.

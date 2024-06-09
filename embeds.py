@@ -317,7 +317,7 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
     value = [float(info['levels'][level - 1])]
     embed = discord.Embed(
         title=f'**Aspect of {misc.capwords(name)}** (Rank {("I", "II", "III", "IV", "V", "VI")[level - 1]})',
-        description=info["desc"] + parsing.parse_stat(info["stat"], value, rounded=False),
+        description=info["desc"] + parsing.parse_stat(info["stat"], value),
         color=misc.rarity_embed_colors[level - 1]
     )
     embed.set_footer(text=info['flavor'])
@@ -493,6 +493,52 @@ def keepsake_embed(input: [str]):
         for category in keepsakes:
             desc = '\n'.join([misc.capwords(b) for b in keepsakes[category]])
             embed.add_field(name=category, value=desc)
+        embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
+    return embed, ''
+
+
+def arcana_embed(input: [str]):
+    if input:
+        name, level = parsing.parse_arcana(input)
+        if not name:
+            return None, ''
+        if len(name) > 1:
+            desc = ''
+            for index, alias in enumerate(name):
+                desc += f'{misc.disambig_select[index]} {misc.capwords(alias, capall=True)}\n'
+            embed = discord.Embed(
+                title='Alias conflict',
+                description=desc
+            )
+            embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
+            return embed, name
+        else:
+            name = name[0]
+        info = files.arcana_info[name]
+        level = min(max(level, 1), 4)
+        try:
+            value = [float(info['levels'][level - 1])]
+        except IndexError:
+            value = []
+        desc = parsing.parse_stat(info['desc'], value)[2:]
+        if 'awakening' in info:
+            desc += f'\n\n{info["awakening"]}'
+        embed = discord.Embed(
+            title=f'**{misc.capwords(name, capall=True)} ({info["cost"]} <:Grasp:1248759750963761182>)**',
+            description=desc,
+            color=misc.card_ranks[level - 1][0]
+        )
+        footer = info['flavor']
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
+        embed.set_footer(text=footer, icon_url=misc.to_link(misc.card_ranks[level - 1][1]))
+    else:
+        embed = discord.Embed(
+            title='List of **Arcana**',
+            color=misc.god_colors['keepsake'])
+        desc = ''
+        for count, arcana_name in enumerate(files.arcana_info, start=1):
+            desc += f'{count}. {misc.capwords(arcana_name, capall=True)}\n'
+        embed.description = desc
         embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
     return embed, ''
 

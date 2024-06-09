@@ -110,14 +110,14 @@ mortality
     Makes your **Ω Special** last up to **+5 Sec.**, firing continuously while you have control.
 <:Shell:1245300154353979442> shells, <:Shell:1245300154353979442> shell
     Ammunition for your **Attacks**. Retrieve from the field to re-use.
-death defiance
+<death defiance>
     When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1241635310387990568>. Limited uses per night.
 <:Reroll:1028190585280012348> change of fate, <:Reroll:1028190585280012348>
     Used to alter various outcomes presented to you, depending on your **Arcana**.
 curse
     A temporary debilitating effect inflicted by the Olympian gods.
 awakening
-    Cards that use **0** <:Grasp:1245298488607244359> and auto-activate, but only if their condition is met.
+    Cards that use **0** <:Grasp:1248759750963761182> and auto-activate, but only if their condition is met.
 <:BlueHeart:1241665623453601803> barrier, <:BlueHeart:1241665623453601803>
     Negates the next instance of damage, even if it would have been an awful lot.
 revenant
@@ -212,3 +212,5 @@ charon
     The feared Boatman of the River Styx serves the Underworld in his own way.
 chaos gate
     A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
+<:FateFabric:1249176533675933748> fate fabric, <:FateFabric:1249176533675933748>
+    Mostly used with incantations involving chance and fortune.

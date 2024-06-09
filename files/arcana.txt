@@ -1,0 +1,131 @@
+1 the sorceress
+    While you **Channel** your **Ω Moves**, everything moves slower for {s}
+    2 3 4 5
+    Left to her own devices, she learned to confront the world on her own terms.
+
+1 the wayward son
+    After you exit a **Location**, restore {} **<:Life:1241660063513448499>**, or twice that if you have no more than **30%** **<:Life:1241660063513448499>**.
+    2 3 4 5
+    Even the Underworld itself struggled to contain him, such was his lust for life.
+
+3 the huntress
+    While you have less than **100%** **<:Magick:1241635310387990568>**, your **Attack** and **Special** deal **+50%** damage.
+    30 40 50 60
+    Through discipline and instinct comes surpassing skill both in shadow and the light of the Moon.
+
+3 death
+    Your **Ω Moves** have {+%} chance to deal **Critical** damage.
+    3 4 5 6
+    Some mortals would sense his soft approach, others taken by surprise.
+
+0 the messenger
+    You have {+%} chance to **Dodge**.
+    6 8 10 12
+    With incomparable swiftness can he travel from the highest peaks to the lowest depths.
+
+    **Awakening**: *Activate at least* **3** *Cards that use the same amount of <:Grasp:1248759750963761182>.*
+2 the furies
+    Deal {+%} damage to foes in your **Casts**.
+    20 25 30 35
+    In the deepest reaches of the Underworld, three are as feared as the god of the dead himself.
+
+2 the titan
+    Gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1245289397570502719>**.
+    20 30 40 50
+    He stole from the gods the gift of fire, for mortals; thus he suffered, but grew strong.
+
+5 the unseen
+    Restore {} **<:Magick:1241635310387990568>** every **1 Sec.**
+    2 3 4 6
+    Upon their ancient oath, in shadow, they serve; and to shadow, they return.
+
+4 night
+    Your **Hex** also charges up automatically as though you used {} **<:Magick:1241635310387990568>** every **1 Sec.**
+    2 3 4 5
+    She sprang from Chaos, and formed much of the natural world, above the surface and below.
+
+2 the lovers
+    In **Guardian** **Encounters**, you take **0** damage the first {} time(s) you are hit.
+    1 2 3 4
+    Their music brought them together, and not even Death could keep them apart for too long.
+
+1 the swift runner
+    Your **Dash** is immediate and your **Sprint** is {%} faster.
+    5 7 10 11
+    Those who attempted to confront the greatest of the Greeks merely met his spear.
+
+4 eternity
+    Set forth each night with {} <death defiance>.
+    1 2 3 4
+    The inevitable cannot be prevented, though perhaps can be forestalled.
+
+0 the centaur
+    After every **5** **Locations**, gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1245289397570502719>**.
+    3 4 5 6
+    Many of the greatest heroes mortalkind has to offer have in common his patient instruction.
+
+    **Awakening**: *Activate Cards that use* **1** <:Grasp:1248759750963761182> *through* **5** <:Grasp:1248759750963761182>.
+3 the moon
+    Your **Ω Cast** has {+} **Power** whenever it detonates.
+    50 75 100 125
+    Even as she races her steeds across the fathomless sky, she bears witness to all.
+
+5 strength
+    While you have no more than **30%** **<:Life:1241660063513448499>**, you take {-%} damage and deal {+%}.
+    30 40 50 60
+    The power to surpass the might of the gods is one that must always be held in check.
+
+3 the fates
+    Set forth each night with {+} **<:Reroll:1028190585280012348>**. You can alter **Location Rewards**.
+    1 2 3 4
+    Even the gods themselves are subject to the whims of the three weavers of destiny.
+
+5 the boatman
+    Set forth each night with {+} **<:GoldenCrowns:1247723119372927009>**.
+    200 250 300 350
+    Vast riches lie hidden in the realm of the dead; but only a modest fee is needed to get in.
+
+3 origination
+    Deal {+%} damage to foes afflicted with at least **2** **Curse** effects.
+    25 37 50 62
+    From the infinite void emerged all that exists, and back to that void it all may yet return.
+
+5 excellence
+    Any **Boons** you are offered have {+%} chance to be improved to **Rare**.
+    30 40 50 60
+    Not even gods can always live to their fullest purpose; yet mortals all must strive.
+
+0 the queen
+    Any **Boons** you are offered have {+%} chance to be a **Duo** *(whenever possible)*.
+    6 8 10 12
+    From Olympus she descends to reign in the Underworld, as the surface-land grows cold.
+
+    **Awakening**: *Activate no more than* **2** *Cards that use the same amount of <:Grasp:1248759750963761182>.*
+0 the seer
+    Set forth each night with {+} **<:Reroll:1028190585280012348>**.
+    2 3 4 5
+    Having been stricken blind, she saw much more than any mortal could.
+
+    **Awakening**: *Activate each surrounding Card.*
+4 the champions
+    Set forth each night with {+} **<:Reroll:1028190585280012348>**. You can alter **Boons** and certain other choices.
+    1 2 3 4
+    Once-mortal foes, they found each other once again in death, and were exalted in Elysium.
+
+6 the artificer
+    Set forth each night with {} chance(s) to turn any **Minor Find** into a random **Major Find**.
+    1 2 3 4
+    Few can turn raw materials into works of extraordinary genius; none as can he.
+
+0 divinity
+    Any **Boons** you are offered have {+%} chance to be improved to **Epic**.
+    10 15 20 25
+    The privilege of godhood is bestowed at birth, save for the rarest cases, when it is earned instead.
+
+    **Awakening**: *Activate all* **5** *Cards in any other row.*
+0 judgment
+    After you vanquish a **Guardian**, activate {} random inactive **Arcana Cards**.
+    3 4 5 6
+    The Underworld King is to decide what shall become of each and every mortal life.
+
+    **Awakening**: *Activate no more than* **3** *Cards.*

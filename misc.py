@@ -13,7 +13,7 @@ god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
     'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duos': 0xD1FF18,
-    'artemis': 0xD2FC61, 'hermes': 0xFBF7A7,
+    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'hermes': 0xFBF7A7,
     'keepsake': 0x465B75
 }
 god_icons = {
@@ -26,11 +26,12 @@ god_icons = {
     'poseidon': 'thumb/4/4e/Poseidon_Boons.png/60px-Poseidon_Boons.png',
     'zeus': 'thumb/3/34/Zeus_Boons.png/60px-Zeus_Boons.png',
     'duos': '1027126357597093969',
+    'arachne': 'thumb/e/e0/CodexPortrait_Arachne.png/350px-CodexPortrait_Arachne.png',
     'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
     'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',
+    'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
     'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
-    'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
 }
 weapon_icons = {
     'staff': 'thumb/0/06/Witch%27s_Staff.png/300px-Witch%27s_Staff.png',
@@ -38,7 +39,7 @@ weapon_icons = {
     'torch': 'thumb/b/b0/Umbral_Flames.png/300px-Umbral_Flames.png',
     'axe': 'thumb/1/1f/Moonstone_Axe.png/300px-Moonstone_Axe.png',
     'skull': 'thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png'
-                }
+}
 element_icons = {
     'earth': '1242225885390700604',
     'water': '1242225888519520377',
@@ -46,6 +47,12 @@ element_icons = {
     'fire': '1242225886938533888',
     'aether': '1243121873408102471'
 }
+card_ranks = [
+    (0x505858, '1247798358362554420'),
+    (0x48DBFF, '1247798360870490204'),
+    (0xFF86FF, '1247798359398416394'),
+    (0xFF837C, '1248765071379660840')
+]
 disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
@@ -146,7 +153,9 @@ def rarity_rolls(input: [str]) -> [float]:
     return rolls
 
 
-def capwords(s: str) -> str:
+def capwords(s: str, capall=False) -> str:
+    if capall:
+        return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
     return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
 
 
@@ -164,6 +173,11 @@ def channel_status(ctx):
     if 'h!optin' in ctx.channel.topic:
         return 1
     return 2
+
+
+def suggest_hint(thing, an=False):
+    return (f'Did you use an alias for {"an" if an else "a"} {thing} that didn\'t work? Try calling```h!suggest '
+            f'<alias> -> <{thing} name>```to let the developer know!')
 
 
 async def reply(ctx, message='', embed=None, file=None, mention=False):

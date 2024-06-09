@@ -87,6 +87,23 @@ def parse_keepsake(input: [str]) -> (str, int, bool):
     return '', rank
 
 
+def parse_arcana(input: [str]) -> (str, int, bool):
+    input = [s.lower() for s in input]
+    level = 3
+    if input[-1].isdigit() and len(input) != 1:
+        level = int(input[-1])
+        input = input[:-1]
+    arcana_name = ' '.join(input)
+    if arcana_name in files.aliases['arcana']:
+        arcana_name = files.aliases['arcana'][arcana_name]
+        if len(arcana_name) > 1:
+            return arcana_name, -1
+        arcana_name = arcana_name[0]
+    if arcana_name in files.arcana_info:
+        return [arcana_name], level
+    return '', level
+
+
 def parse_enemy(input: [str]) -> str:
     input = [s.lower() for s in input]
     enemy_name = ' '.join(input)
@@ -95,49 +112,53 @@ def parse_enemy(input: [str]) -> str:
     return ''
 
 
-def parse_stat(stat_line: str, value: [float], num_parse=True, rounded=True) -> str:
-    try:
-        replace = re.findall(r'{.*}', stat_line)[0]
-    except IndexError:
-        return f'\n▸{stat_line}' if stat_line else ''
-    round_by = 0
-    if 'r' in replace:
-        r_idx = replace.index('r')
-        round_by = int(replace[r_idx + 1])
-        replace = replace[:r_idx] + replace[r_idx + 2:]
-    if num_parse:
-        if len(value) == 2:
-            v1 = round(value[0], round_by)
-            if int(v1) == v1:
-                v1 = int(v1)
-            v2 = round(value[1], round_by)
-            if int(v2) == v2:
-                v2 = int(v2)
-            value = f'{v1} - {v2}'
+def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
+    if not stat_line:
+        return ''
+    while True:
+        try:
+            replace = re.findall(r'{[^{}]*}', stat_line)[0]
+        except IndexError:
+            return f'\n▸{stat_line}'
+        round_by = 0
+        if 'r' in replace:
+            r_idx = replace.index('r')
+            round_by = int(replace[r_idx + 1])
+            replace = replace[:r_idx] + replace[r_idx + 2:]
+        if num_parse:
+            if len(value) == 2:
+                v1 = round(value[0], round_by)
+                if int(v1) == v1:
+                    v1 = int(v1)
+                v2 = round(value[1], round_by)
+                if int(v2) == v2:
+                    v2 = int(v2)
+                new_stat = f'{v1} - {v2}'
+            else:
+                new_stat = round(value[0], round_by)
+                if int(new_stat) == new_stat:
+                    new_stat = int(new_stat)
         else:
-            value = round(value[0], round_by)
-            if int(value) == value:
-                value = int(value)
-    else:
-        value = value[0]
-    if '+' in replace:
-        value = f'+{value}'
-    if '-' in replace:
-        value = f'-{value}'
-    if '%' in replace:
-        value = f'{value}%'
-    if 's' in replace:
-        value = f'{value} Sec.'
-    if 'x' in replace:
-        value = f'{value}x'
-    if 'e' in replace:
-        value = f'{value} Encounters'
-    if 'c' in replace:
-        value = f'{value} Chambers'
-    if 'm' in replace:
-        value = f'{value}<:Magick:1241635310387990568>'
-    stat = re.sub(r'{.*}', f'**{value}**', stat_line)
-    return f'\n▸ {stat}'
+            new_stat = value[0]
+        if '+' in replace:
+            new_stat = f'+{new_stat}'
+        if '-' in replace:
+            new_stat = f'-{new_stat}'
+        if '%' in replace:
+            new_stat = f'{new_stat}%'
+        if 's' in replace:
+            new_stat = f'{new_stat} Sec.'
+        if 'x' in replace:
+            new_stat = f'{new_stat}x'
+        if 'e' in replace:
+            new_stat = f'{new_stat} Encounters'
+        if 'c' in replace:
+            new_stat = f'{new_stat} Chambers'
+        if 'm' in replace:
+            new_stat = f'{new_stat} <:Magick:1241635310387990568>'
+        if 'a' in replace:
+            new_stat = f'{new_stat} <:Armor:1243126987032363048>'
+        stat_line = re.sub(r'{[^{}]*}', f'**{new_stat}**', stat_line)
 
 
 def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:

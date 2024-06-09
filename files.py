@@ -6,20 +6,33 @@ charon_info = {}
 aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
+arcana_info = {}
 prereqs_info = {}
 definitions_info = {}
 enemies_info = {}
-aliases = {'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {}, 'keepsake': {}, 'modifier': {}}
+aliases = {
+    'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {},
+    'keepsake': {}, 'arcana': {}, 'modifier': {}
+}
 god_cores = {
     'aphrodite': {}, 'apollo': {}, 'demeter': {},
     'hephaestus': {}, 'hera': {}, 'hestia': {},
     'poseidon': {}, 'zeus': {}, 'duos': {},
-    'artemis': {}, 'hermes': {}
+    'arachne': {}, 'artemis': {}, 'chaos': {},
+    'charon': {}, 'circe': {}, 'echo': {},
+    'hades': {}, 'hermes': {}, 'icarus': {},
+    'medea': {}, 'narcissus': {}, 'selene': {}
 }
+miscs = (
+    'arachne', 'artemis', 'chaos', 'charon',
+    'circe', 'echo', 'hades', 'hermes', 'icarus',
+    'medea', 'narcissus', 'selene'
+)
 commands_info = {}
 
 for god in god_cores:
-    with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
+    file = f'./files/gods/misc/{god}.txt' if god in miscs else f'./files/gods/{god}.txt'
+    with open(file, 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
             has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime')
@@ -67,8 +80,11 @@ for god in god_cores:
                 boons_info[boon]['cost'] = f.readline().strip()
             if type == 'duo':
                 boons_info[boon]['element'] = 'aether'
-            elif type != 'infusion':
+            elif type != 'infusion' and element != 'none':
                 boons_info[boon]['element'] = element
+
+for boon in boons_info:
+    print(boon)
 
 with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
     while boon := f.readline().strip():
@@ -140,6 +156,19 @@ with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
         }
         for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
             aliases['keepsake'][keepsakes_info[keepsake]['giver'].lower() + suffix] = [keepsake]
+
+with open('./files/arcana.txt', 'r', encoding='utf8') as f:
+    counter = 1
+    while card := f.readline().strip():
+        cost, card = card.split(' ', 1)
+        cost = int(cost)
+        arcana_info[card] = {
+            'cost': cost, 'desc': f.readline().strip(), 'levels': f.readline().strip().split(' '),
+            'flavor': f.readline().strip(), 'icon': f.readline().strip()
+        }
+        if cost == 0:
+            arcana_info[card]['awakening'] = f.readline().strip()
+        aliases['arcana'][str(counter)] = [card]
 
 for category in aliases:
     with open(f'./files/aliases/{category}aliases.txt', 'r', encoding='utf8') as f:

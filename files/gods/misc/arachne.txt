@@ -1,0 +1,36 @@
+t1 lavender dress none
+    Don a {+a} **Outfit** that makes you **Channel** **40%** faster.
+
+    30
+    0
+    thumb/f/f4/Lavander_Dress.png/41px-Lavander_Dress.png
+t1 scarlet dress none
+    Don a {+a} **Outfit** that makes your **Casts** deal **+100%** damage.
+
+    10
+    0
+    thumb/0/05/Scarlet_Dress.png/41px-Scarlet_Dress.png
+t1 onyx dress none
+    Don a {+a} **Outfit** that creates **+1** **<:FateFabric:1249176533675933748>** now.
+
+    60
+    0
+    thumb/e/e1/Onyx_Dress.png/41px-Onyx_Dress.png
+t1 moonlight dress none
+    Don a {+a} **Outfit** that grants **+5** **<:GoldenCrowns:1247723119372927009>** whenever you exit a **Location**.
+
+    20
+    0
+    thumb/2/2f/Moonlight_Dress.png/41px-Moonlight_Dress.png
+t1 azure dress none
+    Don a {+a} **Outfit** that makes you restore **5** **<:Magick:1241635310387990568>** every **1 Sec.**
+
+    40
+    0
+    thumb/5/5b/Azure_Dress.png/41px-Azure_Dress.png
+t1 emerald dress none
+    Don a {+a} **Outfit** that makes you restore **2** **<:Life:1241660063513448499>** whenever you exit a **Location**.
+
+    50
+    0
+    thumb/d/d5/Emerald_Dress.png/41px-Emerald_Dress.png

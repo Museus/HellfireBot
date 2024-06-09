@@ -73,7 +73,7 @@ async def boon(ctx, *args):
         return
     embed, choices = embeds.boon_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.boon_embed)
@@ -88,7 +88,7 @@ async def pomscaling(ctx, *args):
         return
     embed, choices = embeds.pomscaling_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.pomscaling_embed)
@@ -104,7 +104,7 @@ async def prerequisites(ctx, *args):
         return
     embed, choices = embeds.prereq_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.prereq_embed)
@@ -119,7 +119,7 @@ async def eligible(ctx, *args):
         return
     embed = embeds.eligible_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
         return
     await misc.reply(ctx, embed=embed)
 
@@ -131,7 +131,7 @@ async def aspect(ctx, *args):
         return
     embed, choices = embeds.aspect_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('aspect', an=True), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.aspect_embed)
@@ -146,7 +146,7 @@ async def hammer(ctx, *args):
         return
     embed, choices = embeds.hammer_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('hammer'), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.hammer_embed)
@@ -161,7 +161,7 @@ async def god(ctx, *args):
         return
     embed = embeds.god_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('god'), mention=True)
         return
     await misc.reply(ctx, embed=embed)
 
@@ -221,10 +221,25 @@ async def keepsake(ctx, *args):
         return
     embed, choices = embeds.keepsake_embed(args)
     if not embed:
-        await misc.reply(ctx, 'idk man as', mention=True)
+        await misc.reply(ctx, misc.suggest_hint('keepsake'), mention=True)
         return
     if choices:
         await react_edit(ctx, embed, choices, embeds.keepsake_embed)
+        return
+    await misc.reply(ctx, embed=embed)
+
+
+@client.command(aliases=['arcanas', 'card', 'cards', 'tarot', 'tarots'])
+async def arcana(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    embed, choices = embeds.arcana_embed(args)
+    if not embed:
+        await misc.reply(ctx, misc.suggest_hint('arcana', an=True), mention=True)
+        return
+    if choices:
+        await react_edit(ctx, embed, choices, embeds.arcana_embed)
         return
     await misc.reply(ctx, embed=embed)
 
@@ -237,7 +252,7 @@ async def enemy(ctx, *args):
     await misc.reply(ctx, 'Not yet implemented', mention=True)
     # embed = embeds.enemy_embed(args)
     # if not embed:
-    #     await misc.reply(ctx, 'idk man as', mention=True)
+    #     await misc.reply(ctx, misc.suggest_hint('enemy', an=True), mention=True)
     #     return
     # await misc.reply(ctx, embed=embed)
 

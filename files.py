@@ -17,7 +17,7 @@ aliases = {
 god_cores = {
     'aphrodite': {}, 'apollo': {}, 'demeter': {},
     'hephaestus': {}, 'hera': {}, 'hestia': {},
-    'poseidon': {}, 'zeus': {}, 'duos': {},
+    'poseidon': {}, 'zeus': {}, 'duo': {},
     'arachne': {}, 'artemis': {}, 'chaos': {},
     'charon': {}, 'circe': {}, 'echo': {},
     'hades': {}, 'hermes': {}, 'icarus': {},

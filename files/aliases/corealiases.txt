@@ -29,10 +29,10 @@ cast
 sprint
     dash, jump, snap, 💨
 gain
-    magic, magick
+    magic, magick, mana
 infusion
     infuse, inf, pink
 legendary
     leg, legend, lego, legendaries, yellow
 duo
-    duos, green
+    duos, double, green

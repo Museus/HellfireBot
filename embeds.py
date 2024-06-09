@@ -535,12 +535,12 @@ def arcana_embed(input: [str]):
     else:
         embed = discord.Embed(
             title='List of **Arcana**',
-            color=misc.god_colors['keepsake'])
+            color=misc.god_colors['arcana'])
         desc = ''
         for count, arcana_name in enumerate(files.arcana_info, start=1):
             desc += f'{count}. {misc.capwords(arcana_name, capall=True)}\n'
         embed.description = desc
-        embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
+        embed.set_thumbnail(url=misc.to_link('1249257631952928830'))
     return embed, ''
 
 

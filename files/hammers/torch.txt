@@ -1,35 +1,37 @@
 sustained spark
     While you **Channel** your **Attacks**, you move and fire **20%** faster.
-
+    thumb/4/46/Sustained_Spark.png/50px-Sustained_Spark.png
 clean candle
     You **Channel** your **Ω Attack** **50%** faster, and it uses **-1** **<:Magick:1241635310387990568>**.
-
+    thumb/a/ae/Clean_Candle.png/50px-Clean_Candle.png
 inverted spark
     Whenever you **Dash**, shots from your **Attacks** reverse direction and can strike again.
-
+    thumb/0/0b/Inverted_Spark.png/50px-Inverted_Spark.png
 triple helix
     Your **Ω Special** creates **+1** flame.
-
+    thumb/8/8b/Triple_Helix.png/50px-Triple_Helix.png
 rising coil
     Your **Specials** grow in size and deal up to **+25%** damage the longer they are active.
-
+    c/c9/Rising_Coil.png
 mega spark
     Your **Attacks** fire **20%** farther and deal **+30%** damage.
-
+    thumb/4/46/Mega_Spark.png/50px-Mega_Spark.png
 origin coil
     Your **Specials** are **60%** faster and orbit where you fire them.
-
+    0/08/Origin_Coil.png
 crushing comet
     Your **Special** has **+75** **Power**, but dissipates after striking foes.
-
+    thumb/3/38/Crushing_Comet.png/50px-Crushing_Comet.png
 melting coil
     Your **Specials** destroy **20%** of any **Armor** *(based on the total)*.
-
+    thumb/b/b3/Melting_Coil.png/50px-Melting_Coil.png
 clean helix
     You **Channel** your **Ω Special** **20%** faster, and it uses **-10** **<:Magick:1241635310387990568>**.
-
+    thumb/5/50/Clean_Helix.png/50px-Clean_Helix.png
 leaden spark
     Your **Attacks** knock foes away and have **+10** **Power**.
-
-  split spark
+    thumb/f/f6/Leaden_Spark.png/50px-Leaden_Spark.png
+xsplit spark
     Your **Attacks** split in **2** the first time they strike foes.
+    thumb/c/c4/Split_Fire.png/50px-Split_Fire.png
+    x(aspect of moros)

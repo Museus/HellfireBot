@@ -192,7 +192,7 @@ dark
     Vanish for **10 Sec.**; strike to appear and deal bonus damage.
 arcana
     Conduits of inner strength found in the **Altar of Ashes**.
-arcana card
+arcana card, arcana cards
     A conduit of inner strength found in the **Altar of Ashes**.
 animal familiar
     Loyal beast assistant-guardians under your protection. You may travel with **1** at a time.

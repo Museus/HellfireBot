@@ -1,0 +1,42 @@
+attack ingenius strike none
+    After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to give your **Attacks** {+} **Power**.
+
+    10
+    0
+    thumb/b/b6/Ingenious_Strike.png/41px-Ingenious_Strike.png
+special ingenius flourish none
+    After you enter a **Location**, **Prime** **40** **<:Magick:1241635310387990568>** to give your **Attacks** {+} **Power**.
+
+    20
+    0
+    thumb/6/6f/Ingenious_Flourish.png/41px-Ingenious_Flourish.png
+cast hazard boom none
+    Your **Casts** also blast the area after **4 Sec.**, dealing 500 damage to foes, but {} to *you*.
+
+    20
+    0
+    thumb/e/ee/Hazard_Boom.png/41px-Hazard_Boom.png
+t1 destructive coating none
+    Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, deal **4000** damage to nearby foes.
+
+    40
+    0
+    thumb/8/88/Destructive_Coating.png/41px-Destructive_Coating.png
+t1 protective coating none
+    Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, become **Impervious** for **8 Sec.**
+
+    80
+    0
+    thumb/d/db/Protective_Coating.png/41px-Protective_Coating.png
+t1 explosive intent none
+    Your **Ω Moves** also deal {} damage in an area around foes they hit, but use **+10** **<:Magick:1241635310387990568>**.
+
+    50
+    0
+    thumb/8/8e/Explosive_Intent.png/41px-Explosive_Intent.png
+t1 supply chain none
+    Each time you clear **5** **Encounters**, receive {+} **<:Healing:1028193572840816722>** and **3** <randpom>.
+
+    10
+    0
+    thumb/8/88/Destructive_Coating.png/41px-Destructive_Coating.png

@@ -1,0 +1,41 @@
+t1 lapis lazuli insight none
+    Randomly draw {} of your active **Arcana**, and upgrade it this night.
+
+    1
+    0
+
+t1 word of greater girth none
+    Grow in size, so that your strikes deal {+%} damage.
+
+    15
+    0
+
+t1 word of smaller stature none
+    Shrink in size, so that you move {+%} faster and have {+%} chance to **Dodge**.
+
+    15
+    0
+
+t1 chants to the bewitched none
+    Various **Animal Familiar** abilities are {%} stronger this night.
+
+    100
+    0
+
+t1 old herbal remedy none
+    Any **<:Healing:1028193572840816722>** effects are {+%} stronger. Restore **50%** **<:Life:1241660063513448499>** now.
+
+    25
+    0
+
+t1 red citrine divination none
+    Randomly draw {} of your inactive **Arcana**, and activate it this night.
+
+    1
+    0
+
+t1 black night banishment none
+    Randomly draw {} of your active **Vows**, and remove its effect this night.
+
+    1
+    0

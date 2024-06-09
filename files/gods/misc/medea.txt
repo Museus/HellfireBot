@@ -1,0 +1,41 @@
+t1 corrosion on sight none
+    After a foe joins the **Encounter**, it loses {%} of any **Armor** it has.
+
+    50
+    0
+
+t1 malice in kind none
+    Whenever a foe makes you use **<:DeathDefiance:1249241466501468222> Death Defiance**, it loses {%} **<:Life:1241660063513448499>**.
+
+    15
+    0
+
+t1 life from the dead none
+    After a foe is slain, it has **5%** chance to drop {+} **<:Healing:1028193572840816722>**, limit **1** per **Encounter**.
+
+    10
+    0
+
+t1 traces of spirit none
+    After each **Encounter**, gain {+} **<:MaxLife:1241662636995772436>**.
+
+    10
+    0
+
+t1 wealth from the dead none
+    After a foe is slain, it has **10%** chance to drop {+} **<:GoldenCrowns:1247723119372927009>**, limit **2** per **Encounter**.
+
+    20
+    0
+
+t1 enfeeblement of cowards none
+    Foes' ranged shots have {-%} travel speed.
+
+    40
+    0
+
+t1 suffering on sight none
+    After a foe joins the **Encounter**, it randomly takes from **1** to **999** damage.
+
+    0
+    0

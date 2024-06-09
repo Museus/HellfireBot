@@ -1,0 +1,36 @@
+cast howling soul none
+    Your **Casts** launch a projectile dead ahead. The binding circle forms where it hits.
+    Impact Damage: {}
+    200
+    0
+    thumb/0/02/Howling_Soul.png/41px-Howling_Soul.png
+t1 deep dissent none
+    In your confrontation, **Chronos** summons fewer reinforcements.
+    Chronos Foes Summoned: {%}
+    50
+    0
+    thumb/6/60/Deep_Dissent.png/41px-Deep_Dissent.png
+t1 last gasp none
+    Deal more damage for each *spent* **Death Defiance**.
+    Damage per <:DeathDefiance:1249241466501468222> Used: {+%}
+    10
+    0
+    thumb/2/26/Last_Grasp.png/41px-Last_Grasp.png
+t1 unseen ire none
+    After you take damage, go **Dark** for **10 Sec.** Recharges in **40 Sec.**
+    Damage While Dark: {+%}
+    100
+    0
+    thumb/7/7d/Unseen_Ire.png/41px-Unseen_Ire.png
+t1 life tax none
+    Restore **<:Life:1241660063513448499>** for **1%** of damage you deal, until you reach the limit.
+    Max Total Life Restored: {}
+    100
+    0
+    thumb/7/74/Life_Tax.png/41px-Life_Tax.png
+t1 old grudge none
+    In your confrontation, **Chronos** takes a burst of damage after the first **3 Sec.**
+    Chronos Life Reduced: {-%} **<:Life:1241660063513448499>**
+    20
+    0
+    thumb/2/26/Old_Grudge.png/41px-Old_Grudge.png

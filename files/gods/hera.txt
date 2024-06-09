@@ -73,7 +73,7 @@ t2 dying wish earth
     20 16 12.8 10.24 8.192 6.5536 5.24288 4.194304 4
     a/ab/Dying_Wish.png
     1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
-infusion proper upbringing
+infusion proper upbringing none
     While you have at least **3** **<:EarthEssence:1242225885390700604>**, *all* your **Common** **Boons** gain **Rarity**.
     Improved Rarity: **Rare**
     0

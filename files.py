@@ -38,9 +38,8 @@ for god in god_cores:
             has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime')
             if type[0] == 'x':
                 type = type[1:]
-            if type not in ('infusion', 'duo'):
-                *boon, element = boon.split(' ')
-                boon = ' '.join(boon)
+            *boon, element = boon.split(' ')
+            boon = ' '.join(boon)
             if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'infusion', 'legendary'):
                 if type == 'legendary':
                     legendary_info.append(boon)
@@ -64,9 +63,7 @@ for god in god_cores:
                 prereqs_info[boon] = prereq_list
             if god == 'charon':
                 boons_info[boon]['cost'] = f.readline().strip()
-            if type == 'duo':
-                boons_info[boon]['element'] = 'aether'
-            elif type != 'infusion' and element != 'none':
+            if element != 'none':
                 boons_info[boon]['element'] = element
             if god not in aliases['misc']:
                 aliases['misc'][god] = []
@@ -87,11 +84,14 @@ with open('./files/aspects.txt', 'r', encoding='utf8') as f:
 for weapon in misc.weapon_icons:
     with open(f'./files/hammers/{weapon}.txt', 'r', encoding='utf8') as f:
         while hammer := f.readline().strip():
+            type, hammer = hammer.split(' ', 1)
             has_prereq = False
             if hammer[0] == 'x':
                 has_prereq = True
                 hammer = hammer[1:]
-            hammers_info[hammer] = {'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()}
+            hammers_info[hammer] = {
+                'type': type, 'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()
+            }
             if has_prereq:
                 prereqs = f.readline().strip().split('; ')
                 prereq_list = []

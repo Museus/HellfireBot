@@ -73,7 +73,7 @@ t2 critical miss air
     50 40 32 25.6 20.48 16.384 13.1072 10.48576 10
     a/af/Critical_Miss.png
     1(blinding sprint, dazzling display, light smite)
-infusion self healing
+infusion self healing none
     While you have at least **3** **<:FireEssence:1242225886938533888>**, whenever you take damage, restore some **<:Life:1241660063513448499>**.
     Damage Recovered: {%} *(over 5 Sec.)*
     30

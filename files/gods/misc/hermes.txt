@@ -60,7 +60,7 @@ t1 mean streak air
     1 1.5 2 2.5
     0
     7/75/Mean_Strike.png
-infusion tall order
+infusion tall order none
     While you have at least **2** each of **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>** **Elements**, you deal more damage.
     Infused Damage: {+%}
     20

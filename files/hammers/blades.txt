@@ -1,39 +1,39 @@
-skulking slice
+attacks skulking slice
     Your **Attacks** deal **+200%** damage striking foes from behind.
     thumb/4/42/Skulking_Slice.png/50px-Skulking_Slice.png
-xrapid onslaught
+attacks xrapid onslaught
     Your **Attacks** are **35%** faster.
     thumb/2/2b/Rapid_Onslaught.png/50px-Rapid_Onslaught.png
     x(escalating ambush)
-final slice
+attacks final slice
     The last strike in your **Attack** sequence deals **+300%** damage in a larger area.
     thumb/5/57/Final_Slice.png/50px-Final_Slice.png
-explosive ambush
+attacks explosive ambush
     Your **Ω Attack** hits a wide area and deals **+400%** damage, but uses **+20** **<:Magick:1241635310387990568>**.
     thumb/1/1e/Explosive_Ambush.png/50px-Explosive_Ambush.png
-escalating ambush
+attacks escalating ambush
     In each **Encounter**, your **Ω Attack** gains **+15** **Power** for each foe you slay with it.
     thumb/8/81/Escalating_Ambush.png/50px-Escalating_Ambush.png
-flick knives
+attacks flick knives
     Your **Dash-Strike** also fires your **Special** **3** times at once in a fan pattern.
     thumb/c/cf/Flick_Knives.png/50px-Flick_Knives.png
-xspiral knives
+specials xspiral knives
     Your **Specials** deal **+20%** damage and your **Ω Special** fires up to **16** shots around you.
     thumb/3/30/Spiral_Knives.png/50px-Spiral_Knives.png
     x(sureshot flurry)
-dancing knives
+specials dancing knives
     Your **Specials** deal **+15%** damage and each hit bounces toward up to **2** more foes.
     thumb/6/69/Dancing_Knives.png/50px-Dancing_Knives.png
-hook knives
+specials hook knives
     Your **Specials** pierce through foes and return to you at the end of their path.
     thumb/e/ef/Hook_Knives.png/50px-Hook_Knives.png
-melting dart
+specials melting dart
     Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
     thumb/d/de/Melting_Dart.png/50px-Melting_Dart.png
-sudden flurry
+specials sudden flurry
     You **Channel** your **Ω Special** **40%** faster.
     thumb/6/63/Sudden_Flurry.png/50px-Sudden_Flurry.png
-xsureshot flurry
+specials xsureshot flurry
     Your **Ω Special** fires each shot straight ahead and your **Specials** have **+30%** range.
     thumb/8/85/Sureshot_Flurry.png/50px-Sureshot_Flurry.png
     x(spiral knives)

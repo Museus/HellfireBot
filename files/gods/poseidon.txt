@@ -72,7 +72,7 @@ t2 crashing wave water
     25 12.5 6.25 5
     8/8a/Crashing_Wave.png
     1(wave strike, wave flourish, geyser ring, breaker sprint)
-infusion water fitness
+infusion water fitness none
     While you have at least **4** **<:WaterEssence:1242225888519520377>**, gain **<:MaxLife:1241662636995772436>**.
     Max Life: {+}
     100

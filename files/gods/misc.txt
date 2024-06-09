@@ -1,13 +1,3 @@
-hades xcall hades' aid
-    Your **Call** briefly makes you turn **Invisible**; your **God Gauge** starts **30%** full.
-    Stealth Damage Bonus: {+%}
-    100
-    0 0
-    Max Gauge Bonus: Turn **Unseen** Instead
-    0
-    0
-    a/a8/Hades%27_Aid.png/revision/latest?cb=20201021012105
-    m(sigil of the dead)
 bouldy xt1 heart of stone
     You do not know if you believe in Bouldy...
     Ambiguity Bonus: {+%}

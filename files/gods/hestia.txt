@@ -76,7 +76,7 @@ t2 flammable coating fire
     50 25 12.5 10
     thumb/9/97/Flammable_Coating.png/100px-Flammable_Coating.png
     1(flame strike, flame flourish, smolder ring, spontaneous combustion)
-infusion slow cooker
+infusion slow cooker none
     Your **Attacks** and **Specials** gain **Power** for each **<:FireEssence:1242225886938533888>** you have.
     Power per Fire Boon: {+}
     2

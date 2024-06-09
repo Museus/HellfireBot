@@ -72,7 +72,7 @@ t2 sweet surrender water
     5 2.5 1.25 1
     a/a6/Sweet_Surrender.png
     <unknown>
-infusion wispy wiles
+infusion wispy wiles none
     While you have at least **4** **<:AirEssence:1242224825079169165>**, you may **Dodge** any damage.
     Dodge Chance: {+%}
     15

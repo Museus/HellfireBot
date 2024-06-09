@@ -344,7 +344,7 @@ def hammer_embed(input: [str]) -> (discord.Embed, str):
         name = name[0]
     embed = discord.Embed()
     if is_weapon:
-        desc = ''
+        hammers = {}
         weapon_name = files.aspects_info[name]['weapon'] if is_aspect else name
         for hammer_name in files.hammers_info:
             if files.hammers_info[hammer_name]['weapon'] == weapon_name:
@@ -357,9 +357,14 @@ def hammer_embed(input: [str]) -> (discord.Embed, str):
                             break
                     if not compatible:
                         continue
-                desc += f'{misc.capwords(hammer_name)}\n'
+                category = files.hammers_info[hammer_name]['type'].capitalize()
+                if category not in hammers:
+                    hammers[category] = []
+                hammers[category].append(hammer_name)
+        for category in hammers:
+            desc = '\n'.join([misc.capwords(b) for b in hammers[category]])
+            embed.add_field(name=category, value=desc)
         embed.title = f'List of **{misc.capwords(name)}** hammers'
-        embed.description = desc.strip()
         embed.set_thumbnail(
             url=misc.to_link(files.aspects_info[name]['icon']) if is_aspect else misc.to_link(misc.weapon_icons[name]))
     else:

@@ -73,7 +73,7 @@ t2 cold storage water
     1 0.5 0.25 0.2
     5/58/Cold_Storage.png
     1(ice strike, ice flourish)
-infusion coarse grit
+infusion coarse grit none
     While you have at least **6** **<:EarthEssence:1242225885390700604>**, you cannot take more damage per hit than the limit.
     Max Damage per Hit: {}
     15

@@ -35,12 +35,13 @@ xt1 rare crop earth
     0
     1/10/Rare_Crop.png
     1(any upgradeable boon)
-t1 local climate earth
+xt1 local climate earth
     Your **Ω Cast** deals bonus damage and follows you, even as you start to **Channel** it.
     Cast Damage: {+%}
     20 30 40 50
     10 5
     7/71/Local_Climate.png
+    x(glowing coal, geyser ring, lightning lance, howling soul)
 t1 gale force water
     Your **Casts** also create a **Cyclone** at the binding circle.
     Cyclone Damage: {} *(every 0.25 Sec.)*

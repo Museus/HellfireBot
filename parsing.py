@@ -166,7 +166,7 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
     for category in prereqs:
         parsed_category = []
         if category[0] == 'x':
-            parsed_category.append('Incompatible with:')
+            parsed_category.append('Ineligible when you have:')
         elif category[0] == 'm':
             parsed_category.append(f'{category[1][0]} Active')
             parsed_prereqs.append(parsed_category)

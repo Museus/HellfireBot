@@ -86,4 +86,4 @@ legendary brave face earth
     5
     0
     4/47/Brave_Face.png
-    1(sworn strike, sworn flourish); 1(born gain, keep intuition); 1(hereditary bane, dying wish)
+    1(sworn strike, sworn flourish); 1(born gain, keep intuition); 1(hereditary bane, dying wish); x(fixed gain)

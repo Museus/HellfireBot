@@ -1,16 +1,16 @@
-attack ingenius strike none
+t1 ingenius strike none
     After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to give your **Attacks** {+} **Power**.
 
     10
     0
     thumb/b/b6/Ingenious_Strike.png/41px-Ingenious_Strike.png
-special ingenius flourish none
+t1 ingenius flourish none
     After you enter a **Location**, **Prime** **40** **<:Magick:1241635310387990568>** to give your **Attacks** {+} **Power**.
 
     20
     0
     thumb/6/6f/Ingenious_Flourish.png/41px-Ingenious_Flourish.png
-cast hazard boom none
+t1 hazard boom none
     Your **Casts** also blast the area after **4 Sec.**, dealing 500 damage to foes, but {} to *you*.
 
     20

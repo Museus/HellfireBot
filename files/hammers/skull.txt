@@ -1,3 +1,34 @@
+full salvo
+    Your **Attacks** fire your **<:Shell:1245300154353979442> Shells** all at once in a spread pattern.
+    thumb/b/b0/Full_Salvo.png/50px-Full_Salvo.png
+looming ignition
+    Your **Attack** grows up to **50%** bigger and stronger over **2 Sec.**, or until it explodes.
+    thumb/f/f3/Looming_Ignition.png/50px-Looming_Ignition.png
+rocket bombard
+    Your **Ω Attack** fires straight ahead and has **20** **Power**.
+    thumb/f/f4/Rocket_Bombard.png/50px-Rocket_Bombard.png
+mega driver
+    Your **Specials** travel farther and deal **+50%** damage.
+    thumb/a/a4/Mega_Driver.png/50px-Mega_Driver.png
+sudden driver
+    Your **Specials** are **35%** faster.
+    thumb/c/c4/Sudden_Driver.png/50px-Sudden_Driver.png
+colossus driver
+    Your **Specials** have **+30** **Power** and you take **-30%** damage while using them.
+    thumb/d/d3/Colossus_Driver.png/50px-Colossus_Driver.png
+melting tackle
+    Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
+    thumb/3/3e/Melting_Tackle.png/50px-Melting_Tackle.png
+twisting crash
+    After your **Ω Special** projectiles fire, they fire again toward you.
+    thumb/2/23/Twisting_Crash.png/50px-Twisting_Crash.png
+xdestructive array
+    Every **2.5 Sec.**, your **<:Shell:1245300154353979442> Shells** deal damage around them based on **50%** of your **Attack**.
+    thumb/3/39/Destructive_Array.png/50px-Destructive_Array.png
+    x(fetching array)
+possessed array
+    Your **<:Shell:1245300154353979442> Shells** fire your **Ω Attack** for **0** **<:Magick:1241635310387990568>** whenever retrieved.
+    thumb/f/f1/Possessed_Array.png/50px-Possessed_Array.png
 xfetching array
     Your **<:Shell:1245300154353979442> Shells** return to you automatically, but you have **-1** **<:Shell:1245300154353979442>**.
     thumb/f/fb/Fetching_Array.png/50px-Fetching_Array.png
@@ -5,34 +36,3 @@ xfetching array
 bolstered array
     Gain **+2** **<:Shell:1245300154353979442> Shells**.
     thumb/6/63/Bolstered_Array.png/50px-Bolstered_Array.png
-looming ignition
-    Your **Attack** grows up to **50%** bigger and stronger over **2 Sec.**, or until it explodes.
-    thumb/f/f3/Looming_Ignition.png/50px-Looming_Ignition.png
-twisting crash
-    After your **Ω Special** projectiles fire, they fire again toward you.
-    thumb/2/23/Twisting_Crash.png/50px-Twisting_Crash.png
-mega driver
-    Your **Specials** travel farther and deal **+50%** damage.
-    thumb/a/a4/Mega_Driver.png/50px-Mega_Driver.png
-possessed array
-    Your **<:Shell:1245300154353979442> Shells** fire your **Ω Attack** for **0** **<:Magick:1241635310387990568>** whenever retrieved.
-    thumb/f/f1/Possessed_Array.png/50px-Possessed_Array.png
-xdestructive array
-    Every **2.5 Sec.**, your **<:Shell:1245300154353979442> Shells** deal damage around them based on **50%** of your **Attack**.
-    thumb/3/39/Destructive_Array.png/50px-Destructive_Array.png
-    x(fetching array)
-melting tackle
-    Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
-    thumb/3/3e/Melting_Tackle.png/50px-Melting_Tackle.png
-sudden driver
-    Your **Specials** are **35%** faster.
-    thumb/c/c4/Sudden_Driver.png/50px-Sudden_Driver.png
-full salvo
-    Your **Attacks** fire your **<:Shell:1245300154353979442> Shells** all at once in a spread pattern.
-    thumb/b/b0/Full_Salvo.png/50px-Full_Salvo.png
-rocket bombard
-    Your **Ω Attack** fires straight ahead and has **20** **Power**.
-    thumb/f/f4/Rocket_Bombard.png/50px-Rocket_Bombard.png
-colossus driver
-    Your **Specials** have **+30** **Power** and you take **-30%** damage while using them.
-    thumb/d/d3/Colossus_Driver.png/50px-Colossus_Driver.png

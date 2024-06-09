@@ -1,36 +1,36 @@
-melting shredder
-    Your **Special** destroys **20%** of any **Armor** *(based on the total)*.
-    thumb/e/e0/Melting_Shredder.png/50px-Melting_Shredder.png
+unyielding slash
+    Your **Attacks** have **+10** **Power** and you take **-20%** damage while using them.
+    thumb/5/5b/Unyielding_Slash.png/50px-Unyielding_Slash.png
 rapid slash
     Your **Attack** is **30%** faster.
     thumb/b/b3/Rapid_Slash.png/50px-Rapid_Slash.png
+executioner's chop
+    The final move in your **Attack** sequence hits **2** times, but uses **20* **<:Magick:1241635310387990568>**.
+    thumb/a/a3/Executioner%27s_Chop.png/50px-Executioner%27s_Chop.png
+hell splitter
+    Your **Attack** becomes a big chop with **300** **Power**.
+    thumb/3/32/Hell_Splitter.png/50px-Hell_Splitter.png
+psychic whirlwind
+    During your **Ω Attack**, you are free to use your **Attacks** and **Specials**.
+    thumb/1/13/Psychic_Whirlwind.png/50px-Psychic_Whirlwind.png
+advancing whirlwind
+    Your **Ω Attack** fires ahead of you and deals **+80%** damage.
+    thumb/4/41/Advancing_Whirlwind.png/50px-Advancing_Whirlwind.png
+furious whirlwind
+    You **Channel** your **Ω Attack** faster, and move **50%** faster while it is active.
+    thumb/8/8c/Furious_Whirlwind.png/50px-Furious_Whirlwind.png
+dashing heave
+    Your **Dash-Strike** hits **2** times in an area around you.
+    thumb/9/94/Dashing_Heave.png/50px-Dashing_Heave.png
+melting shredder
+    Your **Special** destroys **20%** of any **Armor** *(based on the total)*.
+    thumb/e/e0/Melting_Shredder.png/50px-Melting_Shredder.png
 empowering guard
     After blocking a foe with your **Special**, deal **+50%** damage for **15 Sec.**
     thumb/e/ef/Empowering_Guard.png/50px-Empowering_Guard.png
 sudden cleaver
     You **Channel** your **Ω Special** **25%** faster.
     thumb/3/3c/Sudden_Cleaver.png/50px-Sudden_Cleaver.png
-dashing heave
-    Your **Dash-Strike** hits **2** times in an area around you.
-    thumb/9/94/Dashing_Heave.png/50px-Dashing_Heave.png
-psychic whirlwind
-    During your **Ω Attack**, you are free to use your **Attacks** and **Specials**.
-    thumb/1/13/Psychic_Whirlwind.png/50px-Psychic_Whirlwind.png
-executioner's chop
-    The final move in your **Attack** sequence hits **2** times, but uses **20* **<:Magick:1241635310387990568>**.
-    thumb/a/a3/Executioner%27s_Chop.png/50px-Executioner%27s_Chop.png
-advancing whirlwind
-    Your **Ω Attack** fires ahead of you and deals **+80%** damage.
-    thumb/4/41/Advancing_Whirlwind.png/50px-Advancing_Whirlwind.png
 giga cleaver
     Your **Ω Special** fires **2** times in succession but costs **+15** **<:Magick:1241635310387990568>**.
     thumb/2/2d/Giga_Cleaver.png/50px-Giga_Cleaver.png
-furious whirlwind
-    You **Channel** your **Ω Attack** faster, and move **50%** faster while it is active.
-    thumb/8/8c/Furious_Whirlwind.png/50px-Furious_Whirlwind.png
-unyielding slash
-    Your **Attacks** have **+10** **Power** and you take **-20%** damage while using them.
-    thumb/5/5b/Unyielding_Slash.png/50px-Unyielding_Slash.png
-hell splitter
-    Your **Attack** becomes a big chop with **300** **Power**.
-    thumb/3/32/Hell_Splitter.png/50px-Hell_Splitter.png

@@ -28,12 +28,13 @@ gain ionic gain air
     4 6 8 10
     0
     5/52/Ionic_Gain.png
-t1 lightning lance air
+xt1 lightning lance air
     Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.
     Bolt Damage: {}
     50 70 90 110
     20 10 5
     c/c6/Lightning_Lance.png
+    x(local climate, glowing coal, howling soul)
 t1 spirit surge air
     While you have no more than 10 <:Magick:1241635310387990568>, ***all*** foes are occasionally struck by lightning.
     Bolt Damage: {} *(every 5 Sec.)*

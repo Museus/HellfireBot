@@ -22,12 +22,13 @@ sprint smithy sprint fire
     200 300 400 500
     100 50 25 20
     6/62/Smithy_Sprint.png
-gain fixed gain earth
+xgain fixed gain earth
     You take **-10%** damage, and restore some **<:Magick:1241635310387990568>** whenever you take damage.
     Magick Restored from Damage: {}
     50 75 100 125
     25 12.5 6.25 5
     e/e9/Fixed_Gain.png
+    x(brave face)
 t1 molten touch fire
     Your **Attacks** and **Specials** deal bonus damage to **Armor**.
     Damage vs. Armor: {+%}

@@ -68,6 +68,9 @@ for god in god_cores:
                 boons_info[boon]['element'] = 'aether'
             elif type != 'infusion' and element != 'none':
                 boons_info[boon]['element'] = element
+            if god not in aliases['misc']:
+                aliases['misc'][god] = []
+            aliases['misc'][god].append(boon)
 
 for boon in boons_info:
     print(boon)

@@ -1,36 +1,36 @@
 rapid thrasher
     Your **Attacks** are **50%** faster.
     thumb/0/03/Rapid_Thrasher.png/50px-Rapid_Thrasher.png
-melting swipe
-    Your **Dash-Strike** hits a larger area and destroys **60%** of any **Armor** *(based on the total)*.
-    thumb/1/1a/Melting_Swipe.png/50px-Melting_Swipe.png
 wicked thrasher
     Your **Attacks** have **+30** **Power**.
     thumb/b/b0/Wicked_Thrasher.png/50px-Wicked_Thrasher.png
+mirrored thrasher
+    Your **Attacks** hit **2** times, but you take **+30%** damage.
+    thumb/b/b9/Mirrored_Thrasher.png/50px-Mirrored_Thrasher.png
+extending wallop
+    Your **Attack** has more range and deals **+100%** damage to distant foes.
+    thumb/6/6b/Extending_Wallop.png/50px-Extending_Wallop.png
 cross cataclysm
     Your **Ω Attack** deals **+50%** damage and also strikes sideways.
     thumb/2/23/Cross_Cataclysm.png/50px-Cross_Cataclysm.png
 vampiric cataclysm
     After you slay a foe with your **Ω Attack**, restore **5** **<:Life:1241660063513448499>**.
     thumb/2/25/Vampiric_Cataclysm.png/50px-Vampiric_Cataclysm.png
+melting swipe
+    Your **Dash-Strike** hits a larger area and destroys **60%** of any **Armor** *(based on the total)*.
+    thumb/1/1a/Melting_Swipe.png/50px-Melting_Swipe.png
 rapid moonshot
     Your **Specials** are **25%** faster.
     thumb/7/73/Rapid_Moonshot.png/50px-Rapid_Moonshot.png
 shimmering moonshot
     Your **Specials** bounce toward up to **2** more foes, dealing **+10%** damage for each hit.
     thumb/0/08/Shimmering_Moonshot.png/50px-Shimmering_Moonshot.png
-extending wallop
-    Your **Attack** has more range and deals **+100%** damage to distant foes.
-    thumb/6/6b/Extending_Wallop.png/50px-Extending_Wallop.png
-mirrored thrasher
-    Your **Attacks** hit **2** times, but you take **+30%** damage.
-    thumb/b/b9/Mirrored_Thrasher.png/50px-Mirrored_Thrasher.png
+dual moonshot
+    Your **Specials** fire **2** projectiles, but have **-40%** range.
+    thumb/b/b0/Dual_Moonshot.png/50px-Dual_Moonshot.png
 aetheric moonburst
     Your **Ω Special** gains a **Power Shot** that deals **+50%** damage and restores **20** **<:Magick:1241635310387990568>**.
     thumb/3/32/Aetheric_Moonburst.png/50px-Aetheric_Moonburst.png
 giga moonburst
     You can **Channel** **+30** **<:Magick:1241635310387990568>** into your **Ω Special** to deal **+300%** damage in a larger area.
     thumb/d/d3/Giga_Moonburst.png/50px-Giga_Moonburst.png
-dual moonshot
-    Your **Specials** fire **2** projectiles, but have **-40%** range.
-    thumb/b/b0/Dual_Moonshot.png/50px-Dual_Moonshot.png

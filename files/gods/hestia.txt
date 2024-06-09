@@ -35,12 +35,13 @@ xt1 burnt offering fire
     0
     7/74/Burnt_Offering.png
     1(any boon)
-t1 glowing coal fire
+xt1 glowing coal fire
     Hold **Cast** to aim a fiery projectile that explodes on impact. The binding circle forms there.
     Blast Damage: {}
     50 70 90 110
     20 15 10
     8/85/Glowing_Coal.png
+    x(local climate, lightning lance, howling soul)
 t1 controlled burn fire
     Your **Ω Special** also launches a fiery projectile, but uses **+10** **<:Magick:1241635310387990568>**.
     Blast Damage: {}

@@ -15,8 +15,8 @@ god_colors = {
     'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duo': 0xD1FF18,
     'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'circe': 0xF2502E,
     'echo': 0x8E8C7D, 'hades': 0x770D0A, 'hermes': 0xFBF7A7,
-    'icarus': 0xAD9641, 'medea': 0x456B48, 'keepsake': 0x465B75,
-    'arcana': 0xCFCABA
+    'icarus': 0xAD9641, 'medea': 0x456B48, 'selene': 0xB0FFFB,
+    'keepsake': 0x465B75, 'arcana': 0xCFCABA
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -60,7 +60,10 @@ card_ranks = [
     (0xFF86FF, '1247798359398416394'),
     (0xFF837C, '1248765071379660840')
 ]
-disambig_select = ('1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣')
+disambig_select = (
+    '1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣',
+    '🇦', '🇧', '🇨', '🇩', '🇪'
+)
 mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
             'https://www.speedrun.com/hades/resources\n' \
             'all of its features can be toggled on or off and it includes:\n' \
@@ -113,12 +116,8 @@ def boon_color(info: {str: str}, rarity: str) -> int:
         return 0xF849F8
     if info['type'] == 'duo':
         return 0xD1FF18
-    if info['god'] == 'hades':
-        return 0x9500F6
-    if info['god'] == 'bouldy':
-        return 0x3D4E46
-    if info['god'] == 'charon':
-        return 0x5500B9
+    if info['god'] in ('arachne', 'charon', 'circe', 'echo', 'hades', 'icarus', 'medea', 'narcissus', 'selene'):
+        return god_colors[info['god']]
     return rarity_embed_colors[parsing.rarities[rarity] - 1]
 
 
@@ -164,7 +163,7 @@ def capwords(s: str, capall=False) -> str:
     if capall:
         return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
     return ' '.join((x[0].upper() + x[1:]
-                     if x.lower() not in ('of', 'the', 'from') else x.lower()) for x in s.split(' '))
+                     if x.lower() not in ('of', 'the', 'from', 'to') else x.lower()) for x in s.split(' '))
 
 
 def to_link(s: str) -> str:

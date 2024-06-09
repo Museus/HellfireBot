@@ -1,9 +1,10 @@
-cast howling soul none
+xt1 howling soul none
     Your **Casts** launch a projectile dead ahead. The binding circle forms where it hits.
     Impact Damage: {}
     200
     0
     thumb/0/02/Howling_Soul.png/41px-Howling_Soul.png
+    x(local climate, glowing coal, lightning lance)
 t1 deep dissent none
     In your confrontation, **Chronos** summons fewer reinforcements.
     Chronos Foes Summoned: {%}

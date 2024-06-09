@@ -13,8 +13,9 @@ god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
     'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duos': 0xD1FF18,
-    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'hermes': 0xFBF7A7,
-    'keepsake': 0x465B75
+    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'circe': 0xF2502E,
+    'echo': 0x8E8C7D, 'hades': 0x770D0A, 'hermes': 0xFBF7A7,
+    'icarus': 0xAD9641, 'medea': 0x456B48, 'keepsake': 0x465B75
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -26,11 +27,16 @@ god_icons = {
     'poseidon': 'thumb/4/4e/Poseidon_Boons.png/60px-Poseidon_Boons.png',
     'zeus': 'thumb/3/34/Zeus_Boons.png/60px-Zeus_Boons.png',
     'duos': '1027126357597093969',
-    'arachne': 'thumb/e/e0/CodexPortrait_Arachne.png/350px-CodexPortrait_Arachne.png',
+    'arachne': '1249245758327095346',
     'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
     'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',
     'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
+    'circe': '1249245758327095346',
+    'echo': '1249245758327095346',
+    'hades': '1249245758327095346',
     'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
+    'icarus': 'thumb/f/fb/CodexPortrait_Icarus.png/350px-CodexPortrait_Icarus.png',
+    'medea': '1249245758327095346',
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
 }
 weapon_icons = {
@@ -156,7 +162,8 @@ def rarity_rolls(input: [str]) -> [float]:
 def capwords(s: str, capall=False) -> str:
     if capall:
         return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
-    return ' '.join((x[0].upper() + x[1:] if x.lower() not in ('of', 'the') else x.lower()) for x in s.split(' '))
+    return ' '.join((x[0].upper() + x[1:]
+                     if x.lower() not in ('of', 'the', 'from') else x.lower()) for x in s.split(' '))
 
 
 def to_link(s: str) -> str:

@@ -51,25 +51,11 @@ for god in god_cores:
             stat = f.readline().strip()
             rarities = f.readline().strip().split(' ')
             levels = f.readline().strip().split(' ')
-            next_line = f.readline().strip()
-            stat2 = None
-            rarities2 = None
-            levels2 = None
-            if ': ' in next_line:
-                stat2 = next_line
-                rarities2 = f.readline().strip().split(' ')
-                levels2 = f.readline().strip().split(' ')
-                icon = f.readline().strip()
-            else:
-                icon = next_line
+            icon = f.readline().strip()
             boons_info[boon] = {
                 'god': god, 'type': type, 'desc': description, 'stat': stat,
                 'rarities': rarities, 'levels': levels, 'icon': icon
             }
-            if stat2:
-                boons_info[boon]['stat2'] = stat2
-                boons_info[boon]['rarities2'] = rarities2
-                boons_info[boon]['levels2'] = levels2
             if has_prereq:
                 prereqs = f.readline().strip().split('; ')
                 prereq_list = []
@@ -85,43 +71,6 @@ for god in god_cores:
 
 for boon in boons_info:
     print(boon)
-
-with open('./files/gods/misc.txt', 'r', encoding='utf8') as f:
-    while boon := f.readline().strip():
-        god, type, boon = boon.split(' ', 2)
-        has_prereq = False
-        if type[0] == 'x':
-            has_prereq = True
-            type = type[1:]
-        description = f.readline().strip()
-        stat = f.readline().strip()
-        rarities = f.readline().strip().split(' ')
-        levels = f.readline().strip().split(' ')
-        next_line = f.readline().strip()
-        stat2 = None
-        rarities2 = None
-        levels2 = None
-        if ': ' in next_line:
-            stat2 = next_line
-            rarities2 = f.readline().strip().split(' ')
-            levels2 = f.readline().strip().split(' ')
-            icon = f.readline().strip()
-        else:
-            icon = next_line
-        boons_info[boon] = {
-            'god': god, 'type': type, 'desc': description, 'stat': stat,
-            'rarities': rarities, 'levels': levels, 'icon': icon
-        }
-        if stat2:
-            boons_info[boon]['stat2'] = stat2
-            boons_info[boon]['rarities2'] = rarities2
-            boons_info[boon]['levels2'] = levels2
-        if has_prereq:
-            prereqs = f.readline().strip().split('; ')
-            prereq_list = []
-            for prereq in prereqs:
-                prereq_list.append((prereq[0], prereq[2: -1].split(', ')))
-            prereqs_info[boon] = prereq_list
 
 with open('./files/aspects.txt', 'r', encoding='utf8') as f:
     while aspect := f.readline().strip():

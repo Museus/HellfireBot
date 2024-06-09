@@ -110,7 +110,7 @@ mortality
     Makes your **Ω Special** last up to **+5 Sec.**, firing continuously while you have control.
 <:Shell:1245300154353979442> shells, <:Shell:1245300154353979442> shell
     Ammunition for your **Attacks**. Retrieve from the field to re-use.
-<death defiance>
+<:DeathDefiance:1249241466501468222> death defiance, <:DeathDefiance:1249241466501468222>, death defiance
     When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1241635310387990568>. Limited uses per night.
 <:Reroll:1028190585280012348> change of fate, <:Reroll:1028190585280012348>
     Used to alter various outcomes presented to you, depending on your **Arcana**.
@@ -185,7 +185,7 @@ morph
 outfit
     A special look and bonus that lasts till your <:Armor:1243126987032363048> **Armor** is depleted from taking damage.
 <:StyxKiss:1243444516019507220> kiss of styx, <:StyxKiss:1243444516019507220>
-    Replenish **1** use of death defiance now.
+    Replenish **1** use of <:DeathDefiance:1249241466501468222> **Death Defiance** now.
 chronos
     The Titan of Time usurped the House of Hades and now threatens Olympus.
 dark
@@ -214,3 +214,5 @@ chaos gate
     A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
 <:FateFabric:1249176533675933748> fate fabric, <:FateFabric:1249176533675933748>
     Mostly used with incantations involving chance and fortune.
+<randpom>
+    Raises the potency of one of your **Boons** *(chosen at random)*.

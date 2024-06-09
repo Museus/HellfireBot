@@ -148,7 +148,8 @@ def boon_embed(input: [str]):
         color=misc.boon_color(info, rarity)
     )
     footer_text = ('Unpommable\n' if unpommable else '') + ('Unpurgeable' if unpurgeable else '') + '⠀'
-    icon_url = misc.to_link(misc.element_icons[info['element']]) if 'element' in info else ''
+    icon_url = misc.to_link(misc.element_icons[info['element']]) \
+        if 'element' in info and info['element'] != 'none' else ''
     embed.set_footer(text=footer_text, icon_url=icon_url)
     embed.set_thumbnail(url=misc.to_link(info['icon']))
     return embed, ''

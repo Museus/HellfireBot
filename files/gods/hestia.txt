@@ -82,7 +82,7 @@ infusion slow cooker none
     2
     0
     d/db/Slow_Cooker.png
-    1(<:FireEssence:1242225886938533888>)
+    1(<:FireEssence:1242225886938533888> fire)
 legendary pyro technique fire
     Your **Scorch** effects deal damage faster.
     Scorch Damage Rate: {+%}

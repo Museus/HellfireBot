@@ -21,7 +21,8 @@ god_cores = {
     'arachne': {}, 'artemis': {}, 'chaos': {},
     'charon': {}, 'circe': {}, 'echo': {},
     'hades': {}, 'hermes': {}, 'icarus': {},
-    'medea': {}, 'narcissus': {}, 'selene': {}
+    'medea': {}, 'narcissus': {}, 'selene': {},
+    'bouldy': {}
 }
 miscs = (
     'arachne', 'artemis', 'chaos', 'charon',
@@ -35,7 +36,9 @@ for god in god_cores:
     with open(file, 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
-            has_prereq = type not in ('attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime')
+            has_prereq = type not in (
+                'attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime', 'blessing', 'curse'
+            )
             if type[0] == 'x':
                 type = type[1:]
             *boon, element = boon.split(' ')

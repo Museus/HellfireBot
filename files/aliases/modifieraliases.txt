@@ -2,29 +2,23 @@ miniboss
     miniboss, miniboss chamber, mini boss, mini boss chamber, midboss, midboss chamber, mid boss, mid boss chamber
 hermes
     hermes, hermes boon
+erebus miniboss
+    erebus miniboss, ere miniboss, erebus midboss, ere midboss, erebus, ere
 tartarus miniboss
-    tartarus miniboss, tart miniboss, tartarus midboss, tart midboss, tartarus, tart, styx miniboss, styx midboss, styx
+    tartarus miniboss, tart miniboss, tartarus midboss, tart midboss
+tartarus shop
+    tartarus shop, tart shop, tartarus, tart
 chaos
     chaos, chaos gate, chaos boon, chaos portal
-cosmic egg
-    cosmic egg, egg, chaotic egg
-god keepsake
-    god keepsake, keepsake
 chaos favor
     chaos favor, favor
 yarn of ariadne
     yarn of ariadne, yarn, ariadne, ariadne yarn, yarn ariadne
-refreshing nectar
-    refreshing nectar, refreshing, nectar, eurydice, eury, eurydice nectar, eury nectar
-exclusive access
-    exclusive access, exclusive, ea
-olympian favor
-    olympian favor, of, olympian
-god's pride
-    god's pride, gods pride, god pride, pride
-god's legacy
-    god's legacy, gods legacy, god legacy, legacy
-loyalty card
-    loyalty card, loyalty, card, discount, discount card, charon loyalty
-bone hourglass
-    bone hourglass, hourglass, charon keepsake, charons keepsake, charon's keepsake
+natural selection
+    natural selection, natural, selection, nat selection, naturalselection, natsel
+excellence
+    excellence, olympian favor, of, blue, 19
+divinity
+    divinity, god's pride, gods pride, god pride, pride, gp, purple, purp, 24
+the queen
+    the queen, queen, god's legacy, gods legacy, god legacy, legacy, gl, green, 20

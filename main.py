@@ -1,6 +1,7 @@
 import asyncio
 import difflib
 import os
+import re
 
 import discord
 from discord.ext import commands
@@ -102,6 +103,19 @@ async def prerequisites(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
+    if not args:
+        text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+        try:
+            text = text.embeds[0].title
+        except IndexError:
+            await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
+            return
+        try:
+            entity = re.findall(r'\*\*.*\*\*', text)[0]
+        except IndexError:
+            await misc.reply(ctx, 'idk man as', mention=True)
+            return
+        args = entity[2:-2].split()
     embed, choices = embeds.prereq_embed(args)
     if not embed:
         await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
@@ -194,14 +208,13 @@ async def define(ctx):
     await misc.reply(ctx, embed=embed)
 
 
-@client.command(aliases=['randomchaos', 'rchaos', 'c', 'ch', 'chaos'])
+@client.command(aliases=['randomchaos', 'rchaos', 'rc', 'ch', 'chaos'])
 async def randchaos(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    await misc.reply(ctx, 'Not yet implemented', mention=True)
-    # embed = embeds.random_chaos_embed(args)
-    # await misc.reply(ctx, embed=embed)
+    embed = embeds.random_chaos_embed(args)
+    await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['randomcharon', 'rcharon', 'charon', 'char', 'well', 'randomwell', 'randwell', 'rwell'])
@@ -229,7 +242,7 @@ async def keepsake(ctx, *args):
     await misc.reply(ctx, embed=embed)
 
 
-@client.command(aliases=['arcanas', 'card', 'cards', 'tarot', 'tarots'])
+@client.command(aliases=['arcanas', 'c', 'card', 'cards', 'tarot', 'tarots'])
 async def arcana(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
@@ -257,23 +270,14 @@ async def enemy(ctx, *args):
     # await misc.reply(ctx, embed=embed)
 
 
-@client.command(aliases=['rarity', 'roll', 'rolls'])
+@client.command(aliases=['rarity', 'roll', 'rolls', 'rr'])
 async def rarityrolls(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    await misc.reply(ctx, 'Not yet implemented', mention=True)
-    # modifiers = parsing.parse_modifiers(args)
-    # rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
-    # await misc.reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
-
-
-@client.command(aliases=['mod', 'ce', 'cheatengine', 'gg', 'gameguardian'])
-async def modded(ctx):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    await misc.reply(ctx, misc.mod_pasta)
+    modifiers = parsing.parse_modifiers(args)
+    rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
+    await misc.reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
 
 
 @client.command(aliases=['suggestion', 's', 'request'])

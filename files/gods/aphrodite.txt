@@ -64,21 +64,21 @@ t2 broken resolve water
     10 12 14 16
     2 1
     1/1b/Broken_Resolve.png
-    <unknown>
+    1(rapture ring, passion dash, glamour gain)
 t2 sweet surrender water
     **Weak**-afflicted foes take more damage.
     Damage vs. Weak: {+%}
     10 15 20 25
     5 2.5 1.25 1
     a/a6/Sweet_Surrender.png
-    <unknown>
+    1(rapture ring, passion dash, glamour gain)
 infusion wispy wiles none
     While you have at least **4** **<:AirEssence:1242224825079169165>**, you may **Dodge** any damage.
     Dodge Chance: {+%}
     15
     0
     a/a4/Wispy_Wiles.png
-    1(<:AirEssence:1242224825079169165>)
+    1(<:AirEssence:1242224825079169165> air)
 legendary ecstatic obsession air
     During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
     Foes Required: {} *(or more)*

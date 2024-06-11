@@ -26,7 +26,7 @@ define None
     Returns a list of definitions for terms used in the replied-to message. Works for text inside HellfireBot's embed outputs.
 
 randchaos [modifiers]...
-    Returns a random Chaos blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
+    Returns a random Chaos curse + blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1027101814904070175
 randcharon [modifiers]...
     Returns a random Charon well item. Include bone hourglass and/or loyalty card as <modifiers> to change the output.
@@ -37,10 +37,6 @@ keepsake keepsake_name? [rank=3 or 5]
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348
-
-modded None
-    Returns information on the official speedrun modpack.
-    1027111327753322508
 suggest alias -> item_name
     Sends a suggested <alias> to <item_name> mapping to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
 

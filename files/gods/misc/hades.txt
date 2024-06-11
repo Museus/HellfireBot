@@ -31,7 +31,7 @@ t1 life tax none
     thumb/7/74/Life_Tax.png/41px-Life_Tax.png
 t1 old grudge none
     In your confrontation, **Chronos** takes a burst of damage after the first **3 Sec.**
-    Chronos Life Reduced: {-%} **<:Life:1241660063513448499>**
+    Chronos Life Reduced: {-%l}
     20
     0
     thumb/2/26/Old_Grudge.png/41px-Old_Grudge.png

@@ -5,13 +5,13 @@ t1 evade evade evade none
     0
 
 t1 fight fight fight none
-    Gain {+%} **<:Life:1241660063513448499>** and **<:Magick:1241635310387990568>** based on their limits, but lose **5%** of this after each **Location**.
+    Gain {+%l} and **<:Magick:1241635310387990568>** based on their limits, but lose **5%** of this after each **Location**.
 
     50
     0
 
 t1 survive survive survive none
-    Replace *all* spent uses of **<:DeathDefiance:1249241466501468222>** with ones that restore {%} **<:Life:1241660063513448499>** and **<:Magick:1241635310387990568>**, then less and less.
+    Replace *all* spent uses of **<:DeathDefiance:1249241466501468222>** with ones that restore {%l} and **<:Magick:1241635310387990568>**, then less and less.
 
     50
     0

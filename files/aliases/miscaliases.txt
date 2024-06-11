@@ -368,5 +368,3 @@ burner
     burners, burn, lava, magma, lava pool, lava pools, magma pool, magma pools
 seeker
     seek, seekers
-popper
-    pop, poppers, soul, souls, warrior, warriors, ely, elysium

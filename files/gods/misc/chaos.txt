@@ -1,0 +1,201 @@
+blessing strike none
+    Your **Attacks** deal {+%} damage.
+
+    20-50 30-75 40-100 50-125
+    0
+    https://hades2.game-vault.net/w/images/7/70/Strike.png
+blessing flourish none
+    Your **Specials** deal {+%} damage.
+
+    30-60 45-90 60-120 75-150
+    0
+    https://hades2.game-vault.net/w/images/c/c4/Flourish.png
+blessing chasm none
+    Your **Casts** deal {+%} damage.
+
+    20-50 30-75 40-100 50-125
+    0
+    https://hades2.game-vault.net/w/images/4/45/Chasm.png
+blessing celerity none
+    You move and **Sprint** {%} faster.
+
+    15 20 25 30
+    0
+    https://hades2.game-vault.net/w/images/5/58/Celerity.png
+blessing will none
+    Restore {mr1} every **1 Sec.**
+
+    4-6 8-12 12-18 16-24
+    0
+    https://hades2.game-vault.net/w/images/0/08/Will.png
+blessing talent none
+    You use {-%m}.
+
+    20-30 30-45 40-60 50-75
+    0
+    https://hades2.game-vault.net/w/images/2/2d/Talent.png
+blessing revelation none
+    You **Channel** your **Ω Moves** {%} faster.
+
+    10-15 15-22 20-30 25-37
+    0
+    https://hades2.game-vault.net/w/images/e/e0/Revelation.png
+blessing soul none
+    Gain {+} **<:MaxLife:1241662636995772436>**.
+
+    26-35 52-70 78-105 104-140
+    0
+    https://hades2.game-vault.net/w/images/d/d5/Soul.png
+blessing favor none
+    **Boons** have {+%} chance to be **Rare** or better.
+
+    40-50 54-67 67-84 80-100
+    0
+    https://hades2.game-vault.net/w/images/0/00/Favor.png
+blessing affluence none
+    Any **<:GoldenCrowns:1247723119372927009>** you find is worth {+%}.
+
+    40-60 80-120 12-180 160-240
+    0
+    https://hades2.game-vault.net/w/images/1/11/Affluence.png
+blessing mind none
+    Gain {+} **<:MaxMagick:1245289397570502719>**.
+
+    30-40 45-60 60-80 75-100
+    0
+    https://hades2.game-vault.net/w/images/d/da/Mind.png
+blessing creation none
+    Gain {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>** **<:AetherEssence:1243121873408102471>**.
+
+    1 2 3 4
+    0
+    https://hades2.game-vault.net/w/images/4/45/Creation.png
+blessing blood none
+    Whenever you exit a **Location**, restore {l}.
+
+    3-4 9-12 15-20 21-28
+    0
+    https://hades2.game-vault.net/w/images/b/b5/Blood.png
+blessing discovery none
+    You have {%} chance to find **+100%** resources with your **Gathering Tools**.
+
+    56-70 64-80 72-90 80-100
+    0
+    https://hades2.game-vault.net/w/images/4/4c/Discovery.png
+curse maimed none
+    Each time you use **Attacks**, get hit for {l}.
+    Lasts for **3 - 5** **Encounters**
+    3-6
+    0
+
+curse flayed none
+    Each time you use **Specials**, get hit for {l}.
+    Lasts for **3 - 5** **Encounters**
+    3-6
+    0
+
+curse addled none
+    Each time you use **Casts**, get hit for {l}.
+    Lasts for **3 - 5** **Encounters**
+    3-6
+    0
+
+curse slothful none
+    You move and **Sprint** {%} slower.
+    Lasts for **3 - 5** **Encounters**
+    40-60
+    0
+
+curse hobbled none
+    Your **Dash** is slower and also uses {m} *(if you have it)*.
+    Lasts for **3 - 5** **Encounters**
+    3-6
+    0
+
+curse fixated none
+    Whenever you use **<:Magick:1241635310387990568>**, **Prime** it.
+    Lasts for **3 - 5** **Encounters**
+    0
+    0
+
+curse gagged none
+    Each time you use **Ω Moves**, get hit for {l}.
+    Lasts for **3 - 5** **Encounters**
+    5-8
+    0
+
+curse pauper's none
+    You cannot earn **<:<:GoldenCrowns:1247723119372927009>**.
+    Lasts for **3 - 5** **Encounters**
+    0
+    0
+
+curse atrophic none
+    You have {-} **<:MaxLife:1241662636995772436>**.
+    Lasts for **3 - 5** **Encounters**
+    20-29
+    0
+
+curse enshrouded none
+    **Location Reward** previews are hidden.
+    Lasts for **4 - 6** **Locations**
+    0
+    0
+
+curse excruciating none
+    You take {+%} damage.
+    Lasts for **3 - 5** **Encounters**
+    20-50
+    0
+
+curse caustic none
+    Slain foes toss an **Inferno-Bomb** at you.
+    Lasts for **3 - 5** **Encounters**
+    0
+    0
+
+curse ordinary none
+    The **Boons** you find are limited to **Common** blessings.
+    Lasts for **2 - 3** **Boons**
+    0
+    0
+
+curse rejected none
+    The **Boons** you find have {} fewer blessing to choose from.
+    Lasts for **2 - 4** **Boons**
+    1
+    0
+
+curse paralyzing none
+    Whenever you take damage, you are stunned for {sr1}
+    Lasts for **3 - 5** **Encounters**
+    0.5-1.4
+    0
+
+curse doomed none
+    You have **120 Sec.** to clear **Encounters**, or get hit for {-l}.
+    Lasts for **2 - 3** **Encounters**
+    500
+    0
+
+xcurse barren none
+    Your **Arcana Cards** have no effect.
+    Lasts for **7 - 11** **Encounters**
+    0
+    0
+
+    1(any chaos boon)
+infusion chant none
+    Your **Ω Moves** deal {+%} damage for each **<:AetherEssence:1243121873408102471>** you have.
+
+    30 36 42 48
+    0
+    https://hades2.game-vault.net/w/images/0/0c/Chant.png
+    1(<:AetherEssence:1243121873408102471> aether)
+legendary defiance none
+    Gain {+} use of **<:DeathDefiance:1249241466501468222> Death Defiance** this night.
+
+    1
+    0
+    https://hades2.game-vault.net/w/images/4/40/Defiance.png
+    1(any chaos boon)

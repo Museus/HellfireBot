@@ -35,7 +35,7 @@ t1 explosive intent none
     0
     thumb/8/8e/Explosive_Intent.png/41px-Explosive_Intent.png
 t1 supply chain none
-    Each time you clear **5** **Encounters**, receive {+} **<:Healing:1028193572840816722>** and **3** <randpom>.
+    Each time you clear **5** **Encounters**, receive {+h} and **3** <:RandPom:1249967631050608700>.
 
     10
     0

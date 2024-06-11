@@ -66,7 +66,7 @@ infusion tall order none
     20
     0
     0/0c/Tall_Order.png
-    1(<:EarthEssence:1242225885390700604>); 1(<:WaterEssence:1242225888519520377>); 1(<:AirEssence:1242224825079169165>); 1(<:FireEssence:1242225886938533888>)
+    1(<:EarthEssence:1242225885390700604> earth); 1(<:WaterEssence:1242225888519520377> water); 1(<:AirEssence:1242224825079169165> air); 1(<:FireEssence:1242225886938533888> fire)
 legendary close call air
     Gain **+1** use of **Death Defiance** that makes everything else move **90%** slower.
     Slow Duration: {s}

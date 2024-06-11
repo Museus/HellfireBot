@@ -13,10 +13,11 @@ god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
     'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duo': 0xD1FF18,
-    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'circe': 0xF2502E,
-    'echo': 0x8E8C7D, 'hades': 0x770D0A, 'hermes': 0xFBF7A7,
-    'icarus': 0xAD9641, 'medea': 0x456B48, 'selene': 0xB0FFFB,
-    'keepsake': 0x465B75, 'arcana': 0xCFCABA
+    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'chaos': 0x8783CF,
+    'circe': 0xF2502E, 'echo': 0x8E8C7D, 'hades': 0x770D0A,
+    'hermes': 0xFBF7A7, 'icarus': 0xAD9641, 'medea': 0x456B48,
+    'selene': 0xB0FFFB, 'keepsake': 0x465B75, 'arcana': 0xCFCABA,
+    'bouldy': 0x3D4E46
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -64,18 +65,6 @@ disambig_select = (
     '1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣',
     '🇦', '🇧', '🇨', '🇩', '🇪'
 )
-mod_pasta = 'if you want to download the speedrunning modpack it is available at ' \
-            'https://www.speedrun.com/hades/resources\n' \
-            'all of its features can be toggled on or off and it includes:\n' \
-            '- guaranteed 2 sack\n' \
-            '- guaranteed first hammer\n' \
-            '- first boon offers all 4 core boons\n' \
-            '- removes tiny vermin, asterius, and barge of death minibosses\n' \
-            '- shows fountain rooms\n' \
-            'there are also a few qol features such as a quick reset feature and the ability to toggle hell ' \
-            'mode, as well as a colorblind mode.\n\n' \
-            'instructions for downloading the modpack are in the ' \
-            'file "instructions.txt" in the modpack folder'
 optout_dm = 'This channel has not opted into HellfireBot\'s commands (needs "h!optin" in the channel topic). ' \
             'However, all commands are usable via direct message.'
 unfun_dm = 'This channel has not opted into HellfireBot\'s fun commands (needs "h!fun" in the channel topic). ' \
@@ -125,41 +114,39 @@ def rarity_rolls(input: [str]) -> [float]:
     def buff_rolls(buffs: [float]) -> None:
         for j in range(len(buffs)):
             rolls[j] += buffs[j]
-    rolls = [0.12, 0.05, 0.1]
-    chaos = False
-    hermes = False
-    if 'cosmic egg' in input or 'chaos' in input:
-        rolls = [0.01, 0.05, 0.1]
-        chaos = True
-        if 'cosmic egg' in input:
-            buff_rolls([0.1, 0.15, 0.4])
+    rolls = [0.1, 0.12, 0.05, 0.1]
+    if 'erebus miniboss' in input:
+        rolls = [0.05, 0.12, 0.07, 0.9]
     elif 'tartarus miniboss' in input:
-        rolls = [0.1, 0.25, 1]
-        hermes = 'hermes' in input
+        rolls = [0.2, 0.2, 0.1, 0.9]
     elif 'miniboss' in input:
-        rolls = [0.1, 0.25, 0.9]
-        hermes = 'hermes' in input
+        rolls = [0.05, 0.12, 0.1, 0.9]
+    elif 'tartarus shop' in input:
+        rolls = [0.1, 0.12, 0.25, 0.9]
     elif 'hermes' in input:
-        rolls = [0.01, 0.03, 0.06]
-        hermes = True
-    if 'god keepsake' in input and not chaos and not hermes:
-        buff_rolls([0.1, 0.1, 0.2])
+        rolls = [0.01, 0, 0.03, 0.06]
     if 'chaos favor' in input:
-        buff_rolls([r * input.count('chaos favor') for r in [0.1, 0.1, 0.2]])
-    if 'yarn of ariadne' in input or 'refreshing nectar' in input:
-        buff_rolls([0.1, 0.25, 1])
-    if 'exclusive access' in input:
-        buff_rolls([0, 1, 0])
-    if 'olympian favor' in input:
-        buff_rolls([0, 0, 0.4])
-    if 'god\'s pride' in input:
-        buff_rolls([0, 0.2, 0])
-    elif 'god\'s legacy' in input:
-        buff_rolls([0.1, 0, 0])
+        buff_rolls([r * input.count('chaos favor') for r in [0.1, 0, 0.1, 0.4]])
+    if 'yarn of ariadne' in input:
+        buff_rolls([0.1, 0, 0.25, 1])
+    if 'natural selection' in input:
+        buff_rolls([0.1, 0, 0.1, 0.2])
+    if 'excellence' in input:
+        buff_rolls([0, 0, 0, 0.5])
+    if 'divinity' in input:
+        buff_rolls([0, 0, 0.2, 0])
+    if 'the queen' in input:
+        buff_rolls([0, 0.1, 0, 0])
+    if 'hermes' in input or 'chaos' in input:
+        rolls[1] = 0
+    if 'chaos' in input:
+        rolls[0] = 0.01875
     return rolls
 
 
 def capwords(s: str, capall=False) -> str:
+    if not s:
+        return ''
     if capall:
         return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
     return ' '.join((x[0].upper() + x[1:]

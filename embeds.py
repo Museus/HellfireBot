@@ -25,36 +25,61 @@ def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
         rarity = 'common'
     else:
         bless = random.choice(blessings)
-        if random.random() < rarity_rolls[1]:
+        if random.random() < rarity_rolls[2]:
             rarity = 'epic'
-        elif random.random() < rarity_rolls[2]:
+        elif random.random() < rarity_rolls[3]:
             rarity = 'rare'
         else:
             rarity = 'common'
-    curse = random.choice(curses)
     bless_info = files.boons_info[bless]
     bless_value = misc.boon_value(bless_info, rarity)
     if len(bless_value) == 2:
-        bless_value = [random.randint(*[int(v) for v in bless_value])]
+        if bless == 'affluence':
+            bless_value = [5 * round(random.randint(*[int(v) for v in bless_value]) / 5)]
+        elif bless == 'will':
+            bless_value = [random.randint(*[int(v) * 2 for v in bless_value]) / 2]
+        else:
+            bless_value = [random.randint(*[int(v) for v in bless_value])]
+    bless_desc = parsing.parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)[2:]
+
+    if random.random() < 3 / 170:
+        curse = 'barren'
+    else:
+        while True:
+            curse = random.choice(curses)
+            if curse != 'barren':
+                break
     curse_info = files.boons_info[curse]
     curse_value = misc.boon_value(curse_info, 'common')
     if len(curse_value) == 2:
-        curse_value = [random.randint(*curse_value)]
-    if curse == 'enshrouded':
-        duration = f'**{random.choice((4, 5))} Chambers**'
-    elif curse == 'roiling':
-        duration = f'**{random.choice((3, 4))}** standard **Encounters**'
+        if curse == 'paralyzing':
+            curse_value = [random.randint(*[v * 10 for v in curse_value]) / 10]
+        else:
+            curse_value = [random.randint(*curse_value)]
+    if curse == 'ordinary':
+        curse_desc = f'The next **{random.randint(2, 3)} Boons** you find are limited to **Common** blessings.'
+    elif curse == 'rejected':
+        curse_desc = parsing.parse_stat(f'The next **{random.randint(2, 4)} Boons** you find have {{}} '
+                                        f'fewer blessing to choose from.', curse_value)[2:]
+    elif curse == 'doomed':
+        curse_desc = parsing.parse_stat(f'You have **120 Sec.** to clear **{random.randint(2, 3)} '
+                                        f'Encounters**, or get hit for {{}}.', curse_value)[2:]
     else:
-        duration = f'**{random.choice((3, 4))} Encounters**'
-    bless_desc = parsing.parse_stat(bless_info['desc'][0].lower() + bless_info['desc'][1:], bless_value)[2:]
-    curse_desc = parsing.parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)[2:]
+        if curse == 'enshrouded':
+            duration = f'**{random.randint(4, 6)} Locations**'
+        elif curse == 'barren':
+            duration = f'**{random.choice((7, 11))} Encounters**'
+        else:
+            duration = f'**{random.choice((3, 5))} Encounters**'
+        curse_desc = parsing.parse_stat(curse_info['desc'][0].lower() + curse_info['desc'][1:], curse_value)[2:]
+        curse_desc = f'For the next {duration}, {curse_desc}'
     embed = discord.Embed(
         title=f'**{misc.capwords(curse + " " + bless)}**',
-        description=f'For the next {duration}, {curse_desc}\nAfterward, {bless_desc}',
+        description=f'{curse_desc}\nAfterward, {bless_desc}',
         color=0xFFD511 if bless_info['type'] == 'legendary' else misc.rarity_embed_colors[parsing.rarities[rarity] - 1]
     )
     embed.set_thumbnail(url=misc.to_link(bless_info['icon']))
-    embed.set_footer(text='Unpommable\nUnpurgeable')
+    embed.set_footer(text='Unpommable')
     return embed
 
 
@@ -131,16 +156,6 @@ def boon_embed(input: [str]):
         pom += 1
     desc = parsing.parse_stat(info['desc'], value)[2:]
     desc += parsing.parse_stat(info['stat'], value)
-    if 'stat2' in info:
-        value2 = misc.boon_value(info, rarity, True)
-        pom = 0
-        for i in range(level - 1):
-            pom = min(pom, len(info['levels2']) - 1)
-            value2[0] += float(info['levels2'][pom])
-            if len(value2) == 2:
-                value2[1] += float(info['levels2'][pom])
-            pom += 1
-        desc += parsing.parse_stat(info['stat2'], value2)
     desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=title,

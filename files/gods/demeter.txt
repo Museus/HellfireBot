@@ -79,7 +79,7 @@ infusion coarse grit none
     15
     0
     b/b7/Coarse_Grit.png
-    1(<:EarthEssence:1242225885390700604>)
+    1(<:EarthEssence:1242225885390700604> earth)
 legendary winter harvest earth
     **Freeze**-afflicted foes shatter at **10%** **<:Life:1241660063513448499>**, dealing damage in the area.
     Shatter Area Damage: {}

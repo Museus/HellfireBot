@@ -78,7 +78,7 @@ infusion water fitness none
     100
     0
     f/fc/Water_Fitness.png
-    1(<:WaterEssence:1242225888519520377>)
+    1(<:WaterEssence:1242225888519520377> water)
 legendary king tide water
     Your splash effects from **Poseidon** are larger and deal bonus damage to **Guardians**.
     Splash Damage vs. Guardians: {+%}

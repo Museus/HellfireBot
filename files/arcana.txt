@@ -4,7 +4,7 @@
     Left to her own devices, she learned to confront the world on her own terms.
     thumb/4/48/Card01.png/80px-Card01.png
 1 the wayward son
-    After you exit a **Location**, restore {} **<:Life:1241660063513448499>**, or twice that if you have no more than **30%** **<:Life:1241660063513448499>**.
+    After you exit a **Location**, restore {l}, or twice that if you have no more than **30%** **<:Life:1241660063513448499>**.
     2 3 4 5
     Even the Underworld itself struggled to contain him, such was his lust for life.
     thumb/f/f8/Card02.png/80px-Card02.png
@@ -35,12 +35,12 @@
     He stole from the gods the gift of fire, for mortals; thus he suffered, but grew strong.
     thumb/c/c5/Card07.png/80px-Card07.png
 5 the unseen
-    Restore {} **<:Magick:1241635310387990568>** every **1 Sec.**
+    Restore {m} every **1 Sec.**
     2 3 4 6
     Upon their ancient oath, in shadow, they serve; and to shadow, they return.
     thumb/7/7d/Card08.png/80px-Card08.png
 4 night
-    Your **Hex** also charges up automatically as though you used {} **<:Magick:1241635310387990568>** every **1 Sec.**
+    Your **Hex** also charges up automatically as though you used {m} every **1 Sec.**
     2 3 4 5
     She sprang from Chaos, and formed much of the natural world, above the surface and below.
     thumb/2/29/Card09.png/80px-Card09.png
@@ -81,7 +81,7 @@
     Even the gods themselves are subject to the whims of the three weavers of destiny.
     thumb/8/80/Card16.png/80px-Card16.png
 5 the boatman
-    Set forth each night with {+} **<:GoldenCrowns:1247723119372927009>**.
+    Set forth each night with {+g}.
     200 250 300 350
     Vast riches lie hidden in the realm of the dead; but only a modest fee is needed to get in.
     thumb/d/d1/Card17.png/80px-Card17.png
@@ -128,4 +128,4 @@
     3 4 5 6
     The Underworld King is to decide what shall become of each and every mortal life.
     thumb/1/1c/Card25.png/80px-Card25.png
-    **Awakening**: *Activate no more than* **3** *Cards.*
+    **Awakening**: *Activate between* **1** *and* **3** *Cards.*

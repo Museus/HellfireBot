@@ -179,7 +179,7 @@ slip
 marked
     *Curse:* Afflicted foes have **+30%** chance to take **Critical** damage. Lasts **6 Sec.**
 gathering tools
-    Used to harvest resources from special deposits. You can carry one at a time.
+    Used to harvest resources from special deposits that appear from time to time.
 morph
     *Curse:* Afflicted foes turn into harmless critters. Lasts **8 Sec.**
 outfit
@@ -214,5 +214,7 @@ chaos gate
     A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
 <:FateFabric:1249176533675933748> fate fabric, <:FateFabric:1249176533675933748>
     Mostly used with incantations involving chance and fortune.
-<randpom>
+<:RandPom:1249967631050608700> pom slice, <:RandPom:1249967631050608700>
     Raises the potency of one of your **Boons** *(chosen at random)*.
+inferno-bomb
+    Caustic explosives that are harmful to you, yet somehow pose no threat to your foes.

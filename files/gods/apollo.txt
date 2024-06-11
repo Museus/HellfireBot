@@ -79,7 +79,7 @@ infusion self healing none
     30
     0
     c/c5/Self_Healing.png
-    1(<:FireEssence:1242225886938533888>)
+    1(<:FireEssence:1242225886938533888> fire)
 legendary exceptional talent air
     Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1241635310387990568>**.
     Omega Move Cost: {+m}

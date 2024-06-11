@@ -152,13 +152,18 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
             new_stat = f'{new_stat}x'
         if 'e' in replace:
             new_stat = f'{new_stat} Encounters'
-        if 'c' in replace:
-            new_stat = f'{new_stat} Chambers'
+        new_stat = f'**{new_stat}**'
         if 'm' in replace:
-            new_stat = f'{new_stat} <:Magick:1241635310387990568>'
-        if 'a' in replace:
-            new_stat = f'{new_stat} <:Armor:1243126987032363048>'
-        stat_line = re.sub(r'{[^{}]*}', f'**{new_stat}**', stat_line)
+            new_stat += ' **<:Magick:1241635310387990568>**'
+        elif 'a' in replace:
+            new_stat += ' **<:Armor:1243126987032363048>**'
+        elif 'l' in replace:
+            new_stat += ' **<:Life:1241660063513448499>**'
+        elif 'h' in replace:
+            new_stat += ' **<:Healing:1028193572840816722>**'
+        elif 'g' in replace:
+            new_stat += ' **<:GoldenCrowns:1247723119372927009>**'
+        stat_line = re.sub(r'{[^{}]*}', new_stat, stat_line)
 
 
 def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
@@ -200,15 +205,20 @@ def parse_modifiers(input: [str]) -> [str]:
 
 
 def parse_rarity_table(input: [str], rolls: [int]) -> (str, str):
-    title = 'Rarity success rates with the following:\n- '
-    title += '\n- '.join([misc.capwords(s) for s in input])
-    output = f'+---------------+------+\n' \
-             f'| Legendary/Duo | {rolls[0]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Epic          | {rolls[1]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Rare          | {rolls[2]:>3}% |\n' \
-             f'+---------------+------+\n' \
-             f'| Common        | 100% |\n' \
-             f'+---------------+------+'
+    if input:
+        title = 'Rarity success rates with the following:\n- '
+        title += '\n- '.join([misc.capwords(s) for s in input]) + '\n'
+    else:
+        title = 'Rarity success rates:'
+    output = f'+-----------------+------+\n' \
+             f'| Legendary       | {rolls[0]:>3}% |\n' \
+             f'+-----------------+------+\n' \
+             f'| Duo             | {rolls[1]:>3}% |\n' \
+             f'+-----------------+------+\n' \
+             f'| Epic            | {rolls[2]:>3}% |\n' \
+             f'+-----------------+------+\n' \
+             f'| Rare            | {rolls[3]:>3}% |\n' \
+             f'+-----------------+------+\n' \
+             f'| Common/Infusion | 100% |\n' \
+             f'+-----------------+------+'
     return f'{title}```\n{output}```'

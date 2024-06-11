@@ -80,7 +80,7 @@ infusion air quality none
     30 40 50 60
     0
     6/67/Air_Quality.png
-    2(<:AirEssence:1242224825079169165>)
+    2(<:AirEssence:1242224825079169165> air)
 legendary shocking loss air
     Most foes may be instantly destroyed as soon as they enter the **Encounter**.
     Instant Destruction Chance: {%}

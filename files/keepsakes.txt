@@ -74,27 +74,27 @@ combat blackened fleece
     medea
     thumb/7/7b/Blackened_Fleece.png/50px-Blackened_Fleece.png
 survival knuckle bones
-    The next **Guardian** loses {-%} **<:Life:1241660063513448499>**. You take **-15%** damage from **Guardians**.
+    The next **Guardian** loses {-%l}. You take **-15%** damage from **Guardians**.
     5 10 15 20
     odysseus
     thumb/6/61/Knuckle_Bones.png/50px-Knuckle_Bones.png
 survival luckier tooth
-    After you fall to **0** **<:Life:1241660063513448499>**, automatically restore {} **<:Life:1241660063513448499>** once this night.
+    After you fall to **0** **<:Life:1241660063513448499>**, automatically restore {l} once this night.
     51 76 101 126
     schelemeus
     thumb/8/85/Luckier_Tooth.png/50px-Luckier_Tooth.png
 survival ghost onion
-    Whenever you exit a **Location**, fully restore your **<:Life:1241660063513448499>**, up to a total of {} **<:Healing:1028193572840816722>** this night.
+    Whenever you exit a **Location**, fully restore your **<:Life:1241660063513448499>**, up to a total of {h} this night.
     50 75 100 125
     dora
     thumb/8/84/Ghost_Onion.png/50px-Ghost_Onion.png
 survival engraved pin
-    After you fall to **0** **<:Life:1241660063513448499>**, become **Impervious** for **10 Sec.** If no foes remain, restore {} **<:Life:1241660063513448499>**.
+    After you fall to **0** **<:Life:1241660063513448499>**, become **Impervious** for **10 Sec.** If no foes remain, restore {l}.
     30 45 60 75
     moros
     thumb/e/e0/Engraved_Pin.png/50px-Engraved_Pin.png
 survival silken sash
-    Gain **+20** **<:Armor:1243126987032363048>**. While you have at least **1** **<:Armor:1243126987032363048>**, gain {+} **<:Armor:1243126987032363048>** after each **Location**.
+    Gain **+20** **<:Armor:1243126987032363048>**. While you have at least **1** **<:Armor:1243126987032363048>**, gain {+a} after each **Location**.
     2 3 4 5
     arachne
     thumb/3/3f/Silken_Sash.png/50px-Silken_Sash.png
@@ -104,7 +104,7 @@ survival aromatic phial
     narcissus
     thumb/3/33/Aromatic_Phial.png/50px-Aromatic_Phial.png
 resource gold purse
-    Gain {+} **<:GoldenCrowns:1247723119372927009>** once this night.
+    Gain {+g} once this night.
     100 125 150 175
     charon
     thumb/7/7c/Gold_Purse.png/50px-Gold_Purse.png

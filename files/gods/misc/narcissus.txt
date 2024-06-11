@@ -1,0 +1,53 @@
+t1 verdure sampler none
+    Receive a gift of {+} **<:RandPom:1249967631050608700>**, **+2** <moly>, and **+3** <nightshade>.
+
+    1
+    0
+
+t1 heartfelt condolences none
+    Receive a gift of {+h} and **+10** **<:Ashes:1242227789059457055>**.
+
+    50
+    0
+
+t1 precious metals none
+    Receive a gift of **+6** <silver> and {+} **<:GoldenCrowns:1247723119372927009>**.
+
+    100
+    0
+
+t1 mystic secrets none
+    Receive a gift of {+} **<:MaxMagick:1245289397570502719>** and **+20** **<:Psyche:1242227790879784983>**.
+
+    30
+    0
+
+t1 ancestral offering none
+    Receive a gift of {+} **<:MaxLife:1241662636995772436>** and **+50** <bones>.
+
+    25
+    0
+
+t1 fates' trimmings none
+    Receive a gift of **2** **<:FateFabric:1249176533675933748>** and {+} **<:Reroll:1028190585280012348>**.
+
+    2
+    0
+
+t1 life savings none
+    Receive a gift of {} **<:StyxKiss:1243444516019507220>** and **1** <deathcap>.
+
+    1
+    0
+
+t1 mixed blessings none
+    Receive a gift of {+} **<:RandGod:1244441161150500864>** and **1** **<:MysterySeed:1245282797107548222>**.
+
+    1
+    0
+
+t1 heavenly splendor none
+    Receive a gift of **+1** <stardust> and {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>**.
+
+    2
+    0

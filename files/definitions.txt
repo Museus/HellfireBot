@@ -166,7 +166,7 @@ hitch
     *Curse:* Afflicted foes take **30%** of damage dealt to other afflicted foes. Lasts **8 Sec.**
 sacrifice boons
     A **Boon** with improved **Rarity**, which requires you to give up another in its stead.
-<lvl up>
+<:BoonLevel:1249975027290607718> Lv.
     An increase to the raw power of one of your **Boons**.
 steam
     A burning cloud that removes **Slip** from foes and rapidly deals damage. Lasts **2 Sec.**

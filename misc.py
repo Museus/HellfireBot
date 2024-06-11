@@ -16,8 +16,8 @@ god_colors = {
     'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'chaos': 0x8783CF,
     'circe': 0xF2502E, 'echo': 0x8E8C7D, 'hades': 0x770D0A,
     'hermes': 0xFBF7A7, 'icarus': 0xAD9641, 'medea': 0x456B48,
-    'selene': 0xB0FFFB, 'keepsake': 0x465B75, 'arcana': 0xCFCABA,
-    'bouldy': 0x3D4E46
+    'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
+    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'bouldy': 0x3D4E46
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -39,6 +39,7 @@ god_icons = {
     'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
     'icarus': 'thumb/f/fb/CodexPortrait_Icarus.png/350px-CodexPortrait_Icarus.png',
     'medea': '1249245758327095346',
+    'narcissus': '1249245758327095346',
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
 }
 weapon_icons = {

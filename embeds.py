@@ -425,7 +425,7 @@ def god_embed(input: [str]) -> discord.Embed:
                     god_boons[category] = []
                 god_boons[category].append(boon_name)
     embed = discord.Embed(
-        title=f'List of **{misc.capwords(name)}** boons',
+        title=f'Boons of **{misc.capwords(name)}**',
         color=misc.god_colors[name]
     )
     for category in god_boons:
@@ -433,6 +433,7 @@ def god_embed(input: [str]) -> discord.Embed:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
             embed.add_field(name=category, value=desc)
     embed.set_thumbnail(url=misc.to_link(misc.god_icons[name]))
+    embed.set_footer
     return embed
 
 

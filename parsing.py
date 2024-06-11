@@ -150,10 +150,10 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
             new_stat = f'{new_stat} Sec.'
         if 'x' in replace:
             new_stat = f'{new_stat}x'
-        if 'e' in replace:
-            new_stat = f'{new_stat} Encounters'
         new_stat = f'**{new_stat}**'
-        if 'm' in replace:
+        if 'e' in replace:
+            new_stat += ' **Encounters**'
+        elif 'm' in replace:
             new_stat += ' **<:Magick:1241635310387990568>**'
         elif 'a' in replace:
             new_stat += ' **<:Armor:1243126987032363048>**'

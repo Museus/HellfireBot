@@ -156,7 +156,7 @@ def boon_embed(input: [str]):
         pom += 1
     desc = parsing.parse_stat(info['desc'], value)[2:]
     desc += parsing.parse_stat(info['stat'], value)
-    desc += f'\n▸Cost: **{info["cost"]}**' if info['god'] == 'charon' else ''
+    desc += f'\n▸Cost: {info["cost"]}' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=title,
         description=desc,

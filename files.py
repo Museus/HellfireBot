@@ -35,9 +35,11 @@ for god in god_cores:
     file = f'./files/gods/misc/{god}.txt' if god in miscs else f'./files/gods/{god}.txt'
     with open(file, 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
+            print(boon)
             type, boon = boon.split(' ', 1)
             has_prereq = type not in (
-                'attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime', 'blessing', 'curse'
+                'attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime',
+                'blessing', 'curse', 'survival', 'combat', 'resource', 'miscellaneous'
             )
             if type[0] == 'x':
                 type = type[1:]

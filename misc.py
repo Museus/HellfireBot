@@ -14,9 +14,9 @@ god_colors = {
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
     'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duo': 0xD1FF18,
     'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'chaos': 0x8783CF,
-    'circe': 0xF2502E, 'echo': 0x8E8C7D, 'hades': 0x770D0A,
-    'hermes': 0xFBF7A7, 'icarus': 0xAD9641, 'medea': 0x456B48,
-    'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
+    'charon': 0x5500B9, 'circe': 0xF2502E, 'echo': 0x8E8C7D,
+    'hades': 0x770D0A, 'hermes': 0xFBF7A7, 'icarus': 0xAD9641,
+    'medea': 0x456B48, 'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
     'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'bouldy': 0x3D4E46
 }
 god_icons = {
@@ -32,7 +32,7 @@ god_icons = {
     'arachne': '1249245758327095346',
     'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
     'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',
-    'charon': '9/9a/Charon-bond-forged.png/revision/latest?cb=20201129185904',
+    'charon': 'thumb/6/66/Well_of_Charon.png/300px-Well_of_Charon.png',
     'circe': '1249245758327095346',
     'echo': '1249245758327095346',
     'hades': '1249245758327095346',
@@ -148,6 +148,8 @@ def rarity_rolls(input: [str]) -> [float]:
 def capwords(s: str, capall=False) -> str:
     if not s:
         return ''
+    if s == 'hydralite':
+        return 'HydraLite'
     if capall:
         return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
     return ' '.join((x[0].upper() + x[1:]

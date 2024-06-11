@@ -218,3 +218,15 @@ chaos gate
     Raises the potency of one of your **Boons** *(chosen at random)*.
 inferno-bomb
     Caustic explosives that are harmful to you, yet somehow pose no threat to your foes.
+<:Bones:1250204963951480966> bones, <:Bones:1250204963951480966>
+    Mostly used to trade for more-valuable resources.
+<:Moly:1250207627275796480> moly, <:Moly:1250207627275796480>
+    Mostly used with incantations involving dispelling and nullification.
+<:Nightshade:1250207628341022720> nightshade, <:Nightshade:1250207628341022720>
+    Mostly used with incantations involving obscurity and death.
+<:Silver:1250207629427347568> silver, <:Silver:1250207629427347568>
+    Mostly used for unlocking **Main Weapons**.
+<:Deathcap:1250207626126561501> deathcap, <:Deathcap:1250207626126561501>
+    Mostly used to trade for <:Bones:1250204963951480966> from the **Broker**.
+<:StarDust:1250207630769651812> star dust, <:StarDust:1250207630769651812>
+    Mostly used to create powerful resources that unlock true strength.

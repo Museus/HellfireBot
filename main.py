@@ -64,7 +64,7 @@ async def invite(ctx):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    await misc.reply(ctx, 'https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=1007141766979387432')
+    await misc.reply(ctx, 'https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=1007734213904183306')
 
 
 @client.command(aliases=['b'])

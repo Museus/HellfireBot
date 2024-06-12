@@ -65,7 +65,7 @@ prime trusty shield earth
     10 15 20 25
     5 3 2
     3/32/Trusty_Shield.png
-t2 furnace blast fire
+status furnace blast fire
     Your blast effects from **Hephaestus** also inflict **Vent** on foes.
     Vent Damage: {}
     300 400 500 600

@@ -7,9 +7,6 @@ attacks looming ignition
 attacks rocket bombard
     Your **Ω Attack** fires straight ahead and has **20** **Power**.
     thumb/f/f4/Rocket_Bombard.png/50px-Rocket_Bombard.png
-specials mega driver
-    Your **Specials** travel farther and deal **+50%** damage.
-    thumb/a/a4/Mega_Driver.png/50px-Mega_Driver.png
 specials sudden driver
     Your **Specials** are **35%** faster.
     thumb/c/c4/Sudden_Driver.png/50px-Sudden_Driver.png
@@ -19,6 +16,9 @@ specials colossus driver
 specials melting tackle
     Your **Special** destroys **50%** of any **Armor** *(based on the total)*.
     thumb/3/3e/Melting_Tackle.png/50px-Melting_Tackle.png
+specials mega driver
+    Your **Specials** travel **10%** farther and your **Ω Special** deals **+50%** damage.
+    thumb/a/a4/Mega_Driver.png/50px-Mega_Driver.png
 specials twisting crash
     After your **Ω Special** projectiles fire, they fire again toward you.
     thumb/2/23/Twisting_Crash.png/50px-Twisting_Crash.png

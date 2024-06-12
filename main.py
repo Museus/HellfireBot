@@ -189,21 +189,21 @@ async def legendaries(ctx):
 
 
 @client.command(aliases=['d', 'def', 'defs', 'defines', 'definition', 'definitions'])
-async def define(ctx):
+async def define(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    if not ctx.message.reference:
-        await misc.reply(ctx, 'idk man as', mention=True)
-        return
-    text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
-    try:
-        text = text.embeds[0].description
-    except IndexError:
-        text = text.content
-    if not isinstance(text, str):
-        await misc.reply(ctx, 'idk man as', mention=True)
-        return
+    if ctx.message.reference:
+        text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
+        try:
+            text = text.embeds[0].description
+        except IndexError:
+            text = text.content
+        if not isinstance(text, str):
+            await misc.reply(ctx, 'idk man as', mention=True)
+            return
+    else:
+        text = f'**{misc.capwords(" ".join(args))}**'
     embed = embeds.define_embed(text)
     await misc.reply(ctx, embed=embed)
 

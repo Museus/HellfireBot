@@ -1,5 +1,5 @@
 t1 verdure sampler none
-    Receive a gift of {+} **<:RandPom:1249967631050608700>**, **+2** <moly>, and **+3** <nightshade>.
+    Receive a gift of {+} **<:RandPom:1249967631050608700>**, **+2** **<:Moly:1250207627275796480>**, and **+3** **<:Nightshade:1250207628341022720>**.
 
     1
     0
@@ -11,7 +11,7 @@ t1 heartfelt condolences none
     0
 
 t1 precious metals none
-    Receive a gift of **+6** <silver> and {+} **<:GoldenCrowns:1247723119372927009>**.
+    Receive a gift of **+6** **<:Silver:1250207629427347568>** and {+} **<:GoldenCrowns:1247723119372927009>**.
 
     100
     0
@@ -23,7 +23,7 @@ t1 mystic secrets none
     0
 
 t1 ancestral offering none
-    Receive a gift of {+} **<:MaxLife:1241662636995772436>** and **+50** <bones>.
+    Receive a gift of {+} **<:MaxLife:1241662636995772436>** and **+50** **<:Bones:1250204963951480966>**.
 
     25
     0
@@ -35,7 +35,7 @@ t1 fates' trimmings none
     0
 
 t1 life savings none
-    Receive a gift of {} **<:StyxKiss:1243444516019507220>** and **1** <deathcap>.
+    Receive a gift of {} **<:StyxKiss:1243444516019507220>** and **1** **<:Deathcap:1250207626126561501>**.
 
     1
     0
@@ -47,7 +47,7 @@ t1 mixed blessings none
     0
 
 t1 heavenly splendor none
-    Receive a gift of **+1** <stardust> and {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>**.
+    Receive a gift of **+1** **<:StarDust:1250207630769651812>** and {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>**.
 
     2
     0

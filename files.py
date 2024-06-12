@@ -7,12 +7,13 @@ aspects_info = {}
 hammers_info = {}
 keepsakes_info = {}
 arcana_info = {}
+vows_info = {}
 prereqs_info = {}
 definitions_info = {}
 enemies_info = {}
 aliases = {
     'core': {}, 'misc': {}, 'aspect': {}, 'hammer': {},
-    'keepsake': {}, 'arcana': {}, 'modifier': {}
+    'keepsake': {}, 'arcana': {}, 'vow': {}, 'modifier': {}
 }
 god_cores = {
     'aphrodite': {}, 'apollo': {}, 'demeter': {},
@@ -45,7 +46,7 @@ for god in god_cores:
                 type = type[1:]
             *boon, element = boon.split(' ')
             boon = ' '.join(boon)
-            if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'infusion', 'legendary'):
+            if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'status', 'infusion', 'legendary'):
                 if type == 'legendary':
                     legendary_info.append(boon)
                 if type not in god_cores[god]:
@@ -126,6 +127,14 @@ with open('./files/arcana.txt', 'r', encoding='utf8') as f:
         if cost == 0:
             arcana_info[card]['awakening'] = f.readline().strip()
         aliases['arcana'][str(counter)] = [card]
+
+with open('./files/vows.txt', 'r', encoding='utf8') as f:
+    while vow := f.readline().strip():
+        vows_info[vow] = {
+            'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '), 'fears': f.readline().strip(),
+            'flavor': f.readline().strip(), 'icon': f.readline().strip()
+        }
+        aliases['vow'][vow.split()[-1]] = [vow]
 
 for category in aliases:
     with open(f'./files/aliases/{category}aliases.txt', 'r', encoding='utf8') as f:

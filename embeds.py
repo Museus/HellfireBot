@@ -448,20 +448,19 @@ def legendaries_embed() -> discord.Embed:
 
 
 def define_embed(text: str):
-    used = set()
+    used = []
     for definition in files.definitions_info:
-        if f'**{misc.capwords(definition)}**' in text and definition not in used:
-            used.add(definition)
-            text = text.replace(f'**{misc.capwords(definition)}**', '')
+        if f'**{misc.capwords(definition)}**' in text and definition not in [x[0] for x in used]:
+            used.append((definition, text.index(f'**{misc.capwords(definition)}**')))
     for definition in files.aliases['definition']:
-        if f'**{misc.capwords(definition)}**' in text and files.aliases['definition'][definition] not in used:
-            used.add(files.aliases['definition'][definition])
-            text = text.replace(f'**{misc.capwords(definition)}**', '')
+        if (f'**{misc.capwords(definition)}**' in text
+                and files.aliases['definition'][definition] not in [x[0] for x in used]):
+            used.append((files.aliases['definition'][definition], text.index(f'**{misc.capwords(definition)}**')))
     embed = discord.Embed(
         title='List of **Definitions**'
     )
-    for definition in used:
-        embed.add_field(name=misc.capwords(definition), value=files.definitions_info[definition], inline=False)
+    for definition in sorted(used, key=lambda x: x[1]):
+        embed.add_field(name=misc.capwords(definition[0]), value=files.definitions_info[definition[0]], inline=False)
     return embed
 
 

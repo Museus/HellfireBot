@@ -30,6 +30,8 @@ sprint
     dash, jump, snap, 💨
 gain
     magic, magick, mana
+status
+    stat, privileged status, priv status, pstatus, pstat, ps, origination
 infusion
     infuse, inf, pink
 legendary

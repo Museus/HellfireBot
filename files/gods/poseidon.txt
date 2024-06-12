@@ -29,7 +29,7 @@ gain fluid gain water
     2 1
     b/b9/Fluid_Gain.png
 t1 double up water
-    Whenever you claim rewards other than **Boons**, **<Hammer:1243131974923718747>**, or rare resources, a copy may appear.
+    Whenever you claim rewards other than **Boons**, **<:Hammer:1243131974923718747>**, or rare resources, a copy may appear.
     Double Reward Chance: {%}
     20 25 30 35
     5 2.5 2
@@ -58,7 +58,7 @@ prime flood control water
     2 3 4 5
     0
     4/45/Flood_Control.png
-t2 slippery slope water
+status slippery slope water
     Your splash effects from **Poseidon** also inflict **Slip** on foes.
     Slip Bonus Damage: {+%}
     5 10 15 20

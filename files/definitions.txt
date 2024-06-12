@@ -72,7 +72,7 @@ impervious
     Grants a special enchantment for your weapon for this night.
 critical
     A devastating blow that deals **+200%** damage or greater.
-boons, boon
+boons, boon, boon(s)
     Blessings from the Olympians, bestowing godlike power for this night.
 rarity
     **Boons** sometimes have superior effects, noted as **Rare**, **Epic**, and more.

@@ -36,7 +36,6 @@ for god in god_cores:
     file = f'./files/gods/misc/{god}.txt' if god in miscs else f'./files/gods/{god}.txt'
     with open(file, 'r', encoding='utf8') as f:
         while boon := f.readline().strip():
-            print(boon)
             type, boon = boon.split(' ', 1)
             has_prereq = type not in (
                 'attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime',
@@ -75,8 +74,8 @@ for god in god_cores:
                 aliases['misc'][god] = []
             aliases['misc'][god].append(boon)
 
-for boon in boons_info:
-    print(boon)
+# for boon in boons_info:
+#     print(boon)
 
 with open('./files/aspects.txt', 'r', encoding='utf8') as f:
     while aspect := f.readline().strip():

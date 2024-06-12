@@ -10,6 +10,7 @@ import embeds
 import files
 import misc
 import parsing
+import arcanagen
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -292,6 +293,16 @@ async def suggest(ctx, *args):
         return
     channel = client.get_channel(1018409476908392518)
     await channel.send(f'From {ctx.author.mention}:\n```{input}```')
+
+
+@client.command(aliases=['arc'])
+async def test(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    arcanagen.arcana_gen(args)
+    await misc.reply(ctx, file=discord.File('./temp.png'))
+    os.remove('./temp.png')
 
 
 @client.command(aliases=['cred', 'credit', 'credits'])

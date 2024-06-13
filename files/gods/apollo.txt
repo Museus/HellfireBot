@@ -24,7 +24,7 @@ sprint blinding sprint fire
     3.75
     6/63/Blinding_Sprint.png
 gain lucid gain air
-    While standing in your **Casts**, gradually restore **<:Magick:1241635310387990568>**.
+    While standing in your **Casts**, gradually restore **<:Magick:1250935754461544478>**.
     Magick Restoration: {+} *(every 1 Sec.)*
     12 18 24 30
     6 3 1.5 1
@@ -82,7 +82,7 @@ infusion self healing none
     c/c5/Self_Healing.png
     1(<:FireEssence:1242225886938533888> fire)
 legendary exceptional talent air
-    Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1241635310387990568>**.
+    Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1250935754461544478>**.
     Omega Move Cost: {+m}
     20
     0

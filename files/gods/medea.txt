@@ -18,7 +18,7 @@ t1 life from the dead none
     0
 
 t1 traces of spirit none
-    After each **Encounter**, gain {+} **<:MaxMagick:1245289397570502719>**.
+    After each **Encounter**, gain {+} **<:MaxMagick:1250936650939240519>**.
 
     10
     0

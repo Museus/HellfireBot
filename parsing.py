@@ -154,7 +154,7 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
         if 'e' in replace:
             new_stat += ' **Encounters**'
         elif 'm' in replace:
-            new_stat += ' **<:Magick:1241635310387990568>**'
+            new_stat += ' **<:Magick:1250935754461544478>**'
         elif 'a' in replace:
             new_stat += ' **<:Armor:1243126987032363048>**'
         elif 'l' in replace:
@@ -162,7 +162,7 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
         elif 'h' in replace:
             new_stat += ' **<:Healing:1028193572840816722>**'
         elif 'g' in replace:
-            new_stat += ' **<:GoldenCrowns:1247723119372927009>**'
+            new_stat += ' **<:GoldenCrowns:1250942621044576308>**'
         stat_line = re.sub(r'{[^{}]*}', new_stat, stat_line)
 
 

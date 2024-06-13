@@ -29,8 +29,8 @@ specials dual moonshot
     Your **Specials** fire **2** projectiles, but have **-40%** range.
     thumb/b/b0/Dual_Moonshot.png/50px-Dual_Moonshot.png
 specials aetheric moonburst
-    Your **Ω Special** gains a **Power Shot** that deals **+50%** damage and restores **20** **<:Magick:1241635310387990568>**.
+    Your **Ω Special** gains a **Power Shot** that deals **+50%** damage and restores **20** **<:Magick:1250935754461544478>**.
     thumb/3/32/Aetheric_Moonburst.png/50px-Aetheric_Moonburst.png
 specials giga moonburst
-    You can **Channel** **+30** **<:Magick:1241635310387990568>** into your **Ω Special** to deal **+300%** damage in a larger area.
+    You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Special** to deal **+300%** damage in a larger area.
     thumb/d/d3/Giga_Moonburst.png/50px-Giga_Moonburst.png

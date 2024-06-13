@@ -11,7 +11,7 @@ vow of dominance
     Upon this night my strength shall meet its match, that Fear may spread.
     thumb/b/b9/VowDominance.png/30px-VowDominance.png
 vow of rebuke
-    All foes have {} **<:BlueHeart:1241665623453601803>**.
+    All foes have {} **<:BlueHeart:1250926931264671865>**.
     1 2
     1 1
     Upon this night I strike to no avail, that Fear may spread.
@@ -53,7 +53,7 @@ vow of scars
     Upon this night my wounds shall never heal, that Fear may spread.
     thumb/c/cd/VowScars.png/30px-VowScars.png
 vow of destitution
-    All items that cost **<:GoldenCrowns:1247723119372927009>** are {%} more expensive.
+    All items that cost **<:GoldenCrowns:1250942621044576308>** are {%} more expensive.
     40 80
     1 1
     Upon this night I shall have naught to spare, that Fear may spread.

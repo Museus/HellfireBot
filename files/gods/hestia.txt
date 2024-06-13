@@ -24,13 +24,13 @@ sprint soot sprint fire
     2 1
     c/c4/Soot_Sprint.png
 gain hearth gain fire
-    Rapidly restore **<:Magick:1241635310387990568>**, but you have **-20%** **<:MaxLife:1241662636995772436>**.
+    Rapidly restore **<:Magick:1250935754461544478>**, but you have **-20%** **<:MaxLife:1241662636995772436>**.
     Magick Restoration: {+} *(every 1 Sec.)*
     7 10 13 16
     0
     8/85/Hearth_Gain.png
 xt1 burnt offering fire
-    Gain **<:MaxLife:1241662636995772436>** and **<:Magick:1241635310387990568>**, but give up **1** **Boon** selected by **Hestia**.
+    Gain **<:MaxLife:1241662636995772436>** and **<:Magick:1250935754461544478>**, but give up **1** **Boon** selected by **Hestia**.
     Max Life & Magick: {+}
     50 60 70 80
     0
@@ -44,7 +44,7 @@ xt1 glowing coal fire
     8/85/Glowing_Coal.png
     x(local climate, lightning lance, howling soul)
 t1 controlled burn fire
-    Your **Ω Special** also launches a fiery projectile, but uses **+10** **<:Magick:1241635310387990568>**.
+    Your **Ω Special** also launches a fiery projectile, but uses **+10** **<:Magick:1250935754461544478>**.
     Blast Damage: {}
     80 120 160 200
     40 20 16 8

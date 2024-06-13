@@ -12,19 +12,19 @@ t1 scarlet dress none
     0
     thumb/0/05/Scarlet_Dress.png/41px-Scarlet_Dress.png
 t1 onyx dress none
-    Don a {+a} **Outfit** that creates **+1** **<:FateFabric:1249176533675933748>** now.
+    Don a {+a} **Outfit** that creates **+1** **<:FateFabric:1250938286055231570>** now.
 
     60
     0
     thumb/e/e1/Onyx_Dress.png/41px-Onyx_Dress.png
 t1 moonlight dress none
-    Don a {+a} **Outfit** that grants **+5** **<:GoldenCrowns:1247723119372927009>** whenever you exit a **Location**.
+    Don a {+a} **Outfit** that grants **+5** **<:GoldenCrowns:1250942621044576308>** whenever you exit a **Location**.
 
     20
     0
     thumb/2/2f/Moonlight_Dress.png/41px-Moonlight_Dress.png
 t1 azure dress none
-    Don a {+a} **Outfit** that makes you restore **5** **<:Magick:1241635310387990568>** every **1 Sec.**
+    Don a {+a} **Outfit** that makes you restore **5** **<:Magick:1250935754461544478>** every **1 Sec.**
 
     40
     0

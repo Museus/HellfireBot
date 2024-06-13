@@ -24,7 +24,7 @@ sprint passion dash air
     10 5
     e/e0/Passion_Dash.png
 gain glamour gain air
-    In each **Encounter**, **1** foe is always **Weak**. You gradually restore **<:Magick:1241635310387990568>** near **Weak** foes.
+    In each **Encounter**, **1** foe is always **Weak**. You gradually restore **<:Magick:1250935754461544478>** near **Weak** foes.
     Magick Restoration: {} *(every 1 Sec.)*
     6 8 10 12
     1.98 0.99 0.6
@@ -48,13 +48,13 @@ t1 shameless attitude air
     5 4 3.2 2.56 2.048 1.6384 1.31072 1.048576 1
     a/a3/Shameless_Attitude.png
 t1 heart breaker water
-    Whenever you use **30** **<:Magick:1241635310387990568>**, create a **Heartthrob**.
+    Whenever you use **30** **<:Magick:1250935754461544478>**, create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120 180 240 300
     60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
     e/ef/Heart_Breaker.png
 prime secret crush air
-    After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to add **Power** to your **Attack**.
+    After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to add **Power** to your **Attack**.
     Attack Power: {+}
     5 7 9 11
     0

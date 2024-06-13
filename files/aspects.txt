@@ -71,7 +71,7 @@ axe thanatos
     Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
     thumb/6/63/Axe-Thanatos.png/80px-Axe-Thanatos.png
 skull melinoë skull
-    Your **Attacks** have more **Power** for each **<:Shell:1245300154353979442> Shell** fired and not yet retrieved.
+    Your **Attacks** have more **Power** for each **<:Shell:1250941173841924258> Shell** fired and not yet retrieved.
     Power per Spent Shell: {+}
     0 5 10 15 20 25
     The will of Night is never to be chronicled, but witnessed by the dead and the shadow.

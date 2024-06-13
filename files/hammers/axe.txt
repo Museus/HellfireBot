@@ -5,7 +5,7 @@ attacks rapid slash
     Your **Attack** is **30%** faster.
     thumb/b/b3/Rapid_Slash.png/50px-Rapid_Slash.png
 attacks executioner's chop
-    The final move in your **Attack** sequence hits **2** times, but uses **20* **<:Magick:1241635310387990568>**.
+    The final move in your **Attack** sequence hits **2** times, but uses **20* **<:Magick:1250935754461544478>**.
     thumb/a/a3/Executioner%27s_Chop.png/50px-Executioner%27s_Chop.png
 attacks hell splitter
     Your **Attack** becomes a big chop with **300** **Power**.
@@ -32,5 +32,5 @@ specials sudden cleaver
     You **Channel** your **Ω Special** **25%** faster.
     thumb/3/3c/Sudden_Cleaver.png/50px-Sudden_Cleaver.png
 specials giga cleaver
-    Your **Ω Special** fires **2** times in succession but costs **+15** **<:Magick:1241635310387990568>**.
+    Your **Ω Special** fires **2** times in succession but costs **+15** **<:Magick:1250935754461544478>**.
     thumb/2/2d/Giga_Cleaver.png/50px-Giga_Cleaver.png

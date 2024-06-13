@@ -18,7 +18,7 @@ cast geyser ring water
     50 30 20 10
     8/86/Geyser_Ring.png
 sprint breaker sprint water
-    Your **Sprint** deals damage on impact and knocks foes away, but uses **5** **<:Magick:1241635310387990568>** per hit.
+    Your **Sprint** deals damage on impact and knocks foes away, but uses **5** **<:Magick:1250935754461544478>** per hit.
     Impact Damage: {}
     80 120 160 200
     40 20 10 8
@@ -42,19 +42,19 @@ t1 hydraulic might water
     23 11.5 10
     b/b4/Hydraulic_Might.png
 t1 sunken treasure water
-    Gain **<:GoldenCrowns:1247723119372927009>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
+    Gain **<:GoldenCrowns:1250942621044576308>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
     Gold Received: {+}
     90 117 144 171
     0
     f/fa/Sunken_Treasure.png
 t1 ocean's bounty water
-    Any **Minor Finds** and **<:GoldReward:1247777661984575548>** are worth more.
+    Any **Minor Finds** and **<:GoldReward:1250940286230597682>** are worth more.
     Reward Bonus: {+%}
     50 75 100 125
     0
     a/a7/Ocean%27s_Bounty.png
 prime flood control water
-    After you enter a **Location**, **Prime** **30** **<:Magick:1241635310387990568> Magick** to reduce any damage you would take.
+    After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478> Magick** to reduce any damage you would take.
     Damage Reduction per Hit: {-}
     2 3 4 5
     0

@@ -18,13 +18,13 @@ cast anvil ring earth
     20 15 10 5
     d/d4/Anvil_Ring.png
 sprint smithy sprint fire
-    After you **Sprint** for **1 Sec.**, use **10** **<:Magick:1241635310387990568>** to create a blast that deals damage to nearby foes.
+    After you **Sprint** for **1 Sec.**, use **10** **<:Magick:1250935754461544478>** to create a blast that deals damage to nearby foes.
     Area Damage: {}
     200 300 400 500
     100 50 25 20
     6/62/Smithy_Sprint.png
 xgain fixed gain earth
-    You take **-10%** damage, and restore some **<:Magick:1241635310387990568>** whenever you take damage.
+    You take **-10%** damage, and restore some **<:Magick:1250935754461544478>** whenever you take damage.
     Magick Restored from Damage: {}
     50 75 100 125
     25 12.5 6.25 5
@@ -49,7 +49,7 @@ t1 mint condition earth
     2 1
     5/5e/Mint_Condition.png
 t1 uncanny fortitude earth
-    Gain bonus **<:MaxLife:1241662636995772436>** based on your **<:Magick:1241635310387990568>** limit.
+    Gain bonus **<:MaxLife:1241662636995772436>** based on your **<:Magick:1250935754461544478>** limit.
     Max Life from Magick: {+%}
     20 30 40 50
     0
@@ -61,7 +61,7 @@ revenge tough trade fire
     25 15 10
     b/b7/Tough_Trade.png
 prime trusty shield earth
-    After you enter a **Location**, **Prime** **30** **<:Magick:1241635310387990568>** to gain **Armor** until the next **Location**.
+    After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478>** to gain **Armor** until the next **Location**.
     Starting Armor: {+}<:Armor:1243126987032363048>
     10 15 20 25
     5 3 2

@@ -18,13 +18,13 @@ cast storm ring air
     10 5
     1/1e/Storm_Ring.png
 sprint thunder sprint air
-    Your **Sprint** causes nearby foes to be struck by lightning bolts, which use 3 <:Magick:1241635310387990568> each.
+    Your **Sprint** causes nearby foes to be struck by lightning bolts, which use 3 <:Magick:1250935754461544478> each.
     Bolt Damage: {} *(every 0.15 Sec.)*
     20 25 30 35
     5 3 2
     3/33/Thunder_Sprint.png
 gain ionic gain air
-    Gradually restore <:Magick:1241635310387990568>, but your total amount is reduced by **70%**.
+    Gradually restore <:Magick:1250935754461544478>, but your total amount is reduced by **70%**.
     Magick Restoration: {+} *(every 1 Sec.)*
     4 6 8 10
     0
@@ -37,7 +37,7 @@ xt1 lightning lance air
     c/c6/Lightning_Lance.png
     x(local climate, glowing coal, howling soul)
 t1 spirit surge air
-    While you have no more than 10 <:Magick:1241635310387990568>, ***all*** foes are occasionally struck by lightning.
+    While you have no more than 10 <:Magick:1250935754461544478>, ***all*** foes are occasionally struck by lightning.
     Bolt Damage: {} *(every 5 Sec.)*
     60 75 90 105
     15 7.5 6
@@ -49,7 +49,7 @@ revenge divine vengeance air
     1
     b/ba/Divine_Vengeance.png
 prime static shock air
-    After you enter a **Location**, **Prime** **50** **<:Magick:1241635310387990568>** to make your strikes emit chain-lightning.
+    After you enter a **Location**, **Prime** **50** **<:Magick:1250935754461544478>** to make your strikes emit chain-lightning.
     Lightning Damage: {}
     10 15 20 25
     5 2.5 1.25 1

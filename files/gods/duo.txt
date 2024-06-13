@@ -49,7 +49,7 @@ duo romantic spark aether
     6/66/Romantic_Spark.png
     1(flutter strike, flutter flourish, rapture ring, passion dash); 1(heaven strike, heaven flourish)
 duo torrential downpour aether
-    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1241635310387990568>**.
+    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1250935754461544478>**.
     Damage per Omega Cast: {+%}
     20
     0
@@ -84,7 +84,7 @@ duo beach ball aether
     1/1b/Beach_Ball.png
     1(blinding sprint, lucid gain); 1(breaker sprint, fluid gain)
 duo glorious disaster aether
-    You can **Channel** **+30** **<:Magick:1241635310387990568>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
+    You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
     Bolt Damage: {} *(every 0.13 Sec.)*
     50
     0
@@ -112,7 +112,7 @@ duo freezer burn aether
     2/23/Freezer_Burn.png
     1(ice strike, ice flourish); 1(flame strike, flame flourish)
 duo natural selection aether
-    **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1245289397570502719>**, and **<:GoldenCrowns:1247723119372927009>**. **Boons** are more likely to be **Rare** or better.
+    **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
     Improved Rarity Chance: {+%}
     20
     0
@@ -161,21 +161,21 @@ duo funeral pyre aether
     e/ed/Funeral_Pyre.png
     1(sworn strike, sworn flourish, engagement ring, born gain); 1(flame strike, flame flourish, smolder ring, hearth gain)
 duo golden rule aether
-    You deal more damage the more **<:GoldenCrowns:1247723119372927009>** you have.
+    You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
     Bonus Damage per 100 Gold: {+%}
     5
     0
     3/36/Golden_Rule.png
     1(engagement ring, nexus sprint, born gain); 1(geyser ring, breaker sprint, fluid gain); 1(ocean's bounty, double up)
 duo queen's ransom aether
-    Give up *all* your **Boons** of **Zeus**. For each, raise **<:BoonLevel:1249975027290607718> Lv.** for *all* your **Boons** of **Hera**.
+    Give up *all* your **Boons** of **Zeus**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Hera**.
     Bonus Lv. per Zeus Boon: {+}
     3
     0
     thumb/7/75/Queen%27s_Ransom.png/100px-Queen%27s_Ransom.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain)
 duo king's ransom aether
-    Give up *all* your **Boons** of **Hera**. For each, raise **<:BoonLevel:1249975027290607718> Lv.** for *all* your **Boons** of **Zeus**.
+    Give up *all* your **Boons** of **Hera**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Zeus**.
     Bonus Lv. per Zeus Boon: {+}
     2
     0

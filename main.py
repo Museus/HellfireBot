@@ -301,7 +301,7 @@ async def arcanaloadout(ctx, *args):
         await ctx.author.send(misc.optout_dm)
         return
     total_grasp = arcanagen.arcana_gen(args)
-    await misc.reply(ctx, f'Total grasp: **{total_grasp}** <:Grasp:1248759750963761182>', file=discord.File('./temp.png'))
+    await misc.reply(ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png'))
     os.remove('./temp.png')
 
 

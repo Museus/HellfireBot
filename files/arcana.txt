@@ -9,7 +9,7 @@
     Even the Underworld itself struggled to contain him, such was his lust for life.
     thumb/f/f8/Card02.png/80px-Card02.png
 3 the huntress
-    While you have less than **100%** **<:Magick:1241635310387990568>**, your **Attack** and **Special** deal **+50%** damage.
+    While you have less than **100%** **<:Magick:1250935754461544478>**, your **Attack** and **Special** deal **+50%** damage.
     30 40 50 60
     Through discipline and instinct comes surpassing skill both in shadow and the light of the Moon.
     thumb/9/91/Card03.png/80px-Card03.png
@@ -23,14 +23,14 @@
     6 8 10 12
     With incomparable swiftness can he travel from the highest peaks to the lowest depths.
     thumb/2/29/Card05.png/80px-Card05.png
-    **Awakening**: *Activate at least* **3** *Cards that use the same amount of <:Grasp:1248759750963761182>.*
+    **Awakening**: *Activate at least* **3** *Cards that use the same amount of <:Grasp:1250935195700563978>.*
 2 the furies
     Deal {+%} damage to foes in your **Casts**.
     20 25 30 35
     In the deepest reaches of the Underworld, three are as feared as the god of the dead himself.
     thumb/b/b4/Card06.png/80px-Card06.png
 2 the titan
-    Gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1245289397570502719>**.
+    Gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1250936650939240519>**.
     20 30 40 50
     He stole from the gods the gift of fire, for mortals; thus he suffered, but grew strong.
     thumb/c/c5/Card07.png/80px-Card07.png
@@ -60,11 +60,11 @@
     The inevitable cannot be prevented, though perhaps can be forestalled.
     thumb/f/f7/Card12.png/80px-Card12.png
 0 the centaur
-    After every **5** **Locations**, gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1245289397570502719>**.
+    After every **5** **Locations**, gain {+} **<:MaxLife:1241662636995772436>** and {+} **<:MaxMagick:1250936650939240519>**.
     3 4 5 6
     Many of the greatest heroes mortalkind has to offer have in common his patient instruction.
     thumb/d/da/Card13.png/80px-Card13.png
-    **Awakening**: *Activate Cards that use* **1** <:Grasp:1248759750963761182> *through* **5** <:Grasp:1248759750963761182>.
+    **Awakening**: *Activate Cards that use* **1** <:Grasp:1250935195700563978> *through* **5** <:Grasp:1250935195700563978>.
 3 the moon
     Your **Ω Cast** has {+} **Power** whenever it detonates.
     50 75 100 125
@@ -100,7 +100,7 @@
     6 8 10 12
     From Olympus she descends to reign in the Underworld, as the surface-land grows cold.
     thumb/b/b9/Card20.png/80px-Card20.png
-    **Awakening**: *Activate no more than* **2** *Cards that use the same amount of <:Grasp:1248759750963761182>.*
+    **Awakening**: *Activate no more than* **2** *Cards that use the same amount of <:Grasp:1250935195700563978>.*
 0 the seer
     Set forth each night with {+} **<:Reroll:1028190585280012348>**.
     2 3 4 5

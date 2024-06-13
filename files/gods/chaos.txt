@@ -54,13 +54,13 @@ blessing favor none
     0
     0/00/Favor.png
 blessing affluence none
-    Any **<:GoldenCrowns:1247723119372927009>** you find is worth {+%}.
+    Any **<:GoldenCrowns:1250942621044576308>** you find is worth {+%}.
 
     40-60 80-120 12-180 160-240
     0
     1/11/Affluence.png
 blessing mind none
-    Gain {+} **<:MaxMagick:1245289397570502719>**.
+    Gain {+} **<:MaxMagick:1250936650939240519>**.
 
     30-40 45-60 60-80 75-100
     0
@@ -114,7 +114,7 @@ curse hobbled none
     0
 
 curse fixated none
-    Whenever you use **<:Magick:1241635310387990568>**, **Prime** it.
+    Whenever you use **<:Magick:1250935754461544478>**, **Prime** it.
     Duration: {e}
     3-5
     0
@@ -126,7 +126,7 @@ curse gagged none
     0
 
 curse pauper's none
-    You cannot earn **<:<:GoldenCrowns:1247723119372927009>**.
+    You cannot earn **<:<:GoldenCrowns:1250942621044576308>**.
     Duration: {e}
     3-5
     0

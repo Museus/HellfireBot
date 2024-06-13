@@ -1,6 +1,6 @@
 npc
 t1 verdure sampler none
-    Receive a gift of {+} **<:RandPom:1249967631050608700>**, **+2** **<:Moly:1250207627275796480>**, and **+3** **<:Nightshade:1250207628341022720>**.
+    Receive a gift of {+} **<:RandPom:1250927965030846474>**, **+2** **<:Moly:1250207627275796480>**, and **+3** **<:Nightshade:1250207628341022720>**.
 
     1
     0
@@ -12,13 +12,13 @@ t1 heartfelt condolences none
     0
 
 t1 precious metals none
-    Receive a gift of **+6** **<:Silver:1250207629427347568>** and {+} **<:GoldenCrowns:1247723119372927009>**.
+    Receive a gift of **+6** **<:Silver:1250207629427347568>** and {+} **<:GoldenCrowns:1250942621044576308>**.
 
     100
     0
 
 t1 mystic secrets none
-    Receive a gift of {+} **<:MaxMagick:1245289397570502719>** and **+20** **<:Psyche:1242227790879784983>**.
+    Receive a gift of {+} **<:MaxMagick:1250936650939240519>** and **+20** **<:Psyche:1242227790879784983>**.
 
     30
     0
@@ -30,7 +30,7 @@ t1 ancestral offering none
     0
 
 t1 fates' trimmings none
-    Receive a gift of **2** **<:FateFabric:1249176533675933748>** and {+} **<:Reroll:1028190585280012348>**.
+    Receive a gift of **2** **<:FateFabric:1250938286055231570>** and {+} **<:Reroll:1028190585280012348>**.
 
     2
     0
@@ -42,7 +42,7 @@ t1 life savings none
     0
 
 t1 mixed blessings none
-    Receive a gift of {+} **<:RandGod:1244441161150500864>** and **1** **<:MysterySeed:1245282797107548222>**.
+    Receive a gift of {+} **<:RandGod:1250934841030217759>** and **1** **<:MysterySeed:1245282797107548222>**.
 
     1
     0

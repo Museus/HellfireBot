@@ -27,18 +27,17 @@ god_cores = {
     'medea': {}, 'narcissus': {}, 'selene': {},
     'bouldy': {}
 }
+pathofstars_info = {}
 global_arcana = {}
 commands_info = {}
 
 for god in god_cores:
     with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
         god_cores[god]['category'] = f.readline().strip()
-        if god == 'selene':
-            continue
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
             has_prereq = type not in (
-                'attack', 'special', 'cast', 'sprint', 'gain', 't1', 'revenge', 'prime',
+                'attack', 'special', 'cast', 'sprint', 'gain', 'hex', 't1', 'revenge', 'prime',
                 'blessing', 'curse', 'survival', 'combat', 'resource', 'miscellaneous'
             )
             if type[0] == 'x':

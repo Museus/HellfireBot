@@ -1,5 +1,5 @@
 attacks full salvo
-    Your **Attacks** fire your **<:Shell:1245300154353979442> Shells** all at once in a spread pattern.
+    Your **Attacks** fire your **<:Shell:1250941173841924258> Shells** all at once in a spread pattern.
     thumb/b/b0/Full_Salvo.png/50px-Full_Salvo.png
 attacks looming ignition
     Your **Attack** grows up to **50%** bigger and stronger over **2 Sec.**, or until it explodes.
@@ -23,16 +23,16 @@ specials twisting crash
     After your **Ω Special** projectiles fire, they fire again toward you.
     thumb/2/23/Twisting_Crash.png/50px-Twisting_Crash.png
 shells xdestructive array
-    Every **2.5 Sec.**, your **<:Shell:1245300154353979442> Shells** deal damage around them based on **50%** of your **Attack**.
+    Every **2.5 Sec.**, your **<:Shell:1250941173841924258> Shells** deal damage around them based on **50%** of your **Attack**.
     thumb/3/39/Destructive_Array.png/50px-Destructive_Array.png
     x(fetching array)
 shells possessed array
-    Your **<:Shell:1245300154353979442> Shells** fire your **Ω Attack** for **0** **<:Magick:1241635310387990568>** whenever retrieved.
+    Your **<:Shell:1250941173841924258> Shells** fire your **Ω Attack** for **0** **<:Magick:1250935754461544478>** whenever retrieved.
     thumb/f/f1/Possessed_Array.png/50px-Possessed_Array.png
 shells xfetching array
-    Your **<:Shell:1245300154353979442> Shells** return to you automatically, but you have **-1** **<:Shell:1245300154353979442>**.
+    Your **<:Shell:1250941173841924258> Shells** return to you automatically, but you have **-1** **<:Shell:1250941173841924258>**.
     thumb/f/fb/Fetching_Array.png/50px-Fetching_Array.png
     x(destructive array)
 shells bolstered array
-    Gain **+2** **<:Shell:1245300154353979442> Shells**.
+    Gain **+2** **<:Shell:1250941173841924258> Shells**.
     thumb/6/63/Bolstered_Array.png/50px-Bolstered_Array.png

@@ -24,7 +24,7 @@ sprint nexus sprint earth
     1
     4/4b/Nexus_Sprint.png
 gain born gain earth
-    Whenever you run out of **<:Magick:1241635310387990568>**, **Prime** to restore *all* **<:Magick:1241635310387990568>** up to the reduced limit.
+    Whenever you run out of **<:Magick:1250935754461544478>**, **Prime** to restore *all* **<:Magick:1250935754461544478>** up to the reduced limit.
     Magick Primed: {}
     10 8 6 4
     -2 -1 0
@@ -43,7 +43,7 @@ xt1 bridal glow earth
     a/a9/Bridal_Glow.png
     2(any upgradeable boon)
 t1 keen intuition earth
-    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1241635310387990568>**, they deal more damage.
+    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1250935754461544478>**, they deal more damage.
     Omega Damage: {+%}
     30 45 60 75
     15 7.5 3.75 3
@@ -82,7 +82,7 @@ infusion proper upbringing none
     a/a1/Proper_Upbringing.png
     1(<:EarthEssence:1242225885390700604> earth)
 legendary brave face earth
-    Automatically use **<:Magick:1241635310387990568>** to resist up to **50%** of any damage.
+    Automatically use **<:Magick:1250935754461544478>** to resist up to **50%** of any damage.
     Magick Cost per Damage Point: {m}
     5
     0

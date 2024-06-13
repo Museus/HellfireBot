@@ -1,21 +1,21 @@
 weapon
     Press or hold to use your main weapon in a variety of ways.
 attacks
-    Your weapon's main attack. Hold to use <:Magick:1241635310387990568> for a stronger effect.
+    Your weapon's main attack. Hold to use <:Magick:1250935754461544478> for a stronger effect.
 Ω attack
-    Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued attack.
+    Hold to use <:Magick:1250935754461544478> for your weapon's magick-imbued attack.
 attack
     Your weapon's main attack.
 specials
-    Your weapon's special move. Hold to use <:Magick:1241635310387990568> for a stronger effect.
+    Your weapon's special move. Hold to use <:Magick:1250935754461544478> for a stronger effect.
 Ω special
-    Hold to use <:Magick:1241635310387990568> for your weapon's magick-imbued special move.
+    Hold to use <:Magick:1250935754461544478> for your weapon's magick-imbued special move.
 special
     Your weapon's special move.
 casts
-    A binding spell. Hold to use <:Magick:1241635310387990568> for the damaging **Ω** version.
+    A binding spell. Hold to use <:Magick:1250935754461544478> for the damaging **Ω** version.
 Ω cast
-    Hold to use <:Magick:1241635310387990568> for a binding spell that damages foes when it expires.
+    Hold to use <:Magick:1250935754461544478> for a binding spell that damages foes when it expires.
 cast
     A binding spell that ensnares foes and can gain other properties.
 dash
@@ -25,21 +25,21 @@ dash-strike
 sprint
     Hold to run at top speed.
 Ω moves, Ω move
-    Press-and-hold **Attack**, **Special**, or **Cast** to imbue them with <:Magick:1241635310387990568> **Magick**.
+    Press-and-hold **Attack**, **Special**, or **Cast** to imbue them with <:Magick:1250935754461544478> **Magick**.
 power shot
     Hold then release when you see a brief flash for a stronger shot.
 power
     An increase to the base amount of damage you inflict. Other bonuses multiply by this.
 channel
-    Press-and-hold to imbue your move with <:Magick:1241635310387990568> **Magick** to prepare a powerful **Ω** effect.
-<:Magick:1241635310387990568> magick, <:Magick:1241635310387990568>, magick
+    Press-and-hold to imbue your move with <:Magick:1250935754461544478> **Magick** to prepare a powerful **Ω** effect.
+<:Magick:1250935754461544478> magick, <:Magick:1250935754461544478>, magick
     Required for powerful **Ω Moves**.
 serenity
-    Your **Ω Moves** are deal bonus damage (**+50%** by default) and you rapidly restore <:Magick:1241635310387990568>. Lasts **5 Sec.**
+    Your **Ω Moves** are deal bonus damage (**+50%** by default) and you rapidly restore <:Magick:1250935754461544478>. Lasts **5 Sec.**
 prime
-    A passive reduction to your <:Magick:1241635310387990568> limit until the next **Location**.
+    A passive reduction to your <:Magick:1250935754461544478> limit until the next **Location**.
 hex
-    After using enough <:Magick:1241635310387990568> while foes are near, press to invoke the Moon's might.
+    After using enough <:Magick:1250935754461544478> while foes are near, press to invoke the Moon's might.
 path of stars
     Grants your choice of **3** interconnected upgrades for your **Hex** this night.
 locations, location
@@ -56,13 +56,13 @@ guardians, guardian
     A means of recovering some **Life** after taking damage.
 <:MaxLife:1241662636995772436> max life, <:MaxLife:1241662636995772436>
     An increase to your **Life** limit, restoring you by the amount added.
-<:MaxMagick:1245289397570502719> max magick, <:MaxMagick:1245289397570502719>
+<:MaxMagick:1250936650939240519> max magick, <:MaxMagick:1250936650939240519>
     An increase to your **Magick** limit.
 impervious
     A state in which you are completely invulnerable to damage.
-<:GoldenCrowns:1247723119372927009> gold crowns, <:GoldenCrowns:1247723119372927009>
+<:GoldenCrowns:1250942621044576308> gold crowns, <:GoldenCrowns:1250942621044576308>
     Trade for valuables. You lose any you have not spent when you return each night.
-<:GoldReward:1247777661984575548> gold crowns, <:GoldReward:1247777661984575548>
+<:GoldReward:1250940286230597682> gold crowns, <:GoldReward:1250940286230597682>
     A reward  found in locations marked with <:MajorFind:1245297912859332658>, used to trade for valuables this night.
 <:Ashes:1242227789059457055> ashes, <:Ashes:1242227789059457055>
     Mostly used for unlocking **Arcana Cards**.
@@ -108,17 +108,17 @@ mortality
     A fleeting bonus of **+1%** **Critical** chance for your **Ω Moves**, up to a max of **+13%**.
 <:Glory:1247336676548804609> glory
     Makes your **Ω Special** last up to **+5 Sec.**, firing continuously while you have control.
-<:Shell:1245300154353979442> shells, <:Shell:1245300154353979442> shell
+<:Shell:1250941173841924258> shells, <:Shell:1250941173841924258> shell
     Ammunition for your **Attacks**. Retrieve from the field to re-use.
 <:DeathDefiance:1249241466501468222> death defiance, <:DeathDefiance:1249241466501468222>, death defiance
-    When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1241635310387990568>. Limited uses per night.
+    When you fall to **0** <:Life:1241660063513448499>, automatically restore **40%** <:Life:1241660063513448499> and <:Magick:1250935754461544478>. Limited uses per night.
 <:Reroll:1028190585280012348> change of fate, <:Reroll:1028190585280012348>
     Used to alter various outcomes presented to you, depending on your **Arcana**.
 curse
     A temporary debilitating effect inflicted by the Olympian gods.
 awakening
-    Cards that use **0** <:Grasp:1248759750963761182> and auto-activate, but only if their condition is met.
-<:BlueHeart:1241665623453601803> barrier, <:BlueHeart:1241665623453601803>
+    Cards that use **0** <:Grasp:1250935195700563978> and auto-activate, but only if their condition is met.
+<:BlueHeart:1250926931264671865> barrier, <:BlueHeart:1250926931264671865>
     Negates the next instance of damage, even if it would have been an awful lot.
 revenant
     After **5 Sec.**, this becomes the foe it came from, unless you collect it first.
@@ -166,14 +166,14 @@ hitch
     *Curse:* Afflicted foes take **30%** of damage dealt to other afflicted foes. Lasts **8 Sec.**
 sacrifice boons
     A **Boon** with improved **Rarity**, which requires you to give up another in its stead.
-<:BoonLevel:1249975027290607718> Lv.
+<:BoonLevel:1250936694790684682> Lv.
     An increase to the raw power of one of your **Boons**.
 steam
     A burning cloud that removes **Slip** from foes and rapidly deals damage. Lasts **2 Sec.**
 blitz
     *Curse:* After taking **120** damage, afflicted foes get struck by lightning. Lasts **3 Sec.**
 spirit bubble
-    Restores **20** <:Magick:1241635310387990568> when you touch it. Expires when used, or after **30 Sec.**
+    Restores **20** <:Magick:1250935754461544478> when you touch it. Expires when used, or after **30 Sec.**
 slip
     *Curse:* Afflicted foes take more damage and are knocked farther away. Lasts **3 Sec.**
 marked
@@ -198,7 +198,7 @@ animal familiar
     Loyal beast assistant-guardians under your protection. You may travel with **1** at a time.
 vows
     Invocations of various adverse nightly effects from the **Oath of the Unseen**.
-<:RandGod:1244441161150500864> mystery boon, <:RandGod:1244441161150500864>
+<:RandGod:1250934841030217759> mystery boon, <:RandGod:1250934841030217759>
     Receive a **Boon** from one of the Olympians... *but who?*
 attack boon
     A blessing that strongly influences your **Attacks**.
@@ -207,14 +207,14 @@ special boon
 dash boon
     A blessing that strongly influences your **Dash**.
 well of charon
-    Underworld stockpiles containing several useful items you can purchase using <:GoldenCrowns:1247723119372927009>.
+    Underworld stockpiles containing several useful items you can purchase using <:GoldenCrowns:1250942621044576308>.
 charon
     The feared Boatman of the River Styx serves the Underworld in his own way.
 chaos gate
     A sacrifice of <:Life:1241660063513448499> is usually required to enter the unfathomable depths of **Chaos**.
-<:FateFabric:1249176533675933748> fate fabric, <:FateFabric:1249176533675933748>
+<:FateFabric:1250938286055231570> fate fabric, <:FateFabric:1250938286055231570>
     Mostly used with incantations involving chance and fortune.
-<:RandPom:1249967631050608700> pom slice, <:RandPom:1249967631050608700>
+<:RandPom:1250927965030846474> pom slice, <:RandPom:1250927965030846474>
     Raises the potency of one of your **Boons** *(chosen at random)*.
 inferno-bomb
     Caustic explosives that are harmful to you, yet somehow pose no threat to your foes.

@@ -15,7 +15,7 @@ attacks xsplit spark
     thumb/c/c4/Split_Fire.png/50px-Split_Fire.png
     x(aspect of moros, aspect of eos)
 attacks clean candle
-    You **Channel** your **Ω Attack** **50%** faster, and it uses **-1** **<:Magick:1241635310387990568>**.
+    You **Channel** your **Ω Attack** **50%** faster, and it uses **-1** **<:Magick:1250935754461544478>**.
     thumb/a/ae/Clean_Candle.png/50px-Clean_Candle.png
 specials rising coil
     Your **Specials** grow in size and deal up to **+25%** damage the longer they are active.
@@ -33,5 +33,5 @@ specials triple helix
     Your **Ω Special** creates **+1** flame.
     thumb/8/8b/Triple_Helix.png/50px-Triple_Helix.png
 specials clean helix
-    You **Channel** your **Ω Special** **20%** faster, and it uses **-10** **<:Magick:1241635310387990568>**.
+    You **Channel** your **Ω Special** **20%** faster, and it uses **-10** **<:Magick:1250935754461544478>**.
     thumb/5/50/Clean_Helix.png/50px-Clean_Helix.png

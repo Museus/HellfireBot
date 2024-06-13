@@ -1,3 +1,4 @@
+core god
 attack heaven strike air
     Your **Attacks** inflict **Blitz**.
     Blitz Damage: {}

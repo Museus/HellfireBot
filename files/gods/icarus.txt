@@ -1,3 +1,4 @@
+encounter
 t1 ingenius strike none
     After you enter a **Location**, **Prime** **20** **<:Magick:1241635310387990568>** to give your **Attacks** {+} **Power**.
 

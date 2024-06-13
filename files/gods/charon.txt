@@ -1,3 +1,4 @@
+misc
 survival hydralite none
     Restore **+10%** **<:Life:1241660063513448499>** whenever you enter a **Location**.
     Duration: {e}
@@ -28,12 +29,12 @@ xsurvival kiss of styx none
     1(empty defiance slot)
     **200** <:GoldenCrowns:1247723119372927009>
 survival price of midas none
-    Gain {} **<:GoldenCrowns:1247723119372927009>** now *(for a blood price)*.
+    Gain {r1} **<:GoldenCrowns:1247723119372927009>** per **1** **<:Life:1241660063513448499>** now *(for a blood price)*.
 
-    11-54
+    1.1-1.8
     0
     thumb/e/e2/Price_of_Midas.png/50px-Price_of_Midas.png
-    **10 - 30** <:Life:1241660063513448499>
+    **10-30** <:Life:1241660063513448499>
 survival centaur soul none
     Gain {+} **<:MaxLife:1241662636995772436>** *(without restoring* **<:Life:1241660063513448499>** *)*.
 

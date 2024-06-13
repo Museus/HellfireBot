@@ -1,3 +1,4 @@
+core god
 attack flutter strike water
     Your **Attacks** deal more damage to nearby foes.
     Close-Up Damage: {+%}

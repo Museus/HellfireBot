@@ -1,3 +1,4 @@
+npc
 t1 evade evade evade none
     Gain {+%} **Dodge** chance, but lose **2%** of this each time you **Dodge**.
 

@@ -1,3 +1,4 @@
+core god
 attack wave strike water
     Your **Attacks** hit foes with a splash that knocks other foes away.
     Splash Damage: {}

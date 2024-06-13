@@ -1,3 +1,4 @@
+npc
 t1 verdure sampler none
     Receive a gift of {+} **<:RandPom:1249967631050608700>**, **+2** **<:Moly:1250207627275796480>**, and **+3** **<:Nightshade:1250207628341022720>**.
 

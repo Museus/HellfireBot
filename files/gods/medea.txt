@@ -1,3 +1,4 @@
+npc
 t1 corrosion on sight none
     After a foe joins the **Encounter**, it loses {%} of any **Armor** it has.
 

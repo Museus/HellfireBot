@@ -1,3 +1,4 @@
+core god
 attack ice strike water
     Your **Attacks** deal more damage and inflict **Freeze**.
     Attack Damage: {+%}

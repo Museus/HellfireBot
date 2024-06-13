@@ -1,3 +1,4 @@
+core god
 attack flame strike fire
     Your **Attacks** inflict **Scorch**.
     Scorch Damage: {}

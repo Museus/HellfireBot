@@ -1,3 +1,4 @@
+encounter
 t1 support fire air
     After you hit with your **Attacks** or **Specials**, fire a seeking arrow.
     Arrow Damage: {}

@@ -150,6 +150,8 @@ def capwords(s: str, capall=False) -> str:
         return ''
     if s == 'hydralite':
         return 'HydraLite'
+    if s == 'npc':
+        return 'NPC'
     if capall:
         return ' '.join((x[0].upper()) + x[1:] for x in s.split(' '))
     return ' '.join((x[0].upper() + x[1:]

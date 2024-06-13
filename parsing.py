@@ -133,7 +133,7 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
                 v2 = round(value[1], round_by)
                 if int(v2) == v2:
                     v2 = int(v2)
-                new_stat = f'{v1} - {v2}'
+                new_stat = f'{v1}-{v2}'
             else:
                 new_stat = round(value[0], round_by)
                 if int(new_stat) == new_stat:

@@ -300,8 +300,8 @@ async def test(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    arcanagen.arcana_gen(args)
-    await misc.reply(ctx, file=discord.File('./temp.png'))
+    total_grasp = arcanagen.arcana_gen(args)
+    await misc.reply(ctx, f'Total grasp: **{total_grasp}** <:Grasp:1248759750963761182>', file=discord.File('./temp.png'))
     os.remove('./temp.png')
 
 

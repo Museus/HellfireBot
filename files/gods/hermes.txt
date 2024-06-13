@@ -1,3 +1,4 @@
+misc
 t1 swift strike earth
     Your **Attacks** are faster.
     Attack Speed: {+%}

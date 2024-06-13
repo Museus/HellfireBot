@@ -1,3 +1,5 @@
+import json
+
 import misc
 
 boons_info = {}
@@ -25,16 +27,12 @@ god_cores = {
     'medea': {}, 'narcissus': {}, 'selene': {},
     'bouldy': {}
 }
-miscs = (
-    'arachne', 'artemis', 'chaos', 'charon',
-    'circe', 'echo', 'hades', 'hermes', 'icarus',
-    'medea', 'narcissus', 'selene'
-)
+global_arcana = {}
 commands_info = {}
 
 for god in god_cores:
-    file = f'./files/gods/misc/{god}.txt' if god in miscs else f'./files/gods/{god}.txt'
-    with open(file, 'r', encoding='utf8') as f:
+    with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
+        god_cores[god]['category'] = f.readline().strip()
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
             has_prereq = type not in (
@@ -117,15 +115,16 @@ with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
 with open('./files/arcana.txt', 'r', encoding='utf8') as f:
     counter = 1
     while card := f.readline().strip():
-        cost, card = card.split(' ', 1)
-        cost = int(cost)
+        grasp, card = card.split(' ', 1)
+        grasp = int(grasp)
         arcana_info[card] = {
-            'cost': cost, 'desc': f.readline().strip(), 'levels': f.readline().strip().split(' '),
+            'grasp': grasp, 'desc': f.readline().strip(), 'levels': f.readline().strip().split(' '),
             'flavor': f.readline().strip(), 'icon': f.readline().strip()
         }
-        if cost == 0:
+        if grasp == 0:
             arcana_info[card]['awakening'] = f.readline().strip()
         aliases['arcana'][str(counter)] = [card]
+        counter += 1
 
 with open('./files/vows.txt', 'r', encoding='utf8') as f:
     while vow := f.readline().strip():
@@ -175,3 +174,6 @@ with open('./files/enemies.txt', 'r', encoding='utf8') as f:
             'elite': f.readline().strip(), 'location': f.readline().strip(),
             'icon': f.readline().strip()
         }
+
+with open('./files/arcana/global.json', 'r', encoding='utf8') as f:
+    global_arcana = json.loads(f.read())

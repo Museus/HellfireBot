@@ -1,3 +1,4 @@
+misc
 blessing strike none
     Your **Attacks** deal {+%} damage.
 
@@ -84,31 +85,31 @@ blessing discovery none
     4/4c/Discovery.png
 curse maimed none
     Each time you use **Attacks**, get hit for {l}.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     3-6
     0
 
 curse flayed none
     Each time you use **Specials**, get hit for {l}.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     3-6
     0
 
 curse addled none
     Each time you use **Casts**, get hit for {l}.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     3-6
     0
 
 curse slothful none
     You move and **Sprint** {%} slower.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     40-60
     0
 
 curse hobbled none
     Your **Dash** is slower and also uses {m} *(if you have it)*.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     3-6
     0
 
@@ -120,7 +121,7 @@ curse fixated none
 
 curse gagged none
     Each time you use **Ω Moves**, get hit for {l}.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     5-8
     0
 
@@ -132,7 +133,7 @@ curse pauper's none
 
 curse atrophic none
     You have {-} **<:MaxLife:1241662636995772436>**.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     20-29
     0
 
@@ -144,7 +145,7 @@ curse enshrouded none
 
 curse excruciating none
     You take {+%} damage.
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     20-50
     0
 
@@ -168,13 +169,13 @@ curse rejected none
 
 curse paralyzing none
     Whenever you take damage, you are stunned for {sr1}
-    Duration: **3 - 5** **Encounters**
+    Duration: **3-5** **Encounters**
     0.5-1.4
     0
 
 curse doomed none
     You have **120 Sec.** to clear **Encounters**, or get hit for {-l}.
-    Duration: **2 - 3** **Encounters**
+    Duration: **2-3** **Encounters**
     500
     0
 

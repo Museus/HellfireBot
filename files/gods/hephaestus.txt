@@ -1,3 +1,4 @@
+core god
 attack volcanic strike fire
     Your **Attacks** occasionally create a blast that deals **200** damage in the area.
     Blast Recharge Time: {s}

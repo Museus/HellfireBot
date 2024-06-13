@@ -1,3 +1,4 @@
+npc
 t1 lapis lazuli insight none
     Randomly draw {} of your active **Arcana**, and upgrade it this night.
 

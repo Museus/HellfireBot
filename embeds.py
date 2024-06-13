@@ -402,12 +402,13 @@ def god_embed(input: [str]) -> discord.Embed:
     name = parsing.parse_god(input)
     if not name:
         embed = discord.Embed(
-            title=f'List of **Gods**'
+            title=f'List of **Allies**'
         )
-        desc = ''
+        descs = {'core': '', 'npc': '', 'encounter': '', 'misc': ''}
         for god in misc.god_icons:
-            desc += '\n' + misc.capwords(god)
-        embed.description = desc.strip()
+            descs[files.god_cores[god]['category']] += '\n' + misc.capwords(god)
+        for category in descs:
+            embed.add_field(name=misc.capwords(category), value=descs[category].strip())
         embed.set_thumbnail(url=misc.to_link('1027107426354339840'))
         return embed
     god_boons = {'Core': []}
@@ -545,7 +546,7 @@ def arcana_embed(input: [str]):
         if 'awakening' in info:
             desc += f'\n\n{info["awakening"]}'
         embed = discord.Embed(
-            title=f'**{misc.capwords(name, capall=True)} ({info["cost"]} <:Grasp:1248759750963761182>)**',
+            title=f'**{misc.capwords(name, capall=True)} ({info["grasp"]} <:Grasp:1248759750963761182>)**',
             description=desc,
             color=misc.card_ranks[level - 1][0]
         )

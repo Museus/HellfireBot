@@ -1,3 +1,4 @@
+npc
 xt1 howling soul none
     Your **Casts** launch a projectile dead ahead. The binding circle forms where it hits.
     Impact Damage: {}

@@ -1,3 +1,4 @@
+core god
 attack nova strike air
     Your **Attacks** deal more damage in a larger area.
     Attack Damage: {+%}

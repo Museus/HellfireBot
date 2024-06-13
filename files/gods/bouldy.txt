@@ -1,3 +1,4 @@
+misc
 xt1 heart of stone aether
     You do not know if you believe in Bouldy...
     Ambiguity Bonus: {+%}

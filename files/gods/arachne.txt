@@ -1,3 +1,4 @@
+npc
 t1 lavender dress none
     Don a {+a} **Outfit** that makes you **Channel** **40%** faster.
 

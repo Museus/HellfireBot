@@ -1,3 +1,4 @@
+core god
 attack sworn strike earth
     Your **Attacks** deal more damage and inflict **Hitch**.
     Attack Damage: {+%}

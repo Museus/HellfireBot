@@ -1,0 +1,418 @@
+misc
+t1 phase shift none
+    Your **Hex** makes everything else move **80%** slower for **5 Sec.**
+    Ready After: {m}
+    150
+    0
+
+t1 twilight curse none
+    Your **Hex** launches a seeking projectile that inflicts **Morph** on up to **5** susceptible foes.
+    Ready After: {m}
+    50
+    0
+
+t1 lunar ray none
+    Your **Hex** fires a beam that deals up to **900** damage over **3 Sec.**
+    Ready After: {m}
+    70
+    0
+
+t1 wolf howl none
+    Your **Hex** makes you rise up then crash down in the target area for **200** damage.
+    Ready After: {m}
+    40
+    0
+
+t1 moon water none
+    Your **Hex** restores **15** **<:Life:1241660063513448499>** up to **3** times, which reset whenever you use **Fountains**.
+    Ready After: {m}
+    80
+    0
+
+t1 night bloom none
+    Your **Hex** raises **1** random slain foe from this **Encounter** to fight for you for **12 Sec.**
+    Ready After: {m}
+    60
+    0
+
+t1 total eclipse none
+    Your **Hex** blasts the target area for **1000** damage after **4 Sec.**
+    Ready After: {m}
+    200
+    0
+
+t1 dark side none
+    Your **Hex** turns you into an **Impervious** living nightmare with her own abilities for **5 Sec.**
+    Ready After: {m}
+    100
+    0
+
+common purpose
+    While your **Hex** is not ready, deal {+%} damage.
+    5
+    twilight curse, lunar ray, night bloom, total eclipse
+
+common alertness
+    You use {-m} less than before to recharge your **Hex**.
+    5
+    twilight curse, lunar ray, night bloom, total eclipse
+
+common readiness
+    You use {-m} less than before to recharge your **Hex**.
+    10
+    phase shift, total eclipse
+
+bright contingency
+    Your **Death Defiance** effects fully recharge your **Hex** if it is not ready.
+    0
+    phase shift, dark side
+
+common steadfastness
+    While your **Hex** is not ready, you take {%} less damage.
+    5
+    phase shift
+
+common patience
+    Your **Hex** lasts for {+s}
+    1
+    phase shift
+
+bright accumulation
+    During your **Hex**, gain {+%} damage per foe slain, which lasts till you use it again.
+    1
+    phase shift
+
+bright purification
+    Whenever you use your **Hex**, most foes' ranged shots are instantly destroyed.
+    0
+    phase shift
+
+bright alacrity
+    During your **Hex**, you move and strike {%} faster.
+    30
+    phase shift
+
+sublime acuity
+    Your **Ω Cast** charges your **Hex** faster, as if it used {+%m}.
+    20
+    phase shift
+
+sublime precision
+    During your **Hex**, you have {+%} chance to deal **Critical** damage.
+    20
+    phase shift
+
+sublime stillness
+    Your **Hex** makes everything else move {%} slower.
+    95
+    phase shift
+
+common exposure
+    You deal {+%}damage to **Morph**-afflicted foes.
+    10
+    twilight curse
+
+common humility
+    Your **Hex** lasts for {+s}
+    2
+    twilight curse
+
+bright extinction
+    Whenever a **Morph**-afflicted foe is slain, a blast deals {} damage to nearby foes.
+    750
+    twilight curse
+
+bright revulsion
+    Foes with **Morph** have {%} chance to be attacked by other nearby foes.
+    50
+    twilight curse
+
+bright ambition
+    Your **Hex** deals {} damage to **Guardians**.
+    250
+    twilight curse
+
+bright atrophy
+    Whenever **Morph** expires, afflicted foes lose {%} of their **<:Life:1241660063513448499>**.
+    5
+    twilight curse
+
+bright orchestration
+    Your **Casts** cause all **Morph**-afflicted foes to appear within the binding circle.
+    0
+    twilight curse
+
+sublime infection
+    Your **Hex** also applies every other **Curse** in effect at the time.
+    0
+    twilight curse
+
+sublime sustenance
+    Your **Hex** has **30%** chance to turn **1** foe per **Location** into an item that restores {l}.
+    10
+    twilight curse
+
+common intensity
+    Your **Hex** has {+} **Power** per **1 Sec.**
+    40
+    lunar ray
+
+common bearing
+    During your **Hex**, you take {%} less damage.
+    10
+    lunar ray
+
+bright obstinance
+    Your **Hex** fires for up to {+s}
+    1
+    lunar ray
+
+bright radiation
+    Your **Hex** deals damage in an area at the end point.
+    0
+    lunar ray
+
+bright exodus
+    Your **Hex** pierces through foes.
+    0
+    lunar ray
+
+bright disintegration
+    Your **Hex** gains the bonuses of your **Attack Boon**.
+    0
+    lunar ray
+
+sublime prominence
+    Your **Hex** continually aims and fires on its own from wherever you use it.
+    0
+    lunar ray
+
+sublime trinity
+    Your **Hex** fires {} beams in a fan pattern.
+    3
+    lunar ray
+
+common hunger
+    Your **Hex** deals {+%} damage to **Armor**.
+    20
+    wolf howl
+
+common premonition
+    While your **Hex** is not ready, you move {%} faster.
+    5
+    wolf howl
+
+common instinct
+    Your **Hex** has {+} **Power**.
+    50
+    wolf howl
+
+bright vicinity
+    Your **Hex** deals damage in a {%} larger area.
+    50
+    wolf howl
+
+bright lethality
+    After using your **Hex**, the next hit from your **Attacks** or **Specials** deals **Critical** damage.
+    0
+    wolf howl
+
+bright duality
+    Your **Hex** also deals damage *before* you rise up.
+    0
+    wolf howl
+
+bright tenacity
+    After using your **Hex**, you are **Impervious** for {s}
+    1
+    wolf howl
+
+sublime frenzy
+    Your **Hex** also inflicts the effect of your **Dash Boon** on up to {} foes.
+    5
+    wolf howl
+
+sublime viciousness
+    After using your **Hex**, you can use it **1** more time during the next {s}
+    3
+    wolf howl
+
+common fortune
+    Whenever you use your **Hex**, you also gain {+} **<:GoldenCrowns:1247723119372927009>**.
+    15
+    moon water
+
+common vigor
+    Your **Hex** restores {+l}.
+    10
+    moon water
+
+common purity
+    Your **Hex** restores {+m}.
+    50
+    moon water
+
+common abundance
+    You can use your **Hex** {+} time before using a **Fountain**.
+    1
+    moon water
+
+bright radiance
+    Your **Hex** makes you **Impervious** for {s}
+    2
+    moon water
+
+bright zeal
+    After using your **Hex**, you deal {+%} damage for **5 Sec.**
+    50
+    moon water
+
+bright panacea
+    Your **Hex** also restores any **<:Life:1241660063513448499>** you lost during the last {}
+    2
+    moon water
+
+bright conservation
+    Using **Fountains** gives you {+} uses of your **Hex**, even if you still have uses left.
+    3
+    moon water
+
+sublime clarity
+    After using your **Hex**, gain **Serenity** with your next **Ω Move**.
+    0
+    moon water
+
+sublime tribulation
+    Your **Hex** also activates any *'after you take damage'* effects from your **Boons**.
+    0
+    moon water
+
+common devotion
+    Your raised servants deal {+%} damage.
+    10
+    night bloom
+
+bright selflessness
+    Your raised servants take {%} of any damage you would have otherwise taken.
+    20
+    night bloom
+
+bright servitude
+    Your raised servants fight for you indefinitely in that **Location**, rather than expire.
+    0
+    night bloom
+
+bright retaliation
+    Your raised servants gain any *'after you take damage'* effects from your **Boons**.
+    0
+    night bloom
+
+bright rigor
+    Your raised servants move and attack {%} faster.
+    63
+    night bloom
+
+bright confluence
+    After you **Sprint**, your raised servants appear at your position.
+    0
+    night bloom
+
+sublime finality
+    Your **Hex** also makes your raised servants explode, dealing {} damage around them.
+    900
+    night bloom
+
+sublime connection
+    Your raised servants' strikes gain the benefits of your **Special Boon**.
+    0
+    night bloom
+
+common magnitude
+    Your **Hex** has {+} **Power**.
+    100
+    total eclipse
+
+common vastness
+    Your **Hex** deals damage in a {%} larger area.
+    20
+    total eclipse
+
+bright eminence
+    After using your **Hex**, you are **Impervious** until the blast.
+    0
+    total eclipse
+
+bright fragmentation
+    Your **Hex** also creates **3** smaller blasts that each deal {} damage after **0.5 Sec.**
+    100
+    total eclipse
+
+bright numbness
+    After using your **Hex**, foes in the target area move {%} slower.
+    80
+    total eclipse
+
+bright softness
+    After using your **Hex**, foes in the target area take {+%} damage.
+    30
+    total eclipse
+
+sublime devastation
+    Your **Hex** fires {+} moon blast, **2 Sec.** after the first.
+    1
+    total eclipse
+
+sublime excess
+    Your **Hex** also creates your **Ω Cast** in the target area.
+    0
+    total eclipse
+
+common rage
+    During your **Hex**, you deal {+%} damage to **Guardians**.
+    10
+    dark side
+
+common tension
+    While your **Hex** is not ready, you have {+%} chance to **Dodge**.
+    1
+    dark side
+
+common bloodthirst
+    During your **Hex**, you deal {+%} damage.
+    20
+    dark side
+
+common focus
+    Your **Hex** lasts for {+s}
+    1
+    dark side
+
+bright savagery
+    During your **Hex**, your **Attack** is {%} faster.
+    20
+    dark side
+
+bright dominion
+    During your **Hex**, your **Cast** deals {+%} damage.
+    30
+    dark side
+
+bright horror
+    During your **Hex**, your **Special** deals **Critical** damage to distant foes.
+    0
+    dark side
+
+sublime sanctity
+    During your **Hex**, your **Cast** has the same effect as your **Ω Cast**.
+    0
+    dark side
+
+sublime resonance
+    During your **Hex**, your **Attack** gains the bonuses of your **Attack Boon**.
+    0
+    dark side
+
+sublime splendor
+    During your **Hex**, your **Special** gains the bonuses of your **Special Boon**.
+    0
+    dark side

@@ -33,6 +33,8 @@ commands_info = {}
 for god in god_cores:
     with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
         god_cores[god]['category'] = f.readline().strip()
+        if god == 'selene':
+            continue
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
             has_prereq = type not in (

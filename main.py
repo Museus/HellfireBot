@@ -295,8 +295,8 @@ async def suggest(ctx, *args):
     await channel.send(f'From {ctx.author.mention}:\n```{input}```')
 
 
-@client.command(aliases=['arc'])
-async def test(ctx, *args):
+@client.command(aliases=['loadout', 'loadouts','arcanaloadouts', 'aload', 'arcload', 'arcloadout'])
+async def arcanaloadout(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return

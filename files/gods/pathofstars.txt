@@ -1,0 +1,519 @@
+misc
+common purpose none
+    While your **Hex** is not ready, deal {+%} damage.
+
+    5
+    5
+    1/10/Purpose.png
+    1(twilight curse, lunar ray, night bloom, total eclipse)
+common alertness none
+    You use {-m} less than before to recharge your **Hex**.
+
+    5
+    5
+    5/50/Alertness.png
+    1(twilight curse, lunar ray, night bloom, total eclipse)
+common readiness none
+    You use {-m} less than before to recharge your **Hex**.
+
+    10
+    10
+    1/1e/Readiness.png
+    1(phase shift, total eclipse)
+bright contingency none
+    Your **Death Defiance** effects fully recharge your **Hex** if it is not ready.
+
+    0
+    0
+    7/77/Contingency.png
+    1(phase shift, dark side)
+common steadfastness none
+    While your **Hex** is not ready, you take {%} less damage.
+
+    5
+    5
+    a/a7/Steadfastness.png
+    1(phase shift)
+common patience none
+    Your **Hex** lasts for {+s}
+
+    1
+    1
+    b/bf/Patience.png
+    1(phase shift)
+bright accumulation none
+    During your **Hex**, gain {+%} damage per foe slain, which lasts till you use it again.
+
+    1
+    0
+    e/e1/Accumulation.png
+    1(phase shift)
+bright purification none
+    Whenever you use your **Hex**, most foes' ranged shots are instantly destroyed.
+
+    0
+    0
+    7/79/Purification.png
+    1(phase shift)
+bright alacrity none
+    During your **Hex**, you move and strike {%} faster.
+
+    30
+    0
+    4/4c/Alacrity.png
+    1(phase shift)
+sublime acuity none
+    Your **Ω Cast** charges your **Hex** faster, as if it used {+%m}.
+
+    20
+    0
+    0/01/Acuity.png
+    1(phase shift)
+sublime precision none
+    During your **Hex**, you have {+%} chance to deal **Critical** damage.
+
+    20
+    0
+    e/ee/Precision.png
+    1(phase shift)
+sublime stillness none
+    Your **Hex** makes everything else move {%} slower.
+
+    95
+    0
+    3/3b/Stillness.png
+    1(phase shift)
+common exposure none
+    You deal {+%} damage to **Morph**-afflicted foes.
+
+    10
+    10
+    6/60/Exposure.png
+    1(twilight curse)
+common humility none
+    Your **Hex** lasts for {+s}
+
+    2
+    2
+    8/8e/Humility.png
+    1(twilight curse)
+bright extinction none
+    Whenever a **Morph**-afflicted foe is slain, a blast deals {} damage to nearby foes.
+
+    750
+    0
+    0/0d/Extinction.png
+    1(twilight curse)
+bright revulsion none
+    Foes with **Morph** have {%} chance to be attacked by other nearby foes.
+
+    50
+    0
+    4/41/Revulsion.png
+    1(twilight curse)
+bright ambition none
+    Your **Hex** deals {} damage to **Guardians**.
+
+    250
+    0
+    5/5f/Ambition.png
+    1(twilight curse)
+bright atrophy none
+    Whenever **Morph** expires, afflicted foes lose {%} of their **<:Life:1241660063513448499>**.
+
+    5
+    0
+    2/28/Atrophy.png
+    1(twilight curse)
+bright orchestration none
+    Your **Casts** cause all **Morph**-afflicted foes to appear within the binding circle.
+
+    0
+    0
+    7/7e/Orchestration.png
+    1(twilight curse)
+sublime infection none
+    Your **Hex** also applies every other **Curse** in effect at the time.
+
+    0
+    0
+    1/19/Infection.png
+    1(twilight curse)
+sublime sustenance none
+    Your **Hex** has **30%** chance to turn **1** foe per **Location** into an item that restores {l}.
+
+    10
+    0
+    5/51/Sustenance.png
+    1(twilight curse)
+common intensity none
+    Your **Hex** has {+} **Power** per **1 Sec.**
+
+    40
+    40
+    b/b3/Intensity.png
+    1(lunar ray)
+common bearing none
+    During your **Hex**, you take {%} less damage.
+
+    10
+    10
+    4/48/Bearing.png
+    1(lunar ray)
+bright obstinance none
+    Your **Hex** fires for up to {+s}
+
+    1
+    0
+    9/9f/Obstinance.png
+    1(lunar ray)
+bright radiation none
+    Your **Hex** deals damage in an area at the end point.
+
+    0
+    0
+    f/f6/Radiation.png
+    1(lunar ray)
+bright exodus none
+    Your **Hex** pierces through foes.
+
+    0
+    0
+    6/6c/Exodus.png
+    1(lunar ray)
+bright disintegration none
+    Your **Hex** gains the bonuses of your **Attack Boon**.
+
+    0
+    0
+    7/7c/Disintegration.png
+    1(lunar ray)
+sublime prominence none
+    Your **Hex** continually aims and fires on its own from wherever you use it.
+
+    0
+    0
+    c/cf/Prominence.png
+    1(lunar ray)
+sublime trinity none
+    Your **Hex** fires {} beams in a fan pattern.
+
+    3
+    0
+    9/9c/Trinity.png
+    1(lunar ray)
+common hunger none
+    Your **Hex** deals {+%} damage to **Armor**.
+
+    20
+    20
+    5/5a/Hunger.png
+    1(wolf howl)
+common premonition none
+    While your **Hex** is not ready, you move {%} faster.
+
+    5
+    5
+    4/40/Premonition.png
+    1(wolf howl)
+common instinct none
+    Your **Hex** has {+} **Power**.
+
+    50
+    50
+    9/9f/Instinct.png
+    1(wolf howl)
+bright vicinity none
+    Your **Hex** deals damage in a {%} larger area.
+
+    50
+    0
+    1/11/Vicinity.png
+    1(wolf howl)
+bright lethality none
+    After using your **Hex**, the next hit from your **Attacks** or **Specials** deals **Critical** damage.
+
+    0
+    0
+    2/2d/Lethality.png
+    1(wolf howl)
+bright duality none
+    Your **Hex** also deals damage *before* you rise up.
+
+    0
+    0
+    d/d4/Duality.png
+    1(wolf howl)
+bright tenacity none
+    After using your **Hex**, you are **Impervious** for {s}
+
+    1
+    0
+    9/99/Tenacity.png
+    1(wolf howl)
+sublime frenzy none
+    Your **Hex** also inflicts the effect of your **Dash Boon** on up to {} foes.
+
+    5
+    0
+    f/f1/Frenzy.png
+    1(wolf howl)
+sublime viciousness none
+    After using your **Hex**, you can use it **1** more time during the next {s}
+
+    3
+    0
+    6/6a/Viciousness.png
+    1(wolf howl)
+common fortune none
+    Whenever you use your **Hex**, you also gain {+} **<:GoldenCrowns:1250942621044576308>**.
+
+    15
+    15
+    b/bf/Fortune.png
+    1(moon water)
+common vigor none
+    Your **Hex** restores {+l}.
+
+    10
+    10
+    f/f4/Vigor.png
+    1(moon water)
+common purity none
+    Your **Hex** restores {+m}.
+
+    50
+    50
+    a/a2/Purity.png
+    1(moon water)
+common abundance none
+    You can use your **Hex** {+} time before using a **Fountain**.
+
+    1
+    1
+    6/6a/Abundance.png
+    1(moon water)
+bright radiance none
+    Your **Hex** makes you **Impervious** for {s}
+
+    2
+    0
+    7/71/Radiance.png
+    1(moon water)
+bright zeal none
+    After using your **Hex**, you deal {+%} damage for **5 Sec.**
+
+    50
+    0
+    b/b8/Zeal.png
+    1(moon water)
+bright panacea none
+    Your **Hex** also restores any **<:Life:1241660063513448499>** you lost during the last {s}
+
+    2
+    0
+    3/37/Panacea.png
+    1(moon water)
+bright conservation none
+    Using **Fountains** gives you {+} uses of your **Hex**, even if you still have uses left.
+
+    3
+    0
+    9/93/Conservation.png
+    1(moon water)
+sublime clarity none
+    After using your **Hex**, gain **Serenity** with your next **Ω Move**.
+
+    0
+    0
+    d/d7/Clarity.png
+    1(moon water)
+sublime tribulation none
+    Your **Hex** also activates any *'after you take damage'* effects from your **Boons**.
+
+    0
+    0
+    d/d7/Tribulation.png
+    1(moon water)
+common devotion none
+    Your raised servants deal {+%} damage.
+
+    10
+    10
+    4/4b/Devotion.png
+    1(night bloom)
+bright selflessness none
+    Your raised servants take {%} of any damage you would have otherwise taken.
+
+    20
+    0
+    8/82/Selflessness.png
+    1(night bloom)
+bright servitude none
+    Your raised servants fight for you indefinitely in that **Location**, rather than expire.
+
+    0
+    0
+    0/01/Servitude.png
+    1(night bloom)
+bright retaliation none
+    Your raised servants gain any *'after you take damage'* effects from your **Boons**.
+
+    0
+    0
+    5/53/Retaliation.png
+    1(night bloom)
+bright rigor none
+    Your raised servants move and attack {%} faster.
+
+    63
+    0
+    0/0b/Rigor.png
+    1(night bloom)
+bright confluence none
+    After you **Sprint**, your raised servants appear at your position.
+
+    0
+    0
+    9/93/Confluence.png
+    1(night bloom)
+sublime finality none
+    Your **Hex** also makes your raised servants explode, dealing {} damage around them.
+
+    900
+    0
+    7/74/Finality.png
+    1(night bloom)
+sublime connection none
+    Your raised servants' strikes gain the benefits of your **Special Boon**.
+
+    0
+    0
+    2/24/Connection.png
+    1(night bloom)
+common magnitude none
+    Your **Hex** has {+} **Power**.
+
+    100
+    100
+    5/5a/Magnitude.png
+    1(total eclipse)
+common vastness none
+    Your **Hex** deals damage in a {%} larger area.
+
+    20
+    20
+    5/58/Vastness.png
+    1(total eclipse)
+bright eminence none
+    After using your **Hex**, you are **Impervious** until the blast.
+
+    0
+    0
+    e/e4/Eminence.png
+    1(total eclipse)
+bright fragmentation none
+    Your **Hex** also creates **3** smaller blasts that each deal {} damage after **0.5 Sec.**
+
+    100
+    0
+    a/aa/Fragmentation.png
+    1(total eclipse)
+bright numbness none
+    After using your **Hex**, foes in the target area move {%} slower.
+
+    80
+    0
+    2/2f/Numbness.png
+    1(total eclipse)
+bright softness none
+    After using your **Hex**, foes in the target area take {+%} damage.
+
+    30
+    0
+    2/2d/Softness.png
+    1(total eclipse)
+sublime devastation none
+    Your **Hex** fires {+} moon blast, **2 Sec.** after the first.
+
+    1
+    0
+    8/8c/Devastation.png
+    1(total eclipse)
+sublime excess none
+    Your **Hex** also creates your **Ω Cast** in the target area.
+
+    0
+    0
+    6/67/Excess.png
+    1(total eclipse)
+common rage none
+    During your **Hex**, you deal {+%} damage to **Guardians**.
+
+    10
+    10
+    2/27/Rage.png
+    1(dark side)
+common tension none
+    While your **Hex** is not ready, you have {+%} chance to **Dodge**.
+
+    1
+    1
+    f/f4/Tension.png
+    1(dark side)
+common bloodthirst none
+    During your **Hex**, you deal {+%} damage.
+
+    20
+    20
+    3/34/Bloodthirst.png
+    1(dark side)
+common focus none
+    Your **Hex** lasts for {+s}
+
+    1
+    1
+    3/37/Focus.png
+    1(dark side)
+bright savagery none
+    During your **Hex**, your **Attack** is {%} faster.
+
+    20
+    0
+    b/bf/Savagery.png
+    1(dark side)
+bright dominion none
+    During your **Hex**, your **Cast** deals {+%} damage.
+
+    30
+    0
+    3/3d/Dominion.png
+    1(dark side)
+bright horror none
+    During your **Hex**, your **Special** deals **Critical** damage to distant foes.
+
+    0
+    0
+    4/41/Horror.png
+    1(dark side)
+sublime sanctity none
+    During your **Hex**, your **Cast** has the same effect as your **Ω Cast**.
+
+    0
+    0
+    7/71/Sanctity.png
+    1(dark side)
+sublime resonance none
+    During your **Hex**, your **Attack** gains the bonuses of your **Attack Boon**.
+
+    0
+    0
+    c/c4/Resonance.png
+    1(dark side)
+sublime splendor none
+    During your **Hex**, your **Special** gains the bonuses of your **Special Boon**.
+
+    0
+    0
+    6/65/Splendor.png
+    1(dark side)

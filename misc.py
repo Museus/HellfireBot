@@ -17,7 +17,7 @@ god_colors = {
     'charon': 0x5500B9, 'circe': 0xF2502E, 'echo': 0x8E8C7D,
     'hades': 0x770D0A, 'hermes': 0xFBF7A7, 'icarus': 0xAD9641,
     'medea': 0x456B48, 'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
-    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'bouldy': 0x3D4E46
+    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'path of stars': 0x527989
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -41,6 +41,7 @@ god_icons = {
     'medea': '1249245758327095346',
     'narcissus': '1249245758327095346',
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
+    'path of stars': '1250986330075172926'
 }
 weapon_icons = {
     'staff': 'thumb/0/06/Witch%27s_Staff.png/300px-Witch%27s_Staff.png',
@@ -72,26 +73,26 @@ unfun_dm = 'This channel has not opted into HellfireBot\'s fun commands (needs "
            'However, all commands are usable via direct message.'
 
 
-def fuzzy_boon(input: [str]) -> [str]:
-    boon_name = ' '.join(input)
+def fuzzy_boon(args):
+    boon_name = ' '.join(args)
     if boon_name in files.boons_info:
         return [boon_name]
     if boon_name in files.aliases['misc']:
         return files.aliases['misc'][boon_name]
-    for index, word in enumerate(input):
+    for index, word in enumerate(args):
         if word in files.aliases['core']:
-            input[index] = files.aliases['core'][word][0]
-    if len(input) == 2:
-        if input[0] in files.god_cores and input[1] in files.god_cores[input[0]]:
-            return files.god_cores[input[0]][input[1]]
-        if input[1] in files.god_cores and input[0] in files.god_cores[input[1]]:
-            return files.god_cores[input[1]][input[0]]
-    if ' '.join(input) in files.boons_info:
-        return [' '.join(input)]
+            args[index] = files.aliases['core'][word][0]
+    if len(args) == 2:
+        if args[0] in files.god_cores and args[1] in files.god_cores[args[0]]:
+            return files.god_cores[args[0]][args[1]]
+        if args[1] in files.god_cores and args[0] in files.god_cores[args[1]]:
+            return files.god_cores[args[1]][args[0]]
+    if ' '.join(args) in files.boons_info:
+        return [' '.join(args)]
     return ''
 
 
-def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
+def boon_value(info, rarity, second=False):
     try:
         value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
     except IndexError:
@@ -99,7 +100,7 @@ def boon_value(info: {str: str}, rarity: str, second: bool = False) -> [float]:
     return value
 
 
-def boon_color(info: {str: str}, rarity: str) -> int:
+def boon_color(info, rarity):
     if info['type'] == 'legendary':
         return 0xFFD511
     if info['type'] == 'infusion':
@@ -111,41 +112,50 @@ def boon_color(info: {str: str}, rarity: str) -> int:
     return rarity_embed_colors[parsing.rarities[rarity] - 1]
 
 
-def rarity_rolls(input: [str]) -> [float]:
+def rarity_rolls(args):
     def buff_rolls(buffs: [float]) -> None:
         for j in range(len(buffs)):
             rolls[j] += buffs[j]
     rolls = [0.1, 0.12, 0.05, 0.1]
-    if 'erebus miniboss' in input:
+    if 'erebus miniboss' in args:
         rolls = [0.05, 0.12, 0.07, 0.9]
-    elif 'tartarus miniboss' in input:
+    elif 'tartarus miniboss' in args:
         rolls = [0.2, 0.2, 0.1, 0.9]
-    elif 'miniboss' in input:
+    elif 'miniboss' in args:
         rolls = [0.05, 0.12, 0.1, 0.9]
-    elif 'tartarus shop' in input:
+    elif 'tartarus shop' in args:
         rolls = [0.1, 0.12, 0.25, 0.9]
-    elif 'hermes' in input:
+    elif 'hermes' in args:
         rolls = [0.01, 0, 0.03, 0.06]
-    if 'chaos favor' in input:
-        buff_rolls([r * input.count('chaos favor') for r in [0.1, 0, 0.1, 0.4]])
-    if 'yarn of ariadne' in input:
+    if 'chaos favor' in args:
+        buff_rolls([r * args.count('chaos favor') for r in [0.1, 0, 0.1, 0.4]])
+    if 'yarn of ariadne' in args:
         buff_rolls([0.1, 0, 0.25, 1])
-    if 'natural selection' in input:
+    if 'natural selection' in args:
         buff_rolls([0.1, 0, 0.1, 0.2])
-    if 'excellence' in input:
+    if 'excellence' in args:
         buff_rolls([0, 0, 0, 0.5])
-    if 'divinity' in input:
+    if 'divinity' in args:
         buff_rolls([0, 0, 0.2, 0])
-    if 'the queen' in input:
+    if 'the queen' in args:
         buff_rolls([0, 0.1, 0, 0])
-    if 'hermes' in input or 'chaos' in input:
+    if 'hermes' in args or 'chaos' in args:
         rolls[1] = 0
-    if 'chaos' in input:
+    if 'chaos' in args:
         rolls[0] = 0.01875
     return rolls
 
 
-def capwords(s: str, capall=False) -> str:
+def add_selene_starpath(embed, selene_hex):
+    descs = {'common': '', 'bright': '', 'sublime': ''}
+    for boon in files.boons_info:
+        if files.boons_info[boon]['god'] == 'path of stars' and selene_hex in files.prereqs_info[boon][0][1]:
+            descs[files.boons_info[boon]['type']] += f'\n{capwords(boon)}'
+    for category in descs:
+        embed.add_field(name=capwords(category), value=descs[category].strip())
+
+
+def capwords(s, capall=False):
     if not s:
         return ''
     if s == 'hydralite':
@@ -158,7 +168,7 @@ def capwords(s: str, capall=False) -> str:
                      if x.lower() not in ('of', 'the', 'from', 'to') else x.lower()) for x in s.split(' '))
 
 
-def to_link(s: str) -> str:
+def to_link(s):
     if not s:
         return ''
     if s.isdigit():

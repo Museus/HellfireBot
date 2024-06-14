@@ -99,34 +99,6 @@ async def pomscaling(ctx, *args):
     os.remove('./output.png')
 
 
-@client.command(aliases=['pre', 'pres', 'prereq', 'prereqs', 'prerequisite'])
-async def prerequisites(ctx, *args):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    if not args:
-        text = await ctx.channel.fetch_message(ctx.message.reference.message_id)
-        try:
-            text = text.embeds[0].title
-        except IndexError:
-            await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
-            return
-        try:
-            entity = re.findall(r'\*\*.*\*\*', text)[0]
-        except IndexError:
-            await misc.reply(ctx, 'idk man as', mention=True)
-            return
-        args = entity[2:-2].split()
-    embed, choices = embeds.prereq_embed(args)
-    if not embed:
-        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
-        return
-    if choices:
-        await react_edit(ctx, embed, choices, embeds.prereq_embed)
-        return
-    await misc.reply(ctx, embed=embed)
-
-
 @client.command(aliases=['rpre'])
 async def eligible(ctx, *args):
     if misc.channel_status(ctx) > 1:

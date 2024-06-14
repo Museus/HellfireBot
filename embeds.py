@@ -136,6 +136,10 @@ def boon_embed(input: [str]):
     if len(info['rarities']) == 1:
         rarity = 'common'
     value = misc.boon_value(info, rarity)
+    if info['type'] == 'bright':
+        rarity = 'rare'
+    elif info['type'] == 'sublime':
+        rarity = 'epic'
     pom = 0
     unpommable = False
     unpurgeable = False
@@ -144,22 +148,24 @@ def boon_embed(input: [str]):
         title += f' (Lv. {level})'
     else:
         unpommable = True
-        if len(info['levels']) == 2:
-            unpurgeable = True
-    for i in range(level - 1):
-        pom = min(pom, len(info['levels']) - 1)
-        value[0] += float(info['levels'][pom])
-        if name in ('volcanic strike', 'volcanic flourish'):
-            value[0] = max(value[0], 2)
-        if len(value) == 2:
-            value[1] += float(info['levels'][pom])
-        pom += 1
+    if info['type'] == 'bright':
+        title += ' (Bright)'
+    elif info['type'] == 'sublime':
+        title += ' (Sublime)'
+    if not unpommable:
+        for i in range(level - 1):
+            pom = min(pom, len(info['levels']) - 1)
+            value[0] += float(info['levels'][pom])
+            if name in ('volcanic strike', 'volcanic flourish'):
+                value[0] = max(value[0], 2)
+            if len(value) == 2:
+                value[1] += float(info['levels'][pom])
+            pom += 1
     desc = parsing.parse_stat(info['desc'], value)[2:]
     desc += parsing.parse_stat(info['stat'], value)
     desc += f'\n▸Cost: {info["cost"]}' if info['god'] == 'charon' else ''
     embed = discord.Embed(
         title=title,
-        description=desc,
         color=misc.boon_color(info, rarity)
     )
     footer_text = ('Unpommable\n' if unpommable else '') + ('Unpurgeable' if unpurgeable else '') + '⠀'
@@ -167,6 +173,21 @@ def boon_embed(input: [str]):
         if 'element' in info and info['element'] != 'none' else ''
     embed.set_footer(text=footer_text, icon_url=icon_url)
     embed.set_thumbnail(url=misc.to_link(info['icon']))
+
+    if info['god'] == 'selene':
+        desc += '\n\n**Path of Stars**'
+        misc.add_selene_starpath(embed, name)
+    else:
+        desc += '\n\n**Requirements**'
+        try:
+            prereq_info = files.prereqs_info[name]
+            output = parsing.parse_prereqs(prereq_info)
+            for category in output:
+                boons = '\n'.join([misc.capwords(b) for b in category[1:]])
+                embed.add_field(name=category[0], value=boons)
+        except KeyError:
+            desc += '\n(None in particular)'
+    embed.description = desc
     return embed, ''
 
 
@@ -230,43 +251,6 @@ def pomscaling_embed(input: [str]) -> (discord.Embed, str):
     plt.grid(linestyle='--')
     plt.savefig('output.png')
     return 'output.png', ''
-
-
-def prereq_embed(input: [str]):
-    name, _, _ = parsing.parse_boon(input)
-    if not name:
-        return None, ''
-    if len(name) > 1:
-        desc = ''
-        for index, alias in enumerate(name):
-            desc += f'{misc.disambig_select[index]} {misc.capwords(alias)}\n'
-        embed = discord.Embed(
-            title='Alias conflict',
-            description=desc
-        )
-        embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
-        return embed, name
-    else:
-        name = name[0]
-    boon_info = files.boons_info[name]
-    title = f'**{misc.capwords(name)}**'
-    embed = discord.Embed(
-        title=title,
-        color=misc.god_colors[boon_info['god']]
-    )
-    try:
-        prereq_info = files.prereqs_info[name]
-        output = parsing.parse_prereqs(prereq_info)
-        for category in output:
-            if len(category) == 1:
-                embed.description = f'**{misc.capwords(category[0])}**'
-                continue
-            desc = '\n'.join([misc.capwords(b) for b in category[1:]])
-            embed.add_field(name=category[0], value=desc, inline=False)
-    except KeyError:
-        embed.description = '(None in particular)'
-    embed.set_thumbnail(url=misc.to_link(boon_info['icon']))
-    return embed, ''
 
 
 def eligible_embed(input: [str]):
@@ -434,7 +418,6 @@ def god_embed(input: [str]) -> discord.Embed:
             desc = '\n'.join([misc.capwords(b) for b in god_boons[category]])
             embed.add_field(name=category, value=desc)
     embed.set_thumbnail(url=misc.to_link(misc.god_icons[name]))
-    embed.set_footer
     return embed
 
 

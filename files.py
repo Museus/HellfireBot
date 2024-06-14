@@ -25,14 +25,13 @@ god_cores = {
     'charon': {}, 'circe': {}, 'echo': {},
     'hades': {}, 'hermes': {}, 'icarus': {},
     'medea': {}, 'narcissus': {}, 'selene': {},
-    'bouldy': {}
+    'path of stars': {}
 }
-pathofstars_info = {}
 global_arcana = {}
 commands_info = {}
 
 for god in god_cores:
-    with open(f'./files/gods/{god}.txt', 'r', encoding='utf8') as f:
+    with open(f'./files/gods/{"".join(god.split())}.txt', 'r', encoding='utf8') as f:
         god_cores[god]['category'] = f.readline().strip()
         while boon := f.readline().strip():
             type, boon = boon.split(' ', 1)
@@ -44,7 +43,8 @@ for god in god_cores:
                 type = type[1:]
             *boon, element = boon.split(' ')
             boon = ' '.join(boon)
-            if type in ('attack', 'special', 'cast', 'sprint', 'gain', 'revenge', 'prime', 'status', 'infusion', 'legendary'):
+            if type in ('attack', 'special', 'cast', 'sprint', 'gain',
+                        'revenge', 'prime', 'status', 'infusion', 'legendary'):
                 if type == 'legendary':
                     legendary_info.append(boon)
                 if type not in god_cores[god]:

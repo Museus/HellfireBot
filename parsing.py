@@ -87,7 +87,7 @@ def parse_keepsake(input: [str]) -> (str, int, bool):
     return '', rank
 
 
-def parse_arcana(input: [str]) -> (str, int, bool):
+def parse_arcana(input: [str]):
     input = [s.lower() for s in input]
     level = 3
     if input[-1].isdigit() and len(input) != 1:
@@ -179,7 +179,7 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
         elif len(category[1]) == 1:
             parsed_category.append('The Following:')
         else:
-            parsed_category.append(f'{"One" if category[0] == "1" else "Two"} of the Following:')
+            parsed_category.append(f'{"One" if category[0] == "1" else "Two"} of:')
         for boon in category[1]:
             parsed_category.append(boon)
         parsed_prereqs.append(parsed_category)

@@ -4,45 +4,46 @@ hex phase shift none
     Ready After: {m}
     150
     0
-
+    9/91/Phase_Shift.png
 hex twilight curse none
     Your **Hex** launches a seeking projectile that inflicts **Morph** on up to **5** susceptible foes.
     Ready After: {m}
     50
     0
-
+    9/92/Twilight_Curse.png
 hex lunar ray none
     Your **Hex** fires a beam that deals up to **900** damage over **3 Sec.**
     Ready After: {m}
     70
     0
-
+    2/2b/Lunar_Ray.png
 hex wolf howl none
     Your **Hex** makes you rise up then crash down in the target area for **200** damage.
     Ready After: {m}
     40
     0
-
+    c/c8/Wolf_Howl.png
 hex moon water none
     Your **Hex** restores **15** **<:Life:1241660063513448499>** up to **3** times, which reset whenever you use **Fountains**.
     Ready After: {m}
     80
     0
-
+    1/12/Moon_Water.png
 hex night bloom none
     Your **Hex** raises **1** random slain foe from this **Encounter** to fight for you for **12 Sec.**
     Ready After: {m}
     60
     0
-
+    3/31/Night_Bloom.png
 hex total eclipse none
     Your **Hex** blasts the target area for **1000** damage after **4 Sec.**
     Ready After: {m}
     200
     0
-
+    9/92/Twilight_Curse.png
 hex dark side none
     Your **Hex** turns you into an **Impervious** living nightmare with her own abilities for **5 Sec.**
     Ready After: {m}
     100
     0
+    6/62/Dark_Side.png

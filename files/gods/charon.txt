@@ -135,7 +135,7 @@ miscellaneous expiring deal none
     **80** <:GoldenCrowns:1250942621044576308>
 miscellaneous fateful twist none
     Gain a random item offered from the **Well of Charon** now.
-
+    Cannot offer Price of Midas, Life Essence, Kiss of Styx, Spark of Ixion, Archaic Seal, Fateful Twist
     0
     0
     thumb/9/90/Fateful_Twist.png/50px-Fateful_Twist.png

@@ -1,8 +1,0 @@
-misc
-xt1 heart of stone aether
-    You do not know if you believe in Bouldy...
-    Ambiguity Bonus: {+%}
-    2
-    0 0
-    1055018311378800690
-    m(<:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>); 1(<:bouldy:1014438782755422220>'s aid); x(aspect of <:bouldy:1014438782755422220>, <:bouldy:1014438782755422220>)

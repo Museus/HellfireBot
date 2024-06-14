@@ -50,7 +50,7 @@ t1 gale force water
     2.4 1.6 0.8
     7/70/Gale_Force.png
 t1 plentiful forage earth
-    Whenever you gather plants, seeds, or mushrooms, gain **<:MaxLife:1241662636995772436>**. Receive **1** **<:MysterySeed:1245282797107548222>** now.
+    Whenever you gather plants, seeds, or mushrooms, gain **<:MaxLife:1241662636995772436>**. Receive **1** **<:MysterySeed:1251063943875788810>** now.
     Max Life from Gathering: {+}
     5 8 10 13
     3 1 1 0
@@ -75,12 +75,12 @@ t2 cold storage water
     5/58/Cold_Storage.png
     1(ice strike, ice flourish)
 infusion coarse grit none
-    While you have at least **6** **<:EarthEssence:1242225885390700604>**, you cannot take more damage per hit than the limit.
+    While you have at least **6** **<:EarthEssence:1251066559112417312>**, you cannot take more damage per hit than the limit.
     Max Damage per Hit: {}
     15
     0
     b/b7/Coarse_Grit.png
-    1(<:EarthEssence:1242225885390700604> earth)
+    1(<:EarthEssence:1251066559112417312> earth)
 legendary winter harvest earth
     **Freeze**-afflicted foes shatter at **10%** **<:Life:1241660063513448499>**, dealing damage in the area.
     Shatter Area Damage: {}

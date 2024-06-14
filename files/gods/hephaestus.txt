@@ -74,12 +74,12 @@ status furnace blast fire
     1/10/Furnace_Blast.png
     1(volcanic strike, volcanic flourish, smithy sprint)
 infusion martial art none
-    Your **Attack** and **Special** deal more damage for each **<:EarthEssence:1242225885390700604>** you have.
+    Your **Attack** and **Special** deal more damage for each **<:EarthEssence:1251066559112417312>** you have.
     Damage per Earth Boon: {+%}
     5
     0
     b/b7/Martial_Art.png
-    1(<:EarthEssence:1242225885390700604> earth)
+    1(<:EarthEssence:1251066559112417312> earth)
 legendary fine tuning earth
     Your **Aspect** of the **Nocturnal Arms** is even stronger.
     Bonus Aspect Ranks: {+}

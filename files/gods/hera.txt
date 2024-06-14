@@ -75,12 +75,12 @@ t2 dying wish earth
     a/ab/Dying_Wish.png
     1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
 infusion proper upbringing none
-    While you have at least **3** **<:EarthEssence:1242225885390700604>**, *all* your **Common** **Boons** gain **Rarity**.
+    While you have at least **3** **<:EarthEssence:1251066559112417312>**, *all* your **Common** **Boons** gain **Rarity**.
     Improved Rarity: **Rare**
     0
     0
     a/a1/Proper_Upbringing.png
-    1(<:EarthEssence:1242225885390700604> earth)
+    1(<:EarthEssence:1251066559112417312> earth)
 legendary brave face earth
     Automatically use **<:Magick:1250935754461544478>** to resist up to **50%** of any damage.
     Magick Cost per Damage Point: {m}

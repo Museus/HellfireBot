@@ -62,12 +62,12 @@ t1 mean streak air
     0
     7/75/Mean_Strike.png
 infusion tall order none
-    While you have at least **2** each of **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>** **Elements**, you deal more damage.
+    While you have at least **2** each of **<:EarthEssence:1251066559112417312>** **<:WaterEssence:1251066562312671344>** **<:AirEssence:1251066557921099786>** **<:FireEssence:1251066561071026238>** **Elements**, you deal more damage.
     Infused Damage: {+%}
     20
     0
     0/0c/Tall_Order.png
-    1(<:EarthEssence:1242225885390700604> earth); 1(<:WaterEssence:1242225888519520377> water); 1(<:AirEssence:1242224825079169165> air); 1(<:FireEssence:1242225886938533888> fire)
+    1(<:EarthEssence:1251066559112417312> earth); 1(<:WaterEssence:1251066562312671344> water); 1(<:AirEssence:1251066557921099786> air); 1(<:FireEssence:1251066561071026238> fire)
 legendary close call air
     Gain **+1** use of **Death Defiance** that makes everything else move **90%** slower.
     Slow Duration: {s}

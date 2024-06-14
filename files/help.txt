@@ -25,7 +25,7 @@ define term?
 randchaos [modifiers]...
     Returns a random Chaos curse + blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1027101814904070175
-randcharon
+randcharon None
     Returns a random Charon well item.
     6/66/Well_of_Charon.png/300px-Well_of_Charon.png
 keepsake keepsake_name? [rank=3]

@@ -1,16 +1,15 @@
 import asyncio
 import difflib
 import os
-import re
 
 import discord
 from discord.ext import commands
 
+import arcanagen
 import embeds
 import files
 import misc
 import parsing
-import arcanagen
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -258,22 +257,25 @@ async def suggest(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    input = ' '.join([s.lower() for s in args])
-    verofire = input.split('->')
+    args = ' '.join([s.lower() for s in args])
+    verofire = args.split('->')
     if len(verofire) != 2:
         await misc.reply(ctx, 'idk man as', mention=True)
         return
     channel = client.get_channel(1018409476908392518)
-    await channel.send(f'From {ctx.author.mention}:\n```{input}```')
+    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
+    await misc.reply(ctx, 'Thank you for your contribution!')
 
 
-@client.command(aliases=['loadout', 'loadouts','arcanaloadouts', 'aload', 'arcload', 'arcloadout'])
+@client.command(aliases=['loadout', 'loadouts', 'arcanaloadouts', 'aload', 'arcload', 'arcloadout'])
 async def arcanaloadout(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
     total_grasp = arcanagen.arcana_gen(args)
-    await misc.reply(ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png'))
+    await misc.reply(
+        ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
+    )
     os.remove('./temp.png')
 
 
@@ -293,7 +295,7 @@ async def react_edit(ctx, embed, choices, embed_function):
     for i in range(0, len(choices)):
         await msg.add_reaction(misc.disambig_select[i])
     try:
-        react, _ = await client.wait_for('reaction_add', timeout=10.0, check=check)
+        react, _ = await client.wait_for('reaction_add', timeout=30.0, check=check)
     except asyncio.TimeoutError:
         await msg.clear_reactions()
         return

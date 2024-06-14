@@ -34,29 +34,29 @@ for god in god_cores:
     with open(f'./files/gods/{"".join(god.split())}.txt', 'r', encoding='utf8') as f:
         god_cores[god]['category'] = f.readline().strip()
         while boon := f.readline().strip():
-            type, boon = boon.split(' ', 1)
-            has_prereq = type not in (
+            _type, boon = boon.split(' ', 1)
+            has_prereq = _type not in (
                 'attack', 'special', 'cast', 'sprint', 'gain', 'hex', 't1', 'revenge', 'prime',
                 'blessing', 'curse', 'survival', 'combat', 'resource', 'miscellaneous'
             )
-            if type[0] == 'x':
-                type = type[1:]
+            if _type[0] == 'x':
+                _type = _type[1:]
             *boon, element = boon.split(' ')
             boon = ' '.join(boon)
-            if type in ('attack', 'special', 'cast', 'sprint', 'gain',
-                        'revenge', 'prime', 'status', 'infusion', 'legendary'):
-                if type == 'legendary':
+            if _type in ('attack', 'special', 'cast', 'sprint', 'gain',
+                         'revenge', 'prime', 'status', 'infusion', 'legendary'):
+                if _type == 'legendary':
                     legendary_info.append(boon)
-                if type not in god_cores[god]:
-                    god_cores[god][type] = []
-                god_cores[god][type].append(boon)
+                if _type not in god_cores[god]:
+                    god_cores[god][_type] = []
+                god_cores[god][_type].append(boon)
             description = f.readline().strip()
             stat = f.readline().strip()
             rarities = f.readline().strip().split(' ')
             levels = f.readline().strip().split(' ')
             icon = f.readline().strip()
             boons_info[boon] = {
-                'god': god, 'type': type, 'desc': description, 'stat': stat,
+                'god': god, 'type': _type, 'desc': description, 'stat': stat,
                 'rarities': rarities, 'levels': levels, 'icon': icon
             }
             if has_prereq:
@@ -88,13 +88,13 @@ with open('./files/aspects.txt', 'r', encoding='utf8') as f:
 for weapon in misc.weapon_icons:
     with open(f'./files/hammers/{weapon}.txt', 'r', encoding='utf8') as f:
         while hammer := f.readline().strip():
-            type, hammer = hammer.split(' ', 1)
+            _type, hammer = hammer.split(' ', 1)
             has_prereq = False
             if hammer[0] == 'x':
                 has_prereq = True
                 hammer = hammer[1:]
             hammers_info[hammer] = {
-                'type': type, 'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()
+                'type': _type, 'weapon': weapon, 'desc': f.readline().strip(), 'icon': f.readline().strip()
             }
             if has_prereq:
                 prereqs = f.readline().strip().split('; ')
@@ -105,9 +105,9 @@ for weapon in misc.weapon_icons:
 
 with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
-        type, keepsake = keepsake.split(' ', 1)
+        _type, keepsake = keepsake.split(' ', 1)
         keepsakes_info[keepsake] = {
-            'type': type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
+            'type': _type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
             'giver': f.readline().strip(), 'icon': f.readline().strip()
         }
         for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):

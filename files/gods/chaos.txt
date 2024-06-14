@@ -66,7 +66,7 @@ blessing mind none
     0
     d/da/Mind.png
 blessing creation none
-    Gain {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>** **<:AetherEssence:1243121873408102471>**.
+    Gain {+} **<:EarthEssence:1251066559112417312>** **<:WaterEssence:1251066562312671344>** **<:AirEssence:1251066557921099786>** **<:FireEssence:1251066561071026238>** **<:AetherEssence:1251066556717469809>**.
 
     1 2 3 4
     0
@@ -187,12 +187,12 @@ xcurse barren none
 
     1(any chaos boon)
 infusion chant none
-    Your **Ω Moves** deal {+%} damage for each **<:AetherEssence:1243121873408102471>** you have.
+    Your **Ω Moves** deal {+%} damage for each **<:AetherEssence:1251066556717469809>** you have.
 
     30 36 42 48
     0
     0/0c/Chant.png
-    1(<:AetherEssence:1243121873408102471> aether)
+    1(<:AetherEssence:1251066556717469809> aether)
 legendary defiance none
     Gain {+} use of **<:DeathDefiance:1249241466501468222> Death Defiance** this night.
 

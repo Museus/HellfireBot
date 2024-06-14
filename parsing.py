@@ -6,34 +6,34 @@ import misc
 rarities = {'common': 1, 'rare': 2, 'epic': 3, 'heroic': 4, 'legendary': 5}
 
 
-def parse_boon(input: [str]) -> (str, str, int):
-    if not input:
+def parse_boon(args):
+    if not args:
         return '', '', -1
-    input = [s.lower() for s in input]
+    args = [s.lower() for s in args]
     rarity = 'common'
     level = 1
-    if input[-1].startswith('level') or input[-1].startswith('lvl') or \
-            input[-1].startswith('lv') or input[-1].startswith('lv.'):
-        input[-1] = ''.join(c for c in input[-1] if c.isdigit())
-    if input[-1].isdigit():
-        level = int(input[-1])
-        input = input[:-1]
-        if input and input[-1] in ('level', 'lvl', 'lv', 'lv.'):
-            input = input[:-1]
-    if input and input[-1] in ('common', 'rare', 'epic', 'heroic'):
-        rarity = input[-1]
-        input = input[:-1]
-    boon_name = misc.fuzzy_boon(input)
+    if args[-1].startswith('level') or args[-1].startswith('lvl') or \
+            args[-1].startswith('lv') or args[-1].startswith('lv.'):
+        args[-1] = ''.join(c for c in args[-1] if c.isdigit())
+    if args[-1].isdigit():
+        level = int(args[-1])
+        args = args[:-1]
+        if args and args[-1] in ('level', 'lvl', 'lv', 'lv.'):
+            args = args[:-1]
+    if args and args[-1] in ('common', 'rare', 'epic', 'heroic'):
+        rarity = args[-1]
+        args = args[:-1]
+    boon_name = misc.fuzzy_boon(args)
     return boon_name, rarity, level
 
 
-def parse_aspect(input: [str]) -> (str, int):
-    input = [s.lower() for s in input]
+def parse_aspect(args):
+    args = [s.lower() for s in args]
     level = 5
-    if input[-1].isdigit():
-        level = int(input[-1])
-        input = input[:-1]
-    aspect_name = ' '.join(input)
+    if args[-1].isdigit():
+        level = int(args[-1])
+        args = args[:-1]
+    aspect_name = ' '.join(args)
     if aspect_name in files.aspects_info:
         return [aspect_name], level
     if aspect_name in files.aliases['aspect']:
@@ -41,11 +41,11 @@ def parse_aspect(input: [str]) -> (str, int):
     return '', level
 
 
-def parse_hammer(input: [str]) -> (str, bool, bool):
-    if not input:
+def parse_hammer(args):
+    if not args:
         return '', False
-    input = [s.lower() for s in input]
-    hammer_name = ' '.join(input)
+    args = [s.lower() for s in args]
+    hammer_name = ' '.join(args)
     if hammer_name in files.aliases['hammer']:
         hammer_name = files.aliases['hammer'][hammer_name]
         if len(hammer_name) > 1:
@@ -55,14 +55,14 @@ def parse_hammer(input: [str]) -> (str, bool, bool):
         return [hammer_name], True, False
     if hammer_name in files.hammers_info:
         return [hammer_name], False, False
-    if parse_aspect(input)[0]:
-        return parse_aspect(input)[0], True, True
+    if parse_aspect(args)[0]:
+        return parse_aspect(args)[0], True, True
     return '', False, False
 
 
-def parse_god(input: [str]) -> str:
-    input = [s.lower() for s in input]
-    god_name = ' '.join(input)
+def parse_god(args):
+    args = [s.lower() for s in args]
+    god_name = ' '.join(args)
     if god_name in files.god_cores:
         return god_name
     if god_name in files.aliases['core'] and files.aliases['core'][god_name][0] in files.god_cores:
@@ -70,13 +70,13 @@ def parse_god(input: [str]) -> str:
     return ''
 
 
-def parse_keepsake(input: [str]) -> (str, int, bool):
-    input = [s.lower() for s in input]
+def parse_keepsake(args):
+    args = [s.lower() for s in args]
     rank = 3
-    if input[-1].isdigit():
-        rank = int(input[-1])
-        input = input[:-1]
-    keepsake_name = ' '.join(input)
+    if args[-1].isdigit():
+        rank = int(args[-1])
+        args = args[:-1]
+    keepsake_name = ' '.join(args)
     if keepsake_name in files.aliases['keepsake']:
         keepsake_name = files.aliases['keepsake'][keepsake_name]
         if len(keepsake_name) > 1:
@@ -87,13 +87,13 @@ def parse_keepsake(input: [str]) -> (str, int, bool):
     return '', rank
 
 
-def parse_arcana(input: [str]):
-    input = [s.lower() for s in input]
+def parse_arcana(args):
+    args = [s.lower() for s in args]
     level = 3
-    if input[-1].isdigit() and len(input) != 1:
-        level = int(input[-1])
-        input = input[:-1]
-    arcana_name = ' '.join(input)
+    if args[-1].isdigit() and len(args) != 1:
+        level = int(args[-1])
+        args = args[:-1]
+    arcana_name = ' '.join(args)
     if arcana_name in files.aliases['arcana']:
         arcana_name = files.aliases['arcana'][arcana_name]
         if len(arcana_name) > 1:
@@ -104,15 +104,15 @@ def parse_arcana(input: [str]):
     return '', level
 
 
-def parse_enemy(input: [str]) -> str:
-    input = [s.lower() for s in input]
-    enemy_name = ' '.join(input)
+def parse_enemy(args):
+    args = [s.lower() for s in args]
+    enemy_name = ' '.join(args)
     if enemy_name in files.enemies_info:
         return enemy_name
     return ''
 
 
-def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
+def parse_stat(stat_line, value, num_parse=True):
     if not stat_line:
         return ''
     while True:
@@ -166,7 +166,7 @@ def parse_stat(stat_line: str, value: [float], num_parse=True) -> str:
         stat_line = re.sub(r'{[^{}]*}', new_stat, stat_line)
 
 
-def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
+def parse_prereqs(prereqs):
     parsed_prereqs = []
     for category in prereqs:
         parsed_category = []
@@ -186,8 +186,8 @@ def parse_prereqs(prereqs: [(str, [str])]) -> [[str]]:
     return parsed_prereqs
 
 
-def parse_modifiers(input: [str]) -> [str]:
-    input_str = ' '.join(input).lower()
+def parse_modifiers(args):
+    input_str = ' '.join(args).lower()
     output = []
     while True:
         h = []
@@ -204,10 +204,10 @@ def parse_modifiers(input: [str]) -> [str]:
     return output
 
 
-def parse_rarity_table(input: [str], rolls: [int]) -> (str, str):
-    if input:
+def parse_rarity_table(args, rolls):
+    if args:
         title = 'Rarity success rates with the following:\n- '
-        title += '\n- '.join([misc.capwords(s) for s in input]) + '\n'
+        title += '\n- '.join([misc.capwords(s) for s in args]) + '\n'
     else:
         title = 'Rarity success rates:'
     output = f'+-----------------+------+\n' \

@@ -5,10 +5,6 @@ import parsing
 
 rarity_graph_colors = ['#7D7D7D', '#0083F3', '#9500F6', '#FF1C10', '#FFD511']
 rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF18]
-# god_colors = {'zeus': 0xFCF75B, 'poseidon': 0x4AC4FB, 'athena': 0xF8C741, 'aphrodite': 0xFB91FC, 'artemis': 0xD2FC61,
-#               'ares': 0xFB2A2D, 'dionysus': 0xD111DE, 'demeter': 0xECFBFC, 'apollo': 0xFF914F, 'hestia': 0x7B1635,
-#               'hermes': 0xFBF7A7, 'bouldy': 0x3D4E46, 'duos': 0xD1FF18, 'hades': 0x9500F6, 'chaos': 0x8783CF,
-#               'charon': 0x5500B9, 'keepsake': 0x465B75}
 god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
@@ -51,17 +47,17 @@ weapon_icons = {
     'skull': 'thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png'
 }
 element_icons = {
-    'earth': '1242225885390700604',
-    'water': '1242225888519520377',
-    'air': '1242224825079169165',
-    'fire': '1242225886938533888',
-    'aether': '1243121873408102471'
+    'earth': '1251066559112417312',
+    'water': '1251066562312671344',
+    'air': '1251066557921099786',
+    'fire': '1251066561071026238',
+    'aether': '1251066556717469809'
 }
 card_ranks = [
-    (0x505858, '1247798358362554420'),
-    (0x48DBFF, '1247798360870490204'),
-    (0xFF86FF, '1247798359398416394'),
-    (0xFF837C, '1248765071379660840')
+    (0x505858, '1251065102023528549'),
+    (0x48DBFF, '1251065105634824335'),
+    (0xFF86FF, '1251065103185612842'),
+    (0xFF837C, '1251065104061960225')
 ]
 disambig_select = (
     '1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣',

@@ -78,12 +78,12 @@ t2 flammable coating fire
     thumb/9/97/Flammable_Coating.png/100px-Flammable_Coating.png
     1(flame strike, flame flourish, smolder ring, spontaneous combustion)
 infusion slow cooker none
-    Your **Attacks** and **Specials** gain **Power** for each **<:FireEssence:1242225886938533888>** you have.
+    Your **Attacks** and **Specials** gain **Power** for each **<:FireEssence:1251066561071026238>** you have.
     Power per Fire Boon: {+}
     2
     0
     d/db/Slow_Cooker.png
-    1(<:FireEssence:1242225886938533888> fire)
+    1(<:FireEssence:1251066561071026238> fire)
 legendary pyro technique fire
     Your **Scorch** effects deal damage faster.
     Scorch Damage Rate: {+%}

@@ -42,13 +42,13 @@ t1 life savings none
     0
 
 t1 mixed blessings none
-    Receive a gift of {+} **<:RandGod:1250934841030217759>** and **1** **<:MysterySeed:1245282797107548222>**.
+    Receive a gift of {+} **<:RandGod:1250934841030217759>** and **1** **<:MysterySeed:1251063943875788810>**.
 
     1
     0
 
 t1 heavenly splendor none
-    Receive a gift of **+1** **<:StarDust:1250207630769651812>** and {+} **<:EarthEssence:1242225885390700604>** **<:WaterEssence:1242225888519520377>** **<:AirEssence:1242224825079169165>** **<:FireEssence:1242225886938533888>**.
+    Receive a gift of **+1** **<:StarDust:1250207630769651812>** and {+} **<:EarthEssence:1251066559112417312>** **<:WaterEssence:1251066562312671344>** **<:AirEssence:1251066557921099786>** **<:FireEssence:1251066561071026238>**.
 
     2
     0

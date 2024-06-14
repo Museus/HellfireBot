@@ -115,7 +115,7 @@ resource moon beam
     thumb/e/e9/Moon_Beam.png/50px-Moon_Beam.png
 resource crystal figurine
     After the next **Guardian**, activate **1** random {} **Arcana Card**.
-    <:ArcanaCommon:1247798358362554420> <:ArcanaRare:1247798360870490204> <:ArcanaEpic:1247798359398416394>
+    <:ArcanaCommon:1251065102023528549> <:ArcanaRare:1251065105634824335> <:ArcanaEpic:1251065103185612842>
     circe
     thumb/7/7c/Crystal_Figurine.png/50px-Crystal_Figurine.png
 resource concave stone

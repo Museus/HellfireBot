@@ -75,12 +75,12 @@ t2 critical miss air
     a/af/Critical_Miss.png
     1(blinding sprint, dazzling display, light smite)
 infusion self healing none
-    While you have at least **3** **<:FireEssence:1242225886938533888>**, whenever you take damage, restore some **<:Life:1241660063513448499>**.
+    While you have at least **3** **<:FireEssence:1251066561071026238>**, whenever you take damage, restore some **<:Life:1241660063513448499>**.
     Damage Recovered: {%} *(over 5 Sec.)*
     30
     0
     c/c5/Self_Healing.png
-    1(<:FireEssence:1242225886938533888> fire)
+    1(<:FireEssence:1251066561071026238> fire)
 legendary exceptional talent air
     Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1250935754461544478>**.
     Omega Move Cost: {+m}

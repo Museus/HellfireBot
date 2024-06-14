@@ -124,15 +124,15 @@ revenant
     After **5 Sec.**, this becomes the foe it came from, unless you collect it first.
 <:RedOnion:1247806062933970995> red onion, <:RedOnion:1247806062933970995>
     Restores **1** <:Life:1241660063513448499>. Tastes as bitter as you feel.
-<:EarthEssence:1242225885390700604> earth, <:EarthEssence:1242225885390700604>
+<:EarthEssence:1251066559112417312> earth, <:EarthEssence:1251066559112417312>
     **Boons** imbued with the element of Earth.
-<:WaterEssence:1242225888519520377> water, <:WaterEssence:1242225888519520377>
+<:WaterEssence:1251066562312671344> water, <:WaterEssence:1251066562312671344>
     **Boons** imbued with the element of Water.
-<:AirEssence:1242224825079169165> air, <:AirEssence:1242224825079169165>
+<:AirEssence:1251066557921099786> air, <:AirEssence:1251066557921099786>
     **Boons** imbued with the element of Air.
-<:FireEssence:1242225886938533888> fire, <:FireEssence:1242225886938533888>
+<:FireEssence:1251066561071026238> fire, <:FireEssence:1251066561071026238>
     **Boons** imbued with the element of Fire.
-<:AetherEssence:1243121873408102471> aether, <:AetherEssence:1243121873408102471>
+<:AetherEssence:1251066556717469809> aether, <:AetherEssence:1251066556717469809>
     **Boons** imbued with the element of Aether.
 weak
     *Curse:* Afflicted foes deal at least **10%** less damage. Lasts **3 Sec.**
@@ -150,7 +150,7 @@ freeze
     *Curse:* Afflicted foes are stopped for **2 Sec.** Can be re-applied after **10 Sec.**
 cyclone
     A vortex that makes foes **20%** slower and their ranged shots **60%** slower. Lasts **3 Sec.**
-<:MysterySeed:1245282797107548222> mystery seeds, mystery seeds, <:MysterySeed:1245282797107548222>
+<:MysterySeed:1251063943875788810> mystery seeds, mystery seeds, <:MysterySeed:1251063943875788810>
     May grow to become one of several different kinds of valuable plants.
 keepsakes
     Artifacts of power symbolizing the bond between two strong souls.

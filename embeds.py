@@ -9,7 +9,7 @@ import misc
 import parsing
 
 
-def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
+def random_chaos_embed(args):
     blessings = []
     curses = []
     for boon_name in files.boons_info:
@@ -18,7 +18,7 @@ def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
             curses.append(boon_name)
         elif info['type'] == 'blessing':
             blessings.append(boon_name)
-    modifiers = parsing.parse_modifiers((*input, 'chaos'))
+    modifiers = parsing.parse_modifiers((*args, 'chaos'))
     rarity_rolls = misc.rarity_rolls(modifiers)
     if random.random() < rarity_rolls[0]:
         bless = 'defiance'
@@ -83,13 +83,13 @@ def random_chaos_embed(input: [str]) -> discord.embeds.Embed:
     return embed
 
 
-def random_charon_embed(input: [str]):
-    modifiers = parsing.parse_modifiers(input)
+def random_charon_embed(args):
+    modifiers = parsing.parse_modifiers(args)
     hourglass = 8 if 'bone hourglass' in modifiers else 0
     loyalty = 0.8 if 'loyalty card' in modifiers else 1
     types = []
     items = []
-    for i in [s.lower() for s in input]:
+    for i in [s.lower() for s in args]:
         if i in ('combat', 'survival', 'spawning', 'resource', 'miscellaneous'):
             types.append(i)
     for item_name in files.boons_info:
@@ -114,8 +114,8 @@ def random_charon_embed(input: [str]):
     return embed
 
 
-def boon_embed(input: [str]):
-    name, rarity, level = parsing.parse_boon(input)
+def boon_embed(args):
+    name, rarity, level = parsing.parse_boon(args)
     if not name:
         return None, ''
     if len(name) > 1:
@@ -191,16 +191,16 @@ def boon_embed(input: [str]):
     return embed, ''
 
 
-def pomscaling_embed(input: [str]) -> (discord.Embed, str):
-    if not input:
+def pomscaling_embed(args):
+    if not args:
         return None, ''
     level = 10
-    if input[-1].isdigit():
-        level = int(input[-1])
-        input = input[: -1]
+    if args[-1].isdigit():
+        level = int(args[-1])
+        args = args[: -1]
     if level > 10000:
         return None, ''
-    name, _, _ = parsing.parse_boon(input)
+    name, _, _ = parsing.parse_boon(args)
     if not name:
         return None, ''
     if len(name) > 1:
@@ -253,21 +253,21 @@ def pomscaling_embed(input: [str]) -> (discord.Embed, str):
     return 'output.png', ''
 
 
-def eligible_embed(input: [str]):
-    def eligible_boon(prereqs, current_boons):
+def eligible_embed(args):
+    def eligible_boon(prereqs, cur_boons):
         for prereq in prereqs:
             if prereq[0] == 'x':
-                if any(boon in current_boons for boon in prereq[1]):
+                if any(boon in cur_boons for boon in prereq[1]):
                     return False
             elif prereq[0].isdigit():
                 count = 0
                 for boon in prereq[1]:
-                    if boon in current_boons:
+                    if boon in cur_boons:
                         count += 1
                 if count < int(prereq[0]):
                     return False
         return True
-    boons = [b.strip() for b in ' '.join(input).lower().split(',')]
+    boons = [b.strip() for b in ' '.join(args).lower().split(',')]
     god, boons = parsing.parse_god([boons[0]]), boons[1:]
     if not god:
         return None
@@ -296,8 +296,8 @@ def eligible_embed(input: [str]):
     return embed
 
 
-def aspect_embed(input: [str]) -> (discord.Embed, str):
-    name, level = parsing.parse_aspect(input)
+def aspect_embed(args):
+    name, level = parsing.parse_aspect(args)
     if not name:
         return None, ''
     if len(name) > 1:
@@ -325,8 +325,8 @@ def aspect_embed(input: [str]) -> (discord.Embed, str):
     return embed, ''
 
 
-def hammer_embed(input: [str]) -> (discord.Embed, str):
-    name, is_weapon, is_aspect = parsing.parse_hammer(input)
+def hammer_embed(args):
+    name, is_weapon, is_aspect = parsing.parse_hammer(args)
     if not name:
         return None, ''
     if len(name) > 1:
@@ -382,8 +382,8 @@ def hammer_embed(input: [str]) -> (discord.Embed, str):
     return embed, ''
 
 
-def god_embed(input: [str]) -> discord.Embed:
-    name = parsing.parse_god(input)
+def god_embed(args):
+    name = parsing.parse_god(args)
     if not name:
         embed = discord.Embed(
             title=f'List of **Allies**'
@@ -421,7 +421,7 @@ def god_embed(input: [str]) -> discord.Embed:
     return embed
 
 
-def legendaries_embed() -> discord.Embed:
+def legendaries_embed():
     embed = discord.Embed(
         title='List of **Legendaries**',
         description='\n'.join([misc.capwords(legendary) for legendary in files.legendary_info]),
@@ -431,7 +431,7 @@ def legendaries_embed() -> discord.Embed:
     return embed
 
 
-def define_embed(text: str):
+def define_embed(text):
     used = []
     for definition in files.definitions_info:
         if f'**{misc.capwords(definition)}**' in text and definition not in [x[0] for x in used]:
@@ -448,9 +448,9 @@ def define_embed(text: str):
     return embed
 
 
-def keepsake_embed(input: [str]):
-    if input:
-        name, rank = parsing.parse_keepsake(input)
+def keepsake_embed(args):
+    if args:
+        name, rank = parsing.parse_keepsake(args)
         if not name:
             return None, ''
         if len(name) > 1:
@@ -502,9 +502,9 @@ def keepsake_embed(input: [str]):
     return embed, ''
 
 
-def arcana_embed(input: [str]):
-    if input:
-        name, level = parsing.parse_arcana(input)
+def arcana_embed(args):
+    if args:
+        name, level = parsing.parse_arcana(args)
         if not name:
             return None, ''
         if len(name) > 1:
@@ -548,8 +548,8 @@ def arcana_embed(input: [str]):
     return embed, ''
 
 
-def enemy_embed(input: [str]) -> discord.Embed or None:
-    name = parsing.parse_enemy(input)
+def enemy_embed(args):
+    name = parsing.parse_enemy(args)
     if not name:
         return None
     info = files.enemies_info[name]

@@ -393,7 +393,7 @@ def god_embed(args):
             descs[files.god_cores[god]['category']] += '\n' + misc.capwords(god)
         for category in descs:
             embed.add_field(name=misc.capwords(category), value=descs[category].strip())
-        embed.set_thumbnail(url=misc.to_link('1027107426354339840'))
+        embed.set_thumbnail(url=misc.to_link('1251078156622893057'))
         return embed
     god_boons = {'Core': []}
     for boon_name in files.boons_info:
@@ -498,7 +498,7 @@ def keepsake_embed(args):
         for category in keepsakes:
             desc = '\n'.join([misc.capwords(b) for b in keepsakes[category]])
             embed.add_field(name=category, value=desc)
-        embed.set_thumbnail(url=misc.to_link('1018053070921412618'))
+        embed.set_thumbnail(url=misc.to_link('1251068183130013736'))
     return embed, ''
 
 
@@ -545,6 +545,53 @@ def arcana_embed(args):
             desc += f'{count}. {misc.capwords(arcana_name, capall=True)}\n'
         embed.description = desc
         embed.set_thumbnail(url=misc.to_link('1249257631952928830'))
+    return embed, ''
+
+
+def vow_embed(args):
+    if args:
+        name, rank = parsing.parse_vow(args)
+        if not name:
+            return None, ''
+        if len(name) > 1:
+            desc = ''
+            for index, alias in enumerate(name):
+                desc += f'{misc.disambig_select[index]} {misc.capwords(alias)}\n'
+            embed = discord.Embed(
+                title='Alias conflict',
+                description=desc
+            )
+            embed.set_thumbnail(url=misc.to_link('1031449736026279936'))
+            return embed, name
+        else:
+            name = name[0]
+        info = files.vows_info[name]
+        rank = min(max(rank, 1), len(info['ranks']))
+        try:
+            value = [int(info['ranks'][rank - 1])]
+        except IndexError:
+            value = []
+        desc = parsing.parse_stat(info['desc'], value)[2:]
+        desc += f'\n▸Fear: **{sum(map(int, info["fears"][:rank]))}** <:Fear:1251066119889092610>'
+        embed = discord.Embed(
+            title=f'**{misc.capwords(name)}** (Rank {"I" * rank})',
+            description=desc,
+            color=misc.god_colors['vow']
+        )
+        footer = info['flavor']
+        embed.set_thumbnail(url=misc.to_link(info['icon']))
+        embed.set_footer(text=footer)
+    else:
+        embed = discord.Embed(
+            title='**Oath of the Unseen**',
+            color=misc.god_colors['vow'])
+        desc = ''
+        for vow_name in files.vows_info:
+            desc += (f'**{sum(map(int, files.vows_info[vow_name]["fears"]))}**<:Fear:1251066119889092610>\t'
+                     f'{misc.capwords(vow_name.split()[-1])}\n')
+        embed.description = desc
+        embed.set_thumbnail(url=misc.to_link('1251066119889092610'))
+        embed.set_footer(text='Become Night\'s Champion!')
     return embed, ''
 
 

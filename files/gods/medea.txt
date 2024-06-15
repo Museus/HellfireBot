@@ -6,7 +6,7 @@ t1 corrosion on sight none
     0
 
 t1 malice in kind none
-    Whenever a foe makes you use **<:DeathDefiance:1249241466501468222> Death Defiance**, it loses {%l}.
+    Whenever a foe makes you use **<:DeathDefiance:1251289623720890420> Death Defiance**, it loses {%l}.
 
     15
     0

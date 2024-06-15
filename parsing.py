@@ -104,6 +104,23 @@ def parse_arcana(args):
     return '', level
 
 
+def parse_vow(args):
+    args = [s.lower() for s in args]
+    rank = 1
+    if args[-1].isdigit() and len(args) != 1:
+        rank = int(args[-1])
+        args = args[:-1]
+    vow_name = ' '.join(args)
+    if vow_name in files.aliases['vow']:
+        vow_name = files.aliases['vow'][vow_name]
+        if len(vow_name) > 1:
+            return vow_name, -1
+        vow_name = vow_name[0]
+    if vow_name in files.vows_info:
+        return [vow_name], rank
+    return '', rank
+
+
 def parse_enemy(args):
     args = [s.lower() for s in args]
     enemy_name = ' '.join(args)

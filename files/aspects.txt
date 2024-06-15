@@ -83,7 +83,7 @@ skull medea
     She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
     thumb/4/4b/Skull-Medea.png/80px-Skull-Medea.png
 skull persephone
-    Your **Ω Cast** generates **<:Glory:1247336676548804609> Glory** when it hits, which extends your **Ω Special**.
+    Your **Ω Cast** generates **<:Glory:1251233978988495050> Glory** when it hits, which extends your **Ω Special**.
     Omega Move Damage: {+%}
     10 15 20 25 30 40
     Life and death, forever embodied in a Queen both splendorous and dark at once.

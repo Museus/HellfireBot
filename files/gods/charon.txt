@@ -21,7 +21,7 @@ survival life essence none
     thumb/8/82/Life_Essence.png/50px-Life_Essence.png
     **1** <:GoldenCrowns:1250942621044576308> per **1%** <:Life:1241660063513448499>
 xsurvival kiss of styx none
-    Replenish {} use of **<:DeathDefiance:1249241466501468222> Death Defiance** now.
+    Replenish {} use of **<:DeathDefiance:1251289623720890420> Death Defiance** now.
 
     1
     0

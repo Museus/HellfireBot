@@ -229,6 +229,20 @@ async def arcana(ctx, *args):
     await misc.reply(ctx, embed=embed)
 
 
+@client.command(aliases=['vows', 'oath', 'oaths', 'pact', 'pacts', 'fear', 'heat', 'v'])
+async def vow(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    embed, choices = embeds.vow_embed(args)
+    if not embed:
+        await misc.reply(ctx, misc.suggest_hint('vow'), mention=True)
+        return
+    if choices:
+        await react_edit(ctx, embed, choices, embeds.vow_embed)
+        return
+    await misc.reply(ctx, embed=embed)
+
 @client.command(aliases=['e'])
 async def enemy(ctx, *args):
     if misc.channel_status(ctx) > 1:

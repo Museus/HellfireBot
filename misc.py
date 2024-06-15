@@ -13,7 +13,8 @@ god_colors = {
     'charon': 0x5500B9, 'circe': 0xF2502E, 'echo': 0x8E8C7D,
     'hades': 0x770D0A, 'hermes': 0xFBF7A7, 'icarus': 0xAD9641,
     'medea': 0x456B48, 'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
-    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'path of stars': 0x527989
+    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'path of stars': 0x527989,
+    'vow': 0x4204B3
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',

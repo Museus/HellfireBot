@@ -194,7 +194,7 @@ infusion chant none
     0/0c/Chant.png
     1(<:AetherEssence:1251066556717469809> aether)
 legendary defiance none
-    Gain {+} use of **<:DeathDefiance:1249241466501468222> Death Defiance** this night.
+    Gain {+} use of **<:DeathDefiance:1251289623720890420> Death Defiance** this night.
 
     1
     0

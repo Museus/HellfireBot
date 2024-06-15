@@ -1,0 +1,28 @@
+vow of blood
+    hard labor, labor, hl, hl1, hl2, hl3, hl4, hl5
+vow of dominance
+    calisthenics program, calisthenic program, calisthenic, cp, cp1, cp2
+vow of rebuke
+    damage control, blue heart, dc, dc1, dc2
+vow of fury
+    forced overtime, overtime, fo, fo1, fo2
+vow of suffering
+    vow of suffer, of suffer, suffer
+vow of commotion
+    jury summons, jury summon, summons, summon, js, js1, js2, js3
+vow of wandering
+    vow of wander, of wander, wander
+vow of scars
+    lasting consequences, lasting consequence, consequences, consequence, vow of scar, of scar, scar, lc, lc1, lc2, lc3, lc4
+vow of destitution
+    vow of destitute, of destitute, destitute, convenience fee, fee, cf, cf1, cf2
+vow of forsaking
+    vow of foresaking, of foresaking, foresaking, vow of forsake, of forsake, forsake, fake ap
+vow of bitterness
+    vow of bitter, of bitter, bitter, onion, red onion
+vow of arrogance
+    vow of arrogant, of arrogant, arrogant, prime
+vow of desperation
+    tight deadline, deadline, td, td1, td2, td3
+vow of abandon
+    routine inspection, ri, ri1, ri2, ri3, ri4

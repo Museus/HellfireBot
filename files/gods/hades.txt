@@ -14,7 +14,7 @@ t1 deep dissent none
     thumb/6/60/Deep_Dissent.png/41px-Deep_Dissent.png
 t1 last gasp none
     Deal more damage for each *spent* **Death Defiance**.
-    Damage per <:DeathDefiance:1249241466501468222> Used: {+%}
+    Damage per <:DeathDefiance:1251289623720890420> Used: {+%}
     10
     0
     thumb/2/26/Last_Grasp.png/41px-Last_Grasp.png

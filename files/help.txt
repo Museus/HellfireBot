@@ -15,7 +15,7 @@ hammer item_name
     1243131974923718747
 god god_name?
     Returns a list of non-duo boons for that <god_name>, categorized by type. If no <god_name> given, returns a list of all gods that are valid inputs to the command.
-    1027107426354339840
+    1251078156622893057
 legendaries None
     Returns a list of all legendaries.
     1027126357597093969
@@ -30,7 +30,7 @@ randcharon None
     6/66/Well_of_Charon.png/300px-Well_of_Charon.png
 keepsake keepsake_name? [rank=3]
     Returns information on the given keepsake, at the specified rank. <rank> defaults to 3. If <keepsake_name> is excluded, returns all keepsakes.
-    1028196559042650173
+    1251068183130013736
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348

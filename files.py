@@ -41,7 +41,7 @@ for god in god_cores:
             )
             if _type[0] == 'x':
                 _type = _type[1:]
-            *boon, element = boon.split(' ')
+            *boon, element = boon.split()
             boon = ' '.join(boon)
             if _type in ('attack', 'special', 'cast', 'sprint', 'gain',
                          'revenge', 'prime', 'status', 'infusion', 'legendary'):
@@ -52,8 +52,8 @@ for god in god_cores:
                 god_cores[god][_type].append(boon)
             description = f.readline().strip()
             stat = f.readline().strip()
-            rarities = f.readline().strip().split(' ')
-            levels = f.readline().strip().split(' ')
+            rarities = f.readline().split()
+            levels = f.readline().split()
             icon = f.readline().strip()
             boons_info[boon] = {
                 'god': god, 'type': _type, 'desc': description, 'stat': stat,
@@ -81,7 +81,7 @@ with open('./files/aspects.txt', 'r', encoding='utf8') as f:
         weapon, aspect = aspect.split(' ', 1)
         aspects_info[aspect] = {
             'weapon': weapon, 'desc': f.readline().strip(), 'stat': f.readline().strip(),
-            'levels': f.readline().strip().split(' '), 'flavor': f.readline().strip(),
+            'levels': f.readline().split(), 'flavor': f.readline().strip(),
             'icon': f.readline().strip()
         }
 
@@ -107,7 +107,7 @@ with open('./files/keepsakes.txt', 'r', encoding='utf8') as f:
     while keepsake := f.readline().strip():
         _type, keepsake = keepsake.split(' ', 1)
         keepsakes_info[keepsake] = {
-            'type': _type, 'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '),
+            'type': _type, 'desc': f.readline().strip(), 'ranks': f.readline().split(),
             'giver': f.readline().strip(), 'icon': f.readline().strip()
         }
         for suffix in ('', ' keepsake', 's keepsake', '\' keepsake', '\'s keepsake'):
@@ -119,7 +119,7 @@ with open('./files/arcana.txt', 'r', encoding='utf8') as f:
         grasp, card = card.split(' ', 1)
         grasp = int(grasp)
         arcana_info[card] = {
-            'grasp': grasp, 'desc': f.readline().strip(), 'levels': f.readline().strip().split(' '),
+            'grasp': grasp, 'desc': f.readline().strip(), 'levels': f.readline().split(),
             'flavor': f.readline().strip(), 'icon': f.readline().strip()
         }
         if grasp == 0:
@@ -130,10 +130,11 @@ with open('./files/arcana.txt', 'r', encoding='utf8') as f:
 with open('./files/vows.txt', 'r', encoding='utf8') as f:
     while vow := f.readline().strip():
         vows_info[vow] = {
-            'desc': f.readline().strip(), 'ranks': f.readline().strip().split(' '), 'fears': f.readline().strip(),
+            'desc': f.readline().strip(), 'ranks': f.readline().split(), 'fears': f.readline().split(),
             'flavor': f.readline().strip(), 'icon': f.readline().strip()
         }
         aliases['vow'][vow.split()[-1]] = [vow]
+        aliases['vow'][' '.join(vow.split()[-2:])] = [vow]
 
 for category in aliases:
     with open(f'./files/aliases/{category}aliases.txt', 'r', encoding='utf8') as f:
@@ -159,7 +160,7 @@ with open('./files/help.txt', 'r', encoding='utf8') as f:
     while command := f.readline().strip():
         command, parameters = command.split(' ', 1)
         commands_info[command] = {
-            'params': ', '.join(parameters.split(' ')), 'desc': f.readline().strip(),
+            'params': ', '.join(parameters.split()), 'desc': f.readline().strip(),
             'icon': f.readline().strip()
         }
 

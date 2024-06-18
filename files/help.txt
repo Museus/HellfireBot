@@ -19,6 +19,9 @@ god god_name?
 legendaries None
     Returns a list of all legendaries.
     1027126357597093969
+legendaries None
+    Returns a list of all duos.
+    1027126357597093969
 define term?
     Returns the definition of the given term, or a list of definitions for terms used in the replied-to message. Works for text inside SmolderRingBot's embed outputs.
 

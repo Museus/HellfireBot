@@ -1,27 +1,27 @@
 misc
 survival hydralite none
-    Restore **+10%** **<:Life:1241660063513448499>** whenever you enter a **Location**.
+    Restore **+10%** **<:Life:1241660063513448499>** whenever you enter a **Location**. Appears **15.6%** of the time.
     Duration: {e}
     3
     0
     thumb/e/e5/HydraLite.png/50px-HydraLite.png
     **45** <:GoldenCrowns:1250942621044576308>
 survival preserved hope none
-    After the duration, restore **50%** **<:Life:1241660063513448499>**.
+    After the duration, restore **50%** **<:Life:1241660063513448499>**. Appears **15.6%** of the time.
     Duration: {e}
     4
     0
     thumb/5/52/Preserved_Hope.png/50px-Preserved_Hope.png
     **50** <:GoldenCrowns:1250942621044576308>
 survival life essence none
-    Restore up to {l%} now.
+    Restore up to {l%} now. Appears **31.3%** of the time.
 
     21-39
     0
     thumb/8/82/Life_Essence.png/50px-Life_Essence.png
     **1** <:GoldenCrowns:1250942621044576308> per **1%** <:Life:1241660063513448499>
 xsurvival kiss of styx none
-    Replenish {} use of **<:DeathDefiance:1251289623720890420> Death Defiance** now.
+    Replenish {} use of **<:DeathDefiance:1251289623720890420> Death Defiance** now. Appears **31.3%** of the time.
 
     1
     0
@@ -29,14 +29,14 @@ xsurvival kiss of styx none
     1(empty defiance slot)
     **200** <:GoldenCrowns:1250942621044576308>
 survival price of midas none
-    Gain {r1} **<:GoldenCrowns:1250942621044576308>** per **1** **<:Life:1241660063513448499>** now *(for a blood price)*.
+    Gain {r1} **<:GoldenCrowns:1250942621044576308>** per **1** **<:Life:1241660063513448499>** now *(for a blood price)*. Appears **3.1%** of the time.
 
     1.1-1.8
     0
     thumb/e/e2/Price_of_Midas.png/50px-Price_of_Midas.png
     **10-30** <:Life:1241660063513448499>
 survival centaur soul none
-    Gain {+} **<:MaxLifeEmpty:1250938556508278825>** *(without restoring* **<:Life:1241660063513448499>** *)*.
+    Gain {+} **<:MaxLifeEmpty:1250938556508278825>** *(without restoring* **<:Life:1241660063513448499>** *)*. Appears **3.1%** of the time.
 
     25
     0

@@ -53,12 +53,6 @@ t1 heart breaker water
     120 180 240 300
     60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
     e/ef/Heart_Breaker.png
-prime secret crush air
-    After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to add **Power** to your **Attack**.
-    Attack Power: {+}
-    5 7 9 11
-    0
-    0/00/Secret_Crush.png
 t2 broken resolve water
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
@@ -73,6 +67,12 @@ t2 sweet surrender water
     5 2.5 1.25 1
     a/a6/Sweet_Surrender.png
     1(rapture ring, passion dash, glamour gain)
+prime secret crush air
+    After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to add **Power** to your **Attack**.
+    Attack Power: {+}
+    5 7 9 11
+    0
+    0/00/Secret_Crush.png
 infusion wispy wiles none
     While you have at least **4** **<:AirEssence:1251066557921099786>**, you may **Dodge** any damage.
     Dodge Chance: {+%}
@@ -87,3 +87,52 @@ legendary ecstatic obsession air
     0
     6/66/Ecstatic_Obsession.png
     1(flutter strike, flutter flourish); 1(rapture ring, passion dash, glamour gain); 1(broken resolve, sweet surrender)
+duo sunny disposition aether
+    Whenever you create **Heartthrobs**, create more.
+    Bonus Heartthrobs: {+}
+    2
+    0
+    2/2c/Sunny_Disposition.png
+    1(heart breaker); 1(nova strike, nova flourish, solar ring, lucid gain)
+duo hearty appetite aether
+    You deal more damage the more **<:Life:1241660063513448499>** you have.
+    Bonus Damage per 100 Life: {+%}
+    10
+    0
+    c/cc/Hearty_Appetite.png
+    1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
+duo soft caress aether
+    The first time you would take damage each **Encounter**, get **<:Healing:1028193572840816722>** instead.
+    Damage Turned to Healing: {%}
+    100
+    0
+    9/9d/Soft_Caress.png
+    1(rapture ring, passion dash, glamour gain); 1(anvil ring, smithy sprint, fixed gain)
+duo soul mate aether
+    Foes with **Hitch** take more damage and are **Weak**, but only **2** can be afflicted at a time.
+    Damage vs. Hitched Foes: {+%}
+    20
+    0
+    f/fd/Soul_Mate.png
+    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
+duo burning desire aether
+    Up to **+12** **Lone Shades** appear in **Locations**. **Sprint** into them to launch a fiery blast.
+    Lone Shade Area Damage: {}
+    160
+    0
+    c/ce/Burning_Desire.png
+    1(rapture ring, passion dash, glamour gain); 1(smolder ring, soot sprint, hearth gain)
+duo island getaway aether
+    You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
+    Damage Resistance: {+%}
+    15
+    0
+    2/29/Island_Getaway.png
+    1(flutter strike, flutter flourish); 1(wave strike, wave flourish, geyser ring, breaker sprint)
+duo romantic spark aether
+    If you **Sprint** into **Blitz**-afflicted foes, the effect activates immediately and is stronger.
+    Bonus Blitz Damage: {+%}
+    200
+    0
+    6/66/Romantic_Spark.png
+    1(flutter strike, flutter flourish, rapture ring, passion dash); 1(heaven strike, heaven flourish)

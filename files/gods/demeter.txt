@@ -61,12 +61,6 @@ t1 weed killer earth
     50 75 100 125
     25 20 16 12.8 10.24 8.192 6.5536 5.24288 5
     e/ef/Weed_Killer.png
-prime winter coat earth
-    After you enter a **Location**, **Prime** a barrier that absorbs **1** instance of damage.
-    Magick Primed: {}
-    20 15 10 5
-    -3 -2 -1 0
-    7/7e/Winter_Coat.png
 t2 cold storage water
     Your **Freeze** effects last longer.
     Freeze Duration: {+sr1}
@@ -74,6 +68,12 @@ t2 cold storage water
     1 0.5 0.25 0.2
     5/58/Cold_Storage.png
     1(ice strike, ice flourish)
+prime winter coat earth
+    After you enter a **Location**, **Prime** a barrier that absorbs **1** instance of damage.
+    Magick Primed: {}
+    20 15 10 5
+    -3 -2 -1 0
+    7/7e/Winter_Coat.png
 infusion coarse grit none
     While you have at least **6** **<:EarthEssence:1251066559112417312>**, you cannot take more damage per hit than the limit.
     Max Damage per Hit: {}
@@ -88,3 +88,52 @@ legendary winter harvest earth
     0
     5/50/Winter_Harvest.png
     1(ice strike, ice flourish); 1(plentiful forage, winter coat); 1(weed killer, cold storage)
+duo hearty appetite aether
+    You deal more damage the more **<:Life:1241660063513448499>** you have.
+    Bonus Damage per 100 Life: {+%}
+    10
+    0
+    c/cc/Hearty_Appetite.png
+    1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
+duo torrential downpour aether
+    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1250935754461544478>**.
+    Damage per Omega Cast: {+%}
+    20
+    0
+    9/9a/Torrential_Downpour.png
+    1(solar ring, blinding sprint, lucid gain); 1(arctic ring, frigid sprint, tranquil gain)
+duo room temperature aether
+    Your blast effects from **Hephaestus** clear **Freeze**, so you **Freeze** foes again right away.
+    Freeze Re-Apply Time: {s}
+    0
+    0
+    6/66/Room_Temperature.png
+    1(ice strike, ice flourish); 1(volcanic strike, volcanic flourish, smithy sprint)
+duo cherished heirloom aether
+    Most other **Keepsakes** you equip are stronger this night *(if possible)*.
+    Bonus Keepsake Ranks: {+}
+    1
+    0
+    1/13/Cherished_Heirloom.png
+    1(arctic ring, frigid sprint, tranquil gain); 1(engagement ring, nexus sprint, born gain)
+duo freezer burn aether
+    Whenever you inflict **Freeze**, amplify any **Scorch** effects already on the foe.
+    Scorch Damage: {+%}
+    100
+    0
+    2/23/Freezer_Burn.png
+    1(ice strike, ice flourish); 1(flame strike, flame flourish)
+duo natural selection aether
+    **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
+    Improved Rarity Chance: {+%}
+    20
+    0
+    7/7a/Natural_Selection.png
+    1(frigid sprint, tranquil gain, winter coat, cold storage, rare crop); 1(breaker sprint, fluid gain, ocean's bounty, sunken treasure, double up)
+duo apocalyptic storm aether
+    Your **Blitz** effects last longer, and activate against *all* **Blitz**-afflicted foes at once.
+    Blitz Duration: {+s}
+    8
+    0
+    d/dc/Apocalyptic_Storm.png
+    1(ice strike, ice flourish, arctic ring, frigid sprint); 1(heaven strike, heaven flourish)

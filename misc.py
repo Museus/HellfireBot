@@ -8,13 +8,12 @@ rarity_embed_colors = [0xFFFFFF, 0x0083F3, 0x9500F6, 0xFF1C10, 0xFFD511, 0xD1FF1
 god_colors = {
     'aphrodite': 0xF767E9, 'apollo': 0xFEBF00, 'demeter': 0x99C9FE,
     'hephaestus': 0xA67430, 'hera': 0x00C6FD, 'hestia': 0xFF8E00,
-    'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'duo': 0xD1FF18,
-    'arachne': 0xC7F080, 'artemis': 0xD2FC61, 'chaos': 0x8783CF,
-    'charon': 0x5500B9, 'circe': 0xF2502E, 'echo': 0x8E8C7D,
-    'hades': 0x770D0A, 'hermes': 0xFBF7A7, 'icarus': 0xAD9641,
-    'medea': 0x456B48, 'narcissus': 0x69B4D7, 'selene': 0xB0FFFB,
-    'keepsake': 0x465B75, 'arcana': 0xCFCABA, 'path of stars': 0x527989,
-    'vow': 0x4204B3
+    'poseidon': 0x59D5FE, 'zeus': 0xFFF254, 'arachne': 0xC7F080,
+    'artemis': 0xD2FC61, 'chaos': 0x8783CF, 'charon': 0x5500B9,
+    'circe': 0xF2502E, 'echo': 0x8E8C7D, 'hades': 0x770D0A,
+    'hermes': 0xFBF7A7, 'icarus': 0xAD9641, 'medea': 0x456B48,
+    'narcissus': 0x69B4D7, 'selene': 0xB0FFFB, 'keepsake': 0x465B75,
+    'arcana': 0xCFCABA, 'path of stars': 0x527989, 'vow': 0x4204B3
 }
 god_icons = {
     'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
@@ -25,7 +24,6 @@ god_icons = {
     'hestia': 'thumb/2/21/Hestia_Boons.png/60px-Hestia_Boons.png',
     'poseidon': 'thumb/4/4e/Poseidon_Boons.png/60px-Poseidon_Boons.png',
     'zeus': 'thumb/3/34/Zeus_Boons.png/60px-Zeus_Boons.png',
-    'duo': '1027126357597093969',
     'arachne': '1249245758327095346',
     'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
     'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',

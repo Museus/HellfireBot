@@ -53,6 +53,13 @@ t1 ocean's bounty water
     50 75 100 125
     0
     a/a7/Ocean%27s_Bounty.png
+t2 crashing wave water
+    Whenever your knock-away effects slam foes into barrier, create a blast in the area.
+    Blast Damage: {}
+    50 65-75 90-100 115-125
+    25 12.5 6.25 5
+    8/8a/Crashing_Wave.png
+    1(wave strike, wave flourish, geyser ring, breaker sprint)
 prime flood control water
     After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478> Magick** to reduce any damage you would take.
     Damage Reduction per Hit: {-}
@@ -66,13 +73,6 @@ status slippery slope water
     4 2 1 0.5
     a/a8/Slippery_Slope.png
     1(wave strike, wave flourish)
-t2 crashing wave water
-    Whenever your knock-away effects slam foes into barrier, create a blast in the area.
-    Blast Damage: {}
-    50 65-75 90-100 115-125
-    25 12.5 6.25 5
-    8/8a/Crashing_Wave.png
-    1(wave strike, wave flourish, geyser ring, breaker sprint)
 infusion water fitness none
     While you have at least **4** **<:WaterEssence:1251066562312671344>**, gain **<:MaxLife:1241662636995772436>**.
     Max Life: {+}
@@ -87,3 +87,52 @@ legendary king tide water
     0
     5/52/King_Tide.png
     1(wave strike, wave flourish); 1(slippery slope); 1(crashing wave)
+duo island getaway aether
+    You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
+    Damage Resistance: {+%}
+    15
+    0
+    2/29/Island_Getaway.png
+    1(flutter strike, flutter flourish); 1(wave strike, wave flourish, geyser ring, breaker sprint)
+duo beach ball aether
+    Your **Sprint** creates a watery sphere behind you. After you stop, it surges ahead and bursts.
+    Blast Damage: {}
+    140
+    0
+    1/1b/Beach_Ball.png
+    1(blinding sprint, lucid gain); 1(breaker sprint, fluid gain)
+duo natural selection aether
+    **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
+    Improved Rarity Chance: {+%}
+    20
+    0
+    7/7a/Natural_Selection.png
+    1(frigid sprint, tranquil gain, winter coat, cold storage, rare crop); 1(breaker sprint, fluid gain, ocean's bounty, sunken treasure, double up)
+duo seismic hammer aether
+    Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
+    Blast Recharge Time: {s}
+    15
+    0
+    d/d9/Seismic_Hammer.png
+    1(volcanic strike, volcanic flourish, smithy sprint); 1(geyser ring)
+duo golden rule aether
+    You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
+    Bonus Damage per 100 Gold: {+%}
+    5
+    0
+    3/36/Golden_Rule.png
+    1(engagement ring, nexus sprint, born gain); 1(geyser ring, breaker sprint, fluid gain); 1(ocean's bounty, double up)
+duo scalding vapor aether
+    If foes with **Slip** are struck by fire from **Hestia**, they are engulfed in **Steam**.
+    Steam Damage: {+} *(every 0.2 Sec.)*
+    25
+    0
+    d/d7/Scalding_Vapor.png
+    1(flame strike, flame flourish, smolder ring, spontaneous combustion, burning desire, controlled burn, glowing coal); 1(slippery slope)
+duo killer current aether
+    Your lightning deals more damage to **Slip**-afflicted foes.
+    Bonus Lightning Damage: {+%}
+    30
+    0
+    e/e3/Killer_Current.png
+    1(slippery slope); 1(heaven strike, heaven flourish, storm ring, thunder sprint, divine vengeance, lightning lance)

@@ -29,12 +29,6 @@ gain born gain earth
     10 8 6 4
     -2 -1 0
     c/c5/Born_Gain.png
-t1 family trade earth
-    Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
-    Bonus <:Pom:1247012092247281664> Lv.: {+}
-    2 3 4 5
-    0
-    f/f5/Family_Trade.png
 xt1 bridal glow earth
     Your **Boons** become **Heroic**, then lose **Rarity** every {} Encounters.
     Random Boons Affected: **2**
@@ -42,24 +36,30 @@ xt1 bridal glow earth
     0
     a/a9/Bridal_Glow.png
     2(any upgradeable boon)
-t1 keen intuition earth
-    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1250935754461544478>**, they deal more damage.
-    Omega Damage: {+%}
-    30 45 60 75
-    15 7.5 3.75 3
-    a/a6/Keen_Intuition.png
 t1 uncommon grace earth
     While none of your other **Boons** are **Common**, deal more damage.
     Common-Less Bonus Damage: {+%}
     10 15 20 25
     5 2.5 1.25 1
     b/b8/Uncommon_Grace.png
-revenge nasty comeback earth
+t1 nasty comeback earth
     After you take damage, inflict your foes with **Hitch** and deal damage in greater measure.
     Damage Reflected: {%}
     500 750 1000 1250
     150 125 120 110 105
     9/9a/Nasty_Comeback.png
+t1 keen intuition earth
+    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1250935754461544478>**, they deal more damage.
+    Omega Damage: {+%}
+    30 45 60 75
+    15 7.5 3.75 3
+    a/a6/Keen_Intuition.png
+t1 family trade earth
+    Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
+    Bonus <:Pom:1247012092247281664> Lv.: {+}
+    2 3 4 5
+    0
+    f/f5/Family_Trade.png
 t2 hereditary bane earth
     Your **Hitch** effects deal more damage and last **+5 Sec.**
     Hitch Damage: {+%}
@@ -88,3 +88,52 @@ legendary brave face earth
     0
     4/47/Brave_Face.png
     1(sworn strike, sworn flourish); 1(born gain, keep intuition); 1(hereditary bane, dying wish); x(fixed gain)
+duo soul mate aether
+    Foes with **Hitch** take more damage and are **Weak**, but only **2** can be afflicted at a time.
+    Damage vs. Hitched Foes: {+%}
+    20
+    0
+    f/fd/Soul_Mate.png
+    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
+duo sun worshiper aether
+    In each **Encounter**, the first foe you slay returns to fight for you.
+    Servant Damage: {+%}
+    200
+    0
+    2/2c/Sun_Worshiper.png
+    1(solar ring, blinding sprint, lucid gain); 1(engagement ring, nexus sprint, born gain)
+duo cherished heirloom aether
+    Most other **Keepsakes** you equip are stronger this night *(if possible)*.
+    Bonus Keepsake Ranks: {+}
+    1
+    0
+    1/13/Cherished_Heirloom.png
+    1(arctic ring, frigid sprint, tranquil gain); 1(engagement ring, nexus sprint, born gain)
+duo spiteful strength aether
+    Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
+    Boon-Less Bonus Damage: {+%}
+    200
+    0
+    c/c6/Spiteful_Strength.png
+    1(fixed gain, trusty shield, mint condition, heavy metal, tough trade, uncanny fortitude); 1(born gain, brave face, nasty comeback, keen intuition)
+duo funeral pyre aether
+    While you **Channel** your **Ω Moves**, repeatedly inflict **Scorch** on nearby foes.
+    Scorch Damage: {} *(every 1 Sec.)*
+    90
+    0
+    e/ed/Funeral_Pyre.png
+    1(sworn strike, sworn flourish, engagement ring, born gain); 1(flame strike, flame flourish, smolder ring, hearth gain)
+duo golden rule aether
+    You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
+    Bonus Damage per 100 Gold: {+%}
+    5
+    0
+    3/36/Golden_Rule.png
+    1(engagement ring, nexus sprint, born gain); 1(geyser ring, breaker sprint, fluid gain); 1(ocean's bounty, double up)
+duo queen's ransom aether
+    Give up *all* your **Boons** of **Zeus**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Hera**.
+    Bonus Lv. per Zeus Boon: {+}
+    3
+    0
+    thumb/7/75/Queen%27s_Ransom.png/100px-Queen%27s_Ransom.png
+    1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain)

@@ -29,37 +29,30 @@ gain lucid gain air
     12 18 24 30
     6 3 1.5 1
     3/3c/Lucid_Gain.png
-t1 perfect image air
-    In each **Encounter**, you deal more damage until you take damage.
-    No-Hit Bonus Damage: {+%}
-    10 15 20 25
-    5 2.5 1.25 1
-    b/b6/Perfect_Image.png
 t1 super nova air
     Your **Casts** expand in size until they expire.
     Max Cast Size: {+%}
     40 50 60 70
     10 7.5 5.625 4.21875 4
     1/1a/Super_Nova.png
+t1 light smite fire
+    After you take damage, your foe takes damage and you inflict **Daze** on *all* foes.
+    Revenge Damage: {}
+    50 75 100 125
+    25 12.5 6.25 5
+    0/08/Light_Smite.png
 t1 extra dose fire
     Your **Attack** has a chance to hit **2** times.
     Double Strike Chance: {+%}
     5 7 10 12
     3 2 1
     f/fb/Extra_Dose.png
-revenge light smite fire
-    After you take damage, your foe takes damage and you inflict **Daze** on *all* foes.
-    Revenge Damage: {}
-    50 75 100 125
-    25 12.5 6.25 5
-    0/08/Light_Smite.png
-status dazzling display fire
-    Your **Attacks** may inflict **Daze**.
-    Daze CHance: {+%}
+t1 perfect image air
+    In each **Encounter**, you deal more damage until you take damage.
+    No-Hit Bonus Damage: {+%}
     10 15 20 25
-    5 3 2 1
-    f/f0/Dazzling_Display.png
-    1(nova strike)
+    5 2.5 1.25 1
+    b/b6/Perfect_Image.png
 t2 back burner fire
     Foes with **Daze** take more damage if struck from behind.
     Backstab Damage: {+%}
@@ -74,6 +67,13 @@ t2 critical miss air
     50 40 32 25.6 20.48 16.384 13.1072 10.48576 10
     a/af/Critical_Miss.png
     1(blinding sprint, dazzling display, light smite)
+status dazzling display fire
+    Your **Attacks** may inflict **Daze**.
+    Daze CHance: {+%}
+    10 15 20 25
+    5 3 2 1
+    f/f0/Dazzling_Display.png
+    1(nova strike)
 infusion self healing none
     While you have at least **3** **<:FireEssence:1251066561071026238>**, whenever you take damage, restore some **<:Life:1241660063513448499>**.
     Damage Recovered: {%} *(over 5 Sec.)*
@@ -88,3 +88,52 @@ legendary exceptional talent air
     0
     1/15/Exceptional_Talent.png
     1(nova strike, nova flourish); 1(solar ring, lucid gain); 1(extra dose, super nova)
+duo sunny disposition aether
+    Whenever you create **Heartthrobs**, create more.
+    Bonus Heartthrobs: {+}
+    2
+    0
+    2/2c/Sunny_Disposition.png
+    1(heart breaker); 1(nova strike, nova flourish, solar ring, lucid gain)
+duo torrential downpour aether
+    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1250935754461544478>**.
+    Damage per Omega Cast: {+%}
+    20
+    0
+    9/9a/Torrential_Downpour.png
+    1(solar ring, blinding sprint, lucid gain); 1(arctic ring, frigid sprint, tranquil gain)
+duo stellar slam aether
+    Your blast effects from **Hephaestus** deal damage in a larger area.
+    Blast Size: {+%}
+    50
+    0
+    c/c5/Stellar_Slam.png
+    1(nova strike, nova flourish, super nova); 1(volcanic strike, volcanic flourish, smithy sprint)
+duo sun worshiper aether
+    In each **Encounter**, the first foe you slay returns to fight for you.
+    Servant Damage: {+%}
+    200
+    0
+    2/2c/Sun_Worshiper.png
+    1(solar ring, blinding sprint, lucid gain); 1(engagement ring, nexus sprint, born gain)
+duo phoenix skin aether
+    Give up **-100** **<:MaxLife:1241662636995772436>**. If you do not take or deal damage for **3 Sec.**, rapidly restore **<:Life:1241660063513448499>**.
+    Life Restoration: {} *(every 1 Sec.)*
+    3
+    0
+    8/82/Phoenix_Skin.png
+    1(nova strike, nova flourish, lucid gain); 1(flame strike, flame flourish, smolder ring); 1(burnt offering, flammable coating, hearth gain)
+duo beach ball aether
+    Your **Sprint** creates a watery sphere behind you. After you stop, it surges ahead and bursts.
+    Blast Damage: {}
+    140
+    0
+    1/1b/Beach_Ball.png
+    1(blinding sprint, lucid gain); 1(breaker sprint, fluid gain)
+duo glorious disaster aether
+    You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
+    Bolt Damage: {} *(every 0.13 Sec.)*
+    50
+    0
+    d/df/Glorious_Disaster.png
+    1(solar ring); 1(heaven strike, heaven flourish, thunder sprint)

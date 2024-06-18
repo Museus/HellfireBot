@@ -160,6 +160,14 @@ async def legendaries(ctx):
     await misc.reply(ctx, embed=embeds.legendaries_embed())
 
 
+@client.command(aliases=['duo', 'double', 'green'])
+async def duos(ctx):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    await misc.reply(ctx, embed=embeds.duos_embed())
+
+
 @client.command(aliases=['d', 'def', 'defs', 'defines', 'definition', 'definitions'])
 async def define(ctx, *args):
     if misc.channel_status(ctx) > 1:
@@ -281,12 +289,29 @@ async def suggest(ctx, *args):
     await misc.reply(ctx, 'Thank you for your contribution!')
 
 
-@client.command(aliases=['loadout', 'loadouts', 'arcanaloadouts', 'aload', 'arcload', 'arcloadout'])
+@client.command(aliases=[
+    'loadout', 'loadouts', 'arcanaloadouts', 'aload', 'arcload', 'arcloadout', 'arcanagen', 'arcgen']
+)
 async def arcanaloadout(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
     total_grasp = arcanagen.arcana_gen(args)
+    await misc.reply(
+        ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
+    )
+    os.remove('./temp.png')
+
+
+@client.command(aliases=[
+    'randomarcana', 'rarcana', 'randomloadout', 'randloadout', 'rloadout',
+    'randomcards','randcards', 'rcards', 'randomcard', 'randcard', 'rcard'
+])
+async def randarcana(ctx, total_grasp=30):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    total_grasp = arcanagen.arcana_gen(arcanagen.rand_arcana(int(total_grasp)))
     await misc.reply(
         ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
     )

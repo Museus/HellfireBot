@@ -36,36 +36,30 @@ t1 molten touch fire
     20 30 40 50
     20 10 5
     4/46/Molten_Touch.png
-t1 heavy metal earth
-    Gain some **<:Armor:1243126987032363048>**. Foes' attacks cannot knock you away.
-    Armor Gained: {+}<:Armor:1243126987032363048>
-    50 75 100 125
-    0
-    2/23/Heavy_Metal.png
+t1 tough trade fire
+    If you take damage during your **Attacks** or **Specials**, they are stronger if they hit.
+    Bonus Weapon Damage: {+%}
+    100 125 150 175
+    25 15 10
+    b/b7/Tough_Trade.png
 t1 mint condition earth
     At the start of each **Encounter**, you are briefly **Impervious**.
     Impervious Duration: {s}
     8 10 12 14
     2 1
     5/5e/Mint_Condition.png
+t1 heavy metal earth
+    Gain some **<:Armor:1243126987032363048>**. Foes' attacks cannot knock you away.
+    Armor Gained: {+}<:Armor:1243126987032363048>
+    50 75 100 125
+    0
+    2/23/Heavy_Metal.png
 t1 uncanny fortitude earth
     Gain bonus **<:MaxLife:1241662636995772436>** based on your **<:Magick:1250935754461544478>** limit.
     Max Life from Magick: {+%}
     20 30 40 50
     0
     a/a8/Uncanny_Fortitude.png
-revenge tough trade fire
-    If you take damage during your **Attacks** or **Specials**, they are stronger if they hit.
-    Bonus Weapon Damage: {+%}
-    100 125 150 175
-    25 15 10
-    b/b7/Tough_Trade.png
-prime trusty shield earth
-    After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478>** to gain **Armor** until the next **Location**.
-    Starting Armor: {+}<:Armor:1243126987032363048>
-    10 15 20 25
-    5 3 2
-    3/32/Trusty_Shield.png
 status furnace blast fire
     Your blast effects from **Hephaestus** also inflict **Vent** on foes.
     Vent Damage: {}
@@ -73,6 +67,12 @@ status furnace blast fire
     50 30 20
     1/10/Furnace_Blast.png
     1(volcanic strike, volcanic flourish, smithy sprint)
+prime trusty shield earth
+    After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478>** to gain **Armor** until the next **Location**.
+    Starting Armor: {+}<:Armor:1243126987032363048>
+    10 15 20 25
+    5 3 2
+    3/32/Trusty_Shield.png
 infusion martial art none
     Your **Attack** and **Special** deal more damage for each **<:EarthEssence:1251066559112417312>** you have.
     Damage per Earth Boon: {+%}
@@ -87,3 +87,52 @@ legendary fine tuning earth
     0
     d/d3/Fine_Tuning.png
     1(volcanic strike, volcanic flourish); 1(heavy metal, trusty shield, mint condition); 1(tough trade, molten touch, furnace blast)
+duo soft caress aether
+    The first time you would take damage each **Encounter**, get **<:Healing:1028193572840816722>** instead.
+    Damage Turned to Healing: {%}
+    100
+    0
+    9/9d/Soft_Caress.png
+    1(rapture ring, passion dash, glamour gain); 1(anvil ring, smithy sprint, fixed gain)
+duo stellar slam aether
+    Your blast effects from **Hephaestus** deal damage in a larger area.
+    Blast Size: {+%}
+    50
+    0
+    c/c5/Stellar_Slam.png
+    1(nova strike, nova flourish, super nova); 1(volcanic strike, volcanic flourish, smithy sprint)
+duo room temperature aether
+    Your blast effects from **Hephaestus** clear **Freeze**, so you **Freeze** foes again right away.
+    Freeze Re-Apply Time: {s}
+    0
+    0
+    6/66/Room_Temperature.png
+    1(ice strike, ice flourish); 1(volcanic strike, volcanic flourish, smithy sprint)
+duo spiteful strength aether
+    Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
+    Boon-Less Bonus Damage: {+%}
+    200
+    0
+    c/c6/Spiteful_Strength.png
+    1(fixed gain, trusty shield, mint condition, heavy metal, tough trade, uncanny fortitude); 1(born gain, brave face, nasty comeback, keen intuition)
+duo chain reaction aether
+    If you use your blast effects from **Hephaestus** just after they recharge, they fire **2** times.
+    Double Blast Timing: **0.85 Sec.**
+    0
+    0
+    c/c5/Chain_Reaction.png
+    1(volcanic strike, volcanic flourish); 1(flame strike, flame flourish, smolder ring)
+duo seismic hammer aether
+    Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
+    Blast Recharge Time: {s}
+    15
+    0
+    d/d9/Seismic_Hammer.png
+    1(volcanic strike, volcanic flourish, smithy sprint); 1(geyser ring)
+duo master conductor aether
+    Your chain-lightning deals more damage per bounce and can bounce to you.
+    Damage per Bounce: {+%}
+    15
+    0
+    f/f9/Master_Conductor.png
+    1(fixed gain, trusty shield, heavy metal, mint condition, tough trade); 1(static shock)

@@ -4,6 +4,10 @@ import misc
 
 boons_info = {}
 legendary_info = []
+duo_info = {
+    'aphrodite': [], 'apollo': [], 'demeter': [], 'hephaestus': [],
+    'hera': [], 'hestia': [], 'poseidon': [], 'zeus': []
+}
 charon_info = {}
 aspects_info = {}
 hammers_info = {}
@@ -20,12 +24,11 @@ aliases = {
 god_cores = {
     'aphrodite': {}, 'apollo': {}, 'demeter': {},
     'hephaestus': {}, 'hera': {}, 'hestia': {},
-    'poseidon': {}, 'zeus': {}, 'duo': {},
-    'arachne': {}, 'artemis': {}, 'chaos': {},
-    'charon': {}, 'circe': {}, 'echo': {},
-    'hades': {}, 'hermes': {}, 'icarus': {},
-    'medea': {}, 'narcissus': {}, 'selene': {},
-    'path of stars': {}
+    'poseidon': {}, 'zeus': {}, 'arachne': {},
+    'artemis': {}, 'chaos': {}, 'charon': {},
+    'circe': {}, 'echo': {}, 'hades': {},
+    'hermes': {}, 'icarus': {}, 'medea': {},
+    'narcissus': {}, 'selene': {}, 'path of stars': {}
 }
 global_arcana = {}
 commands_info = {}
@@ -44,9 +47,11 @@ for god in god_cores:
             *boon, element = boon.split()
             boon = ' '.join(boon)
             if _type in ('attack', 'special', 'cast', 'sprint', 'gain',
-                         'revenge', 'prime', 'status', 'infusion', 'legendary'):
+                         'revenge', 'prime', 'status', 'infusion', 'legendary', 'duo'):
                 if _type == 'legendary':
                     legendary_info.append(boon)
+                elif _type == 'duo':
+                    duo_info[god].append(boon)
                 if _type not in god_cores[god]:
                     god_cores[god][_type] = []
                 god_cores[god][_type].append(boon)
@@ -55,6 +60,11 @@ for god in god_cores:
             rarities = f.readline().split()
             levels = f.readline().split()
             icon = f.readline().strip()
+            if boon in boons_info:
+                boons_info[boon]['god'] = (boons_info[boon]['god'], god)
+                boons_info[boon] = boons_info.pop(boon)
+                f.readline()
+                continue
             boons_info[boon] = {
                 'god': god, 'type': _type, 'desc': description, 'stat': stat,
                 'rarities': rarities, 'levels': levels, 'icon': icon

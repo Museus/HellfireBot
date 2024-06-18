@@ -281,11 +281,12 @@ def eligible_embed(args):
             if parsed_a:
                 current_boons.append(f'aspect of {parsed_a[0][0]}')
     eligible_boons = []
-    for possible_boon in files.boons_info:
-        if files.boons_info[possible_boon]['god'] in (god, 'duos') and possible_boon not in current_boons:
+    for possible_boon, info in files.boons_info.items():
+        if ((info['god'] == god or (len(info['god']) == 2 and any(g == god for g in info['god'])))
+                and possible_boon not in current_boons):
             if possible_boon not in files.prereqs_info:
                 eligible_boons.append(possible_boon)
-            elif eligible_boon(files.prereqs_info[possible_boon], current_boons):
+            elif eligible_boon(info, current_boons):
                 eligible_boons.append(possible_boon)
     embed = discord.Embed(
         title=f'Eligible Boons from **{misc.capwords(god)}**',
@@ -396,9 +397,9 @@ def god_embed(args):
         embed.set_thumbnail(url=misc.to_link('1251078156622893057'))
         return embed
     god_boons = {'Core': []}
-    for boon_name in files.boons_info:
-        if files.boons_info[boon_name]['god'] == name:
-            category = files.boons_info[boon_name]['type']
+    for boon_name, info in files.boons_info.items():
+        if info['god'] == name or (len(info['god']) == 2 and name in info['god']):
+            category = info['type']
             if category in ('attack', 'special', 'cast', 'sprint', 'gain'):
                 god_boons['Core'].append(boon_name)
             else:
@@ -427,6 +428,17 @@ def legendaries_embed():
         description='\n'.join([misc.capwords(legendary) for legendary in files.legendary_info]),
         color=misc.rarity_embed_colors[4]
     )
+    embed.set_thumbnail(url=misc.to_link('1027126357597093969'))
+    return embed
+
+
+def duos_embed():
+    embed = discord.Embed(
+        title='List of **Duos**',
+        color=misc.rarity_embed_colors[5]
+    )
+    for god, duos in files.duo_info.items():
+        embed.add_field(name=misc.capwords(god), value='\n'.join([misc.capwords(duo) for duo in duos]))
     embed.set_thumbnail(url=misc.to_link('1027126357597093969'))
     return embed
 
@@ -574,7 +586,7 @@ def vow_embed(args):
         desc = parsing.parse_stat(info['desc'], value)[2:]
         desc += f'\n▸Fear: **{sum(map(int, info["fears"][:rank]))}** <:Fear:1251066119889092610>'
         embed = discord.Embed(
-            title=f'**{misc.capwords(name)}** (Rank {"I" * rank})',
+            title=f'**{misc.capwords(name)}** (Rank {"I" * rank} / {"I" * len(info["ranks"])})',
             description=desc,
             color=misc.god_colors['vow']
         )

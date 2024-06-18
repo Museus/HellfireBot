@@ -1,370 +1,226 @@
-billowing strength
-    billowing
-lightning reflexes
-    reflex, lightning reflex, reflexes
-heaven's vengeance
-    vengeance
-clouded judgment
-    clouded judgement
-high voltage
-    voltage
-double strike
-    dstrike
-storm lightning
-    storm
-static discharge
-    jolt, jolted
-splitting bolt
-    splitting, bolt
-tidal dash
-    splash dash, splashdash
-boiling point
-    boiling
-hydraulic might
-    hydraulic
-sunken treasure
-    sunken, treasure
-ocean's bounty
-    ocean's, bounty, oceans, oceans bounty, ocean, ocean bounty
-typhoon's fury
-    typhoon, typhoons, typhoon's, typhoon fury, typhoons fury
-wave pounding
-    pounding
-rip current
-    rip
-breaking wave
-    bwave, bwaver, beaver
-razor shoals
-    shoal, shoals, razor shoal, rupture, ruptured
-second wave
-    second
-huge catch
-    catch
-divine dash
-    dd, ddash, titan toppler, idk man, idk man as
-holy shield
-    holy, shield
-bronze skin
-    bronze
-deathless stand
-    death defiance, dd, deathless
-last stand
-    death defiance, dd, last
-proud bearing
-    bearing
-sure footing
-    footing
-blinding flash
-    expose, exposed
-brilliant riposte
-    riposte
-divine protection
-    divine, protection
-dying lament
-    lament
-wave of despair
-    despair
-life affirmation
-    affirm, affirmation
-different league
-    different, league
-empty inside
-    empty
-broken resolve
-    broken, resolve
-blown kiss
-    blown, kiss, blownkiss
+rapture ring
+    rapture
+passion dash
+    pash dash
+glamour gain
+    glamor gain, glamour, glamor
+shameless attitude
+    high confidence, hc
+heart breaker
+    heartbreaker, heartthrob, heart throb, hearthrob
+secret crush
+    crush
 sweet surrender
     surrender
-unhealthy fixation
-    fixation
-pressure points
-    pp, ppoints
-exit wounds
-    exit wound
-clean kill
-    ckill
-support fire
-    support, sf, sfire
-hide breaker
-    hidebreaker
-hunter instinct
-    instinct, hunter's instinct, hunters instinct
-hunter's mark
-    hunters mark, mark, marked
-fully loaded
-    fully, loaded
-curse of vengeance
-    vengeance
-urge to kill
-    urge, killing urge
-blood frenzy
-    frenzy
-battle rage
-    rage, battlerage
-black metal
-    black, metal
-engulfing vortex
-    engulfing
-dire misfortune
-    dire
-impending doom
-    impending
-vicious cycle
-    vicious
-drunken dash
-    nasty, nasty dash, trash dash
-premium vintage
-    pv, vintage
-after party
-    afterparty
-strong drink
-    drink, fountain, fountains
-positive outlook
-    outlook
-high tolerance
-    tolerance
-bad influence
-    influence
-numbing sensation
-    numbing, numb sensation
-peer pressure
-    pp, ppressure
-black out
-    blackout
-snow burst
-    burst, sburst, snurst, snow burst
-frozen touch
-    frozen
+ecstatic obsession
+    obsession
+solar ring
+    solar
+blinding sprint
+    blinding
+lucid gain
+    lucid
+super nova
+    supernova, growing cast
+light smite
+    apollo revenge, revenge
+dazzling display
+    dazzling, dazzle
+arctic ring
+    arctic
+frigid sprint
+    frigid, cyclone sprint, sprint cyclone
 rare crop
     crop
-nourished soul
-    nourish, nourished, food
-ravenous will
-    rav, ravwill, rav will
-glacial glare
-    glacier, glacial
-arctic blast
-    arctic, blast
-killing freeze
-    killing, freeze
+local climate
+    local, climate
+gale force
+    cyclone cast, cast cyclone
+plentiful forage
+    forage
+winter coat
+    coat
+coarse grit
+    grit
 winter harvest
-    winter, harvest, winter's, winter's harvest, winters, winters harvest
-wishing well
-    wishing, well, wish well, fountain, fountains
-melodic concert
-    melodic, melody, concert, melody concert, fountain, fountains, protect
-future sight
-    future, sight, fated persuasion, persuasion
-golden fleece
-    golden, fleece, gold, gold fleece, fated authority, authority
-divine law
-    divine, law
-panacea's elixir
-    panacea, elixir, panacea's, panaceas, panaceas elixir, panacea elixir
-icarus wings
-    icarus, wings, icarus wing
-purest light
-    purest, light, pure, pure light
-molten core
-    molten, core, melting core
-melting heart
-    melting
-open arms
-    open arm, arms, open
-eternal flame
-    eternal, flame, endless flame
-home turf
-    turf
-homecoming
-    death defiance, dd, home coming
-temperance
-    stubborn defiance, sd
-molten sting
-    molten, sting, melting sting
-modlegendary royal hearth
-    royal, hearth, heart, royal heart
-quick reload
-    qr, qreload, reload
-auto reload
-    reload, areload
-greatest reflex
-    gr, greflex, reflex
-side hustle
-    hustle
+    harvest
+anvil ring
+    anvil
+smithy sprint
+    smithy
+fixed gain
+    fixed
+mint condition
+    mint
+uncanny fortitude
+    uncanny, fortitude
+trusty shield
+    trusty
+furnace blast
+    vent
+martial art
+    martial arts
+engagement ring
+    engagement, ering
+nexus sprint
+    nexus
+born gain
+    born again, born
+family trade
+    trade, sacrifice
+bridal glow
+    glow
+keen intuition
+    intuition
+uncommon grace
+    uncommon, grace
+nasty comeback
+    comeback, hera revenge, revenge
+hereditary bane
+    bane
+proper upbringing
+    upbringing
+smolder ring
+    rof
+soot sprint
+    soot
+hearth gain
+    hearth
+burnt offering
+    offering
+glowing coal
+    coal, glowing coals, coals
+controlled burn
+    burn
+spontaneous combustion
+    combustion
+natural gas
+    gas
+fire extinguisher
+    extinguisher, extinguish
+flammable coating
+    coating
+pyro technique
+    pyro
+geyser ring
+    geyser
+breaker sprint
+    tidal dash, tidal, tdash, splash dash, splashdash
+double up
+    haha yes
+hydraulic might
+    hydro, hydro might, hydraulic
+sunken treasure
+    treasure
+ocean's bounty
+    oceans bounty, bounty
+slippery slope
+    slip
+crashing wave
+    breaking wave, bwave, beaver, b wave
+water fitness
+    fitness
+king tide
+    king
+ionic gain
+    ionic
+lightning lance
+    lance
+spirit surge
+    surge, ssurge, spirit
+divine vengeance
+    zeus vengeance, heaven's vengeance, heavens vengeance, zeus revenge, revenge
+static shock
+    shock
+second strike
+    double strike, dstrike
+toasting fork
+    toasting, fork
+electric overload
+    overload
+sunny disposition
+    triple heartthrob, triple heart throb
+hearty appetite
+    appetite
+soft caress
+    caress
+soul mate
+    soulmate
+burning desire
+    desire
+island getaway
+    getaway
+romantic spark
+    spark
+torrential downpour
+    torrential, downpour
+stellar slam
+    stellar, slam
+sun worshiper
+    sun worshipper, worshiper, worshipper
+phoenix skin
+    ps
+beach ball
+    bball
+glorious disaster
+    glorious, disaster
+cherished heirloom
+    heirloom
+spiteful strength
+    spiteful
+seismic hammer
+    seismic
+master conductor
+    conductor
+funeral pyre
+    pyre
+golden rule
+    hoarding slash
+queen's ransom
+    queens ransom
+king's ransom
+    kings ransom
+scalding vapor
+    scalding, vapor, steam
+thermal dynamics
+    thermodynamics, dynamics
+killer current
+    current
+pressure points
+    pp, pressure point
+silver streak
+    sstreak, streak
+lethal snare
+    snare
+death warrant
+    warrant, hunters mark, mark, marked, hunter's mark, hmark
+nitro boost
+    nitro
+witty retort
+    retort
 greater evasion
-    greater, evasion
-second wind
-    second
-greater haste
-    greater, haste
-flurry cast
-    flurry, flast
-quick favor
-    qf
-quick recovery
-    qr, recovery
-hyper sprint
-    hs, sprint
-rush delivery
-    rd, delivery
-greater recall
-    greater, recall
-bad news
-    news
-curse of longing
-    col
-heart rend
-    hr, rend, heartrend
-parting shot
-    parting
-cold embrace
-    embrace
-low tolerance
-    lt
-sweet nectar
-    nectar
-smoldering air
-    smair, smolder, smoldering
-hunting blades
-    hunting, hb
-merciful end
-    me, mend
-freezing vortex
-    freezing
-curse of nausea
-    nausea
-curse of drowning
-    cod
-vengeful mood
-    vengeful
-deadly reversal
-    reversal, dr
-crystal clarity
-    clarity
-splitting headache
-    splitting, headache
-mirage shot
-    mirage
-lightning rod
-    rod, r o d
-stubborn roots
-    stubborn, roots, stubborn root
-calculated risk
-    calculated
-unshakable mettle
-    unshakable, mettle, unshakeable, unshakeable mettle
-lightning phalanx
-    lp, lphalanx
-ice wine
-    wine
-blizzard shot
-    blizzard
-cold fusion
-    fusion
-exclusive access
-    ea, exclusive
-scintillating feast
-    scintillating
-sea storm
-    ss, sstorm, seastorm
-chilling melody
-    chilling, melody
-archery lessons
-    archer, lessons, lesson, archery lesson, archer lessons, archer lesson
-famed duet
-    famed, fame, famous, duet, duo, famed duo, fame duet, fame duo, famous duet, famous duo
-hyacinth
-
-master bolt
-    master, bolt, masterbolt
-blinding fog
-    blinding
-festive bomb
-    festive
-sea chantey
-    seachantey, chantey, shanty, sea shanty, seashanty
-war song
-    song, warsong
-striking sparks
-    striking, sparks, spark, striking spark
-unrequited love
-    unrequited
-danger zone
-    danger, zone, dangerzone
-bouldy
-    heart of stone, <:bouldy:1014438782755422220>
-hades' aid
-    hades, dad, hades aid, hades call, hades' call, hades's aid, hades's call, dad call, dad aid, dad's call, dad's aid, sigil, sigil of the dead
-cyclops jerky
-    cyclop jerky, cyclop, cyclops, attack jerky, jerky strike, attack damage
-chimaera jerky
-    chimaera, special jerky, flourish jerky, jerky flourish, special damage
-braid of atlas
-    braid, atlas braid, cast damage
-prometheus stone
-    stone, prometheus, extra cast
-aether net
-    aether, aethernet, ethernet
-nemesis crest
-    nemesis, backstab damage
-eris bangle
-    bangle, undamaged damage
-nail of talos
-    nail, talos nail, armor damage, armour damage
-ignited ichor
-    ichor
-stygian shard
-    shard
-kiss of styx
-    kos
-touch of styx
-    tos
-life essence
-    life essense, essence
-hydralite
-    hydra lite
-eye of lamia
-    lamia eye, lamia
-centaur soul
-    centaur
-light of ixion
-    ixion, chaos, chaos gate
-trove tracker
-    trove
-skeletal lure
-    lure, fish, fishing, fishing rod, rod of fishing
-price of midas
-    midas
-tinge of erebus
-    erebus
-gaea's treasure
-    gaea, gaeas treasure, gaea treasure
-yarn of ariadne
-    yarn, ariadne, ariadne yarn, yarn ariadne
-flame wheels release
-    flame wheel, flamewheel, flame wheels, flamewheels, flame wheel release, flamewheels release, flamewheel release
-night spindle
-    spindle
-fateful twist
-    fateful, twist
-shifter
-    shift, shifters, teleport, teleporter, teleporters
-bruiser
-    bruiser, bruisers
-slugger
-    slug, sluggers
-puller
-    pull, aura, field, pullers
-savior
-    damage control, dc, blue shield, blue shields, shield, shields, saviors
-speeder
-    speed, speeders
-linker
-    laser, link, linkers
-cloner
-    clone, cloners
-burner
-    burners, burn, lava, magma, lava pool, lava pools, magma pool, magma pools
-seeker
-    seek, seekers
+    evasion, dodge
+close call
+    hermes dd
+lavender dress
+    lavender
+scarlet dress
+    scarlet
+onyx dress
+    onyx
+moonlight dress
+    moonlight
+azure dress
+    azure
+emerald dress
+    emerald
+evade evade evade
+    evade
+fight fight fight
+    fight
+survive survive survive
+    survive
+reward reward reward
+    reward
+boon boon boon
+    boon

@@ -49,7 +49,7 @@ torch moros
 torch eos
     Your **Ω Attack** fires a **Daybreaker** that deals damage in an area around it every **2 Sec.**
     Daybreaker Blast Damage: {}
-    40 80 120 160 200 240
+    50 75 100 125 150 200
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
     thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
 axe melinoë axe
@@ -83,7 +83,7 @@ skull medea
     She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
     thumb/4/4b/Skull-Medea.png/80px-Skull-Medea.png
 skull persephone
-    Your **Ω Cast** generates **<:Glory:1251233978988495050> Glory** when it hits, which extends your **Ω Special**.
+    Your **Ω Special** is enhanced, and damage from your **Casts** can extend it by up to **+2 Sec.**.
     Omega Move Damage: {+%}
     10 15 20 25 30 40
     Life and death, forever embodied in a Queen both splendorous and dark at once.

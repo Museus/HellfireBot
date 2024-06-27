@@ -20,6 +20,8 @@ cast
     A binding spell that ensnares foes and can gain other properties.
 dash
     Rush forward a short distance, avoiding any damage.
+dashing
+    Press to quickly lunge forward, avoiding damage; hold to keep running at top speed.
 dash-strike
     Press to Dash then immediately press to attack.
 sprint
@@ -41,7 +43,7 @@ prime
 hex
     After using enough <:Magick:1250935754461544478> while foes are near, press to invoke the Moon's might.
 path of stars
-    Grants your choice of **3** interconnected upgrades for your **Hex** this night.
+    Grants your choice of **3** or more linked upgrades for your **Hex** this night.
 locations, location
     Various places comprising the **Regions** of the world beyond the Crossroads.
 encounter, encounters
@@ -86,6 +88,8 @@ heroic
     Blessings imbued with ultimate power.
 duo
     Blessings with the power of two different gods, offered to those favored by both.
+infusion
+    Blessings that grow in power the more <:EarthEssence:1251066559112417312> <:WaterEssence:1251066562312671344> <:AirEssence:1251066557921099786> <:FireEssence:1251066561071026238> <:AetherEssence:1251066556717469809> you have.
 rarify
     When choosing **Boons**, boost the **Rarity** of one that isn't already too rare.
 fountains
@@ -106,8 +110,6 @@ daybreaker
     A slow seeking shot that blasts nearby foes and copies your **Specials**. Limit **1** at a time.
 mortality
     A fleeting bonus of **+1%** **Critical** chance for your **Ω Moves**, up to a max of **+13%**.
-<:Glory:1251233978988495050> glory
-    Makes your **Ω Special** last up to **+2 Sec.**, firing continuously while you have control.
 <:Shell:1250941173841924258> shells, <:Shell:1250941173841924258> shell
     Ammunition for your **Attacks**. Retrieve from the field to re-use.
 <:DeathDefiance:1251289623720890420> death defiance, <:DeathDefiance:1251289623720890420>, death defiance
@@ -115,7 +117,9 @@ mortality
 <:Reroll:1028190585280012348> change of fate, <:Reroll:1028190585280012348>
     Used to alter various outcomes presented to you, depending on your **Arcana**.
 curse
-    A temporary debilitating effect inflicted by the Olympian gods.
+    A temporary debilitating effect caused by the Olympian gods.
+curses
+    Temporary debilitating effects caused by the Olympian gods.
 awakening
     Cards that use **0** <:Grasp:1250935195700563978> and auto-activate, but only if their condition is met.
 <:BlueHeart:1250926931264671865> barrier, <:BlueHeart:1250926931264671865>
@@ -135,13 +139,11 @@ revenant
 <:AetherEssence:1251066556717469809> aether, <:AetherEssence:1251066556717469809>
     **Boons** imbued with the element of Aether.
 weak
-    *Curse:* Afflicted foes deal at least **10%** less damage. Lasts **3 Sec.**
+    *Curse:* Afflicted foes deal at least **30%** less damage. Lasts **4 Sec.**
 heartthrob
     An explosive projectile that revolves around you. Expires after **20 Sec.**
 heartthrobs
     Explosive projectiles that revolve around you. Expire after **20 Sec.**
-lone shades
-    Lingering spirits found in some **Encounters**, wallowing in search of meaning.
 charm
     *Curse:* Causes the afflicted foe to turn against your other foes.
 daze
@@ -149,17 +151,17 @@ daze
 freeze
     *Curse:* Afflicted foes are stopped for **2 Sec.** Can be re-applied after **10 Sec.**
 cyclone
-    A vortex that makes foes **20%** slower and their ranged shots **60%** slower. Lasts **3 Sec.**
+    *Curse:* Afflicted foes are **20%** slower, and their ranged shots **60%** slower. Lasts **3 Sec.**
 <:MysterySeed:1251063943875788810> mystery seeds, mystery seeds, <:MysterySeed:1251063943875788810>
     May grow to become one of several different kinds of valuable plants.
 keepsakes
     Artifacts of power symbolizing the bond between two strong souls.
 scorch
-    *Curse:* Afflicted foes take **40** damage accrued from this every **1 Sec.**
+    *Curse:* Afflicted foes take **80** damage accrued from this every **1 Sec.**
 armor
     Elite foes cannot be stunned or knocked away until you break their golden barriers.
 vent
-    *Curse:* After **5 Sec.**, afflicted foes take a burst of damage. Timer resets if re-applied.
+    *Curse:* After **4 Sec.**, afflicted foes take a burst of damage. Timer resets if re-applied.
 aspect
     Alternate forms of the **Nocturnal Arms**, each with their own distinct style.
 hitch
@@ -172,6 +174,8 @@ steam
     A burning cloud that removes **Slip** from foes and rapidly deals damage. Lasts **2 Sec.**
 blitz
     *Curse:* After taking **120** damage, afflicted foes get struck by lightning. Lasts **3 Sec.**
+aether font
+    Restores your <:Magick:1250935754461544478> when used, then expires, eventually reappearing in a random spot.
 spirit bubble
     Restores **20** <:Magick:1250935754461544478> when you touch it. Expires when used, or after **30 Sec.**
 slip
@@ -230,3 +234,5 @@ inferno-bomb
     Mostly used to trade for <:Bones:1250204963951480966> from the **Broker**.
 <:StarDust:1250207630769651812> star dust, <:StarDust:1250207630769651812>
     Mostly used to create powerful resources that unlock true strength.
+<:EarthEssence:1251066559112417312> <:WaterEssence:1251066562312671344> <:AirEssence:1251066557921099786> <:FireEssence:1251066561071026238> elements
+    Essences of the elements, each of which enhances certain **Boons**.

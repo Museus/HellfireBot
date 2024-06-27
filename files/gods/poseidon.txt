@@ -3,7 +3,7 @@ attack wave strike water
     Your **Attacks** hit foes with a splash that knocks other foes away.
     Splash Damage: {}
     15 20 25 30
-    5 2.5
+    5
     1/18/Wave_Strike.png
 special wave flourish water
     Your **Specials** hit foes with a splash that knocks other foes away.
@@ -11,11 +11,11 @@ special wave flourish water
     20 30 40 50
     10 8 6.4 5.12 4.096 4
     6/64/Wave_Flourish.png
-cast geyser ring water
-    Your **Ω Cast** immediately detonates, dealing damage and knocking foes away.
-    Omega Cast Damage: {}
-    100 150 200 250
-    50 30 20 10
+cast tidal ring water
+    Your **Casts** also immediately hit foes in front of you with a powerful splash.
+    Splash Damage: {}
+    90 135 180 225
+    45 36 28.8 23.04 18.432 18
     8/86/Geyser_Ring.png
 sprint breaker sprint water
     Your **Sprint** deals damage on impact and knocks foes away, but uses **5** **<:Magick:1250935754461544478>** per hit.
@@ -41,25 +41,25 @@ t1 hydraulic might water
     100 133 166 200
     23 11.5 10
     b/b4/Hydraulic_Might.png
-t1 sunken treasure water
-    Gain **<:GoldenCrowns:1250942621044576308>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**.
-    Gold Received: {+}
-    90 117 144 171
-    0
-    f/fa/Sunken_Treasure.png
+t1 splash fount water
+    Whenever you use **Ω Moves**, create a watery blast near the first foe you damage.
+    Delayed Blast Damage: {}
+    50 60 70 80
+    10 5
+    8/8a/Crashing_Wave.png
 t1 ocean's bounty water
-    Any **Minor Finds** and **<:GoldReward:1250940286230597682>** are worth more.
-    Reward Bonus: {+%}
+    Any **Minor Finds** and **<:GoldReward:1250940286230597682>** are worth more. Receive **<:GoldenCrowns:1250942621044576308>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**, now.
+    Reward Value: {+%}
     50 75 100 125
     0
     a/a7/Ocean%27s_Bounty.png
-t2 crashing wave water
-    Whenever your knock-away effects slam foes into barrier, create a blast in the area.
-    Blast Damage: {}
-    50 65-75 90-100 115-125
-    25 12.5 6.25 5
-    8/8a/Crashing_Wave.png
-    1(wave strike, wave flourish, geyser ring, breaker sprint)
+t2 geyser spout water
+    Your **Ω Cast** immediately detonates, dealing damage and knocking foes away.
+    Omega Cast Damage: {}
+    200 240 280 320
+    40 30 20
+
+    1(rapture ring, solar ring, arctic ring, anvil ring, engagement ring, smolder ring, tidal ring, storm ring); 1(prominence flare, lightning lance)
 prime flood control water
     After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478> Magick** to reduce any damage you would take.
     Damage Reduction per Hit: {-}
@@ -72,18 +72,18 @@ status slippery slope water
     5 10 15 20
     4 2 1 0.5
     a/a8/Slippery_Slope.png
-    1(wave strike, wave flourish)
+    1(wave strike, wave flourish, tidal ring)
 infusion water fitness none
-    While you have at least **4** **<:WaterEssence:1251066562312671344>**, gain **<:MaxLife:1241662636995772436>**.
-    Max Life: {+}
-    100
+    Gain **<:MaxLife:1241662636995772436>** for each **<:WaterEssence:1251066562312671344>** you have.
+    Max Life per Water Boon: {+}
+    15
     0
     f/fc/Water_Fitness.png
-    1(<:WaterEssence:1251066562312671344> water)
+    2(<:WaterEssence:1251066562312671344> water)
 legendary king tide water
     Your splash effects from **Poseidon** are larger and deal bonus damage to **Guardians**.
     Splash Damage vs. Guardians: {+%}
-    150
+    200
     0
     5/52/King_Tide.png
     1(wave strike, wave flourish); 1(slippery slope); 1(crashing wave)
@@ -95,16 +95,16 @@ duo island getaway aether
     2/29/Island_Getaway.png
     1(flutter strike, flutter flourish); 1(wave strike, wave flourish, geyser ring, breaker sprint)
 duo beach ball aether
-    Your **Sprint** creates a watery sphere behind you. After you stop, it surges ahead and bursts.
+    Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
     Blast Damage: {}
-    140
+    300
     0
     1/1b/Beach_Ball.png
     1(blinding sprint, lucid gain); 1(breaker sprint, fluid gain)
 duo natural selection aether
     **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
     Improved Rarity Chance: {+%}
-    20
+    45
     0
     7/7a/Natural_Selection.png
     1(frigid sprint, tranquil gain, winter coat, cold storage, rare crop); 1(breaker sprint, fluid gain, ocean's bounty, sunken treasure, double up)
@@ -125,7 +125,7 @@ duo golden rule aether
 duo scalding vapor aether
     If foes with **Slip** are struck by fire from **Hestia**, they are engulfed in **Steam**.
     Steam Damage: {+} *(every 0.2 Sec.)*
-    25
+    30
     0
     d/d7/Scalding_Vapor.png
     1(flame strike, flame flourish, smolder ring, spontaneous combustion, burning desire, controlled burn, glowing coal); 1(slippery slope)

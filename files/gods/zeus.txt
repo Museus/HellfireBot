@@ -3,35 +3,35 @@ attack heaven strike air
     Your **Attacks** inflict **Blitz**.
     Blitz Damage: {}
     80 120 160 200
-    40 30 20 10
+    20 15
     8/83/Heaven_Strike.png
 special heaven flourish air
     Your **Specials** inflict **Blitz**.
     Blitz Damage: {}
     100 140 180 220
-    40 30 20 10
+    40 30 20
     6/6b/Heaven_Flourish.png
 cast storm ring air
-    Your **Ω Cast** also causes lightning bolts to repeatedly strike **1** foe at a time.
+    Your **Casts** cause lightning bolts to repeatedly strike **1** foe at a time.
     Bolt Damage: {} *(every 0.25 Sec.)*
-    30 40 50 60
-    10 5
+    20 25 30 35
+    5 4 3
     1/1e/Storm_Ring.png
 sprint thunder sprint air
-    Your **Sprint** causes nearby foes to be struck by lightning bolts, which use 3 <:Magick:1250935754461544478> each.
+    Your **Sprint** causes surrounding foes to be struck by lightning bolts, which use **3** **<:Magick:1250935754461544478>** each.
     Bolt Damage: {} *(every 0.15 Sec.)*
     20 25 30 35
     5 3 2
     3/33/Thunder_Sprint.png
 gain ionic gain air
-    Gradually restore <:Magick:1250935754461544478>, but your total amount is reduced by **70%**.
-    Magick Restoration: {+} *(every 1 Sec.)*
-    4 6 8 10
-    0
+    In each **Encounter**, an **Aether Font** appears in the area and restores *all* **<:Magick:1250935754461544478>** when used.
+    Reappearance Time: {s}
+    10 9 8 7
+    -1
     5/52/Ionic_Gain.png
 t1 divine vengeance air
     After you take damage, your foe is struck by lightning, and again **50%** of the time.
-    Bolt Damage: 100 *(up to {} times)*
+    Bolt Damage: **100** *(up to* {} *times)*
     2 3 4 5
     1
     b/ba/Divine_Vengeance.png
@@ -43,16 +43,16 @@ xt1 lightning lance air
     c/c6/Lightning_Lance.png
     x(local climate, glowing coal, howling soul)
 t1 spirit surge air
-    While you have no more than 10 <:Magick:1250935754461544478>, ***all*** foes are occasionally struck by lightning.
+    While you have no more than 10 <:Magick:1250935754461544478>, *all* foes are occasionally struck by lightning.
     Bolt Damage: {} *(every 5 Sec.)*
     60 75 90 105
-    15 7.5 6
+    12.5 6.25 5
     2/29/Spirit_Surge.png
-t2 second strike air
+t2 double strike air
     Your lightning bolt effects may strike **1** more time.
-    Bonus Strike Chance: {+%}
-    5 10 15 20
-    5 3 2 1
+    Bonus Bolt Chance: {+%}
+    10 15 20 25
+    5 3 2
     6/65/Double_Strike.png
     1(heaven strike, heaven flourish, storm ring, thunder sprint, spirit surge, divine vengeance, lightning lance)
 t2 toasting fork air
@@ -78,14 +78,14 @@ prime static shock air
 infusion air quality none
     While you have at least **5** **<:AirEssence:1251066557921099786>**, you can never deal less damage than the limit.
     Min Damage per Hit: {}
-    30 40 50 60
+    30
     0
     6/67/Air_Quality.png
     2(<:AirEssence:1251066557921099786> air)
 legendary shocking loss air
-    Most foes may be instantly destroyed as soon as they enter the **Encounter**.
+    Whenever you first deal damage to susceptible foes, you may destroy them outright.
     Instant Destruction Chance: {%}
-    7
+    20
     0
     1/12/Shocking_Loss.png
     1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(double strike, toasting fork); 1(static shock, electric overload)
@@ -99,28 +99,28 @@ duo romantic spark aether
 duo glorious disaster aether
     You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
     Bolt Damage: {} *(every 0.13 Sec.)*
-    50
+    25
     0
     d/df/Glorious_Disaster.png
-    1(solar ring); 1(heaven strike, heaven flourish, thunder sprint)
-duo apocalyptic storm aether
-    Your **Blitz** effects last longer, and activate against *all* **Blitz**-afflicted foes at once.
-    Blitz Duration: {+s}
-    8
+    1(prominence flare); 1(heaven strike, heaven flourish, storm ring, thunder sprint)
+duo hail storm aether
+    Your **Freeze** effects also cause lightning bolts to repeatedly strike afflicted foes.
+    Lightning Damage: {} *(every 0.3 Sec.)*
+    30
     0
     d/dc/Apocalyptic_Storm.png
-    1(ice strike, ice flourish, arctic ring, frigid sprint); 1(heaven strike, heaven flourish)
+    1(ice strike, ice flourish, arctic ring); 1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain)
 duo master conductor aether
     Your chain-lightning deals more damage per bounce and can bounce to you.
     Damage per Bounce: {+%}
-    15
+    20
     0
     f/f9/Master_Conductor.png
-    1(fixed gain, trusty shield, heavy metal, mint condition, tough trade); 1(static shock)
+    1(volcanic strike, volcanic flourish, anvil ring, smithy sprint, fixed gain); 1(static shock, electric overload)
 duo king's ransom aether
     Give up *all* your **Boons** of **Hera**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Zeus**.
     Bonus Lv. per Zeus Boon: {+}
-    2
+    4
     0
     f/f6/King%27s_Ransom.png
     1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain)

@@ -8,22 +8,22 @@
     2 3 4 5
     Even the Underworld itself struggled to contain him, such was his lust for life.
     thumb/f/f8/Card02.png/80px-Card02.png
-3 the huntress
+2 the huntress
     While you have less than **100%** **<:Magick:1250935754461544478>**, your **Attack** and **Special** deal **+50%** damage.
     30 40 50 60
     Through discipline and instinct comes surpassing skill both in shadow and the light of the Moon.
     thumb/9/91/Card03.png/80px-Card03.png
-3 death
-    Your **Ω Moves** have {+%} chance to deal **Critical** damage.
-    3 4 5 6
-    Some mortals would sense his soft approach, others taken by surprise.
-    thumb/d/d4/Card04.png/80px-Card04.png
-0 the messenger
-    You have {+%} chance to **Dodge**.
-    6 8 10 12
-    With incomparable swiftness can he travel from the highest peaks to the lowest depths.
-    thumb/2/29/Card05.png/80px-Card05.png
-    **Awakening**: *Activate at least* **3** *Cards that use the same amount of <:Grasp:1250935195700563978>.*
+2 night
+    Your **Ω Cast** has {+} **Power** whenever it detonates.
+    50 75 100 125
+    She sprang from Chaos, and formed much of the natural world, above the surface and below.
+    thumb/2/29/Card09.png/80px-Card09.png
+0 the moon
+    Your **Hex** also charges up automatically as though you used {m} every **1 Sec.**
+    1 2 3 4
+    Even as she races her steeds across the fathomless sky, she bears witness to all.
+    thumb/3/37/Card14.png/80px-Card14.png
+    **Awakening:** *Activate **any** surrounding Card.*
 2 the furies
     Deal {+%} damage to foes in your **Casts**.
     20 25 30 35
@@ -34,21 +34,21 @@
     20 30 40 50
     He stole from the gods the gift of fire, for mortals; thus he suffered, but grew strong.
     thumb/c/c5/Card07.png/80px-Card07.png
+1 the messenger
+    You have {+%} chance to **Dodge**.
+    3 4 5 6
+    With incomparable swiftness can he travel from the highest peaks to the lowest depths.
+    thumb/2/29/Card05.png/80px-Card05.png
 5 the unseen
     Restore {m} every **1 Sec.**
-    2 3 4 6
+    4 5 6 7
     Upon their ancient oath, in shadow, they serve; and to shadow, they return.
     thumb/7/7d/Card08.png/80px-Card08.png
-4 night
-    Your **Hex** also charges up automatically as though you used {m} every **1 Sec.**
-    2 3 4 5
-    She sprang from Chaos, and formed much of the natural world, above the surface and below.
-    thumb/2/29/Card09.png/80px-Card09.png
-2 the lovers
-    In **Guardian** **Encounters**, you take **0** damage the first {} time(s) you are hit.
-    1 2 3 4
-    Their music brought them together, and not even Death could keep them apart for too long.
-    thumb/c/c2/Card10.png/80px-Card10.png
+3 death
+    Your **Ω Moves** have {+%} chance to deal **Critical** damage if your last one was different.
+    9 12 15 18
+    Some mortals would sense his soft approach, others taken by surprise.
+    thumb/d/d4/Card04.png/80px-Card04.png
 1 the swift runner
     Your **Dash** is immediate and your **Sprint** is {%} faster.
     5 7 10 11
@@ -65,16 +65,16 @@
     Many of the greatest heroes mortalkind has to offer have in common his patient instruction.
     thumb/d/da/Card13.png/80px-Card13.png
     **Awakening**: *Activate Cards that use* **1** <:Grasp:1250935195700563978> *through* **5** <:Grasp:1250935195700563978>.
-3 the moon
-    Your **Ω Cast** has {+} **Power** whenever it detonates.
-    50 75 100 125
-    Even as she races her steeds across the fathomless sky, she bears witness to all.
-    thumb/3/37/Card14.png/80px-Card14.png
-5 strength
-    While you have no more than **30%** **<:Life:1241660063513448499>**, you take {-%} damage and deal {+%}.
-    30 40 50 60
-    The power to surpass the might of the gods is one that must always be held in check.
-    thumb/b/b7/Card15.png/80px-Card15.png
+5 origination
+    Deal {+%} damage to foes afflicted with **2+** **Curse** effects from different Olympians.
+    25 37 50 62
+    From the infinite void emerged all that exists, and back to that void it all may yet return.
+    thumb/e/e8/Card18.png/80px-Card18.png
+3 the lovers
+    In **Guardian** **Encounters**, you take **0** damage the first {} time(s) you are hit.
+    1 2 3 4
+    Their music brought them together, and not even Death could keep them apart for too long.
+    thumb/c/c2/Card10.png/80px-Card10.png
 3 the fates
     Set forth each night with {+} **<:Reroll:1028190585280012348>**. You can alter **Location Rewards**.
     1 2 3 4
@@ -85,11 +85,11 @@
     200 250 300 350
     Vast riches lie hidden in the realm of the dead; but only a modest fee is needed to get in.
     thumb/d/d1/Card17.png/80px-Card17.png
-3 origination
-    Deal {+%} damage to foes afflicted with at least **2** **Curse** effects.
-    25 37 50 62
-    From the infinite void emerged all that exists, and back to that void it all may yet return.
-    thumb/e/e8/Card18.png/80px-Card18.png
+3 the artificer
+    Set forth each night with {} chance(s) to turn any **Minor Find** into a random **Major Find**.
+    1 2 3 4
+    Few can turn raw materials into works of extraordinary genius; none as can he.
+    thumb/5/5e/Card23.png/80px-Card23.png
 5 excellence
     Any **Boons** you are offered have {+%} chance to be improved to **Rare**.
     30 40 50 60
@@ -106,23 +106,23 @@
     2 3 4 5
     Having been stricken blind, she saw much more than any mortal could.
     thumb/0/05/Card21.png/80px-Card21.png
-    **Awakening**: *Activate each surrounding Card.*
+    **Awakening**: *Activate **all** surrounding Cards.*
 4 the champions
     Set forth each night with {+} **<:Reroll:1028190585280012348>**. You can alter **Boons** and certain other choices.
     1 2 3 4
     Once-mortal foes, they found each other once again in death, and were exalted in Elysium.
     thumb/9/9d/Card22.png/80px-Card22.png
-6 the artificer
-    Set forth each night with {} chance(s) to turn any **Minor Find** into a random **Major Find**.
-    1 2 3 4
-    Few can turn raw materials into works of extraordinary genius; none as can he.
-    thumb/5/5e/Card23.png/80px-Card23.png
+4 strength
+    While you have no more than **30%** **<:Life:1241660063513448499>**, you take {-%} damage and deal {+%}.
+    30 40 50 60
+    The power to surpass the might of the gods is one that must always be held in check.
+    thumb/b/b7/Card15.png/80px-Card15.png
 0 divinity
     Any **Boons** you are offered have {+%} chance to be improved to **Epic**.
     10 15 20 25
     The privilege of godhood is bestowed at birth, save for the rarest cases, when it is earned instead.
     thumb/e/eb/Card24.png/80px-Card24.png
-    **Awakening**: *Activate all* **5** *Cards in any other row.*
+    **Awakening**: *Activate all* **5** *Cards in any other row or column.*
 0 judgment
     After you vanquish a **Guardian**, activate {} random inactive **Arcana Cards**.
     3 4 5 6

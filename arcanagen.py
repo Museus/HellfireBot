@@ -13,7 +13,7 @@ def add_awakenings(loadout, disabled=None):
     grasps = [all_grasps[int(card) - 1] for card in loadout]
     if 25 not in disabled and 1 <= len(loadout) <= 3:
         loadout.append(25)
-    if 5 not in disabled and any(grasps.count(g) >= 3 for g in range(1, 7)):
+    if 5 not in disabled and any(c in loadout for c in (4, 9, 10)):
         loadout.append(5)
     if 13 not in disabled and all(g in grasps for g in range(1, 6)):
         loadout.append(13)
@@ -21,7 +21,9 @@ def add_awakenings(loadout, disabled=None):
         loadout.append(20)
     if 21 not in disabled and all(c in loadout for c in (16, 17, 22)):
         loadout.append(21)
-    if 24 not in disabled and any(all(c in loadout for c in range(r * 5 + 1, r * 5 + 6)) for r in range(4)):
+    if 24 not in disabled and (
+            any(all(c in loadout for c in range(r * 5 + 1, r * 5 + 6)) for r in range(4)) or
+            any(all(c in loadout for c in range(r + 1, r + 22, 5)) for r in range(5))):
         loadout.append(24)
     return loadout
 
@@ -31,9 +33,7 @@ def arcana_gen(args):
         bitstring = files.global_arcana['arcana'][' '.join(args)]
         loadout = [i for i in range(1, 26) if bitstring[i - 1] == '1' and all_grasps[i - 1] != 0]
         disabled = set(i for i in range(1, 26) if bitstring[i - 1] == '0' and all_grasps[i - 1] == 0)
-        print(disabled)
         add_awakenings(loadout, disabled)
-        print(all_grasps, loadout)
     else:
         loadout = [int(c) for c in args if all_grasps[int(c) - 1] != 0]
         add_awakenings(loadout)

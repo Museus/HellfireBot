@@ -1,47 +1,28 @@
 misc
-t1 swift strike earth
-    Your **Attacks** are faster.
-    Attack Speed: {+%}
-    10 15 20 25
-    0
-    9/95/Swift_Strike.png
-t1 swift flourish earth
-    Your **Specials** are faster.
-    Special Speed: {+%}
-    15 18 21 24
-    0
-    d/d5/Swift_Flourish.png
-t1 saved breath earth
-    Your **Ω Cast** uses less **<:Magick:1250935754461544478>**.
-    Omega Cast Cost: {-%}
-    50 60 70 80
-    0
-    0/0b/Saved_Breath.png
-t1 nitro boost fire
-    Your **Sprint** is **15%** faster and gives you a barrier that ignores instances of damage.
-    Hits Blocked per Encounter: {}
-    1 2 3 4
-    0
-    b/b3/Nitro_Boost.png
-xt1 witty retort earth
-    Your **Hex** requires using less **<:Magick:1250935754461544478>** before it is ready.
-    Reduced Magick Cost: {-%}
-    15 20 25 30
-    0
-    0/01/Witty_Retort.png
-    x(moon water)
 t1 greater evasion air
     Whenever you are struck, you may **Dodge** any damage.
     Dodge Chance: {+%}
     10 15 20 25
     0
     3/3d/Greater_Evasion.png
-t1 hard target air
-    Most foes' ranged shots are slower.
-    Foe Projectile Speed: {-%}
-    30 40 50 60
+t1 saved breath earth
+    Your **Ω Cast** uses less **<:Magick:1250935754461544478>**.
+    Omega Cast Cost: {-%}
+    50 60 70 80
     0
-    9/92/Hard_Target.png
+    0/0b/Saved_Breath.png
+t1 nimble mind earth
+    Your **Ω Moves** are faster.
+    Omega Move Speed: {+%}
+    10 15 20 25
+    0
+    9/95/Swift_Strike.png
+t1 nimble limbs earth
+    Your **Attack**, **Special**, and **Cast** are faster.
+    Strike Speed: {+%}
+    15 18 21 24
+    0
+    d/d5/Swift_Flourish.png
 xt1 midnight oil air
     While your **Hex** is ready, you move and strike faster.
     Bonus Move & Weapon Speed: {+%}
@@ -52,9 +33,28 @@ xt1 midnight oil air
 t1 quick buck air
     You find **<:GoldenCrowns:1250942621044576308>** in greater quantities. Receive **100** **<:GoldenCrowns:1250942621044576308>** now, plus the bonus!
     Bonus Gold: {+%}
-    20
+    20 30 40 50
     0
     8/88/Quick_Buck.png
+t1 hard target air
+    Most foes' ranged shots are slower.
+    Foe Projectile Speed: {-%}
+    30 40 50 60
+    0
+    9/92/Hard_Target.png
+xt1 witty retort earth
+    Your **Hex** requires using less **<:Magick:1250935754461544478>** before it is ready.
+    Reduced Magick Cost: {-%}
+    15 20 25 30
+    0
+    0/01/Witty_Retort.png
+    x(moon water)
+t1 nitro boost fire
+    Your **Sprint** is **15%** faster and gives you a barrier that ignores instances of damage.
+    Hits Blocked per Encounter: {}
+    1 2 3 4
+    0
+    b/b3/Nitro_Boost.png
 t1 mean streak air
     Each time you slay a foe, deal more damage for the next **30 Sec.**
     Bonus Damage per Slain Foe: {+%r1}

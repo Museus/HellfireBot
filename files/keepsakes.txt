@@ -38,6 +38,11 @@ god everlasting ember
     Common Rare Epic
     hestia
     thumb/9/9d/Everlasting_Ember.png/50px-Everlasting_Ember.png
+god moon beam
+    A reward from **Selene** is likely. The next **Path of Stars** you find grants {+} upgrades.
+    3 4 5 7
+    selene
+    thumb/e/e9/Moon_Beam.png/50px-Moon_Beam.png
 survival knuckle bones
     The next **Guardian** loses {-%l}. You take **-15%** damage from **Guardians**.
     5 10 15 20
@@ -89,8 +94,8 @@ combat metallic droplet
     hermes
     thumb/8/8c/Metallic_Droplet.png/50px-Metallic_Droplet.png
 combat white antler
-    While you have no more than **30** **<:Life:1241660063513448499>**, you have {+%} chance to deal **Critical** damage.
-    20 30 40 50
+    For the next **Region**, gain {+%} chance to deal **Critical** damage, but you have **30** **<:Life:1241660063513448499>**.
+    20 25 30 50
     artemis
     thumb/0/06/White_Antler.png/50px-White_Antler.png
 combat lion fang
@@ -108,11 +113,6 @@ resource gold purse
     100 125 150 175
     charon
     thumb/7/7c/Gold_Purse.png/50px-Gold_Purse.png
-resource moon beam
-    You gain {+} upgrades for your **Hex** from the next **Path of Stars** you find.
-    3 4 5 6
-    selene
-    thumb/e/e9/Moon_Beam.png/50px-Moon_Beam.png
 resource crystal figurine
     After the next **Guardian**, activate **1** random {} **Arcana Card**.
     <:ArcanaCommon:1251065102023528549> <:ArcanaRare:1251065105634824335> <:ArcanaEpic:1251065103185612842>

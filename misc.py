@@ -127,7 +127,7 @@ def rarity_rolls(args):
     if 'yarn of ariadne' in args:
         buff_rolls([0.1, 0, 0.25, 1])
     if 'natural selection' in args:
-        buff_rolls([0.1, 0, 0.1, 0.2])
+        buff_rolls([0.15, 0, 0.2, 0.45])
     if 'excellence' in args:
         buff_rolls([0, 0, 0, 0.5])
     if 'divinity' in args:

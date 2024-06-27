@@ -3,31 +3,31 @@ attack sworn strike earth
     Your **Attacks** deal more damage and inflict **Hitch**.
     Attack Damage: {+%}
     50 60 70 80
-    12.5 6.25
+    20 15
     b/b0/Sworn_Strike.png
 special sworn flourish earth
     Your **Specials** deal more damage and inflict **Hitch**.
     Special Damage: {+%}
     60 70 80 90
-    19.8 10.2
+    15 10
     4/46/Sworn_Flourish.png
 cast engagement ring earth
-    Your **Casts** last **200%** longer and deal damage to *every* foe that joins the **Encounter**.
+    Your **Casts** deal damage and inflict **Hitch** whenever foes join the **Encounter**, anywhere!.
     On-Spawn Damage: {}
-    70 100 130 145
-    30 15 10
+    50 75 100 125
+    25 12.5 10
     c/c7/Engagement_Ring.png
 sprint nexus sprint earth
-    Your **Sprint** inflicts **Hitch** on nearby foes, which spreads to other foes near them.
-    Additional Foes Hitched: {+}
-    1 2 3 4
-    1
+    Your **Sprint** inflicts **Hitch** on contact with foes, and deals damage when it does.
+    Damage with Hitch: {}
+    60 90 120 150
+    30 15
     4/4b/Nexus_Sprint.png
 gain born gain earth
     Whenever you run out of **<:Magick:1250935754461544478>**, **Prime** to restore *all* **<:Magick:1250935754461544478>** up to the reduced limit.
     Magick Primed: {}
-    10 8 6 4
-    -2 -1 0
+    20 18 16 14
+    -3.3333 -1.6667 -1
     c/c5/Born_Gain.png
 xt1 bridal glow earth
     Your **Boons** become **Heroic**, then lose **Rarity** every {} Encounters.
@@ -35,7 +35,7 @@ xt1 bridal glow earth
     5 7 8 9
     0
     a/a9/Bridal_Glow.png
-    2(any upgradeable boon)
+    2(any non-heroic upgradeable boon)
 t1 uncommon grace earth
     While none of your other **Boons** are **Common**, deal more damage.
     Common-Less Bonus Damage: {+%}
@@ -48,11 +48,11 @@ t1 nasty comeback earth
     500 750 1000 1250
     150 125 120 110 105
     9/9a/Nasty_Comeback.png
-t1 keen intuition earth
-    Whenever you use **Ω Moves** while you have **100%** **<:Magick:1250935754461544478>**, they deal more damage.
-    Omega Damage: {+%}
-    30 45 60 75
-    15 7.5 3.75 3
+t1 blood line earth
+    Your **Ω Moves** create a rift that strikes foes in front of and behind you, but use **+15** **<:Magick:1250935754461544478>**.
+    Rift Damage: {}
+    100 120 140 160
+    25 15 10
     a/a6/Keen_Intuition.png
 t1 family trade earth
     Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
@@ -88,13 +88,13 @@ legendary brave face earth
     0
     4/47/Brave_Face.png
     1(sworn strike, sworn flourish); 1(born gain, keep intuition); 1(hereditary bane, dying wish); x(fixed gain)
-duo soul mate aether
-    Foes with **Hitch** take more damage and are **Weak**, but only **2** can be afflicted at a time.
-    Damage vs. Hitched Foes: {+%}
-    20
+duo ecstatic obsession aether
+    During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
+    Foes Required: {} *(or more)*
+    2
     0
     f/fd/Soul_Mate.png
-    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
+    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 duo sun worshiper aether
     In each **Encounter**, the first foe you slay returns to fight for you.
     Servant Damage: {+%}
@@ -116,10 +116,10 @@ duo spiteful strength aether
     0
     c/c6/Spiteful_Strength.png
     1(fixed gain, trusty shield, mint condition, heavy metal, tough trade, uncanny fortitude); 1(born gain, brave face, nasty comeback, keen intuition)
-duo funeral pyre aether
-    While you **Channel** your **Ω Moves**, repeatedly inflict **Scorch** on nearby foes.
-    Scorch Damage: {} *(every 1 Sec.)*
-    90
+duo elementary particles aether
+    Gain **<:EarthEssence:1251066559112417312> <:WaterEssence:1251066562312671344> <:AirEssence:1251066557921099786> <:FireEssence:1251066561071026238> Elements**, and **1** **Infusion** **Boon** for each.
+    Essences Gained per Element: {+}
+    1
     0
     e/ed/Funeral_Pyre.png
     1(sworn strike, sworn flourish, engagement ring, born gain); 1(flame strike, flame flourish, smolder ring, hearth gain)

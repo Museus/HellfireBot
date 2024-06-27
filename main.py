@@ -311,7 +311,8 @@ async def randarcana(ctx, total_grasp=30):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    total_grasp = arcanagen.arcana_gen(arcanagen.rand_arcana(int(total_grasp)))
+    loadout = arcanagen.rand_arcana(int(total_grasp))
+    total_grasp = arcanagen.arcana_gen(list(map(str, loadout)))
     await misc.reply(
         ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
     )

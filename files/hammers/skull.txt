@@ -27,7 +27,7 @@ shells xdestructive array
     thumb/3/39/Destructive_Array.png/50px-Destructive_Array.png
     x(fetching array)
 shells possessed array
-    Your **<:Shell:1250941173841924258> Shells** fire your **Ω Attack** for **0** **<:Magick:1250935754461544478>** whenever retrieved.
+    Your **<:Shell:1250941173841924258> Shells** fire your **Ω Attack** whenever retrieved, but use **10** **<:Magick:1250935754461544478>** to do so.
     thumb/f/f1/Possessed_Array.png/50px-Possessed_Array.png
 shells xfetching array
     Your **<:Shell:1250941173841924258> Shells** return to you automatically, but you have **-1** **<:Shell:1250941173841924258>**.

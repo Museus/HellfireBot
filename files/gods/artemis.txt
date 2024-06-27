@@ -1,10 +1,4 @@
 encounter
-t1 support fire air
-    After you hit with your **Attacks** or **Specials**, fire a seeking arrow.
-    Arrow Damage: {}
-    10 15 20 25
-    0
-    e/e2/Support_Fire.png
 t1 pressure points earth
     Any damage you deal may be **Critical**.
     Critical Chance: {+%}
@@ -35,6 +29,12 @@ t1 easy shot air
     20 30 40 50
     0
     0/07/Easy_Shot.png
+t1 support fire air
+    After you hit with your **Attacks** or **Specials**, fire a seeking arrow.
+    Arrow Damage: {}
+    10 15 20 25
+    0
+    e/e2/Support_Fire.png
 t1 death warrant earth
     A random foe occasionally becomes **Marked**. If it takes **Critical** damage, this repeats.
     Time Between Marks: {s}

@@ -12,29 +12,23 @@ special flutter flourish water
     50 30 20 10
     0/0d/Flutter_Flourish.png
 cast rapture ring air
-    Your **Casts** drag foes in and inflict **Weak**.
-    Weak Damage Reduction: {+%}
+    Your **Casts** inflict **Weak**, and damage foes while dragging them toward the center.
+    Cast Damage: {} *(every 0.85 Sec.)*
     10 15 20 25
-    5 2 1
+    0
     3/32/Rapture_Ring.png
-sprint passion dash air
-    Your **Dash** blasts foes near where you start and end, and inflicts **Weak**.
-    Blast Damage: {}
+sprint passion rush air
+    **Dashing** damages surrounding foes and inflicts **Weak**, and again once you stop.
+    Area Damage: {}
     20 30 40 50
     10 5
     e/e0/Passion_Dash.png
 gain glamour gain air
-    In each **Encounter**, **1** foe is always **Weak**. You gradually restore **<:Magick:1250935754461544478>** near **Weak** foes.
+    You inflict **Weak** on nearby foes, and gradually restore **<:Magick:1250935754461544478>** while any nearby foe is **Weak**.
     Magick Restoration: {} *(every 1 Sec.)*
     6 8 10 12
     1.98 0.99 0.6
     0/0e/Glamour_Gain.png
-t1 healthy rebound water
-    Whenever you exit a **Location**, restore **100%** **<:Life:1241660063513448499>** if you have not lost too much.
-    Min Life Required: {%}
-    80 70 60 50
-    -10 -5 -2.5 -1.25 -0.625 -0.3125 -0.2
-    a/a1/Healthy_Rebound.png
 t1 life affirmation air
     Any **<:MaxLife:1241662636995772436>** rewards you find have a greater effect.
     Bonus Life Gain: {+%}
@@ -42,8 +36,8 @@ t1 life affirmation air
     0
     f/fa/Life_Affirmation.png
 t1 shameless attitude air
-    While you have at least **80%** **<:Life:1241660063513448499>**, you deal more damage.
-    High-Life Bonus Damage: {+%}
+    You deal more damage. While you have at least **80%** **<:Life:1241660063513448499>**, the bonus is doubled.
+    Bonus Damage: {+%}
     10 15 20 25
     5 4 3.2 2.56 2.048 1.6384 1.31072 1.048576 1
     a/a3/Shameless_Attitude.png
@@ -53,20 +47,26 @@ t1 heart breaker water
     120 180 240 300
     60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
     e/ef/Heart_Breaker.png
+t1 healthy rebound water
+    Whenever you exit a **Location**, restore **100%** **<:Life:1241660063513448499>** if you have not lost too much.
+    Min Life Required: {%}
+    80 70 60 50
+    -10 -5 -2.5 -1.25 -0.625 -0.3125 -0.2
+    a/a1/Healthy_Rebound.png
 t2 broken resolve water
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
     10 12 14 16
     2 1
     1/1b/Broken_Resolve.png
-    1(rapture ring, passion dash, glamour gain)
+    1(rapture ring, passion rush, glamour gain)
 t2 sweet surrender water
     **Weak**-afflicted foes take more damage.
     Damage vs. Weak: {+%}
     10 15 20 25
     5 2.5 1.25 1
     a/a6/Sweet_Surrender.png
-    1(rapture ring, passion dash, glamour gain)
+    1(rapture ring, passion rush, glamour gain)
 prime secret crush air
     After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to add **Power** to your **Attack**.
     Attack Power: {+}
@@ -74,15 +74,15 @@ prime secret crush air
     0
     0/00/Secret_Crush.png
 infusion wispy wiles none
-    While you have at least **4** **<:AirEssence:1251066557921099786>**, you may **Dodge** any damage.
-    Dodge Chance: {+%}
-    15
+    Gain a chance to **Dodge** for each **<:AirEssence:1251066557921099786>** you have.
+    Dodge Chance per Air Boon: {+%}
+    3
     0
     a/a4/Wispy_Wiles.png
-    1(<:AirEssence:1251066557921099786> air)
-legendary ecstatic obsession air
-    During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
-    Foes Required: {} *(or more)*
+    2(<:AirEssence:1251066557921099786> air)
+legendary nervous wreck air
+    Whenever you inflict **Weak**, also randomly inflict other gods' **Curses**.
+    Bonus Random Curses: {}
     3
     0
     6/66/Ecstatic_Obsession.png
@@ -101,24 +101,24 @@ duo hearty appetite aether
     0
     c/cc/Hearty_Appetite.png
     1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
-duo soft caress aether
-    The first time you would take damage each **Encounter**, get **<:Healing:1028193572840816722>** instead.
-    Damage Turned to Healing: {%}
-    100
+duo love handles aether
+    Your blast effects from **Hephaestus** also create a **Heartthrob**.
+    Heartthrob Area Damage: {}
+    120
     0
     9/9d/Soft_Caress.png
     1(rapture ring, passion dash, glamour gain); 1(anvil ring, smithy sprint, fixed gain)
-duo soul mate aether
-    Foes with **Hitch** take more damage and are **Weak**, but only **2** can be afflicted at a time.
-    Damage vs. Hitched Foes: {+%}
-    20
+duo ecstatic obsession aether
+    During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
+    Foes Required: {} *(or more)*
+    2
     0
     f/fd/Soul_Mate.png
-    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, nexus sprint, nasty comeback)
-duo burning desire aether
-    Up to **+12** **Lone Shades** appear in **Locations**. **Sprint** into them to launch a fiery blast.
-    Lone Shade Area Damage: {}
-    160
+    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
+duo hot flash aether
+    While foes are **Weak**, any **Scorch** they have does not diminish as it deals damage.
+    Scorch Duration on Weak Foes: **∞**
+    0
     0
     c/ce/Burning_Desire.png
     1(rapture ring, passion dash, glamour gain); 1(smolder ring, soot sprint, hearth gain)

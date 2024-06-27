@@ -60,7 +60,7 @@ vow of destitution
     thumb/f/f7/VowDestitution.png/30px-VowDestitution.png
 vow of panic
     You enter each **Location** with {%m}.
-    0
+    50
     1
     Upon this night shall my unsettled mind give in, that Fear may spread.
     thumb/e/e3/VowPanic.png/30px-VowPanic.png

@@ -25,9 +25,9 @@ sprint frigid sprint water
     a/af/Frigid_Sprint.png
 gain tranquil gain earth
     After remaining inactive for **1 Sec.**, rapidly restore **<:Magick:1250935754461544478>** until you act.
-    Magick Restoration: {+} *(every 1 Sec.)*
-    25 35 45 55
-    10 5 3 2 1
+    Magick Restoration: {%} *(every 1 Sec.)*
+    40 60 80 100
+    20 15 10 5
     9/9e/Tranquil_Gain.png
 xt1 rare crop earth
     Your **Boons** become **Common**, then gain **Rarity** every **3 Encounters**.
@@ -36,13 +36,6 @@ xt1 rare crop earth
     0
     1/10/Rare_Crop.png
     1(any upgradeable boon)
-xt1 local climate earth
-    Your **Ω Cast** deals bonus damage and follows you, even as you start to **Channel** it.
-    Cast Damage: {+%}
-    20 30 40 50
-    10 5
-    7/71/Local_Climate.png
-    x(glowing coal, geyser ring, lightning lance, howling soul)
 t1 gale force water
     Your **Casts** also create a **Cyclone** at the binding circle.
     Cyclone Damage: {} *(every 0.25 Sec.)*
@@ -55,12 +48,13 @@ t1 plentiful forage earth
     5 8 10 13
     3 1 1 0
     5/53/Plentiful_Forage.png
-t1 weed killer earth
-    Your **Ω Attack** deals more damage, but uses **+10** **<:Magick:1250935754461544478>**.
-    Omega Attack Damage: {+%}
-    50 75 100 125
-    25 20 16 12.8 10.24 8.192 6.5536 5.24288 5
-    e/ef/Weed_Killer.png
+t2 local climate earth
+    Your **Ω Cast** deals bonus damage and follows you, even as you start to **Channel** it.
+    Cast Damage: {+%}
+    20 30 40 50
+    10 5
+    7/71/Local_Climate.png
+    1(rapture ring, solar ring, arctic ring, anvil ring, engagement ring, smolder ring, tidal ring, storm ring); x(glowing coal, geyser ring, lightning lance, howling soul)
 t2 cold storage water
     Your **Freeze** effects last longer.
     Freeze Duration: {+sr1}
@@ -68,19 +62,26 @@ t2 cold storage water
     1 0.5 0.25 0.2
     5/58/Cold_Storage.png
     1(ice strike, ice flourish)
-prime winter coat earth
+t2 weed killer earth
+    Your **Ω Attack** deals more damage, but uses **+10** **<:Magick:1250935754461544478>**.
+    Omega Attack Damage: {+%}
+    50 75 100 125
+    25 20 16 12.8 10.24 8.192 6.5536 5.24288 5
+    e/ef/Weed_Killer.png
+    1(flutter strike, nova strike, ice strike, volcanic strike, sworn strike, flame strike, wave strike, heaven strike)
+prime snow queen earth
     After you enter a **Location**, **Prime** a barrier that absorbs **1** instance of damage.
     Magick Primed: {}
     20 15 10 5
     -3 -2 -1 0
     7/7e/Winter_Coat.png
-infusion coarse grit none
-    While you have at least **6** **<:EarthEssence:1251066559112417312>**, you cannot take more damage per hit than the limit.
+infusion frosty veneer none
+    While you have at least **6** **<:WaterEssence:1251066562312671344>**, you cannot take more damage per hit than the limit.
     Max Damage per Hit: {}
     15
     0
     b/b7/Coarse_Grit.png
-    1(<:EarthEssence:1251066559112417312> earth)
+    4(<:WaterEssence:1251066562312671344> water)
 legendary winter harvest earth
     **Freeze**-afflicted foes shatter at **10%** **<:Life:1241660063513448499>**, dealing damage in the area.
     Shatter Area Damage: {}
@@ -95,15 +96,15 @@ duo hearty appetite aether
     0
     c/cc/Hearty_Appetite.png
     1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
-duo torrential downpour aether
-    Each time you use your **Ω Cast** in an **Encounter**, it gets stronger but also uses **+5** **<:Magick:1250935754461544478>**.
-    Damage per Omega Cast: {+%}
-    20
+duo boreal gust aether
+    While standing in a **Cyclone**, you randomly fire gales every **0.3 Sec.**
+    Gale Damage: {} *(every 0.5 Sec.)*
+    70
     0
     9/9a/Torrential_Downpour.png
-    1(solar ring, blinding sprint, lucid gain); 1(arctic ring, frigid sprint, tranquil gain)
+    1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(frigid sprint, gale force)
 duo room temperature aether
-    Your blast effects from **Hephaestus** clear **Freeze**, so you **Freeze** foes again right away.
+    Your blast effects from **Hephaestus** clear **Freeze**, so you can inflict it again right after.
     Freeze Re-Apply Time: {s}
     0
     0
@@ -117,23 +118,23 @@ duo cherished heirloom aether
     1/13/Cherished_Heirloom.png
     1(arctic ring, frigid sprint, tranquil gain); 1(engagement ring, nexus sprint, born gain)
 duo freezer burn aether
-    Whenever you inflict **Freeze**, amplify any **Scorch** effects already on the foe.
-    Scorch Damage: {+%}
-    100
+    Whenever you inflict **Freeze** on a foe with **Scorch**, deal damage and remove **Scorch**.
+    Damage from Scorch: {%}
+    200
     0
     2/23/Freezer_Burn.png
-    1(ice strike, ice flourish); 1(flame strike, flame flourish)
+    1(ice strike, ice flourish, arctic ring); 1(flame strike, flame flourish, smolder ring)
 duo natural selection aether
     **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
     Improved Rarity Chance: {+%}
-    20
+    45
     0
     7/7a/Natural_Selection.png
     1(frigid sprint, tranquil gain, winter coat, cold storage, rare crop); 1(breaker sprint, fluid gain, ocean's bounty, sunken treasure, double up)
-duo apocalyptic storm aether
-    Your **Blitz** effects last longer, and activate against *all* **Blitz**-afflicted foes at once.
-    Blitz Duration: {+s}
-    8
+duo hail storm aether
+    Your **Freeze** effects also cause lightning bolts to repeatedly strike afflicted foes.
+    Lightning Damage: {} *(every 0.3 Sec.)*
+    30
     0
     d/dc/Apocalyptic_Storm.png
-    1(ice strike, ice flourish, arctic ring, frigid sprint); 1(heaven strike, heaven flourish)
+    1(ice strike, ice flourish, arctic ring); 1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain)

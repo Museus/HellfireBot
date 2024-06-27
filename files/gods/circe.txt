@@ -35,8 +35,10 @@ t1 red citrine divination none
     1
     0
 
-t1 black night banishment none
+xt1 black night banishment none
     Randomly draw {} of your active **Vows**, and remove its effect this night.
 
     1
     0
+
+    1(**1** <:Fear:1251066119889092610> fear)

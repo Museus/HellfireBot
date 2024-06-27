@@ -42,12 +42,13 @@ t1 gale force water
     4 8 12 16
     2.4 1.6 0.8
     7/70/Gale_Force.png
-t1 plentiful forage earth
+xt1 plentiful forage earth
     Whenever you gather plants, seeds, or mushrooms, gain **<:MaxLife:1241662636995772436>**. Receive **1** **<:MysterySeed:1251063943875788810>** now.
     Max Life from Gathering: {+}
     5 8 10 13
     3 1 1 0
     5/53/Plentiful_Forage.png
+    1(silver spade)
 t2 local climate earth
     Your **Ω Cast** deals bonus damage and follows you, even as you start to **Channel** it.
     Cast Damage: {+%}

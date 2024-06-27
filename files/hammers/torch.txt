@@ -13,7 +13,7 @@ attacks leaden spark
 attacks xsplit spark
     Your **Attacks** split in **2** the first time they strike foes.
     thumb/c/c4/Split_Fire.png/50px-Split_Fire.png
-    x(aspect of moros, aspect of eos)
+    x(aspect of moros)
 attacks clean candle
     You **Channel** your **Ω Attack** **50%** faster, and it uses **-1** **<:Magick:1250935754461544478>**.
     thumb/a/ae/Clean_Candle.png/50px-Clean_Candle.png

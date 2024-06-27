@@ -14,13 +14,13 @@ t1 saved breath earth
 t1 nimble mind earth
     Your **Ω Moves** are faster.
     Omega Move Speed: {+%}
-    10 15 20 25
+    15 20 25 30
     0
     9/95/Swift_Strike.png
 t1 nimble limbs earth
     Your **Attack**, **Special**, and **Cast** are faster.
     Strike Speed: {+%}
-    15 18 21 24
+    10 15 20 25
     0
     d/d5/Swift_Flourish.png
 xt1 midnight oil air

@@ -8,7 +8,7 @@ attack volcanic strike fire
 special volcanic flourish fire
     Your **Specials** occasionally create a blast that deals **400** damage in the area.
     Blast Recharge Time: {s}
-    16 14 12 10
+    16 13 11 9
     -2 -1
     e/eb/Volcanic_Flourish.png
 cast anvil ring earth
@@ -57,8 +57,8 @@ t1 uncanny fortitude earth
 t2 grand caldera fire
     Your blast effects from **Hephaestus** deal more damage and are **50%** larger.
     Bonus Blast Damage: {+}
-    0
-    0
+    50 75 100 100
+    25 20 15 10
     b/b7/Tough_Trade.png
     1(volcanic strike, volcanic flourish, smithy sprint)
 status furnace blast fire

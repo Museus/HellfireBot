@@ -105,12 +105,13 @@ resource faint flicker none
     0
     thumb/c/c1/Faint_Flicker.png/50px-Faint_Flicker.png
     **3** <:GoldenCrowns:1250942621044576308> per <:Psyche:1242227790879784983>
-resource gaia's gift none
+xresource gaia's gift none
     Gain {+} **<:MysterySeed:1251063943875788810>** now.
 
     2
     0
     thumb/e/e6/Gaia%27s_Gift.png/50px-Gaia%27s_Gift.png
+    3(nightshade seeds collected)
     **30** <:GoldenCrowns:1250942621044576308>
 miscellaneous archaic seal none
     Your next **Well of Charon** items with a duration will instead expire after **Guardians**.

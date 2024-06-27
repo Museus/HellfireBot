@@ -35,7 +35,7 @@ xt1 bridal glow earth
     5 7 8 9
     0
     a/a9/Bridal_Glow.png
-    2(any rarifiable boon)
+    2(any non-heroic rarifiable boon)
 t1 uncommon grace earth
     While none of your other **Boons** are **Common**, deal more damage.
     Common-Less Bonus Damage: {+%}

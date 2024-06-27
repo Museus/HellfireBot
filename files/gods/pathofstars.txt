@@ -1,4 +1,11 @@
 misc
+common growth none
+    Your **Hex** also charges up automatically as though you used {m} every **1 Sec.**
+
+    1
+    1
+
+    1(phase shift, twilight curse, lunar ray, wolf howl, night bloom, dark side)
 common purpose none
     While your **Hex** is not ready, deal {+%} damage.
 
@@ -6,20 +13,13 @@ common purpose none
     5
     1/10/Purpose.png
     1(twilight curse, lunar ray, night bloom, total eclipse)
-common alertness none
-    You use {-m} less than before to recharge your **Hex**.
+common preparation none
+    Whenever you enter a **Location**, your **Hex** starts {%} charged.
 
-    5
-    5
-    5/50/Alertness.png
-    1(twilight curse, lunar ray, night bloom, total eclipse)
-common readiness none
-    You use {-m} less than before to recharge your **Hex**.
+    40
+    40
 
-    10
-    10
-    1/1e/Readiness.png
-    1(phase shift, total eclipse)
+    1(phase shift, night bloom, total eclipse)
 bright contingency none
     Your **Death Defiance** effects fully recharge your **Hex** if it is not ready.
 
@@ -70,16 +70,16 @@ sublime acuity none
     0/01/Acuity.png
     1(phase shift)
 sublime precision none
-    During your **Hex**, you have {+%} chance to deal **Critical** damage.
-
-    20
+    During your **Hex**, you have **+20%** chance to deal **Critical** damage.
+    Magick Recharge Cost: {+}
+    40
     0
     e/ee/Precision.png
     1(phase shift)
 sublime stillness none
-    Your **Hex** makes everything else move {%} slower.
-
-    95
+    Your **Hex** makes everything else move **95%** slower.
+    Magick Recharge Cost: {+}
+    20
     0
     3/3b/Stillness.png
     1(phase shift)
@@ -98,9 +98,9 @@ common humility none
     8/8e/Humility.png
     1(twilight curse)
 bright extinction none
-    Whenever a **Morph**-afflicted foe is slain, a blast deals {} damage to nearby foes.
+    Whenever a **Morph**-afflicted foe is slain, a blast deals {} damage to surrounding foes.
 
-    750
+    300
     0
     0/0d/Extinction.png
     1(twilight curse)
@@ -134,15 +134,15 @@ bright orchestration none
     1(twilight curse)
 sublime infection none
     Your **Hex** also applies every other **Curse** in effect at the time.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     1/19/Infection.png
     1(twilight curse)
 sublime sustenance none
-    Your **Hex** has **30%** chance to turn **1** foe per **Location** into an item that restores {l}.
-
-    10
+    Your **Hex** has **30%** chance to turn **1** foe per **Location** into an item that restores **10** **<:Life:1241660063513448499>**.
+    Magick Recharge Cost: {+}
+    20
     0
     5/51/Sustenance.png
     1(twilight curse)
@@ -190,15 +190,15 @@ bright disintegration none
     1(lunar ray)
 sublime prominence none
     Your **Hex** continually aims and fires on its own from wherever you use it.
-
-    0
+    Magick Recharge Cost: {+}
+    60
     0
     c/cf/Prominence.png
     1(lunar ray)
 sublime trinity none
-    Your **Hex** fires {} beams in a fan pattern.
-
-    3
+    Your **Hex** fires **3** beams in a fan pattern.
+    Magick Recharge Cost: {+}
+    60
     0
     9/9c/Trinity.png
     1(lunar ray)
@@ -252,16 +252,16 @@ bright tenacity none
     9/99/Tenacity.png
     1(wolf howl)
 sublime frenzy none
-    Your **Hex** also inflicts the effect of your **Dash Boon** on up to {} foes.
-
-    5
+    Your **Hex** also inflicts the effect of your **Dash Boon** on up to **5** foes.
+    Magick Recharge Cost: {+}
+    10
     0
     f/f1/Frenzy.png
     1(wolf howl)
 sublime viciousness none
-    After using your **Hex**, you can use it **1** more time during the next {s}
-
-    3
+    After using your **Hex**, you can use it **1** more time during the next **3 Sec.**
+    Magick Recharge Cost: {+}
+    15
     0
     6/6a/Viciousness.png
     1(wolf howl)
@@ -323,15 +323,15 @@ bright conservation none
     1(moon water)
 sublime clarity none
     After using your **Hex**, gain **Serenity** with your next **Ω Move**.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     d/d7/Clarity.png
     1(moon water)
 sublime tribulation none
     Your **Hex** also activates any *'after you take damage'* effects from your **Boons**.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     d/d7/Tribulation.png
     1(moon water)
@@ -378,16 +378,16 @@ bright confluence none
     9/93/Confluence.png
     1(night bloom)
 sublime finality none
-    Your **Hex** also makes your raised servants explode, dealing {} damage around them.
-
-    900
+    Your **Hex** also makes your raised servants explode, dealing **900** damage around them.
+    Magick Recharge Cost: {+}
+    10
     0
     7/74/Finality.png
     1(night bloom)
 sublime connection none
     Your raised servants' strikes gain the benefits of your **Special Boon**.
-
-    0
+    Magick Recharge Cost: {+}
+    10
     0
     2/24/Connection.png
     1(night bloom)
@@ -434,16 +434,16 @@ bright softness none
     2/2d/Softness.png
     1(total eclipse)
 sublime devastation none
-    Your **Hex** fires {+} moon blast, **2 Sec.** after the first.
-
-    1
+    Your **Hex** fires **+1** moon blast, **2 Sec.** after the first.
+    Magick Recharge Cost: {+}
+    50
     0
     8/8c/Devastation.png
     1(total eclipse)
 sublime excess none
     Your **Hex** also creates your **Ω Cast** in the target area.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     6/67/Excess.png
     1(total eclipse)
@@ -498,22 +498,22 @@ bright horror none
     1(dark side)
 sublime sanctity none
     During your **Hex**, your **Cast** has the same effect as your **Ω Cast**.
-
-    0
+    Magick Recharge Cost: {+}
+    30
     0
     7/71/Sanctity.png
     1(dark side)
 sublime resonance none
     During your **Hex**, your **Attack** gains the bonuses of your **Attack Boon**.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     c/c4/Resonance.png
     1(dark side)
 sublime splendor none
     During your **Hex**, your **Special** gains the bonuses of your **Special Boon**.
-
-    0
+    Magick Recharge Cost: {+}
+    20
     0
     6/65/Splendor.png
     1(dark side)

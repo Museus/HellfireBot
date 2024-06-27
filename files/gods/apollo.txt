@@ -53,7 +53,7 @@ t2 back burner fire
     50 75 100 125
     25 20 16 12.8 10.24 8.192 6.5536 5.24288 5
     d/d0/Back_Burner.png
-    1(solar ring, blinding sprint, dazzling display, light smite)
+    1(solar ring, blinding sprint, light smite, dazzling display)
 t2 prominence flare fire
     After your **Ω Cast** expires, rapidly deal damage in the area for **2 Sec.**
     Omega Cast Damage: {} *(every 0.13 Sec.)*
@@ -70,7 +70,7 @@ t2 extra dose fire
     1(flutter strike, nova strike, ice strike, volcanic strike, sworn strike, flame strike, wave strike, heaven strike)
 status dazzling display fire
     Your **Attacks** may inflict **Daze**.
-    Daze CHance: {+%}
+    Daze Chance: {+%}
     10 15 20 25
     5 3 2 1
     f/f0/Dazzling_Display.png
@@ -81,21 +81,21 @@ infusion self healing none
     30
     0
     c/c5/Self_Healing.png
-    1(<:FireEssence:1251066561071026238> fire)
+    2(<:FireEssence:1251066561071026238> fire)
 legendary exceptional talent air
     Your **Ω Attack** and **Ω Special** fire **2** times, but use more **<:Magick:1250935754461544478>**.
     Omega Move Cost: {+m}
     20
     0
     1/15/Exceptional_Talent.png
-    1(nova strike, nova flourish); 1(solar ring, lucid gain); 1(extra dose, super nova)
+    1(nova strike, nova flourish); 1(solar ring, blinding sprint, lucid gain); 1(super nova, back burner, prominence flare, extra dose)
 duo sunny disposition aether
     Whenever you create **Heartthrobs**, create more.
     Bonus Heartthrobs: {+}
     2
     0
     2/2c/Sunny_Disposition.png
-    1(heart breaker); 1(nova strike, nova flourish, solar ring, lucid gain)
+    1(heart breaker); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain)
 duo boreal gust aether
     While standing in a **Cyclone**, you randomly fire gales every **0.3 Sec.**
     Gale Damage: {} *(every 0.5 Sec.)*
@@ -123,14 +123,14 @@ duo phoenix skin aether
     2
     0
     8/82/Phoenix_Skin.png
-    1(nova strike, nova flourish, lucid gain); 1(flame strike, flame flourish, smolder ring); 1(burnt offering, flammable coating, hearth gain)
+    1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain); 1(burnt offering)
 duo beach ball aether
     Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
     Blast Damage: {}
     300
     0
     1/1b/Beach_Ball.png
-    1(blinding sprint, lucid gain); 1(breaker sprint, fluid gain)
+    1(blinding sprint, breaker sprint); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo glorious disaster aether
     You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
     Bolt Damage: {} *(every 0.13 Sec.)*

@@ -35,19 +35,19 @@ t1 divine vengeance air
     2 3 4 5
     1
     b/ba/Divine_Vengeance.png
-xt1 lightning lance air
-    Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.
-    Bolt Damage: {}
-    50 70 90 110
-    20 10 5
-    c/c6/Lightning_Lance.png
-    x(local climate, glowing coal, howling soul)
 t1 spirit surge air
     While you have no more than 10 <:Magick:1250935754461544478>, *all* foes are occasionally struck by lightning.
     Bolt Damage: {} *(every 5 Sec.)*
     60 75 90 105
     12.5 6.25 5
     2/29/Spirit_Surge.png
+t2 lightning lance air
+    Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.
+    Bolt Damage: {}
+    50 70 90 110
+    20 10 5
+    c/c6/Lightning_Lance.png
+    1(rapture ring, solar ring, arctic ring, anvil ring, engagement ring, smolder ring, tidal ring, storm ring); x(local climate, glowing coal, howling soul)
 t2 double strike air
     Your lightning bolt effects may strike **1** more time.
     Bonus Bolt Chance: {+%}
@@ -81,21 +81,21 @@ infusion air quality none
     30
     0
     6/67/Air_Quality.png
-    2(<:AirEssence:1251066557921099786> air)
+    3(<:AirEssence:1251066557921099786> air)
 legendary shocking loss air
     Whenever you first deal damage to susceptible foes, you may destroy them outright.
     Instant Destruction Chance: {%}
     20
     0
     1/12/Shocking_Loss.png
-    1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(double strike, toasting fork); 1(static shock, electric overload)
+    1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(divine vengeance, static shock, spirit surge, lightning lance); 1(double strike, toasting fork, electric overload)
 duo romantic spark aether
     If you **Sprint** into **Blitz**-afflicted foes, the effect activates immediately and is stronger.
     Bonus Blitz Damage: {+%}
     200
     0
     6/66/Romantic_Spark.png
-    1(flutter strike, flutter flourish, rapture ring, passion dash); 1(heaven strike, heaven flourish)
+    1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(heaven strike, heaven flourish)
 duo glorious disaster aether
     You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
     Bolt Damage: {} *(every 0.13 Sec.)*
@@ -123,14 +123,14 @@ duo king's ransom aether
     4
     0
     f/f6/King%27s_Ransom.png
-    1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain)
+    1(heaven strike, heaven flourish, storm ring, thunder sprint, ionic gain); 1(engagement ring, nexus sprint, born gain)
 duo thermal dynamics aether
     Your **Blitz** effects also inflict **Scorch** whenever they deal damage.
     Scorch Damage: {}
     80
     0
     2/22/Thermal_Dynamics.png
-    1(flame strike, flame flourish); 1(heaven strike, heaven flourish)
+    1(flame strike, flame flourish, smolder ring); 1(heaven strike, heaven flourish)
 duo killer current aether
     Your lightning deals more damage to **Slip**-afflicted foes.
     Bonus Lightning Damage: {+%}

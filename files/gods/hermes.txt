@@ -74,4 +74,4 @@ legendary close call air
     8
     0
     4/4b/Close_Call.png
-    1(swift strike, swift flourish, hard target, saved breath, witty retort, greater evasion, midnight oil, mean streak, nitro boost)
+    1(greater evasion, saved breath, nimble mind, nimble limbs, midnight oil, hard target, witty retort, nitro boost, mean streak)

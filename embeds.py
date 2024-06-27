@@ -156,7 +156,7 @@ def boon_embed(args):
         for i in range(level - 1):
             pom = min(pom, len(info['levels']) - 1)
             value[0] += float(info['levels'][pom])
-            if name in ('volcanic strike', 'volcanic flourish'):
+            if name in ('volcanic strike', 'volcanic flourish', 'ionic gain'):
                 value[0] = max(value[0], 2)
             if len(value) == 2:
                 value[1] += float(info['levels'][pom])
@@ -228,7 +228,7 @@ def pomscaling_embed(args):
             rarity_damages[rarity].append(value)
             new_value = values[rarity].copy()
             new_value[0] += float(info['levels'][pom])
-            if name in ('volcanic strike', 'volcanic flourish'):
+            if name in ('volcanic strike', 'volcanic flourish', 'ionic gain'):
                 new_value[0] = max(new_value[0], 2)
             if len(values[rarity]) == 2:
                 new_value[1] += float(info['levels'][pom])

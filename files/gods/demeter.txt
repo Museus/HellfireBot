@@ -30,7 +30,7 @@ gain tranquil gain earth
     20 15 10 5
     9/9e/Tranquil_Gain.png
 xt1 rare crop earth
-    Your **Boons** become **Common**, then gain **Rarity** every **3 Encounters**.
+    Your **Boons** become **Common**, then gain **Rarity** every **3** **Encounters**.
     Random Boons Affected: {}
     1 2 3 4
     0
@@ -61,7 +61,7 @@ t2 cold storage water
     2 3 4 5
     1 0.5 0.25 0.2
     5/58/Cold_Storage.png
-    1(ice strike, ice flourish)
+    1(ice strike, ice flourish, arctic ring)
 t2 weed killer earth
     Your **Ω Attack** deals more damage, but uses **+10** **<:Magick:1250935754461544478>**.
     Omega Attack Damage: {+%}
@@ -88,14 +88,14 @@ legendary winter harvest earth
     100
     0
     5/50/Winter_Harvest.png
-    1(ice strike, ice flourish); 1(plentiful forage, winter coat); 1(weed killer, cold storage)
+    1(ice strike, ice flourish, arctic ring); 1(rare crop, plentiful forage, snow queen); 1(local climate, cold storage, weed killer)
 duo hearty appetite aether
-    You deal more damage the more **<:Life:1241660063513448499>** you have.
+    You deal more damage the more **<:MaxLife:1241662636995772436>** you have.
     Bonus Damage per 100 Life: {+%}
     10
     0
     c/cc/Hearty_Appetite.png
-    1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
+    1(flutter strike, flutter flourish, passion rush, glamour gain, healthy rebound); 1(ice strike, ice flourish, frigid sprint, tranquil gain, plentiful forage)
 duo boreal gust aether
     While standing in a **Cyclone**, you randomly fire gales every **0.3 Sec.**
     Gale Damage: {} *(every 0.5 Sec.)*
@@ -109,14 +109,14 @@ duo room temperature aether
     0
     0
     6/66/Room_Temperature.png
-    1(ice strike, ice flourish); 1(volcanic strike, volcanic flourish, smithy sprint)
+    1(ice strike, ice flourish, arctic ring); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo cherished heirloom aether
     Most other **Keepsakes** you equip are stronger this night *(if possible)*.
     Bonus Keepsake Ranks: {+}
     1
     0
     1/13/Cherished_Heirloom.png
-    1(arctic ring, frigid sprint, tranquil gain); 1(engagement ring, nexus sprint, born gain)
+    1(ice strike, ice flourish, arctic ring, frigid sprint, tranquil gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain)
 duo freezer burn aether
     Whenever you inflict **Freeze** on a foe with **Scorch**, deal damage and remove **Scorch**.
     Damage from Scorch: {%}
@@ -130,7 +130,7 @@ duo natural selection aether
     45
     0
     7/7a/Natural_Selection.png
-    1(frigid sprint, tranquil gain, winter coat, cold storage, rare crop); 1(breaker sprint, fluid gain, ocean's bounty, sunken treasure, double up)
+    1(arctic ring, frigid sprint, tranquil gain, rare crop, snow queen, cold storage); 1(tidal ring, breaker sprint, fluid gain, ocean's bounty, double up)
 duo hail storm aether
     Your **Freeze** effects also cause lightning bolts to repeatedly strike afflicted foes.
     Lightning Damage: {} *(every 0.3 Sec.)*

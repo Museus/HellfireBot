@@ -42,6 +42,13 @@ survival centaur soul none
     0
     thumb/b/ba/Centaur_Soul.png/50px-Centaur_Soul.png
     **110** <:GoldenCrowns:1250942621044576308>
+survival breath of eros none
+    When next you would take damage, receive **<:Healing:1028193572840816722>** in that amount instead.
+    Expires After: {} **Hit**
+    1
+    0
+
+
 combat chimaera jerky none
     Your **Specials** deal **+40%** damage.
     Duration: {e}

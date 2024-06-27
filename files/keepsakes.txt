@@ -45,12 +45,12 @@ god moon beam
     thumb/e/e9/Moon_Beam.png/50px-Moon_Beam.png
 survival knuckle bones
     The next **Guardian** loses {-%l}. You take **-15%** damage from **Guardians**.
-    5 10 15 20
+    5 10 15 25
     odysseus
     thumb/6/61/Knuckle_Bones.png/50px-Knuckle_Bones.png
 survival luckier tooth
     After you fall to **0** **<:Life:1241660063513448499>**, automatically restore {l} once this night.
-    51 76 101 126
+    51 76 101 151
     schelemeus
     thumb/8/85/Luckier_Tooth.png/50px-Luckier_Tooth.png
 survival ghost onion
@@ -60,7 +60,7 @@ survival ghost onion
     thumb/8/84/Ghost_Onion.png/50px-Ghost_Onion.png
 survival engraved pin
     After you fall to **0** **<:Life:1241660063513448499>**, become **Impervious** for **10 Sec.** If no foes remain, restore {l}.
-    30 45 60 75
+    30 45 60 90
     moros
     thumb/e/e0/Engraved_Pin.png/50px-Engraved_Pin.png
 survival silken sash
@@ -90,7 +90,7 @@ combat discordant bell
     thumb/5/5d/Discordant_Bell.png/50px-Discordant_Bell.png
 combat metallic droplet
     You move, strike, and **Channel** **20%** faster for the next {s}
-    200 250 300 350
+    200 250 300 400
     hermes
     thumb/8/8c/Metallic_Droplet.png/50px-Metallic_Droplet.png
 combat white antler
@@ -105,12 +105,12 @@ combat lion fang
     thumb/d/d9/Lion_Fang.png/50px-Lion_Fang.png
 combat blackened fleece
     After you take **250** damage, your **Ω Moves** deal {+%} damage.
-    20 30 40 50
+    20 30 40 60
     medea
     thumb/7/7b/Blackened_Fleece.png/50px-Blackened_Fleece.png
 resource gold purse
     Gain {+g} once this night.
-    100 125 150 175
+    100 125 150 200
     charon
     thumb/7/7c/Gold_Purse.png/50px-Gold_Purse.png
 resource crystal figurine
@@ -125,7 +125,7 @@ resource concave stone
     thumb/8/83/Concave_Stone.png/50px-Concave_Stone.png
 resource experimental hammer
     Gain **1** random **<:Hammer:1243131974923718747>** that lasts for {} **Encounters**.
-    10 15 20 25
+    10 15 20 30
     icarus
     thumb/f/fd/Experimental_Hammer.png/50px-Experimental_Hammer.png
 resource transcendent embryo

@@ -1,8 +1,8 @@
 misc
 hex phase shift none
-    Your **Hex** makes everything else move **80%** slower for **5 Sec.**
+    Your **Hex** makes everything else move **80%** slower for **4 Sec.**
     Ready After: {m}
-    150
+    100
     0
     9/91/Phase_Shift.png
 hex twilight curse none
@@ -14,7 +14,7 @@ hex twilight curse none
 hex lunar ray none
     Your **Hex** fires a beam that deals up to **900** damage over **3 Sec.**
     Ready After: {m}
-    70
+    30
     0
     2/2b/Lunar_Ray.png
 hex wolf howl none
@@ -26,11 +26,11 @@ hex wolf howl none
 hex moon water none
     Your **Hex** restores **15** **<:Life:1241660063513448499>** up to **3** times, which reset whenever you use **Fountains**.
     Ready After: {m}
-    80
+    70
     0
     1/12/Moon_Water.png
 hex night bloom none
-    Your **Hex** raises **1** random slain foe from this **Encounter** to fight for you for **12 Sec.**
+    Your **Hex** raises the last susceptible foe slain this **Encounter** to fight for you for **12 Sec.**
     Ready After: {m}
     60
     0
@@ -38,12 +38,12 @@ hex night bloom none
 hex total eclipse none
     Your **Hex** blasts the target area for **1000** damage after **4 Sec.**
     Ready After: {m}
-    200
+    90
     0
     9/92/Twilight_Curse.png
 hex dark side none
     Your **Hex** turns you into an **Impervious** living nightmare with her own abilities for **5 Sec.**
     Ready After: {m}
-    100
+    80
     0
     6/62/Dark_Side.png

@@ -8,7 +8,7 @@ attack volcanic strike fire
 special volcanic flourish fire
     Your **Specials** occasionally create a blast that deals **400** damage in the area.
     Blast Recharge Time: {s}
-    20 18 16 14
+    16 14 12 10
     -2 -1
     e/eb/Volcanic_Flourish.png
 cast anvil ring earth
@@ -44,7 +44,7 @@ t1 mint condition earth
     5/5e/Mint_Condition.png
 t1 heavy metal earth
     Gain some **<:Armor:1243126987032363048>**. Foes' attacks cannot knock you away.
-    Armor Gained: {+}<:Armor:1243126987032363048>
+    Armor Gained: {+} <:Armor:1243126987032363048>
     50 75 100 125
     0
     2/23/Heavy_Metal.png
@@ -60,7 +60,7 @@ t2 grand caldera fire
     0
     0
     b/b7/Tough_Trade.png
-    1(volcanic strke, volcanic flourish, smithy sprint)
+    1(volcanic strike, volcanic flourish, smithy sprint)
 status furnace blast fire
     Your blast effects from **Hephaestus** also inflict **Vent** on foes.
     Vent Damage: {}
@@ -70,7 +70,7 @@ status furnace blast fire
     1(volcanic strike, volcanic flourish, smithy sprint)
 prime trusty shield earth
     After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478>** to gain **Armor** until the next **Location**.
-    Starting Armor: {+}<:Armor:1243126987032363048>
+    Starting Armor: {+} <:Armor:1243126987032363048>
     10 15 20 25
     5 3 2
     3/32/Trusty_Shield.png
@@ -87,14 +87,14 @@ legendary fine tuning earth
     1
     0
     d/d3/Fine_Tuning.png
-    1(volcanic strike, volcanic flourish); 1(heavy metal, trusty shield, mint condition); 1(tough trade, molten touch, furnace blast)
+    1(volcanic strike, volcanic flourish, smithy sprint); 1(trusty shield, mint condition, heavy metal); 1(molten touch, grand caldera, furnace blast)
 duo love handles aether
     Your blast effects from **Hephaestus** also create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120
     0
     9/9d/Soft_Caress.png
-    1(rapture ring, passion dash, glamour gain); 1(anvil ring, smithy sprint, fixed gain)
+    1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo rude awakening aether
     Your blast effects from **Hephaestus** clear **Daze** and deal more damage if they do.
     Bonus Blast Damage: {}
@@ -108,28 +108,28 @@ duo room temperature aether
     0
     0
     6/66/Room_Temperature.png
-    1(ice strike, ice flourish); 1(volcanic strike, volcanic flourish, smithy sprint)
+    1(ice strike, ice flourish, arctic ring); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo spiteful strength aether
     Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
     Boon-Less Bonus Damage: {+%}
     200
     0
     c/c6/Spiteful_Strength.png
-    1(fixed gain, trusty shield, mint condition, heavy metal, tough trade, uncanny fortitude); 1(born gain, brave face, nasty comeback, keen intuition)
+    1(molten touch, trusty shield, mint condition, heavy metal, uncanny fortitude, grand caldera, furnace blast); 1(nasty comeback, blood line, family trade, hereditary bane, dying wish)
 duo chain reaction aether
     If you use your blast effects from **Hephaestus** just after they recharge, they fire **2** times.
     Double Blast Timing: {s}
     2
     0
     c/c5/Chain_Reaction.png
-    1(volcanic strike, volcanic flourish); 1(flame strike, flame flourish, smolder ring)
+    1(volcanic strike, volcanic flourish); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain)
 duo seismic hammer aether
     Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
     Blast Recharge Time: {s}
-    15
+    6
     0
     d/d9/Seismic_Hammer.png
-    1(volcanic strike, volcanic flourish, smithy sprint); 1(geyser ring)
+    1(volcanic strike, volcanic flourish, smithy sprint); 1(tidal ring, geyser spout)
 duo master conductor aether
     Your chain-lightning deals more damage per bounce and can bounce to you.
     Damage per Bounce: {+%}

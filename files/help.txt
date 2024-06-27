@@ -19,7 +19,7 @@ god god_name?
 legendaries None
     Returns a list of all legendaries.
     1027126357597093969
-legendaries None
+duos None
     Returns a list of all duos.
     1027126357597093969
 define term?

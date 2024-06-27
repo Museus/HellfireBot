@@ -47,12 +47,13 @@ t1 heart breaker water
     120 180 240 300
     60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
     e/ef/Heart_Breaker.png
-t1 healthy rebound water
+t2 healthy rebound water
     Whenever you exit a **Location**, restore **100%** **<:Life:1241660063513448499>** if you have not lost too much.
     Min Life Required: {%}
     80 70 60 50
     -10 -5 -2.5 -1.25 -0.625 -0.3125 -0.2
     a/a1/Healthy_Rebound.png
+    1(shameless attitude)
 t2 broken resolve water
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
@@ -86,53 +87,53 @@ legendary nervous wreck air
     3
     0
     6/66/Ecstatic_Obsession.png
-    1(flutter strike, flutter flourish); 1(rapture ring, passion dash, glamour gain); 1(broken resolve, sweet surrender)
+    1(flutter strike, flutter flourish); 1(rapture ring, passion rush, glamour gain); 1(secret crush, shameless attitude, broken resolve, sweet surrender)
 duo sunny disposition aether
     Whenever you create **Heartthrobs**, create more.
     Bonus Heartthrobs: {+}
     2
     0
     2/2c/Sunny_Disposition.png
-    1(heart breaker); 1(nova strike, nova flourish, solar ring, lucid gain)
+    1(heart breaker); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain)
 duo hearty appetite aether
-    You deal more damage the more **<:Life:1241660063513448499>** you have.
+    You deal more damage the more **<:MaxLife:1241662636995772436>** you have.
     Bonus Damage per 100 Life: {+%}
     10
     0
     c/cc/Hearty_Appetite.png
-    1(shameless attitude, life affirmation, healthy rebound); 1(plentiful forage, winter coat)
+    1(flutter strike, flutter flourish, passion rush, glamour gain, healthy rebound); 1(ice strike, ice flourish, frigid sprint, tranquil gain, plentiful forage)
 duo love handles aether
     Your blast effects from **Hephaestus** also create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120
     0
     9/9d/Soft_Caress.png
-    1(rapture ring, passion dash, glamour gain); 1(anvil ring, smithy sprint, fixed gain)
+    1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo ecstatic obsession aether
     During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
     Foes Required: {} *(or more)*
     2
     0
     f/fd/Soul_Mate.png
-    1(rapture ring, passion dash, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
+    1(rapture ring, passion rush, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 duo hot flash aether
     While foes are **Weak**, any **Scorch** they have does not diminish as it deals damage.
     Scorch Duration on Weak Foes: **∞**
     0
     0
     c/ce/Burning_Desire.png
-    1(rapture ring, passion dash, glamour gain); 1(smolder ring, soot sprint, hearth gain)
+    1(rapture ring, passion rush, glamour gain); 1(flame strike, flame flourish, smolder ring)
 duo island getaway aether
     You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
     Damage Resistance: {+%}
     15
     0
     2/29/Island_Getaway.png
-    1(flutter strike, flutter flourish); 1(wave strike, wave flourish, geyser ring, breaker sprint)
+    1(flutter strike, flutter flourish); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo romantic spark aether
     If you **Sprint** into **Blitz**-afflicted foes, the effect activates immediately and is stronger.
     Bonus Blitz Damage: {+%}
     200
     0
     6/66/Romantic_Spark.png
-    1(flutter strike, flutter flourish, rapture ring, passion dash); 1(heaven strike, heaven flourish)
+    1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(heaven strike, heaven flourish)

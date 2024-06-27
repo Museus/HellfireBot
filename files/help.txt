@@ -38,7 +38,10 @@ rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348
 suggest alias -> item_name
-    Sends a suggested <alias> to <item_name> mapping to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
+    Sends an <alias> to <item_name> mapping suggestion directly to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
+
+report description
+    Sends a bug report with <description> directly to the developer, RandyZ129#8918.
 
 creds None
     Returns a list of people who have significantly contributed to the bot's development.

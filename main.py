@@ -279,12 +279,23 @@ async def suggest(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    args = ' '.join([s.lower() for s in args])
+    args = ' '.join(s.lower() for s in args)
     verofire = args.split('->')
     if len(verofire) != 2:
         await misc.reply(ctx, 'idk man as', mention=True)
         return
     channel = client.get_channel(1018409476908392518)
+    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
+    await misc.reply(ctx, 'Thank you for your contribution!')
+
+
+@client.command(aliases=['bug', 'bugreport', 'bugs', 'reports'])
+async def report(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    args = ' '.join(args)
+    channel = client.get_channel(1025559977227714720)
     await channel.send(f'From {ctx.author.mention}:\n```{args}```')
     await misc.reply(ctx, 'Thank you for your contribution!')
 

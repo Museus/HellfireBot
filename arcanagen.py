@@ -17,7 +17,7 @@ def add_awakenings(loadout, disabled=None):
         loadout.append(5)
     if 13 not in disabled and all(g in grasps for g in range(1, 6)):
         loadout.append(13)
-    if 20 not in disabled and all(grasps.count(g) <= 2 for g in range(1, 7)):
+    if 20 not in disabled and len(loadout) >= 1 and all(grasps.count(g) <= 2 for g in range(1, 7)):
         loadout.append(20)
     if 21 not in disabled and all(c in loadout for c in (16, 17, 22)):
         loadout.append(21)

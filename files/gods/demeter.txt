@@ -35,7 +35,7 @@ xt1 rare crop earth
     1 2 3 4
     0
     1/10/Rare_Crop.png
-    1(any upgradeable boon)
+    1(any non heroic rarifiable boon)
 t1 gale force water
     Your **Casts** also create a **Cyclone** at the binding circle.
     Cyclone Damage: {} *(every 0.25 Sec.)*
@@ -95,14 +95,14 @@ duo hearty appetite aether
     Bonus Damage per 100 Life: {+%}
     10
     0
-    c/cc/Hearty_Appetite.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/3/3b/Hearty_Appetite_II.png/revision/latest?cb=20240614094929
     1(flutter strike, flutter flourish, passion rush, glamour gain, healthy rebound); 1(ice strike, ice flourish, frigid sprint, tranquil gain, plentiful forage)
 duo boreal gust aether
     While standing in a **Cyclone**, you randomly fire gales every **0.3 Sec.**
     Gale Damage: {} *(every 0.5 Sec.)*
     70
     0
-    9/9a/Torrential_Downpour.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/6e/Boreal_Gust_II.png/revision/latest?cb=20240614094930
     1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(frigid sprint, gale force)
 duo room temperature aether
     Your blast effects from **Hephaestus** clear **Freeze**, so you can inflict it again right after.

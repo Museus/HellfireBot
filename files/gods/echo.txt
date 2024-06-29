@@ -24,8 +24,10 @@ t1 reward reward reward none
     0
     0
 
-t1 boon boon boon none
+xt1 boon boon boon none
     Gain a random **Boon** from the previous night.
 
     0
     0
+
+    1(boon from previous night)

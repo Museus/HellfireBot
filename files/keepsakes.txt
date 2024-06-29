@@ -55,7 +55,7 @@ survival luckier tooth
     thumb/8/85/Luckier_Tooth.png/50px-Luckier_Tooth.png
 survival ghost onion
     Whenever you exit a **Location**, fully restore your **<:Life:1241660063513448499>**, up to a total of {h} this night.
-    50 75 100 125
+    50 75 100 150
     dora
     thumb/8/84/Ghost_Onion.png/50px-Ghost_Onion.png
 survival engraved pin
@@ -65,7 +65,7 @@ survival engraved pin
     thumb/e/e0/Engraved_Pin.png/50px-Engraved_Pin.png
 survival silken sash
     Gain **+20** **<:Armor:1243126987032363048>**. While you have at least **1** **<:Armor:1243126987032363048>**, gain {+a} after each **Location**.
-    2 3 4 5
+    2 3 4 6
     arachne
     thumb/3/3f/Silken_Sash.png/50px-Silken_Sash.png
 survival aromatic phial
@@ -80,12 +80,12 @@ combat silver wheel
     thumb/4/49/Silver_Wheel.png/50px-Silver_Wheel.png
 combat evil eye
     Deal {+%} damage to the last foe that vanquished you.
-    20 25 30 35
+    20 25 30 40
     nemesis
     thumb/2/27/Evil_Eye.png/50px-Evil_Eye.png
 combat discordant bell
     After each **Encounter**, you deal {+%r1} damage, but also take that much more.
-    0.5 0.75 1 1.25
+    0.5 0.75 1 1.5
     eris
     thumb/5/5d/Discordant_Bell.png/50px-Discordant_Bell.png
 combat metallic droplet
@@ -100,7 +100,7 @@ combat white antler
     thumb/0/06/White_Antler.png/50px-White_Antler.png
 combat lion fang
     Deal {+%} bonus damage, but lose **5%** of this after each **Encounter**.
-    30 40 50 60
+    30 40 50 70
     heracles
     thumb/d/d9/Lion_Fang.png/50px-Lion_Fang.png
 combat blackened fleece
@@ -115,7 +115,7 @@ resource gold purse
     thumb/7/7c/Gold_Purse.png/50px-Gold_Purse.png
 resource crystal figurine
     After the next **Guardian**, activate **1** random {} **Arcana Card**.
-    <:ArcanaCommon:1251065102023528549> <:ArcanaRare:1251065105634824335> <:ArcanaEpic:1251065103185612842>
+    <:ArcanaCommon:1251065102023528549> <:ArcanaRare:1251065105634824335> <:ArcanaEpic:1251065103185612842> <:ArcanaHeroic:1251065104061960225>
     circe
     thumb/7/7c/Crystal_Figurine.png/50px-Crystal_Figurine.png
 resource concave stone

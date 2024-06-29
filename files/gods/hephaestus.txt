@@ -93,14 +93,14 @@ duo love handles aether
     Heartthrob Area Damage: {}
     120
     0
-    9/9d/Soft_Caress.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e1/Love_Handles_II.png/revision/latest?cb=20240614094930
     1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo rude awakening aether
     Your blast effects from **Hephaestus** clear **Daze** and deal more damage if they do.
     Bonus Blast Damage: {}
     220
     0
-    c/c5/Stellar_Slam.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/20/Rude_Awakening_II.png/revision/latest?cb=20240626223446
     1(solar ring, blinding sprint, light smite, dazzling display); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo room temperature aether
     Your blast effects from **Hephaestus** clear **Freeze**, so you can inflict it again right after.

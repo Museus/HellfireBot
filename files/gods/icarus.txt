@@ -1,11 +1,11 @@
 encounter
-t1 ingenius strike none
+t1 ingenious strike none
     After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to give your **Attacks** {+} **Power**.
 
     10
     0
     thumb/b/b6/Ingenious_Strike.png/41px-Ingenious_Strike.png
-t1 ingenius flourish none
+t1 ingenious flourish none
     After you enter a **Location**, **Prime** **40** **<:Magick:1250935754461544478>** to give your **Attacks** {+} **Power**.
 
     20
@@ -18,7 +18,7 @@ t1 hazard boom none
     0
     thumb/e/ee/Hazard_Boom.png/41px-Hazard_Boom.png
 t1 destructive coating none
-    Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, deal **4000** damage to nearby foes.
+    Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, deal **4000** damage to surrounding foes.
 
     40
     0

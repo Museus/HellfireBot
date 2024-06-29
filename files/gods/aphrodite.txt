@@ -4,136 +4,136 @@ attack flutter strike water
     Close-Up Damage: {+%}
     80 100 120 140
     25 15 10
-    b/be/Flutter_Strike.png
+    c/ca/Flutter_Strike_II.png
 special flutter flourish water
     Your **Specials** deal more damage to nearby foes.
     Close-Up Damage: {+%}
     100 150 200 250
     50 30 20 10
-    0/0d/Flutter_Flourish.png
+    5/51/Flutter_Flourish_II.png
 cast rapture ring air
     Your **Casts** inflict **Weak**, and damage foes while dragging them toward the center.
     Cast Damage: {} *(every 0.85 Sec.)*
     10 15 20 25
     0
-    3/32/Rapture_Ring.png
+    b/b1/Rapture_Ring_II.png
 sprint passion rush air
     **Dashing** damages surrounding foes and inflicts **Weak**, and again once you stop.
     Area Damage: {}
     20 30 40 50
     10 5
-    e/e0/Passion_Dash.png
+    f/ff/Passion_Rush_II.png
 gain glamour gain air
     You inflict **Weak** on nearby foes, and gradually restore **<:Magick:1250935754461544478>** while any nearby foe is **Weak**.
     Magick Restoration: {} *(every 1 Sec.)*
     6 8 10 12
     1.98 0.99 0.6
-    0/0e/Glamour_Gain.png
+    0/0b/Glamour_Gain_II.png
 t1 life affirmation air
     Any **<:MaxLife:1241662636995772436>** rewards you find have a greater effect.
     Bonus Life Gain: {+%}
     40 50 60 70
     0
-    f/fa/Life_Affirmation.png
+    4/4b/Life_Affirmation_II.png
 t1 shameless attitude air
     You deal more damage. While you have at least **80%** **<:Life:1241660063513448499>**, the bonus is doubled.
     Bonus Damage: {+%}
     10 15 20 25
     5 4 3.2 2.56 2.048 1.6384 1.31072 1.048576 1
-    a/a3/Shameless_Attitude.png
+    e/e7/Shameless_Attitude_II.png
 t1 heart breaker water
     Whenever you use **30** **<:Magick:1250935754461544478>**, create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120 180 240 300
     60 48 38.4 30.72 24.576 19.6608 15.72864 12.582912 12
-    e/ef/Heart_Breaker.png
+    8/83/Heart_Breaker_II.png
 t2 healthy rebound water
     Whenever you exit a **Location**, restore **100%** **<:Life:1241660063513448499>** if you have not lost too much.
     Min Life Required: {%}
     80 70 60 50
     -10 -5 -2.5 -1.25 -0.625 -0.3125 -0.2
-    a/a1/Healthy_Rebound.png
+    8/82/Healthy_Rebound_II.png
     1(shameless attitude)
 t2 broken resolve water
     Your **Weak** effects are more potent.
     Weak Damage Reduction: {+%}
     10 12 14 16
     2 1
-    1/1b/Broken_Resolve.png
+    a/ae/Broken_Resolve_II.png
     1(rapture ring, passion rush, glamour gain)
 t2 sweet surrender water
     **Weak**-afflicted foes take more damage.
     Damage vs. Weak: {+%}
     10 15 20 25
     5 2.5 1.25 1
-    a/a6/Sweet_Surrender.png
+    f/f0/Sweet_Surrender_II.png
     1(rapture ring, passion rush, glamour gain)
 prime secret crush air
     After you enter a **Location**, **Prime** **20** **<:Magick:1250935754461544478>** to add **Power** to your **Attack**.
     Attack Power: {+}
     5 7 9 11
     0
-    0/00/Secret_Crush.png
+    6/61/Secret_Crush_II.png
 infusion wispy wiles none
     Gain a chance to **Dodge** for each **<:AirEssence:1251066557921099786>** you have.
     Dodge Chance per Air Boon: {+%}
     3
     0
-    a/a4/Wispy_Wiles.png
+    c/c5/Wispy_Wiles_II.png
     2(<:AirEssence:1251066557921099786> air)
 legendary nervous wreck air
     Whenever you inflict **Weak**, also randomly inflict other gods' **Curses**.
     Bonus Random Curses: {}
     3
     0
-    6/66/Ecstatic_Obsession.png
+    1/14/Nervous_Wreck_II.png
     1(flutter strike, flutter flourish); 1(rapture ring, passion rush, glamour gain); 1(secret crush, shameless attitude, broken resolve, sweet surrender)
 duo sunny disposition aether
     Whenever you create **Heartthrobs**, create more.
     Bonus Heartthrobs: {+}
     2
     0
-    2/2c/Sunny_Disposition.png
+    a/ae/Sunny_Disposition_II.png
     1(heart breaker); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain)
 duo hearty appetite aether
     You deal more damage the more **<:MaxLife:1241662636995772436>** you have.
     Bonus Damage per 100 Life: {+%}
     10
     0
-    c/cc/Hearty_Appetite.png
+    3/3b/Hearty_Appetite_II.png
     1(flutter strike, flutter flourish, passion rush, glamour gain, healthy rebound); 1(ice strike, ice flourish, frigid sprint, tranquil gain, plentiful forage)
 duo love handles aether
     Your blast effects from **Hephaestus** also create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120
     0
-    9/9d/Soft_Caress.png
+    e/e1/Love_Handles_II.png
     1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo ecstatic obsession aether
     During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
     Foes Required: {} *(or more)*
     2
     0
-    f/fd/Soul_Mate.png
+    e/ea/Ecstatic_Obsession_II.png
     1(rapture ring, passion rush, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 duo hot flash aether
     While foes are **Weak**, any **Scorch** they have does not diminish as it deals damage.
     Scorch Duration on Weak Foes: **∞**
     0
     0
-    c/ce/Burning_Desire.png
+    1/15/Hot_Flash_II.png
     1(rapture ring, passion rush, glamour gain); 1(flame strike, flame flourish, smolder ring)
 duo island getaway aether
     You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
     Damage Resistance: {+%}
     15
     0
-    2/29/Island_Getaway.png
+    1/1b/Island_Getaway_II.png
     1(flutter strike, flutter flourish); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo romantic spark aether
     If you **Sprint** into **Blitz**-afflicted foes, the effect activates immediately and is stronger.
     Bonus Blitz Damage: {+%}
     200
     0
-    6/66/Romantic_Spark.png
+    4/4c/Romantic_Spark_II.png
     1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(heaven strike, heaven flourish)

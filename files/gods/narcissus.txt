@@ -4,51 +4,53 @@ t1 verdure sampler none
 
     1
     0
-
+    c/c6/Verdure_Sampler_II.png
 t1 heartfelt condolences none
     Receive a gift of {+h} and **+10** **<:Ashes:1242227789059457055>**.
 
     50
     0
-
+    5/51/Heartfelt_Condolences_II.png
 t1 precious metals none
     Receive a gift of **+6** **<:Silver:1250207629427347568>** and {+} **<:GoldenCrowns:1250942621044576308>**.
 
     100
     0
-
+    d/db/Precious_Metals_II.png
 t1 mystic secrets none
     Receive a gift of {+} **<:MaxMagick:1250936650939240519>** and **+20** **<:Psyche:1242227790879784983>**.
 
     30
     0
-
+    4/40/Mystic_Secrets_II.png
 t1 ancestral offering none
     Receive a gift of {+} **<:MaxLife:1241662636995772436>** and **+50** **<:Bones:1250204963951480966>**.
 
     25
     0
-
+    c/c0/Ancestral_Offering_II.png
 t1 fates' trimmings none
     Receive a gift of **2** **<:FateFabric:1250938286055231570>** and {+} **<:Reroll:1028190585280012348>**.
 
     2
     0
-
-t1 life savings none
+    0/0b/Fates%27_Trimmings_II.png
+xt1 life savings none
     Receive a gift of {} **<:StyxKiss:1243444516019507220>** and **1** **<:Deathcap:1250207626126561501>**.
 
     1
     0
-
+    8/80/Life_Savings_II.png
+    1(empty defiance slot)
 t1 mixed blessings none
     Receive a gift of {+} **<:RandGod:1250934841030217759>** and **1** **<:MysterySeed:1251063943875788810>**.
 
     1
     0
-
+    c/c2/Mixed_Blessings_II.png
 t1 heavenly splendor none
     Receive a gift of **+1** **<:StarDust:1250207630769651812>** and {+} **<:EarthEssence:1251066559112417312>** **<:WaterEssence:1251066562312671344>** **<:AirEssence:1251066557921099786>** **<:FireEssence:1251066561071026238>**.
 
     2
     0
+    5/59/Heavenly_Splendor_II.png

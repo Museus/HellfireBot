@@ -28,15 +28,20 @@ def add_awakenings(loadout, disabled=None):
     return loadout
 
 
-def arcana_gen(args):
-    if ' '.join(args) in files.global_arcana['arcana']:
-        bitstring = files.global_arcana['arcana'][' '.join(args)]
+def arcana_gen(uid, args):
+    if isinstance(args, list) or isinstance(args, tuple):
+        loadout = [int(c) for c in args if all_grasps[int(c) - 1] != 0]
+        add_awakenings(loadout)
+    else:
+        if uid in files.saved_arcana['personal'] and args in files.saved_arcana['personal'][uid]:
+            bitstring = files.saved_arcana['personal'][uid][args]
+        elif args in files.saved_arcana['global']:
+            bitstring = files.saved_arcana['global'][args]
+        else:
+            return -1
         loadout = [i for i in range(1, 26) if bitstring[i - 1] == '1' and all_grasps[i - 1] != 0]
         disabled = set(i for i in range(1, 26) if bitstring[i - 1] == '0' and all_grasps[i - 1] == 0)
         add_awakenings(loadout, disabled)
-    else:
-        loadout = [int(c) for c in args if all_grasps[int(c) - 1] != 0]
-        add_awakenings(loadout)
 
     base = Image.open('./files/arcana/base.png')
     total_grasp = 0

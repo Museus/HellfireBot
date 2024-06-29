@@ -1,65 +1,97 @@
 rapture ring
     rapture
-passion dash
-    pash dash
+passion rush
+    passion dash, pash dash, pash rush, pass dash, pass rush
 glamour gain
     glamor gain, glamour, glamor
+life affirmation
+    affirmation, life affirm
 shameless attitude
     high confidence, hc
 heart breaker
     heartbreaker, heartthrob, heart throb, hearthrob
+healthy rebound
+    healthy, rebound
+broken resolve
+    broken, resolve
 secret crush
     crush
 sweet surrender
     surrender
-ecstatic obsession
-    obsession
+wispy wiles
+    wispy, wispy wile, wiles, wile, wisp, wisp wiles, wisp wile
+nervous wreck
+    nervous, wreck
 solar ring
     solar
 blinding sprint
-    blinding
+    blinding, blind sprint, blind
 lucid gain
-    lucid
+    lucid, cast gain
 super nova
     supernova, growing cast
 light smite
     apollo revenge, revenge
+perfect image
+    perfect, image, butterfly
+back burner
+    backburner, back burn, burner, backstab, fiery, fiery presence
+prominence flare
+    prominence, flare
 dazzling display
     dazzling, dazzle
+self healing
+    selfhealing
 arctic ring
     arctic
 frigid sprint
-    frigid, cyclone sprint, sprint cyclone
+    frigid, cyclone sprint, sprint cyclone, cyclone
+tranquil gain
+    tranquil
 rare crop
     crop
 local climate
     local, climate
 gale force
-    cyclone cast, cast cyclone
+    cyclone cast, cast cyclone, cyclone
 plentiful forage
     forage
-winter coat
-    coat
-coarse grit
-    grit
+snow queen
+    winter coat, coat, queen
+cold storage
+    storage
+frosty veneer
+    course grit, grit, frosty, veneer, frost veneer
 winter harvest
     harvest
+volcanic strike
+    volcanic
+volcanic flourish
+    volcanic
 anvil ring
     anvil
 smithy sprint
-    smithy
+    smithy, smith sprint
 fixed gain
-    fixed
+    fixed, fix gain, fix
+molten touch
+    molten
 mint condition
     mint
+heavy metal
+    heavy, metal, armor
 uncanny fortitude
     uncanny, fortitude
 trusty shield
-    trusty
+    trusty, armor
+grand caldera
+    caldera
 furnace blast
     vent
 martial art
-    martial arts
+    martial arts, martial, art, arts
+fine tuning
+    tuning, fine tune
 engagement ring
     engagement, ering
 nexus sprint
@@ -69,19 +101,21 @@ born gain
 family trade
     trade, sacrifice
 bridal glow
-    glow
-keen intuition
-    intuition
+    bridal, glow
 uncommon grace
     uncommon, grace
 nasty comeback
     comeback, hera revenge, revenge
 hereditary bane
-    bane
+    hereditary, bane
+blood line
+    bloodline, rift
 proper upbringing
     upbringing
+dying wish
+    dying
 smolder ring
-    rof
+    rof, ring of fire
 soot sprint
     soot
 hearth gain
@@ -91,101 +125,123 @@ burnt offering
 glowing coal
     coal, glowing coals, coals
 controlled burn
-    burn
-spontaneous combustion
-    combustion
+    controlled, burn
 natural gas
-    gas
+    natural, gas
 fire extinguisher
     extinguisher, extinguish
-flammable coating
-    coating
+crispy coating
+    flammable coating, flammable, coating, crispy, crisp coating
 pyro technique
     pyro
-geyser ring
-    geyser
+highly flammable
+    high flammable, flammable
+slow cooker
+    slow cook, cooker, cook
+fire walk
+    fire, walk
+tidal ring
+    tidal, tring, t ring
 breaker sprint
     tidal dash, tidal, tdash, splash dash, splashdash
+fluid gain
+    fluid
 double up
-    haha yes
+    haha yes, double
 hydraulic might
-    hydro, hydro might, hydraulic
-sunken treasure
-    treasure
+    hydro, hydro might, hydraulic, might
 ocean's bounty
-    oceans bounty, bounty
+    oceans bounty, bounty, sunken treasure, sunken, treasure
 slippery slope
-    slip
-crashing wave
-    breaking wave, bwave, beaver, b wave
+    slip, slippery
+splash fount
+    crashing wave, breaking wave, bwave, beaver, b wave, fount
+geyser spout
+    geyser ring, geyser, spout
+flood control
+    flood, control
 water fitness
     fitness
 king tide
-    king
+    king, tide
 ionic gain
-    ionic
+    ionic, aether, aether font
 lightning lance
     lance
 spirit surge
     surge, ssurge, spirit
 divine vengeance
-    zeus vengeance, heaven's vengeance, heavens vengeance, zeus revenge, revenge
+    zeus vengeance, heaven's vengeance, heavens vengeance, zeus revenge, revenge, vengeance
 static shock
     shock
-second strike
-    double strike, dstrike
+double strike
+    second strike, double, second, dstrike
 toasting fork
     toasting, fork
 electric overload
     overload
+static shock
+    static, sshock, shock
+shocking loss
+    shocking, shock
 sunny disposition
-    triple heartthrob, triple heart throb
+    triple heartthrob, triple heart throb, sunny, disposition
 hearty appetite
-    appetite
-soft caress
-    caress
-soul mate
-    soulmate
-burning desire
-    desire
+    hearty, appetite
+love handles
+    handles, love handle, handle
+ecstatic obsession
+    ecstatic, obsession, ecstatic obsess, obsess
+hot flash
+    flash
 island getaway
     getaway
 romantic spark
-    spark
-torrential downpour
-    torrential, downpour
-stellar slam
-    stellar, slam
+    romantic, spark
+boreal gust
+    torrential downpour, torrential, downpour, boreal, gust
+rude awakening
+    stellar slam, stellar, slam, rude, awakening
 sun worshiper
     sun worshipper, worshiper, worshipper
 phoenix skin
     ps
 beach ball
-    bball
+    bball, b ball, beach, beachball
 glorious disaster
     glorious, disaster
+room temperature
+    room, temperature, room temp, temp
 cherished heirloom
-    heirloom
+    heirloom, cherish, cherished
+freezer burn
+    freezer, freeze burn
+natural selection
+    natural, selection
+hail storm
+    hailstorm, hail
 spiteful strength
-    spiteful
+    spiteful, spite, shackle, shackles
+chain reaction
+    chain, reaction, chain react, react
 seismic hammer
-    seismic
+    seismic, hammer
 master conductor
-    conductor
-funeral pyre
-    pyre
+    conductor, master conduct, conduct
+elementary particles
+    elementary particle, elementary, particles, particle
 golden rule
-    hoarding slash
+    hoarding slash, golden
 queen's ransom
-    queens ransom
+    queens ransom, ransom
 king's ransom
-    kings ransom
+    kings ransom, ransom
 scalding vapor
     scalding, vapor, steam
 thermal dynamics
-    thermodynamics, dynamics
+    thermodynamics, dynamics, thermal, thermal dynamic
 killer current
-    current
+    killer, current
 pressure points
     pp, pressure point
 silver streak
@@ -224,3 +280,81 @@ reward reward reward
     reward
 boon boon boon
     boon
+howling soul
+    howling, howl soul, howl, hades cast
+deep dissent
+    dissent
+last gasp
+    gasp
+unseen ire
+    ire, dark, sigil
+life tax
+    tax
+old grudge
+    grudge
+phase shift
+    shift, slow, slowdown
+twilight curse
+    twilight, morph
+lunar ray
+    ray
+wolf howl
+    howl
+moon water
+    moonwater, water
+night bloom
+    bloom
+total eclipse
+    eclipse
+dark side
+    darkside
+life essence
+    essence
+kiss of styx
+    charon dd, charon defiance, styx kiss
+preserved hope
+    preserved, hope, preserve hope, preserve
+breath of eros
+    breath of eos, eros breath, eros, eos, soft caress, caress
+price of midas
+    midas
+centaur soul
+    centaur, centaur heart
+chimaera jerky
+    chimaera, jerky
+witch's mark
+    witch mark, witchs mark
+python scales
+    python scale, python, scales, scale
+braid of atlas
+    braid, atlas
+ignited ichor
+    ichor, ignited
+gaia's gift
+    gaia's, gaias, gaia, gaias gift, gaia gift
+archaic seal
+    archaic
+yarn of ariadne
+    yarn, ariadne, ariadne yarn
+spark of ixion
+    spark, ixion, ix, chaos gate
+fateful twist
+    fateful, twist, twist of fate
+verdure sampler
+    verdure
+heartfelt condolences
+    heartfelt, condolences, heartfelt condolence, condolence
+precious metals
+    precious, metals, precious metal
+mystic secrets
+    mystic, secrets, mystic secret
+ancestral offering
+    ancestral
+fates' trimmings
+    fates trimmings, fates' trimming, fates trimming, reroll
+life savings
+    life saving, savings, narcissus dd, narcissus defiance, narc dd, narc defiance
+mixed blessings
+    mixed, blessings, mixed blessing, blessing, narcissus boon
+heavenly splendor
+    splendor

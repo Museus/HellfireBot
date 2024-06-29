@@ -20,6 +20,8 @@ hermes
     hermes', hermes's, herm, herme, swift
 charon
     char, well, well of charon, charon well
+narcissus
+    narc
 attack
     attacks, atk, strike, dstrike, Ω attack, Ωattack, omega attack, oattack, ⚔
 special

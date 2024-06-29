@@ -94,14 +94,14 @@ duo romantic spark aether
     Bonus Blitz Damage: {+%}
     200
     0
-    6/66/Romantic_Spark.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4c/Romantic_Spark_II.png/revision/latest?cb=20240614094930
     1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(heaven strike, heaven flourish)
 duo glorious disaster aether
     You can **Channel** **+30** **<:Magick:1250935754461544478>** into your **Ω Cast** to repeatedly strike foes with lightning bolts.
     Bolt Damage: {} *(every 0.13 Sec.)*
     25
     0
-    d/df/Glorious_Disaster.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/21/Glorious_Disaster_II.png/revision/latest?cb=20240614094929
     1(prominence flare); 1(heaven strike, heaven flourish, storm ring, thunder sprint)
 duo hail storm aether
     Your **Freeze** effects also cause lightning bolts to repeatedly strike afflicted foes.

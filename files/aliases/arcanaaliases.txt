@@ -1,5 +1,5 @@
 the sorceress
-    sorceress, the sorcerer, sorcerer, channel
+    sorceress, the sorcerer, sorcerer, channel, slow, slowdown
 the wayward son
     wayward son, wayward, cthonic vitality, vitality, healing
 the huntress

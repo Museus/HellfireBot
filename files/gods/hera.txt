@@ -35,13 +35,14 @@ xt1 bridal glow earth
     5 7 8 9
     0
     a/a9/Bridal_Glow.png
-    2(any non-heroic rarifiable boon)
-t1 uncommon grace earth
+    2(any non heroic rarifiable boon)
+xt1 uncommon grace earth
     While none of your other **Boons** are **Common**, deal more damage.
     Common-Less Bonus Damage: {+%}
     10 15 20 25
     5 2.5 1.25 1
     b/b8/Uncommon_Grace.png
+    x(common boon)
 t1 nasty comeback earth
     After you take damage, inflict your foes with **Hitch** and deal damage in greater measure.
     Damage Reflected: {%}
@@ -93,14 +94,14 @@ duo ecstatic obsession aether
     Foes Required: {} *(or more)*
     2
     0
-    f/fd/Soul_Mate.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ea/Ecstatic_Obsession_II.png/revision/latest?cb=20240614094930
     1(rapture ring, passion rush, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 duo sun worshiper aether
     In each **Encounter**, the first foe you slay returns to fight for you.
     Servant Damage: {+%}
     200
     0
-    2/2c/Sun_Worshiper.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Sun_Worshiper_II.png/revision/latest?cb=20240614094930
     1(solar ring, blinding sprint, lucid gain); 1(engagement ring, nexus sprint, born gain)
 duo cherished heirloom aether
     Most other **Keepsakes** you equip are stronger this night *(if possible)*.
@@ -133,7 +134,7 @@ duo golden rule aether
 duo queen's ransom aether
     Give up *all* your **Boons** of **Zeus**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Hera**.
     Bonus Lv. per Zeus Boon: {+}
-    3
+    4
     0
     thumb/7/75/Queen%27s_Ransom.png/100px-Queen%27s_Ransom.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(storm ring, thunder sprint, ionic gain)

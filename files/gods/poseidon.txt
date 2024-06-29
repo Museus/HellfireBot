@@ -92,14 +92,14 @@ duo island getaway aether
     Damage Resistance: {+%}
     15
     0
-    2/29/Island_Getaway.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1b/Island_Getaway_II.png/revision/latest?cb=20240614094929
     1(flutter strike, flutter flourish); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo beach ball aether
     Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
     Blast Damage: {}
     300
     0
-    1/1b/Beach_Ball.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/67/Beach_Ball_II.png/revision/latest?cb=20240614094929
     1(blinding sprint, breaker sprint); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo natural selection aether
     **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.

@@ -38,6 +38,9 @@ async def on_command_error(ctx, err):
     if isinstance(err, commands.MissingRequiredArgument):
         await misc.reply(ctx, 'Missing required input. Run h!help <command_name> for more information.', mention=True)
         return
+    if isinstance(err, commands.PrivateMessageOnly):
+        await ctx.author.send('This command can only be used in private messages.')
+        return
     raise err
 
 
@@ -60,10 +63,8 @@ async def help(ctx, command_name=None):
 
 
 @client.command(aliases=['i'])
+@commands.dm_only()
 async def invite(ctx):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
     await misc.reply(ctx, 'https://discordapp.com/api/oauth2/authorize?scope=bot&client_id=1007734213904183306')
 
 
@@ -307,7 +308,12 @@ async def arcanaloadout(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    total_grasp = arcanagen.arcana_gen(args)
+    if len(args) == 1 and not args[0].isdigit():
+        args = args[0]
+    total_grasp = arcanagen.arcana_gen(str(ctx.message.author.id), args)
+    if total_grasp == -1:
+        await misc.reply(ctx, 'idk man as', mention=True)
+        return
     await misc.reply(
         ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
     )
@@ -323,7 +329,26 @@ async def randarcana(ctx, total_grasp=30):
         await ctx.author.send(misc.optout_dm)
         return
     loadout = arcanagen.rand_arcana(int(total_grasp))
-    total_grasp = arcanagen.arcana_gen(list(map(str, loadout)))
+    total_grasp = arcanagen.arcana_gen('', list(map(str, loadout)))
+    await misc.reply(
+        ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
+    )
+    os.remove('./temp.png')
+
+
+@client.command(aliases=['addloadout'])
+@commands.dm_only()
+async def addarcana(ctx, name, *args):
+    binary = ''.join('1' if str(c) in args else '0' for c in range(1, 26))
+    uid = str(ctx.message.author.id)
+    if uid not in files.saved_arcana['personal']:
+        files.saved_arcana['personal'][uid] = {}
+    files.saved_arcana['personal'][uid][name] = binary
+    files.write_personal()
+    total_grasp = arcanagen.arcana_gen(str(ctx.message.author.id), name)
+    if total_grasp == -1:
+        await misc.reply(ctx, 'idk man as', mention=True)
+        return
     await misc.reply(
         ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
     )

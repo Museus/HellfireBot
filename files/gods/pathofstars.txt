@@ -105,7 +105,7 @@ bright extinction none
     0/0d/Extinction.png
     1(twilight curse)
 bright revulsion none
-    Foes with **Morph** have {%} chance to be attacked by other nearby foes.
+    Foes with **Morph** have {%} chance to be attacked by other surrounding foes.
 
     50
     0

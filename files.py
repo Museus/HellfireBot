@@ -32,6 +32,8 @@ god_cores = {
 }
 global_arcana = {}
 commands_info = {}
+saved_arcana = {}
+saved_oaths = {}
 
 for god in god_cores:
     with open(f'./files/gods/{"".join(god.split())}.txt', 'r', encoding='utf8') as f:
@@ -187,5 +189,17 @@ with open('./files/enemies.txt', 'r', encoding='utf8') as f:
             'icon': f.readline().strip()
         }
 
-with open('./files/arcana/global.json', 'r', encoding='utf8') as f:
-    global_arcana = json.loads(f.read())
+
+def read_personal():
+    global saved_arcana
+    with open('./files/arcana/loadouts.json', 'r', encoding='utf8') as fp:
+        saved_arcana = json.loads(fp.read())
+
+
+def write_personal():
+    global saved_arcana
+    with open('./files/arcana/loadouts.json', 'w', encoding='utf8') as fp:
+        fp.write(json.dumps(saved_arcana, indent=4))
+
+
+read_personal()

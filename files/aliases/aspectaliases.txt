@@ -8,3 +8,11 @@ melinoë axe
     ax, axe, m, mel, melinoe, melinoë, max, maxe, mel ax, mel axe, melinoe ax, melinoe axe, melinoë ax, moonstone, moonstone ax, moonstone axe, zorephet
 melinoë skull
     skull, m, mel, melinoe, melinoë, mskull, mel skull, melinoe skull, argent, argent skull, revaal
+artemis
+    arty, arte, art
+pan
+    chiron
+eos
+    daybreaker, daybreak
+thanatos
+    than

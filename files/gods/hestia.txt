@@ -57,7 +57,7 @@ t2 crispy coating fire
     thumb/9/97/Flammable_Coating.png/100px-Flammable_Coating.png
     1(flame strike, flame flourish, smolder ring)
 t2 natural gas fire
-    Whenever **Scorch**-afflicted foes are slain, they damage nearby foes.
+    Whenever **Scorch**-afflicted foes are slain, they damage surrounding foes.
     Blast Damage: {}
     60 90 120 150
     15 7.5 6
@@ -96,14 +96,14 @@ duo hot flash aether
     Scorch Duration on Weak Foes: **∞**
     0
     0
-    c/ce/Burning_Desire.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/15/Hot_Flash_II.png/revision/latest/scale-to-width-down/75?cb=20240614094929
     1(rapture ring, passion rush, glamour gain); 1(flame strike, flame flourish, smolder ring)
 duo phoenix skin aether
     Give up **-100** **<:MaxLife:1241662636995772436>**. If you do not take or deal damage for **3 Sec.**, rapidly restore **<:Life:1241660063513448499>**.
     Life Restoration: {} *(every 1 Sec.)*
-    2
+    3
     0
-    8/82/Phoenix_Skin.png
+    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4a/Phoenix_Skin_II.png/revision/latest?cb=20240614094930
     1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain); 1(burnt offering)
 duo freezer burn aether
     Whenever you inflict **Freeze**, amplify any **Scorch** effects already on the foe.

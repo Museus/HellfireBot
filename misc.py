@@ -32,11 +32,11 @@ god_icons = {
     'echo': '1249245758327095346',
     'hades': '1249245758327095346',
     'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
-    'icarus': 'thumb/f/fb/CodexPortrait_Icarus.png/350px-CodexPortrait_Icarus.png',
+    'icarus': 'f/fd/Experimental_Hammer.png',
     'medea': '1249245758327095346',
     'narcissus': '1249245758327095346',
     'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
-    'path of stars': '1250986330075172926'
+    'path of stars': '1255961553857937428'
 }
 weapon_icons = {
     'staff': 'thumb/0/06/Witch%27s_Staff.png/300px-Witch%27s_Staff.png',
@@ -87,9 +87,9 @@ def fuzzy_boon(args):
     return ''
 
 
-def boon_value(info, rarity, second=False):
+def boon_value(info, rarity):
     try:
-        value = [float(x) for x in info['rarities2' if second else 'rarities'][parsing.rarities[rarity] - 1].split('-')]
+        value = [float(x) for x in info['rarities'][parsing.rarities[rarity] - 1].split('-')]
     except IndexError:
         return None
     return value
@@ -168,11 +168,11 @@ def to_link(s):
         return ''
     if s.isdigit():
         return f'https://cdn.discordapp.com/emojis/{s}.webp'
-    return f'https://hades2.game-vault.net/w/images/{s}'
+    return f'https://static.wikia.nocookie.net/hades_gamepedia_en/images/{s}'
 
 
 def channel_status(ctx):
-    if isinstance(ctx.channel, discord.DMChannel) or 'h!fun' in ctx.channel.topic:
+    if isinstance(ctx.channel, discord.DMChannel) or isinstance(ctx.channel, discord.Thread) or 'h!fun' in ctx.channel.topic:
         return 0
     if 'h!optin' in ctx.channel.topic:
         return 1

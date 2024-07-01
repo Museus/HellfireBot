@@ -4,137 +4,137 @@ attack sworn strike earth
     Attack Damage: {+%}
     50 60 70 80
     20 15
-    b/b0/Sworn_Strike.png
+    3/32/Sworn_Strike_II.png
 special sworn flourish earth
     Your **Specials** deal more damage and inflict **Hitch**.
     Special Damage: {+%}
     60 70 80 90
     15 10
-    4/46/Sworn_Flourish.png
+    c/cb/Sworn_Flourish_II.png
 cast engagement ring earth
     Your **Casts** deal damage and inflict **Hitch** whenever foes join the **Encounter**, anywhere!
     On-Spawn Damage: {}
     50 75 100 125
     25 12.5 10
-    c/c7/Engagement_Ring.png
+    4/40/Engagement_Ring_II.png
 sprint nexus sprint earth
     Your **Sprint** inflicts **Hitch** on contact with foes, and deals damage when it does.
     Damage with Hitch: {}
     60 90 120 150
     30 15
-    4/4b/Nexus_Sprint.png
+    5/54/Nexus_Sprint_II.png
 gain born gain earth
     Whenever you run out of **<:Magick:1250935754461544478>**, **Prime** to restore *all* **<:Magick:1250935754461544478>** up to the reduced limit.
     Magick Primed: {}
     20 18 16 14
     -3.3333 -1.6667 0
-    c/c5/Born_Gain.png
+    2/21/Born_Gain_II.png
 xt1 bridal glow earth
     Your **Boons** become **Heroic**, then lose **Rarity** every {} Encounters.
     Random Boons Affected: **2**
     5 7 8 9
     0
-    a/a9/Bridal_Glow.png
+    d/d3/Bridal_Glow_II.png
     2(any non heroic rarifiable boon)
 xt1 uncommon grace earth
     While none of your other **Boons** are **Common**, deal more damage.
     Common-Less Bonus Damage: {+%}
     10 15 20 25
     5 2.5 1.25 1
-    b/b8/Uncommon_Grace.png
+    8/89/Uncommon_Grace_II.png
     x(common boon)
 t1 nasty comeback earth
     After you take damage, inflict your foes with **Hitch** and deal damage in greater measure.
     Damage Reflected: {%}
     500 750 1000 1250
     150 125 120 110 105
-    9/9a/Nasty_Comeback.png
+    1/11/Nasty_Comeback_II.png
 t1 blood line earth
     Your **Ω Moves** create a rift that strikes foes in front of and behind you, but use **+15** **<:Magick:1250935754461544478>**.
     Rift Damage: {}
     100 120 140 160
     25 15 10
-    a/a6/Keen_Intuition.png
+    5/52/Blood_Line_II.png
 t1 family trade earth
     Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
     Bonus <:Pom:1247012092247281664> Lv.: {+}
     2 3 4 5
     0
-    f/f5/Family_Trade.png
+    a/a0/Family_Trade_II.png
 t2 hereditary bane earth
     Your **Hitch** effects deal more damage and last **+5 Sec.**
     Hitch Damage: {+%}
     10 15 20 25
     10
-    9/9a/Hereditary_Bane.png
+    5/53/Hereditary_Bane_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 t2 dying wish earth
     Whenever **Hitch**-afflicted foes are slain, damage all other **Hitch**-afflicted foes.
     Hitch Death Damage: {}
     40 60 80 100
     20 16 12.8 10.24 8.192 6.5536 5.24288 4.194304 4
-    a/ab/Dying_Wish.png
+    e/e1/Dying_Wish_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 infusion proper upbringing none
     While you have at least **3** **<:EarthEssence:1251066559112417312>**, *all* your **Common** **Boons** gain **Rarity**.
     Improved Rarity: **Rare**
     0
     0
-    a/a1/Proper_Upbringing.png
+    8/89/Proper_Upbringing_II.png
     2(<:EarthEssence:1251066559112417312> earth)
 legendary brave face earth
     Automatically use **<:Magick:1250935754461544478>** to resist up to **50%** of any damage.
     Magick Cost per Damage Point: {m}
     5
     0
-    4/47/Brave_Face.png
+    9/92/Brave_Face_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint); 1(bridal glow, family trade, uncommon grace, blood line); 1(hereditary bane, dying wish); x(fixed gain)
 duo ecstatic obsession aether
     During **Encounters** with multiple foes, **1** foe is always afflicted with **Charm**.
     Foes Required: {} *(or more)*
     2
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/ea/Ecstatic_Obsession_II.png/revision/latest?cb=20240614094930
+    e/ea/Ecstatic_Obsession_II.png
     1(rapture ring, passion rush, glamour gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
 duo sun worshiper aether
     In each **Encounter**, the first foe you slay returns to fight for you.
     Servant Damage: {+%}
     200
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/9/92/Sun_Worshiper_II.png/revision/latest?cb=20240614094930
+    9/92/Sun_Worshiper_II.png
     1(solar ring, blinding sprint, lucid gain); 1(engagement ring, nexus sprint, born gain)
 duo cherished heirloom aether
     Most other **Keepsakes** you equip are stronger this night *(if possible)*.
     Bonus Keepsake Ranks: {+}
     1
     0
-    1/13/Cherished_Heirloom.png
+    b/b2/Cherished_Heirloom_II.png
     1(ice strike, ice flourish, arctic ring, frigid sprint, tranquil gain); 1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain)
 duo spiteful strength aether
     Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
     Boon-Less Bonus Damage: {+%}
     200
     0
-    c/c6/Spiteful_Strength.png
+    d/de/Spiteful_Strength_II.png
     1(molten touch, trusty shield, mint condition, heavy metal, uncanny fortitude, grand caldera, furnace blast); 1(nasty comeback, blood line, family trade, hereditary bane, dying wish)
 duo elementary particles aether
     Gain **<:EarthEssence:1251066559112417312> <:WaterEssence:1251066562312671344> <:AirEssence:1251066557921099786> <:FireEssence:1251066561071026238> Elements**, and **1** **Infusion** **Boon** for each.
     Essences Gained per Element: {+}
     1
     0
-    e/ed/Funeral_Pyre.png
+    9/91/Elementary_Particles_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain)
 duo golden rule aether
     You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
     Bonus Damage per 100 Gold: {+%}
     10
     0
-    3/36/Golden_Rule.png
+    5/52/Golden_Rule_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(ocean's bounty, double up)
 duo queen's ransom aether
     Give up *all* your **Boons** of **Zeus**. For each, raise **<:BoonLevel:1250936694790684682> Lv.** for *all* your **Boons** of **Hera**.
     Bonus Lv. per Zeus Boon: {+}
     4
     0
-    thumb/7/75/Queen%27s_Ransom.png/100px-Queen%27s_Ransom.png
+    2/28/Queen%27s_Ransom_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(storm ring, thunder sprint, ionic gain)

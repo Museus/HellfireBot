@@ -2,134 +2,134 @@ god cloud bangle
     A **Boon** of **Zeus** is likely. You can **Rarify** his {} blessings once this night.
     Common Rare Epic
     zeus
-    thumb/c/c2/Cloud_Bangle.png/50px-Cloud_Bangle.png
+    c/c2/Cloud_Bangle.png
 god iridescent fan
     A **Boon** of **Hera** is likely. You can **Rarify** her {} blessings once this night.
     Common Rare Epic
     hera
-    thumb/3/31/Iridescent_Fan.png/50px-Iridescent_Fan.png
+    3/31/Iridescent_Fan.png
 god vivid sea
     A **Boon** of **Poseidon** is likely. You can **Rarify** his {} blessings once this night.
     Common Rare Epic
     poseidon
-    thumb/e/ed/Vivid_Sea.png/50px-Vivid_Sea.png
+    e/ed/Vivid_Sea.png
 god barley sheaf
     A **Boon** of **Demeter** is likely. You can **Rarify** her {} blessings once this night.
     Common Rare Epic
     demeter
-    thumb/9/9a/Barley_Sheaf.png/50px-Barley_Sheaf.png
+    9/9a/Barley_Sheaf.png
 god purest hope
     A **Boon** of **Apollo** is likely. You can **Rarify** his {} blessings once this night.
     Common Rare Epic
     apollo
-    thumb/2/29/Purest_Hope.png/50px-Purest_Hope.png
+    2/29/Purest_Hope.png
 god beautiful mirror
     A **Boon** of **Aphrodite** is likely. You can **Rarify** her {} blessings once this night.
     Common Rare Epic
     aphrodite
-    thumb/9/9b/Beautiful_Mirror.png/50px-Beautiful_Mirror.png
+    9/9b/Beautiful_Mirror.png
 god adamant shard
     A **Boon** of **hephaestus** is likely. You can **Rarify** his {} blessings once this night.
     Common Rare Epic
     hephaestus
-    thumb/d/d7/Adamant_Shard.png/50px-Adamant_Shard.png
+    d/d7/Adamant_Shard.png
 god everlasting ember
     A **Boon** of **Hestia** is likely. You can **Rarify** her {} blessings once this night.
     Common Rare Epic
     hestia
-    thumb/9/9d/Everlasting_Ember.png/50px-Everlasting_Ember.png
+    9/9d/Everlasting_Ember.png
 god moon beam
     A reward from **Selene** is likely. The next **Path of Stars** you find grants {+} upgrades.
     3 4 5 7
     selene
-    thumb/e/e9/Moon_Beam.png/50px-Moon_Beam.png
+    e/e9/Moon_Beam.png
 survival knuckle bones
     The next **Guardian** loses {-%l}. You take **-15%** damage from **Guardians**.
     5 10 15 25
     odysseus
-    thumb/6/61/Knuckle_Bones.png/50px-Knuckle_Bones.png
+    6/61/Knuckle_Bones.png
 survival luckier tooth
     After you fall to **0** **<:Life:1241660063513448499>**, automatically restore {l} once this night.
     51 76 101 151
     schelemeus
-    thumb/8/85/Luckier_Tooth.png/50px-Luckier_Tooth.png
+    8/85/Luckier_Tooth.png
 survival ghost onion
     Whenever you exit a **Location**, fully restore your **<:Life:1241660063513448499>**, up to a total of {h} this night.
     50 75 100 150
     dora
-    thumb/8/84/Ghost_Onion.png/50px-Ghost_Onion.png
+    8/84/Ghost_Onion.png
 survival engraved pin
     After you fall to **0** **<:Life:1241660063513448499>**, become **Impervious** for **10 Sec.** If no foes remain, restore {l}.
     30 45 60 90
     moros
-    thumb/e/e0/Engraved_Pin.png/50px-Engraved_Pin.png
+    e/e0/Engraved_Pin.png
 survival silken sash
     Gain **+20** **<:Armor:1243126987032363048>**. While you have at least **1** **<:Armor:1243126987032363048>**, gain {+a} after each **Location**.
     2 3 4 6
     arachne
-    thumb/3/3f/Silken_Sash.png/50px-Silken_Sash.png
+    3/3f/Silken_Sash.png
 survival aromatic phial
     **Fountains** restore **+20%** **<:Life:1241660063513448499>**. The next makes **1** random **Common** **Boon** of yours {}.
     Rare Epic Heroic
     narcissus
-    thumb/3/33/Aromatic_Phial.png/50px-Aromatic_Phial.png
+    3/33/Aromatic_Phial.png
 combat silver wheel
     After you use **<:Magick:1250935754461544478>**, restore it over **3 Sec.**, up to a total of {m} this night.
     1000 1500 2000 3000
     hecate
-    thumb/4/49/Silver_Wheel.png/50px-Silver_Wheel.png
+    4/49/Silver_Wheel.png
 combat evil eye
     Deal {+%} damage to the last foe that vanquished you.
     20 25 30 40
     nemesis
-    thumb/2/27/Evil_Eye.png/50px-Evil_Eye.png
+    2/27/Evil_Eye.png
 combat discordant bell
     After each **Encounter**, you deal {+%r1} damage, but also take that much more.
     0.5 0.75 1 1.5
     eris
-    thumb/5/5d/Discordant_Bell.png/50px-Discordant_Bell.png
+    5/5d/Discordant_Bell.png
 combat metallic droplet
     You move, strike, and **Channel** **20%** faster for the next {s}
     200 250 300 400
     hermes
-    thumb/8/8c/Metallic_Droplet.png/50px-Metallic_Droplet.png
+    8/8c/Metallic_Droplet.png
 combat white antler
     For the next **Region**, gain {+%} chance to deal **Critical** damage, but you have **30** **<:Life:1241660063513448499>**.
     20 25 30 50
     artemis
-    thumb/0/06/White_Antler.png/50px-White_Antler.png
+    0/06/White_Antler.png
 combat lion fang
     Deal {+%} bonus damage, but lose **5%** of this after each **Encounter**.
     30 40 50 70
     heracles
-    thumb/d/d9/Lion_Fang.png/50px-Lion_Fang.png
+    d/d9/Lion_Fang.png
 combat blackened fleece
     After you take **250** damage, your **Ω Moves** deal {+%} damage.
     20 30 40 60
     medea
-    thumb/7/7b/Blackened_Fleece.png/50px-Blackened_Fleece.png
+    7/7b/Blackened_Fleece.png
 resource gold purse
     Gain {+g} once this night.
     100 125 150 200
     charon
-    thumb/7/7c/Gold_Purse.png/50px-Gold_Purse.png
+    7/7c/Gold_Purse.png
 resource crystal figurine
     After the next **Guardian**, activate **1** random {} **Arcana Card**.
     <:ArcanaCommon:1251065102023528549> <:ArcanaRare:1251065105634824335> <:ArcanaEpic:1251065103185612842> <:ArcanaHeroic:1251065104061960225>
     circe
-    thumb/7/7c/Crystal_Figurine.png/50px-Crystal_Figurine.png
+    7/7c/Crystal_Figurine.png
 resource concave stone
     After choosing a **Boon**, {%} of the time randomly take **1** more, once this night.
     25 50 75 100
     echo
-    thumb/8/83/Concave_Stone.png/50px-Concave_Stone.png
+    8/83/Concave_Stone.png
 resource experimental hammer
     Gain **1** random **<:Hammer:1243131974923718747>** that lasts for {} **Encounters**.
     10 15 20 30
     icarus
-    thumb/f/fd/Experimental_Hammer.png/50px-Experimental_Hammer.png
+    f/fd/Experimental_Hammer.png
 resource transcendent embryo
     Gain a random {} **Chaos** blessing once this night. Every **8** **Encounters**, replace it.
     Common Rare Epic Heroic
     primordial chaos
-    thumb/7/73/Transcendent_Embryo.png/50px-Transcendent_Embryo.png
+    7/73/Transcendent_Embryo.png

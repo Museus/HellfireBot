@@ -4,136 +4,136 @@ attack volcanic strike fire
     Blast Recharge Time: {s}
     12 10 8 6
     -2 -1
-    b/b2/Volcanic_Strike.png
+    a/a9/Volcanic_Strike_II.png
 special volcanic flourish fire
     Your **Specials** occasionally create a blast that deals **400** damage in the area.
     Blast Recharge Time: {s}
     16 13 11 9
     -2 -1
-    e/eb/Volcanic_Flourish.png
+    7/70/Volcanic_Flourish_II.png
 cast anvil ring earth
     Your **Casts** deal damage **3** times in succession.
     Cast Damage: {} *(every 1 Sec.)*
     50 70 80 90
     20 15 10 5
-    d/d4/Anvil_Ring.png
+    e/e3/Anvil_Ring_II.png
 sprint smithy sprint fire
     After you **Sprint** for **1 Sec.**, use **10** **<:Magick:1250935754461544478>** to create a blast that damages surrounding foes.
     Area Damage: {}
     200 300 400 500
     100 50 25 20
-    6/62/Smithy_Sprint.png
+    a/af/Smithy_Sprint_II.png
 xgain fixed gain earth
     You take **-10%** damage, and restore some **<:Magick:1250935754461544478>** whenever you take damage.
     Magick Restored from Damage: {}
     50 75 100 125
     25 12.5 6.25 5
-    e/e9/Fixed_Gain.png
+    0/0f/Fixed_Gain_II.png
     x(brave face)
 t1 molten touch fire
     Your **Attacks** and **Specials** deal bonus damage to **Armor**.
     Damage vs. Armor: {+%}
     20 30 40 50
     20 10 5
-    4/46/Molten_Touch.png
+    2/21/Molten_Touch_II.png
 t1 mint condition earth
     At the start of each **Encounter**, you are briefly **Impervious**.
     Impervious Duration: {s}
     8 10 12 14
     2 1
-    5/5e/Mint_Condition.png
+    3/33/Mint_Condition_II.png
 t1 heavy metal earth
     Gain some **<:Armor:1243126987032363048>**. Foes' attacks cannot knock you away.
     Armor Gained: {+} <:Armor:1243126987032363048>
     50 75 100 125
     0
-    2/23/Heavy_Metal.png
+    7/7b/Heavy_Metal_II.png
 t1 uncanny fortitude earth
     Gain bonus **<:MaxLife:1241662636995772436>** based on your **<:Magick:1250935754461544478>** limit.
     Max Life from Magick: {+%}
     20 30 40 50
     0
-    a/a8/Uncanny_Fortitude.png
+    0/02/Uncanny_Fortitude_II.png
 t2 grand caldera fire
     Your blast effects from **Hephaestus** deal more damage and are **50%** larger.
     Bonus Blast Damage: {+}
     50 75 100 100
     25 20 15 10
-    b/b7/Tough_Trade.png
+    1/1c/Grand_Caldera_II.png
     1(volcanic strike, volcanic flourish, smithy sprint)
 status furnace blast fire
     Your blast effects from **Hephaestus** also inflict **Vent** on foes.
     Vent Damage: {}
     300 400 500 600
     50 30 20
-    1/10/Furnace_Blast.png
+    b/bf/Furnace_Blast_II.png
     1(volcanic strike, volcanic flourish, smithy sprint)
 prime trusty shield earth
     After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478>** to gain **Armor** until the next **Location**.
     Starting Armor: {+} <:Armor:1243126987032363048>
     10 15 20 25
     5 3 2
-    3/32/Trusty_Shield.png
+    c/c0/Trusty_Shield_II.png
 infusion martial art none
     Your **Attack** and **Special** deal more damage for each **<:EarthEssence:1251066559112417312>** you have.
     Damage per Earth Boon: {+%}
     5
     0
-    b/b7/Martial_Art.png
+    6/67/Martial_Art_II.png
     2(<:EarthEssence:1251066559112417312> earth)
 legendary fine tuning earth
     Your **Aspect** of the **Nocturnal Arms** is even stronger.
     Bonus Aspect Ranks: {+}
     1
     0
-    d/d3/Fine_Tuning.png
+    c/ce/Fine_Tuning_II.png
     1(volcanic strike, volcanic flourish, smithy sprint); 1(trusty shield, mint condition, heavy metal); 1(molten touch, grand caldera, furnace blast)
 duo love handles aether
     Your blast effects from **Hephaestus** also create a **Heartthrob**.
     Heartthrob Area Damage: {}
     120
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/e/e1/Love_Handles_II.png/revision/latest?cb=20240614094930
+    e/e1/Love_Handles_II.png
     1(flutter strike, flutter flourish, rapture ring, passion rush, glamour gain); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo rude awakening aether
     Your blast effects from **Hephaestus** clear **Daze** and deal more damage if they do.
     Bonus Blast Damage: {}
     220
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/2/20/Rude_Awakening_II.png/revision/latest?cb=20240626223446
+    2/20/Rude_Awakening_II.png
     1(solar ring, blinding sprint, light smite, dazzling display); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo room temperature aether
     Your blast effects from **Hephaestus** clear **Freeze**, so you can inflict it again right after.
     Freeze Re-Apply Time: {s}
     0
     0
-    6/66/Room_Temperature.png
+    d/d7/Room_Temperature_II.png
     1(ice strike, ice flourish, arctic ring); 1(volcanic strike, volcanic flourish, smithy sprint)
 duo spiteful strength aether
     Your **Attacks** and **Specials** deal more damage while not empowered by **Boons**.
     Boon-Less Bonus Damage: {+%}
     200
     0
-    c/c6/Spiteful_Strength.png
+    d/de/Spiteful_Strength_II.png
     1(molten touch, trusty shield, mint condition, heavy metal, uncanny fortitude, grand caldera, furnace blast); 1(nasty comeback, blood line, family trade, hereditary bane, dying wish)
 duo chain reaction aether
     If you use your blast effects from **Hephaestus** just after they recharge, they fire **2** times.
     Double Blast Timing: {s}
     2
     0
-    c/c5/Chain_Reaction.png
+    d/df/Chain_Reaction_II.png
     1(volcanic strike, volcanic flourish); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain)
 duo seismic hammer aether
     Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
     Blast Recharge Time: {s}
     6
     0
-    d/d9/Seismic_Hammer.png
+    0/01/Seismic_Hammer_II.png
     1(volcanic strike, volcanic flourish, smithy sprint); 1(tidal ring, geyser spout)
 duo master conductor aether
     Your chain-lightning deals more damage per bounce and can bounce to you.
     Damage per Bounce: {+%}
     15
     0
-    f/f9/Master_Conductor.png
+    4/47/Master_Conductor_II.png
     1(fixed gain, trusty shield, heavy metal, mint condition, tough trade); 1(static shock)

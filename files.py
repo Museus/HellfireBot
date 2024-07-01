@@ -65,6 +65,20 @@ for god in god_cores:
             if boon in boons_info:
                 boons_info[boon]['god'] = (boons_info[boon]['god'], god)
                 boons_info[boon] = boons_info.pop(boon)
+                if _type == 'duo':
+                    if god + ' duo' not in aliases['misc']:
+                        aliases['misc'][god + ' duo'] = []
+                    aliases['misc'][god + ' duo'].append(boon)
+                    aliases['misc'][' '.join(boons_info[boon]['god'])] = [boon]
+                    aliases['misc'][' '.join(boons_info[boon]['god']) + ' duo'] = [boon]
+                    aliases['misc']['duo ' + ' '.join(boons_info[boon]['god'])] = [boon]
+                    aliases['misc'][' '.join(boons_info[boon]['god'][::-1])] = [boon]
+                    aliases['misc'][' '.join(boons_info[boon]['god'][::-1]) + ' duo'] = [boon]
+                    aliases['misc']['duo ' + ' '.join(boons_info[boon]['god'][::-1])] = [boon]
+                else:
+                    if god not in aliases['misc']:
+                        aliases['misc'][god] = []
+                    aliases['misc'][god].append(boon)
                 f.readline()
                 continue
             boons_info[boon] = {
@@ -81,12 +95,15 @@ for god in god_cores:
                 boons_info[boon]['cost'] = f.readline().strip()
             if element != 'none':
                 boons_info[boon]['element'] = element
-            if god not in aliases['misc']:
-                aliases['misc'][god] = []
-            aliases['misc'][god].append(boon)
+            if _type == 'duo':
+                if god + ' duo' not in aliases['misc']:
+                    aliases['misc'][god + ' duo'] = []
+                aliases['misc'][god + ' duo'].append(boon)
+            else:
+                if god not in aliases['misc']:
+                    aliases['misc'][god] = []
+                aliases['misc'][god].append(boon)
 
-# for boon in boons_info:
-#     print(boon)
 
 with open('./files/aspects.txt', 'r', encoding='utf8') as f:
     while aspect := f.readline().strip():

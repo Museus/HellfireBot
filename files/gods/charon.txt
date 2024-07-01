@@ -4,14 +4,14 @@ survival life essence none
 
     21-39
     0
-    thumb/8/82/Life_Essence.png/50px-Life_Essence.png
+    5/5c/Life_Essence_II.png
     **1** <:GoldenCrowns:1250942621044576308> per **1%** <:Life:1241660063513448499>
 xsurvival kiss of styx none
     Replenish {} use of **<:DeathDefiance:1251289623720890420> Death Defiance** now. Appears **27.0%** of the time.
 
     1
     0
-    thumb/e/ed/Kiss_of_Styx.png/50px-Kiss_of_Styx.png
+    0/00/Kiss_of_Styx_II.png
     1(empty defiance slot)
     **200** <:GoldenCrowns:1250942621044576308>
 survival hydralite none
@@ -19,14 +19,14 @@ survival hydralite none
     Duration: {e}
     3
     0
-    thumb/e/e5/HydraLite.png/50px-HydraLite.png
+    5/5e/HydraLite_II.png
     **45** <:GoldenCrowns:1250942621044576308>
 survival preserved hope none
     After the duration, restore **50%** **<:Life:1241660063513448499>**. Appears **13.5%** of the time.
     Duration: {e}
     4
     0
-    thumb/5/52/Preserved_Hope.png/50px-Preserved_Hope.png
+    0/0b/Preserved_Hope_II.png
     **50** <:GoldenCrowns:1250942621044576308>
 survival breath of eros none
     When next you would take damage, receive **<:Healing:1028193572840816722>** in that amount instead. Appears **13.5%** of the time.
@@ -40,77 +40,77 @@ survival price of midas none
 
     1.1-1.8
     0
-    thumb/e/e2/Price_of_Midas.png/50px-Price_of_Midas.png
+    9/9f/Price_of_Midas_II.png
     **10-30** <:Life:1241660063513448499>
 survival centaur soul none
     Gain {+} **<:MaxLifeEmpty:1250938556508278825>** *(without restoring* **<:Life:1241660063513448499>** *)*. Appears **2.7%** of the time.
 
     25
     0
-    thumb/b/ba/Centaur_Soul.png/50px-Centaur_Soul.png
+    c/c6/Centaur_Soul_II.png
     **110** <:GoldenCrowns:1250942621044576308>
 combat chimaera jerky none
     Your **Specials** deal **+40%** damage.
     Duration: {e}
     5
     0
-    thumb/d/d5/Chimaera_Jerky.png/50px-Chimaera_Jerky.png
+    c/c3/Chimaera_Jerky_II.png
     **35** <:GoldenCrowns:1250942621044576308>
 combat witch's mark none
     Your **Ω Moves** deal **+50%** damage.
     Duration: {e}
     6
     0
-    thumb/b/b5/Witch%27s_Mark.png/50px-Witch%27s_Mark.png
+    4/41/Witch%27s_Mark_II.png
     **45** <:GoldenCrowns:1250942621044576308>
 combat python scales none
     You take **-10%** damage.
     Duration: {e}
     5
     0
-    thumb/d/dc/Python_Scales.png/50px-Python_Scales.png
+    0/08/Python_Scales_II.png
     **30** <:GoldenCrowns:1250942621044576308>
 combat braid of atlas none
     Your **Casts** deal **+35%** damage.
     Duration: {e}
     5
     0
-    thumb/e/ea/Braids_of_Atlas.png/50px-Braids_of_Atlas.png
+    a/a2/Braids_of_Atlas_II.png
     **30** <:GoldenCrowns:1250942621044576308>
 combat ignited ichor none
     You move **20%** faster.
     Duration: {e}
     8
     0
-    thumb/8/8f/Ignited_Ichor.png/50px-Ignited_Ichor.png
+    7/7d/Ignited_Ichor_II.png
     **10** <:GoldenCrowns:1250942621044576308>
 resource exhumed remains none
     Gain {+} **<:Bones:1250204963951480966>** now.
 
     20-40
     0
-    thumb/e/e6/Exhumed_Remains.png/50px-Exhumed_Remains.png
+    2/2a/Exhumed_Remains_II.png
     **2** <:GoldenCrowns:1250942621044576308> per <:Bones:1250204963951480966>
 resource dust parcel none
     Gain {+} **<:Ashes:1242227789059457055>** now.
 
     6-12
     0
-    thumb/3/3c/Dust_Parcel.png/50px-Dust_Parcel.png
+    6/6e/Dust_Parcel_II.png
     **5** <:GoldenCrowns:1250942621044576308> per <:Ashes:1242227789059457055>
 resource faint flicker none
     Gain {+} **<:Psyche:1242227790879784983>** now.
 
     11-22
     0
-    thumb/c/c1/Faint_Flicker.png/50px-Faint_Flicker.png
+    c/c9/Faint_Flicker_II.png
     **3** <:GoldenCrowns:1250942621044576308> per <:Psyche:1242227790879784983>
 xresource gaia's gift none
     Gain {+} **<:MysterySeed:1251063943875788810>** now.
 
     2
     0
-    thumb/e/e6/Gaia%27s_Gift.png/50px-Gaia%27s_Gift.png
+    2/25/Gaia%27s_Gift_II.png
     3(nightshade seeds collected)
     **30** <:GoldenCrowns:1250942621044576308>
 miscellaneous archaic seal none
@@ -118,33 +118,33 @@ miscellaneous archaic seal none
     Duration: {} **Guardians**
     2
     0
-    thumb/4/4e/Archaic_Seal.png/50px-Archaic_Seal.png
+    a/ac/Archaic_Seal_II.png
     **90** <:GoldenCrowns:1250942621044576308>
 miscellaneous yarn of ariadne none
     Ensure the next **Boon** you find has upgraded **Rarity**.
 
     0
     0
-    thumb/5/57/Yarn_of_Ariadne.png/50px-Yarn_of_Ariadne.png
+    8/85/Yarn_of_Ariadne_II.png
     **70** <:GoldenCrowns:1250942621044576308>
 miscellaneous spark of ixion none
     Ensure a **Chaos Gate** spawns ahead as soon as possible. It costs {l} to enter.
 
     0
     0
-    thumb/8/8f/Spark_of_Ixion.png/50px-Spark_of_Ixion.png
+    7/78/Spark_of_Ixion_II.png
     **55** <:GoldenCrowns:1250942621044576308>
 miscellaneous expiring deal none
     Ensure any goods offered by **Charon** cost **30%** less.
     Duration: {e}
     6
     0
-    thumb/1/11/Expiring_Deal.png/50px-Expiring_Deal.png
+    4/4f/Expiring_Deal_II.png
     **80** <:GoldenCrowns:1250942621044576308>
 miscellaneous fateful twist none
     Gain a random item offered from the **Well of Charon** now.
-    Cannot offer Price of Midas, Life Essence, Kiss of Styx, Spark of Ixion, Archaic Seal, Fateful Twist
+    Cannot offer Price of Midas, Life Essence, Kiss of Styx, Breath of Eros, Spark of Ixion, Archaic Seal, Fateful Twist
     0
     0
-    thumb/9/90/Fateful_Twist.png/50px-Fateful_Twist.png
+    f/f7/Fateful_Twist_II.png
     **45** <:GoldenCrowns:1250942621044576308>

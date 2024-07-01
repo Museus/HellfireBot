@@ -4,40 +4,40 @@ t1 ingenious strike none
 
     10
     0
-    thumb/b/b6/Ingenious_Strike.png/41px-Ingenious_Strike.png
+    4/44/Ingenious_Strike_II.png
 t1 ingenious flourish none
     After you enter a **Location**, **Prime** **40** **<:Magick:1250935754461544478>** to give your **Attacks** {+} **Power**.
 
     20
     0
-    thumb/6/6f/Ingenious_Flourish.png/41px-Ingenious_Flourish.png
+    b/b8/Ingenious_Flourish_II.png
 t1 hazard boom none
     Your **Casts** also blast the area after **4 Sec.**, dealing 500 damage to foes, but {} to *you*.
 
     20
     0
-    thumb/e/ee/Hazard_Boom.png/41px-Hazard_Boom.png
+    0/05/Hazard_Boom_II.png
 t1 destructive coating none
     Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, deal **4000** damage to surrounding foes.
 
     40
     0
-    thumb/8/88/Destructive_Coating.png/41px-Destructive_Coating.png
+    8/85/Destructive_Coating_II.png
 t1 protective coating none
     Gain {+a}. The next time you lose all your **<:Armor:1243126987032363048>**, become **Impervious** for **8 Sec.**
 
     80
     0
-    thumb/d/db/Protective_Coating.png/41px-Protective_Coating.png
+    4/4e/Protective_Coating_II.png
 t1 explosive intent none
     Your **Ω Moves** also deal {} damage in an area around foes they hit, but use **+10** **<:Magick:1250935754461544478>**.
 
     50
     0
-    thumb/8/8e/Explosive_Intent.png/41px-Explosive_Intent.png
+    a/ac/Explosive_Intent_II.png
 t1 supply chain none
     Each time you clear **5** **Encounters**, receive {+h} and **3** <:RandPom:1250927965030846474>.
 
     10
     0
-    thumb/8/88/Destructive_Coating.png/41px-Destructive_Coating.png
+    a/ae/Supply_Chain_II.png

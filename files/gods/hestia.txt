@@ -4,139 +4,139 @@ attack flame strike fire
     Scorch Damage: {}
     30 40 50 60
     10 5
-    e/e5/Flame_Strike.png
+    2/22/Flame_Strike_II.png
 special flame flourish fire
     Your **Specials** inflict **Scorch**.
     Scorch Damage: {}
     20 25 30 35
     10 5 3 2
-    8/83/Flame_Flourish.png
+    b/b6/Flame_Flourish_II.png
 cast smolder ring fire
     Your **Casts** repeatedly inflict **Scorch** on foes.
     Scorch Damage: {} *(every 1 Sec.)*
     40 60 80 100
     20 15 10
-    c/c7/Smolder_Ring.png
+    2/20/Smolder_Ring_II.png
 sprint soot sprint fire
     Your **Sprint** destroys most ranged shots near you, and inflicts **Scorch** on foes that fired.
     Scorch Damage per Projectile: {}
     2 4 6 8
     2 1
-    c/c4/Soot_Sprint.png
+    e/e0/Soot_Sprint_II.png
 gain hearth gain fire
     Whenever your **Attack** or **Special** deal damage, restore **<:Magick:1250935754461544478>**.
     Magick Restored per Strike: {}
     4 6 8 10
     2 1
-    8/85/Hearth_Gain.png
+    0/00/Hearth_Gain_II.png
 xt1 glowing coal fire
     Hold **Cast** to aim a fiery projectile that explodes on impact. The binding circle forms there.
     Explosion Damage: {}
     60 90 120 150
     30 20 10
-    8/85/Glowing_Coal.png
+    e/e0/Glowing_Coal_II.png
     x(local climate, lightning lance, howling soul)
 t1 controlled burn fire
     Your **Ω Special** also launches a fiery projectile, but uses **+10** **<:Magick:1250935754461544478>**.
     Explosion Damage: {}
     100 150 200 250
     50 25 20 10
-    0/05/Controlled_Burn.png
+    2/22/Controlled_Burn_II.png
 xt1 burnt offering fire
     Gain **<:MaxLife:1241662636995772436>** and **<:Magick:1250935754461544478>**, but give up **1** **Boon** selected by **Hestia**.
     Max Life & Magick: {+}
     50 60 70 80
     0
-    7/74/Burnt_Offering.png
+    8/8d/Burnt_Offering_II.png
     1(any boon)
 t2 crispy coating fire
     Your **Scorch** effects deal bonus damage to **Armor**.
     Scorch Damage vs. Armor: {+%}
     100 150 200 250
     50 25 12.5 10
-    thumb/9/97/Flammable_Coating.png/100px-Flammable_Coating.png
+    8/80/Crispy_Coating_II.png
     1(flame strike, flame flourish, smolder ring)
 t2 natural gas fire
     Whenever **Scorch**-afflicted foes are slain, they damage surrounding foes.
     Blast Damage: {}
     60 90 120 150
     15 7.5 6
-    1/11/Natural_Gas.png
+    8/8e/Natural_Gas_II.png
     1(flame strike, flame flourish, smolder ring)
 t2 pyro technique fire
     Your **Scorch** effects deal damage faster.
     Scorch Damage Rate: {+%}
     50 75 100 125
     25 15 10
-    0/0b/Pyro_Technique.png
+    0/07/Pyro_Technique_II.png
     1(flame strike, flame flourish, smolder ring)
 t2 highly flammable fire
     Whenever you inflict **Scorch** on a foe for the first time, inflict more.
     First-Time Scorch Damage: {+}
     50 75 100 125
     25 15 10
-
+    e/e5/Highly_Flammable_II.png
     1(flame strike, flame flourish, smolder ring)
 infusion slow cooker none
     Your **Attacks** and **Specials** gain **Power** for each **<:FireEssence:1251066561071026238>** you have.
     Power per Fire Boon: {+}
     2
     0
-    d/db/Slow_Cooker.png
+    8/8a/Slow_Cooker_II.png
     2(<:FireEssence:1251066561071026238> fire)
 legendary fire walk fire
     You take no more than **1** damage at a time from fire, and leave flames where you **Sprint**.
     Flame Trail Damage: {} *(every 0.25 Sec.)*
     20
     0
-
+    7/70/Fire_Walk_II.png
     1(flame strike, flame flourish, smolder ring); 1(crispy coating, natural gas, pyro technique, highly flammable); 1(glowing coal, controlled burn)
 duo hot flash aether
     While foes are **Weak**, any **Scorch** they have does not diminish as it deals damage.
     Scorch Duration on Weak Foes: **∞**
     0
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/15/Hot_Flash_II.png/revision/latest/scale-to-width-down/75?cb=20240614094929
+    1/15/Hot_Flash_II.png
     1(rapture ring, passion rush, glamour gain); 1(flame strike, flame flourish, smolder ring)
 duo phoenix skin aether
     Give up **-100** **<:MaxLife:1241662636995772436>**. If you do not take or deal damage for **3 Sec.**, rapidly restore **<:Life:1241660063513448499>**.
     Life Restoration: {} *(every 1 Sec.)*
     3
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/4/4a/Phoenix_Skin_II.png/revision/latest?cb=20240614094930
+    4/4a/Phoenix_Skin_II.png
     1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain); 1(burnt offering)
 duo freezer burn aether
     Whenever you inflict **Freeze**, amplify any **Scorch** effects already on the foe.
     Scorch Damage: {+%}
     100
     0
-    2/23/Freezer_Burn.png
+    3/3f/Freezer_Burn_II.png
     1(ice strike, ice flourish); 1(flame strike, flame flourish)
 duo chain reaction aether
     If you use your blast effects from **Hephaestus** just after they recharge, they fire **2** times.
     Double Blast Timing: {s}
     2
     0
-    c/c5/Chain_Reaction.png
+    d/df/Chain_Reaction_II.png
     1(volcanic strike, volcanic flourish); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain)
 duo elementary particles aether
     Gain **<:EarthEssence:1251066559112417312> <:WaterEssence:1251066562312671344> <:AirEssence:1251066557921099786> <:FireEssence:1251066561071026238> Elements**, and **1** **Infusion** **Boon** for each.
     Essences Gained per Element: {+}
     1
     0
-    e/ed/Funeral_Pyre.png
+    9/91/Elementary_Particles_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain)
 duo scalding vapor aether
     If foes with **Slip** are struck by fire from **Hestia**, they are engulfed in **Steam**.
     Steam Damage: {+} *(every 0.2 Sec.)*
     30
     0
-    d/d7/Scalding_Vapor.png
+    9/98/Scalding_Vapor_II.png
     1(flame strike, flame flourish, smolder ring, glowing coal, controlled burn, highly flammable); 1(slippery slope)
 duo thermal dynamics aether
     Your **Blitz** effects also inflict **Scorch** whenever they deal damage.
     Scorch Damage: {}
     80
     0
-    2/22/Thermal_Dynamics.png
+    4/44/Thermal_Dynamics_II.png
     1(flame strike, flame flourish, smolder ring); 1(heaven strike, heaven flourish)

@@ -3,7 +3,7 @@ invite None
     1028199136526336000
 boon boon_name [rarity=common] [level=1]
     Returns information on <boon_name>. <rarity> must be exactly common/rare/epic/heroic, and defaults to common. <level> defaults to 1.
-
+    1251078156622893057
 pomscaling boon_name [level=10]
     Returns a graph of the performance of <boon_name> from level 1 to <level> across all applicable rarities.
     1247012092247281664
@@ -14,8 +14,8 @@ hammer item_name
     If <item_name> is a hammer, returns information on it. If <item_name> is a weapon (staff/blades/torch/axe/skull), returns a list of all hammers for it. If <item_name> is a weapon aspect, returns a list of all compatible hammers.
     1243131974923718747
 god god_name?
-    Returns a list of non-duo boons for that <god_name>, categorized by type. If no <god_name> given, returns a list of all gods that are valid inputs to the command.
-    1251078156622893057
+    Returns a list of boons for that <god_name>, categorized by type. If no <god_name> given, returns a list of all gods that are valid inputs to the command.
+    e/ed/Icon-Olympian.png
 legendaries None
     Returns a list of all legendaries.
     1027126357597093969
@@ -24,13 +24,13 @@ duos None
     1027126357597093969
 define term?
     Returns the definition of the given term, or a list of definitions for terms used in the replied-to message. Works for text inside SmolderRingBot's embed outputs.
-
+    4/49/InfoButton.png
 randchaos [modifiers]...
     Returns a random Chaos curse + blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1027101814904070175
 randcharon None
     Returns a random Charon well item.
-    6/66/Well_of_Charon.png/300px-Well_of_Charon.png
+    6/66/Well_of_Charon.png
 keepsake keepsake_name? [rank=3]
     Returns information on the given keepsake, at the specified rank. <rank> defaults to 3. If <keepsake_name> is excluded, returns all keepsakes.
     1251068183130013736

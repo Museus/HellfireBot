@@ -16,34 +16,34 @@ god_colors = {
     'arcana': 0xCFCABA, 'path of stars': 0x527989, 'vow': 0x4204B3
 }
 god_icons = {
-    'aphrodite': 'thumb/1/10/Aphrodite_Boons.png/60px-Aphrodite_Boons.png',
-    'apollo': 'thumb/5/55/Apollo_Boons.png/60px-Apollo_Boons.png',
-    'demeter': 'thumb/2/27/Demeter_Boons.png/60px-Demeter_Boons.png',
-    'hephaestus': 'thumb/1/13/Hephaestus_Boons.png/60px-Hephaestus_Boons.png',
-    'hera': 'thumb/2/25/Hera_Boons.png/60px-Hera_Boons.png',
-    'hestia': 'thumb/2/21/Hestia_Boons.png/60px-Hestia_Boons.png',
-    'poseidon': 'thumb/4/4e/Poseidon_Boons.png/60px-Poseidon_Boons.png',
-    'zeus': 'thumb/3/34/Zeus_Boons.png/60px-Zeus_Boons.png',
+    'aphrodite': '5/5a/Aphrodite_reward.png',
+    'apollo': 'c/ce/Apollo_Reward.png',
+    'demeter': 'f/f4/BoonSelectDemeter_II.png',
+    'hephaestus': '8/80/Hephaestus_Reward.png',
+    'hera': '6/65/Hera_Reward.png',
+    'hestia': 'c/cb/Hestia_Reward.png',
+    'poseidon': '9/9d/Poseidon_reward.png',
+    'zeus': 'b/b2/Zeus_reward.png',
     'arachne': '1249245758327095346',
-    'artemis': 'thumb/2/2d/Artemis_Boons.png/60px-Artemis_Boons.png',
-    'chaos': 'thumb/4/41/Chaos_Boons.png/60px-Chaos_Boons.png',
-    'charon': 'thumb/6/66/Well_of_Charon.png/300px-Well_of_Charon.png',
+    'artemis': '2/2c/Artemis_Reward.png',
+    'chaos': 'c/ce/Chaos_reward.png',
+    'charon': '6/66/Well_of_Charon.png',
     'circe': '1249245758327095346',
     'echo': '1249245758327095346',
     'hades': '1249245758327095346',
-    'hermes': 'thumb/b/bd/Hermes_Boons.png/60px-Hermes_Boons.png',
+    'hermes': 'c/ce/Hermes_reward.png',
     'icarus': 'f/fd/Experimental_Hammer.png',
     'medea': '1249245758327095346',
     'narcissus': '1249245758327095346',
-    'selene': 'thumb/8/88/Selene_Boons.png/60px-Selene_Boons.png',
+    'selene': '7/76/Selene_Reward.png',
     'path of stars': '1255961553857937428'
 }
 weapon_icons = {
-    'staff': 'thumb/0/06/Witch%27s_Staff.png/300px-Witch%27s_Staff.png',
-    'blades': '4/4a/Sister_Blades.png',
-    'torch': 'thumb/b/b0/Umbral_Flames.png/300px-Umbral_Flames.png',
-    'axe': 'thumb/1/1f/Moonstone_Axe.png/300px-Moonstone_Axe.png',
-    'skull': 'thumb/8/8f/Argent_Skull_Art.png/300px-Argent_Skull_Art.png'
+    'staff': '1/13/DescuraWitchStaff.png',
+    'blades': '8/87/LimOrosSisterBlades.png',
+    'torch': '2/29/YgniumUmbralFlames.png',
+    'axe': 'e/e8/ZorephetMoonstoneAxe.png',
+    'skull': '3/33/RevaalArgentSkull.png'
 }
 element_icons = {
     'earth': '1251066559112417312',
@@ -60,7 +60,7 @@ card_ranks = [
 ]
 disambig_select = (
     '1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣',
-    '🇦', '🇧', '🇨', '🇩', '🇪'
+    '🇦', '🇧', '🇨', '🇩', '🇪', '🇫', '🇬', '🇭', '🇮'
 )
 optout_dm = 'This channel has not opted into HellfireBot\'s commands (needs "h!optin" in the channel topic). ' \
             'However, all commands are usable via direct message.'
@@ -172,7 +172,9 @@ def to_link(s):
 
 
 def channel_status(ctx):
-    if isinstance(ctx.channel, discord.DMChannel) or isinstance(ctx.channel, discord.Thread) or 'h!fun' in ctx.channel.topic:
+    if (isinstance(ctx.channel, discord.DMChannel) or
+            isinstance(ctx.channel, discord.Thread) or
+            'h!fun' in ctx.channel.topic):
         return 0
     if 'h!optin' in ctx.channel.topic:
         return 1

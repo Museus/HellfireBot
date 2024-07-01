@@ -3,94 +3,94 @@ vow of blood
     20 60 100
     1 2 2
     Upon this night I writhe, that Fear may spread.
-    thumb/a/ac/VowBlood.png/30px-VowBlood.png
+    a/ac/VowBlood.png
 vow of dominance
     All foes have {+%l}.
     10 20 30
     1 1 1
     Upon this night my strength shall meet its match, that Fear may spread.
-    thumb/b/b9/VowDominance.png/30px-VowDominance.png
+    b/b9/VowDominance.png
 vow of rebuke
     All foes have {} **<:BlueHeart:1250926931264671865>**.
     1 2
     1 1
     Upon this night I strike to no avail, that Fear may spread.
-    thumb/3/37/VowRebuke.png/30px-VowRebuke.png
+    3/37/VowRebuke.png
 vow of fury
     All foes are {%} faster.
     20 40
     3 3
     Upon this night I shall be set upon relentlessly, that Fear may spread.
-    thumb/f/fd/VowFury.png/30px-VowFury.png
+    f/fd/VowFury.png
 vow of suffering
     In each **Encounter**, you take {%} bonus damage the first time you are struck.
     100 300
     2 2
     Upon this night shall my foes pierce my heart, that Fear may spread.
-    thumb/d/dd/VowSuffering.png/30px-VowSuffering.png
+    d/dd/VowSuffering.png
 vow of commotion
     Most **Encounters** have {%} more foes.
     20 40 60
     1 1 1
     Upon this night I shall be overwhelmed, that Fear may spread.
-    thumb/1/13/VowCommotion.png/30px-VowCommotion.png
+    1/13/VowCommotion.png
 vow of haunting
     Most slain foes have {%} chance to become a **Revenant**.
     25 50
     1 1
     Upon this night my foes shall rise again, that Fear may spread.
-    thumb/0/0f/VowHaunting.png/30px-VowHaunting.png
+    0/0f/VowHaunting.png
 vow of wandering
     Most foes have {%} chance to be from the next **Region** *(if there is one)*.
     10 25
     1 2
     Upon this night shall distant dangers rise, that Fear may spread.
-    thumb/0/0e/VowWandering.png/30px-VowWandering.png
+    0/0e/VowWandering.png
 vow of scars
     Any **<:Healing:1028193572840816722>** effects are {%} effective.
     75 50 0
     1 1 2
     Upon this night my wounds shall never heal, that Fear may spread.
-    thumb/c/cd/VowScars.png/30px-VowScars.png
+    c/cd/VowScars.png
 vow of destitution
     All items that cost **<:GoldenCrowns:1250942621044576308>** are {%} more expensive.
     40 80
     1 1
     Upon this night I shall have naught to spare, that Fear may spread.
-    thumb/f/f7/VowDestitution.png/30px-VowDestitution.png
+    f/f7/VowDestitution.png
 vow of panic
     You enter each **Location** with {%m}.
     50
     1
     Upon this night shall my unsettled mind give in, that Fear may spread.
-    thumb/e/e3/VowPanic.png/30px-VowPanic.png
+    e/e3/VowPanic.png
 vow of forsaking
     After you choose a **Boon**, {} unpicked blessings will not appear again this night.
     2
     2
     Upon this night my chances shall be few, that Fear may spread.
-    thumb/3/36/VowForsaking.png/30px-VowForsaking.png
+    3/36/VowForsaking.png
 vow of bitterness
     The first {} **Boon** in each **Region** become **<:RedOnion:1247806062933970995>** instead.
     1
     3
     Upon this night shall favors turn to tears, that Fear may spread.
-    thumb/1/1b/VowBitterness.png/30px-VowBitterness.png
+    1/1b/VowBitterness.png
 vow of arrogance
     Whenever you choose a **Boon**, **Prime** {m} for each **Rarity** greater than **Common**.
     5 10
     1 3
     Upon this night shall pride of the gods fall short, that Fear may spread.
-    thumb/4/4e/VowArrogance.png/30px-VowArrogance.png
+    4/4e/VowArrogance.png
 vow of desperation
     You have {} to fight through each **Region** *(or else...)*.
     09:00 07:00 05:00
     1 2 3
     Upon this night shall Death be at my heels, that Fear may spread.
-    thumb/0/09/VowDesperation.png/30px-VowDesperation.png
+    0/09/VowDesperation.png
 vow of abandon
     Nullify the benefits of {%} of your **Arcana Cards**.
     100
     5
     Upon this night shall my protections fail, that Fear may spread.
-    thumb/7/77/VowAbandon.png/30px-VowAbandon.png
+    7/77/VowAbandon.png

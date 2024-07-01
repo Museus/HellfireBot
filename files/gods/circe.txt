@@ -4,41 +4,41 @@ t1 lapis lazuli insight none
 
     1
     0
-
+    2/2b/Lapis_Lazuli_Insight_II.png
 t1 word of greater girth none
     Grow in size, so that your strikes deal {+%} damage.
 
     15
     0
-
+    0/04/Word_of_Greater_Girth_II.png
 t1 word of smaller stature none
     Shrink in size, so that you move {+%} faster and have {+%} chance to **Dodge**.
 
     15
     0
-
+    1/1e/Word_of_Smaller_Stature_II.png
 t1 chants to the bewitched none
     Various **Animal Familiar** abilities are {%} stronger this night.
 
     100
     0
-
+    7/74/Chants_to_the_Bewitched_II.png
 t1 old herbal remedy none
     Any **<:Healing:1028193572840816722>** effects are {+%} stronger. Restore **50%** **<:Life:1241660063513448499>** now.
 
     25
     0
-
+    b/b6/Old_Herbal_Remedy_II.png
 t1 red citrine divination none
     Randomly draw {} of your inactive **Arcana**, and activate it this night.
 
     1
     0
-
+    9/92/Red_Citrine_Divination_II.png
 xt1 black night banishment none
     Randomly draw {} of your active **Vows**, and remove its effect this night.
 
     1
     0
-
+    e/e0/Black_Night_Banishment_II.png
     1(**1** <:Fear:1251066119889092610> fear)

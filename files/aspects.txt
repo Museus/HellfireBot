@@ -3,88 +3,88 @@ staff melinoë staff
     Omega Channel Speed: {+%}
     0 15 20 25 30 45
     A waxing crescent moon; the promise of power, the responsibility to ready oneself.
-    thumb/7/72/Staff-Melinoe.png/80px-Staff-Melinoe.png
+    4/4f/Hammer_Staff_Melino%C3%AB.png
 staff circe
     After your **Attack** or **Special** hit **12** times, gain **Serenity** with your next **Ω Move**.
     Serenity Omega Damage: {+%}
     40 60 80 100 120 180
     A high priestess of the Unseen once used the staff to bring about necessary change.
-    thumb/0/0e/Staff-Circe.png/80px-Staff-Circe.png
+    9/95/Hammer_Staff_Circe.png
 staff momus
     Whenever you use **Ω Moves**, each fires in place up to **3** times until you use it again.
     Delay Between Omega Bursts: {sr1}
     3.5 3 2.5 2 1.5 0.5
     Not even ever-patient Night herself spared much time for his insolence.
-    thumb/6/69/Staff-Momus.png/80px-Staff-Momus.png
+    5/54/Hammer_Staff_Momus.png
 blades melinoë blades
     Your **Attacks** and **Specials** deal more damage by striking foes from behind.
     Backstab Damage: {+%}
     0 10 20 30 40 70
     As there are many gardens to be cultivated, such a task requires precision instruments.
-    thumb/2/24/Blades-Melinoe.png/80px-Blades-Melinoe.png
+    d/d4/Hammer_Daggers_Melino%C3%AB.png
 blades artemis
     While you **Channel** your **Ω Attack**, you occasionally **Parry**, then **Riposte** right after.
     Faster Omega Attack: {+%}
     20 30 40 50 60 90
     A flash of silver; whether the Huntress or the Moon, none can attest.
-    thumb/2/2b/Blades-Artemis.png/80px-Blades-Artemis.png
+    a/a8/Hammer_Daggers_Artemis.png
 blades pan
     Your **Specials** seek foes in your **Casts**, and fire more blades if you **Channel** longer.
     Omega Special Max Shots: {+}
     1 2 3 4 5 8
     The natural-grown horn can pierce as readily as a well-crafted blade.
-    thumb/4/42/Blades-Pan.png/80px-Blades-Pan.png
-torch melinoë flames
+    f/f6/Hammer_Daggers_Pan.png
+torch melinoë torch
     Flames from your **Ω Special** can burn longer before expiring.
     Omega Special Duration: {+sr1}
     0 1 1.5 2 2.5 4
     No single light can illuminate the many crossroads ahead; thus there are two.
-    thumb/e/e0/Torch-Melinoe.png/80px-Torch-Melinoe.png
+    5/53/Hammer_Torch_Melino%C3%AB.png
 torch moros
     Your **Attacks** linger for **6 Sec.**, and explode in a blast if struck by your **Specials**.
     Blast Damage: {+%}
     0 15 30 45 60 105
     Feared and hated Doom lingers like a sword about to fall; even his time shall come.
-    thumb/9/9c/Torch-Moros.png/80px-Torch-Moros.png
+    a/ad/Hammer_Torch_Moros.png
 torch eos
     Your **Ω Attack** fires a **Daybreaker** that deals damage in an area around it every **2 Sec.**
     Daybreaker Blast Damage: {}
     50 75 100 125 150 275
     Rosy-fingered Dawn is mistress of a certain light more captivating than any other.
-    thumb/4/4d/Torch-Eos.png/80px-Torch-Eos.png
+    4/45/Hammer_Torch_Eos.png
 axe melinoë axe
     Gain bonus **Attack** **Power** and **<:MaxLife:1241662636995772436>** this night.
     Attack Power & Max Life: {+}
     0 20 25 30 35 50
     Its tin blade can split even the light of the Moon, yet itself can never be separated.
-    thumb/2/21/Axe-Melinoe.png/80px-Axe-Melinoe.png
+    e/ea/Hammer_Axe_Melino%C3%AB.png
 axe charon
     Your **Cast** lasts **+3 Sec.**, and erupts like your **Ω Cast** if struck by your **Ω Special**.
     Cleave-Cast Size and Damage: {+%}
     10 15 20 25 30 45
     To navigate the rivers of the Underworld is to possess extraordinary poise and strength.
-    thumb/5/5e/Axe-Charon.png/80px-Axe-Charon.png
+    d/d4/Hammer_Axe_Charon.png
 axe thanatos
     Your **Attack** is faster, and each hit grants **Mortality** until you take damage.
     Attack Speed: {+%}
     10 15 20 25 30 45
     Death comes peacefully for many mortals; yet for foes of the realm, exceptions must be made.
-    thumb/6/63/Axe-Thanatos.png/80px-Axe-Thanatos.png
+    7/7d/Hammer_Axe_Thanatos.png
 skull melinoë skull
     Your **Attacks** have more **Power** for each **<:Shell:1250941173841924258> Shell** fired and not yet retrieved.
     Power per Spent Shell: {+}
     0 5 10 15 20 35
     The will of Night is never to be chronicled, but witnessed by the dead and the shadow.
-    thumb/7/7f/Skull-Melinoe.png/80px-Skull-Melinoe.png
+    7/74/Hammer_Lob_Melino%C3%AB.png
 skull medea
     Your **Attack** stays within reach, and explodes after landing your **Specials** or **3 Sec.**
     Attack & Special Damage: {+%}
     20 30 40 50 60 90
     She shall find comfort in the skulls of her foes remaining ever close at hand; one especially.
-    thumb/4/4b/Skull-Medea.png/80px-Skull-Medea.png
+    e/eb/Hammer_Lob_Medea.png
 skull persephone
     Your **Ω Special** is enhanced, and damage from your **Casts** can extend it by up to **+2 Sec.**
     Omega Move Damage: {+%}
     10 15 20 25 30 45
     Life and death, forever embodied in a Queen both splendorous and dark at once.
-    thumb/3/32/Skull-Persephone.png/80px-Skull-Persephone.png
+    4/43/Hammer_Lob_Persephone.png

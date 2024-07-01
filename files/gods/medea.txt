@@ -4,39 +4,40 @@ t1 corrosion on sight none
 
     50
     0
-
+    b/b6/Corrosion_on_Sight_II.png
 t1 malice in kind none
     Whenever a foe makes you use **<:DeathDefiance:1251289623720890420> Death Defiance**, it loses {%l}.
 
     15
     0
-
+    6/64/Malice_in_Kind_II.png
 t1 life from the dead none
     After a foe is slain, it has **5%** chance to drop {+h}, limit **1** per **Encounter**.
 
     10
     0
-
+    c/c6/Life_from_the_Dead_II.png
 t1 traces of spirit none
     After each **Encounter**, gain {+} **<:MaxMagick:1250936650939240519>**.
 
     10
     0
-
+    c/c0/Traces_of_Spirit_II.png
 t1 wealth from the dead none
     After a foe is slain, it has **10%** chance to drop {+g}, limit **2** per **Encounter**.
 
     20
     0
-
+    1/1a/Wealth_from_the_Dead_II.png
 t1 enfeeblement of cowards none
     Foes' ranged shots have {-%} travel speed.
 
     40
     0
-
+    1/10/Enfeeblement_of_Cowards_II.png
 t1 suffering on sight none
     After a foe joins the **Encounter**, it randomly takes from **1** to **999** damage.
 
     0
     0
+    6/6b/Suffering_on_Sight_II.png

@@ -4,199 +4,200 @@ blessing strike none
 
     20-50 30-75 40-100 50-125
     0
-    7/70/Strike.png
+    a/af/Strike_II.png
 blessing flourish none
     Your **Specials** deal {+%} damage.
 
     30-60 45-90 60-120 75-150
     0
-    c/c4/Flourish.png
+    8/87/Flourish_II.png
 blessing chasm none
     Your **Casts** deal {+%} damage.
 
     20-50 30-75 40-100 50-125
     0
-    4/45/Chasm.png
+    1/1b/Chasm_II.png
 blessing celerity none
     You move and **Sprint** {%} faster.
 
     15 20 25 30
     0
-    5/58/Celerity.png
+    5/5d/Celerity_II.png
 blessing will none
     Restore {mr1} every **1 Sec.**
 
     4-6 8-12 12-18 16-24
     0
-    0/08/Will.png
+    c/c9/Will_II.png
 blessing talent none
     You use {-%m}.
 
     20-30 30-45 40-60 50-75
     0
-    2/2d/Talent.png
+    7/72/Talent_II.png
 blessing revelation none
     You **Channel** your **Ω Moves** {%} faster.
 
     10-15 15-22 20-30 25-37
     0
-    e/e0/Revelation.png
+    d/de/Revelation_II.png
 blessing soul none
     Gain {+} **<:MaxLife:1241662636995772436>**.
 
     26-35 52-70 78-105 104-140
     0
-    d/d5/Soul.png
+    f/f1/Soul_II.png
 blessing favor none
     **Boons** have {+%} chance to be **Rare** or better.
 
     40-50 54-67 67-84 80-100
     0
-    0/00/Favor.png
+    1/12/Favor_II.png
 blessing affluence none
     Any **<:GoldenCrowns:1250942621044576308>** you find is worth {+%}.
 
     40-60 80-120 12-180 160-240
     0
-    1/11/Affluence.png
+    8/8b/Affluence_II.png
 blessing mind none
     Gain {+} **<:MaxMagick:1250936650939240519>**.
 
     30-40 45-60 60-80 75-100
     0
-    d/da/Mind.png
+    3/3e/Mind_II.png
 blessing creation none
     Gain {+} **<:EarthEssence:1251066559112417312>** **<:WaterEssence:1251066562312671344>** **<:AirEssence:1251066557921099786>** **<:FireEssence:1251066561071026238>** **<:AetherEssence:1251066556717469809>**.
 
     1 2 3 4
     0
-    4/45/Creation.png
+    e/e3/Creation_II.png
 blessing blood none
     Whenever you exit a **Location**, restore {l}.
 
     3-4 9-12 15-20 21-28
     0
-    b/b5/Blood.png
+    3/30/Blood_II.png
 blessing discovery none
     You have {%} chance to find **+100%** resources with your **Gathering Tools**.
 
     56-70 64-80 72-90 80-100
     0
-    4/4c/Discovery.png
+    b/bb/Discovery_II.png
 curse maimed none
     Each time you use **Attacks**, get hit for {l}.
     Duration: **3-5** **Encounters**
     3-6
     0
-
+    1/1c/Maimed_II.png
 curse flayed none
     Each time you use **Specials**, get hit for {l}.
     Duration: **3-5** **Encounters**
     3-6
     0
-
+    8/81/Flayed_II.png
 curse addled none
     Each time you use **Casts**, get hit for {l}.
     Duration: **3-5** **Encounters**
     3-6
     0
-
+    f/f0/Addled_II.png
 curse slothful none
     You move and **Sprint** {%} slower.
     Duration: **3-5** **Encounters**
     40-60
     0
-
+    6/60/Slothful_II.png
 curse hobbled none
     Your **Dash** is slower and also uses {m} *(if you have it)*.
     Duration: **3-5** **Encounters**
     3-6
     0
-
+    9/98/Hobbled_II.png
 curse fixated none
     Whenever you use **<:Magick:1250935754461544478>**, **Prime** it.
     Duration: {e}
     3-5
     0
-
+    2/27/Fixated_II.png
 curse gagged none
     Each time you use **Ω Moves**, get hit for {l}.
     Duration: **3-5** **Encounters**
     5-8
     0
-
+    f/f8/Gagged_II.png
 curse pauper's none
     You cannot earn **<:<:GoldenCrowns:1250942621044576308>**.
     Duration: {e}
     3-5
     0
-
+    7/77/Pauper%27s_II.png
 curse atrophic none
     You have {-} **<:MaxLife:1241662636995772436>**.
     Duration: **3-5** **Encounters**
     20-29
     0
-
-curse enshrouded none
+    f/ff/Atrophic_II.png
+xcurse enshrouded none
     **Location Reward** previews are hidden.
     Duration: {} **Locations**
     4-6
     0
-
+    f/f1/Enshrouded_II.png
+    x(tartarus)
 curse excruciating none
     You take {+%} damage.
     Duration: **3-5** **Encounters**
     20-50
     0
-
+    d/da/Excruciating_II.png
 curse caustic none
     Slain foes toss an **Inferno-Bomb** at you.
     Duration: {e}
     3-5
     0
-
+    0/0e/Caustic_II.png
 curse ordinary none
     The **Boons** you find are limited to **Common** blessings.
     Duration: {} **Boons**
     2-3
     0
-
+    d/d3/Ordinary_II.png
 curse rejected none
     The **Boons** you find have **1** fewer blessing to choose from.
     Duration: {} **Boons**
     2-4
     0
-
+    a/af/Rejected_II.png
 curse paralyzing none
     Whenever you take damage, you are stunned for {sr1}
     Duration: **3-5** **Encounters**
     0.5-1.4
     0
-
+    5/5d/Paralyzing_II.png
 curse doomed none
     You have **120 Sec.** to clear **Encounters**, or get hit for {-l}.
     Duration: **2-3** **Encounters**
     500
     0
-
+    8/84/Doomed_II.png
 xcurse barren none
     Your **Arcana Cards** have no effect.
     Duration: {e}
     7-11
     0
-
-    1(any chaos boon)
+    3/31/Barren_II.png
+    1(any chaos blessing)
 infusion chant none
     Your **Ω Moves** deal {+%} damage for each **<:AetherEssence:1251066556717469809>** you have.
 
     30 36 42 48
     0
-    0/0c/Chant.png
+    2/25/Chant_II.png
     1(<:AetherEssence:1251066556717469809> aether)
 legendary defiance none
     Gain {+} use of **<:DeathDefiance:1251289623720890420> Death Defiance** this night.
 
     1
     0
-    4/40/Defiance.png
-    1(any chaos boon)
+    b/b7/Defiance_II.png
+    1(any chaos blessing)

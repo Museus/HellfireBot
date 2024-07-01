@@ -4,135 +4,135 @@ attack wave strike water
     Splash Damage: {}
     15 20 25 30
     5
-    1/18/Wave_Strike.png
+    d/d3/Wave_Strike_II.png
 special wave flourish water
     Your **Specials** hit foes with a splash that knocks other foes away.
     Splash Damage: {}
     20 30 40 50
     10 8 6.4 5.12 4.096 4
-    6/64/Wave_Flourish.png
+    3/3e/Wave_Flourish_II.png
 cast tidal ring water
     Your **Casts** also immediately hit foes in front of you with a powerful splash.
     Splash Damage: {}
     90 135 180 225
     45 36 28.8 23.04 18.432 18
-    8/86/Geyser_Ring.png
+    
 sprint breaker sprint water
     Your **Sprint** deals damage on impact and knocks foes away, but uses **5** **<:Magick:1250935754461544478>** per hit.
     Impact Damage: {}
     80 120 160 200
     40 20 10 8
-    3/35/Breaker_Sprint.png
+    7/7d/Breaker_Sprint_II.png
 gain fluid gain water
     After you strike foes with your **Weapon**, a **Spirit Bubble** may appear.
     Spirit Bubble Chance: {%}
     10 12 14 16
     2 1
-    b/b9/Fluid_Gain.png
+    1/1a/Fluid_Gain_II.png
 t1 double up water
     Whenever you claim rewards other than **Boons**, **<:Hammer:1243131974923718747>**, or rare resources, a copy may appear.
     Double Reward Chance: {%}
     20 25 30 35
     5 2.5 2
-    2/25/Double_Up.png
+    6/61/Double_Up_II.png
 t1 hydraulic might water
     At the start of each **Encounter**, your **Attacks** and **Specials** are stronger for **10 Sec.**
     Initial Damage Bonus: {+%}
     100 133 166 200
     23 11.5 10
-    b/b4/Hydraulic_Might.png
+    a/a0/Hydraulic_Might_II.png
 t1 splash fount water
     Whenever you use **Ω Moves**, create a watery blast near the first foe you damage.
     Delayed Blast Damage: {}
     50 60 70 80
     10 5
-    8/8a/Crashing_Wave.png
+    d/d3/Splash_Fount_II.png
 t1 ocean's bounty water
     Any **Minor Finds** and **<:GoldReward:1250940286230597682>** are worth more. Receive **<:GoldenCrowns:1250942621044576308>**, **<:Healing:1028193572840816722>**, and sometimes **<:Ashes:1242227789059457055>** and **<:Psyche:1242227790879784983>**, now.
     Reward Value: {+%}
     50 75 100 125
     0
-    a/a7/Ocean%27s_Bounty.png
+    c/c6/Ocean%27s_Bounty_II.png
 t2 geyser spout water
     Your **Ω Cast** immediately detonates, dealing damage and knocking foes away.
     Omega Cast Damage: {}
     200 240 280 320
     40 30 20
-
+    2/2b/Geyser_Spout_II.png
     1(rapture ring, solar ring, arctic ring, anvil ring, engagement ring, smolder ring, tidal ring, storm ring); x(prominence flare, lightning lance)
 prime flood control water
     After you enter a **Location**, **Prime** **30** **<:Magick:1250935754461544478> Magick** to reduce any damage you would take.
     Damage Reduction per Hit: {-}
     2 3 4 5
     0
-    4/45/Flood_Control.png
+    4/4d/Flood_Control_II.png
 status slippery slope water
     Your splash effects from **Poseidon** also inflict **Slip** on foes.
     Slip Bonus Damage: {+%}
     5 10 15 20
     4 2 1 0.5
-    a/a8/Slippery_Slope.png
+    9/9c/Slippery_Slope_II.png
     1(wave strike, wave flourish, tidal ring)
 infusion water fitness none
     Gain **<:MaxLife:1241662636995772436>** for each **<:WaterEssence:1251066562312671344>** you have.
     Max Life per Water Boon: {+}
     15
     0
-    f/fc/Water_Fitness.png
+    9/90/Water_Fitness_II.png
     2(<:WaterEssence:1251066562312671344> water)
 legendary king tide water
     Your splash effects from **Poseidon** are larger and deal bonus damage to **Guardians**.
     Splash Damage vs. Guardians: {+%}
     200
     0
-    5/52/King_Tide.png
+    8/85/King_Tide_II.png
     1(wave strike, wave flourish, tidal ring); 1(breaker sprint, fluid gain, geyser spout); 1(hydraulic might, flood control, splash fount, slippery slope)
 duo island getaway aether
     You take less damage from nearby foes. **Boons** of **Aphrodite** treat all foes as nearby.
     Damage Resistance: {+%}
     15
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/1/1b/Island_Getaway_II.png/revision/latest?cb=20240614094929
+    1/1b/Island_Getaway_II.png
     1(flutter strike, flutter flourish); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo beach ball aether
     Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
     Blast Damage: {}
     300
     0
-    https://static.wikia.nocookie.net/hades_gamepedia_en/images/6/67/Beach_Ball_II.png/revision/latest?cb=20240614094929
+    6/67/Beach_Ball_II.png
     1(blinding sprint, breaker sprint); 1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo natural selection aether
     **Location** **Rewards** exclude **<:MaxLife:1241662636995772436>**, **<:MaxMagick:1250936650939240519>**, and **<:GoldenCrowns:1250942621044576308>**. **Boons** are more likely to be **Rare** or better.
     Improved Rarity Chance: {+%}
     45
     0
-    7/7a/Natural_Selection.png
+    2/2f/Natural_Selection_II.png
     1(arctic ring, frigid sprint, tranquil gain, rare crop, snow queen, cold storage); 1(tidal ring, breaker sprint, fluid gain, ocean's bounty, double up)
 duo seismic hammer aether
     Your **Ω Cast** occasionally creates a blast that deals **500** damage in the area.
     Blast Recharge Time: {s}
     6
     0
-    d/d9/Seismic_Hammer.png
+    0/01/Seismic_Hammer_II.png
     1(volcanic strike, volcanic flourish, smithy sprint); 1(tidal ring, geyser spout)
 duo golden rule aether
     You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
     Bonus Damage per 100 Gold: {+%}
     5
     0
-    3/36/Golden_Rule.png
+    5/52/Golden_Rule_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(ocean's bounty, double up)
 duo scalding vapor aether
     If foes with **Slip** are struck by fire from **Hestia**, they are engulfed in **Steam**.
     Steam Damage: {+} *(every 0.2 Sec.)*
     30
     0
-    d/d7/Scalding_Vapor.png
+    9/98/Scalding_Vapor_II.png
     1(flame strike, flame flourish, smolder ring, glowing coal, controlled burn, highly flammable); 1(slippery slope)
 duo killer current aether
     Your lightning deals more damage to **Slip**-afflicted foes.
     Bonus Lightning Damage: {+%}
     30
     0
-    e/e3/Killer_Current.png
+    8/81/Killer_Current_II.png
     1(slippery slope); 1(heaven strike, heaven flourish, storm ring, thunder sprint, divine vengeance, lightning lance)

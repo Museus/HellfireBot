@@ -68,7 +68,7 @@ async def help(ctx, command_name=None):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    embed = embeds.help_embed(client, command_name, aliases_to_command)
+    embed = embeds.help_embed(client, command_name, aliases_to_command, author=ctx.author)
     await misc.reply(ctx, embed=embed, mention=True)
 
 

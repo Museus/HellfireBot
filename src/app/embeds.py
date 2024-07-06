@@ -632,7 +632,7 @@ def enemy_embed(args):
     return embed
 
 
-def help_embed(client, command_name, aliases_to_command):
+def help_embed(client, command_name, aliases_to_command, author=None):
     embed = discord.Embed()
     if not command_name:
         embed.set_author(name='Help')
@@ -642,7 +642,8 @@ def help_embed(client, command_name, aliases_to_command):
                                              '[parameter=value]\n-> if not provided, parameter defaults to value\n'
                                              'parameter...\n-> arbitrary number of parameters accepted\n'
                                              'x?\n-> optional parameter')
-        embed.set_thumbnail(url=client.user.avatar.url)
+        if author:
+            embed.set_thumbnail(url=author.avatar.url)
     else:
         if command_name in aliases_to_command:
             command_name = aliases_to_command[command_name]

@@ -1,0 +1,25 @@
+# Task is a task runner / build tool that aims to be simpler and easier to use than, for example, GNU Make.
+# To install: https://taskfile.dev/installation/
+version: '3'
+
+tasks:
+  deploy:
+    dir: src
+    vars:
+      project: '{{ default "codex" .project }}'
+    cmds:
+      - |
+        BUILD_TIMESTAMP=$(date -u --rfc-3339=seconds) \
+        BUILD_VERSION=$(date -u --rfc-3339=seconds) \
+        docker compose \
+        -p {{ .project }} \
+        -f deploy/compose.yml \
+        -f deploy/local.compose.yml \
+        up -d --build
+
+  teardown:
+    dir: src
+    vars:
+      project: '{{ default "codex" .mode }}'
+    cmds:
+      - docker compose -p {{ .project }} down

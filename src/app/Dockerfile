@@ -1,0 +1,44 @@
+ARG APPLICATION_NAME="codex_bot"
+
+FROM python:3-slim
+
+# Use Bash as shell
+SHELL ["/bin/bash", "-c"]
+
+# Create deploy user
+RUN useradd -ms /bin/bash deploy
+
+# Add application libraries path
+RUN mkdir -p "/usr/local/lib/${APPLICATION_NAME}"
+
+# silence Dialog TERM not set errors in apt-get install
+ENV DEBIAN_FRONTEND noninteractive
+
+# Install all system requirements
+COPY ./system-requirements.txt ./system-requirements.txt
+RUN apt-get update && apt-get install -y $(cat ./system-requirements.txt)
+
+# Install all Python requirements
+COPY ./python-requirements.txt ./python-requirements.txt
+RUN python3 -m venv venv && \
+    source venv/bin/activate && \
+    pip install --upgrade pip && \
+    pip install --ignore-installed -r python-requirements.txt
+
+# Copy application
+COPY . /app/
+
+# Set context for entrypoint
+WORKDIR /app
+
+# Set metadata as specified by https://github.com/opencontainers/image-spec/blob/main/annotations.md
+ARG BUILD_TIMESTAMP="unknown"
+ARG BUILD_VERSION="unknown"
+
+LABEL org.opencontainers.image.created="${BUILD_TIMESTAMP}"
+LABEL org.opencontainers.image.authors="Museus <museus@proton.me>; RandyZ524"
+LABEL org.opencontainers.image.version="v${BUILD_VERSION}"
+LABEL org.opencontainers.image.title="CodexBot"
+LABEL org.opencontainers.image.description="Discord.py bot that provides information about Hades"
+
+ENTRYPOINT ["bash", "-c", "./start.sh"]

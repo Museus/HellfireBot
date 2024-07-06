@@ -1,0 +1,7 @@
+services:
+  app:
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+      args:
+        BUILD_TIMESTAMP: "$BUILD_TIMESTAMP"

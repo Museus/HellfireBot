@@ -1,0 +1,10 @@
+services:
+  app:
+    extends:
+      file: compose.yml
+      service: app
+    image: "codex-bot"
+    env_file:
+      - path: ./.env
+        required: true
+

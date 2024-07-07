@@ -99,18 +99,6 @@ async def pomscaling(ctx, *args):
     os.remove('./output.png')
 
 
-@client.command(aliases=['rpre'])
-async def eligible(ctx, *args):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    embed = embeds.eligible_embed(args)
-    if not embed:
-        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
-        return
-    await misc.reply(ctx, embed=embed)
-
-
 @client.command(aliases=['a', 'weapon', 'w'])
 async def aspect(ctx, *args):
     if misc.channel_status(ctx) > 1:
@@ -167,6 +155,19 @@ async def duos(ctx):
         await ctx.author.send(misc.optout_dm)
         return
     await misc.reply(ctx, embed=embeds.duos_embed())
+
+
+
+@client.command(aliases=['rpre'])
+async def eligible(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    embed = embeds.eligible_embed(args)
+    if not embed:
+        await misc.reply(ctx, misc.suggest_hint('boon'), mention=True)
+        return
+    await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['d', 'def', 'defs', 'defines', 'definition', 'definitions'])
@@ -265,7 +266,7 @@ async def enemy(ctx, *args):
     # await misc.reply(ctx, embed=embed)
 
 
-@client.command(aliases=['rarity', 'roll', 'rolls', 'rr'])
+@client.command(aliases=['rarityroll', 'rarity', 'roll', 'rolls', 'rr'])
 async def rarityrolls(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
@@ -273,32 +274,6 @@ async def rarityrolls(ctx, *args):
     modifiers = parsing.parse_modifiers(args)
     rolls = [int(min(r * 100, 100)) for r in misc.rarity_rolls(modifiers)]
     await misc.reply(ctx, parsing.parse_rarity_table(modifiers, rolls))
-
-
-@client.command(aliases=['suggestion', 's', 'request'])
-async def suggest(ctx, *args):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    args = ' '.join(s.lower() for s in args)
-    verofire = args.split('->')
-    if len(verofire) != 2:
-        await misc.reply(ctx, 'idk man as', mention=True)
-        return
-    channel = client.get_channel(1018409476908392518)
-    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
-    await misc.reply(ctx, 'Thank you for your contribution!')
-
-
-@client.command(aliases=['bug', 'bugreport', 'bugs', 'reports'])
-async def report(ctx, *args):
-    if misc.channel_status(ctx) > 1:
-        await ctx.author.send(misc.optout_dm)
-        return
-    args = ' '.join(args)
-    channel = client.get_channel(1025559977227714720)
-    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
-    await misc.reply(ctx, 'Thank you for your contribution!')
 
 
 @client.command(aliases=[
@@ -353,6 +328,33 @@ async def addarcana(ctx, name, *args):
         ctx, f'Total grasp: **{total_grasp}** <:Grasp:1250935195700563978>', file=discord.File('./temp.png')
     )
     os.remove('./temp.png')
+
+
+@client.command(aliases=['suggestion', 's', 'request'])
+async def suggest(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    args = ' '.join(s.lower() for s in args)
+    verofire = args.split('->')
+    if len(verofire) != 2:
+        await misc.reply(ctx, 'idk man as', mention=True)
+        return
+    channel = client.get_channel(1018409476908392518)
+    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
+    await misc.reply(ctx, 'Thank you for your contribution!')
+
+
+@client.command(aliases=['bug', 'bugreport', 'bugs', 'reports', 'f10'])
+async def report(ctx, *args):
+    if misc.channel_status(ctx) > 1:
+        await ctx.author.send(misc.optout_dm)
+        return
+    args = ' '.join(args)
+    channel = client.get_channel(1025559977227714720)
+    await channel.send(f'From {ctx.author.mention}:\n```{args}```')
+    await misc.reply(ctx, 'Thank you for your contribution!')
+
 
 
 @client.command(aliases=['cred', 'credit', 'credits'])

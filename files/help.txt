@@ -13,7 +13,7 @@ aspect aspect_name [level=5]
 hammer item_name
     If <item_name> is a hammer, returns information on it. If <item_name> is a weapon (staff/blades/torch/axe/skull), returns a list of all hammers for it. If <item_name> is a weapon aspect, returns a list of all compatible hammers.
     1243131974923718747
-god god_name?
+god [god_name]
     Returns a list of boons for that <god_name>, categorized by type. If no <god_name> given, returns a list of all gods that are valid inputs to the command.
     e/ed/Icon-Olympian.png
 legendaries None
@@ -22,21 +22,36 @@ legendaries None
 duos None
     Returns a list of all duos.
     1027126357597093969
-define term?
+eligible god_name [boon_name]...
+    Returns a list of all boons that can be received from <god_name>, given the current <boon_name> list. All arguments must be provided in a comma-separated list.
+    d/d6/Chthonic_Key.png
+define [term]
     Returns the definition of the given term, or a list of definitions for terms used in the replied-to message. Works for text inside SmolderRingBot's embed outputs.
-    4/49/InfoButton.png
+    1028192060974567495
 randchaos [modifiers]...
-    Returns a random Chaos curse + blessing. Include rarity-affecting <modifiers> to change the rarity probabilities.
+    Returns a random Chaos curse + blessing. Include rarity-affecting <modifiers> to change the rarity probabilities. Barren and Defiance appear at the same frequencies as they can appear in any selection of three Chaos choices in-game.
     1027101814904070175
 randcharon None
-    Returns a random Charon well item.
+    Returns a random Charon well item. Not yet implemented.
     6/66/Well_of_Charon.png
-keepsake keepsake_name? [rank=3]
-    Returns information on the given keepsake, at the specified rank. <rank> defaults to 3. If <keepsake_name> is excluded, returns all keepsakes.
+keepsake [keepsake_name] [rank=3]
+    Returns information on the given <keepsake_name>, at the specified <rank>. <rank> defaults to 3. If <keepsake_name> is excluded, returns all keepsakes.
     1251068183130013736
+arcana [arcana_name] [rank=3]
+    Returns information on the given <arcana_name>, at the specified <rank>. <rank> defaults to 3. Both the names and numbers of cards are accepted. If <arcana_name> is excluded, returns all arcana cards.
+    1249257631952928830
+vow [vow_name] [rank=1]
+    Returns information on the given <vow_name>, at the specified <rank>, including its fear. <rank> defaults to 1. If <vow_name> is excluded, returns all vows and corresponding fears.
+    1251066119889092610
+enemy [enemy_name]
+    Returns information on the given <enemy_name>. Not yet implemented.
+
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348
+arcanaloadout [input]
+    Returns an image of an arcana loadout. If <input> is a sequence of space-separated numbers, they are interpreted as the active cards in the loadout. Otherwise, interfaces with 'addarcana' to return custom named loadouts tied to your Discord account.
+
 suggest alias -> item_name
     Sends an <alias> to <item_name> mapping suggestion directly to the developer, RandyZ129#8918. The space-separated "->" symbol is required.
 
@@ -44,5 +59,5 @@ report description
     Sends a bug report with <description> directly to the developer, RandyZ129#8918.
 
 creds None
-    Returns a list of people who have significantly contributed to the bot's development.
+    Returns a list of people who have significantly contributed to the bot's development. Thank you for your support!
     1027107104345034802

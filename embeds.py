@@ -154,13 +154,18 @@ def boon_embed(args):
         title += ' (Sublime)'
     if not unpommable:
         for i in range(level - 1):
+            if pom == len(info['levels']) - 1:
+                value[0] += float(info['levels'][-1]) * (level - 1 - i)
+                if len(value) == 2:
+                    value[1] += float(info['levels'][-1]) * (level - 1 - i)
+                break
             pom = min(pom, len(info['levels']) - 1)
             value[0] += float(info['levels'][pom])
-            if name in ('volcanic strike', 'volcanic flourish', 'ionic gain'):
-                value[0] = max(value[0], 2)
             if len(value) == 2:
                 value[1] += float(info['levels'][pom])
             pom += 1
+        if name in ('volcanic strike', 'volcanic flourish', 'ionic gain'):
+            value[0] = max(value[0], 2)
     desc = parsing.parse_stat(info['desc'], value)[2:]
     desc += parsing.parse_stat(info['stat'], value)
     desc += f'\n▸Cost: {info["cost"]}' if info['god'] == 'charon' else ''
@@ -198,8 +203,7 @@ def pomscaling_embed(args):
     if args[-1].isdigit():
         level = int(args[-1])
         args = args[: -1]
-    if level > 10000:
-        return None, ''
+    level = min(level, 10000)
     name, _, _ = parsing.parse_boon(args)
     if not name:
         return None, ''
@@ -276,17 +280,13 @@ def eligible_embed(args):
         parsed_b = misc.fuzzy_boon(b.split())
         if parsed_b:
             current_boons.append(parsed_b[0])
-        else:
-            parsed_a = parsing.parse_aspect(b.split())
-            if parsed_a:
-                current_boons.append(f'aspect of {parsed_a[0][0]}')
     eligible_boons = []
     for possible_boon, info in files.boons_info.items():
         if ((info['god'] == god or (len(info['god']) == 2 and any(g == god for g in info['god'])))
                 and possible_boon not in current_boons):
             if possible_boon not in files.prereqs_info:
                 eligible_boons.append(possible_boon)
-            elif eligible_boon(info, current_boons):
+            elif eligible_boon(files.prereqs_info[possible_boon], current_boons):
                 eligible_boons.append(possible_boon)
     embed = discord.Embed(
         title=f'Eligible Boons from **{misc.capwords(god)}**',
@@ -640,8 +640,7 @@ def help_embed(client, command_name, aliases_to_command):
         embed.add_field(name='Usage', value='h!help <command_name>', inline=False)
         embed.add_field(name='Syntax', value='[parameter]\n-> parameter is optional\n'
                                              '[parameter=value]\n-> if not provided, parameter defaults to value\n'
-                                             'parameter...\n-> arbitrary number of parameters accepted\n'
-                                             'x?\n-> optional parameter')
+                                             'parameter...\n-> arbitrary number of parameters accepted')
         embed.set_thumbnail(url=client.user.avatar.url)
     else:
         if command_name in aliases_to_command:

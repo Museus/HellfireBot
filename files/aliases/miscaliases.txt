@@ -185,7 +185,7 @@ static shock
 shocking loss
     shocking, shock
 sunny disposition
-    triple heartthrob, triple heart throb, sunny, disposition
+    triple heartthrob, triple heart throb, sunny, disposition, dispo, sunny dispo
 hearty appetite
     hearty, appetite
 love handles
@@ -231,7 +231,7 @@ master conductor
 elementary particles
     elementary particle, elementary, particles, particle
 golden rule
-    hoarding slash, golden
+    hoarding slash, golden, gr
 queen's ransom
     queens ransom, ransom
 king's ransom

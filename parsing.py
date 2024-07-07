@@ -29,6 +29,8 @@ def parse_boon(args):
 
 def parse_aspect(args):
     args = [s.lower() for s in args]
+    if not args:
+        return '', -1
     level = 5
     if args[-1].isdigit():
         level = int(args[-1])
@@ -43,7 +45,7 @@ def parse_aspect(args):
 
 def parse_hammer(args):
     if not args:
-        return '', False
+        return '', False, False
     args = [s.lower() for s in args]
     hammer_name = ' '.join(args)
     if hammer_name in files.aliases['hammer']:

@@ -300,7 +300,17 @@ def eligible_embed(args):
 def aspect_embed(args):
     name, level = parsing.parse_aspect(args)
     if not name:
-        return None, ''
+        embed = discord.Embed(
+            title=f'List of **Aspects**'
+        )
+        aspects = {weapon: '' for weapon in misc.weapon_icons}
+        for aspect, info in files.aspects_info.items():
+            if 'melinoë' not in aspect:
+                aspects[info['weapon']] += '\n' + misc.capwords(aspect)
+        for category in aspects:
+            embed.add_field(name=misc.capwords(category), value=aspects[category].strip())
+        embed.set_thumbnail(url=misc.to_link('1250207629427347568'))
+        return embed, ''
     if len(name) > 1:
         desc = ''
         for index, alias in enumerate(name):
@@ -439,7 +449,7 @@ def duos_embed():
     )
     for god, duos in files.duo_info.items():
         embed.add_field(name=misc.capwords(god), value='\n'.join([misc.capwords(duo) for duo in duos]))
-    embed.set_thumbnail(url=misc.to_link('1027126357597093969'))
+    embed.set_thumbnail(url=misc.to_link('1251066556717469809'))
     return embed
 
 

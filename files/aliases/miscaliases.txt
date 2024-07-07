@@ -250,6 +250,10 @@ lethal snare
     snare
 death warrant
     warrant, hunters mark, mark, marked, hunter's mark, hmark
+nimble mind
+    nimble
+nimble limbs
+    nimble, nimble limb
 nitro boost
     nitro
 witty retort

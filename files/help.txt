@@ -7,8 +7,8 @@ boon boon_name [rarity=common] [level=1]
 pomscaling boon_name [level=10]
     Returns a graph of the performance of <boon_name> from level 1 to <level> across all applicable rarities.
     1247012092247281664
-aspect aspect_name [level=5]
-    Returns information on the given <aspect_name>, at the specified level. <level> defaults to 5.
+aspect [aspect_name] [level=5]
+    Returns information on the given <aspect_name>, at the specified level. <level> defaults to 5. If no <aspect_name> given, returns a list of all aspects, categorized by weapon.
 
 hammer item_name
     If <item_name> is a hammer, returns information on it. If <item_name> is a weapon (staff/blades/torch/axe/skull), returns a list of all hammers for it. If <item_name> is a weapon aspect, returns a list of all compatible hammers.

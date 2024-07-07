@@ -13,7 +13,7 @@ hestia
 poseidon
     poseidons, poseidon's, pos, pos', pos's, posi, wave, geyser, breaker, fluid, flood, slip, 🌊
 zeus
-    zeus', zeus's, heaven, storm, thunder, ionic, lightning, static, strike, shock, zap, ⚡
+    zeus', zeus's, heaven, storm, thunder, ionic, lightning, static, shock, zap, ⚡
 artemis
     artemis', artemis's, artys, arty's, art, arte, arty, deadly, true, hunter, hunters, hunter's, 🏹
 hermes

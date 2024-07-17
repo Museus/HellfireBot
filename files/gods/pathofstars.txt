@@ -62,24 +62,17 @@ bright alacrity none
     0
     4/4c/Alacrity.png
     1(phase shift)
-sublime acuity none
-    Your **Ω Cast** charges your **Hex** faster, as if it used {+%m}.
-
-    20
-    0
-    0/01/Acuity.png
-    1(phase shift)
 sublime precision none
     During your **Hex**, you have **+20%** chance to deal **Critical** damage.
     Magick Recharge Cost: {+}
-    40
+    50
     0
     e/ee/Precision.png
     1(phase shift)
 sublime stillness none
-    Your **Hex** makes everything else move **95%** slower.
+    Your **Hex** makes everything else move **75%** slower.
     Magick Recharge Cost: {+}
-    20
+    30
     0
     3/3b/Stillness.png
     1(phase shift)

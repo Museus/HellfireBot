@@ -258,12 +258,11 @@ async def enemy(ctx, *args):
     if misc.channel_status(ctx) > 1:
         await ctx.author.send(misc.optout_dm)
         return
-    await misc.reply(ctx, 'Not yet implemented', mention=True)
-    # embed = embeds.enemy_embed(args)
-    # if not embed:
-    #     await misc.reply(ctx, misc.suggest_hint('enemy', an=True), mention=True)
-    #     return
-    # await misc.reply(ctx, embed=embed)
+    embed = embeds.enemy_embed(args)
+    if not embed:
+        await misc.reply(ctx, misc.suggest_hint('enemy', an=True), mention=True)
+        return
+    await misc.reply(ctx, embed=embed)
 
 
 @client.command(aliases=['rarityroll', 'rarity', 'roll', 'rolls', 'rr'])

@@ -36,10 +36,10 @@ t1 divine vengeance air
     1
     3/3f/Divine_Vengeance_II.png
 t1 spirit surge air
-    While you have no more than 10 <:Magick:1250935754461544478>, *all* foes are occasionally struck by lightning.
-    Bolt Damage: {} *(every 5 Sec.)*
-    60 75 90 105
-    12.5 6.25 5
+    Whenever you use **<:Magick:1250935754461544478>**, a random surrounding foe is struck by lightning.
+    Bolt Damage: {} *(every 0.25 Sec.)*
+    20 25 30 35
+    5 3 2
     2/2e/Spirit_Surge_II.png
 t2 lightning lance air
     Hold **Cast** to aim where the binding circle appears. Foes within are struck by lightning.

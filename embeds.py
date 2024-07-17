@@ -635,7 +635,7 @@ def enemy_embed(args):
         desc += f'\nElite modification: **{info["elite"]}**'
     desc += f'\nLocation: **{misc.capwords(info["location"])}**'
     embed = discord.Embed(
-        title=misc.capwords(name),
+        title=misc.capwords(name, capall=True),
         description=desc
     )
     embed.set_thumbnail(url=misc.to_link(info['icon']))

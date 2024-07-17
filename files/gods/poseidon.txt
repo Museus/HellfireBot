@@ -96,7 +96,7 @@ duo island getaway aether
     1(flutter strike, flutter flourish); 1(wave strike, wave flourish, tidal ring, breaker sprint, fluid gain)
 duo beach ball aether
     Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
-    Blast Damage: {}
+    Max Blast Damage: {} *(after 2 Sec.)*
     300
     0
     6/67/Beach_Ball_II.png
@@ -118,7 +118,7 @@ duo seismic hammer aether
 duo golden rule aether
     You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
     Bonus Damage per 100 Gold: {+%}
-    5
+    3
     0
     5/52/Golden_Rule_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(ocean's bounty, double up)

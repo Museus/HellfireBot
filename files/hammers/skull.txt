@@ -5,7 +5,7 @@ attacks looming ignition
     Your **Attack** grows up to **50%** bigger and stronger over **2 Sec.**, or until it explodes.
     thumb/f/f3/Looming_Ignition.png/50px-Looming_Ignition.png
 attacks rocket bombard
-    Your **Ω Attack** fires straight ahead and has **20** **Power**.
+    Your **Ω Attack** fires straight ahead and has **+60** **Power**.
     thumb/f/f4/Rocket_Bombard.png/50px-Rocket_Bombard.png
 specials sudden driver
     Your **Specials** are **35%** faster.
@@ -23,7 +23,7 @@ specials twisting crash
     After your **Ω Special** projectiles fire, they fire again toward you.
     thumb/2/23/Twisting_Crash.png/50px-Twisting_Crash.png
 shells xdestructive array
-    Every **2.5 Sec.**, your **<:Shell:1250941173841924258> Shells** deal damage around them based on **50%** of your **Attack**.
+    Whenever your **<:Shell:1250941173841924258> Shells** land, they deal **50%** of your **Attack** damage around them.
     thumb/3/39/Destructive_Array.png/50px-Destructive_Array.png
     x(fetching array)
 shells possessed array

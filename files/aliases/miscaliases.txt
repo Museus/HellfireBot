@@ -61,7 +61,7 @@ snow queen
 cold storage
     storage
 frosty veneer
-    course grit, grit, frosty, veneer, frost veneer
+    coarse grit, course grit, grit, frosty, veneer, frost veneer
 winter harvest
     harvest
 volcanic strike
@@ -93,7 +93,7 @@ martial art
 fine tuning
     tuning, fine tune
 engagement ring
-    engagement, ering
+    engagement, ering, e ring, er
 nexus sprint
     nexus
 born gain

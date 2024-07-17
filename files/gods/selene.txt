@@ -12,7 +12,7 @@ hex twilight curse none
     0
     3/34/Twilight_Curse_II.png
 hex lunar ray none
-    Your **Hex** fires a beam that deals up to **900** damage over **3 Sec.**
+    Your **Hex** fires a beam that deals up to **800** damage over **2 Sec.**
     Ready After: {m}
     30
     0

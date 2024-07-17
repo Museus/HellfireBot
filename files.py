@@ -195,6 +195,7 @@ with open('./files/help.txt', 'r', encoding='utf8') as f:
 
 with open('./files/enemies.txt', 'r', encoding='utf8') as f:
     while enemy := f.readline().strip():
+        print(enemy)
         healths, attacks = f.readline().strip().rsplit(' ', 1)
         healths = healths.split(' ')
         attacks_info = []

@@ -23,7 +23,7 @@ attacks dashing heave
     Your **Dash-Strike** hits **2** times in an area around you.
     thumb/9/94/Dashing_Heave.png/50px-Dashing_Heave.png
 specials melting shredder
-    Your **Special** destroys **20%** of any **Armor** *(based on the total)*.
+    Your **Special** destroys **35%** of any **Armor** *(based on the total)*.
     thumb/e/e0/Melting_Shredder.png/50px-Melting_Shredder.png
 specials empowering guard
     After blocking a foe with your **Special**, deal **+50%** damage for **15 Sec.**

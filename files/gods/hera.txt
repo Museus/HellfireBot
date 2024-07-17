@@ -3,7 +3,7 @@ attack sworn strike earth
     Your **Attacks** deal more damage and inflict **Hitch**.
     Attack Damage: {+%}
     50 60 70 80
-    20 15
+    15 10
     3/32/Sworn_Strike_II.png
 special sworn flourish earth
     Your **Specials** deal more damage and inflict **Hitch**.
@@ -12,8 +12,8 @@ special sworn flourish earth
     15 10
     c/cb/Sworn_Flourish_II.png
 cast engagement ring earth
-    Your **Casts** deal damage and inflict **Hitch** whenever foes join the **Encounter**, anywhere!
-    On-Spawn Damage: {}
+    Your **Casts** inflict **Hitch**. Whenever foes within are slain, they damage surrounding foes.
+    Death Blast Damage: {}
     50 75 100 125
     25 12.5 10
     4/40/Engagement_Ring_II.png
@@ -55,12 +55,6 @@ t1 blood line earth
     100 120 140 160
     25 15 10
     5/52/Blood_Line_II.png
-t1 family trade earth
-    Any **Sacrifice Boons** you choose are stronger. One will be offered as soon as possible.
-    Bonus <:Pom:1247012092247281664> Lv.: {+}
-    2 3 4 5
-    0
-    a/a0/Family_Trade_II.png
 t2 hereditary bane earth
     Your **Hitch** effects deal more damage and last **+5 Sec.**
     Hitch Damage: {+%}
@@ -75,6 +69,13 @@ t2 dying wish earth
     20 16 12.8 10.24 8.192 6.5536 5.24288 4.194304 4
     e/e1/Dying_Wish_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, nasty comeback)
+t2 rousing reception
+    Your **Casts** damage any foes as they join the **Encounter**, wherever they appear.
+    On-Spawn Damage: {}
+    60 80 100 120
+    30 15 12
+    a/a0/Family_Trade_II.png
+    1(rapture ring, solar ring, arctic ring, anvil ring, engagement ring, smolder ring, tidal ring, storm ring)
 infusion proper upbringing none
     While you have at least **3** **<:EarthEssence:1251066559112417312>**, *all* your **Common** **Boons** gain **Rarity**.
     Improved Rarity: **Rare**
@@ -127,7 +128,7 @@ duo elementary particles aether
 duo golden rule aether
     You deal more damage the more **<:GoldenCrowns:1250942621044576308>** you have.
     Bonus Damage per 100 Gold: {+%}
-    10
+    3
     0
     5/52/Golden_Rule_II.png
     1(sworn strike, sworn flourish, engagement ring, nexus sprint, born gain); 1(ocean's bounty, double up)

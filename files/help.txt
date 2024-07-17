@@ -43,9 +43,9 @@ arcana [arcana_name] [rank=3]
 vow [vow_name] [rank=1]
     Returns information on the given <vow_name>, at the specified <rank>, including its fear. <rank> defaults to 1. If <vow_name> is excluded, returns all vows and corresponding fears.
     1251066119889092610
-enemy [enemy_name]
-    Returns information on the given <enemy_name>. Not yet implemented.
-
+enemy enemy_name
+    Returns information on the given <enemy_name>.
+    5/5f/Icon-EnemiesUW.png
 rarityrolls [modifiers]...
     Returns a table of roll probabilities for the rarities of an arbitrary boon. Include rarity-affecting <modifiers> to change the rarity probabilities.
     1028190585280012348

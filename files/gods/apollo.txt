@@ -126,7 +126,7 @@ duo phoenix skin aether
     1(nova strike, nova flourish, solar ring, blinding sprint, lucid gain); 1(flame strike, flame flourish, smolder ring, soot sprint, hearth gain); 1(burnt offering)
 duo beach ball aether
     Your **Sprint** creates a watery sphere behind you, which surges ahead once you stop.
-    Blast Damage: {}
+    Max Blast Damage: {} *(after 2 Sec.)*
     300
     0
     6/67/Beach_Ball_II.png

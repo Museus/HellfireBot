@@ -19,7 +19,7 @@ staff momus
 blades melinoë blades
     Your **Attacks** and **Specials** deal more damage by striking foes from behind.
     Backstab Damage: {+%}
-    0 10 20 30 40 70
+    0 40 60 80 100 200
     As there are many gardens to be cultivated, such a task requires precision instruments.
     d/d4/Hammer_Daggers_Melino%C3%AB.png
 blades artemis

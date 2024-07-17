@@ -5,7 +5,7 @@ attacks wicked thrasher
     Your **Attacks** have **+30** **Power**.
     thumb/b/b0/Wicked_Thrasher.png/50px-Wicked_Thrasher.png
 attacks mirrored thrasher
-    Your **Attacks** hit **2** times, but you take **+30%** damage.
+    Your **Attacks** hit **2** times, but use **+5** **<:Magick:1250935754461544478>**.
     thumb/b/b9/Mirrored_Thrasher.png/50px-Mirrored_Thrasher.png
 attacks extending wallop
     Your **Attack** has more range and deals **+100%** damage to distant foes.
